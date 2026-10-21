@@ -1,0 +1,439 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import * as _module31908 from "./jsx-runtime-31908.js";
+import * as _module18687 from "./18687.js";
+import * as _module45032 from "./45032.js";
+import * as _module22673 from "./22673.js";
+import * as _module95074 from "./95074.js";
+import * as _module23422 from "./23422.js";
+import * as _module64973 from "./64973.js";
+import * as _module11235 from "./11235.js";
+var e = _module31908,
+  s = _module18687,
+  a = _module45032,
+  i = _module22673;
+let n = {
+  width: {
+    min: 24,
+    max: 480
+  },
+  height: {
+    min: 24,
+    max: 320
+  },
+  radius: {
+    min: 0,
+    max: 160
+  },
+  thick: {
+    min: 6,
+    max: 70
+  },
+  bend: {
+    min: 0,
+    max: 120
+  },
+  blur: {
+    min: 0,
+    max: 24
+  },
+  aber: {
+    min: 0,
+    max: 12
+  },
+  tint: {
+    min: 0,
+    max: .6
+  }
+};
+function l(t, e, s, a, i) {
+  let n = Math.abs(t) - s + i,
+    l = Math.abs(e) - a + i;
+  return Math.hypot(Math.max(n, 0), Math.max(l, 0)) + Math.min(Math.max(n, l), 0) - i;
+}
+function r(t, e, s, a, r, c) {
+  let h = Math.min(Math.max(r, 0), s, a),
+    o = l(t, e, s, a, h);
+  if (o >= 0) return {
+    nx: 0,
+    ny: 0,
+    amt: 0,
+    sd: o,
+    inside: !1
+  };
+  let m = l(t + 1, e, s, a, h) - l(t - 1, e, s, a, h),
+    u = l(t, e + 1, s, a, h) - l(t, e - 1, s, a, h),
+    d = Math.hypot(m, u) || 1;
+  m /= d, u /= d;
+  let p = 1 - Math.min(-o / Math.max(Math.max(Math.min(s, a), 1) * (.16 + .84 * (((0, i.clamp)(c, n.thick.min, n.thick.max) - n.thick.min) / (n.thick.max - n.thick.min))), 1), 1);
+  return {
+    nx: m,
+    ny: u,
+    amt: (p = p * p * p * (p * (6 * p - 15) + 10)) ** 1.6,
+    sd: o,
+    inside: !0
+  };
+}
+function c(t, e, s) {
+  return t * ((128 + e * s * 127) / 255 - .5);
+}
+function h(t) {
+  return t ? "inset 0 0 0 1px rgb(255 255 255 / 0.22), inset 1px 1px 0 0 rgb(255 255 255 / 0.5), 0 30px 60px -20px rgb(0 0 0 / 0.6)" : "inset 0 0 0 1px rgb(255 255 255 / 0.55), inset 1px 1px 0 0 rgb(255 255 255 / 0.95), inset -1px -1px 0 0 rgb(0 0 0 / 0.05), 0 30px 60px -20px rgb(0 0 0 / 0.28), 0 4px 12px rgb(0 0 0 / 0.08)";
+}
+let o = {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  m = {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  u = {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  d = {
+    saturate: 1.4,
+    brightness: 1
+  },
+  p = null,
+  k = null,
+  j = null,
+  v = null,
+  f = new WeakMap(),
+  x = new WeakMap();
+function g(t) {
+  return t < 0 ? 0 : t > 255 ? 255 : t;
+}
+function b(t, e, s, a, i, n) {
+  var l, r, c, h, o, m, u, d, p;
+  let k = s - 1,
+    j = a - 1,
+    v = Math.min(Math.max(Math.floor(i), 0), k),
+    f = Math.min(Math.max(Math.floor(n), 0), j),
+    x = Math.min(v + 1, k),
+    g = Math.min(f + 1, j),
+    b = i - Math.floor(i),
+    P = n - Math.floor(n),
+    y = f * s,
+    w = g * s,
+    _ = (y + v) * 4,
+    z = (y + x) * 4,
+    q = (w + v) * 4,
+    C = (w + x) * 4;
+  c = (l = e[_]) + (e[z] - l) * b, t.r = c + ((r = e[q]) + (e[C] - r) * b - c) * P, m = (h = e[_ + 1]) + (e[z + 1] - h) * b, t.g = m + ((o = e[q + 1]) + (e[C + 1] - o) * b - m) * P, p = (u = e[_ + 2]) + (e[z + 2] - u) * b, t.b = p + ((d = e[q + 2]) + (e[C + 2] - d) * b - p) * P;
+}
+function P(t) {
+  let e = t.getContext("2d", {
+    willReadFrequently: !0
+  });
+  return !e || t.width < 1 || t.height < 1 ? null : {
+    data: e.getImageData(0, 0, t.width, t.height).data,
+    width: t.width,
+    height: t.height
+  };
+}
+function y(t, e, s) {
+  return `${s}|${t.width}|${t.height}|${e.width}|${e.height}`;
+}
+var w = _module95074;
+function _({
+  config: t,
+  className: s,
+  fill: i,
+  framed: n = !0,
+  live: l = !1,
+  sourceRef: z,
+  sceneTick: q,
+  readOffsetRef: C,
+  tone: F,
+  gloss: N = !0
+}) {
+  let S = (0, a.useRef)(null),
+    D = (0, a.useRef)(null),
+    M = (0, w.useThemeStore)(t => t.dark);
+  (0, a.useLayoutEffect)(() => {
+    let e = S.current,
+      s = z.current;
+    if (!e || !s || s.width < 1) return;
+    D.current = P(s);
+    let a = 0,
+      i = () => {
+        !function (t, e, s, a, i, n = 0, l, h = d, w = !0) {
+          let _,
+            z,
+            q,
+            C,
+            F,
+            N,
+            S = `${h.saturate}|${h.brightness}|${w}`;
+          if (l) {
+            let i = function (t, e, s, a, i) {
+              let n = Math.max(1, s.width),
+                l = Math.max(1, s.height),
+                r = y(s, e, a),
+                c = x.get(t);
+              if (!c || c.key !== r) {
+                let s = t.getBoundingClientRect(),
+                  a = e.getBoundingClientRect();
+                c = {
+                  key: r,
+                  baseX: s.left - a.left - i.x,
+                  baseY: s.top - a.top - i.y,
+                  sourceDpr: e.width / Math.max(1, a.width)
+                }, x.set(t, c);
+              }
+              return {
+                originX: (c.baseX + i.x) * c.sourceDpr,
+                originY: (c.baseY + i.y) * c.sourceDpr,
+                sourceDpr: c.sourceDpr,
+                cssW: n,
+                cssH: l
+              };
+            }(t, e, s, n, l);
+            _ = i.cssW, z = i.cssH, q = i.sourceDpr, C = i.originX, F = i.originY, N = `${l.x}|${l.y}|${y(s, e, n)}|${s.radius}|${s.thick}|${s.bend}|${s.blur}|${s.aber}|${a}|${S}`;
+          } else {
+            let i = t.getBoundingClientRect(),
+              l = e.getBoundingClientRect();
+            _ = Math.max(1, i.width), z = Math.max(1, i.height), q = e.width / Math.max(1, l.width), C = (i.left - l.left) * q, F = (i.top - l.top) * q, N = `${C}|${F}|${_}|${z}|${s.radius}|${s.thick}|${s.bend}|${s.blur}|${s.aber}|${a}|${n}|${S}`;
+          }
+          if (f.get(t) === N) return;
+          let D = _ * z,
+            M = Math.min(q, 2);
+          D * M * M > 7e4 && (M = Math.sqrt(7e4 / D));
+          let A = Math.max(1, Math.round(_ * M)),
+            I = Math.max(1, Math.round(z * M));
+          t.width !== A && (t.width = A), t.height !== I && (t.height = I);
+          let E = t.getContext("2d");
+          if (!E) return;
+          let R = i ?? P(e);
+          if (!R) return E.clearRect(0, 0, A, I);
+          let $ = _ / 2,
+            T = z / 2,
+            L = Math.min(Math.max(s.radius, 0), $, T),
+            O = function (t, e, s, a, i, n, l) {
+              if (p && p.width === t && p.height === e && p.radius === n && p.thick === l && p.paintDpr === s) return p;
+              let c = t * e,
+                h = new Float32Array(c),
+                o = new Float32Array(c),
+                m = new Float32Array(c),
+                u = new Uint8Array(c);
+              for (let c = 0; c < e; c++) {
+                let e = (c + .5) / s - i,
+                  d = c * t;
+                for (let c = 0; c < t; c++) {
+                  let t = r((c + .5) / s - a, e, a, i, n, l);
+                  if (!t.inside) continue;
+                  let p = d + c;
+                  h[p] = t.nx, o[p] = t.ny, m[p] = t.amt;
+                  let k = t.sd > -1 ? -t.sd : 1;
+                  u[p] = Math.round(255 * Math.min(k, 1));
+                }
+              }
+              return p = {
+                width: t,
+                height: e,
+                radius: n,
+                thick: l,
+                paintDpr: s,
+                nx: h,
+                ny: o,
+                amt: m,
+                alpha: u
+              };
+            }(A, I, M, $, T, L, s.thick);
+          k && k.width === A && k.height === I || (k = E.createImageData(A, I));
+          let U = k.data,
+            {
+              data: B,
+              width: G,
+              height: H
+            } = R;
+          for (let t = 0; t < I; t++) {
+            let e = F + (t + .5) / M * q,
+              i = t * A;
+            for (let t = 0; t < A; t++) {
+              let n = i + t,
+                l = O.alpha[n],
+                r = 4 * n;
+              if (U[r + 3] = l, 0 === l) continue;
+              let d = O.amt[n],
+                p = c(1, O.nx[n], d) * q,
+                k = c(1, O.ny[n], d) * q,
+                j = C + (t + .5) / M * q,
+                v = s.aber * d;
+              b(m, B, G, H, j + s.bend * p, e + s.bend * k);
+              let f = m.r,
+                x = m.g,
+                P = m.b;
+              v > .01 && (b(o, B, G, H, j + (s.bend + v) * p, e + (s.bend + v) * k), b(u, B, G, H, j + (s.bend - v) * p, e + (s.bend - v) * k), f = o.r, P = u.b);
+              let y = .2126 * f + .7152 * x + .0722 * P,
+                w = g(y + (f - y) * h.saturate),
+                _ = g(y + (x - y) * h.saturate),
+                z = g(y + (P - y) * h.saturate);
+              U[r] = g((w + (255 - w) * a) * h.brightness), U[r + 1] = g((_ + (255 - _) * a) * h.brightness), U[r + 2] = g((z + (255 - z) * a) * h.brightness);
+            }
+          }
+          if (E.setTransform(1, 0, 0, 1, 0, 0), s.blur > 0) {
+            let t = (j || (j = document.createElement("canvas")), j.width !== A && (j.width = A), j.height !== I && (j.height = I), v || (v = j.getContext("2d")), v);
+            if (!t || !j) return;
+            t.putImageData(k, 0, 0), E.clearRect(0, 0, A, I), E.filter = `blur(${s.blur * M}px)`, E.drawImage(j, 0, 0), E.filter = "none";
+          } else E.putImageData(k, 0, 0);
+          if (!w) return f.set(t, N);
+          E.save(), E.setTransform(M, 0, 0, M, 0, 0);
+          let V = E.createLinearGradient(0, 0, 0, .38 * z);
+          V.addColorStop(0, "rgb(255 255 255 / 0.55)"), V.addColorStop(1, "rgb(255 255 255 / 0)"), E.globalAlpha = .45, E.globalCompositeOperation = "screen", E.fillStyle = V, E.beginPath(), E.roundRect(0, 0, _, z, L), E.fill(), E.restore(), f.set(t, N);
+        }(e, s, t, t.tint, D.current, q, C?.current(), F, N);
+      };
+    if (l) {
+      let t = () => {
+        i(), a = requestAnimationFrame(t);
+      };
+      return a = requestAnimationFrame(t), () => cancelAnimationFrame(a);
+    }
+    let n = () => {
+      cancelAnimationFrame(a), a = requestAnimationFrame(i);
+    };
+    n();
+    let h = new ResizeObserver(n);
+    return h.observe(e), () => {
+      cancelAnimationFrame(a), h.disconnect();
+    };
+  }, [t, l, C, q, z, F, N]);
+  let A = ["pointer-events-none", i ? "absolute inset-0 size-full" : "", s].filter(Boolean).join(" ");
+  return <canvas ref={S} className={A} style={{
+    width: i ? void 0 : t.width,
+    height: i ? void 0 : t.height,
+    maxWidth: i ? void 0 : "100%",
+    borderRadius: t.radius,
+    boxShadow: n ? h(M) : void 0
+  }} />;
+}
+var z = _module23422;
+function q({
+  size: t,
+  radius: s,
+  tone: i
+}) {
+  let [n] = (0, a.useState)(() => {
+      let e;
+      return {
+        width: e = Math.round(.55 * t),
+        height: e,
+        radius: e / 2,
+        thick: .2 * t,
+        bend: 1.1 * t,
+        blur: 0,
+        aber: .15 * t,
+        tint: .12
+      };
+    }),
+    l = s / 20 * t,
+    r = (0, a.useRef)(null),
+    [c, h] = (0, a.useState)(0),
+    o = (0, w.useThemeStore)(t => t.dark);
+  return (0, a.useLayoutEffect)(() => {
+    let e = r.current;
+    if (!e) return;
+    let s = Math.min(window.devicePixelRatio || 1, 2);
+    e.width = t * s, e.height = t * s;
+    let a = e.getContext("2d");
+    if (!a) return;
+    a.setTransform(s, 0, 0, s, 0, 0);
+    let [n, l] = "accent" === i ? [z.ACCENT, "#ffa77f"] : o ? ["#2c2c30", "#3d3d42"] : ["#ececef", "#d6d6db"];
+    a.fillStyle = n, a.fillRect(0, 0, t, t), a.fillStyle = l, a.fillRect(t / 2, 0, t / 2, t), h(t => t + 1);
+  }, [t, o, i]), <div className={"relative shrink-0 overflow-hidden"} style={{
+    width: t,
+    height: t,
+    borderRadius: l
+  }}>{[<canvas ref={r} className={"absolute inset-0 size-full"} aria-hidden={!0} />, <div className={"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_1px_4px_rgb(0_0_0/0.14),inset_0_0_0_0.5px_rgb(255_255_255/0.7)]"} style={{
+      width: n.width,
+      height: n.height
+    }}>{(0, e.jsx)(_, {
+        config: n,
+        fill: !0,
+        framed: !1,
+        sourceRef: r,
+        sceneTick: c
+      })}</div>, <div className={"pointer-events-none absolute inset-0 shadow-[inset_0_0_0_0.5px_rgba(0,0,0,0.1)] dark:shadow-[inset_0_0_0_0.5px_rgba(255,255,255,0.1)]"} style={{
+      borderRadius: l
+    }} />]}</div>;
+}
+function C({
+  variant: t,
+  size: s = 40,
+  radius: a = 7,
+  tone: i = "neutral"
+}) {
+  return "glass" === t ? (0, e.jsx)(q, {
+    size: s,
+    radius: a,
+    tone: i
+  }) : <div className={"shrink-0"} style={{
+    width: s,
+    height: s
+  }}>{<div style={{
+      zoom: s / 20,
+      "--icon-radius": `${a}px`
+    }}>{(0, e.jsx)(z.CatalogIcon, {
+        variant: t,
+        tone: i
+      })}</div>}</div>;
+}
+var F = _module64973,
+  N = _module11235;
+let S = [{
+  title: "Libraries",
+  items: s.LIBRARIES
+}, {
+  title: "Utilities",
+  items: s.UTILITIES
+}];
+function D() {
+  let t = (0, N.usePathname)();
+  return <nav aria-label={"Experiments"} className={"sticky top-20 flex max-h-[calc(100dvh-6rem)] flex-col gap-6 overflow-y-auto"}>{S.map(s => <div className={"flex flex-col gap-1.5"} key={s.title}>{[<p className={"px-2.5 text-xs font-medium leading-5 text-mute"}>{s.title}</p>, <ul className={"flex flex-col gap-0.5"}>{s.items.map(s => {
+          let a = t.startsWith(s.href);
+          return <li key={s.slug}>{(0, e.jsxs)(F.default, {
+              href: s.href,
+              "aria-current": a ? "page" : void 0,
+              className: `theme-transition flex items-center gap-2.5 rounded-[10px] px-2.5 py-2 text-[13px] leading-5 tracking-[-0.13px] outline-none focus-visible:ring-2 focus-visible:ring-ink/15 ${a ? "inset-hairline bg-black/[0.05] font-medium text-ink dark:bg-white/[0.08]" : "text-mute hover:inset-hairline hover:bg-black/[0.03] hover:text-ink dark:hover:bg-white/[0.05]"}`,
+              children: [(0, e.jsx)(z.CatalogIcon, {
+                variant: s.icon
+              }), <span className={"min-w-0 truncate"}>{s.name}</span>]
+            })}</li>;
+        })}</ul>]}</div>)}</nav>;
+}
+function M({
+  children: t
+}) {
+  return <h2 className={"text-[15px] font-semibold tracking-[-0.2px] text-ink"}>{t}</h2>;
+}
+const _export_ExampleCard = function ({
+  title: t,
+  children: s,
+  className: a,
+  wide: i = !1
+}) {
+  return <figure className={`flex min-w-0 flex-col gap-2.5 ${i ? "md:col-span-3" : ""}`}>{[<div className={`theme-transition relative flex items-center justify-center overflow-hidden rounded-[16px] bg-canvas ring-[0.5px] ring-black/8 dark:ring-white/8 ${i ? "py-10" : "h-[200px]"} ${a ?? ""}`}>{s}</div>, <figcaption className={"px-1 text-[13px] text-mute"}>{t}</figcaption>]}</figure>;
+};
+const _export_ExperimentLayout = function ({
+  slug: t,
+  examples: a,
+  preview: i,
+  controls: n,
+  exportPanel: l,
+  framedExport: r = !0
+}) {
+  let c = (0, s.getCatalogItem)(t);
+  return <div className={"mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-10 px-4 pt-10 sm:px-6 sm:pt-16 lg:grid-cols-[200px_minmax(0,1fr)]"}>{[<aside className={"hidden lg:block"}>{(0, e.jsx)(D, {})}</aside>, <article className={"flex min-w-0 flex-col gap-14"}>{[<header className={"flex flex-col gap-5"}>{[<div className={"flex items-center gap-4"}>{<div className={"flex items-center gap-3"}>{[(0, e.jsx)(C, {
+              variant: c.icon,
+              tone: "accent"
+            }), <span className={"rounded-full bg-black/[0.04] px-2.5 py-1 text-[11px] font-medium tracking-[0.02em] text-mute uppercase dark:bg-white/[0.06]"}>{"library" === c.kind ? "Library" : "Utility"}</span>]}</div>}</div>, <div className={"flex max-w-2xl flex-col gap-3"}>{[<h1 className={"font-display text-[28px] font-semibold leading-tight tracking-[-0.6px] text-ink sm:text-[36px]"}>{c.name}</h1>, <p className={"text-[15px] leading-relaxed text-mute sm:text-[16px]"}>{c.description}</p>]}</div>]}</header>, <section aria-labelledby={"examples"} className={"flex scroll-mt-20 flex-col gap-4"}>{[(0, e.jsx)(M, {
+          children: <span id={"examples"}>{"In use"}</span>
+        }), <div className={"grid grid-cols-1 gap-4 md:grid-cols-3"}>{a}</div>]}</section>, <section aria-labelledby={"configurator"} className={"flex scroll-mt-20 flex-col gap-4"}>{[(0, e.jsx)(M, {
+          children: <span id={"configurator"}>{"Configurator"}</span>
+        }), <div className={"grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,1fr)_340px]"}>{[<div className={"min-w-0"}>{i}</div>, <aside aria-label={"Controls"} className={"theme-transition min-w-0 overflow-hidden rounded-2xl bg-panel ring-[0.5px] ring-black/10 dark:ring-white/10"}>{n}</aside>]}</div>, r ? <div className={"theme-transition overflow-hidden rounded-2xl bg-panel ring-[0.5px] ring-black/10 dark:ring-white/10"}>{l}</div> : l]}</section>]}</article>]}</div>;
+};
+export { _export_ExampleCard as ExampleCard, _export_ExperimentLayout as ExperimentLayout };

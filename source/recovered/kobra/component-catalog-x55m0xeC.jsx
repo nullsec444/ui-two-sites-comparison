@@ -1,0 +1,42 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+var e = [[`Accordion`, `Vertically stacked disclosure sections.`], [`Advertisement`, `A sponsor slot that turns through its ads on a line that fills.`], [`AI Editor`, `A document an agent edits alongside you.`], [`Alert`, `A callout for important contextual information.`], [`Aspect Ratio`, `Keeps content within a fixed ratio.`], [`Avatar`, `An image or fallback representing a person.`], [`Badge`, `A compact status or category label.`], [`Breadcrumb`, `A hierarchical navigation trail.`], [`Button`, `A control that triggers an action.`], [`Calendar`, `A date selection calendar.`], [`Card`, `A surface grouping related content.`], [`Halftone Dots`, `An image rebuilt as a field of dots that morph between pictures.`], [`Logo Carousel`, `A wall of logos, shown a few at a time.`], [`Carousel`, `A horizontally navigable content collection, built on Embla.`], [`Chart`, `Composable data visualizations, from Evil Charts.`], [`Checkbox`, `A binary or indeterminate selection control.`], [`Collapsible`, `An expandable content region.`], [`Color Palette`, `A wheel of nineteen swatches, hue around and saturation inward.`], [`Color Picker`, `A gradient and solid picker, with draggable stops and a hex field.`], [`Combobox`, `A searchable option picker.`], [`Multi Select`, `Several values picked from one list, as chips.`], [`Command Menu`, `A fast, nested command menu powered by kmenu.`], [`Context Menu`, `Actions opened from a secondary click.`], [`Dialog`, `A modal window over the current page, and the alert dialog that confirms.`], [`Drawer`, `A panel that slides from an edge, built on Vaul.`], [`Dropdown Menu`, `A menu opened from a trigger.`], [`Empty`, `An empty-state layout with guidance.`], [`Form`, `Validated form composition.`], [`Hover Card`, `Rich content revealed on hover.`], [`Lightbox`, `Photos in justified rows that open with a ripple zoom.`], [`Input`, `A text input with its label, description and attached controls.`], [`Input OTP`, `A segmented one-time-code input, built on input-otp.`], [`Input Dissolve`, `A field that carries its value away once it is spent.`], [`Item`, `A flexible row for lists and settings.`], [`Menubar`, `A persistent horizontal application menu.`], [`Navigation Menu`, `A collection of navigation links.`], [`Pagination`, `Controls for moving through pages.`], [`Popover`, `Floating content anchored to a trigger.`], [`Progress`, `The completion state of a task.`], [`QR Code`, `A scannable code in dots that ripples each time what it encodes changes.`], [`Radio Group`, `A single choice from several options.`], [`Resizable`, `Panels separated by a draggable handle.`], [`Scroll Area`, `A custom cross-browser scroll container.`], [`Select`, `An option picker, as a styled menu or the native control.`], [`Separator`, `A visual divider between content.`], [`Sheet`, `A dialog that enters from an edge.`], [`Sidebar`, `A composable application sidebar.`], [`Skeleton`, `A placeholder shown while content loads.`], [`Slider`, `A value selected along a range, with a liquid handle from Gooey.`], [`Sound`, `The cue every control answers a press with, built on Web Kits Audio.`], [`Toast`, `Stacked status notifications with progress, actions and descriptions.`], [`Spinner`, `An indeterminate loading indicator.`], [`Switch`, `A control for toggling a setting.`], [`Table`, `Rows and columns of structured data.`], [`CRM Table`, `Accounts with owners, pipeline and win odds, in resizable columns.`], [`Grouped Table`, `Issues grouped by status, in a table whose columns glide into each row as you narrow it.`], [`Tabs`, `Layered content selected by tab.`], [`Textarea`, `A multiline text input.`], [`Toggle Group`, `A two-state control, alone or conjoined into a bar.`], [`Filter Chips`, `Filter chips that join into one track as neighbors are chosen, after Spotify’s library.`], [`Tooltip`, `A concise label shown on hover or focus.`], [`Kbd`, `Keyboard input and shortcut hints.`], [`Direction`, `Turns every component right to left, for Arabic and other RTL scripts.`], [`Attachment`, `A compact file attachment presentation.`], [`Magnetic Dropzone`, `A drop target that leans toward the file you are carrying.`], [`Conversation`, `Messages from both sides of a chat.`], [`Marker`, `A labeled point or status marker.`], [`Message`, `A structured conversation message.`], [`Message Scroller`, `Conversation scrolling with edge controls.`], [`Video`, `A video player built on Loomix, with liquid glass controls.`], [`Reasoning Steps`, `A model working before it answers.`], [`Chat History`, `A chat whose button gathers everything you asked into one column over the blurred transcript.`], [`File Diff`, `Changes an agent proposes to a file.`], [`Image Generation`, `A canvas forming while an image is generated.`], [`Streaming Text`, `A reply arriving a token at a time.`], [`Inline Citations`, `Sources cited inside a reply.`], [`Code Block`, `Syntax-highlighted code with actions.`], [`Task List`, `A task list an agent works through.`], [`Chat Input`, `A composer for prompting an agent, built on Voice Glow and ElevenLabs UI.`], [`Plan Card`, `A plan an agent is asking to run.`], [`Question Card`, `A question an agent needs answered before it continues.`]],
+  t = [[`Free`, [`Input OTP`, `Navigation Menu`, `Video`, `Carousel`, `AI Editor`, `Command Menu`, `Toast`, `Conversation`, `Halftone Dots`, `Sound`]], [`Agents`, [`Reasoning Steps`, `Chat History`, `File Diff`, `Image Generation`, `Streaming Text`, `Inline Citations`, `Code Block`, `Task List`, `Chat Input`, `Plan Card`, `Question Card`, `Message`, `Message Scroller`]], [`Content`, [`Table`, `CRM Table`, `Grouped Table`, `Chart`, `Item`, `Avatar`, `Badge`, `Marker`, `Kbd`, `Attachment`, `Lightbox`, `QR Code`, `Advertisement`]], [`Feedback`, [`Alert`, `Progress`, `Spinner`, `Skeleton`, `Empty`]], [`Form controls`, [`Form`, `Input`, `Input Dissolve`, `Textarea`, `Button`, `Toggle Group`, `Filter Chips`, `Checkbox`, `Radio Group`, `Switch`, `Slider`, `Select`, `Combobox`, `Multi Select`, `Calendar`, `Color Palette`, `Color Picker`, `Magnetic Dropzone`]], [`Layout`, [`Card`, `Accordion`, `Collapsible`, `Aspect Ratio`, `Logo Carousel`, `Separator`, `Scroll Area`, `Resizable`, `Direction`]], [`Navigation`, [`Tabs`, `Breadcrumb`, `Pagination`, `Sidebar`, `Menubar`]], [`Overlays`, [`Dialog`, `Sheet`, `Drawer`, `Popover`, `Hover Card`, `Tooltip`, `Dropdown Menu`, `Context Menu`]]],
+  n = new Map(t.flatMap(([e, t]) => t.map(t => [t, e])));
+function r(e) {
+  return e.toLowerCase().replaceAll(/[^a-z0-9]+/g, `-`);
+}
+function i(t) {
+  return e.find(([e]) => r(e) === t)?.[0];
+}
+var a = new Map(e);
+function o(e) {
+  return a.get(e) ?? ``;
+}
+var s = `Input OTP`,
+  c = `Free`,
+  l = `Purchased`;
+function u(n) {
+  let i = e.map(([e]) => e).filter(e => n.has(r(e)) && !g(r(e)));
+  if (i.length === 0) return t;
+  let a = t.map(([e, t]) => [e, t.filter(e => !i.includes(e))]),
+    o = a.findIndex(([e]) => e === c),
+    s = o === -1 ? 0 : o + 1;
+  return [...a.slice(0, s), [l, i], ...a.slice(s).filter(([, e]) => e.length > 0)];
+}
+var d = t.find(([e]) => e === `Free`)?.[1] ?? [],
+  f = new Set(d.map(r)),
+  p = `100+`,
+  m = new Set([`Advertisement`, `QR Code`, `Grouped Table`, `Filter Chips`, `Chat History`]),
+  h = new Set([`Dropdown Menu`, `Resizable`, `Button`, `Chat Input`, `Question Card`, `Calendar`, `Sidebar`, `Tabs`]),
+  g = e => f.has(e),
+  _ = {
+    english: `latn`,
+    arabic: `arab`,
+    persian: `arabext`,
+    thai: `latn`,
+    chinese: `latn`,
+    japanese: `latn`
+  },
+  v = new Set([`Accordion`, `Calendar`, `Checkbox`, `Collapsible`, `Combobox`, `Input`, `Input OTP`, `Progress`, `Radio Group`, `Select`, `Slider`, `Switch`, `Tabs`, `Textarea`, `Toggle Group`]),
+  y = new Set([`Context Menu`, `Dialog`, `Drawer`, `Dropdown Menu`, `Hover Card`, `Popover`, `Sheet`, `Tooltip`]);
+export { r as _, l as a, i as c, o as d, g as f, t as g, n as h, m as i, v as l, y as m, p as n, h as o, u as p, f as r, e as s, _ as t, s as u };

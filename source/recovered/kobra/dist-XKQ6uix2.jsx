@@ -1,0 +1,10568 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as r } from "./react-dom-U4kpXZKZ.js";
+var i = e(t(), 1),
+  a = e(n(), 1),
+  o = e(r(), 1),
+  s = `mesurer-styles`,
+  c = new WeakSet(),
+  l = e => e.nodeType === 9,
+  u = e => e.nodeType === 11,
+  d = e => {
+    if (typeof document > `u`) return null;
+    if (!e) return document;
+    if (u(e)) return e;
+    let t = e.getRootNode();
+    return t.nodeType === 11 ? t : e.ownerDocument ?? document;
+  },
+  f = (e, t) => {
+    let n = new CSSStyleSheet();
+    n.replaceSync(t), e.adoptedStyleSheets = [...e.adoptedStyleSheets, n];
+  };
+function p(e, t) {
+  if (typeof document > `u` || !e) return;
+  let n = d(t);
+  if (!n || c.has(n)) return;
+  if (n.querySelector(`#${s}`)) {
+    c.add(n);
+    return;
+  }
+  if (u(n)) try {
+    f(n, e), c.add(n);
+    return;
+  } catch {}
+  let r = l(n) ? n : n.ownerDocument;
+  if (!r) return;
+  let i = r.createElement(`style`);
+  i.id = s, i.textContent = e, u(n) ? n.appendChild(i) : r.head.appendChild(i), c.add(n);
+}
+var m = `/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
+@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))){*,:before,:after,::backdrop{--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0;--tw-border-style:solid;--tw-leading:initial;--tw-font-weight:initial;--tw-ordinal:initial;--tw-slashed-zero:initial;--tw-numeric-figure:initial;--tw-numeric-spacing:initial;--tw-numeric-fraction:initial;--tw-shadow:0 0 #0000;--tw-shadow-color:initial;--tw-shadow-alpha:100%;--tw-inset-shadow:0 0 #0000;--tw-inset-shadow-color:initial;--tw-inset-shadow-alpha:100%;--tw-ring-color:initial;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-color:initial;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-inset:initial;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-offset-shadow:0 0 #0000;--tw-outline-style:solid;--tw-duration:initial}}}@layer theme{:root,:host{--msr-font-sans:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--msr-font-mono:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--msr-color-red-50:oklch(97.1% .013 17.38);--msr-color-red-200:oklch(88.5% .062 18.334);--msr-color-red-600:oklch(57.7% .245 27.325);--msr-color-black:#000;--msr-color-white:#fff;--msr-spacing:.25rem;--msr-font-weight-medium:500;--msr-font-weight-semibold:600;--msr-radius-md:.375rem;--msr-radius-lg:.5rem;--msr-default-transition-duration:.15s;--msr-default-transition-timing-function:cubic-bezier(.4, 0, .2, 1);--msr-default-font-family:var(--msr-font-sans);--msr-default-mono-font-family:var(--msr-font-mono);--msr-color-ink-50:#f8fafc;--msr-color-ink-200:#e2e8f0;--msr-color-ink-500:#64748b;--msr-color-ink-700:#334155;--msr-color-ink-900:#0f172a}}@layer base{*,:after,:before,::backdrop{box-sizing:border-box;border-width:0;border-style:solid;margin:0;padding:0}::file-selector-button{box-sizing:border-box;border-width:0;border-style:solid;margin:0;padding:0}html,:host{-webkit-text-size-adjust:100%;tab-size:4;line-height:1.5;font-family:var(--msr-default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");font-feature-settings:var(--msr-default-font-feature-settings,normal);font-variation-settings:var(--msr-default-font-variation-settings,normal);-webkit-tap-highlight-color:transparent}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:var(--msr-default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);font-feature-settings:var(--msr-default-mono-font-feature-settings,normal);font-variation-settings:var(--msr-default-mono-font-variation-settings,normal);font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}:-moz-focusring{outline:auto}progress{vertical-align:baseline}summary{display:list-item}ol,ul,menu{list-style:none}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}button,input,select,optgroup,textarea{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}::file-selector-button{font:inherit;font-feature-settings:inherit;font-variation-settings:inherit;letter-spacing:inherit;color:inherit;opacity:1;background-color:#0000;border-radius:0}:where(select:is([multiple],[size])) optgroup{font-weight:bolder}:where(select:is([multiple],[size])) optgroup option{padding-inline-start:20px}::file-selector-button{margin-inline-end:4px}::placeholder{opacity:1}@supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px){::placeholder{color:currentColor}@supports (color:color-mix(in lab, red, red)){::placeholder{color:color-mix(in oklab, currentcolor 50%, transparent)}}}textarea{resize:vertical}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-date-and-time-value{min-height:1lh;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-datetime-edit{padding-block:0}::-webkit-datetime-edit-year-field{padding-block:0}::-webkit-datetime-edit-month-field{padding-block:0}::-webkit-datetime-edit-day-field{padding-block:0}::-webkit-datetime-edit-hour-field{padding-block:0}::-webkit-datetime-edit-minute-field{padding-block:0}::-webkit-datetime-edit-second-field{padding-block:0}::-webkit-datetime-edit-millisecond-field{padding-block:0}::-webkit-datetime-edit-meridiem-field{padding-block:0}::-webkit-calendar-picker-indicator{line-height:1}:-moz-ui-invalid{box-shadow:none}button,input:where([type=button],[type=reset],[type=submit]){appearance:button}::file-selector-button{appearance:button}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[hidden]:where(:not([hidden=until-found])){display:none!important}*,:before,:after,::backdrop{--tw-border-style:solid;--tw-outline-style:solid;--tw-shadow:0 0 #0000;--tw-inset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-inset-ring-shadow:0 0 #0000;--tw-ring-offset-shadow:0 0 #0000;--tw-translate-x:0;--tw-translate-y:0;--tw-translate-z:0}button,input,select,textarea{appearance:none;font:inherit;color:inherit;letter-spacing:inherit;background-color:#0000;padding:0}}@layer components;@layer utilities{.msr\\:pointer-events-auto{pointer-events:auto}.msr\\:pointer-events-none{pointer-events:none}.msr\\:absolute{position:absolute}.msr\\:fixed{position:fixed}.msr\\:relative{position:relative}.msr\\:inset-0{inset:calc(var(--msr-spacing) * 0)}.msr\\:-top-1{top:calc(var(--msr-spacing) * -1)}.msr\\:top-0{top:calc(var(--msr-spacing) * 0)}.msr\\:top-1{top:calc(var(--msr-spacing) * 1)}.msr\\:top-1\\/2{top:50%}.msr\\:top-\\[18px\\]{top:18px}.msr\\:top-full{top:100%}.msr\\:-right-1{right:calc(var(--msr-spacing) * -1)}.msr\\:right-0{right:calc(var(--msr-spacing) * 0)}.msr\\:right-1{right:calc(var(--msr-spacing) * 1)}.msr\\:right-2{right:calc(var(--msr-spacing) * 2)}.msr\\:right-\\[8px\\]{right:8px}.msr\\:-bottom-1{bottom:calc(var(--msr-spacing) * -1)}.msr\\:bottom-0{bottom:calc(var(--msr-spacing) * 0)}.msr\\:bottom-1{bottom:calc(var(--msr-spacing) * 1)}.msr\\:bottom-4{bottom:calc(var(--msr-spacing) * 4)}.msr\\:bottom-full{bottom:100%}.msr\\:-left-1{left:calc(var(--msr-spacing) * -1)}.msr\\:left-0{left:calc(var(--msr-spacing) * 0)}.msr\\:left-1{left:calc(var(--msr-spacing) * 1)}.msr\\:left-1\\/2{left:50%}.msr\\:left-\\[8px\\]{left:8px}.msr\\:left-\\[18px\\]{left:18px}.msr\\:z-10{z-index:10}.msr\\:z-20{z-index:20}.msr\\:z-50{z-index:50}.msr\\:z-\\[70\\]{z-index:70}.msr\\:z-\\[85\\]{z-index:85}.msr\\:z-\\[90\\]{z-index:90}.msr\\:z-\\[100\\]{z-index:100}.msr\\:col-span-2{grid-column:span 2/span 2}.msr\\:mt-1{margin-top:calc(var(--msr-spacing) * 1)}.msr\\:mt-2{margin-top:calc(var(--msr-spacing) * 2)}.msr\\:mb-1{margin-bottom:calc(var(--msr-spacing) * 1)}.msr\\:mb-2{margin-bottom:calc(var(--msr-spacing) * 2)}.msr\\:-ml-1{margin-left:calc(var(--msr-spacing) * -1)}.msr\\:ml-1{margin-left:calc(var(--msr-spacing) * 1)}.msr\\:ml-auto{margin-left:auto}.msr\\:box-border{box-sizing:border-box}.msr\\:line-clamp-2{-webkit-line-clamp:2;-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.msr\\:block{display:block}.msr\\:flex{display:flex}.msr\\:grid{display:grid}.msr\\:inline-flex{display:inline-flex}.msr\\:size-1\\.5{width:calc(var(--msr-spacing) * 1.5);height:calc(var(--msr-spacing) * 1.5)}.msr\\:size-3{width:calc(var(--msr-spacing) * 3);height:calc(var(--msr-spacing) * 3)}.msr\\:size-4{width:calc(var(--msr-spacing) * 4);height:calc(var(--msr-spacing) * 4)}.msr\\:size-7{width:calc(var(--msr-spacing) * 7);height:calc(var(--msr-spacing) * 7)}.msr\\:size-8{width:calc(var(--msr-spacing) * 8);height:calc(var(--msr-spacing) * 8)}.msr\\:size-\\[10px\\]{width:10px;height:10px}.msr\\:size-\\[18px\\]{width:18px;height:18px}.msr\\:size-full{width:100%;height:100%}.msr\\:h-2{height:calc(var(--msr-spacing) * 2)}.msr\\:h-3{height:calc(var(--msr-spacing) * 3)}.msr\\:h-6{height:calc(var(--msr-spacing) * 6)}.msr\\:h-8{height:calc(var(--msr-spacing) * 8)}.msr\\:h-\\[14px\\]{height:14px}.msr\\:h-auto{height:auto}.msr\\:h-full{height:100%}.msr\\:h-max{height:max-content}.msr\\:h-px{height:1px}.msr\\:max-h-\\[120px\\]{max-height:120px}.msr\\:min-h-6{min-height:calc(var(--msr-spacing) * 6)}.msr\\:min-h-8{min-height:calc(var(--msr-spacing) * 8)}.msr\\:w-2{width:calc(var(--msr-spacing) * 2)}.msr\\:w-4{width:calc(var(--msr-spacing) * 4)}.msr\\:w-6{width:calc(var(--msr-spacing) * 6)}.msr\\:w-9{width:calc(var(--msr-spacing) * 9)}.msr\\:w-12{width:calc(var(--msr-spacing) * 12)}.msr\\:w-44{width:calc(var(--msr-spacing) * 44)}.msr\\:w-\\[18px\\]{width:18px}.msr\\:w-\\[26px\\]{width:26px}.msr\\:w-auto{width:auto}.msr\\:w-full{width:100%}.msr\\:w-max{width:max-content}.msr\\:w-px{width:1px}.msr\\:max-w-\\[180px\\]{max-width:180px}.msr\\:max-w-\\[calc\\(100vw-16px\\)\\]{max-width:calc(100vw - 16px)}.msr\\:max-w-\\[min\\(200px\\,calc\\(100vw-24px\\)\\)\\]{max-width:min(200px,100vw - 24px)}.msr\\:max-w-\\[min\\(240px\\,calc\\(100vw-16px\\)\\)\\]{max-width:min(240px,100vw - 16px)}.msr\\:min-w-0{min-width:calc(var(--msr-spacing) * 0)}.msr\\:min-w-32{min-width:calc(var(--msr-spacing) * 32)}.msr\\:min-w-36{min-width:calc(var(--msr-spacing) * 36)}.msr\\:flex-1{flex:1}.msr\\:flex-none{flex:none}.msr\\:shrink-0{flex-shrink:0}.msr\\:-translate-x-1\\/2{--tw-translate-x:calc(calc(1 / 2 * 100%) * -1);translate:var(--tw-translate-x) var(--tw-translate-y)}.msr\\:-translate-y-1\\/2{--tw-translate-y:calc(calc(1 / 2 * 100%) * -1);translate:var(--tw-translate-x) var(--tw-translate-y)}.msr\\:-translate-y-full{--tw-translate-y:-100%;translate:var(--tw-translate-x) var(--tw-translate-y)}.msr\\:rotate-45{rotate:45deg}.msr\\:rotate-90{rotate:90deg}.msr\\:animate-\\[mesurer-screenshot-preview_5\\.16s_ease-out_both\\]{animation:5.16s ease-out both mesurer-screenshot-preview}.msr\\:cursor-crosshair{cursor:crosshair}.msr\\:cursor-default{cursor:default}.msr\\:cursor-grab{cursor:grab}.msr\\:cursor-pointer{cursor:pointer}.msr\\:cursor-text{cursor:text}.msr\\:touch-none{touch-action:none}.msr\\:appearance-none{appearance:none}.msr\\:grid-cols-\\[78px_150px\\]{grid-template-columns:78px 150px}.msr\\:grid-cols-\\[78px_minmax\\(0\\,1fr\\)\\]{grid-template-columns:78px minmax(0,1fr)}.msr\\:flex-col{flex-direction:column}.msr\\:items-baseline{align-items:baseline}.msr\\:items-center{align-items:center}.msr\\:items-start{align-items:flex-start}.msr\\:items-stretch{align-items:stretch}.msr\\:justify-between{justify-content:space-between}.msr\\:justify-center{justify-content:center}.msr\\:justify-end{justify-content:flex-end}.msr\\:gap-0{gap:calc(var(--msr-spacing) * 0)}.msr\\:gap-1{gap:calc(var(--msr-spacing) * 1)}.msr\\:gap-1\\.5{gap:calc(var(--msr-spacing) * 1.5)}.msr\\:gap-2{gap:calc(var(--msr-spacing) * 2)}.msr\\:gap-2\\.5{gap:calc(var(--msr-spacing) * 2.5)}.msr\\:gap-\\[2px\\]{gap:2px}.msr\\:gap-px{gap:1px}.msr\\:justify-self-end{justify-self:flex-end}.msr\\:overflow-hidden{overflow:hidden}.msr\\:overflow-y-auto{overflow-y:auto}.msr\\:rounded{border-radius:.25rem}.msr\\:rounded-\\[2px\\]{border-radius:2px}.msr\\:rounded-\\[3px\\]{border-radius:3px}.msr\\:rounded-\\[4px\\]{border-radius:4px}.msr\\:rounded-\\[5px\\]{border-radius:5px}.msr\\:rounded-\\[6px\\]{border-radius:6px}.msr\\:rounded-\\[8px\\]{border-radius:8px}.msr\\:rounded-\\[10px\\]{border-radius:10px}.msr\\:rounded-full{border-radius:3.40282e38px}.msr\\:rounded-lg{border-radius:var(--msr-radius-lg)}.msr\\:rounded-md{border-radius:var(--msr-radius-md)}.msr\\:border{border-style:var(--tw-border-style);border-width:1px}.msr\\:border-0{border-style:var(--tw-border-style);border-width:0}.msr\\:border-t{border-top-style:var(--tw-border-style);border-top-width:1px}.msr\\:border-t-2{border-top-style:var(--tw-border-style);border-top-width:2px}.msr\\:border-r{border-right-style:var(--tw-border-style);border-right-width:1px}.msr\\:border-b{border-bottom-style:var(--tw-border-style);border-bottom-width:1px}.msr\\:border-l{border-left-style:var(--tw-border-style);border-left-width:1px}.msr\\:border-dashed{--tw-border-style:dashed;border-style:dashed}.msr\\:border-dotted{--tw-border-style:dotted;border-style:dotted}.msr\\:border-solid{--tw-border-style:solid;border-style:solid}.msr\\:border-\\[\\#0d99ff\\]{border-color:#0d99ff}.msr\\:border-\\[\\#2563eb\\]\\/70{border-color:oklab(54.615% -.026671 -.213549/.7)}.msr\\:border-black\\/8{border-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:border-black\\/8{border-color:color-mix(in oklab, var(--msr-color-black) 8%, transparent)}}.msr\\:border-black\\/10{border-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:border-black\\/10{border-color:color-mix(in oklab, var(--msr-color-black) 10%, transparent)}}.msr\\:border-black\\/15{border-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:border-black\\/15{border-color:color-mix(in oklab, var(--msr-color-black) 15%, transparent)}}.msr\\:border-ink-200{border-color:var(--msr-color-ink-200)}.msr\\:border-ink-500{border-color:var(--msr-color-ink-500)}.msr\\:border-ink-700{border-color:var(--msr-color-ink-700)}.msr\\:border-red-200{border-color:var(--msr-color-red-200)}.msr\\:border-transparent{border-color:#0000}.msr\\:bg-\\[\\#0d99ff\\]{background-color:#0d99ff}.msr\\:bg-\\[\\#0d99ff\\]\\/10{background-color:oklab(66.9841% -.0648249 -.170866/.1)}.msr\\:bg-\\[\\#2563eb\\]{background-color:#2563eb}.msr\\:bg-\\[\\#e6e6e6\\]{background-color:#e6e6e6}.msr\\:bg-black,.msr\\:bg-black\\/10{background-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:bg-black\\/10{background-color:color-mix(in oklab, var(--msr-color-black) 10%, transparent)}}.msr\\:bg-black\\/40{background-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:bg-black\\/40{background-color:color-mix(in oklab, var(--msr-color-black) 40%, transparent)}}.msr\\:bg-ink-50{background-color:var(--msr-color-ink-50)}.msr\\:bg-ink-900\\/90{background-color:var(--msr-color-ink-900)}@supports (color:color-mix(in lab, red, red)){.msr\\:bg-ink-900\\/90{background-color:color-mix(in oklab, var(--msr-color-ink-900) 90%, transparent)}}.msr\\:bg-transparent{background-color:#0000}.msr\\:bg-white{background-color:var(--msr-color-white)}.msr\\:object-contain{object-fit:contain}.msr\\:p-0{padding:calc(var(--msr-spacing) * 0)}.msr\\:p-1{padding:calc(var(--msr-spacing) * 1)}.msr\\:p-\\[2px\\]{padding:2px}.msr\\:p-px{padding:1px}.msr\\:px-0{padding-inline:calc(var(--msr-spacing) * 0)}.msr\\:px-1{padding-inline:calc(var(--msr-spacing) * 1)}.msr\\:px-1\\.5{padding-inline:calc(var(--msr-spacing) * 1.5)}.msr\\:px-2{padding-inline:calc(var(--msr-spacing) * 2)}.msr\\:px-3{padding-inline:calc(var(--msr-spacing) * 3)}.msr\\:py-0\\.5{padding-block:calc(var(--msr-spacing) * .5)}.msr\\:py-1{padding-block:calc(var(--msr-spacing) * 1)}.msr\\:py-1\\.5{padding-block:calc(var(--msr-spacing) * 1.5)}.msr\\:py-2{padding-block:calc(var(--msr-spacing) * 2)}.msr\\:pr-6{padding-right:calc(var(--msr-spacing) * 6)}.msr\\:pb-1{padding-bottom:calc(var(--msr-spacing) * 1)}.msr\\:text-center{text-align:center}.msr\\:text-left{text-align:left}.msr\\:font-mono{font-family:var(--msr-font-mono)}.msr\\:text-\\[9px\\]{font-size:9px}.msr\\:text-\\[10px\\]{font-size:10px}.msr\\:text-\\[11px\\]{font-size:11px}.msr\\:text-\\[12px\\]{font-size:12px}.msr\\:text-\\[16px\\]{font-size:16px}.msr\\:leading-3{--tw-leading:calc(var(--msr-spacing) * 3);line-height:calc(var(--msr-spacing) * 3)}.msr\\:leading-4{--tw-leading:calc(var(--msr-spacing) * 4);line-height:calc(var(--msr-spacing) * 4)}.msr\\:leading-6{--tw-leading:calc(var(--msr-spacing) * 6);line-height:calc(var(--msr-spacing) * 6)}.msr\\:leading-none{--tw-leading:1;line-height:1}.msr\\:font-medium{--tw-font-weight:var(--msr-font-weight-medium);font-weight:var(--msr-font-weight-medium)}.msr\\:font-semibold{--tw-font-weight:var(--msr-font-weight-semibold);font-weight:var(--msr-font-weight-semibold)}.msr\\:text-pretty{text-wrap:pretty}.msr\\:break-words{overflow-wrap:break-word}.msr\\:whitespace-normal{white-space:normal}.msr\\:whitespace-nowrap{white-space:nowrap}.msr\\:whitespace-pre{white-space:pre}.msr\\:whitespace-pre-wrap{white-space:pre-wrap}.msr\\:text-\\[\\#64748b\\]{color:#64748b}.msr\\:text-black,.msr\\:text-black\\/45{color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:text-black\\/45{color:color-mix(in oklab, var(--msr-color-black) 45%, transparent)}}.msr\\:text-black\\/60{color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:text-black\\/60{color:color-mix(in oklab, var(--msr-color-black) 60%, transparent)}}.msr\\:text-ink-50{color:var(--msr-color-ink-50)}.msr\\:text-ink-200{color:var(--msr-color-ink-200)}.msr\\:text-ink-500{color:var(--msr-color-ink-500)}.msr\\:text-ink-700{color:var(--msr-color-ink-700)}.msr\\:text-ink-900{color:var(--msr-color-ink-900)}.msr\\:text-red-600{color:var(--msr-color-red-600)}.msr\\:text-white,.msr\\:text-white\\/60{color:var(--msr-color-white)}@supports (color:color-mix(in lab, red, red)){.msr\\:text-white\\/60{color:color-mix(in oklab, var(--msr-color-white) 60%, transparent)}}.msr\\:tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,)}.msr\\:opacity-0{opacity:0}.msr\\:opacity-100{opacity:1}.msr\\:shadow-lg{--tw-shadow:0 10px 15px -3px var(--tw-shadow-color,#0000001a), 0 4px 6px -4px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:shadow-md{--tw-shadow:0 4px 6px -1px var(--tw-shadow-color,#0000001a), 0 2px 4px -2px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:shadow-sm{--tw-shadow:0 1px 3px 0 var(--tw-shadow-color,#0000001a), 0 1px 2px -1px var(--tw-shadow-color,#0000001a);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:outline,.msr\\:outline-1{outline-style:var(--tw-outline-style);outline-width:1px}.msr\\:outline-\\[\\#0d99ff\\]{outline-color:#0d99ff}.msr\\:transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke,--tw-gradient-from,--tw-gradient-via,--tw-gradient-to;transition-timing-function:var(--tw-ease,var(--msr-default-transition-timing-function));transition-duration:var(--tw-duration,var(--msr-default-transition-duration))}.msr\\:transition-opacity{transition-property:opacity;transition-timing-function:var(--tw-ease,var(--msr-default-transition-timing-function));transition-duration:var(--tw-duration,var(--msr-default-transition-duration))}.msr\\:transition-shadow{transition-property:box-shadow;transition-timing-function:var(--tw-ease,var(--msr-default-transition-timing-function));transition-duration:var(--tw-duration,var(--msr-default-transition-duration))}.msr\\:transition-transform{transition-property:transform,translate,scale,rotate;transition-timing-function:var(--tw-ease,var(--msr-default-transition-timing-function));transition-duration:var(--tw-duration,var(--msr-default-transition-duration))}.msr\\:transition-none{transition-property:none}.msr\\:duration-150{--tw-duration:.15s;transition-duration:.15s}.msr\\:outline-none{--tw-outline-style:none;outline-style:none}.msr\\:select-none{-webkit-user-select:none;user-select:none}.msr\\:focus-within\\:rounded-l-\\[5px\\]:focus-within{border-top-left-radius:5px;border-bottom-left-radius:5px}.msr\\:focus-within\\:rounded-r-\\[5px\\]:focus-within{border-top-right-radius:5px;border-bottom-right-radius:5px}.msr\\:focus-within\\:outline:focus-within,.msr\\:focus-within\\:outline-1:focus-within{outline-style:var(--tw-outline-style);outline-width:1px}.msr\\:focus-within\\:outline-offset-\\[-1px\\]:focus-within{outline-offset:-1px}.msr\\:focus-within\\:outline-\\[\\#0d99ff\\]:focus-within{outline-color:#0d99ff}@media (hover:hover){.msr\\:hover\\:border-ink-200:hover{border-color:var(--msr-color-ink-200)}.msr\\:hover\\:bg-\\[\\#0d99ff\\]:hover{background-color:#0d99ff}.msr\\:hover\\:bg-black\\/4:hover{background-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:hover\\:bg-black\\/4:hover{background-color:color-mix(in oklab, var(--msr-color-black) 4%, transparent)}}.msr\\:hover\\:bg-black\\/10:hover{background-color:var(--msr-color-black)}@supports (color:color-mix(in lab, red, red)){.msr\\:hover\\:bg-black\\/10:hover{background-color:color-mix(in oklab, var(--msr-color-black) 10%, transparent)}}.msr\\:hover\\:bg-ink-50:hover{background-color:var(--msr-color-ink-50)}.msr\\:hover\\:bg-ink-200\\/50:hover{background-color:var(--msr-color-ink-200)}@supports (color:color-mix(in lab, red, red)){.msr\\:hover\\:bg-ink-200\\/50:hover{background-color:color-mix(in oklab, var(--msr-color-ink-200) 50%, transparent)}}.msr\\:hover\\:bg-red-50:hover{background-color:var(--msr-color-red-50)}.msr\\:hover\\:text-black:hover{color:var(--msr-color-black)}.msr\\:hover\\:text-white:hover{color:var(--msr-color-white)}.msr\\:hover\\:underline:hover{text-decoration-line:underline}}.msr\\:focus\\:shadow-\\[inset_0_0_0_1px_\\#0d99ff\\]:focus{--tw-shadow:inset 0 0 0 1px var(--tw-shadow-color,#0d99ff);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:focus\\:outline-none:focus{--tw-outline-style:none;outline-style:none}.msr\\:focus-visible\\:bg-ink-50:focus-visible{background-color:var(--msr-color-ink-50)}.msr\\:focus-visible\\:shadow-\\[inset_0_0_0_1px_\\#0d99ff\\]:focus-visible{--tw-shadow:inset 0 0 0 1px var(--tw-shadow-color,#0d99ff);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:focus-visible\\:shadow-\\[inset_0_0_0_1px_\\#ef4444\\]:focus-visible{--tw-shadow:inset 0 0 0 1px var(--tw-shadow-color,#ef4444);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:focus-visible\\:ring-1:focus-visible{--tw-ring-shadow:var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color,currentcolor);box-shadow:var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}.msr\\:focus-visible\\:ring-\\[\\#0d99ff\\]\\/25:focus-visible{--tw-ring-color:oklab(66.9841% -.0648249 -.170866/.25)}.msr\\:focus-visible\\:outline:focus-visible,.msr\\:focus-visible\\:outline-1:focus-visible{outline-style:var(--tw-outline-style);outline-width:1px}.msr\\:focus-visible\\:outline-offset-1:focus-visible{outline-offset:1px}.msr\\:focus-visible\\:outline-ink-500:focus-visible{outline-color:var(--msr-color-ink-500)}.msr\\:focus-visible\\:outline-none:focus-visible{--tw-outline-style:none;outline-style:none}}:root,:host{--color-ink-50:#f8fafc;--color-ink-200:#e2e8f0;--color-ink-500:#64748b;--color-ink-700:#334155;--color-ink-900:#0f172a}:host{all:initial;color-scheme:light;color:#0f172a;letter-spacing:normal;--msr-spacing:4px;direction:ltr;font-family:ui-sans-serif,system-ui,sans-serif;font-size:16px;font-weight:400;line-height:1.5;display:block}*,:before,:after{box-sizing:border-box}.mesurer-toolbar-motion{--msr-toolbar-motion:.2s ease;filter:drop-shadow(0 0 .4px #00000038)drop-shadow(0 3px 8px #0000001a)drop-shadow(0 1px 3px #0000001a);width:max-content;max-width:100%;display:block;position:relative}.mesurer-toolbar-chrome{z-index:0;transform-origin:0;pointer-events:none;background:#fff;border-radius:12px;outline:1px solid #0000;position:absolute;inset:0;overflow:visible}.mesurer-toolbar-clip{z-index:1;transform-origin:0;position:relative;overflow:visible}.mesurer-toolbar-motion[data-resizing=collapse] .mesurer-toolbar-clip{overflow:hidden}.mesurer-toolbar-surface{transform-origin:0;padding:4px;position:relative}.mesurer-toolbar-divider{background:var(--color-ink-200);flex:none;align-self:stretch;width:1px;margin-block:-4px}.mesurer-toolbar-minimize-stage{min-width:0;width:var(--msr-expanded-w,auto);flex:none;overflow:visible}.mesurer-toolbar-minimize-stage[data-minimized=true]{width:var(--msr-icon-w,auto);overflow:hidden}.mesurer-toolbar-motion[data-resizing=collapse] .mesurer-toolbar-minimize-stage{overflow:hidden}.mesurer-toolbar-minimize-stage[data-minimized=true] .mesurer-toolbar-minimize-track{transform:translateX(calc(-1 * var(--msr-expanded-w,0px)))}.mesurer-toolbar-minimize-stage:has([role=dialog]),.mesurer-toolbar-minimize-stage:has([role=menu]),.mesurer-toolbar-minimize-stage:has(.mesurer-screenshot-preview){overflow:visible}.mesurer-toolbar-minimize-track{pointer-events:none;flex:none;display:flex;transform:translate(0)}.mesurer-toolbar-minimize-slot{flex:none}.mesurer-toolbar-minimize-slot[data-slot=expanded]{width:var(--msr-expanded-w,auto)}.mesurer-toolbar-minimize-slot[data-slot=icon]{width:var(--msr-icon-w,auto)}.mesurer-toolbar-minimize-slot:not([data-open=true]){pointer-events:none}.mesurer-toolbar-minimize-slot[data-open=true]{pointer-events:auto}.mesurer-toolbar-motion:not([data-resizing=collapse]) .mesurer-toolbar-minimize-slot[data-slot=icon]:not([data-open=true]){visibility:hidden}.mesurer-toolbar-restore svg{transform:translate(-1.5px,-.5px)}.mesurer-toolbar-tool-stage{min-width:0;width:var(--msr-inspect-w,auto);flex:none;overflow:hidden}.mesurer-toolbar-tool-stage[data-group=annotate]{width:var(--msr-annotate-w,auto)}.mesurer-toolbar-tool-stage[data-group=annotate] .mesurer-toolbar-tool-track{transform:translateX(calc(-1 * var(--msr-inspect-w,0px)))}.mesurer-toolbar-tool-stage:has([role=menu]){overflow:visible}.mesurer-toolbar-motion[data-resizing=true] .mesurer-toolbar-tool-stage{overflow:hidden}.mesurer-toolbar-tool-track{flex:none;display:flex;transform:translate(0)}.mesurer-toolbar-motion[data-ready=true] .mesurer-toolbar-tool-switch-pill{transition:transform var(--msr-toolbar-motion)}.mesurer-toolbar-tool-slot{flex:none}.mesurer-toolbar-tool-slot[data-group=inspect]{width:var(--msr-inspect-w,auto)}.mesurer-toolbar-tool-slot[data-group=annotate]{width:var(--msr-annotate-w,auto)}.mesurer-toolbar-tool-slot:not([data-open=true]){pointer-events:none}.mesurer-toolbar-motion:not([data-resizing]) .mesurer-toolbar-tool-slot:not([data-open=true]){visibility:hidden}.mesurer-toolbar-tool-panel{width:max-content}.mesurer-toolbar-tooltips{z-index:100;pointer-events:none;position:absolute;inset:0;overflow:visible}.mesurer-toolbar-trailing{z-index:1;isolation:isolate;background:#fff;flex:none;position:relative}.mesurer-toolbar-tool-switch{z-index:1;isolation:isolate;background:#fff;position:relative}.mesurer-toolbar-tool-switch-pill{z-index:0;background:var(--color-ink-200);border-radius:6px;width:28px;height:28px;position:absolute;top:2px;left:2px;transform:translate(0)}.mesurer-toolbar-tool-switch[data-value=annotate] .mesurer-toolbar-tool-switch-pill{transform:translate(30px)}.mesurer-toolbar-tool-switch>:not(.mesurer-toolbar-tool-switch-pill){z-index:1;position:relative}@media (prefers-reduced-motion:reduce){.mesurer-toolbar-motion,.mesurer-toolbar-chrome,.mesurer-toolbar-tool-track,.mesurer-toolbar-minimize-track,.mesurer-toolbar-trailing,.mesurer-toolbar-motion[data-ready=true] .mesurer-toolbar-tool-switch-pill{transition:none}.mesurer-screenshot-preview{animation-name:mesurer-screenshot-preview-reduced;animation-duration:5s;animation-timing-function:linear;animation-fill-mode:both}}@keyframes mesurer-screenshot-preview{0%,3.1%{opacity:0}6.2%,96.9%{opacity:1}to{opacity:0}}@keyframes mesurer-screenshot-preview-reduced{0%,to{opacity:1}}.mesurer-settings-panel::-webkit-scrollbar{display:none}.mesurer-toast-surface{box-shadow:0 0 .5px #0000002e,0 3px 8px #0000001a,0 1px 3px #0000001a}.mesurer-root{--msr-spacing:4px}@property --tw-translate-x{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-y{syntax:"*";inherits:false;initial-value:0}@property --tw-translate-z{syntax:"*";inherits:false;initial-value:0}@property --tw-border-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-leading{syntax:"*";inherits:false}@property --tw-font-weight{syntax:"*";inherits:false}@property --tw-ordinal{syntax:"*";inherits:false}@property --tw-slashed-zero{syntax:"*";inherits:false}@property --tw-numeric-figure{syntax:"*";inherits:false}@property --tw-numeric-spacing{syntax:"*";inherits:false}@property --tw-numeric-fraction{syntax:"*";inherits:false}@property --tw-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-shadow-color{syntax:"*";inherits:false}@property --tw-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-inset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-shadow-color{syntax:"*";inherits:false}@property --tw-inset-shadow-alpha{syntax:"<percentage>";inherits:false;initial-value:100%}@property --tw-ring-color{syntax:"*";inherits:false}@property --tw-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-inset-ring-color{syntax:"*";inherits:false}@property --tw-inset-ring-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-ring-inset{syntax:"*";inherits:false}@property --tw-ring-offset-width{syntax:"<length>";inherits:false;initial-value:0}@property --tw-ring-offset-color{syntax:"*";inherits:false;initial-value:#fff}@property --tw-ring-offset-shadow{syntax:"*";inherits:false;initial-value:0 0 #0000}@property --tw-outline-style{syntax:"*";inherits:false;initial-value:solid}@property --tw-duration{syntax:"*";inherits:false}`,
+  h = {
+    name: `mesurer`,
+    version: `0.1.4`,
+    description: `Inspect, annotate, and give feedback on any live interface`,
+    license: `MIT`,
+    author: `Julien Thibeaut`,
+    type: `module`,
+    main: `./dist/index.cjs`,
+    module: `./dist/index.js`,
+    types: `./dist/index.d.ts`,
+    exports: {
+      ".": {
+        types: `./dist/index.d.ts`,
+        import: `./dist/index.js`,
+        require: `./dist/index.cjs`
+      },
+      "./styles.css": `./dist/styles.css`,
+      "./package.json": `./package.json`
+    },
+    files: [`dist`, `dist/styles.css`, `CHANGELOG.md`, `README.md`, `PRIVACY.md`, `LICENSE`],
+    sideEffects: [`*.css`],
+    publishConfig: {
+      access: `public`
+    },
+    homepage: `https://mesurer.dev`,
+    repository: {
+      type: `git`,
+      url: `https://github.com/ibelick/mesurer.git`
+    },
+    bugs: {
+      url: `https://github.com/ibelick/mesurer/issues`
+    },
+    scripts: {
+      "generate:styles": `pnpm exec tailwindcss -i styles.css -o styles.generated.css -m && node scripts/generate-styles.mjs`,
+      build: `pnpm run generate:styles && tsup && pnpm exec tailwindcss -i styles.css -o dist/styles.css -m`,
+      dev: `node scripts/dev.mjs`,
+      pretypecheck: `pnpm run generate:styles`,
+      typecheck: `tsc --noEmit`,
+      prepublishOnly: `npm run typecheck && npm run build`
+    },
+    peerDependencies: {
+      react: `>=18.0.0`,
+      "react-dom": `>=18.0.0`
+    },
+    devDependencies: {
+      "@tailwindcss/cli": `^4.2.2`,
+      "@types/react": `^19.0.0`,
+      "@types/react-dom": `^19.0.0`,
+      react: `^19.0.0`,
+      "react-dom": `^19.0.0`,
+      tailwindcss: `^4.2.2`,
+      tsup: `^8.5.0`,
+      typescript: `^5.9.2`
+    },
+    keywords: [`measurement`, `alignment`]
+  },
+  g = (e, t = 0, n = 1) => Math.min(n, Math.max(t, e)),
+  _ = (e, t = 2) => {
+    let n = 10 ** t;
+    return Math.round(e * n) / n;
+  },
+  v = e => {
+    let t = e.trim(),
+      n = t.endsWith(`%`) ? t.slice(0, -1).trim() : t;
+    if (!/^[+-]?(?:\d+\.?\d*|\.\d+)(?:e[+-]?\d+)?$/i.test(n)) return null;
+    let r = Number.parseFloat(n);
+    return Number.isFinite(r) ? t.endsWith(`%`) ? g(r / 100) * 255 : g(r / 255) * 255 : null;
+  },
+  y = e => {
+    if (!e) return 1;
+    let t = e.trim(),
+      n = t.endsWith(`%`) ? t.slice(0, -1).trim() : t;
+    if (!/^[+-]?(?:\d+\.?\d*|\.\d+)(?:e[+-]?\d+)?$/i.test(n)) return null;
+    let r = Number.parseFloat(n);
+    return Number.isFinite(r) ? g(t.endsWith(`%`) ? r / 100 : r) : null;
+  },
+  b = e => {
+    let t = e.trim().toLowerCase();
+    if (!t || t === `transparent`) return null;
+    if (t.startsWith(`#`)) {
+      let e = t.slice(1),
+        n = e.length === 3 || e.length === 4 ? e.split(``).map(e => e + e).join(``) : e;
+      return ![6, 8].includes(n.length) || !/^[\da-f]+$/.test(n) ? null : {
+        red: Number.parseInt(n.slice(0, 2), 16),
+        green: Number.parseInt(n.slice(2, 4), 16),
+        blue: Number.parseInt(n.slice(4, 6), 16),
+        alpha: n.length === 8 ? Number.parseInt(n.slice(6, 8), 16) / 255 : 1
+      };
+    }
+    let n = t.match(/^rgba?\((.*)\)$/);
+    if (!n) return null;
+    let r = n[1].replace(/\//g, ` `).split(/[ ,]+/).filter(Boolean);
+    if (r.length < 3 || r.length > 4) return null;
+    let i = v(r[0]),
+      a = v(r[1]),
+      o = v(r[2]),
+      s = y(r[3]);
+    return i === null || a === null || o === null || s === null ? null : {
+      red: i,
+      green: a,
+      blue: o,
+      alpha: s
+    };
+  },
+  x = e => Math.round(g(e / 255) * 255),
+  S = e => {
+    let t = [e.red, e.green, e.blue].map(e => x(e).toString(16).padStart(2, `0`)).join(``);
+    return e.alpha >= .999 ? `#${t}` : `#${t}${Math.round(e.alpha * 255).toString(16).padStart(2, `0`)}`;
+  },
+  C = e => {
+    let t = `${x(e.red)}, ${x(e.green)}, ${x(e.blue)}`;
+    return e.alpha >= .999 ? `rgb(${t})` : `rgba(${t}, ${_(e.alpha, 3)})`;
+  },
+  w = e => {
+    let t = e.red / 255,
+      n = e.green / 255,
+      r = e.blue / 255,
+      i = Math.max(t, n, r),
+      a = Math.min(t, n, r),
+      o = (i + a) / 2,
+      s = i - a,
+      c = 0,
+      l = 0;
+    s !== 0 && (l = s / (1 - Math.abs(2 * o - 1)), c = i === t ? (n - r) / s % 6 : i === n ? (r - t) / s + 2 : (t - n) / s + 4, c *= 60, c < 0 && (c += 360));
+    let u = `hsl(${_(c, 1)} ${_(l * 100, 1)}% ${_(o * 100, 1)}%`;
+    return e.alpha >= .999 ? `${u})` : `${u} / ${_(e.alpha, 3)})`;
+  },
+  T = e => {
+    let t = e / 255;
+    return t <= .04045 ? t / 12.92 : ((t + .055) / 1.055) ** 2.4;
+  },
+  E = e => {
+    let t = T(e.red),
+      n = T(e.green),
+      r = T(e.blue),
+      i = .4122214708 * t + .5363325363 * n + .0514459929 * r,
+      a = .2119034982 * t + .6806995451 * n + .1073969566 * r,
+      o = .0883024619 * t + .2817188376 * n + .6299787005 * r,
+      s = Math.cbrt(i),
+      c = Math.cbrt(a),
+      l = Math.cbrt(o),
+      u = .2104542553 * s + .793617785 * c - .0040720468 * l,
+      d = 1.9779984951 * s - 2.428592205 * c + .4505937099 * l,
+      f = .0259040371 * s + .7827717662 * c - .808675766 * l,
+      p = Math.sqrt(d * d + f * f),
+      m = Math.atan2(f, d) * 180 / Math.PI;
+    m < 0 && (m += 360);
+    let h = `oklch(${_(u, 3)} ${_(p, 3)} ${_(m, 1)}`;
+    return e.alpha >= .999 ? `${h})` : `${h} / ${_(e.alpha, 3)})`;
+  },
+  D = (e, t) => t === `hex` ? S(e) : t === `rgb` ? C(e) : t === `hsl` ? w(e) : E(e),
+  O = e => Math.round(e),
+  k = (...e) => e.filter(Boolean).join(` `),
+  A = () => typeof crypto < `u` && `randomUUID` in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`;
+function j({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`9.4 12.5 12 12`} fill={`none`} aria-hidden={`true`}>{<path d={`m18.76 16.64-6.25-2.07c-0.68-0.22-1.31 0.4-1.09 1.08l2.1 6.17c0.24 0.74 1.25 0.78 1.55 0.06l1.17-2.55 2.6-1.17c0.72-0.33 0.67-1.29-0.08-1.52z`} fill={`none`} stroke={`currentColor`} strokeWidth={t * 12 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function M({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n,
+    i = 12 / 152 * r;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} d={`M64 36H48A12 12 0 0 0 36 48V64M96 36h28M148 36h16M176 64V48A12 12 0 0 0 164 36H148M36 96v28M36 148v16M64 176H48A12 12 0 0 1 36 164V148M90.1 36h31.9M36 90.1v31.9`} />, <svg x={`88`} y={`84`} width={152} height={152} viewBox={`9.4 12.5 12 12`} overflow={`visible`}>{<path d={`m18.76 16.64-6.25-2.07c-0.68-0.22-1.31 0.4-1.09 1.08l2.1 6.17c0.24 0.74 1.25 0.78 1.55 0.06l1.17-2.55 2.6-1.17c0.72-0.33 0.67-1.29-0.08-1.52z`} fill={`none`} stroke={`currentColor`} strokeWidth={i} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>]}</svg>;
+}
+function N({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<path d={`M76 48h96a16 16 0 0 1 16 16v96a16 16 0 0 1-16 16H76a16 16 0 0 1-16-16V64a16 16 0 0 1 16-16Zm32 32h96a16 16 0 0 1 16 16v96a16 16 0 0 1-16 16h-96a16 16 0 0 1-16-16V96a16 16 0 0 1 16-16Z`} fill={`none`} stroke={`currentColor`} strokeWidth={t * 256 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function P({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path d={`M56 40H200a16 16 0 0 1 16 16v36a16 16 0 0 1-16 16H108V200a16 16 0 0 1-16 16H56a16 16 0 0 1-16-16V56a16 16 0 0 1 16-16Z`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />, <path d={`M88 40v32M128 40v32M168 40v32M40 88h32M40 128h32M40 168h32`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`butt`} />]}</svg>;
+}
+function F({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1,
+  className: r
+}) {
+  let i = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`} className={r}>{<path d={`M40 80h176a16 16 0 0 1 16 16v64a16 16 0 0 1-16 16H40a16 16 0 0 1-16-16v-64a16 16 0 0 1 16-16ZM88 80v32M128 80v32M168 80v32`} fill={`none`} stroke={`currentColor`} strokeWidth={i} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function ee({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<path d={`M40 128H216M176 88L216 128L176 168`} fill={`none`} stroke={`currentColor`} strokeWidth={t * 256 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function I({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path d={`M64 36H48A12 12 0 0 0 36 48V64M176 64V48A12 12 0 0 0 164 36H148M64 176H48A12 12 0 0 1 36 164V148M90.1 36h31.9M36 90.1v31.9`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />, <path d={`M124 112h52M150 112v72`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />]}</svg>;
+}
+function L({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path d={`M40 188L86 68L132 188M69.3 137.6H102.7`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />, <path d={`M234 104V188M192 104A42 42 0 1 1 192 188A42 42 0 1 1 192 104`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />]}</svg>;
+}
+function te({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<path transform={`rotate(-45 128 128)`} d={`M108 48H148A16 16 0 0 1 164 64V92H148V156L142 200A12 12 0 0 1 114 200L108 156V92H92V64A16 16 0 0 1 108 48Z`} fill={`none`} stroke={`currentColor`} strokeWidth={t * 256 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function R({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<g transform={`rotate(-45 128 128)`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinejoin={`round`}>{[<path d={`M110 48H146A16 16 0 0 1 162 64V160L128 216L94 160V64A16 16 0 0 1 110 48Z`} strokeLinecap={`round`} />, <path d={`M94 160H162`} strokeLinecap={`butt`} />]}</g>}</svg>;
+}
+function ne({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path d={`M56 96H96V76A12 12 0 0 1 108 64H148A12 12 0 0 1 160 76V96H200A16 16 0 0 1 216 112V188A16 16 0 0 1 200 204H56A16 16 0 0 1 40 188V112A16 16 0 0 1 56 96Z`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />, <circle cx={`128`} cy={`150`} r={`32`} fill={`none`} stroke={`currentColor`} strokeWidth={r} />]}</svg>;
+}
+function z({
+  size: e = 20,
+  strokePx: t = 1,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<path d={`M93 67.38L111 33.52L145 33.52L163 67.38L201.32 66.04L218.32 95.48L198 128L218.32 160.52L201.32 189.96L163 188.62L145 222.48L111 222.48L93 188.62L54.68 189.96L37.68 160.52L58 128L37.68 95.48L54.68 66.04L93 67.38ZM160 128A32 32 0 1 0 96 128A32 32 0 1 0 160 128Z`} fill={`none`} fillRule={`evenodd`} stroke={`currentColor`} strokeWidth={t * 256 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function B({
+  size: e = 20,
+  strokePx: t = 1.25,
+  fill: n = 1
+}) {
+  let r = t * 256 / e / n,
+    i = 12 / 132 * r;
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{[<path d={`M56 40H200a16 16 0 0 1 16 16v36a16 16 0 0 1-16 16H108V200a16 16 0 0 1-16 16H56a16 16 0 0 1-16-16V56a16 16 0 0 1 16-16Z`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`round`} strokeLinejoin={`round`} />, <path d={`M88 40v32M128 40v32M168 40v32M40 88h32M40 128h32M40 168h32`} fill={`none`} stroke={`currentColor`} strokeWidth={r} strokeLinecap={`butt`} />, <svg x={`118`} y={`122`} width={132} height={132} viewBox={`9.4 12.5 12 12`} overflow={`visible`}>{<path d={`m18.76 16.64-6.25-2.07c-0.68-0.22-1.31 0.4-1.09 1.08l2.1 6.17c0.24 0.74 1.25 0.78 1.55 0.06l1.17-2.55 2.6-1.17c0.72-0.33 0.67-1.29-0.08-1.52z`} fill={`none`} stroke={`currentColor`} strokeWidth={i} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>]}</svg>;
+}
+function V({
+  size: e = 20,
+  strokePx: t = 1.25,
+  fill: n = 1
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`none`} aria-hidden={`true`}>{<path d={`M40 184C52.1 154.8 69.8 65 86 60C102.3 55 104.3 155 118 160C131.8 165 139.1 83.2 152 84C164.9 84.8 168.3 159 180 164C191.7 169 197.2 111.3 208 108C218.8 104.7 224.5 136.3 232 148`} fill={`none`} stroke={`currentColor`} strokeWidth={t * 256 / e / n} strokeLinecap={`round`} strokeLinejoin={`round`} />}</svg>;
+}
+function re({
+  size: e = 20
+}) {
+  return <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 80 80`} fill={`currentColor`} aria-hidden={`true`}>{[<path d={`M15.928 66.169c.189 0 .363-.062.503-.167L52.996 29.437c.105-.14.168-.314.168-.503V13.335c0-.438-.382-.385-.67-.168l-.17.169L.33 65.33c-.306.229-.557.84-.001.84h15.599Z`} />, <path d={`M79.161 66.169c.464 0 .839-.375.839-.838V13.017c-.054-.011-.11-.017-.168-.017-.274 0-.518.132-.671.336L27.167 65.33c-.204.153-.336.397-.336.671 0 .167.191.168.335.168h15.599c.188 0 .362-.062.503-.167l.168-.168 22.81-22.81c0 0 .202-.208.336-.266v22.574c0 .463.375.838.838.838h11.741Z`} />]}</svg>;
+}
+var H = ({
+    size: e = 24,
+    ...t
+  }) => <svg xmlns={`http://www.w3.org/2000/svg`} width={e} height={e} viewBox={`0 0 256 256`} fill={`currentColor`} aria-hidden={`true`} onDragStart={e => e.preventDefault()} {...t} />,
+  ie = ({
+    size: e = 12,
+    ...t
+  }) => (0, a.jsx)(H, {
+    size: e,
+    ...t,
+    children: <path d={`M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z`} />
+  }),
+  ae = 800,
+  U = (0, i.createContext)(null);
+function W({
+  label: e,
+  shortcut: t,
+  visible: n,
+  instant: r = !1,
+  side: s = `top`,
+  className: c,
+  anchorRef: l
+}) {
+  let u = (0, i.useContext)(U),
+    d = (0, i.useRef)(null),
+    [f, p] = (0, i.useState)(null),
+    m = n === !0 && u !== null;
+  (0, i.useLayoutEffect)(() => {
+    if (!m) {
+      p(null);
+      return;
+    }
+    let e = l?.current;
+    if (!e) return;
+    let t = () => {
+      let t = e.getBoundingClientRect(),
+        n = u.getBoundingClientRect();
+      p({
+        left: t.left - n.left + t.width / 2,
+        top: (s === `top` ? t.top : t.bottom) - n.top
+      });
+    };
+    t();
+    let n = e.ownerDocument.defaultView;
+    return n?.addEventListener(`scroll`, t, !0), n?.addEventListener(`resize`, t), () => {
+      n?.removeEventListener(`scroll`, t, !0), n?.removeEventListener(`resize`, t);
+    };
+  }, [l, e, u, m, s]);
+  let h = <span ref={d} role={`tooltip`} className={k(`msr:pointer-events-none msr:z-[100] msr:whitespace-nowrap msr:rounded msr:bg-black msr:px-2 msr:py-1 msr:text-[11px] msr:text-white msr:transition-opacity msr:duration-150 msr:select-none`, !(m && f) && `msr:absolute msr:left-1/2 msr:-translate-x-1/2`, r && `msr:transition-none`, n === void 0 ? null : n ? `msr:opacity-100` : `msr:opacity-0`, c)} style={m && f ? {
+    position: `absolute`,
+    left: f.left,
+    top: f.top,
+    right: `auto`,
+    bottom: `auto`,
+    margin: 0,
+    transform: s === `top` ? `translate(-50%, calc(-100% - 0.5rem))` : `translate(-50%, 0.5rem)`
+  } : s === `top` ? {
+    bottom: `100%`,
+    marginBottom: `0.5rem`
+  } : {
+    top: `100%`,
+    marginTop: `0.5rem`
+  }}>{[e, t ? (0, a.jsxs)(a.Fragment, {
+      children: [` `, <kbd className={`msr:text-white/60`}>{t}</kbd>]
+    }) : null]}</span>;
+  return m && u ? (0, o.createPortal)(h, u) : h;
+}
+function G() {
+  let [e, t] = (0, i.useState)(null),
+    n = (0, i.useRef)(null),
+    r = (0, i.useRef)(!1),
+    [a, o] = (0, i.useState)(!1),
+    s = (0, i.useCallback)(() => {
+      n.current !== null && (window.clearTimeout(n.current), n.current = null);
+    }, []);
+  return {
+    visibleTooltipId: e,
+    tooltipInstant: a,
+    onTooltipEnter: (0, i.useCallback)(e => {
+      if (s(), r.current) {
+        o(!0), t(e);
+        return;
+      }
+      o(!1), n.current = window.setTimeout(() => {
+        t(e), r.current = !0, n.current = null;
+      }, ae);
+    }, [s]),
+    onTooltipLeave: (0, i.useCallback)(() => {
+      s(), t(null);
+    }, [s]),
+    onTooltipContainerLeave: (0, i.useCallback)(() => {
+      s(), t(null), r.current = !1, o(!1);
+    }, [s])
+  };
+}
+var oe = {
+    font: `sans-serif`,
+    color: `#000000`
+  },
+  K = [{
+    value: `handwritten`,
+    label: `Handwritten`
+  }, {
+    value: `code`,
+    label: `Code`
+  }, {
+    value: `serif`,
+    label: `Serif`
+  }, {
+    value: `sans-serif`,
+    label: `Sans-serif`
+  }],
+  se = {
+    handwritten: `"Segoe Script", "Bradley Hand", "Apple Chancery", "Snell Roundhand", "Comic Sans MS", cursive`,
+    code: `ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace`,
+    serif: `ui-serif, Georgia, "Times New Roman", "Noto Serif", serif`,
+    "sans-serif": `ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`
+  },
+  q = e => e === `handwritten` || e === `code` || e === `serif` || e === `sans-serif`,
+  ce = e => se[e.font],
+  le = e => {
+    if (!e || typeof e != `object`) return;
+    let t = e;
+    return {
+      font: q(t.font) ? t.font : oe.font,
+      color: typeof t.color == `string` && t.color ? t.color : oe.color
+    };
+  },
+  ue = () => {
+    try {
+      return globalThis.chrome?.runtime;
+    } catch {
+      return;
+    }
+  },
+  de = e => {
+    try {
+      return !!e.getManifest?.().update_url;
+    } catch {
+      return !1;
+    }
+  },
+  fe = () => {
+    try {
+      if ({
+        BASE_URL: `/`,
+        DEV: !1,
+        MODE: `production`,
+        PROD: !0,
+        SSR: !1,
+        TSS_DEV_SERVER: `false`,
+        TSS_DEV_SSR_STYLES_BASEPATH: `/`,
+        TSS_DEV_SSR_STYLES_ENABLED: `true`,
+        TSS_DISABLE_CSRF_MIDDLEWARE_WARNING: `false`,
+        TSS_INLINE_CSS_ENABLED: `false`,
+        TSS_ROUTER_BASEPATH: ``,
+        TSS_SERVER_FN_BASE: `/_serverFn/`,
+        VITE_CF_ANALYTICS_TOKEN: ``,
+        VITE_POSTHOG_HOST: `https://us.i.posthog.com`,
+        VITE_POSTHOG_KEY: `phc_tzNUCQJfRV934Tox78RKjBii4dhbyxzHQtcNRNPBHScZ`,
+        VITE_SUPABASE_PUBLISHABLE_KEY: `sb_publishable_z5m7qYicKU7-fqhf08cZgw_yJrsdyFp`,
+        VITE_SUPABASE_URL: `https://dcfmseuukjnydbmzxwhi.supabase.co`
+      }.DEV) return !0;
+    } catch {}
+    return !1;
+  },
+  pe = () => {
+    let e = ue();
+    return e?.id ? de(e) ? null : `build` : fe() ? `dev` : null;
+  },
+  J = (e, t = {}) => {
+    if (t.screenshot) return `screenshot`;
+    if (t.colorPicker) return `color`;
+    if (e === `guides`) return `guides`;
+    if (e === `arrows`) return `arrows`;
+    if (e === `text`) return `text`;
+    if (e === `select` || e === `selection`) return `selection`;
+    if (e === `rulers` || t.rulersVisible && e === `none`) return `rulers`;
+  },
+  me = [`hex`, `rgb`, `hsl`, `oklch`],
+  he = `msr:grid-cols-[78px_150px]`,
+  ge = [{
+    value: `solid`,
+    label: `Solid`
+  }, {
+    value: `dashed`,
+    label: `Dashed`
+  }, {
+    value: `dotted`,
+    label: `Dotted`
+  }],
+  _e = e => Number(e.toFixed(2));
+function ve({
+  left: e,
+  right: t
+}) {
+  return <div className={`mesurer-control-shell msr:group msr:flex msr:h-6 msr:w-full msr:min-w-0 msr:items-center msr:overflow-hidden msr:rounded-[5px] msr:border msr:border-transparent msr:bg-ink-50 msr:hover:border-ink-200`}>{[<div className={`mesurer-control-focus msr:flex msr:h-full msr:min-w-0 msr:flex-1 msr:items-center msr:focus-within:rounded-l-[5px] msr:focus-within:outline msr:focus-within:outline-1 msr:focus-within:outline-[#0d99ff] msr:focus-within:outline-offset-[-1px]`}>{e}</div>, <div className={`mesurer-control-focus msr:box-border msr:flex msr:h-full msr:w-12 msr:shrink-0 msr:items-center msr:border-l msr:border-ink-200 msr:focus-within:rounded-r-[5px] msr:focus-within:outline msr:focus-within:outline-1 msr:focus-within:outline-[#0d99ff] msr:focus-within:outline-offset-[-1px]`}>{t}</div>]}</div>;
+}
+function ye({
+  label: e,
+  checked: t,
+  onChange: n
+}) {
+  return <button type={`button`} role={`switch`} aria-checked={t} className={`msr:col-span-2 msr:grid msr:h-8 msr:w-full msr:appearance-none ${he} msr:items-center msr:gap-0 msr:text-left msr:text-[12px] msr:leading-none msr:text-ink-700`} onClick={() => n(!t)}>{[<span>{e}</span>, <span aria-hidden={`true`} style={{
+      justifySelf: `end`
+    }} data-checked={t ? `true` : void 0} className={k(`mesurer-switch-track msr:flex msr:h-[14px] msr:w-[26px] msr:shrink-0 msr:items-center msr:rounded-full msr:border msr:p-px msr:transition-colors`, t ? `msr:border-[#0d99ff] msr:bg-[#0d99ff]` : `msr:border-ink-200 msr:bg-ink-50`)}>{<span className={`msr:block msr:size-[10px] msr:shrink-0 msr:rounded-full msr:bg-white msr:shadow-sm msr:transition-transform`} style={{
+        transform: `translateX(${t ? 12 : 0}px)`
+      }} />}</span>]}</button>;
+}
+function be({
+  label: e,
+  min: t,
+  max: n,
+  step: r,
+  value: o,
+  onChange: s,
+  inputMin: c = t,
+  formatValue: l = e => String(e),
+  parseInput: u = e => Number(e)
+}) {
+  let d = Math.min(n, Math.max(t, o)),
+    f = (d - t) / (n - t) * 100,
+    [p, m] = (0, i.useState)(l(o)),
+    [h, g] = (0, i.useState)(!1),
+    _ = () => {
+      let e = u(p);
+      Number.isFinite(e) && s(_e(Math.min(n, Math.max(c, e))));
+      let t = Number.isFinite(e) ? _e(Math.min(n, Math.max(c, e))) : o;
+      m(l(t)), g(!1);
+    },
+    v = e => {
+      e.stopPropagation();
+      let i = e.currentTarget.getBoundingClientRect(),
+        a = Math.max(1, i.width - 16),
+        o = t + Math.min(1, Math.max(0, (e.clientX - i.left - 8) / a)) * (n - t),
+        c = r === 1 ? Math.round(o) : Math.round((o - t) / r) * r + t;
+      s(_e(Math.min(n, Math.max(t, c))));
+    };
+  return <div className={`msr:col-span-2 msr:grid msr:h-8 msr:w-full ${he} msr:items-center msr:gap-0`}>{[<span className={`msr:text-[11px] msr:font-medium msr:text-ink-700`}>{e}</span>, (0, a.jsx)(ve, {
+      left: <div className={`msr:relative msr:min-w-0 msr:flex-1 msr:touch-none msr:select-none msr:px-2`} style={{
+        height: 20
+      }} data-slider-container={`true`} onPointerDown={e => {
+        e.stopPropagation(), e.currentTarget.setPointerCapture(e.pointerId), v(e);
+      }} onPointerMove={e => {
+        e.currentTarget.hasPointerCapture(e.pointerId) && v(e);
+      }} onPointerUp={e => {
+        e.stopPropagation(), e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId);
+      }} onPointerCancel={e => {
+        e.stopPropagation(), e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId);
+      }} onClick={e => e.stopPropagation()}>{[<div className={`msr:absolute msr:left-[8px] msr:right-[8px] msr:rounded-full`} style={{
+          top: 8,
+          height: 4,
+          backgroundColor: `rgba(15, 23, 42, 0.16)`
+        }} aria-hidden={`true`} />, <div className={`msr:absolute msr:left-[8px] msr:rounded-full`} style={{
+          top: 8,
+          width: `calc(${f}% - ${f * 8 * 2 / 100}px)`,
+          height: 4,
+          backgroundColor: `#0d99ff`
+        }} aria-hidden={`true`} />, <div className={`msr:absolute msr:rounded-[5px] msr:bg-white msr:shadow-sm msr:transition-shadow msr:outline-none msr:focus-visible:ring-1 msr:focus-visible:ring-[#0d99ff]/25`} style={{
+          left: `calc(8px + (100% - 16px) * ${f / 100})`,
+          top: 4,
+          width: 12,
+          height: 12,
+          border: `0`,
+          transform: `translateX(-50%)`
+        }} role={`slider`} tabIndex={0} aria-label={e} aria-valuemin={t} aria-valuemax={n} aria-valuenow={d} aria-orientation={`horizontal`} onKeyDown={e => {
+          e.stopPropagation();
+          let i = e.key === `ArrowRight` || e.key === `ArrowUp` ? 1 : e.key === `ArrowLeft` || e.key === `ArrowDown` ? -1 : 0;
+          if (e.key === `Home`) s(t);else if (e.key === `End`) s(n);else if (i) e.preventDefault(), s(_e(Math.min(n, Math.max(c, d + i * r))));else return;
+          e.preventDefault();
+        }} />]}</div>,
+      right: <input type={`text`} aria-label={`${e} value`} className={`msr:h-full msr:w-full msr:shrink-0 msr:border-0 msr:bg-transparent msr:px-1 msr:text-left msr:font-mono msr:text-[12px] msr:font-medium msr:tabular-nums msr:text-ink-700 msr:outline-none`} style={{
+        boxSizing: `border-box`,
+        borderRadius: `0 5px 5px 0`,
+        lineHeight: `1rem`
+      }} value={h ? p : l(o)} onFocus={() => {
+        m(l(o)), g(!0);
+      }} onChange={e => {
+        let t = e.target.value;
+        m(t);
+        let r = u(t);
+        Number.isFinite(r) && s(_e(Math.min(n, Math.max(c, r))));
+      }} onPointerDown={e => e.stopPropagation()} onClick={e => e.stopPropagation()} onBlur={() => {
+        _();
+      }} onKeyDown={e => {
+        if (e.stopPropagation(), e.key === `ArrowUp` || e.key === `ArrowDown`) {
+          e.preventDefault(), u(e.currentTarget.value);
+          let t = e.key === `ArrowUp` ? 1 : -1,
+            i = Number(_e(Math.min(n, Math.max(c, d + t * r))));
+          m(l(i)), s(i);
+          return;
+        }
+        e.key === `Enter` && (e.preventDefault(), e.currentTarget.blur());
+      }} />
+    })]}</div>;
+}
+function xe({
+  label: e,
+  value: t,
+  fallback: n,
+  ownerWindow: r,
+  onChange: o
+}) {
+  let s = b(t),
+    c = r.document.createElement(`canvas`).getContext(`2d`);
+  c && (c.fillStyle = t);
+  let l = typeof c?.fillStyle == `string` ? c.fillStyle : ``,
+    u = l ? b(l) : null,
+    d = s ?? u ? S(s ?? u).slice(0, 7) : n,
+    f = s ?? u ?? b(n),
+    p = f ? S({
+      ...f,
+      alpha: 1
+    }).slice(1).toUpperCase() : `000000`,
+    m = f ? Math.round(f.alpha * 100) : 100,
+    [h, g] = (0, i.useState)(p),
+    [_, v] = (0, i.useState)(String(m)),
+    [y, x] = (0, i.useState)(!1),
+    [C, w] = (0, i.useState)(!1),
+    T = (0, i.useRef)(null),
+    E = (0, i.useRef)(null),
+    D = (0, i.useRef)(null),
+    O = (e, t) => {
+      if (!/^[\da-f]{6}$/i.test(e)) return;
+      let n = b(`#${e}`);
+      n && o(S({
+        ...n,
+        alpha: Math.min(100, Math.max(0, t)) / 100
+      }));
+    },
+    k = e => {
+      O(e.value.slice(1), m);
+    },
+    A = e => {
+      let t = e.value.replace(/[^\da-f]/gi, ``).slice(0, 6).toUpperCase();
+      g(t), O(t, C ? Number(_) : m);
+    },
+    j = e => {
+      let t = e.value.replace(/\D/g, ``).slice(0, 3);
+      v(t), O(y ? h : p, Number(t));
+    };
+  (0, i.useLayoutEffect)(() => {
+    let e = T.current,
+      t = E.current,
+      n = D.current;
+    if (!(!e || !t || !n)) return e.oninput = () => k(e), e.onchange = () => k(e), t.oninput = () => A(t), n.oninput = () => j(n), () => {
+      e.oninput = null, e.onchange = null, t.oninput = null, n.oninput = null;
+    };
+  });
+  let M = r.CSS?.supports(`color`, t) ? t : n;
+  return <div className={`msr:col-span-2 msr:grid msr:h-8 msr:w-full ${he} msr:items-center msr:gap-0 msr:text-[12px] msr:text-ink-700`}>{[<span>{e}</span>, (0, a.jsx)(ve, {
+      left: (0, a.jsxs)(a.Fragment, {
+        children: [<span className={`msr:relative msr:ml-1 msr:block msr:size-4 msr:shrink-0 msr:overflow-hidden msr:rounded-[3px] msr:border msr:border-black/10`} style={{
+          backgroundColor: M
+        }}>{<input ref={T} type={`color`} aria-label={`${e} color picker`} value={d} className={`msr:absolute msr:inset-0 msr:size-full msr:cursor-pointer msr:opacity-0`} />}</span>, <input ref={E} aria-label={`${e} hex value`} type={`text`} value={y ? h : p} maxLength={7} className={`msr:min-w-0 msr:flex-1 msr:bg-transparent msr:px-2 msr:font-mono msr:text-[12px] msr:tabular-nums msr:text-ink-700 msr:outline-none`} onFocus={() => {
+          g(p), x(!0);
+        }} onBlur={() => x(!1)} onChange={e => A(e.currentTarget)} onPointerDown={e => e.stopPropagation()} onClick={e => e.stopPropagation()} />]
+      }),
+      right: <input ref={D} aria-label={`${e} opacity value`} type={`text`} inputMode={`numeric`} value={C ? _ ? `${_}%` : `` : `${m}%`} maxLength={4} className={`msr:h-full msr:w-full msr:bg-transparent msr:px-1 msr:text-left msr:font-mono msr:text-[12px] msr:tabular-nums msr:text-ink-700 msr:outline-none`} onFocus={() => {
+        v(String(m)), w(!0);
+      }} onBlur={() => w(!1)} onChange={e => j(e.currentTarget)} onKeyDown={e => {
+        if (e.key !== `ArrowUp` && e.key !== `ArrowDown`) return;
+        e.preventDefault(), e.stopPropagation();
+        let t = Number.parseInt(C ? _ : String(m), 10),
+          n = e.key === `ArrowUp` ? 1 : -1,
+          r = Math.min(100, Math.max(0, (Number.isFinite(t) ? t : 0) + n));
+        v(String(r)), O(y ? h : p, r);
+      }} onPointerDown={e => e.stopPropagation()} onClick={e => e.stopPropagation()} />
+    })]}</div>;
+}
+function Se() {
+  return <div aria-hidden={`true`} className={`msr:h-px msr:w-full msr:shrink-0 msr:bg-[#e6e6e6]`} />;
+}
+function Ce({
+  id: e,
+  title: t,
+  ariaLabel: n,
+  focused: r = !1,
+  children: i
+}) {
+  return <section data-mesurer-settings-section={e} data-focused={r ? `true` : void 0} className={`msr:grid msr:w-full ${he} msr:items-center msr:gap-0 msr:px-3 msr:py-2 msr:outline-none`} aria-label={n}>{[<h2 className={`msr:col-span-2 msr:flex msr:h-8 msr:items-center msr:text-[11px] msr:font-semibold msr:text-ink-500`}>{t}</h2>, i]}</section>;
+}
+function we({
+  ownerWindow: e,
+  formats: t,
+  selectedFormats: n,
+  onChange: r
+}) {
+  let [o, s] = (0, i.useState)(!1),
+    [c, l] = (0, i.useState)(0),
+    u = (0, i.useRef)(null),
+    d = (0, i.useRef)(null),
+    f = (0, i.useRef)([]),
+    p = `${(0, i.useId)()}-color-formats`;
+  (0, i.useLayoutEffect)(() => {
+    let t = e => {
+      u.current?.contains(e.target) || s(!1);
+    };
+    return e.document.addEventListener(`pointerdown`, t), () => e.document.removeEventListener(`pointerdown`, t);
+  }, [e]);
+  let m = e => {
+      if (n.includes(e)) {
+        if (n.length === 1) return;
+        r(n.filter(t => t !== e));
+        return;
+      }
+      r([...n, e]);
+    },
+    h = () => {
+      let e = t.findIndex(e => n.includes(e)),
+        r = e >= 0 ? e : 0;
+      return l(r), s(!0), r;
+    };
+  return <div ref={u} className={`msr:relative msr:w-full`}>{[<button ref={d} type={`button`} role={`combobox`} aria-label={`Color formats`} aria-expanded={o} aria-haspopup={`listbox`} aria-controls={p} className={`msr:relative msr:h-6 msr:w-full msr:rounded-[5px] msr:border msr:border-ink-200 msr:bg-white msr:px-1.5 msr:pr-6 msr:text-left msr:text-[11px] msr:text-ink-700 msr:outline-none msr:focus-visible:shadow-[inset_0_0_0_1px_#0d99ff]`} onClick={() => o ? s(!1) : h()} onKeyDown={t => {
+      if (t.key === `ArrowDown` || t.key === `Enter` || t.key === ` `) {
+        t.preventDefault(), t.stopPropagation();
+        let n = o ? c : h();
+        s(!0), e.requestAnimationFrame(() => f.current[n]?.focus());
+      }
+      t.key === `Escape` && (t.preventDefault(), t.stopPropagation(), s(!1));
+    }}>{[n.join(`, `), <span aria-hidden={`true`} className={`msr:pointer-events-none msr:absolute msr:right-2 msr:top-1/2 msr:size-1.5 msr:-translate-y-1/2 msr:rotate-45 msr:border-r msr:border-b msr:border-ink-500`} />]}</button>, o ? <div role={`listbox`} id={p} aria-label={`Color formats`} aria-multiselectable={`true`} className={`msr:absolute msr:left-0 msr:right-0 msr:top-full msr:z-10 msr:mt-1 msr:rounded-[5px] msr:border msr:border-ink-200 msr:bg-white msr:p-1 msr:shadow-md`}>{t.map((e, r) => {
+        let i = n.includes(e);
+        return <button ref={e => {
+          f.current[r] = e;
+        }} type={`button`} role={`option`} aria-selected={i} tabIndex={r === c ? 0 : -1} className={k(`msr:flex msr:h-6 msr:w-full msr:items-center msr:justify-between msr:rounded-[3px] msr:px-1.5 msr:text-left msr:text-[11px] msr:text-ink-700 msr:outline-none msr:hover:bg-ink-50 msr:focus-visible:bg-ink-50`)} onClick={() => m(e)} onFocus={() => l(r)} onKeyDown={n => {
+          if (n.key === `ArrowDown` || n.key === `ArrowUp`) {
+            n.preventDefault();
+            let e = n.key === `ArrowDown` ? 1 : -1,
+              i = Math.min(t.length - 1, Math.max(0, r + e));
+            l(i), f.current[i]?.focus();
+          }
+          if (n.key === `Home` || n.key === `End`) {
+            n.preventDefault();
+            let e = n.key === `Home` ? 0 : t.length - 1;
+            l(e), f.current[e]?.focus();
+          }
+          (n.key === ` ` || n.key === `Enter`) && (n.preventDefault(), n.stopPropagation(), m(e)), n.key === `Escape` && (n.preventDefault(), n.stopPropagation(), s(!1), d.current?.focus());
+        }} key={e}>{[<span>{e}</span>, i ? (0, a.jsx)(ie, {
+            size: 10,
+            "aria-hidden": `true`,
+            className: `msr:ml-auto msr:shrink-0 msr:text-ink-700`
+          }) : null]}</button>;
+      })}</div> : null]}</div>;
+}
+function Te({
+  ownerWindow: e,
+  select: t,
+  guides: n,
+  color: r,
+  camera: o,
+  rulers: s,
+  text: c,
+  arrows: l,
+  focusSection: u,
+  general: d
+}) {
+  let f = pe(),
+    {
+      persistOnReload: p,
+      setPersistOnReload: m,
+      shortcutsEnabled: g,
+      setShortcutsEnabled: _,
+      onMinimize: v,
+      onResetSettings: y,
+      onClearWorkspace: b
+    } = d,
+    {
+      settings: x,
+      setSettings: S
+    } = o,
+    {
+      settings: C,
+      setSettings: w
+    } = s,
+    {
+      settings: T,
+      setSettings: E
+    } = c,
+    {
+      color: D,
+      setColor: O,
+      snapArrowsEnabled: A,
+      setSnapArrowsEnabled: j,
+      arrowClickToPlace: M,
+      setArrowClickToPlace: N
+    } = l,
+    {
+      highlightColor: P,
+      setHighlightColor: F,
+      hoverHighlight: ee,
+      setHoverHighlight: I,
+      layoutDetailsEnabled: L,
+      setLayoutDetailsEnabled: te,
+      snapEnabled: R,
+      setSnapEnabled: ne,
+      multiMeasureEnabled: z,
+      setMultiMeasureEnabled: B
+    } = t,
+    {
+      guideColor: V,
+      setGuideColor: re,
+      guideStyle: H,
+      setGuideStyle: ie,
+      snapGuidesEnabled: ae,
+      setSnapGuidesEnabled: U,
+      guideHighlightEnabled: oe,
+      setGuideHighlightEnabled: se,
+      selectNewGuideEnabled: q,
+      setSelectNewGuideEnabled: ce
+    } = n,
+    {
+      colorFormats: le,
+      setColorFormats: ue,
+      colorClickFormat: de,
+      setColorClickFormat: fe
+    } = r,
+    J = G(),
+    _e = (0, i.useRef)(null);
+  return (0, i.useLayoutEffect)(() => {
+    let e = _e.current;
+    if (!e) return;
+    let t = e.ownerDocument.defaultView,
+      n = () => {
+        if (e.style.paddingBottom = `0px`, !u) {
+          e.scrollTop = 0;
+          return;
+        }
+        let t = e.querySelector(`[data-mesurer-settings-section="${u}"]`);
+        if (!t) return;
+        let n = t.offsetTop,
+          r = Math.max(0, e.scrollHeight - e.clientHeight),
+          i = Math.max(0, n - r);
+        i > 0 && (e.style.paddingBottom = `${i}px`);
+        let a = Math.max(0, e.scrollHeight - e.clientHeight);
+        e.scrollTop = Math.min(n, a);
+      };
+    n();
+    let r = 0,
+      i = t?.requestAnimationFrame(() => {
+        n(), r = t.requestAnimationFrame(n);
+      }),
+      a = new ResizeObserver(n);
+    return a.observe(e), () => {
+      a.disconnect(), i && t?.cancelAnimationFrame(i), r && t?.cancelAnimationFrame(r);
+    };
+  }, [u]), <div ref={_e} className={`mesurer-settings-panel msr:relative msr:flex msr:h-full msr:w-full msr:min-w-0 msr:flex-col msr:gap-0 msr:overflow-y-auto`} onPointerDown={e => e.stopPropagation()}>{[(0, a.jsxs)(Ce, {
+      id: `guides`,
+      title: `Guides`,
+      ariaLabel: `Guide settings`,
+      focused: u === `guides`,
+      children: [(0, a.jsx)(xe, {
+        label: `Color`,
+        value: V,
+        fallback: `#f97316`,
+        ownerWindow: e,
+        onChange: re
+      }), (0, a.jsx)(be, {
+        label: `Weight`,
+        min: 1,
+        inputMin: .01,
+        max: 4,
+        step: 1,
+        value: H.width,
+        formatValue: e => `${e}px`,
+        parseInput: e => Number.parseFloat(e),
+        onChange: e => ie(t => ({
+          ...t,
+          width: e
+        }))
+      }), <div className={`msr:col-span-2 msr:grid msr:grid-cols-[78px_minmax(0,1fr)] msr:items-center msr:gap-0`}>{[<span className={`msr:text-[12px] msr:text-ink-700`}>{`Pattern`}</span>, <div className={`msr:flex msr:gap-1`} role={`radiogroup`} aria-label={`Guide pattern`} onMouseLeave={J.onTooltipContainerLeave}>{ge.map(({
+            value: e,
+            label: t
+          }) => {
+            let n = H.pattern === e,
+              r = `guide-pattern-${e}`;
+            return <button type={`button`} role={`radio`} aria-label={`${t} guide pattern`} aria-checked={n} className={k(`msr:relative msr:flex msr:h-6 msr:min-w-0 msr:flex-1 msr:items-center msr:justify-center msr:rounded-[5px] msr:border msr:px-1 msr:focus-visible:outline-none msr:focus-visible:shadow-[inset_0_0_0_1px_#0d99ff]`, n ? `msr:border-[#0d99ff] msr:bg-[#0d99ff]/10` : `msr:border-ink-200 msr:bg-ink-50 msr:hover:bg-ink-100`)} onClick={() => ie(t => ({
+              ...t,
+              pattern: e
+            }))} onMouseEnter={() => J.onTooltipEnter(r)} onFocus={() => J.onTooltipEnter(r)} onBlur={J.onTooltipLeave} key={e}>{[<span aria-hidden={`true`} className={k(`msr:block msr:w-full msr:border-t-2 msr:border-ink-700`, e === `dashed` ? `msr:border-dashed` : e === `dotted` ? `msr:border-dotted` : `msr:border-solid`)} />, (0, a.jsx)(W, {
+                label: t,
+                visible: J.visibleTooltipId === r,
+                instant: J.tooltipInstant,
+                className: `msr:z-10`
+              })]}</button>;
+          })}</div>]}</div>, H.pattern === `solid` ? null : (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(be, {
+          label: `Length`,
+          min: 2,
+          max: 24,
+          step: 1,
+          value: H.dashLength,
+          formatValue: e => `${e}px`,
+          parseInput: e => Number.parseFloat(e),
+          onChange: e => ie(t => ({
+            ...t,
+            dashLength: e
+          }))
+        }), (0, a.jsx)(be, {
+          label: `Gap`,
+          min: 0,
+          max: 24,
+          step: 1,
+          value: H.gap,
+          formatValue: e => `${e}px`,
+          parseInput: e => Number.parseFloat(e),
+          onChange: e => ie(t => ({
+            ...t,
+            gap: e
+          }))
+        })]
+      }), <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Snap`,
+          checked: ae,
+          onChange: U
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Highlight`,
+          checked: oe,
+          onChange: se
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Select`,
+          checked: q,
+          onChange: ce
+        })}</div>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `arrows`,
+      title: `Arrows`,
+      ariaLabel: `Arrow settings`,
+      focused: u === `arrows`,
+      children: [(0, a.jsx)(xe, {
+        label: `Color`,
+        value: D,
+        fallback: `#f97316`,
+        ownerWindow: e,
+        onChange: O
+      }), <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Snap`,
+          checked: A,
+          onChange: j
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Click to place`,
+          checked: M,
+          onChange: N
+        })}</div>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `text`,
+      title: `Text`,
+      ariaLabel: `Text settings`,
+      focused: u === `text`,
+      children: [(0, a.jsx)(xe, {
+        label: `Color`,
+        value: T.color,
+        fallback: `#000000`,
+        ownerWindow: e,
+        onChange: e => E(t => ({
+          ...t,
+          color: e
+        }))
+      }), <label className={`msr:col-span-2 msr:grid msr:h-8 ${he} msr:items-center msr:gap-0 msr:text-[12px] msr:text-ink-700`}>{[<span>{`Font`}</span>, <span className={`msr:relative msr:block msr:w-full`}>{[<select aria-label={`Font`} value={T.font} className={`msr:h-6 msr:w-full msr:appearance-none msr:rounded-[5px] msr:border msr:border-ink-200 msr:bg-white msr:px-1.5 msr:pr-6 msr:text-[11px] msr:outline-none msr:focus:shadow-[inset_0_0_0_1px_#0d99ff]`} onChange={e => E(t => ({
+            ...t,
+            font: e.target.value
+          }))}>{K.map(({
+              value: e,
+              label: t
+            }) => <option value={e} key={e}>{t}</option>)}</select>, <span aria-hidden={`true`} className={`msr:pointer-events-none msr:absolute msr:right-2 msr:top-1/2 msr:size-1.5 msr:-translate-y-1/2 msr:rotate-45 msr:border-r msr:border-b msr:border-ink-500`} />]}</span>]}</label>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `selection`,
+      title: `Selection`,
+      ariaLabel: `Selection settings`,
+      focused: u === `selection`,
+      children: [(0, a.jsx)(xe, {
+        label: `Color`,
+        value: P,
+        fallback: `#0d99ff`,
+        ownerWindow: e,
+        onChange: F
+      }), <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Hover`,
+          checked: ee,
+          onChange: I
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Spacing`,
+          checked: L,
+          onChange: te
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Element snap`,
+          checked: R,
+          onChange: ne
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Stack`,
+          checked: z,
+          onChange: B
+        })}</div>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `color`,
+      title: `Color picker`,
+      ariaLabel: `Color settings`,
+      focused: u === `color`,
+      children: [<div className={`msr:col-span-2 msr:grid msr:min-h-8 ${he} msr:items-start msr:gap-0`}>{[<span className={`msr:flex msr:h-8 msr:items-center msr:text-[12px] msr:text-ink-700`}>{`Format`}</span>, (0, a.jsx)(we, {
+          ownerWindow: e,
+          formats: me,
+          selectedFormats: le,
+          onChange: ue
+        })]}</div>, <label className={`msr:col-span-2 msr:grid msr:h-8 ${he} msr:items-center msr:gap-0 msr:text-[12px] msr:text-ink-700`}>{[<span>{`Copy`}</span>, <span className={`msr:relative msr:block msr:w-full`}>{[<select value={de} className={`msr:h-6 msr:w-full msr:appearance-none msr:rounded-[5px] msr:border msr:border-ink-200 msr:bg-white msr:px-1.5 msr:pr-6 msr:text-[11px] msr:outline-none msr:focus:shadow-[inset_0_0_0_1px_#0d99ff]`} onChange={e => fe(e.target.value)}>{me.map(e => <option value={e} key={e}>{e}</option>)}</select>, <span aria-hidden={`true`} className={`msr:pointer-events-none msr:absolute msr:right-2 msr:top-1/2 msr:size-1.5 msr:-translate-y-1/2 msr:rotate-45 msr:border-r msr:border-b msr:border-ink-500`} />]}</span>]}</label>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `screenshot`,
+      title: `Screenshot`,
+      ariaLabel: `Screenshot settings`,
+      focused: u === `screenshot`,
+      children: [<div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Copy`,
+          checked: x.copy,
+          onChange: e => S(t => ({
+            copy: e,
+            download: !e || t.download
+          }))
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Download`,
+          checked: x.download,
+          onChange: e => S(t => ({
+            download: e,
+            copy: !e || t.copy
+          }))
+        })}</div>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `rulers`,
+      title: `Rulers`,
+      ariaLabel: `Ruler settings`,
+      focused: u === `rulers`,
+      children: [(0, a.jsx)(be, {
+        label: `Opacity`,
+        min: .2,
+        max: 1,
+        step: .05,
+        value: C.opacity,
+        formatValue: e => `${Math.round(e * 100)}%`,
+        parseInput: e => Number.parseFloat(e) / 100,
+        onChange: e => w(t => ({
+          ...t,
+          opacity: e
+        }))
+      }), <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Edge reveal`,
+          checked: C.edgeReveal,
+          onChange: e => w(t => ({
+            ...t,
+            edgeReveal: e
+          }))
+        })}</div>]
+    }), (0, a.jsx)(Se, {}), (0, a.jsxs)(Ce, {
+      id: `general`,
+      title: `General`,
+      ariaLabel: `General settings`,
+      children: [<div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Persist`,
+          checked: p,
+          onChange: m
+        })}</div>, <div className={`msr:col-span-2`}>{(0, a.jsx)(ye, {
+          label: `Shortcuts`,
+          checked: g,
+          onChange: _
+        })}</div>, <div className={`msr:col-span-2 msr:grid msr:h-8 ${he} msr:items-center msr:gap-0 msr:text-[12px] msr:text-ink-700`}>{[<span>{`Toolbar`}</span>, <button type={`button`} aria-label={`Minimize toolbar`} className={`msr:h-6 msr:justify-self-end msr:rounded-[5px] msr:border msr:border-ink-200 msr:px-2 msr:text-[11px] msr:text-ink-700 msr:hover:bg-ink-50 msr:focus-visible:outline-none msr:focus-visible:shadow-[inset_0_0_0_1px_#0d99ff]`} onClick={v}>{`Minimize`}</button>]}</div>, <div className={`msr:col-span-2 msr:grid msr:h-8 ${he} msr:items-center msr:gap-0 msr:text-[12px] msr:text-ink-700`}>{[<span>{`Version`}</span>, <span className={`msr:justify-self-end msr:font-mono msr:text-[11px] msr:tabular-nums msr:text-ink-700`}>{f ? `${f} ${h.version}` : h.version}</span>]}</div>, <div className={`msr:col-span-2 msr:flex msr:h-8 msr:w-full msr:justify-end msr:gap-1`}>{[<button type={`button`} aria-label={`Reset settings to defaults`} className={`msr:h-6 msr:rounded-[5px] msr:border msr:border-ink-200 msr:px-2 msr:text-[11px] msr:text-ink-700 msr:hover:bg-ink-50 msr:focus-visible:outline-none msr:focus-visible:shadow-[inset_0_0_0_1px_#0d99ff]`} onClick={y}>{`Use defaults`}</button>, <button type={`button`} aria-label={`Clear workspace`} className={`msr:h-6 msr:rounded-[5px] msr:border msr:border-red-200 msr:px-2 msr:text-[11px] msr:text-red-600 msr:hover:bg-red-50 msr:focus-visible:outline-none msr:focus-visible:shadow-[inset_0_0_0_1px_#ef4444]`} onClick={b}>{`Clear workspace`}</button>]}</div>]
+    })]}</div>;
+}
+function Ee({
+  id: e,
+  value: t,
+  copiedId: n,
+  onCopy: r,
+  onTooltipEnter: i,
+  tooltip: o,
+  className: s
+}) {
+  let c = n === e,
+    l = o.visibleTooltipId === e || c && o.visibleTooltipId === null;
+  return <span className={`msr:relative msr:inline-flex`} onMouseLeave={o.onTooltipLeave}>{[<button type={`button`} className={s} onMouseEnter={() => i(e)} onFocus={() => i(e)} onBlur={o.onTooltipLeave} onClick={r}>{t}</button>, (0, a.jsx)(W, {
+      label: c ? `Copied!` : `Click to copy`,
+      visible: l,
+      instant: c || o.tooltipInstant,
+      side: `bottom`,
+      className: `msr:z-10`
+    })]}</span>;
+}
+function De({
+  active: e,
+  sample: t,
+  unsupported: n,
+  formats: r,
+  favoriteFormat: o,
+  ownerWindow: s,
+  onClose: c
+}) {
+  let l = (0, i.useRef)(null),
+    u = (0, i.useRef)(null),
+    [d, f] = (0, i.useState)(null),
+    [p, m] = (0, i.useState)(`bottom`),
+    h = G(),
+    g = (0, i.useCallback)((e, t) => {
+      s.navigator.clipboard?.writeText(t)?.catch(() => void 0), h.onTooltipLeave(), f(e), u.current !== null && s.clearTimeout(u.current), u.current = s.setTimeout(() => {
+        u.current = null, f(null);
+      }, 1500);
+    }, [s, h]),
+    _ = (0, i.useCallback)(e => {
+      d !== null && d !== e && (u.current !== null && (s.clearTimeout(u.current), u.current = null), f(null)), h.onTooltipEnter(e);
+    }, [d, s, h]);
+  if ((0, i.useLayoutEffect)(() => {
+    if (!e) return;
+    let t = l.current,
+      n = t?.offsetParent;
+    if (!t || !(n instanceof HTMLElement)) return;
+    let r = 0,
+      i = !1,
+      a = () => {
+        i = !1;
+        let e = l.current,
+          t = e?.offsetParent;
+        if (!e || !(t instanceof HTMLElement)) return;
+        let n = t.getBoundingClientRect(),
+          r = t.querySelector(`[data-tool-id='color-picker']`)?.getBoundingClientRect() ?? n,
+          a = e.offsetWidth,
+          o = e.offsetHeight,
+          c = 8 - n.left,
+          u = s.innerWidth - 8 - a - n.left,
+          d = r.left - n.left;
+        d = Math.min(Math.max(d, c), Math.max(c, u)), e.style.left = `${d}px`;
+        let f = n.bottom + 8 + o <= s.innerHeight - 8;
+        m(f ? `bottom` : `top`);
+      },
+      o = () => {
+        i || (i = !0, r = s.requestAnimationFrame(a));
+      };
+    o(), s.addEventListener(`resize`, o), s.addEventListener(`scroll`, o, !0);
+    let c = new ResizeObserver(o);
+    return c.observe(n), c.observe(t), () => {
+      i && s.cancelAnimationFrame(r), u.current !== null && (s.clearTimeout(u.current), u.current = null), c.disconnect(), s.removeEventListener(`resize`, o), s.removeEventListener(`scroll`, o, !0);
+    };
+  }, [e, s, t, n]), !e || !t && !n) return null;
+  let v = r.includes(o) ? o : r[0],
+    y = v ? r.filter(e => e !== v) : [];
+  return <div ref={l} className={k(`mesurer-color-picker msr:pointer-events-auto msr:absolute msr:left-0 msr:z-[100] msr:w-max msr:min-w-36 msr:rounded-lg msr:border msr:border-black/10 msr:bg-white msr:px-2 msr:py-2 msr:font-mono msr:text-[10px] msr:leading-4 msr:shadow-lg`, p === `bottom` ? `msr:top-full msr:mt-2` : `msr:bottom-full msr:mb-2`)} role={`dialog`} aria-label={`Selected color values`} onMouseLeave={h.onTooltipContainerLeave}>{n ? <div className={`msr:flex msr:items-start msr:gap-2`}>{[<span className={`msr:text-black/60`}>{`Screen color picker unavailable.`}</span>, <button type={`button`} className={`msr:text-black/45 msr:hover:text-black`} aria-label={`Close color picker message`} onClick={c}>{`x`}</button>]}</div> : t ? (0, a.jsxs)(a.Fragment, {
+      children: [v ? <div className={y.length > 0 ? `msr:mb-1 msr:flex msr:items-center msr:gap-1.5 msr:border-b msr:border-black/8 msr:pb-1` : `msr:flex msr:items-center msr:gap-1.5`}>{[<span className={`msr:size-3 msr:shrink-0 msr:rounded-full msr:border msr:border-black/15`} style={{
+          backgroundColor: S(t)
+        }} aria-hidden={`true`} />, (0, a.jsx)(Ee, {
+          id: v,
+          value: D(t, v),
+          copiedId: d,
+          onCopy: () => g(v, D(t, v)),
+          onTooltipEnter: _,
+          tooltip: h,
+          className: `msr:font-medium msr:tabular-nums msr:text-black msr:hover:underline`
+        })]}</div> : <div className={`msr:flex msr:items-center`}>{<span className={`msr:size-3 msr:shrink-0 msr:rounded-full msr:border msr:border-black/15`} style={{
+          backgroundColor: S(t)
+        }} aria-hidden={`true`} />}</div>, y.map(e => {
+        let n = D(t, e);
+        return <div className={`msr:flex msr:items-center msr:gap-2`} key={e}>{[<span className={`msr:w-9 msr:text-black/45`}>{e}</span>, (0, a.jsx)(Ee, {
+            id: e,
+            value: n,
+            copiedId: d,
+            onCopy: () => g(e, n),
+            onTooltipEnter: _,
+            tooltip: h,
+            className: `msr:tabular-nums msr:text-black msr:hover:underline`
+          })]}</div>;
+      })]
+    }) : null}</div>;
+}
+var Y = 18,
+  Oe = 4e3,
+  ke = 5,
+  Ae = 32,
+  je = 100,
+  Me = Array.from({
+    length: Oe / ke + 1
+  }, (e, t) => t * ke),
+  Ne = (0, i.memo)(function ({
+    ownerWindow: e,
+    settings: t,
+    onStartGuide: n,
+    onMoveGuide: r,
+    onFinishGuide: o,
+    onCancelGuide: s,
+    guides: c,
+    selectedGuideIds: l,
+    interactive: u = !0,
+    forceVisible: d = !1
+  }) {
+    let [f, p] = (0, i.useState)(null),
+      [m, h] = (0, i.useState)(null),
+      [g, _] = (0, i.useState)(!1),
+      v = (0, i.useRef)(null);
+    (0, i.useLayoutEffect)(() => {
+      if (!t.edgeReveal) return;
+      let n = t => {
+        let n = t,
+          r = n.clientX <= Ae || n.clientX >= e.innerWidth - Ae,
+          i = n.clientY <= Ae || n.clientY >= e.innerHeight - Ae;
+        _(r || i);
+      };
+      return e.document.addEventListener(`pointermove`, n, !0), e.document.addEventListener(`mousemove`, n, !0), () => {
+        e.document.removeEventListener(`pointermove`, n, !0), e.document.removeEventListener(`mousemove`, n, !0);
+      };
+    }, [e, t.edgeReveal]);
+    let y = d || !t.edgeReveal || g,
+      b = (e, t) => {
+        if (t.button !== 0) return;
+        t.stopPropagation();
+        let r = e === `horizontal` ? t.clientY : t.clientX;
+        p(r), h(e), v.current = {
+          orientation: e,
+          pointerId: t.pointerId,
+          id: n(e, r)
+        }, t.currentTarget.setPointerCapture(t.pointerId);
+      },
+      x = e => {
+        let t = v.current;
+        if (!t || t.pointerId !== e.pointerId) return;
+        e.stopPropagation();
+        let n = t.orientation === `horizontal` ? e.clientY : e.clientX;
+        p(n), r(t.id, n);
+      },
+      S = e => {
+        let t = v.current;
+        if (!t || t.pointerId !== e.pointerId) return;
+        e.stopPropagation();
+        let n = t.orientation === `horizontal` ? e.clientY : e.clientX;
+        e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), v.current = null, p(null), h(null), r(t.id, n), o(t.id);
+      },
+      C = e => {
+        let t = v.current;
+        !t || t.pointerId !== e.pointerId || (v.current = null, p(null), h(null), s(t.id));
+      },
+      w = c.filter(e => e.orientation === `vertical` && l.includes(e.id)),
+      T = c.filter(e => e.orientation === `horizontal` && l.includes(e.id));
+    return <div aria-hidden={`true`} data-mesurer-rulers={`true`} className={`msr:pointer-events-none msr:absolute msr:inset-0 msr:select-none msr:text-[9px] msr:text-[#64748b]`} style={{
+      opacity: y ? t.opacity : 0,
+      transition: `opacity ${je}ms ease`
+    }}>{[<div className={`msr:absolute msr:left-[18px] msr:right-0 msr:top-0 msr:overflow-hidden msr:bg-white`} style={{
+        boxShadow: `0 1px 3px rgba(0, 0, 0, 0.12)`,
+        height: Y,
+        cursor: `ns-resize`,
+        pointerEvents: y && u ? `auto` : `none`
+      }} onPointerDown={e => b(`horizontal`, e)} onPointerMove={x} onPointerUp={S} onPointerCancel={C}>{<svg className={`msr:block msr:h-6`} width={Oe} height={Y} viewBox={`0 0 ${Oe} ${Y}`}>{[<defs>{<linearGradient id={`ruler-label-fade-x`} x1={`0%`} x2={`100%`} gradientUnits={`objectBoundingBox`}>{[<stop offset={`0`} stopColor={`white`} stopOpacity={`0`} />, <stop offset={`0.2`} stopColor={`white`} />, <stop offset={`0.8`} stopColor={`white`} />, <stop offset={`1`} stopColor={`white`} stopOpacity={`0`} />]}</linearGradient>}</defs>, Me.map(e => {
+            let t = e % 100 == 0,
+              n = e % 50 == 0;
+            return <g key={e}>{[<line x1={e} y1={Y} x2={e} y2={t ? 8 : n ? 13 : 17} stroke={`currentColor`} strokeWidth={`1`} />, t ? <text x={e} y={`8`} textAnchor={`middle`} fill={`currentColor`}>{e}</text> : null]}</g>;
+          }), w.map(e => <g key={e.id}>{[<rect x={e.position - Y - 8} y={`-1`} width={`48`} height={`12`} fill={`url(#ruler-label-fade-x)`} />, <text x={e.position - Y + 16} y={`8`} textAnchor={`middle`} fill={`#ef4444`} fontWeight={`600`}>{Math.round(e.position - Y)}</text>]}</g>), m === `vertical` && f !== null ? <g>{[<rect x={f - Y - 8} y={`-1`} width={`48`} height={`12`} fill={`url(#ruler-label-fade-x)`} />, <text x={f - Y + 16} y={`8`} textAnchor={`middle`} fill={`#ef4444`} fontWeight={`600`}>{Math.round(f - Y)}</text>]}</g> : null]}</svg>}</div>, <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:top-[18px] msr:w-[18px] msr:overflow-hidden msr:bg-white`} style={{
+        boxShadow: `1px 0 3px rgba(0, 0, 0, 0.12)`,
+        width: Y,
+        cursor: `ew-resize`,
+        pointerEvents: y && u ? `auto` : `none`
+      }} onPointerDown={e => b(`vertical`, e)} onPointerMove={x} onPointerUp={S} onPointerCancel={C}>{<svg className={`msr:block msr:w-6`} width={Y} height={Oe} viewBox={`0 0 ${Y} ${Oe}`}>{[<defs>{<linearGradient id={`ruler-label-fade-y`} y1={`0%`} y2={`100%`} gradientUnits={`objectBoundingBox`}>{[<stop offset={`0`} stopColor={`white`} stopOpacity={`0`} />, <stop offset={`0.2`} stopColor={`white`} />, <stop offset={`0.8`} stopColor={`white`} />, <stop offset={`1`} stopColor={`white`} stopOpacity={`0`} />]}</linearGradient>}</defs>, Me.map(e => {
+            let t = e % 100 == 0,
+              n = e % 50 == 0;
+            return <g key={e}>{[<line x1={Y} y1={e} x2={t ? 8 : n ? 13 : 17} y2={e} stroke={`currentColor`} strokeWidth={`1`} />, t ? <text x={`8`} y={e + 10} fill={`currentColor`} transform={`rotate(-90 8 ${e + 10})`}>{e}</text> : null]}</g>;
+          }), T.map(e => <g key={e.id}>{[<rect x={`-3`} y={e.position - Y - 38} width={`24`} height={`48`} fill={`url(#ruler-label-fade-y)`} />, <text x={`9`} y={e.position - Y - 16} textAnchor={`middle`} fill={`#ef4444`} fontWeight={`600`} transform={`rotate(-90 9 ${e.position - Y - 16})`}>{Math.round(e.position - Y)}</text>]}</g>), m === `horizontal` && f !== null ? <g>{[<rect x={`-3`} y={f - Y - 38} width={`24`} height={`48`} fill={`url(#ruler-label-fade-y)`} />, <text x={`9`} y={f - Y - 16} textAnchor={`middle`} fill={`#ef4444`} fontWeight={`600`} transform={`rotate(-90 9 ${f - Y - 16})`}>{Math.round(f - Y)}</text>]}</g> : null]}</svg>}</div>, <div className={`msr:absolute msr:left-0 msr:top-0 msr:size-[18px] msr:bg-white`} />]}</div>;
+  });
+function Pe({
+  children: e,
+  className: t = ``,
+  style: n
+}) {
+  return <div className={k(`msr:pointer-events-none msr:absolute msr:rounded msr:px-1 msr:py-0.5 msr:text-[10px] msr:text-ink-50 msr:tabular-nums msr:select-none`, t)} style={n}>{e}</div>;
+}
+var Fe = (0, i.forwardRef)(function ({
+    active: e,
+    rect: t,
+    onPointerDown: n,
+    onPointerMove: r,
+    onPointerUp: i,
+    onPointerCancel: o
+  }, s) {
+    if (!e) return null;
+    let c = !!(t && t.width > 0 && t.height > 0);
+    return <div ref={s} role={`application`} aria-label={`Screenshot selection`} className={`mesurer-screenshot-select msr:absolute msr:inset-0 msr:z-[85] msr:cursor-crosshair msr:pointer-events-auto`} onPointerDown={n} onPointerMove={r} onPointerUp={i} onPointerCancel={o}>{[c && t ? (0, a.jsxs)(a.Fragment, {
+        children: [<div className={`msr:absolute msr:left-0 msr:right-0 msr:top-0 msr:bg-black/40`} style={{
+          height: t.top
+        }} />, <div className={`msr:absolute msr:left-0 msr:bg-black/40`} style={{
+          top: t.top,
+          width: t.left,
+          height: t.height
+        }} />, <div className={`msr:absolute msr:right-0 msr:bg-black/40`} style={{
+          top: t.top,
+          left: t.left + t.width,
+          height: t.height
+        }} />, <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:right-0 msr:bg-black/40`} style={{
+          top: t.top + t.height
+        }} />, <div className={`msr:absolute msr:outline msr:outline-1 msr:outline-[#0d99ff]`} style={{
+          left: t.left,
+          top: t.top,
+          width: t.width,
+          height: t.height
+        }} />, (0, a.jsxs)(Pe, {
+          className: `msr:bg-[#0d99ff]`,
+          style: {
+            left: t.left + t.width / 2,
+            top: t.top + t.height + 6,
+            transform: `translateX(-50%)`
+          },
+          children: [O(t.width), ` × `, O(t.height)]
+        })]
+      }) : <div className={`msr:absolute msr:inset-0 msr:bg-black/40`} />, <div className={`msr:pointer-events-none msr:absolute msr:bottom-4 msr:left-1/2 msr:-translate-x-1/2 msr:rounded msr:bg-black msr:px-2 msr:py-1 msr:text-[11px] msr:text-white`}>{[`Drag to select `, <kbd className={`msr:text-white/60`}>{`Esc`}</kbd>, ` to cancel`]}</div>]}</div>;
+  }),
+  Ie = 200,
+  Le = e => {
+    let t = Number.parseFloat(e);
+    return Number.isFinite(t) ? e.trim().match(/[\d.]+\s*(m?s)/i)?.[1]?.toLowerCase() === `s` ? t * 1e3 : t : Ie;
+  },
+  Re = e => ({
+    duration: Le(e),
+    easing: e.replace(/^[\d.]+\s*m?s\s*/i, ``).trim() || `ease`
+  }),
+  ze = e => {
+    if (!e || e === `none`) return 1;
+    try {
+      return new DOMMatrix(e).a;
+    } catch {
+      return 1;
+    }
+  },
+  Be = e => {
+    if (!e || e === `none`) return 0;
+    try {
+      return new DOMMatrix(e).e;
+    } catch {
+      return 0;
+    }
+  },
+  Ve = (e, t, n = .5) => Math.abs(e - t) < n,
+  X = 12,
+  He = (e, t, n) => e + (t - e) * n,
+  Ue = (e, t, n) => {
+    let r = n - t;
+    return Math.abs(r) < 1e-6 ? 1 : Math.min(1, Math.max(0, (e - t) / r));
+  },
+  We = (e, t) => `${e / (Math.abs(t) < 1e-6 ? 1 : Math.abs(t))}px / ${e}px`,
+  Ge = ({
+    stage: e,
+    collapseStage: t,
+    inspectPanel: n,
+    annotatePanel: r,
+    expandedPanel: i,
+    iconSlot: a,
+    destGroup: o
+  }) => {
+    let s = n.offsetWidth,
+      c = r.offsetWidth;
+    s > 0 && e.style.setProperty(`--msr-inspect-w`, `${s}px`), c > 0 && e.style.setProperty(`--msr-annotate-w`, `${c}px`);
+    let l = s || parseFloat(e.style.getPropertyValue(`--msr-inspect-w`)) || 0,
+      u = c || parseFloat(e.style.getPropertyValue(`--msr-annotate-w`)) || 0,
+      d = (o ?? (e.dataset.group === `annotate` ? `annotate` : `inspect`)) === `annotate` ? u : l,
+      f = e.offsetWidth,
+      p = i.offsetWidth,
+      m = d > 0 && f > 0 && p > 0 ? p - f + d : p,
+      h = a.offsetWidth;
+    m > 0 && t.style.setProperty(`--msr-expanded-w`, `${m}px`), h > 0 && t.style.setProperty(`--msr-icon-w`, `${h}px`), t.offsetWidth;
+  },
+  Ke = 6,
+  qe = (e, t) => {
+    let [n, r] = (0, i.useState)(e),
+      a = (0, i.useRef)(!1),
+      o = (0, i.useRef)(null),
+      s = (0, i.useRef)(null),
+      c = (0, i.useRef)({
+        active: !1,
+        didDrag: !1,
+        pointerId: -1,
+        startX: 0,
+        startY: 0,
+        originX: 0,
+        originY: 0,
+        width: 0,
+        height: 0
+      }),
+      l = (0, i.useCallback)(() => {
+        if (o.current !== null) return;
+        let e = t.document.documentElement;
+        o.current = e.style.userSelect, e.style.setProperty(`user-select`, `none`, `important`);
+      }, [t]),
+      u = (0, i.useCallback)(() => {
+        let e = o.current;
+        if (e === null) return;
+        let n = t.document.documentElement;
+        n.style.userSelect = e, o.current = null;
+      }, [t]);
+    (0, i.useLayoutEffect)(() => () => {
+      s.current?.();
+      let e = o.current;
+      e !== null && (t.document.documentElement.style.userSelect = e, o.current = null);
+    }, [t]);
+    let d = (0, i.useCallback)(e => {
+        if (e.button !== 0) return;
+        l(), s.current && (s.current(), s.current = null, u());
+        let i = c.current;
+        i.active = !1, i.didDrag = !1, i.pointerId = e.pointerId, i.startX = e.clientX, i.startY = e.clientY, i.originX = n.x, i.originY = n.y;
+        let o = e.currentTarget.getBoundingClientRect();
+        i.width = o.width, i.height = o.height;
+        let d = e => {
+            let n = c.current;
+            if (n.pointerId !== e.pointerId) return;
+            let i = e.clientX - n.startX,
+              a = e.clientY - n.startY;
+            if (n.active ||= Math.abs(i) > Ke || Math.abs(a) > Ke, !n.active) return;
+            n.didDrag = !0;
+            let o = Math.max(8, t.innerWidth - n.width - 8),
+              s = Math.max(8, t.innerHeight - n.height - 8);
+            r({
+              x: Math.min(o, Math.max(8, n.originX + i)),
+              y: Math.min(s, Math.max(8, n.originY + a))
+            });
+          },
+          f = e => {
+            let n = c.current;
+            (n.pointerId === e.pointerId || n.pointerId === -1) && (a.current = n.didDrag, u(), n.active = !1, n.didDrag = !1, n.pointerId = -1, t.removeEventListener(`pointermove`, d), t.removeEventListener(`pointerup`, f), t.removeEventListener(`pointercancel`, f), s.current = null);
+          };
+        t.addEventListener(`pointermove`, d), t.addEventListener(`pointerup`, f), t.addEventListener(`pointercancel`, f), s.current = () => {
+          t.removeEventListener(`pointermove`, d), t.removeEventListener(`pointerup`, f), t.removeEventListener(`pointercancel`, f);
+        };
+      }, [l, t, n.x, n.y, u]),
+      f = (0, i.useCallback)(() => a.current ? (a.current = !1, !0) : !1, []);
+    return {
+      position: n,
+      onPointerDown: d,
+      onClickCapture: (0, i.useCallback)(e => {
+        f() && (e.preventDefault(), e.stopPropagation());
+      }, [f]),
+      consumeDragClick: f
+    };
+  },
+  Je = (e, t, n, r) => {
+    let i = e.querySelector(`.mesurer-toolbar-chrome`),
+      a = e.querySelector(`.mesurer-toolbar-clip`),
+      o = e.querySelector(`.mesurer-toolbar-surface`),
+      s = t.querySelector(`.mesurer-toolbar-tool-track`),
+      c = r.querySelector(`.mesurer-toolbar-minimize-track`);
+    return !(i instanceof HTMLElement) || !(a instanceof HTMLElement) || !(o instanceof HTMLElement) || !(s instanceof HTMLElement) || !(c instanceof HTMLElement) ? null : {
+      chrome: i,
+      clip: a,
+      surface: o,
+      track: s,
+      trailing: n,
+      collapse: c
+    };
+  },
+  Ye = e => {
+    for (let t of e.getAnimations()) {
+      try {
+        t.commitStyles();
+      } catch {}
+      t.cancel();
+    }
+  },
+  Xe = (e, t, n) => {
+    for (let t of Object.values(e)) Ye(t);
+    Ye(t), Ye(n);
+  },
+  Ze = (e, t, n, r) => {
+    Xe(t, n, r), r.style.width = ``, n.style.width = ``, t.chrome.style.borderRadius = ``, t.clip.style.borderRadius = ``;
+    for (let e of Object.values(t)) e.style.transition = ``, e.style.transform = ``, e.style.willChange = ``;
+    n.style.transition = ``, r.style.transition = ``, delete e.dataset.resizing;
+  },
+  Qe = e => e === 0 ? 1 : 1 / e,
+  $e = (e, t, n) => {
+    if (e.chrome.style.transform = `scaleX(${t.scaleX})`, e.trailing.style.transform = `translateX(${t.trailX}px)`, e.track.style.transform = `translateX(${t.trackX}px)`, e.collapse.style.transform = `translateX(${t.collapseX}px)`, e.chrome.style.borderRadius = We(t.radius, t.scaleX), !n) {
+      e.clip.style.transform = ``, e.surface.style.transform = ``, e.clip.style.borderRadius = ``;
+      return;
+    }
+    e.clip.style.transform = `scaleX(${t.clipScale})`, e.surface.style.transform = `scaleX(${Qe(t.clipScale)})`, e.clip.style.borderRadius = We(t.radius, t.clipScale);
+  },
+  et = (e, t, n, r, i) => {
+    let a = e.ownerDocument.defaultView,
+      o = a?.getComputedStyle.bind(a) ?? getComputedStyle,
+      s = e.offsetWidth,
+      c = ze(o(t.chrome).transform),
+      l = Be(o(t.trailing).transform),
+      u = Be(o(t.track).transform),
+      d = Be(o(t.collapse).transform),
+      f = s > 0 ? i.layoutWidth * c / s : 1;
+    return {
+      scaleX: i.group ? 1 : f,
+      clipScale: i.collapse ? f : 1,
+      radius: He(i.radiusFrom, i.radiusTo, Ue(c, i.clipFrom, i.clipTo)),
+      trailX: i.group || i.collapse ? l : l + (i.layoutWidth - s),
+      trackX: u,
+      collapseX: d,
+      stageW: n.getBoundingClientRect().width,
+      expandedW: r.getBoundingClientRect().width,
+      collapse: i.collapse
+    };
+  },
+  tt = (e, t, n, r, i) => e.animate([{
+    transform: t
+  }, {
+    transform: n
+  }], {
+    duration: r,
+    easing: i,
+    fill: `both`
+  }),
+  nt = (e, t, n, r, i) => e.animate([{
+    width: `${t}px`
+  }, {
+    width: `${n}px`
+  }], {
+    duration: r,
+    easing: i,
+    fill: `both`
+  }),
+  rt = ({
+    eventTarget: e,
+    toolGroup: t,
+    minimized: n,
+    motionRef: r,
+    stageRef: a,
+    trailingRef: o,
+    collapseRef: s,
+    inspectPanelRef: c,
+    annotatePanelRef: l,
+    expandedPanelRef: u,
+    iconSlotRef: d
+  }) => {
+    let f = (0, i.useRef)(!1),
+      p = (0, i.useRef)(0),
+      m = (0, i.useRef)(t),
+      h = (0, i.useRef)(n),
+      g = (0, i.useRef)(null),
+      _ = (0, i.useRef)(null),
+      v = (0, i.useRef)(0),
+      y = (0, i.useCallback)(() => {
+        f.current = !0;
+        let e = r.current;
+        e && (e.dataset.ready = `true`, p.current = e.offsetWidth);
+      }, [r]);
+    return (0, i.useLayoutEffect)(() => {
+      let i = r.current,
+        y = a.current,
+        b = o.current,
+        x = s.current;
+      if (!i || !y || !b || !x) return;
+      let S = Je(i, y, b, x);
+      if (!S) return;
+      let C = c.current,
+        w = l.current,
+        T = u.current,
+        E = d.current;
+      if (!C || !w || !T || !E) return;
+      let D = ++v.current;
+      Ge({
+        stage: y,
+        collapseStage: x,
+        inspectPanel: C,
+        annotatePanel: w,
+        expandedPanel: T,
+        iconSlot: E,
+        destGroup: t
+      });
+      let O = h.current,
+        k = m.current,
+        A = !O && n,
+        j = O && !n,
+        M = _.current;
+      _.current = null;
+      let N = parseFloat(x.style.getPropertyValue(`--msr-expanded-w`)) || 0,
+        P = parseFloat(x.style.getPropertyValue(`--msr-icon-w`)) || 0,
+        F = parseFloat(y.style.getPropertyValue(`--msr-inspect-w`)) || 0,
+        ee = parseFloat(y.style.getPropertyValue(`--msr-annotate-w`)) || 0,
+        I = t === `annotate` ? ee : F,
+        L = M ? M.trackX : k === `annotate` ? -F : 0,
+        te = t === `annotate` ? -F : 0,
+        R = M ? M.stageW : k === `annotate` ? ee : F,
+        ne = M ? M.expandedW : N > 0 && I > 0 && R > 0 ? N - I + R : N,
+        z = A || j || !!M?.collapse,
+        B = !z && R > 0 && I > 0 && (!!(M && !M.collapse) || k !== t || !Ve(R, I) || !Ve(L, te));
+      A && N > 0 ? (y.style.width = ``, x.style.width = `${N}px`, x.offsetWidth) : B ? (y.style.width = `${R}px`, x.style.width = `${ne}px`, y.offsetWidth, x.offsetWidth) : (y.style.width = ``, x.style.width = ``);
+      let V = i.offsetWidth,
+        re = n ? -N : 0,
+        H = p.current,
+        ie = P + Math.max(0, V - x.offsetWidth),
+        ae = V > 0 && ie > 0 ? ie / V : 1,
+        U = M ? M.scaleX : B || !(H > 0 && V > 0) ? 1 : H / V,
+        W = n ? ae : 1,
+        G = M ? M.clipScale : z ? U : 1,
+        oe = z ? W : 1,
+        K = M ? M.trailX : z || B ? 0 : H - V,
+        se = M ? M.collapseX : O ? -N : 0,
+        q = M ? M.radius : X,
+        ce = X,
+        le = Re(getComputedStyle(i).getPropertyValue(`--msr-toolbar-motion`).trim() || `${Ie}ms ease`),
+        ue = le.duration,
+        de = Ve(U, W, .002) && Ve(G, oe, .002) && Ve(K, 0) && Ve(L, te) && Ve(se, re) && Ve(q, ce, .05) && Ve(R, I) && Ve(ne, N),
+        fe = () => {
+          p.current = i.offsetWidth, m.current = t, h.current = n;
+        },
+        pe = () => {
+          g.current = null, Ze(i, S, y, x), fe();
+        };
+      if (!f.current || e.matchMedia(`(prefers-reduced-motion: reduce)`).matches || V < 1 || !M && H < 1 || de) {
+        pe();
+        return;
+      }
+      Xe(S, y, x), i.dataset.resizing = z ? `collapse` : `true`;
+      for (let e of Object.values(S)) e.style.transition = `none`;
+      y.style.transition = `none`, x.style.transition = `none`, S.track.style.willChange = `transform`, S.collapse.style.willChange = `transform`, z && (S.clip.style.willChange = `transform`, S.surface.style.willChange = `transform`);
+      let J = {
+          scaleX: U,
+          clipScale: G,
+          radius: q,
+          trailX: K,
+          trackX: L,
+          collapseX: se
+        },
+        me = {
+          scaleX: W,
+          clipScale: oe,
+          radius: ce,
+          trailX: 0,
+          trackX: te,
+          collapseX: re
+        };
+      $e(S, J, z), B && (y.style.width = `${R}px`, x.style.width = `${ne}px`), y.offsetWidth, x.offsetWidth, i.offsetWidth, tt(S.chrome, `scaleX(${U})`, `scaleX(${W})`, ue, le.easing), tt(S.track, `translateX(${L}px)`, `translateX(${te}px)`, ue, le.easing), tt(S.collapse, `translateX(${se}px)`, `translateX(${re}px)`, ue, le.easing), B && (nt(y, R, I, ue, le.easing), nt(x, ne, N, ue, le.easing)), g.current = {
+        layoutWidth: V,
+        collapse: z,
+        group: B,
+        clipFrom: G,
+        clipTo: oe,
+        radiusFrom: q,
+        radiusTo: ce
+      };
+      let he = z || !B && !Ve(U, W, .002),
+        ge = () => {
+          let e = i.ownerDocument.defaultView,
+            t = ze((e?.getComputedStyle.bind(e) ?? getComputedStyle)(S.chrome).transform),
+            n = He(q, ce, Ue(t, U, W));
+          if (S.chrome.style.borderRadius = We(n, t), !z) {
+            S.trailing.style.transform = `translateX(${V * t - V}px)`;
+            return;
+          }
+          S.clip.style.transform = `scaleX(${t})`, S.surface.style.transform = `scaleX(${Qe(t)})`, S.clip.style.borderRadius = We(n, t);
+        },
+        _e = 0,
+        ve = () => {
+          _e && e.cancelAnimationFrame(_e), _e = 0;
+        };
+      he && (ge(), _e = e.requestAnimationFrame(function t() {
+        ge(), _e = e.requestAnimationFrame(t);
+      }));
+      let ye = !1,
+        be = () => {
+          ye || D !== v.current || (ye = !0, ve(), $e(S, me, z), pe());
+        },
+        xe = e.setTimeout(be, ue + 32);
+      return () => {
+        if (e.clearTimeout(xe), ve(), ye) return;
+        let t = g.current;
+        if (!i.isConnected) {
+          be();
+          return;
+        }
+        if (!t) {
+          Ze(i, S, y, x);
+          return;
+        }
+        let n = et(i, S, y, x, t);
+        Xe(S, y, x), y.style.width = `${n.stageW}px`, x.style.width = `${n.expandedW}px`, _.current = n, $e(S, n, n.collapse), g.current = null;
+      };
+    }, [l, s, e, u, d, c, n, r, a, t, o]), {
+      markReady: y
+    };
+  },
+  it = 800,
+  at = () => {
+    let [e, t] = (0, i.useState)(null),
+      n = (0, i.useRef)(null),
+      r = (0, i.useRef)(!1),
+      [a, o] = (0, i.useState)(!1),
+      s = (0, i.useCallback)(() => {
+        n.current !== null && (window.clearTimeout(n.current), n.current = null);
+      }, []);
+    return {
+      visibleTooltipId: e,
+      tooltipInstant: a,
+      onTooltipEnter: (0, i.useCallback)(e => {
+        if (s(), r.current) {
+          o(!0), t(e);
+          return;
+        }
+        o(!1), n.current = window.setTimeout(() => {
+          t(e), r.current = !0, n.current = null;
+        }, it);
+      }, [s]),
+      onTooltipLeave: (0, i.useCallback)(e => {
+        s(), t(t => t === e ? null : t);
+      }, [s]),
+      onToolbarLeave: (0, i.useCallback)(() => {
+        s(), t(null), r.current = !1, o(!1);
+      }, [s])
+    };
+  },
+  ot = 500,
+  st = 8,
+  ct = 8,
+  lt = ({
+    anchorRef: e,
+    eventTarget: t,
+    open: n,
+    refreshKey: r
+  }) => {
+    let a = (0, i.useRef)(null),
+      [o, s] = (0, i.useState)({
+        side: `bottom`,
+        height: ot,
+        right: -4
+      });
+    return (0, i.useLayoutEffect)(() => {
+      if (!n) return;
+      let r = () => {
+        let n = e.current?.getBoundingClientRect(),
+          r = a.current;
+        if (!n || !r) return;
+        let i = Math.max(0, n.top - st),
+          o = Math.max(0, t.innerHeight - n.bottom - st),
+          c = o >= ot || o >= i ? `bottom` : `top`,
+          l = c === `bottom` ? o : i,
+          u = r.getBoundingClientRect().width,
+          d = n.right + 4 - u,
+          f = ct,
+          p = Math.max(f, t.innerWidth - ct - u),
+          m = Math.min(p, Math.max(f, d)),
+          h = e.current?.parentElement?.getBoundingClientRect().right ?? n.right;
+        s({
+          side: c,
+          height: Math.min(ot, l),
+          right: h - m - u
+        });
+      };
+      return r(), t.addEventListener(`resize`, r), t.addEventListener(`scroll`, r, !0), () => {
+        t.removeEventListener(`resize`, r), t.removeEventListener(`scroll`, r, !0);
+      };
+    }, [e, t, n, r]), {
+      menuRef: a,
+      placement: o
+    };
+  };
+function ut({
+  url: e,
+  side: t,
+  label: n,
+  onExited: r
+}) {
+  return <div role={`status`} aria-label={n} data-side={t} className={`mesurer-screenshot-preview msr:pointer-events-none msr:absolute msr:left-1/2 msr:z-[100] msr:w-max msr:max-w-[min(200px,calc(100vw-24px))] msr:overflow-hidden msr:rounded-[4px] msr:bg-black msr:p-1 msr:-translate-x-1/2 msr:shadow-md msr:animate-[mesurer-screenshot-preview_5.16s_ease-out_both] ${t === `bottom` ? `msr:top-full msr:mt-2` : `msr:bottom-full msr:mb-2`}`} onAnimationEnd={e => {
+    (e.animationName === `mesurer-screenshot-preview` || e.animationName === `mesurer-screenshot-preview-reduced`) && r();
+  }}>{<img src={e} alt={``} className={`msr:block msr:h-auto msr:max-h-[120px] msr:max-w-[180px] msr:rounded-[2px] msr:bg-white msr:object-contain`} />}</div>;
+}
+function dt({
+  value: e,
+  onChange: t,
+  tooltip: n,
+  tooltipVisibleId: r,
+  tooltipsEnabled: o
+}) {
+  let s = (0, i.useRef)(null),
+    c = (0, i.useRef)(null);
+  return <div className={`mesurer-toolbar-tool-switch msr:flex msr:flex-none msr:items-center msr:gap-[2px] msr:rounded-[8px] msr:bg-ink-50 msr:p-[2px]`} data-value={e} role={`group`} aria-label={`Tool group`}>{[<span className={`mesurer-toolbar-tool-switch-pill`} aria-hidden={`true`} />, <div ref={s} className={`msr:relative`} onMouseEnter={() => n.onTooltipEnter(`tool-group-inspect`)} onMouseLeave={() => n.onTooltipLeave(`tool-group-inspect`)}>{[<button type={`button`} aria-label={`Select and inspect tools (1)`} aria-keyshortcuts={`1`} aria-pressed={e === `inspect`} className={k(`msr:flex msr:size-7 msr:items-center msr:justify-center msr:rounded-[6px] msr:text-[11px] msr:font-medium msr:outline-none msr:focus-visible:outline msr:focus-visible:outline-1 msr:focus-visible:outline-ink-500 msr:focus-visible:outline-offset-1`, e === `inspect` ? `msr:bg-transparent msr:text-ink-900` : `msr:text-ink-700 msr:hover:bg-ink-200/50`)} onClick={() => t(`inspect`)}>{(0, a.jsx)(B, {
+          size: 20
+        })}</button>, (0, a.jsx)(W, {
+        label: `Select & Inspect`,
+        shortcut: `1`,
+        visible: o && r === `tool-group-inspect`,
+        instant: n.tooltipInstant,
+        side: n.tooltipSide,
+        anchorRef: s
+      })]}</div>, <div ref={c} className={`msr:relative`} onMouseEnter={() => n.onTooltipEnter(`tool-group-annotate`)} onMouseLeave={() => n.onTooltipLeave(`tool-group-annotate`)}>{[<button type={`button`} aria-label={`Annotate tools (2)`} aria-keyshortcuts={`2`} aria-pressed={e === `annotate`} className={k(`msr:flex msr:size-7 msr:items-center msr:justify-center msr:rounded-[6px] msr:text-[11px] msr:font-medium msr:outline-none msr:focus-visible:outline msr:focus-visible:outline-1 msr:focus-visible:outline-ink-500 msr:focus-visible:outline-offset-1`, e === `annotate` ? `msr:bg-transparent msr:text-ink-900` : `msr:text-ink-700 msr:hover:bg-ink-200/50`)} onClick={() => t(`annotate`)}>{(0, a.jsx)(V, {
+          size: 20
+        })}</button>, (0, a.jsx)(W, {
+        label: `Annotate`,
+        shortcut: `2`,
+        visible: o && r === `tool-group-annotate`,
+        instant: n.tooltipInstant,
+        side: n.tooltipSide,
+        anchorRef: c
+      })]}</div>]}</div>;
+}
+var ft = 176,
+  pt = 8,
+  mt = 40,
+  ht = 34,
+  gt = e => /Mac|iPhone|iPad|iPod/.test(e.navigator.platform) ? `⌘ ,` : `Ctrl + ,`,
+  _t = (e, t) => t || e === `select` || e === `text-inspector` || e === `guides` || e === `xray` || e === `rulers` ? `inspect` : e === `selection` || e === `arrows` || e === `pen` || e === `text` ? `annotate` : null,
+  vt = e => e === `selection` || e === `arrows` || e === `pen` || e === `text`,
+  yt = (e, t) => {
+    if (t) return `color-picker`;
+    switch (e) {
+      case `select`:
+      case `text-inspector`:
+      case `guides`:
+      case `selection`:
+      case `arrows`:
+      case `pen`:
+      case `text`:
+        return e;
+      default:
+        return null;
+    }
+  };
+function bt({
+  id: e,
+  active: t,
+  label: n,
+  shortcut: r,
+  onClick: o,
+  tooltipVisible: s,
+  tooltip: c,
+  children: l
+}) {
+  let u = (0, i.useRef)(null);
+  return <div ref={u} className={`msr:relative`} data-tool-id={e} onMouseEnter={() => c.onTooltipEnter(e)} onMouseLeave={() => c.onTooltipLeave(e)}>{[<button type={`button`} aria-pressed={t} aria-label={`${n} (${r})`} className={k(`msr:flex msr:size-8 msr:select-none msr:items-center msr:justify-center msr:rounded-[8px] msr:outline-none`, t ? `msr:bg-[#0d99ff] msr:text-white` : `msr:bg-transparent msr:text-black msr:hover:bg-black/4`)} onClick={o}>{l}</button>, (0, a.jsx)(W, {
+      label: n,
+      shortcut: r,
+      visible: s,
+      instant: c.tooltipInstant,
+      side: c.tooltipSide,
+      anchorRef: u
+    })]}</div>;
+}
+function xt({
+  label: e,
+  children: t,
+  className: n
+}) {
+  return <div role={`group`} aria-label={e} className={k(`msr:flex msr:items-center msr:gap-1`, n)}>{t}</div>;
+}
+function St() {
+  return <div aria-hidden={`true`} className={`mesurer-toolbar-divider`} />;
+}
+function Ct({
+  eventTarget: e,
+  minimized: t,
+  onInteract: n,
+  onRestore: r,
+  onCancelTransient: o,
+  tools: s,
+  colorPicker: c,
+  screenshot: l,
+  settings: u
+}, d) {
+  let {
+      mode: f,
+      setMode: p,
+      setEnabled: m,
+      xrayVisible: h,
+      setXrayVisible: g,
+      rulersVisible: _,
+      setRulersVisible: v,
+      guideOrientation: y,
+      setGuideOrientation: b
+    } = s,
+    {
+      active: x,
+      setActive: S,
+      onClick: C
+    } = c,
+    {
+      active: w,
+      error: T,
+      previewUrl: E,
+      copy: D,
+      download: O,
+      onClick: A,
+      onCancel: B,
+      onPreviewExited: V
+    } = l,
+    {
+      open: H,
+      setOpen: ie,
+      onToggle: ae,
+      panel: W
+    } = u,
+    {
+      position: G,
+      onPointerDown: oe,
+      onClickCapture: K,
+      consumeDragClick: se
+    } = qe({
+      x: 16,
+      y: 16
+    }, e),
+    {
+      visibleTooltipId: q,
+      tooltipInstant: ce,
+      onTooltipEnter: le,
+      onTooltipLeave: ue,
+      onToolbarLeave: de
+    } = at(),
+    [fe, pe] = (0, i.useState)(!1),
+    [J, me] = (0, i.useState)(() => _t(f, x) ?? `inspect`),
+    he = (0, i.useRef)(null),
+    ge = (0, i.useRef)(null),
+    _e = (0, i.useRef)(null),
+    ve = (0, i.useRef)(null),
+    ye = (0, i.useRef)(null),
+    be = (0, i.useRef)(null),
+    xe = (0, i.useRef)(null),
+    Se = (0, i.useRef)(null),
+    Ce = (0, i.useRef)(null),
+    we = (0, i.useRef)(null),
+    {
+      markReady: Te
+    } = rt({
+      eventTarget: e,
+      toolGroup: J,
+      minimized: t,
+      motionRef: be,
+      stageRef: _e,
+      trailingRef: xe,
+      collapseRef: Se,
+      inspectPanelRef: ve,
+      annotatePanelRef: ye,
+      expandedPanelRef: Ce,
+      iconSlotRef: we
+    }),
+    Ee = (0, i.useRef)(J),
+    De = (0, i.useRef)(yt(f, x)),
+    Y = (0, i.useRef)(h),
+    Oe = (0, i.useRef)(_),
+    [ke, Ae] = (0, i.useState)(0),
+    [je, Me] = (0, i.useState)(`right`),
+    [Ne, Pe] = (0, i.useState)(null),
+    Fe = !fe && !H,
+    Ie = gt(e),
+    Re = (0, i.useCallback)(e => {
+      e !== J && (o(), m(!0), n(), S(!1), B(), g(!1), v(!1), p(e === `inspect` ? `select` : `selection`), me(e), pe(!1));
+    }, [B, o, n, S, m, v, p, g, J]);
+  (0, i.useLayoutEffect)(() => {
+    let e = h && !Y.current,
+      t = _ && !Oe.current;
+    if (Y.current = h, Oe.current = _, e || t) {
+      me(`inspect`);
+      return;
+    }
+    let n = _t(f, x);
+    n && me(n);
+  }, [x, _, f, h]), (0, i.useLayoutEffect)(() => {
+    let t = yt(f, x),
+      n = _t(f, x);
+    if (n && n !== J) return;
+    let r = Ee.current !== J,
+      i = De.current;
+    if (Ee.current = J, De.current = t, !r || !i || i === t) return;
+    let a = _e.current;
+    if (!a || a.dataset.ready !== `true` || e.matchMedia(`(prefers-reduced-motion: reduce)`).matches) return;
+    let o = a.querySelector(`[data-tool-id="${i}"] button`);
+    if (!(o instanceof HTMLElement)) return;
+    let s = getComputedStyle(a).getPropertyValue(`--msr-toolbar-motion`).trim() || `200ms ease`;
+    o.style.transition = `none`, o.style.backgroundColor = `#0d99ff`, o.style.color = `#fff`, o.offsetWidth, o.style.transition = `background-color ${s}, color ${s}`, o.style.backgroundColor = `transparent`, o.style.color = `#000`;
+    let c = e.setTimeout(() => {
+      o.style.transition = ``, o.style.backgroundColor = ``, o.style.color = ``;
+    }, Le(s));
+    return () => {
+      e.clearTimeout(c), o.style.transition = ``, o.style.backgroundColor = ``, o.style.color = ``;
+    };
+  }, [x, e, J, f]);
+  let ze = (0, i.useCallback)(() => {
+      let t = ge.current?.getBoundingClientRect();
+      if (!t) return;
+      let n = t.right - ft,
+        r = t.left + ft;
+      if (n < pt) {
+        Me(`left`);
+        return;
+      }
+      if (r > e.innerWidth - pt) {
+        Me(`right`);
+        return;
+      }
+      Me(`right`);
+    }, [e]),
+    Be = e.innerHeight || 0;
+  Be > 0 && (G.y, Be - 56);
+  let Ve = Be > 0 && G.y + mt + ht > Be ? `top` : `bottom`,
+    X = {
+      tooltipInstant: ce,
+      tooltipSide: Ve,
+      onTooltipEnter: le,
+      onTooltipLeave: ue
+    },
+    {
+      menuRef: He,
+      placement: Ue
+    } = lt({
+      anchorRef: he,
+      eventTarget: e,
+      open: H,
+      refreshKey: `${G.x}:${G.y}`
+    }),
+    We = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `select` ? `none` : `select`), n();
+    }, [B, o, n, S, m, p]),
+    Ke = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `selection` ? `none` : `selection`), n();
+    }, [B, o, n, S, m, p]),
+    Je = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `guides` ? `none` : `guides`), n();
+    }, [B, o, n, S, m, p]),
+    Ye = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `arrows` ? `none` : `arrows`), n();
+    }, [B, o, n, S, m, p]),
+    Xe = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `pen` ? `none` : `pen`), n();
+    }, [B, o, n, S, m, p]),
+    Ze = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `text-inspector` ? `none` : `text-inspector`), n();
+    }, [B, o, n, S, m, p]),
+    Qe = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), p(e => e === `text` ? `none` : `text`), n();
+    }, [B, o, n, S, m, p]),
+    $e = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), g(e => {
+        let t = !e;
+        return t && vt(f) && p(`select`), t;
+      }), n();
+    }, [B, o, n, S, m, p, g, f]),
+    et = (0, i.useCallback)(() => {
+      o(), m(!0), p(`none`), B(), x ? S(!1) : (S(!0), C()), n();
+    }, [x, B, o, C, n, S, m, p]),
+    tt = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), A(), n();
+    }, [o, n, A, S, m]),
+    nt = (0, i.useCallback)(() => {
+      o(), m(!0), S(!1), B(), v(e => {
+        let t = !e;
+        return t && vt(f) && p(`select`), t;
+      }), n();
+    }, [B, o, n, S, m, v, p, f]);
+  (0, i.useCallback)(e => {
+    o(), m(!0), B(), p(`guides`), b(e), n(), pe(!1);
+  }, [B, o, n, m, b, p]), (0, i.useLayoutEffect)(() => {
+    t && pe(!1);
+  }, [t]), (0, i.useLayoutEffect)(() => {
+    let e = _e.current,
+      t = ve.current,
+      n = ye.current,
+      r = Se.current,
+      i = Ce.current,
+      a = we.current;
+    if (!e || !t || !n || !r || !i || !a) return;
+    let o = () => {
+      Ge({
+        stage: e,
+        collapseStage: r,
+        inspectPanel: t,
+        annotatePanel: n,
+        expandedPanel: i,
+        iconSlot: a
+      });
+    };
+    o();
+    let s = requestAnimationFrame(() => {
+        e.dataset.ready = `true`, Te();
+      }),
+      c = new ResizeObserver(o);
+    return c.observe(t), c.observe(n), c.observe(a), () => {
+      cancelAnimationFrame(s), c.disconnect();
+    };
+  }, [Te]), (0, i.useLayoutEffect)(() => {
+    if (!fe && !H) return;
+    let t = fe ? e.requestAnimationFrame(() => {
+        ge.current?.querySelector(`[role='menu']`)?.focus();
+      }) : 0,
+      n = e => {
+        let t = e.composedPath();
+        if (fe) {
+          let e = ge.current;
+          e && !t.includes(e) && pe(!1);
+        }
+        if (H) {
+          let e = he.current;
+          e && !t.includes(e) && ie(!1);
+        }
+      },
+      r = () => {
+        fe && ze();
+      };
+    return e.addEventListener(`pointerdown`, n), fe && e.addEventListener(`resize`, r), () => {
+      t && e.cancelAnimationFrame(t), e.removeEventListener(`pointerdown`, n), e.removeEventListener(`resize`, r);
+    };
+  }, [e, fe, y, H, ze]);
+  let it = he.current?.parentElement?.offsetWidth ?? 0,
+    ot = G.x <= 8 ? `msr:left-0` : G.x + it >= e.innerWidth - 8 ? `msr:right-0` : `msr:left-1/2 msr:-translate-x-1/2`;
+  return <div className={`msr:absolute msr:z-[90]`} style={{
+    left: G.x,
+    top: G.y
+  }}>{<div className={`msr:relative`}>{[(0, a.jsxs)(U.Provider, {
+        value: Ne,
+        children: [<div ref={e => {
+          be.current = e, typeof d == `function` ? d(e) : d && (d.current = e);
+        }} className={`mesurer-toolbar-motion msr:pointer-events-auto`} style={{
+          visibility: w ? `hidden` : void 0
+        }} onPointerDown={e => {
+          n(), oe(e);
+        }} onClickCapture={K} onMouseLeave={de}>{[<div className={`mesurer-toolbar-chrome`} aria-hidden={`true`} />, <div className={`mesurer-toolbar-clip`}>{<div className={`mesurer-toolbar-surface msr:flex msr:items-center`}>{<div ref={Se} className={`mesurer-toolbar-minimize-stage`} data-minimized={t ? `true` : void 0}>{<div className={`mesurer-toolbar-minimize-track`}>{[<div className={`mesurer-toolbar-minimize-slot`} data-slot={`expanded`} data-open={!t} aria-hidden={t} inert={t ? !0 : void 0}>{<div ref={Ce} className={`msr:flex msr:w-max msr:items-stretch msr:gap-1`}>{[(0, a.jsx)(dt, {
+                        value: J,
+                        onChange: Re,
+                        tooltip: X,
+                        tooltipVisibleId: q,
+                        tooltipsEnabled: Fe
+                      }), <div className={`msr:flex msr:items-stretch`}>{[(0, a.jsx)(St, {}), <div ref={_e} className={`mesurer-toolbar-tool-stage`} data-group={J}>{<div className={`mesurer-toolbar-tool-track`}>{[<div className={`mesurer-toolbar-tool-slot`} data-group={`inspect`} data-open={J === `inspect`} aria-hidden={J !== `inspect`} inert={J !== `inspect` || void 0}>{<div ref={ve} className={`mesurer-toolbar-tool-panel msr:px-1`}>{(0, a.jsxs)(xt, {
+                                  label: `Select and inspect`,
+                                  children: [(0, a.jsx)(bt, {
+                                    id: `select`,
+                                    active: f === `select`,
+                                    label: `Inspect`,
+                                    shortcut: `I`,
+                                    onClick: We,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `select`,
+                                    children: (0, a.jsx)(M, {
+                                      size: 20
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `xray`,
+                                    active: h,
+                                    label: `X-ray`,
+                                    shortcut: `X`,
+                                    onClick: $e,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `xray`,
+                                    children: (0, a.jsx)(N, {
+                                      size: 20
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `rulers`,
+                                    active: _,
+                                    label: `Rulers`,
+                                    shortcut: `R`,
+                                    onClick: nt,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `rulers`,
+                                    children: (0, a.jsx)(P, {
+                                      size: 20
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `guides`,
+                                    active: f === `guides`,
+                                    label: `Guides`,
+                                    shortcut: `G`,
+                                    onClick: Je,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `guides`,
+                                    children: (0, a.jsx)(F, {
+                                      size: 20
+                                    })
+                                  }), null, (0, a.jsx)(bt, {
+                                    id: `text-inspector`,
+                                    active: f === `text-inspector`,
+                                    label: `Typography`,
+                                    shortcut: `A`,
+                                    onClick: Ze,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `text-inspector`,
+                                    children: (0, a.jsx)(I, {
+                                      size: 20,
+                                      "aria-hidden": `true`
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `color-picker`,
+                                    active: x,
+                                    label: `Sample color`,
+                                    shortcut: `P`,
+                                    onClick: et,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `color-picker`,
+                                    children: (0, a.jsx)(te, {
+                                      size: 20,
+                                      "aria-hidden": `true`
+                                    })
+                                  })]
+                                })}</div>}</div>, <div className={`mesurer-toolbar-tool-slot`} data-group={`annotate`} data-open={J === `annotate`} aria-hidden={J !== `annotate`} inert={J !== `annotate` || void 0}>{<div ref={ye} className={`mesurer-toolbar-tool-panel msr:px-1`}>{(0, a.jsxs)(xt, {
+                                  label: `Annotate`,
+                                  children: [(0, a.jsx)(bt, {
+                                    id: `selection`,
+                                    active: f === `selection`,
+                                    label: `Select`,
+                                    shortcut: `S`,
+                                    onClick: Ke,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `selection`,
+                                    children: (0, a.jsx)(j, {
+                                      size: 20
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `arrows`,
+                                    active: f === `arrows`,
+                                    label: `Arrows`,
+                                    shortcut: `D`,
+                                    onClick: Ye,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `arrows`,
+                                    children: (0, a.jsx)(ee, {
+                                      size: 20,
+                                      "aria-hidden": `true`
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `pen`,
+                                    active: f === `pen`,
+                                    label: `Pen`,
+                                    shortcut: `N`,
+                                    onClick: Xe,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `pen`,
+                                    children: (0, a.jsx)(R, {
+                                      size: 20,
+                                      "aria-hidden": `true`
+                                    })
+                                  }), (0, a.jsx)(bt, {
+                                    id: `text`,
+                                    active: f === `text`,
+                                    label: `Text`,
+                                    shortcut: `T`,
+                                    onClick: Qe,
+                                    tooltip: X,
+                                    tooltipVisible: Fe && q === `text`,
+                                    children: (0, a.jsx)(L, {
+                                      size: 20,
+                                      "aria-hidden": `true`
+                                    })
+                                  })]
+                                })}</div>}</div>]}</div>}</div>, <div ref={xe} className={`mesurer-toolbar-trailing msr:flex msr:items-stretch`}>{[(0, a.jsx)(St, {}), (0, a.jsxs)(xt, {
+                            label: `Capture and settings`,
+                            className: `msr:px-1`,
+                            children: [<div className={`msr:relative`}>{[(0, a.jsx)(bt, {
+                                id: `screenshot`,
+                                active: w,
+                                label: `Screenshot`,
+                                shortcut: `C`,
+                                onClick: tt,
+                                tooltip: X,
+                                tooltipVisible: Fe && !E && q === `screenshot`,
+                                children: (0, a.jsx)(ne, {
+                                  size: 20,
+                                  "aria-hidden": `true`
+                                })
+                              }), E ? (0, a.jsx)(ut, {
+                                url: E,
+                                side: Ve,
+                                label: D && !O ? `Screenshot copied` : O && !D ? `Screenshot downloaded` : `Screenshot saved`,
+                                onExited: V
+                              }) : null]}</div>, <div ref={he} className={`msr:relative msr:flex`}>{[(0, a.jsx)(bt, {
+                                id: `settings`,
+                                active: H,
+                                label: `Settings`,
+                                shortcut: Ie,
+                                onClick: () => {
+                                  B(), n(), ae();
+                                },
+                                tooltip: X,
+                                tooltipVisible: Fe && q === `settings`,
+                                children: (0, a.jsx)(z, {
+                                  size: 20,
+                                  "aria-hidden": `true`
+                                })
+                              }), H ? <div ref={He} className={k(`mesurer-menu-surface msr:absolute msr:z-[70] msr:flex msr:w-auto msr:max-w-[calc(100vw-16px)] msr:flex-col msr:overflow-hidden msr:rounded-lg msr:border msr:border-ink-200 msr:bg-white msr:p-0 msr:shadow-lg`, Ue.side === `bottom` ? `msr:top-full msr:mt-2` : `msr:bottom-full msr:mb-2`)} style={{
+                                right: Ue.right,
+                                height: Ue.height,
+                                maxHeight: Ue.height
+                              }} data-mesurer-inspector-ui={`true`} role={`dialog`} aria-label={`Settings`} onPointerDown={e => e.stopPropagation()} onPointerMove={e => e.stopPropagation()} onPointerUp={e => e.stopPropagation()} onClick={e => e.stopPropagation()}>{W}</div> : null]}</div>]
+                          })]}</div>]}</div>]}</div>}</div>, <div className={`mesurer-toolbar-minimize-slot`} data-slot={`icon`} data-open={t} aria-hidden={!t} inert={!t || void 0}>{<button ref={we} type={`button`} aria-label={`Show Mesurer toolbar`} className={`mesurer-toolbar-restore msr:flex msr:size-8 msr:select-none msr:items-center msr:justify-center msr:rounded-[8px] msr:text-black msr:outline-none msr:hover:bg-black/4`} onClick={e => {
+                      e.defaultPrevented || se() || r();
+                    }}>{(0, a.jsx)(re, {
+                        size: 20
+                      })}</button>}</div>]}</div>}</div>}</div>}</div>]}</div>, <div ref={Pe} className={`mesurer-toolbar-tooltips`} style={{
+          visibility: w ? `hidden` : void 0
+        }} />]
+      }), c.panel, T ? <div role={`status`} aria-live={`polite`} className={`mesurer-toast-surface msr:pointer-events-none msr:absolute msr:top-full msr:z-10 msr:mt-2 msr:box-border msr:w-max msr:max-w-[min(240px,calc(100vw-16px))] msr:overflow-hidden msr:rounded-[10px] msr:bg-white msr:px-3 msr:py-2 msr:text-center msr:text-[12px] msr:leading-4 msr:text-black msr:whitespace-normal msr:text-pretty msr:line-clamp-2 ${ot}`}>{[`Screenshot failed.`, <br />, `Check permissions and try again.`]}</div> : null]}</div>}</div>;
+}
+var wt = (0, i.memo)((0, i.forwardRef)(Ct)),
+  Z = 2,
+  Tt = 10,
+  Et = 14,
+  Dt = 220,
+  Ot = 140,
+  kt = 8,
+  At = .45,
+  jt = 1.6,
+  Mt = .92,
+  Nt = 4,
+  Pt = .15,
+  Ft = 4,
+  It = (0, i.memo)(function ({
+    distance: e,
+    labelOffset: t,
+    onRemove: n
+  }) {
+    let r = e.rectA.width >= 1 && e.rectA.height >= 1,
+      i = e.rectB.width >= 1 && e.rectB.height >= 1;
+    return <div className={n ? `msr:pointer-events-auto` : `msr:pointer-events-none`} onClick={n ? t => {
+      t.stopPropagation(), n(e.id);
+    } : void 0}>{[r ? <div className={`msr:absolute msr:rounded msr:border msr:border-[#2563eb]/70`} style={{
+        left: e.rectA.left,
+        top: e.rectA.top,
+        width: e.rectA.width,
+        height: e.rectA.height
+      }} /> : null, i ? <div className={`msr:absolute msr:rounded msr:border msr:border-[#2563eb]/70`} style={{
+        left: e.rectB.left,
+        top: e.rectB.top,
+        width: e.rectB.width,
+        height: e.rectB.height
+      }} /> : null, e.connectors.map((t, n) => Math.abs(t.x1 - t.x2) < 1 ? <div className={`msr:absolute msr:border-l msr:border-dashed msr:border-[#2563eb]/70`} style={{
+        left: t.x1,
+        top: Math.min(t.y1, t.y2),
+        height: Math.abs(t.y2 - t.y1)
+      }} key={`${e.id}-connector-${n}`} /> : <div className={`msr:absolute msr:border-t msr:border-dashed msr:border-[#2563eb]/70`} style={{
+        left: Math.min(t.x1, t.x2),
+        top: t.y1,
+        width: Math.abs(t.x2 - t.x1)
+      }} key={`${e.id}-connector-${n}`} />), e.horizontal && e.horizontal.value > 0 ? (0, a.jsxs)(a.Fragment, {
+        children: [<div className={`msr:absolute msr:h-px msr:bg-[#2563eb]`} style={{
+          left: Math.min(e.horizontal.x1, e.horizontal.x2),
+          width: Math.abs(e.horizontal.x2 - e.horizontal.x1),
+          top: e.horizontal.y
+        }} />, (0, a.jsx)(Pe, {
+          className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+          style: {
+            left: (e.horizontal.x1 + e.horizontal.x2) / 2,
+            top: e.horizontal.y + t
+          },
+          children: O(e.horizontal.value)
+        })]
+      }) : null, e.vertical && e.vertical.value > 0 ? (0, a.jsxs)(a.Fragment, {
+        children: [<div className={`msr:absolute msr:w-px msr:bg-[#2563eb]`} style={{
+          top: Math.min(e.vertical.y1, e.vertical.y2),
+          height: Math.abs(e.vertical.y2 - e.vertical.y1),
+          left: e.vertical.x
+        }} />, (0, a.jsx)(Pe, {
+          className: `msr:-translate-y-1/2 msr:bg-ink-900/90`,
+          style: {
+            left: e.vertical.x + t,
+            top: (e.vertical.y1 + e.vertical.y2) / 2
+          },
+          children: O(e.vertical.value)
+        })]
+      }) : null]}</div>;
+  });
+function Lt({
+  lines: e
+}) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [e.top.value > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [<div className={`msr:absolute msr:w-px msr:bg-[#2563eb]`} style={{
+        top: e.top.y1,
+        height: e.top.y2 - e.top.y1,
+        left: e.top.x
+      }} />, (0, a.jsx)(Pe, {
+        className: `msr:-translate-y-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: e.top.x + Z,
+          top: (e.top.y1 + e.top.y2) / 2
+        },
+        children: O(e.top.value)
+      })]
+    }) : null, e.bottom.value > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [<div className={`msr:absolute msr:w-px msr:bg-[#2563eb]`} style={{
+        top: e.bottom.y1,
+        height: e.bottom.y2 - e.bottom.y1,
+        left: e.bottom.x
+      }} />, (0, a.jsx)(Pe, {
+        className: `msr:-translate-y-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: e.bottom.x + Z,
+          top: (e.bottom.y1 + e.bottom.y2) / 2
+        },
+        children: O(e.bottom.value)
+      })]
+    }) : null, e.left.value > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [<div className={`msr:absolute msr:h-px msr:bg-[#2563eb]`} style={{
+        left: e.left.x1,
+        width: e.left.x2 - e.left.x1,
+        top: e.left.y
+      }} />, (0, a.jsx)(Pe, {
+        className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: (e.left.x1 + e.left.x2) / 2,
+          top: e.left.y + Z
+        },
+        children: O(e.left.value)
+      })]
+    }) : null, e.right.value > 0 ? (0, a.jsxs)(a.Fragment, {
+      children: [<div className={`msr:absolute msr:h-px msr:bg-[#2563eb]`} style={{
+        left: e.right.x1,
+        width: e.right.x2 - e.right.x1,
+        top: e.right.y
+      }} />, (0, a.jsx)(Pe, {
+        className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: (e.right.x1 + e.right.x2) / 2,
+          top: e.right.y + Z
+        },
+        children: O(e.right.value)
+      })]
+    }) : null]
+  });
+}
+function Rt({
+  held: e,
+  onRemoveHeld: t,
+  optionPair: n,
+  guideDistance: r,
+  containerLines: i,
+  showOption: o,
+  showGuideDistance: s,
+  showContainer: c
+}) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [e.map(e => (0, a.jsx)(It, {
+      distance: e,
+      labelOffset: Z,
+      onRemove: t
+    }, `held-${e.id}`)), o && n ? (0, a.jsx)(It, {
+      distance: n,
+      labelOffset: Z
+    }, `option-${n.id}`) : null, s && r ? (0, a.jsx)(It, {
+      distance: r,
+      labelOffset: Z
+    }, `guide-preview-${r.id}`) : null, c && i ? (0, a.jsx)(Lt, {
+      lines: i
+    }) : null]
+  });
+}
+function zt({
+  guide: e,
+  selected: t,
+  hovered: n,
+  style: r,
+  pointerEvents: i,
+  colorActive: o,
+  colorHover: s,
+  colorDefault: c,
+  onPointerDown: l,
+  onPointerUp: u,
+  onPointerCancel: d
+}) {
+  let f = t ? o : n ? s : c,
+    p = t || n ? Math.max(r.width, 1) : r.width,
+    m = r.pattern === `solid`,
+    h = r.pattern === `solid` ? void 0 : r.pattern === `dotted` ? `radial-gradient(circle, ${f} 0 ${p / 2}px, transparent ${p / 2 + .5}px)` : `repeating-linear-gradient(${e.orientation === `vertical` ? `to bottom` : `to right`}, ${f} 0 ${r.dashLength}px, transparent ${r.dashLength}px ${r.dashLength + r.gap}px)`,
+    g = r.pattern === `dotted` ? e.orientation === `vertical` ? `${p}px ${r.dashLength + r.gap}px` : `${r.dashLength + r.gap}px ${p}px` : void 0,
+    _ = Math.round(e.position),
+    v = Et / 2 - Math.floor((p - 1) / 2);
+  return <div className={`msr:absolute`} data-mesurer-guide={`true`} style={e.orientation === `vertical` ? {
+    left: _ - Et / 2,
+    top: 0,
+    width: Et,
+    height: `100%`,
+    pointerEvents: i ? `auto` : `none`
+  } : {
+    top: _ - Et / 2,
+    left: 0,
+    height: Et,
+    width: `100%`,
+    pointerEvents: i ? `auto` : `none`
+  }} onPointerDown={t => l(e, t)} onPointerUp={t => u(e, t)} onPointerCancel={t => d(e, t)}>{<div className={`msr:absolute`} style={e.orientation === `vertical` ? {
+      left: v,
+      top: 0,
+      width: p,
+      height: `100%`,
+      backgroundColor: m ? f : `transparent`,
+      backgroundImage: h,
+      backgroundSize: g,
+      opacity: r.opacity
+    } : {
+      top: v,
+      left: 0,
+      height: p,
+      width: `100%`,
+      backgroundColor: m ? f : `transparent`,
+      backgroundImage: h,
+      backgroundSize: g,
+      opacity: r.opacity
+    }} />}</div>;
+}
+function Bt({
+  orientation: e,
+  position: t,
+  color: n,
+  style: r,
+  emphasized: i
+}) {
+  let o = i ? Math.max(r.width, 1) : r.width,
+    s = Et / 2 - Math.floor((o - 1) / 2);
+  return <div className={`msr:pointer-events-none msr:absolute`} style={e === `vertical` ? {
+    left: t - Et / 2,
+    top: 0,
+    width: Et,
+    height: `100%`
+  } : {
+    top: t - Et / 2,
+    left: 0,
+    height: Et,
+    width: `100%`
+  }}>{<div className={`msr:absolute`} style={e === `vertical` ? {
+      left: s,
+      top: 0,
+      width: o,
+      height: `100%`,
+      backgroundColor: n,
+      opacity: r.opacity
+    } : {
+      top: s,
+      left: 0,
+      height: o,
+      width: `100%`,
+      backgroundColor: n,
+      opacity: r.opacity
+    }} />}</div>;
+}
+function Vt({
+  guides: e,
+  selectedIds: t,
+  moveOffset: n = {
+    x: 0,
+    y: 0
+  },
+  hoverId: r,
+  draggingId: i,
+  style: o,
+  pointerEvents: s,
+  colors: c,
+  preview: l,
+  onPointerDown: u,
+  onPointerUp: d,
+  onPointerCancel: f
+}) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [l ? (0, a.jsx)(Bt, {
+      orientation: l.orientation,
+      position: l.position,
+      color: c.preview,
+      style: o,
+      emphasized: c.previewEmphasized
+    }) : null, e.map(e => (0, a.jsx)(zt, {
+      guide: t.includes(e.id) && (n.x || n.y) ? {
+        ...e,
+        position: e.position + (e.orientation === `vertical` ? n.x : n.y)
+      } : e,
+      selected: t.includes(e.id),
+      hovered: r === e.id || i === e.id,
+      style: o,
+      pointerEvents: s,
+      colorActive: c.active,
+      colorHover: c.hover,
+      colorDefault: c.default,
+      onPointerDown: u,
+      onPointerUp: d,
+      onPointerCancel: f
+    }, e.id))]
+  });
+}
+var Ht = e => Math.round(e),
+  Ut = (0, i.memo)(function ({
+    measurement: e,
+    transitionMs: t,
+    labelOffset: n,
+    edgeVisibility: r,
+    outlineColor: i,
+    fillColor: o
+  }) {
+    let s = r ?? {
+        top: !0,
+        right: !0,
+        bottom: !0,
+        left: !0
+      },
+      c = e.rect;
+    return <div className={`msr:pointer-events-none`}>{[<div className={`msr:absolute`} style={{
+        left: c.left,
+        top: c.top,
+        width: c.width,
+        height: c.height,
+        backgroundColor: o,
+        transition: `left ${t}ms ease, top ${t}ms ease, width ${t}ms ease, height ${t}ms ease`
+      }}>{[s.top ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-px msr:w-full`} style={{
+          backgroundColor: i
+        }} /> : null, s.right ? <div className={`msr:absolute msr:right-0 msr:top-0 msr:h-full msr:w-px`} style={{
+          backgroundColor: i
+        }} /> : null, s.bottom ? <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:h-px msr:w-full`} style={{
+          backgroundColor: i
+        }} /> : null, s.left ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-full msr:w-px`} style={{
+          backgroundColor: i
+        }} /> : null]}</div>, (0, a.jsxs)(Pe, {
+        className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: c.left + c.width / 2,
+          top: c.top + c.height + n,
+          transition: `left ${t}ms ease, top ${t}ms ease`
+        },
+        children: [Ht(c.width), ` x `, Ht(c.height)]
+      })]}</div>;
+  }),
+  Wt = e => Math.round(e),
+  Gt = e => e === `flex` || e === `inline-flex` || e === `grid` || e === `inline-grid`,
+  Kt = e => {
+    let t = Wt(e.top),
+      n = Wt(e.right),
+      r = Wt(e.bottom),
+      i = Wt(e.left);
+    return t === 0 && n === 0 && r === 0 && i === 0 ? null : t === n && n === r && r === i ? `${t}` : t === r && i === n ? `${t} ${n}` : `${t} ${n} ${r} ${i}`;
+  },
+  qt = (e, t) => {
+    let n = Wt(e),
+      r = Wt(t);
+    return n === 0 && r === 0 ? null : n === r ? `${n}` : `${n} ${r}`;
+  },
+  Jt = e => e.split(` `).map(e => `${e}px`).join(` `),
+  Yt = e => {
+    let t = [],
+      n = e.gap ? qt(e.gap.row, e.gap.column) : null,
+      r = Kt(e.padding);
+    return n && t.push({
+      label: `gap`,
+      value: Jt(n)
+    }), r && t.push({
+      label: `padding`,
+      value: Jt(r)
+    }), t;
+  },
+  Xt = e => Math.round(e),
+  Zt = (0, i.memo)(function ({
+    measurement: e,
+    transitionMs: t,
+    labelOffset: n,
+    edgeVisibility: r,
+    outlineColor: i,
+    fillColor: o,
+    layoutDetailsEnabled: s
+  }) {
+    let c = r ?? {
+        top: !0,
+        right: !0,
+        bottom: !0,
+        left: !0
+      },
+      l = e.rect,
+      u = s ? Yt({
+        padding: e.padding,
+        gap: e.gap
+      }) : [];
+    return <div className={`msr:pointer-events-none`} data-mesurer-selected-measurement={`true`}>{[<div className={`msr:absolute`} style={{
+        left: l.left,
+        top: l.top,
+        width: l.width,
+        height: l.height,
+        backgroundColor: o,
+        transition: `left ${t}ms ease, top ${t}ms ease, width ${t}ms ease, height ${t}ms ease`
+      }}>{[c.top ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-px msr:w-full`} style={{
+          backgroundColor: i
+        }} /> : null, c.right ? <div className={`msr:absolute msr:right-0 msr:top-0 msr:h-full msr:w-px`} style={{
+          backgroundColor: i
+        }} /> : null, c.bottom ? <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:h-px msr:w-full`} style={{
+          backgroundColor: i
+        }} /> : null, c.left ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-full msr:w-px`} style={{
+          backgroundColor: i
+        }} /> : null]}</div>, (0, a.jsx)(Pe, {
+        className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+        style: {
+          left: l.left + l.width / 2,
+          top: l.top + l.height + n,
+          transition: `left ${t}ms ease, top ${t}ms ease`
+        },
+        children: <div className={`msr:text-center`}>{[<div>{[Xt(l.width), ` x `, Xt(l.height)]}</div>, u.length > 0 ? <div className={`msr:flex msr:justify-center msr:gap-2.5 msr:text-[10px] msr:leading-3`} data-mesurer-layout-details={`true`}>{u.map(e => <span className={`msr:inline-flex msr:items-baseline msr:gap-1`} key={e.label}>{[<span className={`msr:text-ink-200`}>{e.label}</span>, <span className={`msr:text-ink-50`}>{e.value}</span>]}</span>)}</div> : null]}</div>
+      })]}</div>;
+  });
+function Qt({
+  left: e,
+  top: t,
+  width: n,
+  height: r,
+  labelWidth: i,
+  labelHeight: o,
+  fillColor: s,
+  outlineColor: c
+}) {
+  return (0, a.jsxs)(a.Fragment, {
+    children: [<div className={`msr:pointer-events-none msr:absolute`} data-mesurer-active-selection={`true`} style={{
+      left: e,
+      top: t,
+      width: n,
+      height: r,
+      backgroundColor: s
+    }}>{[<div className={`msr:absolute msr:left-0 msr:top-0 msr:h-px msr:w-full`} style={{
+        backgroundColor: c
+      }} />, <div className={`msr:absolute msr:right-0 msr:top-0 msr:h-full msr:w-px`} style={{
+        backgroundColor: c
+      }} />, <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:h-px msr:w-full`} style={{
+        backgroundColor: c
+      }} />, <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-full msr:w-px`} style={{
+        backgroundColor: c
+      }} />]}</div>, (0, a.jsxs)(Pe, {
+      className: `msr:-translate-x-1/2 msr:bg-ink-900/90`,
+      style: {
+        left: e + n / 2,
+        top: t + r + Z
+      },
+      children: [i, ` x `, o]
+    })]
+  });
+}
+function $t({
+  rect: e,
+  fillColor: t,
+  outlineColor: n,
+  edges: r
+}) {
+  return <div className={`msr:pointer-events-none msr:absolute`} style={{
+    left: e.left,
+    top: e.top,
+    width: e.width,
+    height: e.height,
+    backgroundColor: t
+  }}>{[r?.top ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-px msr:w-full`} style={{
+      backgroundColor: n
+    }} /> : null, r?.right ? <div className={`msr:absolute msr:right-0 msr:top-0 msr:h-full msr:w-px`} style={{
+      backgroundColor: n
+    }} /> : null, r?.bottom ? <div className={`msr:absolute msr:bottom-0 msr:left-0 msr:h-px msr:w-full`} style={{
+      backgroundColor: n
+    }} /> : null, r?.left ? <div className={`msr:absolute msr:left-0 msr:top-0 msr:h-full msr:w-px`} style={{
+      backgroundColor: n
+    }} /> : null]}</div>;
+}
+function en({
+  visible: e,
+  dragging: t,
+  fillColor: n,
+  outlineColor: r,
+  measurements: i,
+  measurementEdges: o,
+  active: s,
+  hoverRect: c,
+  hoverEdges: l,
+  selected: u,
+  selectedEdges: d,
+  layoutDetailsEnabled: f
+}) {
+  return e ? (0, a.jsxs)(a.Fragment, {
+    children: [i.map((e, t) => (0, a.jsx)(Ut, {
+      measurement: e,
+      transitionMs: Ot,
+      labelOffset: Z,
+      edgeVisibility: o[t],
+      outlineColor: r,
+      fillColor: n
+    }, e.id)), s.rect && t ? (0, a.jsx)(Qt, {
+      left: s.rect.left,
+      top: s.rect.top,
+      width: s.rect.width,
+      height: s.rect.height,
+      labelWidth: s.width,
+      labelHeight: s.height,
+      fillColor: n,
+      outlineColor: r
+    }) : null, c ? (0, a.jsx)($t, {
+      rect: c,
+      fillColor: n,
+      outlineColor: r,
+      edges: l
+    }) : null, u.map((e, t) => (0, a.jsx)(Zt, {
+      measurement: e,
+      transitionMs: Ot,
+      labelOffset: Z,
+      edgeVisibility: d[t],
+      outlineColor: r,
+      fillColor: n,
+      layoutDetailsEnabled: f
+    }, e.id))]
+  }) : null;
+}
+var tn = (e, t, n) => ({
+    x: e.x + t,
+    y: e.y + n
+  }),
+  nn = e => {
+    let t = Math.hypot(e.x, e.y) || 1;
+    return {
+      x: e.x / t,
+      y: e.y / t
+    };
+  },
+  rn = (e, t) => ({
+    x: (e.x + t.x) / 2,
+    y: (e.y + t.y) / 2
+  }),
+  an = (e, t, n) => ({
+    x: 2 * t.x - (e.x + n.x) / 2,
+    y: 2 * t.y - (e.y + n.y) / 2
+  }),
+  on = (e, t, n, r) => {
+    let i = an(e, t, n),
+      a = 1 - r;
+    return {
+      x: a * a * e.x + 2 * a * r * i.x + r * r * n.x,
+      y: a * a * e.y + 2 * a * r * i.y + r * r * n.y
+    };
+  },
+  sn = (e, t, n) => {
+    for (let r of [.82, .65, .5]) {
+      let i = on(e, t, n, r),
+        a = {
+          x: n.x - i.x,
+          y: n.y - i.y
+        };
+      if (Math.hypot(a.x, a.y) > 2) return nn(a);
+    }
+    return nn({
+      x: n.x - e.x,
+      y: n.y - e.y
+    });
+  },
+  cn = (e, t, n, r) => {
+    let i = sn(e, t, n),
+      a = Math.max(12, r * 8),
+      o = a * .5,
+      s = {
+        x: -i.y,
+        y: i.x
+      };
+    return {
+      tip: n,
+      left: {
+        x: n.x - i.x * a + s.x * o,
+        y: n.y - i.y * a + s.y * o
+      },
+      right: {
+        x: n.x - i.x * a - s.x * o,
+        y: n.y - i.y * a - s.y * o
+      }
+    };
+  },
+  ln = (e, t, n) => {
+    let r = t.x - e.x,
+      i = t.y - e.y,
+      a = Math.hypot(r, i) || 1,
+      o = r / a,
+      s = i / a,
+      c = n.x - e.x,
+      l = n.y - e.y;
+    return {
+      along: (c * o + l * s) / a,
+      side: (c * -s + l * o) / a
+    };
+  },
+  un = (e, t, n) => {
+    let r = t.x - e.x,
+      i = t.y - e.y,
+      a = Math.hypot(r, i) || 1,
+      o = r / a,
+      s = i / a;
+    return {
+      x: e.x + n.along * r + n.side * a * -s,
+      y: e.y + n.along * i + n.side * a * o
+    };
+  },
+  dn = (e, t, n = rn(e, t)) => {
+    let r = an(e, n, t);
+    return `M ${e.x} ${e.y} Q ${r.x} ${r.y} ${t.x} ${t.y}`;
+  },
+  fn = (e, t, n) => ({
+    ...e,
+    start: tn(e.start, t, n),
+    end: tn(e.end, t, n),
+    control: tn(e.control ?? rn(e.start, e.end), t, n)
+  }),
+  pn = e => ({
+    x: e.x,
+    y: e.y,
+    width: e.boxWidth ?? Math.max(32, e.text.split(`
+`).reduce((e, t) => Math.max(e, t.length), 0) * 9),
+    height: 24 * Math.max(1, e.text.split(`
+`).length)
+  }),
+  mn = 16,
+  hn = 24,
+  gn = .35,
+  _n = 48,
+  vn = [`n`, `ne`, `e`, `se`, `s`, `sw`, `w`, `nw`],
+  yn = e => e === `e` || e === `w`,
+  bn = {
+    n: `ns-resize`,
+    ne: `nesw-resize`,
+    e: `ew-resize`,
+    se: `nwse-resize`,
+    s: `ns-resize`,
+    sw: `nesw-resize`,
+    w: `ew-resize`,
+    nw: `nwse-resize`
+  },
+  xn = {
+    n: {
+      ax: .5,
+      ay: 1
+    },
+    ne: {
+      ax: 0,
+      ay: 1
+    },
+    e: {
+      ax: 0,
+      ay: .5
+    },
+    se: {
+      ax: 0,
+      ay: 0
+    },
+    s: {
+      ax: .5,
+      ay: 0
+    },
+    sw: {
+      ax: 1,
+      ay: 0
+    },
+    w: {
+      ax: 1,
+      ay: .5
+    },
+    nw: {
+      ax: 1,
+      ay: 1
+    }
+  },
+  Sn = (e, t, n, r) => ({
+    x: e + n / 2,
+    y: t + r / 2
+  }),
+  Cn = (e, t, n) => {
+    let r = n * Math.PI / 180,
+      i = e.x - t.x,
+      a = e.y - t.y;
+    return {
+      x: t.x + i * Math.cos(r) - a * Math.sin(r),
+      y: t.y + i * Math.sin(r) + a * Math.cos(r)
+    };
+  },
+  wn = (e, t) => {
+    let n = Math.round((t % 360 + 360) / 45) % 8;
+    return bn[vn[(vn.indexOf(e) + n) % 8] ?? e];
+  },
+  Tn = (e, t) => Math.atan2(t.x - e.x, e.y - t.y) * 180 / Math.PI,
+  En = e => ({
+    fontSize: `${mn * e}px`,
+    lineHeight: `${hn * e}px`
+  }),
+  Dn = (e, t, n) => {
+    let {
+        x: r,
+        y: i,
+        width: a,
+        height: o,
+        rotation: s,
+        scale: c,
+        boxWidth: l
+      } = e,
+      u = Sn(r, i, a, o),
+      d = Cn(n, u, -s),
+      {
+        ax: f,
+        ay: p
+      } = xn[t],
+      m = {
+        x: r + f * a,
+        y: i + p * o
+      },
+      h = f === 0 ? a : f === 1 ? -a : 0,
+      g = p === 0 ? o : p === 1 ? -o : 0,
+      _ = d.x - m.x,
+      v = d.y - m.y,
+      y = [];
+    h !== 0 && y.push(_ / h), g !== 0 && y.push(v / g);
+    let b = y.length === 2 ? Math.abs((y[0] ?? 1) - 1) >= Math.abs((y[1] ?? 1) - 1) ? y[0] ?? 1 : y[1] ?? 1 : y[0] ?? 1,
+      x = Math.max(gn, c * b),
+      S = x / c,
+      C = a * S,
+      w = o * S,
+      T = f === 0 ? r : f === 1 ? m.x - C : m.x - C / 2,
+      E = p === 0 ? i : p === 1 ? m.y - w : m.y - w / 2,
+      D = Cn({
+        x: T + C / 2,
+        y: E + w / 2
+      }, u, s);
+    return {
+      x: D.x - C / 2,
+      y: D.y - w / 2,
+      scale: x,
+      ...(typeof l == `number` ? {
+        boxWidth: Math.max(_n, l * S)
+      } : {})
+    };
+  },
+  On = (e, t, n) => {
+    let {
+        x: r,
+        y: i,
+        width: a,
+        height: o,
+        rotation: s
+      } = e,
+      c = Sn(r, i, a, o),
+      l = Cn(n, c, -s),
+      {
+        ax: u
+      } = xn[t],
+      d = r + u * a,
+      f = Math.max(_n, u === 0 ? l.x - r : d - l.x),
+      p = Cn({
+        x: (u === 0 ? r : d - f) + f / 2,
+        y: i + o / 2
+      }, c, s);
+    return {
+      x: p.x - f / 2,
+      y: p.y - o / 2,
+      boxWidth: f
+    };
+  },
+  kn = e => {
+    let t = e.map(e => e.x),
+      n = e.map(e => e.y),
+      r = Math.min(...t),
+      i = Math.min(...n);
+    return {
+      x: r,
+      y: i,
+      width: Math.max(1, Math.max(...t) - r),
+      height: Math.max(1, Math.max(...n) - i)
+    };
+  },
+  An = (e, t) => {
+    let n = Sn(e.x, e.y, e.width, e.height);
+    return kn([{
+      x: e.x,
+      y: e.y
+    }, {
+      x: e.x + e.width,
+      y: e.y
+    }, {
+      x: e.x + e.width,
+      y: e.y + e.height
+    }, {
+      x: e.x,
+      y: e.y + e.height
+    }].map(e => Cn(e, n, t)));
+  },
+  jn = (e, t, n, r) => {
+    let i = Sn(e.x, e.y, e.width, e.height),
+      a = Cn(r, i, -t),
+      o = {
+        x: n.includes(`w`) ? e.x + e.width : n.includes(`e`) ? e.x : e.x + e.width / 2,
+        y: n.includes(`n`) ? e.y + e.height : n.includes(`s`) ? e.y : e.y + e.height / 2
+      },
+      s = {
+        x: n.includes(`w`) ? 1 : n.includes(`e`) ? 0 : .5,
+        y: n.includes(`n`) ? 1 : n.includes(`s`) ? 0 : .5
+      },
+      c = s.x === 0 ? e.width : s.x === 1 ? -e.width : 0,
+      l = s.y === 0 ? e.height : s.y === 1 ? -e.height : 0,
+      u = [c === 0 ? null : (a.x - o.x) / c, l === 0 ? null : (a.y - o.y) / l].filter(e => e !== null),
+      d = u.length === 2 ? Math.abs((u[0] ?? 1) - 1) >= Math.abs((u[1] ?? 1) - 1) ? u[0] ?? 1 : u[1] ?? 1 : u[0] ?? 1,
+      f = Math.abs(d) < .01 ? d < 0 ? -.01 : .01 : d,
+      p = c === 0 ? 1 : f,
+      m = l === 0 ? 1 : f,
+      h = e.width * p,
+      g = e.height * m,
+      _ = {
+        x: n.includes(`w`) ? o.x - h / 2 : n.includes(`e`) ? o.x + h / 2 : i.x,
+        y: n.includes(`n`) ? o.y - g / 2 : n.includes(`s`) ? o.y + g / 2 : i.y
+      },
+      v = Cn(o, i, t),
+      y = Cn(o, _, t);
+    return {
+      anchor: o,
+      sx: p,
+      sy: m,
+      translateX: v.x - y.x,
+      translateY: v.y - y.y
+    };
+  },
+  Mn = (e, t) => ({
+    x: t.anchor.x + (e.x - t.anchor.x) * t.sx + t.translateX,
+    y: t.anchor.y + (e.y - t.anchor.y) * t.sy + t.translateY
+  }),
+  Nn = e => {
+    let t = e.control ?? rn(e.start, e.end),
+      n = cn(e.start, t, e.end, e.width);
+    return kn([e.start, e.end, t, n.left, n.right, n.tip, ...Array.from({
+      length: 17
+    }, (n, r) => on(e.start, t, e.end, (r + 1) / 18))]);
+  },
+  Pn = e => {
+    let t = e.control ?? {
+        x: (e.start.x + e.end.x) / 2,
+        y: (e.start.y + e.end.y) / 2
+      },
+      n = Nn(e),
+      r = Sn(n.x, n.y, n.width, n.height);
+    return [e.start, t, e.end].map(t => Cn(t, r, e.rotation ?? 0));
+  },
+  Fn = e => An(Nn(e), e.rotation ?? 0),
+  In = (e, t, n) => {
+    let r = jn(Nn(e), e.rotation ?? 0, t, n),
+      i = [e.start, e.control ?? {
+        x: (e.start.x + e.end.x) / 2,
+        y: (e.start.y + e.end.y) / 2
+      }, e.end].map(e => Mn(e, r));
+    return {
+      ...e,
+      start: i[0],
+      control: i[1],
+      end: i[2]
+    };
+  },
+  Ln = (e, t, n) => {
+    let r = Nn(e),
+      i = Sn(r.x, r.y, r.width, r.height);
+    return {
+      ...e,
+      rotation: Tn(i, t) - n
+    };
+  },
+  Rn = (e, t, n) => {
+    let r = e.control ?? rn(e.start, e.end),
+      i = Nn(e),
+      a = Sn(i.x, i.y, i.width, i.height),
+      o = e.rotation ?? 0,
+      s = Cn(a, t, n),
+      c = o + n,
+      l = [e.start, r, e.end].map(e => Cn(e, a, o)).map(e => Cn(e, t, n)).map(e => Cn(e, s, -c));
+    return {
+      ...e,
+      start: l[0],
+      control: l[1],
+      end: l[2],
+      rotation: c
+    };
+  },
+  zn = 6,
+  Bn = 1.5,
+  Vn = `white`,
+  Hn = ({
+    color: e,
+    x: t = zn / 2,
+    y: n = zn / 2,
+    ...r
+  }) => <rect x={t - zn / 2} y={n - zn / 2} width={zn} height={zn} fill={Vn} stroke={e} strokeWidth={Bn} {...r} />,
+  Un = ({
+    color: e
+  }) => <svg width={zn} height={zn} overflow={`visible`} className={`msr:block msr:shrink-0`} aria-hidden={!0}>{(0, a.jsx)(Hn, {
+      color: e
+    })}</svg>,
+  Wn = `#0d99ff`,
+  Gn = `msr:absolute msr:flex msr:size-3 msr:-translate-x-1/2 msr:-translate-y-1/2 msr:items-center msr:justify-center msr:pointer-events-auto`,
+  Kn = {
+    n: {
+      left: `50%`,
+      top: `0%`
+    },
+    ne: {
+      left: `100%`,
+      top: `0%`
+    },
+    e: {
+      left: `100%`,
+      top: `50%`
+    },
+    se: {
+      left: `100%`,
+      top: `100%`
+    },
+    s: {
+      left: `50%`,
+      top: `100%`
+    },
+    sw: {
+      left: `0%`,
+      top: `100%`
+    },
+    w: {
+      left: `0%`,
+      top: `50%`
+    },
+    nw: {
+      left: `0%`,
+      top: `0%`
+    }
+  },
+  qn = [`ne`, `se`, `sw`, `nw`],
+  Jn = [{
+    handle: `n`,
+    className: `msr:-top-1 msr:left-1 msr:right-1 msr:h-2`
+  }, {
+    handle: `e`,
+    className: `msr:-right-1 msr:bottom-1 msr:top-1 msr:w-2`
+  }, {
+    handle: `s`,
+    className: `msr:-bottom-1 msr:left-1 msr:right-1 msr:h-2`
+  }, {
+    handle: `w`,
+    className: `msr:-left-1 msr:bottom-1 msr:top-1 msr:w-2`
+  }],
+  Yn = ({
+    rotation: e,
+    showControls: t = !0,
+    showOutline: n = !0,
+    handleOffset: r = 0,
+    frameDataAttribute: i = `data-mesurer-text-frame`,
+    handleDataAttribute: o = `data-mesurer-text-handle`,
+    onResizeStart: s,
+    onRotateStart: c
+  }) => (0, a.jsxs)(`div`, {
+    className: `msr:pointer-events-none msr:absolute msr:inset-0 ${n ? `msr:outline msr:outline-1 msr:outline-[#0d99ff]` : ``}`,
+    [i]: `true`,
+    children: [t ? <div className={`msr:absolute msr:left-1/2 msr:top-0 msr:h-3 msr:w-px msr:-translate-x-1/2 msr:-translate-y-full msr:bg-[#0d99ff]`} /> : null, t ? (0, a.jsx)(`button`, {
+      type: `button`,
+      "aria-label": `Rotate text`,
+      [o]: `rotate`,
+      className: `${Gn} msr:cursor-grab`,
+      style: {
+        left: `50%`,
+        top: `-12px`
+      },
+      onPointerDown: e => {
+        e.preventDefault(), e.stopPropagation(), c(e);
+      },
+      children: (0, a.jsx)(Un, {
+        color: Wn
+      })
+    }) : null, t ? Jn.map(({
+      handle: t,
+      className: n
+    }) => (0, a.jsx)(`button`, {
+      type: `button`,
+      "aria-label": `Resize ${t}`,
+      [o]: t,
+      className: `msr:absolute msr:z-10 msr:border-0 msr:bg-transparent msr:pointer-events-auto ${n}`,
+      style: {
+        cursor: wn(t, e),
+        transform: r ? `translate(${t === `e` ? r : t === `w` ? -r : 0}px, ${t === `s` ? r : t === `n` ? -r : 0}px)` : void 0
+      },
+      onPointerDown: e => {
+        e.preventDefault(), e.stopPropagation(), s(t, e);
+      }
+    }, t)) : null, t ? qn.map(t => (0, a.jsx)(`button`, {
+      type: `button`,
+      "aria-label": `Resize ${t}`,
+      [o]: t,
+      className: `${Gn} msr:z-20`,
+      style: {
+        ...Kn[t],
+        cursor: wn(t, e),
+        transform: r ? `translate(calc(-50% + ${t.includes(`e`) ? r : t.includes(`w`) ? -r : 0}px), calc(-50% + ${t.includes(`s`) ? r : t.includes(`n`) ? -r : 0}px))` : void 0
+      },
+      onPointerDown: e => {
+        e.preventDefault(), e.stopPropagation(), s(t, e);
+      },
+      children: (0, a.jsx)(Un, {
+        color: Wn
+      })
+    }, t)) : null]
+  }),
+  Xn = ({
+    x: e,
+    y: t,
+    color: n,
+    id: r,
+    handle: i
+  }) => (0, a.jsx)(Hn, {
+    x: e,
+    y: t,
+    color: n,
+    pointerEvents: `all`,
+    "data-mesurer-arrow-node": `true`,
+    "data-mesurer-arrow-id": r,
+    "data-mesurer-arrow-handle": i,
+    "data-mesurer-arrow-x": e,
+    "data-mesurer-arrow-y": t
+  }),
+  Zn = ({
+    start: e,
+    end: t,
+    control: n,
+    color: r,
+    width: i,
+    selected: o,
+    showNodes: s = !0,
+    preview: c = !1,
+    id: l
+  }) => {
+    let u = n ?? rn(e, t),
+      d = dn(e, t, u),
+      f = cn(e, u, t, i),
+      p = c ? [] : [.1, .2, .3, .4, .5, .6, .7, .8, .9].map(n => on(e, u, t, n));
+    return <g>{[p.map((e, t) => <circle cx={e.x} cy={e.y} r={`12`} fill={`transparent`} pointerEvents={`all`} data-mesurer-arrow-id={l} data-mesurer-arrow-touch-zone={`true`} key={`touch-${t}`} />), <path d={d} fill={`none`} stroke={r} opacity={`0`} strokeWidth={Math.max(i, 24)} pointerEvents={c ? `none` : `all`} data-mesurer-arrow-id={l} data-mesurer-arrow-hit={`true`} />, <path d={d} fill={`none`} stroke={r} strokeWidth={i} strokeLinecap={`round`} pointerEvents={c ? `none` : `all`} opacity={c ? .65 : 1} data-mesurer-arrow={c ? void 0 : `true`} data-mesurer-arrow-id={l} data-mesurer-arrow-preview={c ? `true` : void 0} />, <path d={`M ${f.left.x} ${f.left.y} L ${f.tip.x} ${f.tip.y} L ${f.right.x} ${f.right.y}`} fill={`none`} stroke={r} strokeWidth={i} strokeLinecap={`round`} strokeLinejoin={`round`} pointerEvents={c ? `none` : `all`} opacity={c ? .65 : 1} data-mesurer-arrow-id={l} data-mesurer-arrow-hit={`true`} />, o && s ? (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(Xn, {
+          x: e.x,
+          y: e.y,
+          color: r,
+          id: l,
+          handle: `start`
+        }), (0, a.jsx)(Xn, {
+          x: u.x,
+          y: u.y,
+          color: r,
+          id: l,
+          handle: `control`
+        }), (0, a.jsx)(Xn, {
+          x: t.x,
+          y: t.y,
+          color: r,
+          id: l,
+          handle: `end`
+        })]
+      }) : null, o && s ? (0, a.jsxs)(a.Fragment, {
+        children: [<circle cx={e.x} cy={e.y} r={`12`} fill={`transparent`} pointerEvents={`all`} data-mesurer-arrow-id={l} data-mesurer-arrow-handle={`start`} data-mesurer-arrow-hit={`true`} data-mesurer-arrow-x={e.x} data-mesurer-arrow-y={e.y} />, <circle cx={u.x} cy={u.y} r={`12`} fill={`transparent`} pointerEvents={`all`} data-mesurer-arrow-id={l} data-mesurer-arrow-handle={`control`} data-mesurer-arrow-hit={`true`} data-mesurer-arrow-x={u.x} data-mesurer-arrow-y={u.y} />, <circle cx={t.x} cy={t.y} r={`12`} fill={`transparent`} pointerEvents={`all`} data-mesurer-arrow-id={l} data-mesurer-arrow-handle={`end`} data-mesurer-arrow-hit={`true`} data-mesurer-arrow-x={t.x} data-mesurer-arrow-y={t.y} />]
+      }) : null]}</g>;
+  },
+  Qn = (0, i.memo)(function ({
+    arrows: e,
+    selectedIds: t,
+    moveOffset: n = {
+      x: 0,
+      y: 0
+    },
+    preview: r,
+    scrollOffset: o,
+    color: s,
+    onSelect: c,
+    onChange: l,
+    onChangeStart: u,
+    editingArrowId: d,
+    selectionCount: f
+  }) {
+    let p = (0, i.useRef)(null);
+    if (e.length === 0 && !r) return null;
+    let m = e => ({
+        x: e.clientX + o.x,
+        y: e.clientY + o.y
+      }),
+      h = (e, t, n) => {
+        n.preventDefault(), n.stopPropagation(), c(e.id), u(), p.current = {
+          type: `resize`,
+          arrow: e,
+          start: m(n),
+          handle: t
+        }, n.currentTarget.setPointerCapture(n.pointerId);
+      },
+      g = (e, t) => {
+        t.preventDefault(), t.stopPropagation(), c(e.id), u();
+        let n = Nn(e),
+          r = Sn(n.x, n.y, n.width, n.height);
+        p.current = {
+          type: `rotate`,
+          arrow: e,
+          start: m(t),
+          offset: Tn(r, m(t)) - (e.rotation ?? 0)
+        }, t.currentTarget.setPointerCapture(t.pointerId);
+      };
+    return <div className={`msr:pointer-events-none msr:absolute msr:inset-0`} data-mesurer-arrows-layer={`true`} onPointerMove={e => {
+      let t = p.current;
+      if (!t) return;
+      let n = m(e);
+      l(t.type === `resize` ? In(t.arrow, t.handle, n) : Ln(t.arrow, n, t.offset));
+    }} onPointerUp={e => {
+      p.current && e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), p.current = null;
+    }}>{[<svg aria-hidden={`true`} className={`msr:pointer-events-none msr:absolute msr:inset-0 msr:size-full`}>{[e.map(e => <g transform={t.includes(e.id) && (n.x || n.y) ? `translate(${n.x} ${n.y})` : void 0} key={e.id}>{(0, a.jsx)(Zn, {
+            start: {
+              x: Pn(e)[0].x - o.x,
+              y: Pn(e)[0].y - o.y
+            },
+            end: {
+              x: Pn(e)[2].x - o.x,
+              y: Pn(e)[2].y - o.y
+            },
+            control: {
+              x: Pn(e)[1].x - o.x,
+              y: Pn(e)[1].y - o.y
+            },
+            color: e.color,
+            width: e.width,
+            selected: t.includes(e.id),
+            showNodes: f === 1,
+            id: e.id
+          })}</g>), r ? (0, a.jsx)(Zn, {
+          start: {
+            x: r.start.x - o.x,
+            y: r.start.y - o.y
+          },
+          end: {
+            x: r.end.x - o.x,
+            y: r.end.y - o.y
+          },
+          control: r.control ? {
+            x: r.control.x - o.x,
+            y: r.control.y - o.y
+          } : void 0,
+          color: `#0d99ff`,
+          width: 1,
+          preview: !0
+        }) : null]}</svg>, e.filter(e => t.includes(e.id) && e.id !== d).map(e => {
+        let t = Nn(e),
+          r = t.x - o.x + n.x,
+          i = t.y - o.y + n.y,
+          s = t.width,
+          c = t.height;
+        return <div className={`msr:absolute msr:pointer-events-none`} style={{
+          left: r,
+          top: i,
+          width: s,
+          height: c,
+          transform: `rotate(${e.rotation ?? 0}deg)`,
+          transformOrigin: `center center`
+        }} key={`frame-${e.id}`}>{(0, a.jsx)(Yn, {
+            rotation: e.rotation ?? 0,
+            showControls: f === 1,
+            handleOffset: 8,
+            frameDataAttribute: `data-mesurer-arrow-frame`,
+            handleDataAttribute: `data-mesurer-arrow-handle`,
+            onResizeStart: (t, n) => h(e, t, n),
+            onRotateStart: t => g(e, t)
+          })}</div>;
+      })]}</div>;
+  }),
+  $n = `data-mesurer-keyboard-owned`,
+  er = `data-mesurer-kb`,
+  tr = `__MESURER_KEYBOARD_BRIDGE__`,
+  nr = new Set([`1`, `2`, `a`, `backspace`, `c`, `d`, `delete`, `escape`, `g`, `h`, `i`, `n`, `p`, `r`, `s`, `t`, `v`, `x`]),
+  rr = new Set([`,`, `a`, `z`]),
+  ir = ({
+    key: e,
+    code: t
+  }) => e === `1` || e === `!` || e === `&` || t === `Digit1` || t === `Numpad1` ? `1` : e === `2` || e === `@` || e === `é` || t === `Digit2` || t === `Numpad2` ? `2` : null,
+  ar = (e, t) => {
+    let n = ir({
+      key: e,
+      code: t.code ?? ``
+    });
+    return !t.altKey && (!!n && !t.ctrlKey && !t.metaKey || nr.has(e.toLowerCase()) && !t.ctrlKey && !t.metaKey && !t.shiftKey || rr.has(e.toLowerCase()) && (t.ctrlKey || t.metaKey) && (e.toLowerCase() === `z` || !t.shiftKey));
+  },
+  or = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return t.type === tr && (t.eventType === `keydown` || t.eventType === `keyup`) && typeof t.key == `string` && typeof t.code == `string` && typeof t.location == `number` && typeof t.repeat == `boolean` && typeof t.altKey == `boolean` && typeof t.ctrlKey == `boolean` && typeof t.metaKey == `boolean` && typeof t.shiftKey == `boolean` && ar(t.key, {
+      code: t.code,
+      altKey: t.altKey ?? !1,
+      ctrlKey: t.ctrlKey ?? !1,
+      metaKey: t.metaKey ?? !1,
+      shiftKey: t.shiftKey ?? !1
+    });
+  },
+  sr = e => {
+    if (!(e instanceof Element)) return !1;
+    let t = e,
+      n = t.tagName;
+    if (n === `INPUT` || n === `TEXTAREA` || n === `SELECT` || t.isContentEditable) return !0;
+    let r = t.getAttribute(`contenteditable`);
+    return r !== null && r !== `false`;
+  },
+  cr = e => {
+    let t = e.document.activeElement;
+    for (; t?.shadowRoot?.activeElement;) t = t.shadowRoot.activeElement;
+    return t;
+  },
+  lr = e => {
+    if (!(e instanceof Node)) return !1;
+    let t = e;
+    for (; t;) {
+      if (t instanceof Element && t.classList.contains(`mesurer-root`)) return !0;
+      let e = t.parentNode;
+      t = e instanceof ShadowRoot ? e.host : e;
+    }
+    return !1;
+  },
+  ur = e => lr(e) ? !0 : e instanceof Element && !!e.shadowRoot?.querySelector(`.mesurer-root`),
+  dr = (e, t) => lr(cr(t)) ? !0 : e.composedPath().some(e => ur(e)),
+  fr = (e, t) => {
+    let n = cr(t);
+    return sr(n) && lr(n) ? !0 : e.composedPath().some(e => sr(e) && ur(e));
+  },
+  pr = e => e.composedPath().some(e => {
+    if (!(e instanceof Element)) return !1;
+    let t = e.getAttribute(`role`);
+    return t === `menu` || t === `listbox`;
+  }),
+  mr = e => {
+    let t = cr(e);
+    return sr(t) && !lr(t);
+  },
+  hr = e => {
+    if (!(e.metaKey || e.ctrlKey || e.getModifierState(`Meta`) || e.getModifierState(`Control`))) return !1;
+    let t = e.key.toLowerCase();
+    return t !== `z` && t !== `a` && t !== `,`;
+  },
+  gr = (e, t) => {
+    e.documentElement.removeAttribute(er), t ? e.documentElement.setAttribute($n, `1`) : e.documentElement.removeAttribute($n);
+  },
+  _r = e => e.document.documentElement.hasAttribute($n),
+  vr = `msr:pointer-events-auto msr:absolute msr:min-h-6 msr:min-w-32 msr:w-max msr:h-max msr:overflow-hidden msr:whitespace-pre msr:border-0 msr:bg-transparent msr:px-0 msr:text-[16px] msr:leading-6 msr:outline-none msr:cursor-text`,
+  yr = e => e ? (e.innerText ?? e.textContent ?? ``).replace(/\r\n/g, `
+`).replace(/\n$/, ``) : ``,
+  br = (e, t, n) => {
+    let r = e.ownerDocument,
+      i = Sr(e);
+    if (!i) return;
+    let a = null;
+    if (typeof r.caretRangeFromPoint == `function`) a = r.caretRangeFromPoint(t, n);else {
+      let e = r.caretPositionFromPoint?.(t, n);
+      e && (a = r.createRange(), a.setStart(e.offsetNode, e.offset), a.collapse(!0));
+    }
+    !a || !e.contains(a.startContainer) || (i.removeAllRanges(), i.addRange(a));
+  },
+  xr = e => {
+    let t = Sr(e);
+    return !!(t?.anchorNode && e.contains(t.anchorNode));
+  },
+  Sr = e => {
+    let t = e.getRootNode();
+    if (t instanceof ShadowRoot && `getSelection` in t) {
+      let e = t.getSelection?.();
+      if (e) return e;
+    }
+    return e.ownerDocument.defaultView?.getSelection() ?? null;
+  },
+  Cr = (e, t) => {
+    e.focus();
+    let n = Sr(e);
+    if (t !== `
+` && e.ownerDocument.execCommand(`insertText`, !1, t)) return;
+    if (!n) {
+      e.append(t);
+      return;
+    }
+    if (n.rangeCount === 0) {
+      let t = e.ownerDocument.createRange();
+      t.selectNodeContents(e), t.collapse(!1), n.addRange(t);
+    }
+    let r = n.getRangeAt(0);
+    r.deleteContents();
+    let i = e.ownerDocument.createTextNode(t);
+    r.insertNode(i), r.setStartAfter(i), r.collapse(!0), n.removeAllRanges(), n.addRange(r);
+  },
+  wr = (0, i.memo)(function ({
+    items: e,
+    scrollOffset: t,
+    draft: n,
+    draftInputRef: r,
+    onDraftKeyDown: o,
+    onDraftBlur: s,
+    onActivateEditor: c,
+    interactive: l,
+    editable: u,
+    selectedIds: d,
+    moveOffset: f = {
+      x: 0,
+      y: 0
+    },
+    onSelect: p,
+    onMoveStart: m,
+    onMove: h,
+    onMoveEnd: g,
+    onChangeStart: _,
+    onTransform: v,
+    onEdit: y,
+    fontFamily: b,
+    color: x,
+    selectionCount: S
+  }) {
+    let C = (0, i.useRef)(null),
+      w = (0, i.useRef)(null);
+    (0, i.useLayoutEffect)(() => {
+      if (!n) {
+        w.current = null;
+        return;
+      }
+      let e = r.current;
+      if (e && w.current !== n && (w.current = n, !xr(e))) {
+        if (n.caretX !== void 0 && n.caretY !== void 0) {
+          br(e, n.caretX, n.caretY);
+          return;
+        }
+        e.focus();
+      }
+    }, [n, r]);
+    let T = e => {
+        e.preventDefault(), Cr(e.currentTarget, e.clipboardData.getData(`text/plain`));
+      },
+      E = e => {
+        let t = e.relatedTarget;
+        if (t instanceof HTMLElement && t.closest(`[data-mesurer-text], [data-mesurer-text-input]`)) return;
+        let n = e.currentTarget.ownerDocument.defaultView;
+        if (n && _r(n) && !lr(t)) {
+          let t = e.currentTarget;
+          requestAnimationFrame(() => {
+            t.isConnected && r.current === t && _r(n) && t.focus({
+              preventScroll: !0
+            });
+          });
+          return;
+        }
+        s();
+      };
+    return e.length === 0 && !n ? null : <div className={`msr:absolute msr:inset-0 msr:pointer-events-none`} data-mesurer-text-layer={`true`}>{[e.map(e => {
+        let i = n?.id === e.id;
+        return (0, a.jsx)(Tr, {
+          item: e,
+          scrollOffset: t,
+          editing: i,
+          draftInputRef: r,
+          interactive: l,
+          editable: u,
+          selected: d.includes(e.id),
+          showTransformControls: d.length === 1,
+          selectionCount: S,
+          dragRef: C,
+          onSelect: p,
+          onMoveStart: m,
+          onMove: h,
+          onMoveEnd: g,
+          onChangeStart: _,
+          moveOffset: d.includes(e.id) ? f : {
+            x: 0,
+            y: 0
+          },
+          onTransform: v,
+          onEdit: y,
+          onKeyDown: o,
+          onPaste: T,
+          onBlur: E,
+          onActivateEditor: c,
+          fontFamily: b,
+          color: x
+        }, e.id);
+      }), n && !n.id ? <div ref={e => {
+        r.current = e, e && c(e);
+      }} role={`textbox`} aria-label={`Text annotation`} contentEditable={`plaintext-only`} suppressContentEditableWarning={!0} autoFocus={!0} spellCheck={!1} onPointerDown={e => e.stopPropagation()} onKeyDown={o} onPaste={T} onBlur={E} className={vr} style={{
+        left: n.x - t.x,
+        top: n.y - t.y,
+        fontFamily: b,
+        color: x
+      }} data-mesurer-text-input={`true`} key={n.key} /> : null]}</div>;
+  });
+function Tr({
+  item: e,
+  scrollOffset: t,
+  editing: n,
+  draftInputRef: r,
+  interactive: o,
+  editable: s,
+  selected: c,
+  showTransformControls: l,
+  dragRef: u,
+  onSelect: d,
+  onMoveStart: f,
+  onMove: p,
+  onMoveEnd: m,
+  moveOffset: h,
+  onChangeStart: g,
+  onTransform: _,
+  onEdit: v,
+  onKeyDown: y,
+  onPaste: b,
+  onBlur: x,
+  onActivateEditor: S,
+  fontFamily: C,
+  color: w,
+  selectionCount: T
+}) {
+  let E = (0, i.useRef)(null),
+    D = (0, i.useRef)(null),
+    O = (0, i.useRef)(!1),
+    k = (0, i.useRef)(0),
+    A = e.rotation ?? 0,
+    j = e.scale ?? 1,
+    M = e.boxWidth,
+    N = En(j);
+  (0, i.useLayoutEffect)(() => {
+    let t = E.current;
+    !t || n || yr(t) !== e.text && (t.textContent = e.text);
+  }, [n, e.text]);
+  let P = () => {
+      let e = D.current;
+      return {
+        width: e?.offsetWidth ?? 32,
+        height: e?.offsetHeight ?? 24
+      };
+    },
+    F = e => ({
+      x: e.clientX + t.x,
+      y: e.clientY + t.y
+    }),
+    ee = t => {
+      d(e.id, t.shiftKey), !t.shiftKey && (f(e.id), u.current = {
+        type: `move`,
+        id: e.id,
+        startX: t.clientX,
+        startY: t.clientY,
+        itemX: e.x,
+        itemY: e.y,
+        moved: !1
+      }, t.currentTarget.setPointerCapture(t.pointerId));
+    };
+  return <div ref={D} style={{
+    left: e.x - t.x + h.x,
+    top: e.y - t.y + h.y,
+    transform: A ? `rotate(${A}deg)` : void 0,
+    transformOrigin: `center center`,
+    fontFamily: C,
+    color: w,
+    width: M,
+    ...N
+  }} onPointerDown={t => {
+    if (!o && !s || (t.stopPropagation(), s)) return;
+    let n = k.current;
+    if (k.current = t.timeStamp, n && t.timeStamp - n < 400) {
+      u.current = null, v(e.id, t.clientX, t.clientY);
+      return;
+    }
+    ee(t);
+  }} onPointerMove={t => {
+    let n = u.current;
+    if (!n || n.id !== e.id) return;
+    if (n.type === `move`) {
+      let e = t.clientX - n.startX,
+        r = t.clientY - n.startY;
+      if (!n.moved && Math.hypot(e, r) < 4) return;
+      n.moved || (u.current = {
+        ...n,
+        moved: !0
+      }), p(n.id, e, r);
+      return;
+    }
+    let r = F(t);
+    if (n.type === `resize`) {
+      _(e.id, yn(n.handle) ? On(n, n.handle, r) : Dn({
+        ...n,
+        scale: n.scale,
+        boxWidth: n.boxWidth
+      }, n.handle, r));
+      return;
+    }
+    _(e.id, {
+      x: e.x,
+      y: e.y,
+      rotation: Tn({
+        x: n.centerX,
+        y: n.centerY
+      }, r) - n.offset
+    });
+  }} onPointerUp={t => {
+    if (u.current?.id !== e.id) return;
+    t.currentTarget.hasPointerCapture(t.pointerId) && t.currentTarget.releasePointerCapture(t.pointerId);
+    let n = u.current.type === `move`;
+    u.current = null, n && m?.();
+  }} className={`msr:absolute msr:h-max ${M ? `msr:w-auto` : `msr:w-max`} ${o || s ? `msr:pointer-events-auto` : `msr:pointer-events-none`} ${o ? `msr:cursor-default` : s ? `msr:cursor-text` : ``}`} data-mesurer-text={`true`} data-mesurer-text-id={e.id}>{[<div ref={t => {
+      t && !O.current && (t.textContent = e.text, O.current = !0), E.current = t, n && t ? (r.current = t, S(t)) : r.current === t && (r.current = null);
+    }} role={n ? `textbox` : void 0} aria-label={n ? `Text annotation` : void 0} contentEditable={n ? `plaintext-only` : `false`} suppressContentEditableWarning={!0} spellCheck={!1} onPointerDown={t => {
+      s && (t.stopPropagation(), n || v(e.id, t.clientX, t.clientY));
+    }} onDoubleClick={t => {
+      o && (t.preventDefault(), t.stopPropagation(), v(e.id, t.clientX, t.clientY));
+    }} onKeyDown={n ? y : void 0} onPaste={n ? b : void 0} onBlur={n ? x : void 0} className={`${M ? `msr:w-full msr:whitespace-pre-wrap msr:break-words` : `msr:whitespace-pre`} ${n ? `msr:min-h-6 msr:min-w-0 msr:cursor-text msr:border-0 msr:bg-transparent msr:px-0 msr:outline-none` : ``}`} data-mesurer-text-input={n ? `true` : void 0} />, c && !n && o ? (0, a.jsx)(Yn, {
+      rotation: A,
+      showControls: l && T === 1,
+      onResizeStart: (t, n) => {
+        let r = P();
+        d(e.id), g?.(), u.current = {
+          type: `resize`,
+          id: e.id,
+          handle: t,
+          ...r,
+          x: e.x,
+          y: e.y,
+          rotation: A,
+          scale: j,
+          boxWidth: M
+        }, D.current?.setPointerCapture(n.pointerId);
+      },
+      onRotateStart: t => {
+        let n = P(),
+          r = Sn(e.x, e.y, n.width, n.height),
+          i = F(t);
+        d(e.id), g?.(), u.current = {
+          type: `rotate`,
+          id: e.id,
+          centerX: r.x,
+          centerY: r.y,
+          offset: Tn(r, i) - A
+        }, D.current?.setPointerCapture(t.pointerId);
+      }
+    }) : null]}</div>;
+}
+var Er = e => kn(e.points),
+  Dr = e => An(Er(e), e.rotation ?? 0),
+  Or = (e, t, n) => ({
+    ...e,
+    points: e.points.map(e => ({
+      x: e.x + t,
+      y: e.y + n
+    }))
+  }),
+  kr = (e, t, n) => {
+    let r = Er(e),
+      i = e.rotation ?? 0,
+      a = jn(r, i, t, n);
+    return {
+      ...e,
+      points: e.points.map(e => Mn(e, a)),
+      rotation: i
+    };
+  },
+  Ar = (e, t, n) => {
+    let r = Er(e),
+      i = Tn(Sn(r.x, r.y, r.width, r.height), t) - n;
+    return {
+      ...e,
+      rotation: i
+    };
+  },
+  jr = (e, t, n) => {
+    let r = Er(e),
+      i = Sn(r.x, r.y, r.width, r.height),
+      a = e.rotation ?? 0,
+      o = Cn(i, t, n),
+      s = a + n,
+      c = e.points.map(e => Cn(e, i, a)).map(e => Cn(e, t, n)).map(e => Cn(e, o, -s));
+    return {
+      ...e,
+      points: c,
+      rotation: s
+    };
+  },
+  Mr = null,
+  Nr = () => Mr !== null,
+  Pr = () => {
+    Mr?.stop(!1);
+  },
+  Q = (e, t, n, r) => {
+    Mr?.stop(!1);
+    let i = !1,
+      a = 0,
+      o = null,
+      s = () => {
+        let e = o;
+        e && r.onMove(e.clientX - n.x, e.clientY - n.y, e);
+      },
+      c = n => {
+        i || n.pointerId !== e || (o = n, !a && (a = t.requestAnimationFrame(() => {
+          a = 0, !i && s();
+        })));
+      },
+      l = (n = !0) => {
+        i || (i = !0, a &&= (t.cancelAnimationFrame(a), 0), t.removeEventListener(`pointermove`, c, !0), t.removeEventListener(`pointerup`, u, !0), t.removeEventListener(`pointercancel`, u, !0), Mr?.pointerId === e && (Mr = null), n && (o && s(), r.onEnd()));
+      },
+      u = t => {
+        t.pointerId === e && l(!0);
+      };
+    t.addEventListener(`pointermove`, c, !0), t.addEventListener(`pointerup`, u, !0), t.addEventListener(`pointercancel`, u, !0), Mr = {
+      pointerId: e,
+      stop: l
+    };
+  },
+  Fr = e => e.nativeEvent?.view ?? (typeof window > `u` ? null : window),
+  Ir = e => e.map((e, t) => `${t === 0 ? `M` : `L`} ${e.x} ${e.y}`).join(` `),
+  Lr = (0, i.memo)(function ({
+    strokes: e,
+    preview: t,
+    scrollOffset: n,
+    selectionMode: r,
+    selectedIds: o,
+    moveOffset: s = {
+      x: 0,
+      y: 0
+    },
+    onSelect: c,
+    onChange: l,
+    onChangeStart: u,
+    onMove: d,
+    onMoveStart: f,
+    onMoveEnd: p,
+    selectionCount: m
+  }) {
+    let h = (0, i.useRef)(null),
+      g = (0, i.useRef)(n);
+    if (g.current = n, e.length === 0 && t.length === 0) return null;
+    let _ = e => e.map(e => ({
+        x: e.x - n.x,
+        y: e.y - n.y
+      })),
+      v = e.filter(e => o.includes(e.id)),
+      y = e => ({
+        x: e.clientX + g.current.x,
+        y: e.clientY + g.current.y
+      }),
+      b = (e, t, n) => {
+        let r = h.current;
+        if (!r) return;
+        if (r.type === `move`) {
+          d ? d(r.id, e, t) : l(Or(r.stroke, e, t));
+          return;
+        }
+        let i = y(n);
+        l(r.type === `resize` ? kr(r.stroke, r.handle, i) : Ar(r.stroke, i, r.offset));
+      },
+      x = e => {
+        let t = Fr(e);
+        t && Q(e.pointerId, t, {
+          x: e.clientX,
+          y: e.clientY
+        }, {
+          onMove: b,
+          onEnd: () => {
+            h.current = null, p?.();
+          }
+        });
+      },
+      S = (e, t) => {
+        t.preventDefault(), t.stopPropagation(), c(e.id, t.shiftKey), !t.shiftKey && (u(), f?.(e.id), h.current = {
+          id: e.id,
+          type: `move`,
+          start: y(t),
+          stroke: e
+        }, x(t));
+      },
+      C = (e, t, n) => {
+        n.preventDefault(), n.stopPropagation(), u(), h.current = {
+          id: e.id,
+          type: `resize`,
+          start: y(n),
+          stroke: e,
+          handle: t
+        }, x(n);
+      },
+      w = (e, t) => {
+        t.preventDefault(), t.stopPropagation();
+        let n = Er(e),
+          r = Sn(n.x, n.y, n.width, n.height);
+        u(), h.current = {
+          id: e.id,
+          type: `rotate`,
+          start: y(t),
+          stroke: e,
+          offset: Tn(r, y(t)) - (e.rotation ?? 0)
+        }, x(t);
+      };
+    return <div className={`msr:absolute msr:inset-0 msr:pointer-events-none`}>{[<svg aria-hidden={`true`} className={`msr:absolute msr:inset-0 msr:size-full`} style={{
+        pointerEvents: r ? `auto` : `none`
+      }} data-mesurer-pen-layer={`true`}>{[e.map(e => <g transform={[o.includes(e.id) && (s.x || s.y) ? `translate(${s.x} ${s.y})` : ``, e.rotation ? `rotate(${e.rotation} ${Er(e).x + Er(e).width / 2 - n.x} ${Er(e).y + Er(e).height / 2 - n.y})` : ``].filter(Boolean).join(` `) || void 0} data-mesurer-pen-transform={e.id} key={e.id}>{[<path d={Ir(_(e.points))} fill={`none`} stroke={`transparent`} strokeWidth={Math.max(28, e.width + 20)} strokeLinecap={`round`} strokeLinejoin={`round`} pointerEvents={r ? `stroke` : `none`} onPointerDown={t => S(e, t)} data-mesurer-pen-id={e.id} />, <path d={Ir(_(e.points))} fill={`none`} stroke={e.color} strokeWidth={e.width} strokeLinecap={`round`} strokeLinejoin={`round`} pointerEvents={`none`} data-mesurer-pen={`true`} data-mesurer-pen-id={e.id} />]}</g>), t.length > 0 ? <path d={Ir(_(t))} fill={`none`} stroke={`#0d99ff`} strokeWidth={2} strokeLinecap={`round`} strokeLinejoin={`round`} opacity={.65} data-mesurer-pen-preview={`true`} /> : null]}</svg>, r ? v.map(e => {
+        let t = Er(e),
+          r = m === 1;
+        return <div className={`msr:absolute ${r ? `msr:pointer-events-auto` : `msr:pointer-events-none`}`} style={{
+          left: t.x - n.x + (o.includes(e.id) ? s.x : 0),
+          top: t.y - n.y + (o.includes(e.id) ? s.y : 0),
+          width: t.width,
+          height: t.height,
+          transform: `rotate(${e.rotation ?? 0}deg)`,
+          transformOrigin: `center center`
+        }} onPointerDown={r ? t => S(e, t) : void 0} key={e.id}>{(0, a.jsx)(Yn, {
+            frameDataAttribute: `data-mesurer-pen-frame`,
+            handleDataAttribute: `data-mesurer-pen-handle`,
+            rotation: e.rotation ?? 0,
+            showControls: r,
+            showOutline: !0,
+            onResizeStart: (t, n) => C(e, t, n),
+            onRotateStart: t => w(e, t)
+          })}</div>;
+      }) : null]}</div>;
+  });
+function Rr({
+  rect: e,
+  color: t
+}) {
+  return <div aria-hidden={`true`} className={`msr:pointer-events-none msr:absolute msr:border`} data-mesurer-overlay-marquee={`true`} style={{
+    left: e.left,
+    top: e.top,
+    width: e.width,
+    height: e.height,
+    borderColor: t,
+    backgroundColor: `${t}1f`
+  }} />;
+}
+var zr = ({
+    rect: e,
+    rotation: t,
+    scrollOffset: n,
+    onResizeStart: r,
+    onResize: o,
+    onResizeEnd: s,
+    onMove: c,
+    onMoveStart: l,
+    onMoveEnd: u,
+    onRotateStart: d,
+    onRotate: f,
+    onRotateEnd: p
+  }) => {
+    let m = (0, i.useRef)(null),
+      h = (0, i.useRef)(n);
+    h.current = n;
+    let g = e => ({
+        x: e.clientX + h.current.x,
+        y: e.clientY + h.current.y
+      }),
+      _ = (t, n, r) => {
+        if (m.current) {
+          if (m.current.type === `resize`) {
+            o(m.current.handle, r);
+            return;
+          }
+          if (m.current.type === `rotate`) {
+            f(Tn(Sn(e.left, e.top, e.width, e.height), g(r)));
+            return;
+          }
+          m.current.type === `move` && c(t, n);
+        }
+      },
+      v = () => {
+        let e = m.current?.type;
+        m.current = null, e === `rotate` && p(), e === `resize` && s(), e === `move` && u?.();
+      },
+      y = e => {
+        let t = Fr(e);
+        t && Q(e.pointerId, t, {
+          x: e.clientX,
+          y: e.clientY
+        }, {
+          onMove: _,
+          onEnd: v
+        });
+      };
+    return <div className={`msr:pointer-events-auto msr:absolute msr:border msr:border-dashed msr:border-[#0d99ff]`} style={{
+      left: e.left - n.x,
+      top: e.top - n.y,
+      width: e.width,
+      height: e.height,
+      transform: t ? `rotate(${t}deg)` : void 0,
+      transformOrigin: `center center`
+    }} data-mesurer-group-frame={`true`} onPointerDown={e => {
+      if (e.target !== e.currentTarget) return;
+      e.preventDefault(), e.stopPropagation(), l();
+      let t = g(e);
+      m.current = {
+        type: `move`,
+        last: t
+      }, y(e);
+    }}>{(0, a.jsx)(Yn, {
+        frameDataAttribute: `data-mesurer-group-controls`,
+        handleDataAttribute: `data-mesurer-group-handle`,
+        showOutline: !1,
+        rotation: t,
+        onResizeStart: (n, i) => {
+          i.preventDefault(), i.stopPropagation(), m.current = {
+            type: `resize`,
+            handle: n
+          }, r(n, e, t), y(i);
+        },
+        onRotateStart: t => {
+          t.preventDefault(), t.stopPropagation();
+          let n = Sn(e.left, e.top, e.width, e.height),
+            r = Tn(n, g(t));
+          m.current = {
+            type: `rotate`
+          }, d(n, r, e), y(t);
+        }
+      })}</div>;
+  },
+  Br = (0, i.memo)(function ({
+    enabled: e,
+    interactive: t = !0,
+    toolMode: n,
+    guidesEnabled: r,
+    altPressed: i,
+    isDragging: o,
+    marqueeRect: s,
+    groupBounds: c,
+    groupFrameRotation: l,
+    selectionCount: u,
+    onResizeSelection: d,
+    onMoveSelection: f,
+    onMoveSelectionStart: p,
+    onMoveSelectionEnd: m,
+    onStartGroupResize: h,
+    onEndGroupResize: g,
+    onStartGroupRotate: _,
+    onUpdateGroupRotate: v,
+    onEndGroupRotate: y,
+    fillColor: b,
+    outlineColor: x,
+    layoutDetailsEnabled: S,
+    pointers: C,
+    selection: w,
+    distances: T,
+    guides: E,
+    arrows: D,
+    text: O,
+    pen: k
+  }) {
+    let A = e,
+      j = t && A && n !== `none` && n !== `text-inspector` && n !== `xray` && n !== `rulers`,
+      M = n === `select`,
+      N = t && r && !!E.preview;
+    return <div className={`msr:absolute msr:inset-0 msr:select-none msr:outline-none ${A ? `msr:pointer-events-auto ${r ? E.hover || E.draggingId ? `msr:cursor-default` : `msr:cursor-crosshair` : `msr:cursor-default`} msr:opacity-100` : `msr:pointer-events-none msr:opacity-0`}`} style={{
+      pointerEvents: j ? `auto` : `none`
+    }} tabIndex={j ? -1 : void 0} onPointerDown={e => {
+      e.currentTarget.focus({
+        preventScroll: !0
+      }), C.onPointerDown(e);
+    }} onPointerMove={C.onPointerMove} onPointerUp={C.onPointerUp} onPointerCancel={C.onPointerCancel} onPointerLeave={C.onPointerLeave}>{[(0, a.jsx)(en, {
+        visible: M,
+        dragging: o,
+        fillColor: b,
+        outlineColor: x,
+        measurements: w.measurements,
+        measurementEdges: w.measurementEdges,
+        active: {
+          rect: w.activeRect,
+          width: w.activeWidth,
+          height: w.activeHeight
+        },
+        hoverRect: w.hoverRect,
+        hoverEdges: w.hoverEdges,
+        selected: w.selected,
+        selectedEdges: w.selectedEdges,
+        layoutDetailsEnabled: S
+      }), n === `selection` && s ? (0, a.jsx)(Rr, {
+        rect: s,
+        color: x
+      }) : null, (0, a.jsx)(Lr, {
+        ...k,
+        selectionCount: u
+      }), (0, a.jsx)(Qn, {
+        arrows: D.items,
+        selectedIds: D.selectedIds,
+        moveOffset: D.moveOffset,
+        preview: D.preview,
+        scrollOffset: D.scrollOffset,
+        color: D.color,
+        onSelect: D.onSelect,
+        onChange: D.onChange,
+        onChangeStart: D.onChangeStart,
+        editingArrowId: D.editingArrowId,
+        selectionCount: u
+      }), (0, a.jsx)(wr, {
+        ...O,
+        selectionCount: u
+      }), N || E.items.length > 0 ? (0, a.jsx)(Vt, {
+        guides: E.items,
+        selectedIds: E.selectedIds,
+        moveOffset: E.moveOffset,
+        hoverId: E.hover?.id ?? null,
+        draggingId: E.draggingId,
+        style: E.style,
+        pointerEvents: E.pointerEvents,
+        colors: E.colors,
+        preview: N ? E.preview : null,
+        onPointerDown: E.onPointerDown,
+        onPointerUp: E.onPointerUp,
+        onPointerCancel: E.onPointerCancel
+      }) : null, n === `selection` && c ? (0, a.jsx)(zr, {
+        rect: c,
+        rotation: l,
+        scrollOffset: D.scrollOffset,
+        onResize: d,
+        onMove: f,
+        onMoveStart: p,
+        onMoveEnd: m,
+        onResizeStart: h,
+        onResizeEnd: g,
+        onRotateStart: _,
+        onRotate: v,
+        onRotateEnd: y
+      }) : null, (0, a.jsx)(Rt, {
+        held: T.held,
+        onRemoveHeld: T.onRemoveHeld,
+        optionPair: T.optionPair,
+        guideDistance: T.guideDistance,
+        containerLines: T.containerLines,
+        showOption: M && i,
+        showGuideDistance: t && r && i,
+        showContainer: M && i
+      })]}</div>;
+  });
+function Vr({
+  portalTarget: e,
+  rootRef: t,
+  toolbarRef: n,
+  screenshotOverlayRef: r,
+  rulers: i,
+  overlay: s,
+  screenshot: c,
+  toolbar: l
+}) {
+  return (0, o.createPortal)(<div ref={t} className={`mesurer-root msr:pointer-events-none msr:fixed msr:inset-0 msr:z-50 msr:outline-none`} tabIndex={-1}>{[i.visible ? (0, a.jsx)(Ne, {
+      ownerWindow: i.ownerWindow,
+      settings: i.settings,
+      interactive: i.interactive,
+      forceVisible: i.forceVisible,
+      onStartGuide: i.onStartGuide,
+      onMoveGuide: i.onMoveGuide,
+      onFinishGuide: i.onFinishGuide,
+      onCancelGuide: i.onCancelGuide,
+      guides: i.guides,
+      selectedGuideIds: i.selectedGuideIds
+    }) : null, (0, a.jsx)(Br, {
+      ...s
+    }), (0, a.jsx)(Fe, {
+      ref: r,
+      ...c
+    }), (0, a.jsx)(wt, {
+      ref: n,
+      ...l
+    })]}</div>, e);
+}
+var Hr = ({
+    ownerWindow: e,
+    clickFormat: t,
+    setEnabled: n,
+    setToolModeNone: r
+  }) => {
+    let [a, o] = (0, i.useState)(!1),
+      [s, c] = (0, i.useState)(null),
+      [l, u] = (0, i.useState)(!1);
+    return {
+      active: a,
+      sample: s,
+      unsupported: l,
+      setActive: o,
+      open: (0, i.useCallback)(async () => {
+        let i = e.EyeDropper;
+        if (n(!0), r(), o(!0), c(null), u(!i), i) try {
+          let n = b((await new i().open()).sRGBHex);
+          if (!n) return;
+          c(n), e.navigator.clipboard?.writeText(D(n, t))?.catch(() => void 0);
+        } catch (e) {
+          e instanceof DOMException && e.name === `AbortError` && o(!1);
+        }
+      }, [t, e, n, r])
+    };
+  },
+  Ur = e => {
+    let t = (0, i.useRef)(null),
+      n = (0, i.useRef)(null),
+      r = (0, i.useCallback)(() => {
+        t.current !== null && (e.clearTimeout(t.current), t.current = null), n.current = null;
+      }, []);
+    return {
+      clearGuideDragHold: r,
+      scheduleGuideDragHold: (0, i.useCallback)((i, a) => {
+        r(), n.current = i, t.current = e.setTimeout(() => {
+          n.current === i && a(i);
+        }, Dt);
+      }, [r])
+    };
+  },
+  Wr = e => ({
+    width: e?.innerWidth || (typeof window > `u` ? 1 : window.innerWidth) || 1,
+    height: e?.innerHeight || (typeof window > `u` ? 1 : window.innerHeight) || 1
+  }),
+  Gr = (e, t = Wr()) => ({
+    left: e.left / t.width,
+    top: e.top / t.height,
+    width: e.width / t.width,
+    height: e.height / t.height
+  }),
+  Kr = (e, t = Wr()) => ({
+    left: e.left * t.width,
+    top: e.top * t.height,
+    width: e.width * t.width,
+    height: e.height * t.height
+  }),
+  qr = (e, t) => ({
+    left: Math.min(e.x, t.x),
+    top: Math.min(e.y, t.y),
+    width: Math.abs(e.x - t.x),
+    height: Math.abs(e.y - t.y)
+  }),
+  Jr = (e, t, n) => Math.max(t, Math.min(n, e)),
+  Yr = (e, t) => e.left < t.left + t.width && e.left + e.width > t.left && e.top < t.top + t.height && e.top + e.height > t.top,
+  Xr = e => e.width * e.height,
+  Zr = (e, t) => {
+    let n = Math.max(e.left, t.left),
+      r = Math.max(e.top, t.top),
+      i = Math.min(e.left + e.width, t.left + t.width),
+      a = Math.min(e.top + e.height, t.top + t.height);
+    return Math.max(0, i - n) * Math.max(0, a - r);
+  },
+  Qr = (e, t, n = .25) => Math.abs(e.left - t.left) < n && Math.abs(e.top - t.top) < n && Math.abs(e.width - t.width) < n && Math.abs(e.height - t.height) < n,
+  $r = (e, t) => {
+    let n = t.left + t.width,
+      r = t.top + t.height,
+      i = e.x < t.left ? t.left - e.x : e.x > n ? e.x - n : 0,
+      a = e.y < t.top ? t.top - e.y : e.y > r ? e.y - r : 0;
+    return Math.hypot(i, a);
+  },
+  ei = e => `${e.tagName.toLowerCase()}${e.id ? `#${e.id}` : ``}${e.className ? `.${e.className.toString().split(` `)[0]}` : ``}`,
+  ti = e => Number.parseFloat(e) || 0,
+  ni = e => {
+    if (!Gt(e.display)) return null;
+    let t = ti(e.rowGap),
+      n = ti(e.columnGap);
+    return t === 0 && n === 0 ? null : {
+      row: t,
+      column: n
+    };
+  },
+  ri = e => {
+    let t = e.getBoundingClientRect();
+    return {
+      left: t.left,
+      top: t.top,
+      width: t.width,
+      height: t.height
+    };
+  },
+  ii = -1,
+  ai = new Map(),
+  oi = e => {
+    let t = ui();
+    t !== ii && (ii = t, ai.clear());
+    let n = ai.get(e);
+    if (n) return n;
+    let r = ri(e);
+    return ai.set(e, r), r;
+  },
+  si = [],
+  ci = -1,
+  li = null,
+  ui = () => typeof performance > `u` ? 0 : Math.floor(performance.now() / 16),
+  di = (e = document) => {
+    let t = ui();
+    if (t === ci && li === e && si.length > 0) return si;
+    ci = t, li = e;
+    let n = [],
+      r = e.defaultView?.Element ?? Element,
+      i = t => {
+        let a = e.createTreeWalker(t, 1),
+          o = a.nextNode();
+        for (; o;) o instanceof r && (n.push(o), o.shadowRoot && i(o.shadowRoot)), o = a.nextNode();
+      };
+    return e.body && i(e.body), si = n, si;
+  },
+  fi = (e, t = window) => {
+    let n = e.getBoundingClientRect(),
+      r = t.getComputedStyle(e),
+      i = {
+        top: ti(r.paddingTop),
+        right: ti(r.paddingRight),
+        bottom: ti(r.paddingBottom),
+        left: ti(r.paddingLeft)
+      },
+      a = {
+        top: ti(r.marginTop),
+        right: ti(r.marginRight),
+        bottom: ti(r.marginBottom),
+        left: ti(r.marginLeft)
+      },
+      o = {
+        left: n.left + i.left,
+        top: n.top + i.top,
+        width: Math.max(0, n.width - i.left - i.right),
+        height: Math.max(0, n.height - i.top - i.bottom)
+      },
+      s = {
+        left: n.left - a.left,
+        top: n.top - a.top,
+        width: n.width + a.left + a.right,
+        height: n.height + a.top + a.bottom
+      },
+      c = ni(r);
+    return {
+      id: A(),
+      rect: {
+        left: n.left,
+        top: n.top,
+        width: n.width,
+        height: n.height
+      },
+      paddingRect: o,
+      marginRect: s,
+      padding: i,
+      margin: a,
+      gap: c,
+      label: ei(e),
+      elementRef: e
+    };
+  },
+  pi = (e, t = Wr(), n = document) => {
+    let r = e.rect;
+    return e.elementRef && n.contains(e.elementRef) ? r = ri(e.elementRef) : e.normalizedRect && (r = Kr(e.normalizedRect, t)), {
+      ...e,
+      rect: r,
+      normalizedRect: Gr(r, t),
+      originRect: void 0
+    };
+  },
+  mi = (e, t = window) => {
+    let n = Wr(t),
+      r = Math.round(e.position);
+    return e.orientation === `vertical` ? {
+      left: r,
+      top: 0,
+      width: 0,
+      height: n.height
+    } : {
+      left: 0,
+      top: r,
+      width: n.width,
+      height: 0
+    };
+  },
+  hi = (e, t) => e.orientation === `vertical` ? Math.abs(e.position - t.x) : Math.abs(e.position - t.y),
+  gi = e => {
+    let t = e.document ?? document,
+      {
+        orientation: n,
+        point: r,
+        snapGuidesEnabled: i,
+        overlayNode: a,
+        guides: o
+      } = e;
+    if (!i) return n === `vertical` ? r.x : r.y;
+    let s = di(t),
+      c = n === `vertical` ? r.x : r.y,
+      l = Tt + 1;
+    for (let e of s) {
+      if (!(e instanceof (t.defaultView?.HTMLElement ?? HTMLElement)) || a && a.contains(e) || e === t.body || e === t.documentElement) continue;
+      let i = oi(e);
+      if (!(i.width <= 2 || i.height <= 2)) {
+        if (n === `vertical`) {
+          if (r.x < i.left - Tt || r.x > i.left + i.width + Tt) continue;
+        } else if (r.y < i.top - Tt || r.y > i.top + i.height + Tt) continue;
+        (n === `vertical` ? [i.left, i.left + i.width, i.left + i.width / 2] : [i.top, i.top + i.height, i.top + i.height / 2]).forEach(e => {
+          let t = Math.abs(n === `vertical` ? e - r.x : e - r.y);
+          t > Tt || t < l && (c = e, l = t);
+        });
+      }
+    }
+    return o.forEach(t => {
+      if (t.id === e.draggingGuideId) return;
+      let i = t.position,
+        a = Math.abs(n === `vertical` ? i - r.x : i - r.y);
+      a > Tt || a < l && (c = i, l = a);
+    }), l <= Tt ? c : n === `vertical` ? r.x : r.y;
+  },
+  _i = ({
+    ownerDocument: e,
+    ownerWindow: t,
+    enabled: n,
+    settingsOpen: r,
+    toolMode: a,
+    toolbarActive: o,
+    minimized: s,
+    snapGuidesEnabled: c,
+    guides: l,
+    toolbarRef: u,
+    overlayRef: d,
+    createActionCommit: f,
+    setGuides: p,
+    setSelectedGuideIds: m,
+    setToolbarActive: h,
+    selectedGuideIds: g,
+    selectionCount: _,
+    moveSelectedAnnotations: v
+  }) => {
+    let y = (0, i.useRef)({
+        x: t.scrollX,
+        y: t.scrollY
+      }),
+      b = (0, i.useRef)(null),
+      x = (0, i.useRef)(null),
+      S = (0, i.useRef)({
+        enabled: n,
+        settingsOpen: r,
+        toolMode: a,
+        toolbarActive: o,
+        minimized: s,
+        snapGuidesEnabled: c,
+        guides: l,
+        createActionCommit: f,
+        setGuides: p,
+        setSelectedGuideIds: m,
+        setToolbarActive: h,
+        toolbarRef: u,
+        overlayRef: d,
+        selectedGuideIds: g,
+        selectionCount: _,
+        moveSelectedAnnotations: v
+      });
+    S.current = {
+      enabled: n,
+      settingsOpen: r,
+      toolMode: a,
+      toolbarActive: o,
+      minimized: s,
+      snapGuidesEnabled: c,
+      guides: l,
+      createActionCommit: f,
+      setGuides: p,
+      setSelectedGuideIds: m,
+      setToolbarActive: h,
+      toolbarRef: u,
+      overlayRef: d,
+      selectedGuideIds: g,
+      selectionCount: _,
+      moveSelectedAnnotations: v
+    }, (0, i.useLayoutEffect)(() => {
+      if (!n) {
+        b.current = null, x.current !== null && (e.documentElement.style.userSelect = x.current, x.current = null, b.current = null);
+        return;
+      }
+      let r = () => {
+          let e = {
+              x: t.scrollX,
+              y: t.scrollY
+            },
+            n = e.x - y.current.x,
+            r = e.y - y.current.y;
+          y.current = e, (n !== 0 || r !== 0) && S.current.setGuides(e => e.map(e => ({
+            ...e,
+            position: e.position - (e.orientation === `vertical` ? n : r)
+          })));
+        },
+        i = e => {
+          let n = S.current;
+          if (n.minimized || (n.toolbarActive && n.toolMode === `none` && (n.toolbarRef.current?.contains(e.target) || n.setToolbarActive(!1)), !n.enabled) || n.settingsOpen || n.toolbarRef.current?.contains(e.target) || Nr()) return;
+          let r = t.Element;
+          if (e.composedPath().some(e => e instanceof r ? e.hasAttribute(`data-mesurer-group-frame`) || e.hasAttribute(`data-mesurer-group-handle`) || e.hasAttribute(`data-mesurer-group-controls`) || e.hasAttribute(`data-mesurer-pen-id`) || e.hasAttribute(`data-mesurer-pen-frame`) || e.hasAttribute(`data-mesurer-pen-handle`) || e.hasAttribute(`data-mesurer-arrow-id`) || e.hasAttribute(`data-mesurer-text-id`) || e.hasAttribute(`data-mesurer-text-frame`) || e.hasAttribute(`data-mesurer-text-handle`) : !1) || e.composedPath().some(e => e instanceof r && e.hasAttribute(`data-mesurer-guide`)) && n.toolMode !== `none` && e.shiftKey) return;
+          let i = {
+              x: e.clientX,
+              y: e.clientY
+            },
+            a = n.guides.find(e => (e.orientation === `vertical` ? Math.abs(e.position - i.x) : Math.abs(e.position - i.y)) <= Et / 2);
+          if (!a) return;
+          let o = n.selectedGuideIds.includes(a.id) && n.selectionCount > 1;
+          e.button === 0 && !e.shiftKey && (e.preventDefault(), e.stopPropagation(), b.current = {
+            id: a.id,
+            orientation: a.orientation,
+            pointerId: e.pointerId,
+            commit: n.createActionCommit(),
+            committed: !1,
+            group: o,
+            lastX: e.clientX,
+            lastY: e.clientY
+          }), !o && n.setSelectedGuideIds(t => e.shiftKey ? t.includes(a.id) ? t.filter(e => e !== a.id) : [...t, a.id] : [a.id]);
+        },
+        a = n => {
+          if (Nr()) return;
+          let r = b.current;
+          if (!r || r.pointerId !== n.pointerId || !S.current.enabled) return;
+          let i = S.current;
+          if (r.committed ||= (n.preventDefault(), x.current === null && (x.current = e.documentElement.style.userSelect, e.documentElement.style.userSelect = `none`), t.getSelection()?.removeAllRanges(), r.commit(), !0), r.group) {
+            i.moveSelectedAnnotations(n.clientX - r.lastX, n.clientY - r.lastY), r.lastX = n.clientX, r.lastY = n.clientY;
+            return;
+          }
+          let a = gi({
+            orientation: r.orientation,
+            point: {
+              x: n.clientX,
+              y: n.clientY
+            },
+            snapGuidesEnabled: i.snapGuidesEnabled,
+            overlayNode: i.overlayRef.current,
+            guides: i.guides,
+            draggingGuideId: r.id,
+            document: e
+          });
+          S.current.setGuides(e => e.map(e => e.id === r.id ? {
+            ...e,
+            position: a
+          } : e));
+        },
+        o = t => {
+          b.current?.pointerId === t.pointerId && (b.current = null, x.current !== null && (e.documentElement.style.userSelect = x.current, x.current = null));
+        };
+      return t.addEventListener(`scroll`, r, !0), t.addEventListener(`pointerdown`, i, !0), t.addEventListener(`pointermove`, a, !0), t.addEventListener(`pointerup`, o, !0), t.addEventListener(`pointercancel`, o, !0), () => {
+        t.removeEventListener(`scroll`, r, !0), t.removeEventListener(`pointerdown`, i, !0), t.removeEventListener(`pointermove`, a, !0), t.removeEventListener(`pointerup`, o, !0), t.removeEventListener(`pointercancel`, o, !0), x.current !== null && (e.documentElement.style.userSelect = x.current, x.current = null), b.current = null;
+      };
+    }, [n, e, t]);
+  },
+  vi = 1e3,
+  yi = {
+    a: `text-inspector`,
+    d: `arrows`,
+    g: `guides`,
+    i: `select`,
+    n: `pen`,
+    s: `selection`,
+    t: `text`
+  },
+  bi = e => e.key === `Escape` || e.code === `Escape`,
+  xi = (e, t) => [e, t.key, t.code, t.location, t.repeat, t.altKey, t.ctrlKey, t.metaKey, t.shiftKey].join(`:`),
+  Si = (e, t, n) => {
+    for (let r of e) r.addEventListener(t, n, !0);
+    return () => {
+      for (let r of e) r.removeEventListener(t, n, !0);
+    };
+  },
+  Ci = e => {
+    let t = (0, i.useRef)(e);
+    t.current = e;
+    let n = (0, i.useRef)(null),
+      r = (0, i.useRef)(new Map());
+    (0, i.useLayoutEffect)(() => {
+      let i = e.eventTarget,
+        a = new WeakSet(),
+        o = (e, o = !1) => {
+          if (a.has(e)) return;
+          a.add(e), !o && ar(e.key, e) && r.current.set(xi(`keydown`, e), performance.now());
+          let s = t.current;
+          if (!o && mr(i) && !_r(i) && !bi(e)) return;
+          if (bi(e)) {
+            if (e.repeat || s.minimized || mr(i) && !_r(i) && (n.current = null, s.isToolbarIdle())) return;
+            let t = performance.now();
+            if (n.current !== null && t - n.current < vi) {
+              e.preventDefault(), n.current = null, s.minimizeMesurer();
+              return;
+            }
+            if (fr(e, i) && !s.isSettingsOpen() || pr(e)) return;
+            if (e.preventDefault(), s.isSettingsOpen()) {
+              n.current = t, s.onToggleSettings();
+              return;
+            }
+            if (s.isScreenshotActive()) {
+              n.current = t, s.onCloseScreenshot();
+              return;
+            }
+            if (s.isColorPickerActive()) {
+              n.current = t, s.onCloseColorPicker();
+              return;
+            }
+            if (!s.isToolbarIdle()) {
+              s.hasTransientInteraction() ? s.clearTransientState() : s.dismissInspectorPins() || (s.hasSelection() ? s.clearSelection() : s.isActiveToolMode() && (s.exitActiveTool(), mr(i) || s.overlayRef.current?.focus({
+                preventScroll: !0
+              }))), n.current = t;
+              return;
+            }
+            n.current = null, s.minimizeMesurer();
+            return;
+          }
+          if (fr(e, i) || mr(i) && !_r(i) || s.minimized || !s.shortcutsEnabled) return;
+          let c = e.metaKey || e.ctrlKey || e.getModifierState(`Meta`) || e.getModifierState(`Control`);
+          if (c && (e.key && e.key.toLowerCase() === `a` || e.code === `KeyA`)) {
+            (s.selectAllAnnotations() || s.isOverlayActive()) && (e.preventDefault(), e.stopImmediatePropagation(), s.overlayRef.current?.focus({
+              preventScroll: !0
+            }));
+            return;
+          }
+          if (c) {
+            if (e.key === `,`) {
+              e.preventDefault(), s.onInteract(), s.onCloseScreenshot(), s.onToggleSettings();
+              return;
+            }
+            if (e.key.toLowerCase() !== `z`) return;
+            if (e.shiftKey) {
+              e.preventDefault(), s.redo();
+              return;
+            }
+            e.preventDefault(), s.undo();
+            return;
+          }
+          e.key.toLowerCase() === `m` && s.setEnabled(e => !e);
+          let l = e.key.toLowerCase(),
+            u = ir(e);
+          if (!e.altKey) {
+            if (l === `p`) {
+              e.preventDefault(), s.onInteract(), s.onCloseScreenshot(), s.onColorPicker();
+              return;
+            }
+            if (l === `c`) {
+              e.preventDefault(), s.onInteract(), s.onScreenshot();
+              return;
+            }
+            if (l === `x` || l === `r`) {
+              e.preventDefault(), s.onInteract(), s.setEnabled(!0), s.clearTransientState(), s.onCloseColorPicker(), s.onCloseScreenshot(), l === `x` ? s.onToggleXray() : s.onToggleRulers();
+              return;
+            }
+            if (u) {
+              e.preventDefault(), e.stopImmediatePropagation(), s.onInteract(), s.clearTransientState(), s.setEnabled(!0), s.onCloseColorPicker(), s.onCloseScreenshot(), s.setXrayVisible(!1), s.setRulersVisible(!1), s.setToolMode(u === `1` ? `select` : `selection`);
+              return;
+            }
+            if (s.isOverlayActive()) {
+              let t = yi[l];
+              if (t) {
+                e.preventDefault(), e.stopImmediatePropagation(), s.onInteract(), s.clearTransientState(), s.onCloseScreenshot(), s.setToolMode(e => e === t ? `none` : t);
+                return;
+              }
+              l === `h` && (s.setGuideOrientation(`horizontal`), s.onInteract()), l === `v` && (s.setGuideOrientation(`vertical`), s.onInteract());
+            }
+            e.key === `Alt` && s.setAltPressed(!0), (e.key === `Backspace` || e.key === `Delete`) && s.removeSelected() && e.preventDefault();
+          }
+        },
+        s = (e, n = !1) => {
+          !n && ar(e.key, e) && r.current.set(xi(`keyup`, e), performance.now()), !(!n && mr(i) && !_r(i)) && e.key === `Alt` && t.current.setAltPressed(!1);
+        },
+        c = e => {
+          if (e.source !== i || e.origin !== i.location.origin || !_r(i)) return;
+          let t = e.data;
+          if (!or(t)) return;
+          let n = xi(t.eventType, t),
+            a = r.current.get(n);
+          if (a !== void 0 && performance.now() - a < 250) {
+            r.current.delete(n);
+            return;
+          }
+          let c = new KeyboardEvent(t.eventType, {
+            key: t.key,
+            code: t.code,
+            location: t.location,
+            repeat: t.repeat,
+            altKey: t.altKey,
+            ctrlKey: t.ctrlKey,
+            metaKey: t.metaKey,
+            shiftKey: t.shiftKey
+          });
+          t.eventType === `keydown` ? o(c, !0) : s(c, !0);
+        },
+        l = e => {
+          lr(e.target) && (n.current = null);
+        },
+        u = [i, i.document, i.document.documentElement],
+        d = e.overlayRef.current?.getRootNode();
+      d && d !== i.document && u.push(d);
+      let f = Si(u, `keydown`, o),
+        p = Si(u, `keyup`, s),
+        m = Si(u, `pointerdown`, l);
+      return i.addEventListener(`message`, c), () => {
+        f(), p(), m(), i.removeEventListener(`message`, c);
+      };
+    }, [e.enabled, e.eventTarget, e.overlayRef]);
+  },
+  wi = `__MESURER_KEYBOARD_GATE_V2__`,
+  Ti = new Set([`beforeinput`, `blur`, `compositionend`, `compositionstart`, `compositionupdate`, `copy`, `cut`, `focus`, `focusin`, `focusout`, `input`, `keydown`, `keypress`, `keyup`, `paste`]),
+  Ei = e => e.document.documentElement.hasAttribute($n),
+  Di = e => e.composedPath().some(e => ur(e)),
+  Oi = (e = window, {
+    isolateMesurerEvents: t = !1,
+    isolationHostId: n
+  } = {}) => {
+    let r = e;
+    if (r[wi]) return;
+    r[wi] = !0;
+    let i = e => !n || e.composedPath().some(e => e instanceof Element && e.id === n),
+      a = n => {
+        if (Ei(e)) {
+          if (dr(n, e)) {
+            if (t && !i(n) || !t || fr(n, e)) return;
+            n instanceof KeyboardEvent && ar(n.key, n) && e.postMessage({
+              type: tr,
+              eventType: n.type,
+              key: n.key,
+              code: n.code,
+              location: n.location,
+              repeat: n.repeat,
+              altKey: n.altKey,
+              ctrlKey: n.ctrlKey,
+              metaKey: n.metaKey,
+              shiftKey: n.shiftKey
+            }, e.location.origin === `null` ? `*` : e.location.origin), n.preventDefault(), n.stopImmediatePropagation();
+            return;
+          }
+          if (!lr(n.target)) {
+            if (n instanceof KeyboardEvent) {
+              if (hr(n)) return;
+              (n.type === `keydown` || n.type === `keyup`) && t && ar(n.key, n) && e.postMessage({
+                type: tr,
+                eventType: n.type,
+                key: n.key,
+                code: n.code,
+                location: n.location,
+                repeat: n.repeat,
+                altKey: n.altKey,
+                ctrlKey: n.ctrlKey,
+                metaKey: n.metaKey,
+                shiftKey: n.shiftKey
+              }, e.location.origin === `null` ? `*` : e.location.origin);
+            }
+            n.preventDefault(), t ? n.stopImmediatePropagation() : n.stopPropagation();
+          }
+        }
+      },
+      o = n => {
+        if (!(!Ei(e) || dr(n, e) || lr(n.target))) {
+          if (n.type === `focus` || n.type === `focusin`) {
+            e.document.documentElement.removeAttribute($n);
+            return;
+          }
+          t ? n.stopImmediatePropagation() : n.stopPropagation();
+        }
+      },
+      s = n => {
+        !Ei(e) || dr(n, e) || lr(n.target) || (n.preventDefault(), t ? n.stopImmediatePropagation() : n.stopPropagation());
+      };
+    for (let t of [`keydown`, `keypress`, `keyup`, `beforeinput`]) e.addEventListener(t, a, !0);
+    for (let t of [`focus`, `blur`, `focusin`, `focusout`]) e.addEventListener(t, o, !0);
+    for (let t of [`beforeinput`, `input`, `paste`, `copy`, `cut`, `compositionstart`, `compositionupdate`, `compositionend`]) e.addEventListener(t, s, !0);
+    if (!t) return;
+    let c = EventTarget.prototype.addEventListener,
+      l = EventTarget.prototype.removeEventListener,
+      u = new WeakMap(),
+      d = (e, t) => `${e}:${typeof t == `boolean` ? t : !!t?.capture}`;
+    EventTarget.prototype.addEventListener = function (t, n, r) {
+      if (!n || !Ti.has(t)) return c.call(this, t, n, r);
+      let a = d(t, r),
+        o = u.get(n);
+      o || (o = new Map(), u.set(n, o));
+      let s = o.get(a);
+      if (!s) {
+        let l = typeof r != `boolean` && !!r?.once,
+          u = typeof r == `boolean` ? void 0 : r?.signal;
+        s = function (a) {
+          if (Ei(e) && Di(a) && i(a)) {
+            l && !u?.aborted && c.call(this, t, s, r);
+            return;
+          }
+          typeof n == `function` ? n.call(this, a) : n.handleEvent(a);
+        }, o.set(a, s), r && typeof r != `boolean` && r.signal && r.signal.addEventListener(`abort`, () => o?.delete(a), {
+          once: !0
+        });
+      }
+      return c.call(this, t, s, r);
+    }, EventTarget.prototype.removeEventListener = function (e, t, n) {
+      let r = t ? u.get(t)?.get(d(e, n)) : void 0,
+        i = l.call(this, e, r ?? t, n);
+      return r && u.get(t)?.delete(d(e, n)), i;
+    };
+  },
+  ki = ({
+    eventTarget: e,
+    overlayActive: t
+  }) => {
+    (0, i.useLayoutEffect)(() => {
+      Oi(e);
+      let n = {
+          current: !1
+        },
+        r = t && (n.current || lr(cr(e)));
+      gr(e.document, r);
+      let i = () => {
+          if (!t) return;
+          let r = cr(e);
+          if (lr(r)) {
+            n.current = !0, gr(e.document, !0);
+            return;
+          }
+          if (r instanceof Element && !lr(r)) {
+            n.current = !1, gr(e.document, !1);
+            return;
+          }
+          gr(e.document, n.current);
+        },
+        a = r => {
+          if (!t) return;
+          let i = r.composedPath();
+          if (i.some(e => sr(e) && !lr(e))) {
+            n.current = !1, gr(e.document, !1);
+            return;
+          }
+          if (i.some(e => ur(e))) {
+            n.current = !0, gr(e.document, !0);
+            return;
+          }
+          n.current = !0, gr(e.document, !0);
+        };
+      return e.document.addEventListener(`focusin`, i, !0), e.document.addEventListener(`pointerdown`, a, !0), () => {
+        n.current = !1, gr(e.document, !1), e.document.removeEventListener(`focusin`, i, !0), e.document.removeEventListener(`pointerdown`, a, !0);
+      };
+    }, [e, t]);
+  },
+  Ai = e => {
+    let {
+        setStart: t,
+        setEnd: n,
+        setIsDragging: r,
+        clearSelectionRect: a,
+        clearGuideDragHold: o,
+        setHoverRect: s,
+        setHoverPointer: c,
+        setHoverElement: l,
+        setSelectedElement: u,
+        setArrowStart: d,
+        setArrowMiddle: f,
+        setArrowPreviewEnd: p,
+        setTextDraft: m
+      } = e,
+      h = (0, i.useCallback)(() => {
+        e.cancelArrowInteraction(), e.cancelPenInteraction(), e.cancelMoveSession(), o(), t(null), n(null), r(!1), a(), s(null), c(null), l(null), d(null), f(null), p(null), e.textDraftRef.current && (e.textDraftRef.current = null, m(null));
+      }, [o, a, e, f, p, d, n, l, c, s, r, t, m]),
+      g = (0, i.useCallback)(() => !!(e.arrowStart || e.textDraft || e.isDragging || e.start || e.draggingGuideId || e.hasArrowInteraction() || e.hasPenInteraction()), [e]),
+      _ = (0, i.useCallback)(() => e.toolMode === `none` && !e.xrayVisible && !e.rulersVisible, [e]),
+      v = (0, i.useCallback)(() => e.toolMode !== `none` || e.xrayVisible || e.rulersVisible, [e]),
+      y = (0, i.useCallback)(() => e.selectedGuideIds.length > 0 || e.selectedArrowIds.length > 0 || e.selectedTextIds.length > 0 || e.selectedPenStrokeIds.length > 0, [e]),
+      b = (0, i.useCallback)(() => {
+        h(), e.clearSelection(), e.setXrayVisible(!1), e.setRulersVisible(!1), e.setToolMode(`none`);
+      }, [h, e]),
+      x = (0, i.useCallback)(() => {
+        h(), e.clearSelection(), e.colorPicker.setActive(!1), e.screenshot.closeUi(), e.setXrayVisible(!1), e.setRulersVisible(!1), e.setToolMode(`none`);
+      }, [h, e]),
+      S = e.enabled && !e.minimized && (e.toolMode !== `none` || e.toolbarActive),
+      C = e.enabled && (e.toolMode !== `none` || e.toolbarActive);
+    return ki({
+      eventTarget: e.ownerWindow,
+      overlayActive: S
+    }), Ci({
+      eventTarget: e.ownerWindow,
+      overlayRef: e.overlayRef,
+      enabled: e.enabled,
+      clearTransientState: h,
+      hasTransientInteraction: g,
+      isActiveToolMode: v,
+      isToolbarIdle: _,
+      hasSelection: y,
+      clearSelection: e.clearSelection,
+      exitActiveTool: b,
+      dismissInspectorPins: e.dismissInspectorPins,
+      minimizeMesurer: e.onMinimize,
+      shortcutsEnabled: e.shortcutsEnabled,
+      minimized: e.minimized,
+      undo: e.undo,
+      redo: e.redo,
+      removeSelected: e.removeSelected,
+      selectAllAnnotations: e.selectAllAnnotations,
+      setEnabled: e.setEnabled,
+      setToolMode: e.setToolMode,
+      setXrayVisible: e.setXrayVisible,
+      setRulersVisible: e.setRulersVisible,
+      setAltPressed: e.setAltPressed,
+      isOverlayActive: () => C,
+      setGuideOrientation: e.setGuideOrientation,
+      onInteract: e.onInteract,
+      onColorPicker: () => {
+        e.screenshot.closeUi(), e.colorPicker.open();
+      },
+      onScreenshot: e.screenshot.toggleSelection,
+      onCloseScreenshot: e.screenshot.closeUi,
+      isScreenshotActive: () => e.screenshot.active || !!e.screenshot.previewUrl,
+      onToggleXray: () => {
+        e.setEnabled(!0), e.colorPicker.setActive(!1), e.screenshot.closeUi(), e.setXrayVisible(t => {
+          let n = !t;
+          return n && (e.toolMode === `selection` || e.toolMode === `arrows` || e.toolMode === `pen` || e.toolMode === `text`) && e.setToolMode(`select`), n;
+        });
+      },
+      onToggleRulers: () => {
+        e.setEnabled(!0), e.colorPicker.setActive(!1), e.screenshot.closeUi(), e.setRulersVisible(t => {
+          let n = !t;
+          return n && (e.toolMode === `selection` || e.toolMode === `arrows` || e.toolMode === `pen` || e.toolMode === `text`) && e.setToolMode(`select`), n;
+        });
+      },
+      onToggleSettings: e.onToggleSettings,
+      isSettingsOpen: () => e.settingsOpen,
+      onCloseColorPicker: () => e.colorPicker.setActive(!1),
+      isColorPickerActive: () => e.colorPicker.active
+    }), {
+      clearTransientState: h,
+      hasTransientInteraction: g,
+      exitActiveTool: b,
+      exitMesurerCompletely: x
+    };
+  },
+  ji = (e, t, n) => r => {
+    let i = typeof r == `function` ? r(e.current) : r;
+    Object.is(i, e.current) || (e.current = i, t(i), n());
+  },
+  Mi = `mesurer:tab-id`,
+  Ni = `mesurer-settings`,
+  Pi = `mesurer-state`,
+  Fi = e => ({
+    ...e,
+    elementRef: void 0
+  }),
+  Ii = e => ({
+    ...e,
+    elementRefA: void 0,
+    elementRefB: void 0
+  }),
+  Li = e => {
+    try {
+      let t = e.sessionStorage.getItem(Mi);
+      if (t) return t;
+      let n = e.crypto.randomUUID();
+      return e.sessionStorage.setItem(Mi, n), n;
+    } catch {
+      return `session`;
+    }
+  },
+  Ri = (e, t) => {
+    let n = t => t !== void 0 && e.CSS?.supports(`color`, t) === !0;
+    return {
+      ...t,
+      ...(n(t.highlightColor) ? {} : {
+        highlightColor: void 0
+      }),
+      ...(n(t.guideColor) ? {} : {
+        guideColor: void 0
+      }),
+      ...(n(t.arrowColor) ? {} : {
+        arrowColor: void 0
+      }),
+      ...(t.textStyle?.color && !n(t.textStyle.color) ? {
+        textStyle: {
+          ...t.textStyle,
+          color: void 0
+        }
+      } : {})
+    };
+  },
+  zi = ({
+    ownerWindow: e,
+    activePersistence: t,
+    settings: n,
+    workspace: r,
+    closeScreenshotRef: a,
+    clearWorkspaceTransientRef: o,
+    setSelectedTextIds: s,
+    applyingExternalPersistenceRef: c,
+    workspacePersistTimeoutRef: l,
+    storedState: u
+  }) => {
+    let {
+        enabledRef: d,
+        xrayVisibleRef: f,
+        toolModeRef: p,
+        rulersVisibleRef: m,
+        guideOrientationRef: h,
+        measurementsRef: g,
+        activeMeasurementRef: _,
+        heldDistancesRef: v,
+        guidesRef: y,
+        selectedGuideIdsRef: b,
+        arrowsRef: x,
+        selectedArrowIdsRef: S,
+        penStrokesRef: C,
+        selectedPenStrokeIdsRef: w,
+        textAnnotationsRef: T,
+        selectedTextIdsRef: E,
+        setEnabled: D,
+        setXrayVisible: O,
+        setToolMode: k,
+        setRulersVisible: A,
+        setGuideOrientation: j,
+        setMeasurements: M,
+        setActiveMeasurement: N,
+        setSelectedMeasurement: P,
+        setSelectedMeasurements: F,
+        setHeldDistances: ee,
+        setGuides: I,
+        setSelectedGuideIds: L,
+        setArrows: te,
+        setSelectedArrowIds: R,
+        setTextAnnotations: ne,
+        setPenStrokes: z,
+        setSelectedPenStrokeIds: B,
+        setSelectedElement: V,
+        setHoverElement: re,
+        setHoverRect: H,
+        setHoverPointer: ie,
+        clearSelectionRect: ae
+      } = r,
+      U = (0, i.useCallback)(() => {
+        if (!n.persistOnReload) return;
+        let e = {
+          enabled: d.current,
+          xrayVisible: f.current,
+          toolMode: p.current,
+          rulersVisible: m.current,
+          guideOrientation: h.current,
+          guides: y.current,
+          selectedGuideIds: b.current,
+          arrows: x.current,
+          selectedArrowIds: S.current,
+          penStrokes: C.current,
+          selectedPenStrokeIds: w.current,
+          textAnnotations: T.current,
+          selectedTextIds: E.current,
+          measurements: g.current.map(Fi),
+          activeMeasurement: _.current ? Fi(_.current) : null,
+          heldDistances: v.current.map(Ii)
+        };
+        t.saveWorkspace(e);
+      }, [t, d, y, g, n.persistOnReload, x, b, S, C, w, T, E, _, v, p, f, m, h]),
+      W = (0, i.useCallback)(() => {
+        n.persistOnReload && (Nr() || (l.current !== null && e.clearTimeout(l.current), l.current = e.setTimeout(() => {
+          l.current = null, U();
+        }, 250)));
+      }, [e, U, n.persistOnReload, l]),
+      G = (0, i.useCallback)(() => {
+        o.current(), p.current = `none`, m.current = !1, f.current = !1, h.current = `vertical`, g.current = [], _.current = null, v.current = [], y.current = [], b.current = [], x.current = [], S.current = [], T.current = [], E.current = [], C.current = [], w.current = [], a.current(), D(!1), k(`none`), A(!1), O(!1), j(`vertical`), M([]), N(null), P(null), F([]), ee([]), I([]), L([]), te([]), R([]), ne([]), z([]), B([]), s([]);
+      }, [a, o, N, te, D, j, I, ee, M, A, R, L, B, s, ne, k, O, _, x, h, y, v, g, C, m, S, b, w, T, p, f]),
+      oe = (0, i.useCallback)(e => {
+        d.current = e.enabled, p.current = e.toolMode, m.current = e.rulersVisible, f.current = e.xrayVisible, h.current = e.guideOrientation, g.current = e.measurements, _.current = e.activeMeasurement, v.current = e.heldDistances, y.current = e.guides, b.current = e.selectedGuideIds, x.current = e.arrows, S.current = e.selectedArrowIds, C.current = e.penStrokes, w.current = e.selectedPenStrokeIds ?? [], T.current = e.textAnnotations, E.current = e.selectedTextIds ?? [], e.enabled || a.current(), D(e.enabled), k(e.toolMode), A(e.rulersVisible), O(e.xrayVisible), j(e.guideOrientation), M(e.measurements), N(e.activeMeasurement), I(e.guides), L(e.selectedGuideIds), te(e.arrows), R(e.selectedArrowIds), z(e.penStrokes), B(e.selectedPenStrokeIds ?? []), ne(e.textAnnotations), s(e.selectedTextIds ?? []), ee(e.heldDistances);
+      }, [a, d, N, te, D, j, I, ee, M, z, A, R, L, B, s, ne, k, O, _, x, h, y, v, g, C, S, b, w, E, T, p, f]),
+      K = (0, i.useCallback)((t, r) => {
+        if (!t) return;
+        c.current = !0;
+        let i = Ri(e, t.settings);
+        n.applyPersistedSettings(i), r?.workspace !== !1 && t.workspace && (i.persistOnReload ?? n.persistOnReload) && oe(t.workspace), e.setTimeout(() => {
+          c.current = !1;
+        }, 0);
+      }, [c, oe, e, n]),
+      se = (0, i.useCallback)(e => {
+        let t = typeof e == `function` ? e(p.current) : e;
+        Object.is(t, p.current) || (p.current = t, k(t), t !== `select` && (V(null), re(null), H(null), ie(null), P(null), F([]), ae()), W());
+      }, [ae, W, re, ie, H, V, P, F, k, p]),
+      q = (e, t) => (0, i.useCallback)(ji(e, t, W), [W, e, t]),
+      ce = (0, i.useCallback)(e => {
+        let t = typeof e == `function` ? e(d.current) : e;
+        return t || a.current(), ji(d, D, W)(t);
+      }, [a, d, W, D]),
+      le = q(m, A),
+      ue = q(h, j),
+      de = q(g, M),
+      fe = q(_, N),
+      pe = q(v, ee),
+      J = q(y, I),
+      me = q(b, L),
+      he = q(x, te),
+      ge = q(S, R),
+      _e = q(T, ne),
+      ve = q(C, z),
+      ye = q(w, B),
+      be = q(E, s);
+    return {
+      saveWorkspace: U,
+      persistState: W,
+      applyPersistenceSnapshot: K,
+      clearWorkspace: (0, i.useCallback)(() => {
+        G(), t.clearWorkspace();
+      }, [t, G]),
+      setEnabledPersisted: ce,
+      setToolModePersisted: se,
+      setRulersVisiblePersisted: le,
+      setGuideOrientationPersisted: ue,
+      setMeasurementsPersisted: de,
+      setActiveMeasurementPersisted: fe,
+      setHeldDistancesPersisted: pe,
+      setGuidesPersisted: J,
+      setSelectedGuideIdsPersisted: me,
+      setArrowsPersisted: he,
+      setSelectedArrowIdsPersisted: ge,
+      setTextAnnotationsPersisted: _e,
+      setPenStrokesPersisted: ve,
+      setSelectedPenStrokeIdsPersisted: ye,
+      setSelectedTextIdsPersisted: be,
+      storedState: u
+    };
+  },
+  Bi = e => {
+    let {
+      toolMode: t,
+      arrows: n,
+      pen: r,
+      text: i,
+      measure: a
+    } = e;
+    if (t === `arrows`) return {
+      onPointerDown: n.handlePointerDown,
+      onPointerMove: n.handlePointerMove,
+      onPointerUp: n.handlePointerUp,
+      onPointerLeave: n.handlePointerLeave,
+      onPointerCancel: n.handlePointerCancel
+    };
+    if (t === `pen`) return {
+      onPointerDown: r.handlePointerDown,
+      onPointerMove: r.handlePointerMove,
+      onPointerUp: r.handlePointerUp,
+      onPointerLeave: r.handlePointerLeave,
+      onPointerCancel: r.handlePointerCancel
+    };
+    if (t === `text`) return {
+      onPointerDown: i.handlePointerDown,
+      onPointerMove: a.handlePointerMove,
+      onPointerUp: a.handlePointerUp,
+      onPointerLeave: a.handlePointerLeave,
+      onPointerCancel: a.handlePointerUp
+    };
+    if (t !== `selection`) return {
+      onPointerDown: a.handlePointerDown,
+      onPointerMove: a.handlePointerMove,
+      onPointerUp: a.handlePointerUp,
+      onPointerLeave: a.handlePointerLeave,
+      onPointerCancel: a.handlePointerUp
+    };
+    let o = (e, t) => {
+      e.target instanceof Element && e.target.closest(`[data-mesurer-group-frame]`) || t();
+    };
+    return {
+      onPointerDown: e => o(e, () => {
+        n.handleSelectionPointerDown(e) || a.handlePointerDown(e);
+      }),
+      onPointerMove: e => o(e, () => {
+        n.handleSelectionPointerMove(e) || a.handlePointerMove(e);
+      }),
+      onPointerUp: e => o(e, () => {
+        n.handleSelectionPointerUp(e) || a.handlePointerUp(e);
+      }),
+      onPointerLeave: a.handlePointerLeave,
+      onPointerCancel: e => o(e, () => {
+        n.handleSelectionPointerUp(e) || a.handlePointerUp(e);
+      })
+    };
+  },
+  Vi = (e, t, n, r, i = window) => {
+    let a = Wr(i),
+      o = Gr(e, a),
+      s = Gr(t, a),
+      c = e.left + e.width,
+      l = e.top + e.height,
+      u = t.left + t.width,
+      d = t.top + t.height,
+      f = e.left + e.width / 2,
+      p = e.top + e.height / 2,
+      m = null,
+      h = null,
+      g = [],
+      _ = c <= t.left || u <= e.left,
+      v = l <= t.top || d <= e.top;
+    if (_) {
+      let n = c <= t.left,
+        r = n ? c : u,
+        i = n ? t.left : e.left,
+        a = p;
+      m = {
+        x1: r,
+        x2: i,
+        y: a,
+        value: Math.abs(i - r)
+      };
+      let o = n ? t.left : u;
+      a < t.top ? g.push({
+        x1: o,
+        y1: a,
+        x2: o,
+        y2: t.top
+      }) : a > d && g.push({
+        x1: o,
+        y1: a,
+        x2: o,
+        y2: d
+      });
+    }
+    if (v) {
+      let n = l <= t.top,
+        r = n ? l : d,
+        i = n ? t.top : e.top,
+        a = f;
+      h = {
+        y1: r,
+        y2: i,
+        x: a,
+        value: Math.abs(i - r)
+      };
+      let o = n ? t.top : d;
+      a < t.left ? g.push({
+        x1: a,
+        y1: o,
+        x2: t.left,
+        y2: o
+      }) : a > u && g.push({
+        x1: a,
+        y1: o,
+        x2: u,
+        y2: o
+      });
+    }
+    let y = g.map(e => ({
+      x1: Jr(e.x1, 0, i.innerWidth),
+      y1: Jr(e.y1, 0, i.innerHeight),
+      x2: Jr(e.x2, 0, i.innerWidth),
+      y2: Jr(e.y2, 0, i.innerHeight)
+    })).filter(e => Math.abs(e.x1 - e.x2) > .5 || Math.abs(e.y1 - e.y2) > .5);
+    return {
+      id: A(),
+      rectA: e,
+      rectB: t,
+      normalizedRectA: o,
+      normalizedRectB: s,
+      elementRefA: n,
+      elementRefB: r,
+      horizontal: m,
+      vertical: h,
+      connectors: y
+    };
+  },
+  Hi = (e, t = Wr(), n = document, r = window) => {
+    let i = e.normalizedRectA ?? Gr(e.rectA, t),
+      a = e.normalizedRectB ?? Gr(e.rectB, t),
+      o = e.rectA,
+      s = e.rectB;
+    return o = e.elementRefA && n.contains(e.elementRefA) ? e.elementRefA.getBoundingClientRect() : Kr(i, t), s = e.elementRefB && n.contains(e.elementRefB) ? e.elementRefB.getBoundingClientRect() : Kr(a, t), {
+      ...Vi(o, s, e.elementRefA, e.elementRefB, r),
+      id: e.id
+    };
+  },
+  Ui = e => {
+    let t = (0, i.useRef)(e);
+    t.current = e;
+    let n = (0, i.useRef)(null);
+    (0, i.useLayoutEffect)(() => {
+      let r = e.window;
+      if (!e.enabled) {
+        n.current && r.cancelAnimationFrame(n.current), n.current = null;
+        return;
+      }
+      let i = () => {
+        let e = t.current;
+        e.setMeasurements(t => {
+          let n = !1,
+            r = t.map(t => {
+              if (!t.elementRef || !e.document.contains(t.elementRef)) return t;
+              let r = ri(t.elementRef);
+              return Qr(r, t.rect) ? t : (n = !0, {
+                ...t,
+                rect: r,
+                normalizedRect: Gr(r),
+                originRect: void 0
+              });
+            });
+          return n || t.length === 0 ? r : t;
+        }), e.setActiveMeasurement(t => {
+          if (!t?.elementRef || !e.document.contains(t.elementRef)) return t;
+          let n = ri(t.elementRef);
+          return Qr(n, t.rect) ? t : {
+            ...t,
+            rect: n,
+            normalizedRect: Gr(n),
+            originRect: void 0
+          };
+        }), e.setHeldDistances(t => {
+          let n = !1,
+            i = t.map(t => {
+              let i = t.elementRefA && e.document.contains(t.elementRefA),
+                a = t.elementRefB && e.document.contains(t.elementRefB);
+              if (!i && !a) return t;
+              let o = i ? ri(t.elementRefA) : t.rectA,
+                s = a ? ri(t.elementRefB) : t.rectB;
+              if (Qr(o, t.rectA) && Qr(s, t.rectB)) return t;
+              let c = Vi(o, s, t.elementRefA, t.elementRefB, r);
+              return n = !0, {
+                ...c,
+                id: t.id
+              };
+            });
+          return n || t.length === 0 ? i : t;
+        });
+        let a = e.selectedElementRef.current;
+        e.selectionEnabled && a && e.document.contains(a) && e.setSelectedMeasurement(e => {
+          let t = fi(a, r);
+          return e && Qr(e.rect, t.rect) ? e : t;
+        }), e.selectionEnabled && e.setSelectedMeasurements(t => {
+          let n = !1,
+            i = t.map(t => {
+              if (!t.elementRef || !e.document.contains(t.elementRef)) return t;
+              let i = fi(t.elementRef, r);
+              return Qr(i.rect, t.rect) ? t : (n = !0, {
+                ...i,
+                id: t.id
+              });
+            });
+          return n || t.length === 0 ? i : t;
+        });
+        let o = e.hoverElementRef.current;
+        if (e.selectionEnabled && o && e.document.contains(o)) {
+          let t = ri(o);
+          e.setHoverRect(e => e && Qr(e, t) ? e : t);
+        }
+        n.current = r.requestAnimationFrame(i);
+      };
+      return n.current = r.requestAnimationFrame(i), () => {
+        n.current && r.cancelAnimationFrame(n.current), n.current = null;
+      };
+    }, [e.enabled, e.window]);
+  },
+  Wi = (e, t, n, r) => Math.min(t, r) - Math.max(e, n) > 0,
+  Gi = (e, t = 1) => {
+    let n = e.map(() => ({
+      top: !0,
+      right: !0,
+      bottom: !0,
+      left: !0
+    }));
+    for (let r = 0; r < e.length; r += 1) {
+      let i = e[r],
+        a = i.left + i.width,
+        o = i.top + i.height;
+      for (let s = r + 1; s < e.length; s += 1) {
+        let c = e[s],
+          l = c.left + c.width,
+          u = c.top + c.height,
+          d = Wi(i.left, a, c.left, l),
+          f = Wi(i.top, o, c.top, u);
+        Math.abs(a - c.left) <= t && f && (n[r].right = !1, n[s].left = !1), Math.abs(i.left - l) <= t && f && (n[r].left = !1, n[s].right = !1), Math.abs(o - c.top) <= t && d && (n[r].bottom = !1, n[s].top = !1), Math.abs(i.top - u) <= t && d && (n[r].top = !1, n[s].bottom = !1);
+      }
+    }
+    return n;
+  },
+  Ki = (e, t) => {
+    if (!e || t.length === 0) return null;
+    let n = null,
+      r = Tt + 1;
+    for (let i of t) {
+      let t = hi(i, e);
+      t > Tt || t < r && (n = i, r = t);
+    }
+    return n;
+  },
+  qi = (e, t) => {
+    if (t.length === 0) return null;
+    let n = t[t.length - 1];
+    return e.find(e => e.id === n) ?? null;
+  },
+  Ji = e => {
+    e.document;
+    let t = e.window ?? window;
+    if (!e.altPressed || !e.selectedGuide && !e.primarySelectedMeasurement) return null;
+    let n = e.primarySelectedMeasurement,
+      r = e.selectedGuide ? null : n?.elementRef ?? e.selectedElementRef ?? null,
+      i = e.selectedGuide ? {
+        rect: mi(e.selectedGuide, t),
+        guideId: e.selectedGuide.id
+      } : r && n ? {
+        rect: n.rect,
+        element: r
+      } : null,
+      a = e.hoverGuide ? {
+        rect: mi(e.hoverGuide, t),
+        guideId: e.hoverGuide.id
+      } : e.hoverElement ? {
+        rect: ri(e.hoverElement),
+        element: e.hoverElement
+      } : null;
+    return !i || !a || i.element && a.element && (i.element === a.element || i.element.contains(a.element) || a.element.contains(i.element)) || i.guideId && a.guideId && i.guideId === a.guideId ? null : Vi(i.rect, a.rect, i.element ?? null, a.element ?? null, t);
+  },
+  Yi = e => {
+    let t = e.document ?? document,
+      n = e.window ?? window;
+    if (!e.altPressed || !e.primarySelectedMeasurement || e.optionPairOverlay || e.selectedGuideIds.length > 0) return null;
+    let r = e.selectedElement?.parentElement ?? null;
+    e.selectedElement && e.hoverElement && e.hoverElement !== e.selectedElement && e.hoverElement.contains(e.selectedElement) && (r = e.hoverElement);
+    let i = r && r !== t.body && r !== t.documentElement ? ri(r) : {
+        left: 0,
+        top: 0,
+        width: n.innerWidth,
+        height: n.innerHeight
+      },
+      a = e.primarySelectedMeasurement.rect,
+      o = a.left + a.width,
+      s = a.top + a.height,
+      c = a.left + a.width / 2,
+      l = a.top + a.height / 2,
+      u = i.left + i.width,
+      d = i.top + i.height,
+      f = Math.max(i.left, Math.min(c, u)),
+      p = Math.max(i.top, Math.min(l, d));
+    return {
+      top: {
+        y1: i.top,
+        y2: a.top,
+        x: f,
+        value: Math.max(0, a.top - i.top)
+      },
+      bottom: {
+        y1: s,
+        y2: d,
+        x: f,
+        value: Math.max(0, d - s)
+      },
+      left: {
+        x1: i.left,
+        x2: a.left,
+        y: p,
+        value: Math.max(0, a.left - i.left)
+      },
+      right: {
+        x1: o,
+        x2: u,
+        y: p,
+        value: Math.max(0, u - o)
+      }
+    };
+  },
+  Xi = e => {
+    if (!e) return null;
+    let t = e.getRootNode();
+    return t.nodeType === 11 ? t.host : null;
+  },
+  Zi = (e, t) => e.length > 0 ? e[e.length - 1] : t,
+  Qi = e => {
+    let t = e.document ?? document,
+      n = t.defaultView?.Element ?? Element,
+      r = Xi(e.overlayNode),
+      i = e.selectedMeasurements.map(e => {
+        let n = e.elementRef;
+        if (!n || !t.contains(n)) return null;
+        let r = ri(n);
+        return {
+          measurement: e,
+          element: n,
+          rect: r,
+          area: r.width * r.height
+        };
+      }).filter(e => e !== null).sort((e, t) => e.area - t.area);
+    if (i.length === 0) return null;
+    let a = t.elementsFromPoint(e.point.x, e.point.y);
+    for (let t of a) if (t instanceof n && !(e.overlayNode && e.overlayNode.contains(t)) && !(r && t === r)) {
+      for (let e of i) if (e.element === t || e.element.contains(t)) return e.measurement;
+    }
+    for (let t of i) {
+      let {
+        rect: n
+      } = t;
+      if (e.point.x >= n.left && e.point.x <= n.left + n.width && e.point.y >= n.top && e.point.y <= n.top + n.height) return t.measurement;
+    }
+    return null;
+  },
+  $i = ({
+    document: e,
+    window: t,
+    start: n,
+    end: r,
+    selectedMeasurements: a,
+    selectedMeasurement: o,
+    selectionOriginRect: s,
+    guides: c,
+    selectedGuideIds: l,
+    hoverPointer: u,
+    hoverRect: d,
+    hoverElement: f,
+    selectedElement: p,
+    altPressed: m,
+    guidesEnabled: h,
+    guidePreview: g,
+    displayedMeasurements: _,
+    hoverHighlightEnabled: v,
+    guideHighlightEnabled: y,
+    highlightColor: b,
+    guideColor: x
+  }) => {
+    let S = (0, i.useMemo)(() => !n || !r ? null : {
+        left: Math.min(n.x, r.x),
+        top: Math.min(n.y, r.y),
+        width: Math.abs(r.x - n.x),
+        height: Math.abs(r.y - n.y)
+      }, [r, n]),
+      C = S ? O(S.width) : 0,
+      w = S ? O(S.height) : 0,
+      T = (0, i.useMemo)(() => {
+        if (a.length <= 1) return null;
+        let e = a.map(e => e.id).join(`|`),
+          t = a.map(e => e.rect),
+          n = 1 / 0,
+          r = 1 / 0,
+          i = -1 / 0,
+          o = -1 / 0;
+        t.forEach(e => {
+          n = Math.min(n, e.left), r = Math.min(r, e.top), i = Math.max(i, e.left + e.width), o = Math.max(o, e.top + e.height);
+        });
+        let c = {
+          left: n,
+          top: r,
+          width: i - n,
+          height: o - r
+        };
+        return {
+          ...a[a.length - 1],
+          id: `group-${e}`,
+          rect: c,
+          paddingRect: c,
+          marginRect: c,
+          padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+          },
+          gap: null,
+          originRect: s ?? void 0
+        };
+      }, [a, s]),
+      E = (0, i.useMemo)(() => T ? [T] : a.length > 0 ? a : o ? [o] : [], [T, o, a]),
+      D = (0, i.useMemo)(() => qi(c, l), [c, l]),
+      k = (0, i.useMemo)(() => Ki(u, c), [c, u]),
+      A = (0, i.useMemo)(() => Zi(a, o), [o, a]),
+      j = T ?? A,
+      M = (0, i.useMemo)(() => Ji({
+        altPressed: m,
+        primarySelectedMeasurement: j,
+        selectedGuide: D,
+        hoverGuide: k,
+        hoverElement: f,
+        selectedElementRef: p,
+        document: e,
+        window: t
+      }), [m, j, f, k, p, D]),
+      N = (0, i.useMemo)(() => Yi({
+        altPressed: m,
+        primarySelectedMeasurement: j,
+        optionPairOverlay: M,
+        selectedGuideIds: l,
+        selectedElement: p,
+        hoverElement: f,
+        document: e,
+        window: t
+      }), [m, j, f, M, p, l]),
+      P = (0, i.useMemo)(() => {
+        if (!m || !h) return null;
+        if (D && k && D.id !== k.id) return Vi(mi(D, t), mi(k, t), null, null, t);
+        if (!g) return null;
+        let e = {
+            id: `preview`,
+            orientation: g.orientation,
+            position: g.position
+          },
+          n = c.filter(e => e.orientation === g.orientation);
+        if (n.length === 0) return null;
+        let r = n.reduce((t, n) => {
+          let r = Math.abs(n.position - e.position);
+          return t ? r < t.distance ? {
+            guide: n,
+            distance: r
+          } : t : {
+            guide: n,
+            distance: r
+          };
+        }, null);
+        return r ? Vi(mi(e, t), mi(r.guide, t), null, null, t) : null;
+      }, [m, g, c, h, k, D]),
+      {
+        outlineColor: F,
+        fillColor: ee,
+        guideColorActive: I,
+        guideColorHover: L,
+        guideColorDefault: te,
+        guideColorPreview: R,
+        guidePreviewEmphasized: ne
+      } = (0, i.useMemo)(() => ({
+        outlineColor: `color-mix(in oklch, ${b} 80%, transparent)`,
+        fillColor: `color-mix(in oklch, ${b} 8%, transparent)`,
+        guideColorActive: `color-mix(in oklch, ${x} 100%, transparent)`,
+        guideColorHover: `color-mix(in oklch, ${x} ${y ? 90 : 70}%, transparent)`,
+        guideColorDefault: `color-mix(in oklch, ${x} 70%, transparent)`,
+        guideColorPreview: `color-mix(in oklch, ${x} ${y ? 50 : 70}%, transparent)`,
+        guidePreviewEmphasized: y
+      }), [x, y, b]),
+      z = (0, i.useMemo)(() => E.map(e => e.rect), [E]),
+      B = v && d && a.length <= 1 ? d : null;
+    return {
+      activeRect: S,
+      activeWidth: C,
+      activeHeight: w,
+      displayedSelectedMeasurements: E,
+      selectedGuide: D,
+      hoverGuide: k,
+      optionPairOverlay: M,
+      optionContainerLines: N,
+      guideDistanceOverlay: P,
+      outlineColor: F,
+      fillColor: ee,
+      guideColorActive: I,
+      guideColorHover: L,
+      guideColorDefault: te,
+      guideColorPreview: R,
+      guidePreviewEmphasized: ne,
+      hoverRectToShow: B,
+      selectedEdgeVisibility: (0, i.useMemo)(() => Gi(z), [z]).slice(0, z.length),
+      hoverEdgeVisibility: B ? {
+        top: !0,
+        right: !0,
+        bottom: !0,
+        left: !0
+      } : null,
+      measurementEdgeVisibility: (0, i.useMemo)(() => Gi(_.map(e => e.rect)), [_])
+    };
+  },
+  ea = 50,
+  ta = ({
+    toggles: e,
+    measurements: t,
+    guides: n,
+    arrows: r,
+    text: a,
+    pen: o,
+    transient: s
+  }) => {
+    let {
+        enabled: c,
+        setEnabled: l,
+        toolMode: u,
+        setToolMode: d,
+        guideOrientation: f,
+        setGuideOrientation: p
+      } = e,
+      {
+        measurements: m,
+        setMeasurements: h,
+        activeMeasurement: g,
+        setActiveMeasurement: _,
+        selectedMeasurements: v,
+        setSelectedMeasurements: y,
+        selectedMeasurement: b,
+        setSelectedMeasurement: x,
+        heldDistances: S,
+        setHeldDistances: C
+      } = t,
+      {
+        guides: w,
+        setGuides: T,
+        selectedGuideIds: E,
+        setSelectedGuideIds: D,
+        draggingGuideId: O,
+        setDraggingGuideId: k
+      } = n,
+      {
+        setStart: A,
+        setEnd: j,
+        setIsDragging: M,
+        setGuidePreview: N,
+        setHoverRect: P,
+        setHoverElement: F,
+        setSelectedElement: ee,
+        clearSelectionRect: I
+      } = s,
+      {
+        arrows: L,
+        setArrows: te,
+        selectedArrowIds: R,
+        setSelectedArrowIds: ne
+      } = r,
+      {
+        textAnnotations: z,
+        setTextAnnotations: B
+      } = a,
+      {
+        penStrokes: V,
+        setPenStrokes: re,
+        selectedPenStrokeIds: H,
+        setSelectedPenStrokeIds: ie
+      } = o,
+      ae = (0, i.useRef)([]),
+      U = (0, i.useRef)([]),
+      W = (0, i.useRef)(null),
+      G = (0, i.useCallback)(() => ({
+        enabled: c,
+        toolMode: u,
+        guideOrientation: f,
+        measurements: [...m],
+        activeMeasurement: g,
+        selectedMeasurements: [...v],
+        selectedMeasurement: b,
+        heldDistances: [...S],
+        guides: [...w],
+        selectedGuideIds: [...E],
+        draggingGuideId: O,
+        arrows: [...L],
+        selectedArrowIds: [...R],
+        textAnnotations: [...z],
+        penStrokes: [...V],
+        selectedPenStrokeIds: [...H]
+      }), [g, O, c, f, w, S, m, E, b, v, u, L, R, z, V, H]),
+      oe = (0, i.useCallback)(e => {
+        let t = e => `${Math.round(e.left)}:${Math.round(e.top)}:${Math.round(e.width)}:${Math.round(e.height)}`;
+        return [e.enabled ? `1` : `0`, e.toolMode, e.guideOrientation, e.measurements.map(e => `${e.id}@${t(e.rect)}`).join(`,`), e.activeMeasurement ? `${e.activeMeasurement.id}@${t(e.activeMeasurement.rect)}` : ``, e.selectedMeasurements.map(e => `${e.id}@${t(e.rect)}`).join(`,`), e.selectedMeasurement ? `${e.selectedMeasurement.id}@${t(e.selectedMeasurement.rect)}` : ``, e.heldDistances.map(e => e.id).join(`,`), e.guides.map(e => `${e.id}:${e.position}`).join(`,`), e.selectedGuideIds.join(`,`), e.draggingGuideId ?? ``, e.arrows.map(e => `${e.id}:${e.start.x},${e.start.y},${e.control?.x ?? ``},${e.control?.y ?? ``},${e.end.x},${e.end.y}`).join(`,`), e.selectedArrowIds.join(`,`), e.textAnnotations.map(e => `${e.id}:${e.x},${e.y},${e.scale ?? ``},${e.rotation ?? ``},${e.boxWidth ?? ``}:${e.text}`).join(`,`), e.penStrokes.map(e => `${e.id}:${e.rotation ?? ``}:${e.points.map(e => `${e.x},${e.y}`).join(`;`)}`).join(`,`), e.selectedPenStrokeIds.join(`,`)].join(`|`);
+      }, []),
+      K = (0, i.useCallback)(() => {
+        let e = G(),
+          t = oe(e);
+        W.current !== t && (ae.current.push(e), U.current = [], W.current = t, ae.current.length > ea && ae.current.shift());
+      }, [G, oe]),
+      se = (0, i.useCallback)(e => {
+        l(e.enabled), d(e.toolMode), p(e.guideOrientation), h(e.measurements), _(e.activeMeasurement), y(e.selectedMeasurements), x(e.selectedMeasurement), C(e.heldDistances), T(e.guides), D(e.selectedGuideIds), k(e.draggingGuideId), te(e.arrows), ne(e.selectedArrowIds), B(e.textAnnotations), re(e.penStrokes), ie(e.selectedPenStrokeIds), A(null), j(null), M(!1), N(null), P(null), F(null), I();
+        let t = e.selectedMeasurement?.elementRef ?? e.selectedMeasurements[e.selectedMeasurements.length - 1]?.elementRef ?? null;
+        ee(t);
+      }, [I, _, k, l, j, p, N, T, C, P, M, h, D, x, y, ee, A, d, F, te, ne, B, re, ie]),
+      q = (0, i.useCallback)(() => {
+        let e = ae.current.pop();
+        if (!e) return;
+        let t = G();
+        U.current.push(t), U.current.length > ea && U.current.shift(), W.current = null, se(e);
+      }, [G, se]),
+      ce = (0, i.useCallback)(() => {
+        let e = U.current.pop();
+        e && (ae.current.push(G()), ae.current.length > ea && ae.current.shift(), W.current = null, se(e));
+      }, [G, se]),
+      le = (0, i.useCallback)(e => {
+        d(t => {
+          let n = typeof e == `function` ? e(t) : e;
+          return n === t ? t : (K(), n);
+        });
+      }, [K, d]),
+      ue = (0, i.useCallback)(e => {
+        p(t => {
+          let n = typeof e == `function` ? e(t) : e;
+          return n === t ? t : (K(), n);
+        });
+      }, [K, p]),
+      de = (0, i.useCallback)(e => {
+        l(t => {
+          let n = typeof e == `function` ? e(t) : e;
+          return n === t ? t : (K(), n);
+        });
+      }, [K, l]);
+    return {
+      recordSnapshot: K,
+      createActionCommit: (0, i.useCallback)(() => {
+        let e = !1;
+        return () => {
+          e ||= (K(), !0);
+        };
+      }, [K]),
+      setToolModeWithHistory: le,
+      setGuideOrientationWithHistory: ue,
+      setEnabledWithHistory: de,
+      undo: q,
+      redo: ce
+    };
+  },
+  na = {
+    opacity: 1,
+    width: 1,
+    pattern: `solid`,
+    dashLength: 6,
+    gap: 4
+  },
+  ra = {
+    opacity: 1,
+    edgeReveal: !1
+  },
+  ia = {
+    copy: !0,
+    download: !1
+  },
+  aa = e => e === `hex` || e === `rgb` || e === `hsl` || e === `oklch`,
+  oa = (e, t, n) => Number(Math.min(n, Math.max(t, e)).toFixed(2)),
+  sa = e => {
+    if (!e || typeof e != `object`) return;
+    let t = e;
+    return {
+      opacity: typeof t.opacity == `number` && Number.isFinite(t.opacity) ? oa(t.opacity, 0, 1) : na.opacity,
+      width: typeof t.width == `number` && Number.isFinite(t.width) ? oa(t.width, .01, 4) : na.width,
+      pattern: t.pattern === `dashed` || t.pattern === `dotted` ? t.pattern : na.pattern,
+      dashLength: typeof t.dashLength == `number` && Number.isFinite(t.dashLength) ? oa(t.dashLength, 2, 24) : na.dashLength,
+      gap: typeof t.gap == `number` && Number.isFinite(t.gap) ? oa(t.gap, 0, 24) : na.gap
+    };
+  },
+  ca = e => {
+    if (!e || typeof e != `object`) return;
+    let t = e;
+    return {
+      opacity: typeof t.opacity == `number` && Number.isFinite(t.opacity) ? oa(t.opacity, .2, 1) : ra.opacity,
+      edgeReveal: typeof t.edgeReveal == `boolean` ? t.edgeReveal : ra.edgeReveal
+    };
+  },
+  la = e => {
+    if (!e || typeof e != `object`) return;
+    let t = e,
+      n = typeof t.copy == `boolean` ? t.copy : ia.copy,
+      r = typeof t.download == `boolean` ? t.download : ia.download;
+    return !n && !r ? {
+      ...ia
+    } : {
+      copy: n,
+      download: r
+    };
+  },
+  $ = e => typeof e == `number` && Number.isFinite(e),
+  ua = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return $(t.left) && $(t.top) && $(t.width) && t.width >= 0 && $(t.height) && t.height >= 0;
+  },
+  da = e => ua(e),
+  fa = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return typeof t.id == `string` && ua(t.rect) && da(t.normalizedRect) && $(t.deltaX) && $(t.deltaY) && (t.snapped === void 0 || typeof t.snapped == `boolean`);
+  },
+  pa = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return typeof t.id == `string` && (t.orientation === `vertical` || t.orientation === `horizontal`) && $(t.position);
+  },
+  ma = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e,
+      n = t.start,
+      r = t.end,
+      i = t.control;
+    return typeof t.id == `string` && $(n?.x) && $(n?.y) && $(r?.x) && $(r?.y) && (i === void 0 || $(i.x) && $(i.y)) && typeof t.color == `string` && $(t.width) && t.width > 0;
+  },
+  ha = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return typeof t.id == `string` && typeof t.color == `string` && $(t.width) && t.width > 0 && Array.isArray(t.points) && t.points.every(e => {
+      if (!e || typeof e != `object`) return !1;
+      let t = e;
+      return $(t.x) && $(t.y);
+    });
+  },
+  ga = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return typeof t.id == `string` && $(t.x) && $(t.y) && typeof t.text == `string` && t.text.length > 0 && (t.scale === void 0 || $(t.scale) && t.scale > 0) && (t.rotation === void 0 || $(t.rotation)) && (t.boxWidth === void 0 || $(t.boxWidth) && t.boxWidth > 0);
+  },
+  _a = e => {
+    if (!e || typeof e != `object`) return !1;
+    let t = e;
+    return typeof t.id == `string` && ua(t.rectA) && ua(t.rectB) && da(t.normalizedRectA) && da(t.normalizedRectB) && (e => {
+      if (e === null) return !0;
+      if (!e || typeof e != `object`) return !1;
+      let t = e;
+      return $(t.x1) && $(t.x2) && $(t.y) && $(t.value);
+    })(t.horizontal) && (e => {
+      if (e === null) return !0;
+      if (!e || typeof e != `object`) return !1;
+      let t = e;
+      return $(t.y1) && $(t.y2) && $(t.x) && $(t.value);
+    })(t.vertical) && Array.isArray(t.connectors) && t.connectors.every(e => {
+      if (!e || typeof e != `object`) return !1;
+      let t = e;
+      return $(t.x1) && $(t.y1) && $(t.x2) && $(t.y2);
+    });
+  },
+  va = e => {
+    if (!e || typeof e != `object`) return {};
+    let t = e;
+    return {
+      ...(t.lastToolMode === `select` || t.lastToolMode === `selection` || t.lastToolMode === `guides` || t.lastToolMode === `arrows` || t.lastToolMode === `pen` || t.lastToolMode === `text` ? {
+        lastToolMode: t.lastToolMode
+      } : {}),
+      ...(typeof t.highlightColor == `string` ? {
+        highlightColor: t.highlightColor
+      } : {}),
+      ...(typeof t.guideColor == `string` ? {
+        guideColor: t.guideColor
+      } : {}),
+      ...(typeof t.arrowColor == `string` ? {
+        arrowColor: t.arrowColor
+      } : {}),
+      ...(typeof t.guideHighlightEnabled == `boolean` ? {
+        guideHighlightEnabled: t.guideHighlightEnabled
+      } : {}),
+      ...(typeof t.hoverHighlightEnabled == `boolean` ? {
+        hoverHighlightEnabled: t.hoverHighlightEnabled
+      } : {}),
+      ...(typeof t.layoutDetailsEnabled == `boolean` ? {
+        layoutDetailsEnabled: t.layoutDetailsEnabled
+      } : {}),
+      ...(Array.isArray(t.colorPickerFormats) && t.colorPickerFormats.some(aa) ? {
+        colorPickerFormats: t.colorPickerFormats.filter(aa)
+      } : {}),
+      ...(aa(t.colorPickerClickFormat) ? {
+        colorPickerClickFormat: t.colorPickerClickFormat
+      } : {}),
+      ...(typeof t.snapEnabled == `boolean` ? {
+        snapEnabled: t.snapEnabled
+      } : {}),
+      ...(typeof t.snapGuidesEnabled == `boolean` ? {
+        snapGuidesEnabled: t.snapGuidesEnabled
+      } : {}),
+      ...(typeof t.snapArrowsEnabled == `boolean` ? {
+        snapArrowsEnabled: t.snapArrowsEnabled
+      } : {}),
+      ...(typeof t.arrowClickToPlace == `boolean` ? {
+        arrowClickToPlace: t.arrowClickToPlace
+      } : {}),
+      ...(typeof t.selectNewGuideEnabled == `boolean` ? {
+        selectNewGuideEnabled: t.selectNewGuideEnabled
+      } : {}),
+      ...(typeof t.multiMeasureEnabled == `boolean` ? {
+        multiMeasureEnabled: t.multiMeasureEnabled
+      } : {}),
+      ...(typeof t.persistOnReload == `boolean` ? {
+        persistOnReload: t.persistOnReload
+      } : {}),
+      ...(typeof t.shortcutsEnabled == `boolean` ? {
+        shortcutsEnabled: t.shortcutsEnabled
+      } : {}),
+      ...(sa(t.guideStyle) ? {
+        guideStyle: sa(t.guideStyle)
+      } : {}),
+      ...(ca(t.rulerSettings) ? {
+        rulerSettings: ca(t.rulerSettings)
+      } : {}),
+      ...(la(t.screenshotSettings) ? {
+        screenshotSettings: la(t.screenshotSettings)
+      } : {}),
+      ...(le(t.textStyle) ? {
+        textStyle: le(t.textStyle)
+      } : {})
+    };
+  },
+  ya = e => {
+    if (!e || typeof e != `object`) return null;
+    let t = e;
+    return typeof t.enabled != `boolean` || t.toolMode !== `none` && t.toolMode !== `select` && t.toolMode !== `selection` && t.toolMode !== `guides` && t.toolMode !== `text-inspector` && t.toolMode !== `xray` && t.toolMode !== `rulers` && t.toolMode !== `arrows` && t.toolMode !== `pen` && t.toolMode !== `text` || typeof t.rulersVisible != `boolean` || t.guideOrientation !== `vertical` && t.guideOrientation !== `horizontal` || !Array.isArray(t.guides) || !Array.isArray(t.selectedGuideIds) || !Array.isArray(t.measurements) || !Array.isArray(t.heldDistances) ? null : {
+      enabled: t.enabled,
+      xrayVisible: typeof t.xrayVisible == `boolean` ? t.xrayVisible : t.toolMode === `xray`,
+      toolMode: t.toolMode,
+      rulersVisible: t.rulersVisible,
+      guideOrientation: t.guideOrientation,
+      guides: t.guides.filter(pa),
+      selectedGuideIds: t.selectedGuideIds.filter(e => typeof e == `string`),
+      arrows: Array.isArray(t.arrows) ? t.arrows.filter(ma) : [],
+      selectedArrowIds: Array.isArray(t.selectedArrowIds) ? t.selectedArrowIds.filter(e => typeof e == `string`) : [],
+      selectedPenStrokeIds: Array.isArray(t.selectedPenStrokeIds) ? t.selectedPenStrokeIds.filter(e => typeof e == `string`) : [],
+      selectedTextIds: Array.isArray(t.selectedTextIds) ? t.selectedTextIds.filter(e => typeof e == `string`) : [],
+      penStrokes: Array.isArray(t.penStrokes) ? t.penStrokes.filter(ha) : [],
+      textAnnotations: Array.isArray(t.textAnnotations) ? t.textAnnotations.filter(ga) : [],
+      measurements: t.measurements.filter(fa),
+      activeMeasurement: fa(t.activeMeasurement) ? t.activeMeasurement : null,
+      heldDistances: t.heldDistances.filter(_a)
+    };
+  },
+  ba = e => {
+    if (!e || typeof e != `object`) return null;
+    let t = e;
+    return t.version === 2 ? {
+      settings: va(t.settings),
+      workspace: ya(t.workspace)
+    } : null;
+  },
+  xa = e => e.version === 2 ? ba(e) : e.version === 1 ? {
+    settings: {},
+    workspace: e.enabled === void 0 || !e.toolMode || !e.guideOrientation || !e.guides || !e.selectedGuideIds || !e.measurements || e.activeMeasurement === void 0 || !e.heldDistances ? null : ya({
+      enabled: e.enabled,
+      xrayVisible: e.toolMode === `xray`,
+      toolMode: e.toolMode,
+      rulersVisible: e.rulersVisible ?? e.toolMode === `rulers`,
+      guideOrientation: e.guideOrientation,
+      guides: e.guides,
+      selectedGuideIds: e.selectedGuideIds,
+      arrows: [],
+      selectedArrowIds: [],
+      selectedPenStrokeIds: [],
+      selectedTextIds: [],
+      penStrokes: [],
+      textAnnotations: [],
+      measurements: e.measurements,
+      activeMeasurement: e.activeMeasurement,
+      heldDistances: e.heldDistances
+    })
+  } : null,
+  Sa = (e, t, n = t, r) => {
+    let i,
+      a = t => {
+        try {
+          let n = e.localStorage.getItem(t);
+          return n ? xa(JSON.parse(n)) : null;
+        } catch (e) {
+          return i?.(e), null;
+        }
+      },
+      o = () => {
+        let e = r ? a(r) : null,
+          i = a(n),
+          o = a(t);
+        return !i && !o && !e ? null : {
+          settings: i?.settings ?? e?.settings ?? {},
+          workspace: o?.workspace ?? e?.workspace ?? null
+        };
+      },
+      s = (t, n) => {
+        try {
+          e.localStorage.setItem(t, JSON.stringify({
+            version: 2,
+            ...n
+          }));
+        } catch (e) {
+          i?.(e);
+        }
+      };
+    return {
+      load: o,
+      saveSettings: e => {
+        if (n === t) {
+          s(t, {
+            settings: e,
+            workspace: o()?.workspace ?? null
+          });
+          return;
+        }
+        s(n, {
+          settings: e,
+          workspace: null
+        });
+      },
+      saveWorkspace: e => {
+        if (n === t) {
+          s(t, {
+            settings: o()?.settings ?? {},
+            workspace: e
+          });
+          return;
+        }
+        s(t, {
+          settings: {},
+          workspace: e
+        });
+      },
+      clearWorkspace: () => {
+        if (n === t) {
+          let e = o();
+          e && s(t, {
+            settings: e.settings,
+            workspace: null
+          });
+          return;
+        }
+        s(t, {
+          settings: {},
+          workspace: null
+        });
+      },
+      clearSettings: () => {
+        if (n === t) {
+          s(t, {
+            settings: {},
+            workspace: o()?.workspace ?? null
+          });
+          return;
+        }
+        s(n, {
+          settings: {},
+          workspace: null
+        });
+      },
+      setErrorHandler: e => {
+        i = e;
+      },
+      subscribe: i => {
+        let a = e => {
+          (e.key === n || e.key === t || e.key === r) && i(o(), {
+            settings: e.key === n || e.key === r || n === t,
+            workspace: e.key === t || e.key === r || n === t
+          });
+        };
+        return e.addEventListener(`storage`, a), () => {
+          e.removeEventListener(`storage`, a);
+        };
+      }
+    };
+  },
+  Ca = ({
+    activePersistence: e,
+    persistedSettings: t,
+    defaults: n,
+    toggles: r
+  }) => {
+    let [a, o] = (0, i.useState)(t.highlightColor ?? n.highlightColor),
+      [s, c] = (0, i.useState)(t.guideColor ?? n.guideColor),
+      [l, u] = (0, i.useState)(t.arrowColor ?? n.arrowColor),
+      [d, f] = (0, i.useState)(t.guideHighlightEnabled ?? n.guideHighlightEnabled),
+      [p, m] = (0, i.useState)(t.hoverHighlightEnabled ?? n.hoverHighlightEnabled),
+      [h, g] = (0, i.useState)(t.layoutDetailsEnabled ?? n.layoutDetailsEnabled),
+      [_, v] = (0, i.useState)(t.persistOnReload ?? n.persistOnReload),
+      [y, b] = (0, i.useState)(t.shortcutsEnabled ?? n.shortcutsEnabled),
+      [x, S] = (0, i.useState)(t.lastToolMode ?? `select`),
+      [C, w] = (0, i.useState)(t.colorPickerFormats ?? n.colorPickerFormats),
+      [T, E] = (0, i.useState)(t.colorPickerClickFormat ?? n.colorPickerClickFormat),
+      [D, O] = (0, i.useState)({
+        ...n.guideStyle,
+        ...t.guideStyle
+      }),
+      [k, A] = (0, i.useState)({
+        ...n.rulerSettings,
+        ...t.rulerSettings
+      }),
+      [j, M] = (0, i.useState)({
+        ...ia,
+        ...t.screenshotSettings
+      }),
+      [N, P] = (0, i.useState)({
+        ...n.textStyle,
+        ...t.textStyle
+      });
+    return {
+      highlightColor: a,
+      setHighlightColor: o,
+      guideColor: s,
+      setGuideColor: c,
+      arrowColor: l,
+      setArrowColor: u,
+      guideHighlightEnabled: d,
+      setGuideHighlightEnabled: f,
+      hoverHighlightEnabled: p,
+      setHoverHighlightEnabled: m,
+      layoutDetailsEnabled: h,
+      setLayoutDetailsEnabled: g,
+      persistOnReload: _,
+      setPersistOnReload: v,
+      shortcutsEnabled: y,
+      setShortcutsEnabled: b,
+      lastToolMode: x,
+      setLastToolMode: S,
+      colorPickerFormats: C,
+      setColorPickerFormats: w,
+      colorPickerClickFormat: T,
+      setColorPickerClickFormat: E,
+      guideStyle: D,
+      setGuideStyle: O,
+      rulerSettings: k,
+      setRulerSettings: A,
+      screenshotSettings: j,
+      setScreenshotSettings: M,
+      textStyle: N,
+      setTextStyle: P,
+      resetSettings: (0, i.useCallback)(() => {
+        o(n.highlightColor), c(n.guideColor), u(n.arrowColor), f(n.guideHighlightEnabled), m(n.hoverHighlightEnabled), g(n.layoutDetailsEnabled), v(n.persistOnReload), b(n.shortcutsEnabled), w([...n.colorPickerFormats]), E(n.colorPickerClickFormat), r.setSnapEnabled(n.snapEnabled), r.setSnapGuidesEnabled(n.snapGuidesEnabled), r.setSnapArrowsEnabled(n.snapArrowsEnabled), r.setArrowClickToPlace(n.arrowClickToPlace), r.setSelectNewGuideEnabled(n.selectNewGuideEnabled), r.setMultiMeasureEnabled(n.multiMeasureEnabled), O({
+          ...n.guideStyle
+        }), A({
+          ...n.rulerSettings
+        }), M({
+          ...ia
+        }), P({
+          ...n.textStyle
+        });
+      }, [n, r]),
+      persistSettings: (0, i.useCallback)(() => {
+        e.saveSettings({
+          highlightColor: a,
+          guideColor: s,
+          arrowColor: l,
+          guideHighlightEnabled: d,
+          hoverHighlightEnabled: p,
+          layoutDetailsEnabled: h,
+          colorPickerFormats: C,
+          colorPickerClickFormat: T,
+          snapEnabled: r.snapEnabled,
+          snapGuidesEnabled: r.snapGuidesEnabled,
+          snapArrowsEnabled: r.snapArrowsEnabled,
+          arrowClickToPlace: r.arrowClickToPlace,
+          selectNewGuideEnabled: r.selectNewGuideEnabled,
+          multiMeasureEnabled: r.multiMeasureEnabled,
+          persistOnReload: _,
+          shortcutsEnabled: y,
+          lastToolMode: x,
+          guideStyle: D,
+          rulerSettings: k,
+          screenshotSettings: j,
+          textStyle: N
+        });
+      }, [e, T, C, s, l, d, D, a, p, h, r.multiMeasureEnabled, _, y, x, k, j, N, r.selectNewGuideEnabled, r.snapEnabled, r.snapGuidesEnabled, r.snapArrowsEnabled, r.arrowClickToPlace]),
+      applyPersistedSettings: (0, i.useCallback)(e => {
+        e.highlightColor !== void 0 && o(e.highlightColor), e.guideColor !== void 0 && c(e.guideColor), e.arrowColor !== void 0 && u(e.arrowColor), e.guideHighlightEnabled !== void 0 && f(e.guideHighlightEnabled), e.hoverHighlightEnabled !== void 0 && m(e.hoverHighlightEnabled), e.layoutDetailsEnabled !== void 0 && g(e.layoutDetailsEnabled), e.colorPickerFormats !== void 0 && w(e.colorPickerFormats), e.colorPickerClickFormat !== void 0 && E(e.colorPickerClickFormat), e.persistOnReload !== void 0 && v(e.persistOnReload), e.shortcutsEnabled !== void 0 && b(e.shortcutsEnabled), e.lastToolMode !== void 0 && S(e.lastToolMode), e.snapEnabled !== void 0 && r.setSnapEnabled(e.snapEnabled), e.snapGuidesEnabled !== void 0 && r.setSnapGuidesEnabled(e.snapGuidesEnabled), e.snapArrowsEnabled !== void 0 && r.setSnapArrowsEnabled(e.snapArrowsEnabled), e.arrowClickToPlace !== void 0 && r.setArrowClickToPlace(e.arrowClickToPlace), e.selectNewGuideEnabled !== void 0 && r.setSelectNewGuideEnabled(e.selectNewGuideEnabled), e.multiMeasureEnabled !== void 0 && r.setMultiMeasureEnabled(e.multiMeasureEnabled), e.guideStyle !== void 0 && O({
+          ...n.guideStyle,
+          ...e.guideStyle
+        }), e.rulerSettings !== void 0 && A({
+          ...n.rulerSettings,
+          ...e.rulerSettings
+        }), e.screenshotSettings !== void 0 && M({
+          ...ia,
+          ...e.screenshotSettings
+        }), e.textStyle !== void 0 && P({
+          ...n.textStyle,
+          ...e.textStyle
+        });
+      }, [n.guideStyle, n.rulerSettings, n.textStyle, r])
+    };
+  },
+  wa = () => {
+    let [e, t] = (0, i.useState)(null),
+      [n, r] = (0, i.useState)(null),
+      [a, o] = (0, i.useState)(!1);
+    return {
+      start: e,
+      setStart: t,
+      end: n,
+      setEnd: r,
+      isDragging: a,
+      setIsDragging: o
+    };
+  },
+  Ta = (e = {}) => {
+    let [t, n] = (0, i.useState)(e.initialGuides ?? []),
+      [r, a] = (0, i.useState)(null),
+      [o, s] = (0, i.useState)(e.initialSelectedGuideIds ?? []);
+    return {
+      guides: t,
+      setGuides: n,
+      draggingGuideId: r,
+      setDraggingGuideId: a,
+      selectedGuideIds: o,
+      setSelectedGuideIds: s
+    };
+  },
+  Ea = (e = {}) => {
+    let [t, n] = (0, i.useState)(e.initialEnabled ?? !0),
+      [r, a] = (0, i.useState)(!1),
+      [o, s] = (0, i.useState)(e.initialToolMode ?? `none`),
+      [c, l] = (0, i.useState)(e.initialRulersVisible ?? !1),
+      [u, d] = (0, i.useState)(e.initialMultiMeasureEnabled ?? !1),
+      [f, p] = (0, i.useState)(e.initialSnapGuidesEnabled ?? !0),
+      [m, h] = (0, i.useState)(e.initialSnapArrowsEnabled ?? !0),
+      [g, _] = (0, i.useState)(e.initialArrowClickToPlace ?? !1),
+      [v, y] = (0, i.useState)(e.initialSelectNewGuideEnabled ?? !0),
+      b = o === `guides`,
+      [x, S] = (0, i.useState)(e.initialSnapEnabled ?? !0);
+    return {
+      enabled: t,
+      setEnabled: n,
+      holdEnabled: !1,
+      altPressed: r,
+      setAltPressed: a,
+      toolMode: o,
+      setToolMode: s,
+      rulersVisible: c,
+      setRulersVisible: l,
+      guidesEnabled: b,
+      multiMeasureEnabled: u,
+      snapGuidesEnabled: f,
+      setSnapGuidesEnabled: p,
+      snapArrowsEnabled: m,
+      setSnapArrowsEnabled: h,
+      arrowClickToPlace: g,
+      setArrowClickToPlace: _,
+      selectNewGuideEnabled: v,
+      setSelectNewGuideEnabled: y,
+      snapEnabled: x,
+      setSnapEnabled: S,
+      setMultiMeasureEnabled: d
+    };
+  },
+  Da = (e = {}) => {
+    let [t, n] = (0, i.useState)(e.initialActiveMeasurement ?? null),
+      [r, a] = (0, i.useState)(e.initialMeasurements ?? []),
+      [o, s] = (0, i.useState)(null),
+      [c, l] = (0, i.useState)([]),
+      [u, d] = (0, i.useState)(null),
+      [f, p] = (0, i.useState)(e.initialHeldDistances ?? []);
+    return {
+      activeMeasurement: t,
+      setActiveMeasurement: n,
+      measurements: r,
+      setMeasurements: a,
+      selectedMeasurement: o,
+      setSelectedMeasurement: s,
+      selectedMeasurements: c,
+      setSelectedMeasurements: l,
+      hoverRect: u,
+      setHoverRect: d,
+      heldDistances: f,
+      setHeldDistances: p
+    };
+  },
+  Oa = ({
+    selectedElementRef: e,
+    hoverElementRef: t,
+    selectionRectRef: n
+  }) => {
+    let [r, a] = (0, i.useState)(null),
+      [o, s] = (0, i.useState)(null),
+      [c, l] = (0, i.useState)(null),
+      [u, d] = (0, i.useState)(null),
+      f = (0, i.useCallback)(t => {
+        e.current = t, d(t);
+      }, [e]);
+    return {
+      selectionOriginRect: r,
+      setSelectionOriginRect: a,
+      hoverPointer: o,
+      setHoverPointer: s,
+      hoverElement: c,
+      setHoverElement: (0, i.useCallback)(e => {
+        t.current = e, l(e);
+      }, [t]),
+      selectedElement: u,
+      setSelectedElement: f,
+      clearSelectionRect: (0, i.useCallback)(() => {
+        n.current = null, a(null);
+      }, [n])
+    };
+  },
+  ka = (e = {}) => {
+    let [t, n] = (0, i.useState)(e.initialArrows ?? []),
+      [r, a] = (0, i.useState)(e.initialSelectedArrowIds ?? []),
+      [o, s] = (0, i.useState)(null),
+      [c, l] = (0, i.useState)(null),
+      [u, d] = (0, i.useState)(null);
+    return {
+      arrows: t,
+      setArrows: n,
+      selectedArrowIds: r,
+      setSelectedArrowIds: a,
+      arrowStart: o,
+      setArrowStart: s,
+      arrowMiddle: c,
+      setArrowMiddle: l,
+      arrowPreviewEnd: u,
+      setArrowPreviewEnd: d
+    };
+  },
+  Aa = (e, t = []) => {
+    let [n, r] = (0, i.useState)(e ?? []),
+      [a, o] = (0, i.useState)(t),
+      [s, c] = (0, i.useState)([]);
+    return {
+      penStrokes: n,
+      setPenStrokes: r,
+      selectedPenStrokeIds: a,
+      setSelectedPenStrokeIds: o,
+      penPreview: s,
+      setPenPreview: c
+    };
+  },
+  ja = (e = [], t = []) => {
+    let [n, r] = (0, i.useState)(e),
+      a = (0, i.useRef)(e),
+      o = (0, i.useRef)(t),
+      [s, c] = (0, i.useState)(null),
+      [l, u] = (0, i.useState)(t);
+    return {
+      textAnnotations: n,
+      setTextAnnotations: r,
+      textAnnotationsRef: a,
+      textDraft: s,
+      setTextDraft: c,
+      selectedTextIds: l,
+      setSelectedTextIds: u,
+      selectedTextIdsRef: o
+    };
+  },
+  Ma = () => ({
+    overlayRef: (0, i.useRef)(null),
+    selectedElementRef: (0, i.useRef)(null),
+    hoverElementRef: (0, i.useRef)(null)
+  }),
+  Na = ({
+    persistedState: e,
+    initialToolMode: t,
+    snapEnabledDefault: n,
+    snapGuidesEnabledDefault: r,
+    snapArrowsEnabledDefault: a,
+    arrowClickToPlaceDefault: o,
+    selectNewGuideEnabledDefault: s,
+    multiMeasureEnabledDefault: c,
+    initialTextAnnotations: l
+  }) => {
+    let u = (0, i.useRef)(null),
+      d = (0, i.useRef)(!1),
+      f = (0, i.useRef)(e?.toolMode === `rulers` ? `none` : e?.toolMode ?? t),
+      p = (0, i.useRef)(e?.rulersVisible ?? e?.toolMode === `rulers`),
+      m = (0, i.useRef)(e?.xrayVisible ?? e?.toolMode === `xray`),
+      h = (0, i.useRef)(e?.guideOrientation ?? `vertical`),
+      g = (0, i.useRef)(e?.measurements ?? []),
+      _ = (0, i.useRef)(e?.activeMeasurement ?? null),
+      v = (0, i.useRef)(e?.heldDistances ?? []),
+      y = (0, i.useRef)(e?.guides ?? []),
+      b = (0, i.useRef)(e?.selectedGuideIds ?? []),
+      x = (0, i.useRef)(e?.arrows ?? []),
+      S = (0, i.useRef)(e?.selectedArrowIds ?? []),
+      C = (0, i.useRef)(e?.penStrokes ?? []),
+      w = (0, i.useRef)(e?.selectedPenStrokeIds ?? []),
+      {
+        overlayRef: T,
+        selectedElementRef: E,
+        hoverElementRef: D
+      } = Ma(),
+      O = Oa({
+        selectedElementRef: E,
+        hoverElementRef: D,
+        selectionRectRef: u
+      }),
+      k = Ea({
+        initialEnabled: e?.enabled,
+        initialToolMode: e?.toolMode === `rulers` ? `none` : e?.toolMode ?? t,
+        initialRulersVisible: e?.rulersVisible ?? e?.toolMode === `rulers`,
+        initialSnapEnabled: n,
+        initialSnapGuidesEnabled: r,
+        initialSnapArrowsEnabled: a,
+        initialArrowClickToPlace: o,
+        initialSelectNewGuideEnabled: s,
+        initialMultiMeasureEnabled: c
+      }),
+      A = wa(),
+      j = Da({
+        initialActiveMeasurement: e?.activeMeasurement ?? null,
+        initialMeasurements: e?.measurements ?? [],
+        initialHeldDistances: e?.heldDistances ?? []
+      }),
+      M = Ta({
+        initialGuides: e?.guides ?? [],
+        initialSelectedGuideIds: e?.selectedGuideIds ?? []
+      }),
+      N = ka({
+        initialArrows: e?.arrows,
+        initialSelectedArrowIds: e?.selectedArrowIds
+      }),
+      P = Aa(e?.penStrokes, e?.selectedPenStrokeIds),
+      F = ja(l, e?.selectedTextIds),
+      [ee, I] = (0, i.useState)(!0),
+      [L, te] = (0, i.useState)(!1),
+      [R, ne] = (0, i.useState)(!1),
+      [z, B] = (0, i.useState)(m.current),
+      [V, re] = (0, i.useState)(e?.guideOrientation ?? `vertical`);
+    return {
+      selectionRectRef: u,
+      enabledRef: d,
+      toolModeRef: f,
+      rulersVisibleRef: p,
+      xrayVisibleRef: m,
+      guideOrientationRef: h,
+      measurementsRef: g,
+      activeMeasurementRef: _,
+      heldDistancesRef: v,
+      guidesRef: y,
+      selectedGuideIdsRef: b,
+      arrowsRef: x,
+      selectedArrowIdsRef: S,
+      penStrokesRef: C,
+      selectedPenStrokeIdsRef: w,
+      overlayRef: T,
+      selectedElementRef: E,
+      hoverElementRef: D,
+      ...O,
+      ...k,
+      ...A,
+      ...j,
+      ...M,
+      ...N,
+      ...P,
+      ...F,
+      toolbarActive: ee,
+      setToolbarActive: I,
+      minimized: L,
+      setMinimized: te,
+      settingsOpen: R,
+      setSettingsOpen: ne,
+      xrayVisible: z,
+      setXrayVisible: B,
+      guideOrientation: V,
+      setGuideOrientation: re
+    };
+  },
+  Pa = (e, t) => {
+    let n = t.map(({
+        element: t,
+        rect: n
+      }) => {
+        let r = Zr(e, n);
+        return {
+          element: t,
+          rect: n,
+          overlapArea: r,
+          elementCoverage: r / Math.max(1, Xr(n))
+        };
+      }).filter(({
+        overlapArea: e,
+        elementCoverage: t
+      }) => e <= 0 ? !1 : t >= At),
+      r = n.filter((e, t) => !n.some((n, r) => t !== r && Xr(e.rect) > Xr(n.rect) * jt && e.rect.left <= n.rect.left && e.rect.top <= n.rect.top && e.rect.left + e.rect.width >= n.rect.left + n.rect.width && e.rect.top + e.rect.height >= n.rect.top + n.rect.height && e.elementCoverage < Mt));
+    return (r.length > 0 ? r : n).sort((e, t) => Xr(e.rect) - Xr(t.rect)).map(({
+      element: e
+    }) => e);
+  },
+  Fa = (e, t, n) => {
+    let r = Math.max(1, Xr(e)),
+      i = n.map(({
+        element: n,
+        rect: i
+      }) => {
+        let a = Zr(e, i),
+          o = Math.max(1, Xr(i)),
+          s = a / o,
+          c = o / r,
+          l = 1 - Math.min(1, Math.abs(Math.log(c)) / 2),
+          u = t.x >= i.left && t.x <= i.left + i.width && t.y >= i.top && t.y <= i.top + i.height,
+          d = o > r * 4 && s < .9 ? .25 : 0;
+        return {
+          element: n,
+          rect: i,
+          coverage: s,
+          score: s * .55 + l * .35 + (u ? .2 : 0) - d
+        };
+      }).filter(({
+        rect: e,
+        coverage: t
+      }) => e.width < Nt || e.height < Nt ? !1 : t >= Pt);
+    return i.length === 0 ? null : (i.sort((e, t) => t.score - e.score), i[0].element);
+  },
+  Ia = (e, t) => {
+    let n = t.filter(({
+      rect: e
+    }) => e.width >= Nt && e.height >= Nt).map(({
+      element: t,
+      rect: n
+    }) => {
+      let r = Math.max(1, Xr(n)),
+        i = e.x >= n.left && e.x <= n.left + n.width && e.y >= n.top && e.y <= n.top + n.height,
+        a = 1 / (1 + $r(e, n)),
+        o = 1 / (1 + Math.log(r));
+      return {
+        element: t,
+        score: (i ? 2 : 0) + a * .9 + o * .35
+      };
+    });
+    return n.length === 0 ? null : (n.sort((e, t) => t.score - e.score), n[0].element);
+  },
+  La = e => {
+    if (!e) return null;
+    let t = e.getRootNode();
+    return t.nodeType === 11 ? t.host : null;
+  },
+  Ra = (e, t, n) => !!(t && t.contains(e) || n && e === n),
+  za = (e, t) => {
+    let n = e,
+      r = e.ownerDocument.defaultView?.Element ?? Element;
+    for (; n instanceof r && n.shadowRoot;) {
+      let e = n.shadowRoot.elementFromPoint(t.x, t.y);
+      if (!e || e === n) break;
+      n = e;
+    }
+    return n;
+  },
+  Ba = (e, t, n, r) => {
+    if (!(e instanceof (r.defaultView?.Element ?? Element)) || Ra(e, t, n) || e === r.body || e === r.documentElement) return !1;
+    let i = e.getBoundingClientRect();
+    return !(i.width <= 2 || i.height <= 2);
+  },
+  Va = (e, t, n) => {
+    if (t) {
+      let r = t.style.pointerEvents;
+      t.style.pointerEvents = `none`;
+      let i = n.elementsFromPoint(e.x, e.y);
+      return t.style.pointerEvents = r, i;
+    }
+    return n.elementsFromPoint(e.x, e.y);
+  },
+  Ha = (e, t, n = document) => {
+    let r = La(t),
+      i = [],
+      a = new Set();
+    for (let o of Va(e, t, n)) {
+      let s = za(o, e);
+      Ba(s, t, r, n) && (a.has(s) || (a.add(s), i.push(s)));
+    }
+    return i;
+  },
+  Ua = (e, t, n = document) => Ha(e, t, n)[0] ?? null,
+  Wa = (e, t, n, r = document) => {
+    if (!n) return Ua(e, t, r);
+    let i = {
+        left: e.x - 20,
+        top: e.y - 20,
+        width: 40,
+        height: 40
+      },
+      a = Ja(i, t, r);
+    return Ia(e, a) ?? Fa(i, e, a) ?? Ua(e, t, r);
+  },
+  Ga = (e, t) => Math.abs(e.x - t.x) <= Ft && Math.abs(e.y - t.y) <= Ft,
+  Ka = (e, t, n, r) => {
+    let i = Ha(e, t, r);
+    return i.includes(n) ? i : [n, ...i];
+  },
+  qa = (e, t, n, r = document, i = null) => {
+    if (i && Ga(e, i.point) && i.stack.length > 0) {
+      let t = (i.index + 1) % i.stack.length;
+      return {
+        target: i.stack[t] ?? null,
+        cycle: {
+          point: e,
+          index: t,
+          stack: i.stack
+        }
+      };
+    }
+    let a = Wa(e, t, n, r);
+    if (!a) return {
+      target: null,
+      cycle: null
+    };
+    let o = Ka(e, t, a, r),
+      s = o.indexOf(a);
+    return {
+      target: a,
+      cycle: {
+        point: e,
+        index: s >= 0 ? s : 0,
+        stack: o
+      }
+    };
+  },
+  Ja = (e, t, n = document) => {
+    let r = La(t),
+      i = ui(),
+      a = `${Math.round(e.left)}:${Math.round(e.top)}:${Math.round(e.width)}:${Math.round(e.height)}`;
+    if (i === Ya && Xa === a && Qa === t && $a === n) return Za;
+    let o = e.left - 1,
+      s = e.top - 1,
+      c = e.left + e.width + 1,
+      l = e.top + e.height + 1,
+      u = di(n).map(e => ({
+        element: e,
+        rect: oi(e)
+      })).filter(({
+        element: i,
+        rect: a
+      }) => Ra(i, t, r) || i === n.body || i === n.documentElement || a.width < kt || a.height < kt || a.left > c || a.top > l || a.left + a.width < o || a.top + a.height < s ? !1 : Yr(e, a));
+    return Ya = i, Xa = a, Qa = t, $a = n, Za = u, u;
+  },
+  Ya = -1,
+  Xa = ``,
+  Za = [],
+  Qa = null,
+  $a = null,
+  eo = e => `${Math.round(e.left)}:${Math.round(e.top)}:${Math.round(e.width)}:${Math.round(e.height)}`,
+  to = (e, t, n, r = document) => {
+    let i = ui(),
+      a = eo(e);
+    if (n.key === a && n.overlayNode === t && n.frame === i) return n.entries;
+    let o = Ja(e, t, r);
+    return n.key = a, n.overlayNode = t, n.frame = i, n.entries = o, o;
+  },
+  no = (e, t, n, r = document) => {
+    let i = to(e, t, n, r);
+    return i.length === 0 ? [] : Pa(e, i);
+  },
+  ro = 10,
+  io = (e, t) => ({
+    left: e.left - t,
+    top: e.top - t,
+    width: e.width + t * 2,
+    height: e.height + t * 2
+  }),
+  ao = (e, t) => {
+    if (t.length === 0) return e;
+    let n = new Set(e),
+      r = !1,
+      i = [...e];
+    for (let e of t) n.has(e) || (n.add(e), i.push(e), r = !0);
+    return r ? i : e;
+  },
+  oo = ({
+    document: e,
+    window: t,
+    overlayRef: n,
+    selectionRectRef: r,
+    selectedMeasurements: a,
+    selectedMeasurement: o,
+    snapEnabled: s,
+    selectionMode: c,
+    hoverHighlightEnabled: l,
+    scrollOffset: u,
+    textAnnotations: d,
+    arrows: f,
+    penStrokes: p,
+    guides: m,
+    setSelectedTextIds: h,
+    setSelectedArrowIds: g,
+    setSelectedPenStrokeIds: _,
+    setSelectedGuideIds: v,
+    setSelectedElement: y,
+    setSelectedMeasurements: b,
+    setSelectedMeasurement: x,
+    setSelectionOriginRect: S,
+    clearSelectionRect: C,
+    setActiveMeasurement: w,
+    setMeasurements: T
+  }) => {
+    let E = (0, i.useRef)({
+        key: ``,
+        entries: [],
+        overlayNode: null,
+        frame: -1
+      }),
+      D = (0, i.useRef)(!1),
+      O = (0, i.useRef)(null),
+      k = (0, i.useRef)(null),
+      A = (0, i.useCallback)(() => {
+        e.defaultView?.getSelection()?.removeAllRanges();
+      }, [e]),
+      j = (0, i.useRef)({
+        textAnnotations: d,
+        arrows: f,
+        penStrokes: p,
+        guides: m,
+        scrollOffset: u
+      });
+    j.current = {
+      textAnnotations: d,
+      arrows: f,
+      penStrokes: p,
+      guides: m,
+      scrollOffset: u
+    };
+    let M = (0, i.useCallback)((e, t = !1) => {
+        let r = j.current,
+          i = io(e, e.width < 2 && e.height < 2 ? ro : 2),
+          a = e => ({
+            left: e.x - r.scrollOffset.x,
+            top: e.y - r.scrollOffset.y,
+            width: e.width,
+            height: e.height
+          }),
+          o = r.textAnnotations.filter(e => {
+            let t = n.current?.querySelector(`[data-mesurer-text-id="${e.id}"]`),
+              r = t instanceof HTMLElement ? t.getBoundingClientRect() : a(pn(e));
+            return Yr(i, {
+              left: r.left,
+              top: r.top,
+              width: r.width,
+              height: r.height
+            });
+          }).map(e => e.id),
+          s = r.arrows.filter(e => Yr(i, io(a(Fn(e)), ro))).map(e => e.id),
+          c = r.penStrokes.filter(e => Yr(i, io(a(Dr(e)), ro))).map(e => e.id),
+          l = r.guides.filter(e => {
+            let t = e.position;
+            return e.orientation === `vertical` ? t >= i.left && t <= i.left + i.width : t >= i.top && t <= i.top + i.height;
+          }).map(e => e.id),
+          u = (e, n) => {
+            e(t ? e => ao(e, n) : n);
+          };
+        u(h, o), u(g, s), u(_, c), u(v, l);
+      }, [n, g, v, _, h]),
+      N = (0, i.useCallback)((t, r) => {
+        D.current = r, O.current = r ? Qi({
+          point: t,
+          selectedMeasurements: a,
+          overlayNode: n.current,
+          document: e
+        })?.elementRef ?? null : null, E.current.key = ``;
+      }, [e, n, a]),
+      P = (0, i.useCallback)(() => {
+        w(null), T([]);
+      }, [w, T]);
+    return {
+      clickCycleRef: k,
+      shiftDragRef: D,
+      shiftToggleElementRef: O,
+      preparePointerDown: N,
+      handleSelectionPointerUp: (0, i.useCallback)((i, u, d, f, p, m) => {
+        let h = i.shiftKey || D.current;
+        if (f) {
+          k.current = null;
+          let i = qr(d, u);
+          if (r.current = i, S(i), c) {
+            p(), M(i, h), A(), y(null), x(null), b([]), C(), P(), m();
+            return;
+          }
+          let s = no(i, n.current, E.current, e),
+            l = s.length === a.length && s.every((e, t) => a[t]?.elementRef === e),
+            f = s[s.length - 1] ?? null,
+            g = (o?.elementRef ?? null) !== f;
+          if (s.length > 0) {
+            if (!l) {
+              p();
+              let e = s.map(e => ({
+                ...fi(e, t),
+                originRect: i
+              }));
+              b(e), y(f), x(e[e.length - 1]);
+            } else if (g) {
+              p(), y(f);
+              let e = a.find(e => e.elementRef === f);
+              e && x(e);
+            }
+          } else (a.length > 0 || o) && (p(), y(null), x(null), b([]), C());
+          P(), m();
+          return;
+        }
+        let g = O.current ? a.find(e => e.elementRef === O.current) ?? null : Qi({
+            point: u,
+            selectedMeasurements: a,
+            overlayNode: n.current,
+            document: e
+          }),
+          _ = e => {
+            p();
+            let t = a.filter(t => t.elementRef !== e.elementRef);
+            b(t), C();
+            let n = t.length > 0 ? t[t.length - 1] : null;
+            y(n?.elementRef ?? null), x(n);
+          };
+        if (h && g) {
+          _(g), P(), m();
+          return;
+        }
+        if (!l && !h && g) {
+          _(g), P(), m();
+          return;
+        }
+        let v = null;
+        if (h) v = Ua(u, n.current, e) ?? Wa(u, n.current, s, e), k.current = null;else {
+          let t = qa(u, n.current, s, e, k.current);
+          v = t.target, k.current = t.cycle;
+        }
+        if (v) {
+          let e = fi(v, t);
+          if (P(), h) {
+            a.some(e => e.elementRef === v) ? _({
+              ...e,
+              elementRef: v
+            }) : (p(), b(t => [...t, e]), y(v), x(e), C()), P(), m();
+            return;
+          }
+          y(v), p(), b([e]), x(e), C();
+        } else {
+          if (h) {
+            P(), m();
+            return;
+          }
+          p(), c && (M({
+            left: u.x,
+            top: u.y,
+            width: 0,
+            height: 0
+          }), A()), y(null), x(null), b([]), C(), k.current = null;
+        }
+        m();
+      }, [A, C, P, e, l, n, M, o, a, c, r, y, x, b, S, s, t])
+    };
+  },
+  so = ({
+    document: e,
+    overlayRef: t,
+    setHoverRect: n,
+    setHoverElement: r
+  }) => ({
+    hoverFrameRef: (0, i.useRef)(null),
+    hoverPointRef: (0, i.useRef)(null),
+    updateHoverTarget: (0, i.useCallback)(i => {
+      let a = Ua(i, t.current, e);
+      if (a) {
+        let e = a.getBoundingClientRect();
+        n({
+          left: e.left,
+          top: e.top,
+          width: e.width,
+          height: e.height
+        }), r(a);
+      } else n(null), r(null);
+    }, [e, t, r, n]),
+    updateHoverElement: (0, i.useCallback)(n => {
+      r(Ua(n, t.current, e));
+    }, [e, t, r])
+  }),
+  co = ({
+    document: e,
+    window: t,
+    toolbarRef: n,
+    overlayRef: r,
+    selectionRectRef: a,
+    createActionCommit: o,
+    clearGuideDragHold: s,
+    scheduleGuideDragHold: c,
+    enabled: l,
+    settingsOpen: u,
+    toolMode: d,
+    guidesEnabled: f,
+    snapEnabled: p,
+    snapGuidesEnabled: m,
+    selectNewGuideEnabled: h,
+    altPressed: g,
+    guideOrientation: _,
+    hoverHighlightEnabled: v,
+    start: y,
+    end: b,
+    isDragging: x,
+    selectedMeasurements: S,
+    selectedMeasurement: C,
+    selectedGuideIds: w,
+    guides: T,
+    draggingGuideId: E,
+    optionPairOverlay: D,
+    setAltPressed: O,
+    setGuidePreview: k,
+    setSelectedGuideIds: j,
+    setGuides: M,
+    setStart: N,
+    setEnd: P,
+    setIsDragging: F,
+    setHeldDistances: ee,
+    setDraggingGuideId: I,
+    setActiveMeasurement: L,
+    setMeasurements: te,
+    setSelectedMeasurements: R,
+    setSelectedMeasurement: ne,
+    setSelectionOriginRect: z,
+    setSelectedElement: B,
+    setHoverRect: V,
+    setHoverElement: re,
+    setHoverPointer: H,
+    clearSelectionRect: ie,
+    selectionMode: ae,
+    scrollOffset: U,
+    textAnnotations: W,
+    arrows: G,
+    penStrokes: oe,
+    setSelectedTextIds: K,
+    setSelectedArrowIds: se,
+    setSelectedPenStrokeIds: q
+  }) => {
+    let ce = so({
+        document: e,
+        overlayRef: r,
+        setHoverRect: V,
+        setHoverElement: re
+      }),
+      le = oo({
+        document: e,
+        window: t,
+        overlayRef: r,
+        selectionRectRef: a,
+        selectedMeasurements: S,
+        selectedMeasurement: C,
+        snapEnabled: p,
+        selectionMode: ae,
+        hoverHighlightEnabled: v,
+        scrollOffset: U,
+        textAnnotations: W,
+        arrows: G,
+        penStrokes: oe,
+        guides: T,
+        setSelectedTextIds: K,
+        setSelectedArrowIds: se,
+        setSelectedPenStrokeIds: q,
+        setSelectedGuideIds: j,
+        setSelectedElement: B,
+        setSelectedMeasurements: R,
+        setSelectedMeasurement: ne,
+        setSelectionOriginRect: z,
+        clearSelectionRect: ie,
+        setActiveMeasurement: L,
+        setMeasurements: te
+      });
+    return {
+      handlePointerDown: (0, i.useCallback)(t => {
+        let i = o(),
+          a = n.current;
+        if (a && a.contains(t.target) || u || !l || t.button !== 0 || d === `none`) return;
+        ie();
+        let s = {
+          x: t.clientX,
+          y: t.clientY
+        };
+        if (le.preparePointerDown(s, t.shiftKey), g && D) {
+          i(), ee(e => [...e, {
+            ...D,
+            id: A()
+          }]);
+          return;
+        }
+        if (f) {
+          t.preventDefault(), i(), N(null), P(null), F(!1);
+          let n = gi({
+              orientation: _,
+              point: s,
+              snapGuidesEnabled: m,
+              overlayNode: r.current,
+              guides: T,
+              draggingGuideId: E,
+              document: e
+            }),
+            a = A();
+          j(h ? [a] : []), M(e => [...e, {
+            id: a,
+            orientation: _,
+            position: n
+          }]), c(a, I), t.currentTarget.setPointerCapture(t.pointerId);
+          return;
+        }
+        N(s), P(s), F(!1), t.currentTarget.setPointerCapture(t.pointerId);
+      }, [g, ie, o, E, e, l, u, _, T, f, D, r, c, h, w.length, I, P, M, ee, F, j, N, m, le, d, n]),
+      handlePointerMove: (0, i.useCallback)(i => {
+        let a = n.current;
+        if (a && a.contains(i.target) || u || !l) return;
+        let o = {
+          x: i.clientX,
+          y: i.clientY
+        };
+        if (i.altKey !== g && O(i.altKey), E) {
+          M(t => t.map(t => t.id === E ? {
+            ...t,
+            position: gi({
+              orientation: t.orientation,
+              point: o,
+              snapGuidesEnabled: m,
+              overlayNode: r.current,
+              guides: T,
+              draggingGuideId: E,
+              document: e
+            })
+          } : t));
+          return;
+        }
+        if (d === `none`) {
+          v && (V(null), re(null)), H(null), k(null);
+          return;
+        }
+        if (ce.hoverPointRef.current = o, ce.hoverFrameRef.current || (ce.hoverFrameRef.current = t.requestAnimationFrame(() => {
+          let t = ce.hoverPointRef.current;
+          t && !E && !f && (v ? ce.updateHoverTarget(t) : ce.updateHoverElement(t)), t && T.length > 0 ? H(t) : H(null), k(f && t && !E ? {
+            orientation: _,
+            position: gi({
+              orientation: _,
+              point: t,
+              snapGuidesEnabled: m,
+              overlayNode: r.current,
+              guides: T,
+              draggingGuideId: E,
+              document: e
+            })
+          } : null), ce.hoverFrameRef.current = null;
+        })), !f && y && (P(o), !x)) {
+          let e = Math.abs(o.x - y.x),
+            t = Math.abs(o.y - y.y);
+          (e > 4 || t > 4) && F(!0);
+        }
+      }, [g, E, l, u, v, T, f, x, r, _, O, P, k, M, re, H, V, F, m, w.length, j, y, d, n, ce]),
+      handlePointerUp: (0, i.useCallback)(e => {
+        let t = o(),
+          r = n.current;
+        if (r && r.contains(e.target) || u || !l) return;
+        if (s(), f) {
+          e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), I(null), N(null), P(null), F(!1);
+          return;
+        }
+        if (d === `none`) {
+          N(null), P(null), F(!1);
+          return;
+        }
+        let i = {
+            x: e.clientX,
+            y: e.clientY
+          },
+          a = () => {
+            N(null), P(null), F(!1), le.shiftDragRef.current = !1, le.shiftToggleElementRef.current = null;
+          };
+        if (e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), E && I(null), !y || !b) {
+          a();
+          return;
+        }
+        le.handleSelectionPointerUp(e, i, y, x, t, a);
+      }, [s, o, E, l, u, b, f, x, r, I, P, F, N, le, y, d, n]),
+      handlePointerLeave: (0, i.useCallback)(() => {
+        ce.hoverFrameRef.current && (t.cancelAnimationFrame(ce.hoverFrameRef.current), ce.hoverFrameRef.current = null), s(), N(null), P(null), F(!1), I(null), k(null);
+      }, [s, I, P, k, F, N])
+    };
+  },
+  lo = ({
+    ownerWindow: e,
+    activePersistence: t,
+    persistSettings: n,
+    persistState: r,
+    settingsPersistOnReload: a,
+    saveWorkspace: o,
+    applyPersistenceSnapshot: s,
+    storedState: c,
+    applyingExternalPersistenceRef: l,
+    workspacePersistTimeoutRef: u
+  }) => {
+    let d = (0, i.useRef)(t);
+    (0, i.useEffect)(() => {
+      d.current !== t && (d.current = t, s(c ?? null));
+    }, [t, s, c]);
+    let f = (0, i.useRef)(null);
+    (0, i.useEffect)(() => {
+      if (f.current !== n) {
+        if (f.current = n, l.current) {
+          l.current = !1;
+          return;
+        }
+        n(), a && r();
+      }
+    }, [l, n, r, a]), (0, i.useEffect)(() => {
+      let n = t.subscribe?.(s);
+      if (!a) return () => {
+        n?.(), t.setErrorHandler?.(void 0);
+      };
+      let r = () => o();
+      return e.addEventListener(`beforeunload`, r), () => {
+        n?.(), e.removeEventListener(`beforeunload`, r), t.setErrorHandler?.(void 0), u.current !== null && (e.clearTimeout(u.current), u.current = null, o());
+      };
+    }, [t, s, e, o, a, u]);
+  },
+  uo = e => {
+    let t = (0, i.useRef)(e);
+    t.current = e;
+    let n = (0, i.useRef)(null),
+      r = (0, i.useRef)(Wr(e.window));
+    (0, i.useLayoutEffect)(() => {
+      let i = e.window,
+        a = () => {
+          let e = t.current;
+          n.current && i.cancelAnimationFrame(n.current), n.current = i.requestAnimationFrame(() => {
+            let t = Wr(i),
+              n = r.current;
+            if (e.setMeasurements(n => n.map(n => pi(n, t, e.document))), e.setActiveMeasurement(n => n && pi(n, t, e.document)), e.setHeldDistances(n => n.map(n => Hi(n, t, e.document, i))), e.selectedElementRef.current && e.document.contains(e.selectedElementRef.current) && e.setSelectedMeasurement(fi(e.selectedElementRef.current, i)), n.width > 0 && n.height > 0) {
+              let r = t.width / n.width,
+                i = t.height / n.height;
+              e.setGuides(e => e.map(e => e.orientation === `vertical` ? {
+                ...e,
+                position: e.position * r
+              } : {
+                ...e,
+                position: e.position * i
+              }));
+            }
+            r.current = t;
+          });
+        };
+      return i.addEventListener(`resize`, a), () => {
+        n.current && i.cancelAnimationFrame(n.current), i.removeEventListener(`resize`, a);
+      };
+    }, [e.window]);
+  },
+  fo = ({
+    ownerDocument: e,
+    ownerWindow: t,
+    overlayRef: n,
+    enabled: r,
+    snapGuidesEnabled: a,
+    selectNewGuideEnabled: o,
+    settingsOpen: s,
+    guides: c,
+    createActionCommit: l,
+    setGuides: u,
+    setSelectedGuideIds: d,
+    setDraggingGuideId: f,
+    selectedGuideIds: p,
+    selectionCount: m,
+    scheduleGuideDragHold: h,
+    clearGuideDragHold: g
+  }) => {
+    let _ = (0, i.useCallback)((t, r, i = null) => gi({
+      orientation: t,
+      point: t === `vertical` ? {
+        x: r,
+        y: 0
+      } : {
+        x: 0,
+        y: r
+      },
+      snapGuidesEnabled: a,
+      overlayNode: n.current,
+      guides: c,
+      draggingGuideId: i,
+      document: e
+    }), [c, n, e, a]);
+    return {
+      startGuideFromRuler: (0, i.useCallback)((e, t) => {
+        let n = A();
+        return l()(), d(o ? [n] : []), f(n), u(r => [...r, {
+          id: n,
+          orientation: e,
+          position: _(e, t)
+        }]), n;
+      }, [l, o, u, d, f, _]),
+      moveGuideFromRuler: (0, i.useCallback)((e, t) => {
+        u(n => n.map(n => n.id === e ? {
+          ...n,
+          position: _(n.orientation, t, e)
+        } : n));
+      }, [u, _]),
+      finishGuideFromRuler: (0, i.useCallback)(e => {
+        o && d([e]), f(null);
+      }, [o, f, d]),
+      cancelGuideFromRuler: (0, i.useCallback)(e => {
+        u(t => t.filter(t => t.id !== e)), f(null);
+      }, [f, u]),
+      handleGuidePointerDown: (0, i.useCallback)((e, t) => {
+        let n = l();
+        if (r) {
+          if (t.stopPropagation(), t.preventDefault(), t.shiftKey) {
+            n(), d(t => t.includes(e.id) ? t.filter(t => t !== e.id) : [...t, e.id]);
+            return;
+          }
+          p.includes(e.id) && m > 1 || (n(), d([e.id]), h(e.id, f), t.currentTarget.setPointerCapture(t.pointerId));
+        }
+      }, [l, r, h, p, m, f, d]),
+      handleGuidePointerUp: (0, i.useCallback)((e, t) => {
+        t.stopPropagation(), g(), f(t => t === e.id ? null : t), t.currentTarget.hasPointerCapture(t.pointerId) && t.currentTarget.releasePointerCapture(t.pointerId);
+      }, [g, f]),
+      overlayGuides: (0, i.useMemo)(() => c.length > 0 || !s ? c : [{
+        id: `__mesurer-preview-vertical`,
+        orientation: `vertical`,
+        position: t.innerWidth / 2
+      }, {
+        id: `__mesurer-preview-horizontal`,
+        orientation: `horizontal`,
+        position: t.innerHeight / 2
+      }], [c, t, s])
+    };
+  },
+  po = 4,
+  mo = (e, t, n) => {
+    let r = Math.max(0, Math.min(e.x, t.x, n.width)),
+      i = Math.max(0, Math.min(e.y, t.y, n.height)),
+      a = Math.max(0, Math.min(Math.max(e.x, t.x), n.width)),
+      o = Math.max(0, Math.min(Math.max(e.y, t.y), n.height));
+    return {
+      left: r,
+      top: i,
+      width: Math.max(0, a - r),
+      height: Math.max(0, o - i)
+    };
+  },
+  ho = async (e, t, n, r) => {
+    let i = await createImageBitmap(e),
+      a = i.width / n.width,
+      o = i.height / n.height,
+      s = Math.max(0, Math.round(t.left * a)),
+      c = Math.max(0, Math.round(t.top * o)),
+      l = Math.max(1, Math.min(i.width - s, Math.round(t.width * a))),
+      u = Math.max(1, Math.min(i.height - c, Math.round(t.height * o))),
+      d = r.createElement(`canvas`);
+    d.width = l, d.height = u;
+    let f = d.getContext(`2d`);
+    if (!f) throw i.close(), Error(`Could not crop screenshot`);
+    return f.drawImage(i, s, c, l, u, 0, 0, l, u), i.close(), new Promise((e, t) => {
+      d.toBlob(n => {
+        n ? e(n) : t(Error(`Could not crop screenshot`));
+      }, `image/png`);
+    });
+  },
+  go = async (e, t) => {
+    let n = t ?? globalThis.navigator?.clipboard;
+    if (!n?.write) throw Error(`Clipboard is not available`);
+    await n.write([new ClipboardItem({
+      "image/png": e
+    })]);
+  },
+  _o = (e = new Date()) => {
+    let t = e => String(e).padStart(2, `0`);
+    return `mesurer-${e.getFullYear()}-${t(e.getMonth() + 1)}-${t(e.getDate())}-${t(e.getHours())}${t(e.getMinutes())}${t(e.getSeconds())}.png`;
+  },
+  vo = (e, t, n, r) => {
+    let i = URL.createObjectURL(e),
+      a = n.createElement(`a`);
+    a.href = i, a.download = t, a.rel = `noopener`, a.style.position = `fixed`, a.style.left = `-9999px`, n.documentElement.append(a), a.click(), r.setTimeout(() => {
+      a.remove(), URL.revokeObjectURL(i);
+    }, 1e3);
+  },
+  yo = e => {
+    let t = e.flatMap(e => {
+      if (!e) return [];
+      let t = e.style.getPropertyValue(`visibility`),
+        n = e.style.getPropertyPriority(`visibility`);
+      return e.style.setProperty(`visibility`, `hidden`, `important`), [{
+        node: e,
+        visibility: t,
+        priority: n
+      }];
+    });
+    return () => {
+      t.forEach(({
+        node: e,
+        visibility: t,
+        priority: n
+      }) => {
+        t ? e.style.setProperty(`visibility`, t, n) : e.style.removeProperty(`visibility`);
+      });
+    };
+  },
+  bo = e => new Promise(t => {
+    e.requestAnimationFrame(() => {
+      e.requestAnimationFrame(() => t());
+    });
+  }),
+  xo = `mesurer:capture-visible`,
+  So = `mesurer:capture-bridge-ping`,
+  Co = `mesurer:capture-bridge-pong`,
+  wo = `mesurer:capture-bridge-request`,
+  To = `mesurer:capture-bridge-response`,
+  Eo = e => {
+    let {
+      hostname: t,
+      protocol: n
+    } = e.location;
+    return t === `mesurer.dev` || n === `http:` && (t === `localhost` || t === `127.0.0.1`);
+  },
+  Do = () => {
+    let e = globalThis.chrome?.runtime;
+    if (!(!e?.id || !e.sendMessage)) return e;
+  },
+  Oo = e => new Promise((t, n) => {
+    try {
+      e.sendMessage({
+        type: xo
+      }, r => {
+        if (e.lastError?.message) {
+          n(Error(e.lastError.message));
+          return;
+        }
+        if (!r?.ok || !r.dataUrl) {
+          n(Error(!r || r.ok ? `Capture failed` : r.error ?? `Capture failed`));
+          return;
+        }
+        fetch(r.dataUrl).then(e => e.blob()).then(t, n);
+      });
+    } catch (e) {
+      n(e instanceof Error ? e : Error(`Capture failed`));
+    }
+  }),
+  ko = new WeakMap(),
+  Ao = e => {
+    let t = ko.get(e),
+      n = t?.stream.getVideoTracks()[0];
+    if (!t || !n || n.readyState !== `live`) {
+      ko.delete(e);
+      return;
+    }
+    return t;
+  },
+  jo = e => {
+    let t = ko.get(e);
+    t && (ko.delete(e), t.video.pause(), t.video.srcObject = null, t.stream.getTracks().forEach(e => e.stop()));
+  },
+  Mo = async (e, t) => {
+    let n = Ao(t);
+    if (n) return n;
+    let r = t.navigator.mediaDevices;
+    if (!r?.getDisplayMedia) throw Error(`Screenshot capture is unavailable`);
+    let i = await r.getDisplayMedia({
+        audio: !1,
+        video: !0,
+        preferCurrentTab: !0,
+        selfBrowserSurface: `include`
+      }),
+      a = i.getVideoTracks()[0];
+    if (!a) throw i.getTracks().forEach(e => e.stop()), Error(`Capture failed`);
+    try {
+      let n = e.createElement(`video`);
+      n.autoplay = !0, n.muted = !0, n.playsInline = !0, n.srcObject = i, await n.play(), (n.videoWidth === 0 || n.videoHeight === 0) && (await new Promise(e => {
+        n.onloadedmetadata = () => e();
+      }));
+      let r = {
+        stream: i,
+        video: n
+      };
+      return ko.set(t, r), a.addEventListener(`ended`, () => {
+        ko.get(t) === r && ko.delete(t);
+      }, {
+        once: !0
+      }), r;
+    } catch (e) {
+      throw i.getTracks().forEach(e => e.stop()), e;
+    }
+  },
+  No = async (e, t) => {
+    let {
+        video: n
+      } = await Mo(e, t),
+      r = e.createElement(`canvas`);
+    r.width = n.videoWidth, r.height = n.videoHeight;
+    let i = r.getContext(`2d`);
+    if (!i) throw Error(`Capture failed`);
+    return i.drawImage(n, 0, 0), new Promise((e, t) => {
+      r.toBlob(n => {
+        n ? e(n) : t(Error(`Capture failed`));
+      }, `image/png`);
+    });
+  },
+  Po = e => new Promise(t => {
+    let n = e.crypto.randomUUID(),
+      r = e.location.origin,
+      i = o => {
+        o.source === e && o.origin === r && o.data?.type === Co && o.data.id === n && (e.removeEventListener(`message`, i), e.clearTimeout(a), t(!0));
+      },
+      a = e.setTimeout(() => {
+        e.removeEventListener(`message`, i), t(!1);
+      }, 80);
+    e.addEventListener(`message`, i), e.postMessage({
+      type: So,
+      id: n
+    }, r);
+  }),
+  Fo = e => new Promise((t, n) => {
+    let r = e.crypto.randomUUID(),
+      i = e.location.origin,
+      a = s => {
+        if (s.source === e && s.origin === i && s.data?.type === To && s.data.id === r) {
+          if (e.removeEventListener(`message`, a), e.clearTimeout(o), !s.data.ok || typeof s.data.dataUrl != `string`) {
+            t(null);
+            return;
+          }
+          fetch(s.data.dataUrl).then(e => e.blob()).then(t, n);
+        }
+      },
+      o = e.setTimeout(() => {
+        e.removeEventListener(`message`, a), t(null);
+      }, 4e3);
+    e.addEventListener(`message`, a), e.postMessage({
+      type: wo,
+      id: r
+    }, i);
+  }),
+  Io = async (e, t) => {
+    Do() || Eo(t) && (await Po(t)) || (await Mo(e, t));
+  },
+  Lo = async (e, t) => {
+    let n = Do();
+    if (n) return Oo(n);
+    if (Eo(t) && (await Po(t))) {
+      let e = await Fo(t);
+      if (e) return e;
+    }
+    return No(e, t);
+  },
+  Ro = 2500,
+  zo = ({
+    ownerDocument: e,
+    ownerWindow: t,
+    overlayRef: n,
+    captureVisibleTab: r,
+    settings: a,
+    setEnabled: o,
+    setToolbarActive: s,
+    onPrepare: c
+  }) => {
+    let l = (0, i.useRef)(null),
+      u = (0, i.useRef)(null),
+      d = (0, i.useRef)(!1),
+      f = (0, i.useRef)(!1),
+      p = (0, i.useRef)(0),
+      m = (0, i.useRef)(null),
+      h = (0, i.useRef)(null),
+      g = (0, i.useRef)(null),
+      [_, v] = (0, i.useState)(!1),
+      [y, b] = (0, i.useState)(null),
+      [x, S] = (0, i.useState)(!1),
+      [C, w] = (0, i.useState)(null),
+      T = (0, i.useCallback)(() => {
+        v(!0), g.current !== null && t.clearTimeout(g.current), g.current = t.setTimeout(() => {
+          g.current = null, v(!1);
+        }, Ro);
+      }, [t]),
+      E = (0, i.useCallback)(() => {
+        u.current = null, w(null), S(!1);
+      }, []),
+      D = (0, i.useCallback)(() => {
+        b(e => (e && URL.revokeObjectURL(e), h.current = null, null));
+      }, []),
+      O = (0, i.useCallback)(() => {
+        p.current += 1, E(), D(), jo(t);
+      }, [E, D, t]);
+    (0, i.useLayoutEffect)(() => () => {
+      p.current += 1, g.current !== null && t.clearTimeout(g.current);
+      let e = h.current;
+      e && URL.revokeObjectURL(e), jo(t);
+    }, [t]);
+    let k = (0, i.useCallback)(i => {
+      if (d.current) return;
+      d.current = !0;
+      let o = ++p.current;
+      m.current = o, v(!1);
+      let s = yo([l.current, n.current?.querySelector(`.mesurer-color-picker`) ?? null, n.current?.querySelector(`.mesurer-screenshot-preview`) ?? null]),
+        c = (async () => (await bo(t), ho(r ? await r() : await Lo(e, t), i, {
+          width: t.innerWidth,
+          height: t.innerHeight
+        }, e)))();
+      c.catch(() => void 0);
+      let u = a.copy,
+        f = a.download,
+        g = u ? go(c, t.navigator.clipboard) : Promise.resolve();
+      (async () => {
+        try {
+          let n = await c;
+          if (p.current !== o) return;
+          let r = await Promise.allSettled([g, f ? Promise.resolve(vo(n, _o(), e, t)) : Promise.resolve()]),
+            i = u && r[0]?.status === `rejected`,
+            a = f && r[1]?.status === `rejected`;
+          if (i && !f || a && !u || i && a) throw Error(`Could not save screenshot`);
+          if (p.current !== o) return;
+          let s = URL.createObjectURL(n);
+          b(e => (e && URL.revokeObjectURL(e), h.current = s, s));
+        } catch {
+          p.current === o && T();
+        } finally {
+          m.current === o && (d.current = !1, m.current = null), p.current === o ? (E(), t.requestAnimationFrame(s)) : s();
+        }
+      })();
+    }, [E, r, T, e, t, n, a.copy, a.download]);
+    return {
+      overlayRef: l,
+      error: _,
+      previewUrl: y,
+      active: x,
+      rect: C,
+      cancelSelection: E,
+      dismissPreview: D,
+      closeUi: O,
+      toggleSelection: (0, i.useCallback)(async () => {
+        if (x) {
+          O();
+          return;
+        }
+        if (!f.current) {
+          f.current = !0, D();
+          try {
+            r || (await Io(e, t)), o(!0), s(!0), c(), v(!1), u.current = null, w(null), S(!0);
+          } catch (e) {
+            e instanceof DOMException && e.name === `AbortError` || T();
+          } finally {
+            f.current = !1;
+          }
+        }
+      }, [x, r, O, D, T, c, e, t, o, s]),
+      handlePointerDown: (0, i.useCallback)(e => {
+        e.button === 0 && (e.preventDefault(), e.stopPropagation(), u.current = {
+          x: e.clientX,
+          y: e.clientY
+        }, w(mo(u.current, u.current, {
+          width: t.innerWidth,
+          height: t.innerHeight
+        })), e.currentTarget.setPointerCapture(e.pointerId));
+      }, [t]),
+      handlePointerMove: (0, i.useCallback)(e => {
+        let n = u.current;
+        n && w(mo(n, {
+          x: e.clientX,
+          y: e.clientY
+        }, {
+          width: t.innerWidth,
+          height: t.innerHeight
+        }));
+      }, [t]),
+      handlePointerUp: (0, i.useCallback)(e => {
+        e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId);
+        let n = u.current;
+        if (u.current = null, !n) return;
+        let r = mo(n, {
+          x: e.clientX,
+          y: e.clientY
+        }, {
+          width: t.innerWidth,
+          height: t.innerHeight
+        });
+        if (w(r), r.width < po || r.height < po) {
+          w(null);
+          return;
+        }
+        k(r);
+      }, [k, t]),
+      handlePointerCancel: (0, i.useCallback)(e => {
+        e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), p.current += 1, E();
+      }, [E])
+    };
+  },
+  Bo = ({
+    ownerWindow: e,
+    selectionOriginRect: t,
+    selectedMeasurement: n,
+    selectedMeasurements: r,
+    setSelectionOriginRect: a,
+    setSelectedMeasurement: o,
+    setSelectedMeasurements: s
+  }) => {
+    let c = (0, i.useRef)(null),
+      l = (0, i.useRef)(``),
+      u = !!t || !!n?.originRect || r.some(e => !!e.originRect),
+      d = u ? [t ? `origin` : ``, n?.originRect ? n.id : ``, r.map(e => e.originRect ? e.id : ``).join(`,`)].join(`|`) : ``;
+    (0, i.useEffect)(() => {
+      if (l.current !== d) return l.current = d, c.current !== null && (e.clearTimeout(c.current), c.current = null), u && (c.current = e.setTimeout(() => {
+        c.current = null, a(e => e && null), o(e => {
+          if (!e?.originRect) return e;
+          let {
+            originRect: t,
+            ...n
+          } = e;
+          return n;
+        }), s(e => {
+          let t = !1,
+            n = e.map(e => {
+              if (!e.originRect) return e;
+              t = !0;
+              let {
+                originRect: n,
+                ...r
+              } = e;
+              return r;
+            });
+          return t ? n : e;
+        });
+      }, Ot)), () => {
+        c.current !== null && (e.clearTimeout(c.current), c.current = null);
+      };
+    }, [u, d, e, o, s, a]);
+  },
+  Vo = `#f8fafc`,
+  Ho = `#e2e8f0`,
+  Uo = `#64748b`,
+  Wo = `#0f172a`,
+  Go = (e, t, n) => {
+    let r = e.createElement(`div`);
+    return Object.assign(r.style, {
+      position: `absolute`,
+      backgroundColor: n,
+      ...(t === `top` || t === `bottom` ? {
+        left: `0`,
+        [t]: `0`,
+        width: `100%`,
+        height: `1px`
+      } : {
+        top: `0`,
+        [t]: `0`,
+        width: `1px`,
+        height: `100%`
+      })
+    }), r;
+  },
+  Ko = (e, t, n) => {
+    let r = e.createElement(`div`);
+    Object.assign(r.style, {
+      position: `fixed`,
+      zIndex: `0`,
+      pointerEvents: `none`,
+      backgroundColor: t,
+      boxSizing: `border-box`
+    }), r.className = `mesurer-ti-box`, r.dataset.state = `hidden`;
+    for (let t of [`top`, `right`, `bottom`, `left`]) r.appendChild(Go(e, t, n));
+    return r;
+  },
+  qo = (e, t) => {
+    Object.assign(e.style, {
+      left: `${t.left}px`,
+      top: `${t.top}px`,
+      width: `${t.width}px`,
+      height: `${t.height}px`
+    });
+  },
+  Jo = (e, t) => {
+    let n = e.createElement(`div`);
+    return Object.assign(n.style, {
+      position: `fixed`,
+      zIndex: `1`,
+      pointerEvents: t ? `auto` : `none`,
+      background: `#ffffff`,
+      color: Wo,
+      borderRadius: `13px`,
+      padding: `10px 12px`,
+      fontSize: `11px`,
+      lineHeight: `1.5`,
+      fontFamily: `ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif`,
+      fontVariantNumeric: `tabular-nums`,
+      userSelect: `none`,
+      whiteSpace: `nowrap`,
+      width: `320px`,
+      minWidth: `320px`,
+      maxWidth: `320px`,
+      boxSizing: `border-box`,
+      boxShadow: `0px 0px 0.5px rgba(0, 0, 0, 0.18), 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1)`
+    }), n.className = t ? `mesurer-ti-card mesurer-ti-card--pinned` : `mesurer-ti-card`, n.dataset.state = `hidden`, n;
+  },
+  Yo = (e, t, n, r) => {
+    t.replaceChildren();
+    let i = e.createElement(`div`);
+    Object.assign(i.style, {
+      display: `flex`,
+      alignItems: `center`,
+      gap: `8px`,
+      marginBottom: `8px`,
+      paddingBottom: `6px`
+    });
+    let a = e.createElement(`span`);
+    if (Object.assign(a.style, {
+      color: Vo,
+      background: Wo,
+      borderRadius: `4px`,
+      padding: `1px 5px`,
+      fontFamily: `ui-monospace, SFMono-Regular, Menlo, monospace`,
+      fontSize: `10px`,
+      fontWeight: `500`
+    }), a.textContent = n.tagName, i.appendChild(a), n.textSnippet) {
+      let t = e.createElement(`span`);
+      Object.assign(t.style, {
+        color: Uo,
+        overflow: `hidden`,
+        textOverflow: `ellipsis`,
+        whiteSpace: `nowrap`,
+        flex: `1`,
+        minWidth: `0`,
+        fontSize: `10px`
+      }), t.textContent = n.textSnippet, i.appendChild(t);
+    }
+    if (r) {
+      let t = e.createElement(`button`);
+      t.type = `button`, t.className = `mesurer-ti-close`, t.setAttribute(`aria-label`, `Close`), t.textContent = `×`, Object.assign(t.style, {
+        all: `unset`,
+        marginLeft: n.textSnippet ? `0` : `auto`,
+        flex: `0 0 auto`,
+        width: `16px`,
+        height: `16px`,
+        lineHeight: `14px`,
+        textAlign: `center`,
+        borderRadius: `4px`,
+        color: Uo,
+        fontSize: `14px`
+      }), i.appendChild(t);
+    }
+    t.appendChild(i);
+    let o = e.createElement(`div`);
+    Object.assign(o.style, {
+      display: `grid`,
+      gridTemplateColumns: `auto 1fr`,
+      columnGap: `12px`,
+      rowGap: `3px`,
+      alignItems: `baseline`
+    });
+    for (let t of n.rows) {
+      let n = e.createElement(`span`);
+      n.style.color = Uo, n.style.fontSize = `11px`, n.textContent = t.label;
+      let r = e.createElement(`span`);
+      if (Object.assign(r.style, {
+        fontFamily: `ui-monospace, SFMono-Regular, Menlo, monospace`,
+        fontSize: `11px`,
+        color: Wo,
+        overflow: `hidden`,
+        textOverflow: `ellipsis`,
+        whiteSpace: `nowrap`
+      }), !t.varName) r.textContent = t.value;else {
+        let n = e.createElement(`span`);
+        n.textContent = t.value;
+        let i = e.createElement(`span`);
+        i.style.color = Ho, i.style.margin = `0 6px`, i.textContent = `·`;
+        let a = e.createElement(`span`);
+        a.style.color = `#0369a1`, a.textContent = t.varName, r.append(n, i, a);
+      }
+      o.append(n, r);
+    }
+    t.appendChild(o);
+  },
+  Xo = (e, t, n, r = 0, i = 0) => {
+    let a = n.left + n.width / 2 + r;
+    t.style.left = `${a}px`;
+    let o = t.getBoundingClientRect(),
+      s = n.bottom + 4 + i;
+    s + o.height > e.innerHeight - 8 && (s = n.top - o.height - 4 + i), t.style.top = `${Math.max(8, s)}px`;
+    let c = o.width / 2;
+    t.style.left = `${Math.min(Math.max(a, 8 + c), e.innerWidth - 8 - c)}px`;
+  },
+  Zo = {
+    100: `thin`,
+    200: `extralight`,
+    300: `light`,
+    400: `normal`,
+    500: `medium`,
+    600: `semibold`,
+    700: `bold`,
+    800: `extrabold`,
+    900: `black`
+  },
+  Qo = [`font-family`, `font-size`, `font-weight`, `line-height`, `letter-spacing`],
+  $o = {
+    Family: `font-family`,
+    Size: `font-size`,
+    Weight: `font-weight`,
+    Line: `line-height`,
+    Tracking: `letter-spacing`
+  },
+  es = e => {
+    if (!e || e === `normal`) return e || `normal`;
+    let t = /^(-?[\d.]+)px$/.exec(e);
+    return t ? `${Math.round(Number(t[1]) * 10) / 10}px` : e;
+  },
+  ts = e => (e.split(`,`)[0] ?? ``).trim().replace(/^['"]|['"]$/g, ``),
+  ns = e => {
+    let t = Zo[e];
+    return t ? `${e} / ${t}` : e;
+  },
+  rs = e => e ? /var\(\s*(--[a-zA-Z0-9_-]+)/.exec(e)?.[1] ?? null : null,
+  is = e => {
+    let t = (e.match(/#[\w-]+/g) ?? []).length,
+      n = (e.match(/\.[\w-]+|\[[^\]]+\]|:[\w-]+/g) ?? []).length,
+      r = (e.match(/(?:^|[ >+~])([a-zA-Z][\w-]*)/g) ?? []).length;
+    return t * 1e4 + n * 100 + r;
+  },
+  as = (e, t) => t ? e.important === t.important ? e.specificity === t.specificity ? e.order > t.order : e.specificity > t.specificity : e.important : !0,
+  os = class {
+    constructor(e, t) {
+      this.document = e, this.window = t;
+    }
+    collectRules(e, t, n, r) {
+      for (let i = 0; i < e.length; i++) {
+        let a = e[i],
+          o = r.value++;
+        if (a.type === 4) {
+          let e = a,
+            i = n;
+          try {
+            i = n && this.window.matchMedia(e.media.mediaText).matches;
+          } catch {
+            i = !1;
+          }
+          this.collectRules(e.cssRules, t, i, r);
+        } else a.type === 12 ? this.collectRules(a.cssRules, t, n, r) : a.type === 1 && t.push({
+          rule: a,
+          mediaOk: n,
+          order: o
+        });
+      }
+    }
+    getRules() {
+      let e = [],
+        t = {
+          value: 0
+        };
+      for (let n of Array.from(this.document.styleSheets)) try {
+        this.collectRules(n.cssRules, e, !0, t);
+      } catch {
+        continue;
+      }
+      return e;
+    }
+    findVarReferences(e) {
+      let t = Object.fromEntries(Qo.map(e => [e, null])),
+        n = this.getRules();
+      for (let r of Qo) {
+        let i = e;
+        for (; i && t[r] === null;) {
+          let e,
+            a = rs(i.style.getPropertyValue(r));
+          a && (e = {
+            name: a,
+            specificity: 2 ** 53 - 1,
+            order: 2 ** 53 - 1,
+            important: i.style.getPropertyPriority(r) === `important`
+          });
+          for (let {
+            rule: t,
+            mediaOk: a,
+            order: o
+          } of n) {
+            if (!a) continue;
+            let n = !1;
+            try {
+              n = i.matches(t.selectorText);
+            } catch {
+              continue;
+            }
+            if (!n) continue;
+            let s = rs(t.style.getPropertyValue(r));
+            if (!s) continue;
+            let c = {
+              name: s,
+              specificity: is(t.selectorText),
+              order: o,
+              important: t.style.getPropertyPriority(r) === `important`
+            };
+            as(c, e) && (e = c);
+          }
+          e && (t[r] = e.name), i = i.parentElement;
+        }
+      }
+      return t;
+    }
+    getFast(e) {
+      let t = this.window.getComputedStyle(e),
+        n = [{
+          label: `Family`,
+          value: ts(t.fontFamily),
+          varName: null
+        }, {
+          label: `Size`,
+          value: es(t.fontSize),
+          varName: null
+        }, {
+          label: `Weight`,
+          value: ns(t.fontWeight),
+          varName: null
+        }, {
+          label: `Line`,
+          value: t.lineHeight === `normal` ? `normal` : es(t.lineHeight),
+          varName: null
+        }, {
+          label: `Tracking`,
+          value: t.letterSpacing === `normal` ? `normal` : es(t.letterSpacing),
+          varName: null
+        }],
+        r = Array.from(e.childNodes).filter(e => e.nodeType === Node.TEXT_NODE).map(e => e.nodeValue?.trim() ?? ``).filter(Boolean).join(` `).replace(/\s+/g, ` `);
+      return {
+        rows: n,
+        tagName: e.tagName.toLowerCase(),
+        textSnippet: r.length > 40 ? `${r.slice(0, 40)}\u2026` : r
+      };
+    }
+    getFull(e, t = this.getFast(e)) {
+      let n = this.findVarReferences(e);
+      return {
+        ...t,
+        rows: t.rows.map(e => ({
+          ...e,
+          varName: n[$o[e.label]]
+        }))
+      };
+    }
+  },
+  ss = `mesurer-extension-host`,
+  cs = `mesurer-text-inspector-overlay`,
+  ls = `mesurer-text-inspector-styles`,
+  us = `mesurer-text-inspect-mode`,
+  ds = 0,
+  fs = `color-mix(in oklch, oklch(0.62 0.18 255) 8%, transparent)`,
+  ps = `color-mix(in oklch, oklch(0.62 0.18 255) 80%, transparent)`,
+  ms = `color-mix(in oklch, oklch(0.62 0.18 255) 4%, transparent)`,
+  hs = `color-mix(in oklch, oklch(0.62 0.18 255) 35%, transparent)`,
+  gs = [`HTML`, `BODY`, `SCRIPT`, `STYLE`, `META`, `LINK`, `NOSCRIPT`, `IMG`, `VIDEO`, `AUDIO`, `IFRAME`],
+  _s = (e, t, n) => `
+.${n},
+.${n} * {
+  cursor: help !important;
+}
+.${n} #${e},
+.${n} #${e} *,
+.${n} .mesurer-root,
+.${n} .mesurer-root * {
+  cursor: auto !important;
+}
+#${t} .mesurer-ti-card--pinned {
+  cursor: grab;
+}
+#${t} .mesurer-ti-card--pinned:active {
+  cursor: grabbing;
+}
+#${t} .mesurer-ti-close {
+  cursor: pointer;
+}
+#${t} .mesurer-ti-close:hover {
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+}
+#${t} .mesurer-ti-box,
+#${t} .mesurer-ti-card {
+  opacity: 1;
+}
+#${t} .mesurer-ti-box[data-state="hidden"],
+#${t} .mesurer-ti-card[data-state="hidden"] {
+  opacity: 0;
+}
+#${t} .mesurer-ti-card {
+  transform: translateX(-50%);
+}
+`,
+  vs = e => {
+    let t = e;
+    return t.requestIdleCallback ? {
+      request: e => t.requestIdleCallback(() => e(), {
+        timeout: 250
+      }),
+      cancel: e => t.cancelIdleCallback?.(e)
+    } : {
+      request: t => e.setTimeout(t, 32),
+      cancel: t => e.clearTimeout(t)
+    };
+  },
+  ys = (e = {}, t = !1) => {
+    let n = e.portalTarget?.ownerDocument ?? (globalThis.document === void 0 ? null : globalThis.document),
+      r = n?.defaultView ?? (globalThis.window === void 0 ? null : globalThis.window),
+      i = n,
+      a = r,
+      o = r,
+      s = o?.HTMLElement ?? globalThis.HTMLElement,
+      c = o?.SVGElement ?? globalThis.SVGElement,
+      l = ss,
+      u = (e.id ?? (t ? cs : `mesurer-text-inspector-${++ds}`)).replace(/[^a-zA-Z0-9_-]/g, `-`),
+      d = t ? cs : `${u}-overlay`,
+      f = t ? ls : `${u}-styles`,
+      p = t ? us : `${u}-mode`,
+      m = new Set((e.ignoredTags ?? gs).map(e => e.toUpperCase())),
+      h = Number.isFinite(e.maxPinned) ? Math.max(1, Math.floor(e.maxPinned)) : 1 / 0,
+      g = _s(l, d, p),
+      _ = l,
+      v = d,
+      y = f,
+      b = p,
+      x = m,
+      S = g,
+      C = e.portalTarget?.nodeType === 11,
+      w = new os(i, a),
+      T = [],
+      E = [],
+      D = [],
+      O = !1,
+      k = !1,
+      A = null,
+      j = null,
+      M = null,
+      N = null,
+      P = 0,
+      F = 0,
+      ee = !1,
+      I = null,
+      L = -1,
+      te = null,
+      R = () => (te ??= vs(a), te),
+      ne = e => Array.from(e.childNodes).some(e => e.nodeType === Node.TEXT_NODE && !!e.nodeValue?.trim()),
+      z = e => !!e && e instanceof s && !x.has(e.tagName) && !(e instanceof c) && ne(e),
+      B = e => e.id === v || e.id === _ || e.classList.contains(`mesurer-root`) || e.classList.contains(`mesurer-toolbar-surface`) || e.classList.contains(`mesurer-menu-surface`) || e.classList.contains(`mesurer-settings-panel`) || e.classList.contains(`mesurer-toast-surface`) || e.classList.contains(`mesurer-ti-card`) || e.classList.contains(`mesurer-ti-box`) || e.hasAttribute(`data-mesurer-inspector-ui`),
+      V = e => {
+        if (e.parentNode) return e.parentNode;
+        let t = e.getRootNode();
+        return t instanceof ShadowRoot ? t.host : null;
+      },
+      re = e => {
+        for (let t = e; t; t = V(t)) if (t instanceof Element && B(t)) return !0;
+        return !1;
+      },
+      H = (e, t) => i.elementsFromPoint(e, t).find(e => !re(e) && z(e)) ?? null,
+      ie = (e, t) => {
+        let n = [...i.elementsFromPoint(e, t)],
+          r = i.getElementById(_)?.shadowRoot;
+        return r && n.push(...r.elementsFromPoint(e, t)), n.some(e => re(e));
+      },
+      ae = () => {
+        let t = e => {
+          if (e.querySelector(`#${y}`)) return;
+          let t = i.createElement(`style`);
+          t.id = y, t.textContent = S, e.nodeType === 9 ? e.head.appendChild(t) : e.appendChild(t);
+        };
+        t(i), C && t(e.portalTarget);
+      },
+      U = () => A?.isConnected ? A : (A = i.createElement(`div`), A.id = v, Object.assign(A.style, {
+        position: `fixed`,
+        inset: `0`,
+        pointerEvents: `none`,
+        zIndex: `2147483646`
+      }), (e.portalTarget ?? i.body).appendChild(A), A),
+      W = (e, t) => {
+        e.dataset.state = t ? `visible` : `hidden`;
+      },
+      G = () => {
+        let e = U();
+        j ??= Ko(i, fs, ps), M ??= Jo(i, !1), j.parentNode || e.appendChild(j), M.parentNode || e.appendChild(M);
+      },
+      oe = (t, n) => {
+        I !== t && (L !== -1 && R().cancel(L), I = t, L = R().request(() => {
+          if (L = -1, I = null, !O) return;
+          let r = w.getFull(t, n);
+          N !== t || !M || (Yo(i, M, r, !1), Xo(a, M, t.getBoundingClientRect()), e.onInspect?.(t, r));
+        }));
+      },
+      K = e => {
+        if (!O || !z(e)) return !1;
+        G();
+        let t = e.getBoundingClientRect();
+        N = e;
+        let n = w.getFast(e);
+        return Yo(i, M, n, !1), oe(e, n), qo(j, t), Xo(a, M, t), W(j, !0), W(M, !0), !0;
+      },
+      se = () => {
+        if (!O || k || ie(P, F)) {
+          q();
+          return;
+        }
+        let e = H(P, F);
+        if (!e) {
+          q();
+          return;
+        }
+        if (e !== N) K(e);else {
+          let t = e.getBoundingClientRect();
+          qo(j, t), Xo(a, M, t);
+        }
+      },
+      q = () => {
+        N = null, j && W(j, !1), M && W(M, !1);
+      },
+      ce = () => T.map(e => {
+        let t = e.card.getBoundingClientRect();
+        return {
+          sourceEl: e.sourceEl,
+          left: e.userPlaced ? t.left + t.width / 2 : 0,
+          top: e.userPlaced ? t.top : 0,
+          userPlaced: e.userPlaced
+        };
+      }),
+      le = () => {
+        E.push(ce()), D.length = 0;
+      },
+      ue = (t, n = !0, r = n) => {
+        let i = T.indexOf(t);
+        i !== -1 && (n && le(), T.splice(i, 1), t.detach(), t.box.remove(), t.card.remove(), r && e.onUnpin?.(t.sourceEl));
+      },
+      de = (e = !1) => {
+        for (; T.length;) ue(T[T.length - 1], !1, e);
+      },
+      fe = e => {
+        let t = -1,
+          n = 0,
+          r = 0,
+          i = 0,
+          o = 0,
+          s = !1,
+          c = !1,
+          l = !1,
+          u = u => {
+            if (u.pointerId !== t) return;
+            let d = u.clientX - n,
+              f = u.clientY - r;
+            s ||= Math.abs(d) > 6 || Math.abs(f) > 6, s && (l ||= (le(), !0), c = !0, e.card.style.left = `${Math.min(a.innerWidth - 8, Math.max(8, i + d))}px`, e.card.style.top = `${Math.min(a.innerHeight - 8, Math.max(8, o + f))}px`, e.userPlaced = !0);
+          },
+          d = e => {
+            if (e.pointerId === t || t === -1) {
+              if (a.removeEventListener(`pointermove`, u), a.removeEventListener(`pointerup`, d), a.removeEventListener(`pointercancel`, d), t = -1, s = !1, l = !1, c) {
+                let e = t => {
+                  t.preventDefault(), t.stopPropagation(), a.removeEventListener(`click`, e, !0);
+                };
+                a.addEventListener(`click`, e, !0);
+              }
+              c = !1;
+            }
+          },
+          f = l => {
+            if (l.button !== 0 || l.target?.classList.contains(`mesurer-ti-close`)) return;
+            let f = e.card.getBoundingClientRect();
+            i = f.left + f.width / 2, o = f.top, n = l.clientX, r = l.clientY, t = l.pointerId, s = !1, c = !1, a.addEventListener(`pointermove`, u), a.addEventListener(`pointerup`, d), a.addEventListener(`pointercancel`, d);
+          };
+        return e.card.addEventListener(`pointerdown`, f), () => {
+          e.card.removeEventListener(`pointerdown`, f), a.removeEventListener(`pointermove`, u), a.removeEventListener(`pointerup`, d), a.removeEventListener(`pointercancel`, d);
+        };
+      },
+      pe = (t, n, r = !0, o = r) => {
+        let s = T.find(e => e.sourceEl === t);
+        if (s) {
+          U().append(s.box, s.card);
+          return;
+        }
+        r && (le(), T.length >= h && ue(T[0], !1, !0));
+        let c = U(),
+          l = Ko(i, ms, hs),
+          u = Jo(i, !0),
+          d = w.getFull(t);
+        Yo(i, u, d, !0), c.append(l, u);
+        let f = {
+            sourceEl: t,
+            box: l,
+            card: u,
+            userPlaced: n?.userPlaced ?? !1,
+            detach: () => {}
+          },
+          p = t.getBoundingClientRect();
+        qo(l, p), Xo(a, u, p), n?.userPlaced && (u.style.left = `${n.left}px`, u.style.top = `${n.top}px`), W(l, !0), W(u, !0), T.push(f), u.querySelector(`.mesurer-ti-close`)?.addEventListener(`click`, e => {
+          e.preventDefault(), e.stopPropagation(), ue(f);
+        }), f.detach = fe(f), o && e.onPin?.(t, d);
+      },
+      J = e => {
+        de(!1);
+        for (let t of e) t.sourceEl.isConnected && pe(t.sourceEl, t, !1, !1);
+      },
+      me = () => {
+        let e = E.pop();
+        return e ? (D.push(ce()), J(e), !0) : !1;
+      },
+      he = () => {
+        let e = D.pop();
+        return e ? (E.push(ce()), J(e), !0) : !1;
+      },
+      ge = () => T.length ? (le(), de(!0), !0) : !1,
+      _e = () => {
+        for (let e of [...T]) {
+          if (!e.sourceEl.isConnected) {
+            ue(e, !1);
+            continue;
+          }
+          let t = e.sourceEl.getBoundingClientRect();
+          qo(e.box, t), e.userPlaced || Xo(a, e.card, t);
+          let n = t.bottom >= 0 && t.right >= 0 && t.left <= a.innerWidth && t.top <= a.innerHeight;
+          W(e.box, n), W(e.card, n), e.card.style.pointerEvents = n ? `auto` : `none`;
+        }
+      },
+      ve = () => {
+        ee || (ee = !0, requestAnimationFrame(() => {
+          ee = !1, !(!O || k) && (se(), _e());
+        }));
+      },
+      ye = e => {
+        k || (P = e.clientX, F = e.clientY, ve());
+      },
+      be = e => {
+        k || e.relatedTarget || q();
+      },
+      xe = () => ve(),
+      Se = e => e.composedPath().some(e => e instanceof s && (() => {
+        let t = e;
+        return t.id === v || t.classList.contains(`mesurer-ti-card`) || t.classList.contains(`mesurer-ti-box`) || t.classList.contains(`mesurer-ti-close`) || t.classList.contains(`mesurer-toolbar-surface`) || t.classList.contains(`mesurer-root`) || t.classList.contains(`mesurer-menu-surface`) || t.classList.contains(`mesurer-settings-panel`) || t.hasAttribute(`data-mesurer-inspector-ui`);
+      })()),
+      Ce = e => {
+        if (!(k || Se(e) || ie(e.clientX, e.clientY)) && (e.preventDefault(), e.stopImmediatePropagation(), e.button === 0)) {
+          let t = H(e.clientX, e.clientY);
+          t && pe(t);
+        }
+      },
+      we = e => {
+        k || Se(e) || ie(e.clientX, e.clientY) || (e.preventDefault(), e.stopImmediatePropagation());
+      },
+      Te = () => {
+        O || !n || !r || (O = !0, ae(), U(), i.body.classList.add(b), a.addEventListener(`mousemove`, ye, !0), a.addEventListener(`mouseout`, be, !0), a.addEventListener(`click`, Ce, !0), a.addEventListener(`auxclick`, we, !0), a.addEventListener(`scroll`, xe, !0), a.addEventListener(`resize`, xe, !0));
+      },
+      Ee = () => {
+        O && (O = !1, L !== -1 && R().cancel(L), L = -1, I = null, E.length = 0, D.length = 0, a.removeEventListener(`mousemove`, ye, !0), a.removeEventListener(`mouseout`, be, !0), a.removeEventListener(`click`, Ce, !0), a.removeEventListener(`auxclick`, we, !0), a.removeEventListener(`scroll`, xe, !0), a.removeEventListener(`resize`, xe, !0), q(), j?.remove(), M?.remove(), j = null, M = null, de(), i.body.classList.remove(b));
+      },
+      De = e => {
+        if (k = e, k) {
+          q(), i.body.classList.remove(b), A && (A.style.visibility = `hidden`);
+          return;
+        }
+        O && (i.body.classList.add(b), A && (A.style.visibility = ``));
+      },
+      Y = () => {
+        Ee(), A?.remove(), A = null, i !== void 0 && (i.getElementById(y)?.remove(), C && e.portalTarget.querySelector(`#${y}`)?.remove());
+      };
+    return {
+      enable: Te,
+      disable: Ee,
+      undo: me,
+      redo: he,
+      canUndo: () => E.length > 0,
+      canRedo: () => D.length > 0,
+      clear: ge,
+      inspect: K,
+      isEnabled: () => O,
+      setPaused: De,
+      cleanup: Y,
+      destroy: Y
+    };
+  };
+ys({}, !0);
+var bs = (e, t, n = !1, r = !1) => {
+    let a = (0, i.useRef)(null);
+    a.current ||= ys({
+      portalTarget: e
+    });
+    let o = a.current,
+      s = (0, i.useRef)(null);
+    return (0, i.useLayoutEffect)(() => {
+      let e = s.current;
+      e !== t && (t === `text-inspector` ? o.enable() : e === `text-inspector` && o.disable(), s.current = t), o.setPaused(n || r);
+    }, [r, n, o, t]), (0, i.useLayoutEffect)(() => () => {
+      o.destroy();
+    }, [o]), o;
+  },
+  xs = `mesurer-xray-styles`,
+  Ss = `
+.xray-mode * {
+  outline: solid 1px blue !important;
+}
+.xray-mode #mesurer-extension-host,
+.xray-mode #mesurer-extension-host *,
+.xray-mode .mesurer-root,
+.xray-mode .mesurer-root *,
+.xray-mode .mesurer-toolbar-surface,
+.xray-mode .mesurer-toolbar-surface *,
+.xray-mode .mesurer-toast-surface,
+.xray-mode .mesurer-screenshot-preview,
+.xray-mode .mesurer-screenshot-select,
+.xray-mode .mesurer-screenshot-select *,
+.xray-mode .mesurer-ti-box,
+.xray-mode .mesurer-ti-card,
+.xray-mode .mesurer-ti-card *,
+.xray-mode .mesurer-ti-close {
+  outline: none !important;
+}
+`,
+  Cs = (e, t) => {
+    let n = e.getElementById(xs);
+    n || (n = e.createElement(`style`), n.id = xs, n.textContent = Ss, e.head.appendChild(n)), e.body.classList.toggle(`xray-mode`, t);
+  },
+  ws = (e, t) => {
+    let n = (0, i.useRef)(null);
+    (0, i.useLayoutEffect)(() => (n.current && n.current.doc !== e && n.current.doc.body.classList.remove(`xray-mode`), Cs(e, t), n.current = {
+      doc: e,
+      visible: t
+    }, () => {
+      n.current?.doc === e && e.body.classList.remove(`xray-mode`);
+    }), [e, t]);
+  },
+  Ts = e => {
+    if (!e.snapArrowsEnabled) return e.point;
+    let t = e.document ?? document,
+      {
+        scrollOffset: n
+      } = e,
+      r = {
+        x: e.point.x - n.x,
+        y: e.point.y - n.y
+      },
+      i = r.x,
+      a = r.y,
+      o = Tt + 1,
+      s = Tt + 1,
+      c = null,
+      l = Tt + 1,
+      u = di(t);
+    for (let n of u) {
+      if (!(n instanceof (t.defaultView?.HTMLElement ?? HTMLElement)) || e.overlayNode && e.overlayNode.contains(n) || n === t.body || n === t.documentElement) continue;
+      let u = oi(n);
+      if (u.width <= 2 || u.height <= 2) continue;
+      let d = u.left + u.width,
+        f = u.top + u.height;
+      if (r.y >= u.top - Tt && r.y <= f + Tt) for (let e of [u.left, u.left + u.width / 2, d]) {
+        let t = Math.abs(e - r.x);
+        t <= Tt && t < o && (i = e, o = t);
+      }
+      if (r.x >= u.left - Tt && r.x <= d + Tt) for (let e of [u.top, u.top + u.height / 2, f]) {
+        let t = Math.abs(e - r.y);
+        t <= Tt && t < s && (a = e, s = t);
+      }
+      let p = [{
+        x: u.left,
+        y: u.top
+      }, {
+        x: d,
+        y: u.top
+      }, {
+        x: u.left,
+        y: f
+      }, {
+        x: d,
+        y: f
+      }];
+      for (let e of p) {
+        let t = Math.hypot(e.x - r.x, e.y - r.y);
+        t <= Tt && t < l && (c = e, l = t);
+      }
+    }
+    for (let t of e.guides) if (t.orientation === `vertical`) {
+      let e = Math.abs(t.position - r.x);
+      e <= Tt && e < o && (i = t.position, o = e);
+    } else {
+      let e = Math.abs(t.position - r.y);
+      e <= Tt && e < s && (a = t.position, s = e);
+    }
+    return c ? {
+      x: c.x + n.x,
+      y: c.y + n.y
+    } : {
+      x: (o <= Tt ? i : r.x) + n.x,
+      y: (s <= Tt ? a : r.y) + n.y
+    };
+  },
+  Es = 4,
+  Ds = 8,
+  Os = ({
+    enabled: e,
+    settingsOpen: t,
+    snapArrowsEnabled: n,
+    arrowClickToPlace: r,
+    color: a,
+    width: o,
+    overlayRef: s,
+    ownerDocument: c,
+    guides: l,
+    createActionCommit: u,
+    setToolMode: d,
+    setArrows: f,
+    setSelectedArrowIds: p,
+    arrowStart: m,
+    arrowMiddle: h,
+    setArrowStart: g,
+    setArrowMiddle: _,
+    setArrowPreviewEnd: v,
+    scrollOffset: y,
+    pointerIdRef: b
+  }) => {
+    let x = (0, i.useRef)(null),
+      S = (0, i.useCallback)(e => ({
+        x: e.clientX + y.x,
+        y: e.clientY + y.y
+      }), [y]),
+      C = (0, i.useCallback)(e => Ts({
+        point: e,
+        snapArrowsEnabled: n,
+        overlayNode: s.current,
+        guides: l,
+        scrollOffset: y,
+        document: c
+      }), [l, s, c, y, n]),
+      w = (0, i.useCallback)(() => {
+        x.current = null, b.current = null, g(null), _(null), v(null);
+      }, [b, _, v, g]),
+      T = (0, i.useCallback)((e, t, n) => {
+        Math.hypot(n.x - e.x, n.y - e.y) < Es || (u()(), f(r => [...r, {
+          id: A(),
+          start: e,
+          control: t,
+          end: n,
+          color: a,
+          width: o
+        }]), p([]), d(`selection`));
+      }, [a, u, f, p, d, o]);
+    return {
+      drawingRef: x,
+      clearDrawing: w,
+      handlePointerDown: (0, i.useCallback)(n => {
+        if (!e || t || n.button !== 0) return;
+        if (n.target instanceof Element) {
+          let e = n.target.getAttribute(`data-mesurer-arrow-id`);
+          if (e && !m) {
+            p([e]);
+            return;
+          }
+        }
+        if (!m && n.target !== n.currentTarget) return;
+        n.preventDefault(), n.stopPropagation();
+        let r = C(S(n)),
+          i = !m;
+        i && (g(r), v(r)), x.current = {
+          pointerId: n.pointerId,
+          origin: {
+            x: n.clientX,
+            y: n.clientY
+          },
+          slid: !1,
+          fromStart: i
+        }, n.currentTarget.setPointerCapture(n.pointerId);
+      }, [m, e, S, v, g, p, t, C]),
+      handlePointerMove: (0, i.useCallback)(e => {
+        let t = x.current;
+        if (t && e.pointerId === t.pointerId && e.buttons !== 0) {
+          let n = Math.hypot(e.clientX - t.origin.x, e.clientY - t.origin.y);
+          !t.slid && n >= Ds && (t.slid = !0);
+        }
+        m && v(C(S(e)));
+      }, [m, S, v, C]),
+      handlePointerUp: (0, i.useCallback)(e => {
+        let t = x.current;
+        if (!t || e.pointerId !== t.pointerId) return;
+        e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), x.current = null;
+        let n = C(S(e));
+        if (m) {
+          if (t.fromStart) {
+            if (r) return;
+            t.slid && (T(m, rn(m, n), n), w());
+            return;
+          }
+          if (!h) {
+            if (r) {
+              Math.hypot(n.x - m.x, n.y - m.y) >= Es && (T(m, rn(m, n), n), w());
+              return;
+            }
+            Math.hypot(n.x - m.x, n.y - m.y) >= Es && (_(n), v(n));
+            return;
+          }
+          T(m, h, n), w();
+        }
+      }, [r, h, m, w, T, S, _, v, C]),
+      handlePointerLeave: (0, i.useCallback)(() => void 0, [])
+    };
+  },
+  ks = ({
+    enabled: e,
+    settingsOpen: t,
+    arrows: n,
+    selectedArrowIds: r,
+    createActionCommit: a,
+    setArrows: o,
+    setSelectedArrowIds: s,
+    clearOtherSelections: c,
+    onBeginMove: l,
+    onDragMove: u,
+    onMoveEnd: d,
+    pointerIdRef: f
+  }) => {
+    let [p, m] = (0, i.useState)(null),
+      h = (0, i.useRef)(null),
+      g = (0, i.useCallback)(i => {
+        if (!e || t || i.button !== 0 || !(i.target instanceof Element)) return !1;
+        let p = i.target.closest(`[data-mesurer-arrow-id]`),
+          g = p instanceof Element ? p.getAttribute(`data-mesurer-arrow-id`) : null,
+          _ = g ? n.find(e => e.id === g) : void 0;
+        if (!_ || !g) return !1;
+        let v = p instanceof Element ? p.getAttribute(`data-mesurer-arrow-handle`) : null;
+        i.preventDefault(), i.stopPropagation();
+        let y = r.includes(g);
+        if (i.shiftKey) return s(e => y ? e.filter(e => e !== g) : [...e, g]), !0;
+        y || (c?.(), s([g])), f.current = i.pointerId;
+        let b = {
+            ..._,
+            control: _.control ?? rn(_.start, _.end)
+          },
+          x = v === `start` || v === `control` || v === `end`;
+        if (x) {
+          let e = Pn(_);
+          b.start = e[0], b.control = e[1], b.end = e[2], b.rotation = 0, o(e => e.map(e => e.id === _.id ? b : e));
+        }
+        h.current = {
+          arrowId: g,
+          action: x ? v : `move`,
+          origin: {
+            x: i.clientX,
+            y: i.clientY
+          },
+          arrow: b,
+          basis: ln(b.start, b.end, b.control),
+          changed: !1,
+          last: {
+            x: i.clientX,
+            y: i.clientY
+          }
+        }, x ? m(g) : l?.(g);
+        let S = Fr(i);
+        return S && Q(i.pointerId, S, {
+          x: i.clientX,
+          y: i.clientY
+        }, {
+          onMove: (e, t) => {
+            let n = h.current;
+            if (!n || (!n.changed && (e !== 0 || t !== 0) && (a()(), n.changed = !0), !n.changed)) return;
+            if (n.action === `move`) {
+              if (u) {
+                u(e, t);
+                return;
+              }
+              o(r => r.map(r => r.id === n.arrowId ? fn(n.arrow, e, t) : r));
+              return;
+            }
+            let r;
+            r = n.action === `start` ? n.arrow.start : n.action === `control` ? n.arrow.control ?? rn(n.arrow.start, n.arrow.end) : n.arrow.end;
+            let i = {
+              x: r.x + e,
+              y: r.y + t
+            };
+            o(e => e.map(e => {
+              if (e.id !== n.arrowId) return e;
+              if (n.action === `control`) return {
+                ...e,
+                control: i
+              };
+              let t = n.action === `start` ? i : n.arrow.start,
+                r = n.action === `end` ? i : n.arrow.end;
+              return {
+                ...e,
+                start: t,
+                end: r,
+                control: n.basis ? un(t, r, n.basis) : n.arrow.control
+              };
+            }));
+          },
+          onEnd: () => {
+            h.current = null, f.current = null, m(null), d?.();
+          }
+        }), !0;
+      }, [n, c, a, e, l, u, d, f, r, o, s, t]),
+      _ = (0, i.useCallback)(e => Nr() ? !0 : !(!h.current || e.pointerId !== f.current), [f]),
+      v = (0, i.useCallback)(e => !h.current || e.pointerId !== f.current ? !1 : (e.preventDefault(), e.stopPropagation(), e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), h.current = null, f.current = null, m(null), !0), [f]);
+    return {
+      editRef: h,
+      editingArrowId: p,
+      clearEditing: (0, i.useCallback)(() => {
+        m(null);
+      }, []),
+      handleSelectionPointerDown: g,
+      handleSelectionPointerMove: _,
+      handleSelectionPointerUp: v
+    };
+  },
+  As = e => {
+    let t = (0, i.useRef)(null),
+      n = Os({
+        ...e,
+        pointerIdRef: t
+      }),
+      r = ks({
+        ...e,
+        pointerIdRef: t
+      }),
+      a = (0, i.useCallback)(e => {
+        if (r.editRef.current && e.pointerId === t.current) {
+          e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), r.editRef.current = null, r.clearEditing(), t.current = null;
+          return;
+        }
+        n.drawingRef.current && e.pointerId === n.drawingRef.current.pointerId && (e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), n.clearDrawing());
+      }, [n, t, r.editRef]),
+      o = (0, i.useCallback)(() => {
+        Pr();
+        let i = r.editRef.current;
+        i?.changed && e.setArrows(e => e.map(e => e.id === i.arrowId ? i.arrow : e)), r.editRef.current = null, r.clearEditing(), t.current = null, n.drawingRef.current = null, n.clearDrawing();
+      }, [n, e.setArrows, t, r.editRef]);
+    return {
+      handlePointerDown: n.handlePointerDown,
+      handlePointerMove: n.handlePointerMove,
+      handlePointerUp: n.handlePointerUp,
+      handlePointerLeave: n.handlePointerLeave,
+      handlePointerCancel: a,
+      cancelInteraction: o,
+      hasActiveInteraction: (0, i.useCallback)(() => !!(n.drawingRef.current || r.editRef.current), [n.drawingRef, r.editRef]),
+      handleSelectionPointerDown: r.handleSelectionPointerDown,
+      handleSelectionPointerMove: r.handleSelectionPointerMove,
+      handleSelectionPointerUp: r.handleSelectionPointerUp,
+      editingArrowId: r.editingArrowId,
+      preview: e.arrowStart && e.arrowPreviewEnd ? {
+        start: e.arrowStart,
+        end: e.arrowPreviewEnd,
+        control: e.arrowMiddle ?? rn(e.arrowStart, e.arrowPreviewEnd)
+      } : null
+    };
+  },
+  js = 4,
+  Ms = ({
+    enabled: e,
+    settingsOpen: t,
+    toolMode: n,
+    color: r,
+    scrollOffset: a,
+    createActionCommit: o,
+    setPenStrokes: s,
+    setPenPreview: c
+  }) => {
+    let l = (0, i.useRef)(null),
+      u = (0, i.useCallback)(e => ({
+        x: e.clientX + a.x,
+        y: e.clientY + a.y
+      }), [a]),
+      d = (0, i.useCallback)(() => {
+        let e = l.current;
+        e?.target.hasPointerCapture(e.pointerId) && e.target.releasePointerCapture(e.pointerId), l.current = null, c([]);
+      }, [c]);
+    return (0, i.useLayoutEffect)(() => {
+      n !== `pen` && d();
+    }, [d, n]), {
+      handlePointerDown: (0, i.useCallback)(r => {
+        if (!e || t || n !== `pen` || r.button !== 0 || r.target !== r.currentTarget) return;
+        r.preventDefault(), r.stopPropagation();
+        let i = u(r);
+        l.current = {
+          pointerId: r.pointerId,
+          points: [i],
+          target: r.currentTarget
+        }, c([i]), r.currentTarget.setPointerCapture(r.pointerId);
+      }, [e, u, c, t, n]),
+      handlePointerMove: (0, i.useCallback)(e => {
+        let t = l.current;
+        if (!t || t.pointerId !== e.pointerId || e.buttons === 0) return;
+        let n = u(e),
+          r = t.points[t.points.length - 1];
+        (r.x !== n.x || r.y !== n.y) && (t.points.push(n), c([...t.points]));
+      }, [u, c]),
+      handlePointerUp: (0, i.useCallback)(e => {
+        let t = l.current;
+        if (!t || t.pointerId !== e.pointerId) return;
+        e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId);
+        let n = u(e),
+          i = t.points[t.points.length - 1];
+        (i.x !== n.x || i.y !== n.y) && t.points.push(n);
+        let a = t.points[0],
+          c = t.points[t.points.length - 1];
+        Math.hypot(c.x - a.x, c.y - a.y) >= js && (o()(), s(e => [...e, {
+          id: A(),
+          points: t.points,
+          color: r,
+          width: 2
+        }])), d();
+      }, [d, r, o, u, s]),
+      handlePointerCancel: (0, i.useCallback)(e => {
+        l.current?.pointerId === e.pointerId && (e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), d());
+      }, [d]),
+      handlePointerLeave: (0, i.useCallback)(() => void 0, []),
+      cancelInteraction: d,
+      hasActiveInteraction: () => !!l.current
+    };
+  },
+  Ns = (e, t, n, r) => {
+    let i = Sn(t.left, t.top, t.width, t.height),
+      a = Cn(r, i, -n),
+      o = {
+        x: e.includes(`w`) ? t.left + t.width : e.includes(`e`) ? t.left : i.x,
+        y: e.includes(`n`) ? t.top + t.height : e.includes(`s`) ? t.top : i.y
+      },
+      s = [e.includes(`e`) || e.includes(`w`) ? (a.x - o.x) / (e.includes(`e`) ? t.width : -t.width) : null, e.includes(`n`) || e.includes(`s`) ? (a.y - o.y) / (e.includes(`s`) ? t.height : -t.height) : null].filter(e => e !== null),
+      c = s.length > 1 ? Math.abs((s[0] ?? 1) - 1) >= Math.abs((s[1] ?? 1) - 1) ? s[0] ?? 1 : s[1] ?? 1 : s[0] ?? 1,
+      l = Math.abs(c) < .05 ? c < 0 ? -.05 : .05 : c;
+    return {
+      x: l,
+      y: l,
+      uniform: !0
+    };
+  },
+  Ps = (e, t, n, r) => {
+    let i = Sn(t.rect.left, t.rect.top, t.rect.width, t.rect.height),
+      a = Cn(e, i, -t.rotation),
+      o = {
+        x: n.includes(`w`) ? t.rect.left + t.rect.width : n.includes(`e`) ? t.rect.left : i.x,
+        y: n.includes(`n`) ? t.rect.top + t.rect.height : n.includes(`s`) ? t.rect.top : i.y
+      };
+    return Cn({
+      x: o.x + (a.x - o.x) * r.x,
+      y: o.y + (a.y - o.y) * r.y
+    }, i, t.rotation);
+  },
+  Fs = (e, t, n) => {
+    let r = Ns(t, e.rect, e.rotation, n),
+      i = n => Ps(n, e, t, r),
+      a = Sn(e.rect.left, e.rect.top, e.rect.width, e.rect.height),
+      o = {
+        x: t.includes(`w`) ? e.rect.left + e.rect.width : t.includes(`e`) ? e.rect.left : a.x,
+        y: t.includes(`n`) ? e.rect.top + e.rect.height : t.includes(`s`) ? e.rect.top : a.y
+      },
+      s = Cn({
+        x: o.x + (a.x - o.x) * r.x,
+        y: o.y + (a.y - o.y) * r.y
+      }, a, e.rotation);
+    return {
+      rect: {
+        left: s.x - e.rect.width * Math.abs(r.x) / 2,
+        top: s.y - e.rect.height * Math.abs(r.y) / 2,
+        width: e.rect.width * Math.abs(r.x),
+        height: e.rect.height * Math.abs(r.y)
+      },
+      arrows: new Map(e.arrows.map(e => [e.id, {
+        ...e,
+        start: i(e.start),
+        end: i(e.end),
+        control: e.control ? i(e.control) : void 0,
+        width: Math.max(1, e.width * (r.uniform ? Math.abs(r.x) : 1))
+      }])),
+      penStrokes: new Map(e.penStrokes.map(e => [e.id, {
+        ...e,
+        points: e.points.map(i),
+        width: Math.max(1, e.width * (r.uniform ? Math.abs(r.x) : 1))
+      }])),
+      texts: new Map(e.texts.map(({
+        item: e,
+        bounds: t
+      }) => {
+        let n = i({
+            x: t.x + t.width / 2,
+            y: t.y + t.height / 2
+          }),
+          a = Math.abs(r.x),
+          o = Math.abs(r.y);
+        return [e.id, {
+          ...e,
+          x: n.x - t.width * a / 2,
+          y: n.y - t.height * o / 2,
+          scale: (e.scale ?? 1) * (r.uniform ? a : 1),
+          boxWidth: e.boxWidth ? e.boxWidth * a : void 0
+        }];
+      }))
+    };
+  },
+  Is = (e, t) => t - e.startAngle,
+  Ls = (e, t, n, r) => {
+    let i = Cn(Sn(t.x, t.y, t.width, t.height), n, r);
+    return {
+      ...e,
+      x: i.x - t.width / 2,
+      y: i.y - t.height / 2,
+      rotation: (e.rotation ?? 0) + r
+    };
+  },
+  Rs = (e, t) => {
+    let n = Is(e, t),
+      {
+        center: r
+      } = e;
+    return {
+      degrees: n,
+      arrows: new Map(e.arrows.map(e => [e.id, Rn(e, r, n)])),
+      penStrokes: new Map(e.penStrokes.map(e => [e.id, jr(e, r, n)])),
+      texts: new Map(e.texts.map(({
+        item: e,
+        bounds: t
+      }) => [e.id, Ls(e, t, r, n)]))
+    };
+  },
+  zs = 12,
+  Bs = (e, t, n, r = 0) => e >= n.left - r && e <= n.left + n.width + r && t >= n.top - r && t <= n.top + n.height + r,
+  Vs = (e, t) => ({
+    left: e.x - t.x,
+    top: e.y - t.y,
+    width: e.width,
+    height: e.height
+  }),
+  Hs = (...e) => e.map(e => [...e].sort().join(`,`)).join(`|`),
+  Us = ({
+    enabled: e,
+    toolMode: t,
+    ownerDocument: n,
+    overlayRef: r,
+    toolbarRef: a,
+    scrollOffset: o,
+    guides: s,
+    arrows: c,
+    penStrokes: l,
+    textAnnotations: u,
+    selectedGuideIds: d,
+    selectedArrowIds: f,
+    selectedPenStrokeIds: p,
+    selectedTextIds: m,
+    clearSelectionRect: h,
+    setStart: g,
+    setEnd: _,
+    setIsDragging: v,
+    setSelectedGuideIds: y,
+    setSelectedArrowIds: b,
+    setSelectedTextIds: x,
+    setSelectedPenStrokeIds: S,
+    setSelectedMeasurements: C,
+    setSelectedMeasurement: w,
+    setSelectedElement: T,
+    setGuides: E,
+    setArrows: D,
+    setPenStrokes: O,
+    setTextAnnotations: k,
+    recordSnapshot: A,
+    setToolMode: j
+  }) => {
+    let M = (0, i.useCallback)(() => {
+        y([]), b([]), x([]), S([]), C([]), w(null), T(null), h(), g(null), _(null), v(!1);
+      }, [h, _, v, b, T, y, w, C, S, x, g]),
+      N = (0, i.useRef)({
+        arrows: c,
+        penStrokes: l,
+        textAnnotations: u,
+        guides: s,
+        scrollOffset: o,
+        clearSelection: M
+      });
+    N.current = {
+      arrows: c,
+      penStrokes: l,
+      textAnnotations: u,
+      guides: s,
+      scrollOffset: o,
+      clearSelection: M
+    }, (0, i.useLayoutEffect)(() => {
+      if (!e || t !== `selection`) return;
+      let i = {
+          pointerId: -1,
+          x: 0,
+          y: 0,
+          moved: !1,
+          shift: !1,
+          onTarget: !1
+        },
+        o = (e, t) => {
+          let n = N.current;
+          return n.textAnnotations.some(i => {
+            let a = r.current?.querySelector(`[data-mesurer-text-id="${i.id}"]`);
+            return Bs(e, t, a instanceof HTMLElement ? a.getBoundingClientRect() : Vs(pn(i), n.scrollOffset), zs);
+          }) || n.penStrokes.some(r => Bs(e, t, Vs(Dr(r), n.scrollOffset), zs)) || n.arrows.some(r => Bs(e, t, Vs(Fn(r), n.scrollOffset), zs)) ? !0 : n.guides.some(n => n.orientation === `vertical` ? Math.abs(e - n.position) <= zs : Math.abs(t - n.position) <= zs);
+        },
+        s = e => e.composedPath().some(e => e instanceof Element ? a.current?.contains(e) ? !0 : e.hasAttribute(`data-mesurer-group-frame`) || e.hasAttribute(`data-mesurer-group-controls`) || e.hasAttribute(`data-mesurer-guide`) || e.hasAttribute(`data-mesurer-arrow-id`) || e.hasAttribute(`data-mesurer-arrow-frame`) || e.hasAttribute(`data-mesurer-pen-id`) || e.hasAttribute(`data-mesurer-pen-frame`) || e.hasAttribute(`data-mesurer-text-id`) || e.hasAttribute(`data-mesurer-text-frame`) : !1),
+        c = e => {
+          i.pointerId = e.pointerId, i.x = e.clientX, i.y = e.clientY, i.moved = !1, i.shift = e.shiftKey, i.onTarget = s(e) || o(e.clientX, e.clientY);
+        },
+        l = e => {
+          e.pointerId === i.pointerId && (i.moved ||= Math.hypot(e.clientX - i.x, e.clientY - i.y) > 4);
+        },
+        u = e => {
+          e.pointerId !== i.pointerId || i.moved || e.shiftKey || i.shift || i.onTarget || s(e) || o(e.clientX, e.clientY) || N.current.clearSelection();
+        };
+      return n.addEventListener(`pointerdown`, c), n.addEventListener(`pointermove`, l), n.addEventListener(`pointerup`, u), () => {
+        n.removeEventListener(`pointerdown`, c), n.removeEventListener(`pointermove`, l), n.removeEventListener(`pointerup`, u);
+      };
+    }, [e, n, r, a, t]);
+    let P = (0, i.useCallback)(() => {
+        let e = d.length > 0,
+          t = f.length > 0,
+          n = m.length > 0,
+          r = p.length > 0;
+        return !e && !t && !n && !r ? !1 : (A(), e && (E(e => e.filter(e => !d.includes(e.id))), y([])), t && (D(e => e.filter(e => !f.includes(e.id))), b([])), n && (k(e => e.filter(e => !m.includes(e.id))), x([])), r && (O(e => e.filter(e => !p.includes(e.id))), S([])), !0);
+      }, [A, f, d, p, m, D, E, O, b, y, S, x, k]),
+      F = (0, i.useRef)({
+        arrows: c,
+        guides: s,
+        penStrokes: l,
+        textAnnotations: u
+      });
+    F.current = {
+      arrows: c,
+      guides: s,
+      penStrokes: l,
+      textAnnotations: u
+    };
+    let ee = (0, i.useRef)({
+      selectedGuideIds: d,
+      selectedArrowIds: f,
+      selectedPenStrokeIds: p,
+      selectedTextIds: m
+    });
+    ee.current = {
+      selectedGuideIds: d,
+      selectedArrowIds: f,
+      selectedPenStrokeIds: p,
+      selectedTextIds: m
+    };
+    let I = (0, i.useRef)(null),
+      L = (0, i.useRef)(null),
+      [te, R] = (0, i.useState)({
+        x: 0,
+        y: 0
+      }),
+      ne = (0, i.useRef)(te);
+    ne.current = te;
+    let z = (0, i.useCallback)((e, t) => {
+        let n = L.current;
+        if (!(!n || e === 0 && t === 0)) {
+          if (n.frame && K({
+            ...n.frame,
+            rect: {
+              ...n.frame.rect,
+              left: n.frame.rect.left + e,
+              top: n.frame.rect.top + t
+            }
+          }), n.guides.length > 0) {
+            let r = new Map(n.guides.map(e => [e.id, e]));
+            E(n => n.map(n => {
+              let i = r.get(n.id);
+              return i ? {
+                ...i,
+                position: i.position + (i.orientation === `vertical` ? e : t)
+              } : n;
+            }));
+          }
+          if (n.arrows.length > 0) {
+            let r = new Map(n.arrows.map(e => [e.id, e]));
+            D(n => n.map(n => {
+              let i = r.get(n.id);
+              return i ? fn(i, e, t) : n;
+            }));
+          }
+          if (n.texts.length > 0) {
+            let r = new Map(n.texts.map(e => [e.id, e]));
+            k(n => n.map(n => {
+              let i = r.get(n.id);
+              return i ? {
+                ...i,
+                x: i.x + e,
+                y: i.y + t
+              } : n;
+            }));
+          }
+          if (n.penStrokes.length > 0) {
+            let r = new Map(n.penStrokes.map(e => [e.id, e]));
+            O(n => n.map(n => {
+              let i = r.get(n.id);
+              return i ? Or(i, e, t) : n;
+            }));
+          }
+        }
+      }, [D, E, O, k]),
+      B = (0, i.useCallback)(e => {
+        let t = F.current,
+          n = ee.current,
+          r = new Set(n.selectedGuideIds),
+          i = new Set(n.selectedArrowIds),
+          a = new Set(n.selectedPenStrokeIds),
+          o = new Set(n.selectedTextIds);
+        e?.guideId && r.add(e.guideId), e?.arrowId && i.add(e.arrowId), e?.penId && a.add(e.penId), e?.textId && o.add(e.textId), ne.current = {
+          x: 0,
+          y: 0
+        }, R({
+          x: 0,
+          y: 0
+        }), L.current = {
+          guides: t.guides.filter(e => r.has(e.id)),
+          arrows: t.arrows.filter(e => i.has(e.id)),
+          penStrokes: t.penStrokes.filter(e => a.has(e.id)),
+          texts: t.textAnnotations.filter(e => o.has(e.id)),
+          frame: I.current
+        };
+      }, []),
+      V = (0, i.useCallback)((e, t) => {
+        L.current && (ne.current = {
+          x: e,
+          y: t
+        }, R({
+          x: e,
+          y: t
+        }));
+      }, []),
+      re = (0, i.useCallback)(() => {
+        let e = ne.current;
+        z(e.x, e.y), L.current = null, ne.current = {
+          x: 0,
+          y: 0
+        }, R({
+          x: 0,
+          y: 0
+        });
+      }, [z]),
+      H = (0, i.useCallback)(() => {
+        Pr(), L.current = null, ne.current = {
+          x: 0,
+          y: 0
+        }, R({
+          x: 0,
+          y: 0
+        });
+      }, []),
+      ie = (0, i.useCallback)(() => {
+        let e = F.current;
+        return e.guides.length > 0 || e.arrows.length > 0 || e.penStrokes.length > 0 || e.textAnnotations.length > 0 ? (y(e.guides.map(e => e.id)), b(e.arrows.map(e => e.id)), x(e.textAnnotations.map(e => e.id)), S(e.penStrokes.map(e => e.id)), C([]), w(null), T(null), h(), t === `selection` ? A() : j(`selection`), !0) : !1;
+      }, [h, A, b, T, y, w, C, S, x, j, t]),
+      ae = (0, i.useMemo)(() => {
+        if (t !== `selection`) return null;
+        let e = e => {
+            if (L.current) return null;
+            let t = r.current?.querySelector(`[data-mesurer-text-id="${e}"]`);
+            if (!(t instanceof HTMLElement)) return null;
+            let n = t.getBoundingClientRect();
+            return {
+              x: n.left + o.x,
+              y: n.top + o.y,
+              width: n.width,
+              height: n.height
+            };
+          },
+          n = [...c.filter(e => f.includes(e.id)).map(Fn), ...l.filter(e => p.includes(e.id)).map(Dr), ...u.filter(e => m.includes(e.id)).map(t => e(t.id) ?? pn(t))];
+        if (n.length === 0 || n.length < 2 && d.length === 0) return null;
+        let i = Math.min(...n.map(e => e.x)),
+          a = Math.min(...n.map(e => e.y)),
+          s = Math.max(...n.map(e => e.x + e.width)),
+          h = Math.max(...n.map(e => e.y + e.height));
+        return {
+          left: i,
+          top: a,
+          width: s - i,
+          height: h - a
+        };
+      }, [c, r, l, o.x, o.y, f, d.length, p, m, u, t]),
+      U = (0, i.useRef)(null),
+      W = (0, i.useRef)(null),
+      G = (0, i.useRef)(``),
+      [oe, K] = (0, i.useState)(null);
+    I.current = oe, (0, i.useLayoutEffect)(() => {
+      let e = Hs(f, p, m),
+        t = G.current && G.current !== e,
+        n = U.current || W.current;
+      t && !n && K(null), G.current = e;
+    }, [f, p, m]);
+    let se = (0, i.useCallback)((e, t) => {
+        K(n => n && {
+          ...n,
+          rect: {
+            ...n.rect,
+            left: n.rect.left + e,
+            top: n.rect.top + t
+          }
+        }), E(n => n.map(n => d.includes(n.id) ? {
+          ...n,
+          position: n.position + (n.orientation === `vertical` ? e : t)
+        } : n)), D(n => n.map(n => f.includes(n.id) ? {
+          ...n,
+          start: {
+            x: n.start.x + e,
+            y: n.start.y + t
+          },
+          end: {
+            x: n.end.x + e,
+            y: n.end.y + t
+          },
+          control: n.control ? {
+            x: n.control.x + e,
+            y: n.control.y + t
+          } : void 0
+        } : n)), k(n => n.map(n => m.includes(n.id) ? {
+          ...n,
+          x: n.x + e,
+          y: n.y + t
+        } : n)), O(n => n.map(n => p.includes(n.id) ? {
+          ...n,
+          points: n.points.map(n => ({
+            x: n.x + e,
+            y: n.y + t
+          }))
+        } : n));
+      }, [f, d, p, m, D, E, O, k]),
+      q = e => {
+        let t = r.current?.querySelector(`[data-mesurer-text-id="${e.id}"]`);
+        return {
+          item: e,
+          bounds: t instanceof HTMLElement ? {
+            x: e.x,
+            y: e.y,
+            width: t.offsetWidth,
+            height: t.offsetHeight
+          } : pn(e)
+        };
+      };
+    return {
+      clearSelection: M,
+      removeSelected: P,
+      selectAllAnnotations: ie,
+      groupBounds: ae,
+      groupRotateFrame: oe,
+      moveSelectedAnnotations: se,
+      beginMoveSession: B,
+      moveFromSession: V,
+      endMoveSession: re,
+      cancelMoveSession: H,
+      selectionDragOffset: te,
+      startGroupRotate: (0, i.useCallback)((e, t, n) => {
+        A(), U.current = {
+          center: e,
+          startAngle: t,
+          rect: n,
+          arrows: c.filter(e => f.includes(e.id)),
+          penStrokes: l.filter(e => p.includes(e.id)),
+          texts: u.filter(e => m.includes(e.id)).map(q),
+          initialRotation: oe?.rotation ?? 0
+        }, K({
+          rect: n,
+          rotation: oe?.rotation ?? 0
+        });
+      }, [c, oe, r, l, A, f, p, m, u]),
+      updateGroupRotate: (0, i.useCallback)(e => {
+        let t = U.current;
+        if (!t) return;
+        let n = Rs(t, e);
+        K({
+          rect: t.rect,
+          rotation: (t.initialRotation ?? 0) + n.degrees
+        }), D(e => e.map(e => n.arrows.get(e.id) ?? e)), O(e => e.map(e => n.penStrokes.get(e.id) ?? e)), k(e => e.map(e => n.texts.get(e.id) ?? e));
+      }, [D, O, k]),
+      endGroupRotate: (0, i.useCallback)(() => {
+        U.current = null;
+      }, []),
+      startGroupResize: (0, i.useCallback)((e, t, n) => {
+        W.current = {
+          rect: t,
+          rotation: n,
+          arrows: c.filter(e => f.includes(e.id)),
+          penStrokes: l.filter(e => p.includes(e.id)),
+          texts: u.filter(e => m.includes(e.id)).map(q)
+        }, A();
+      }, [c, r, l, A, f, p, m, u]),
+      resizeSelectedAnnotations: (0, i.useCallback)((e, t) => {
+        let n = W.current;
+        if (!n) return;
+        let r = Fs(n, e, {
+          x: t.clientX + o.x,
+          y: t.clientY + o.y
+        });
+        K(e => e && {
+          ...e,
+          rect: r.rect
+        }), D(e => e.map(e => r.arrows.get(e.id) ?? e)), O(e => e.map(e => r.penStrokes.get(e.id) ?? e)), k(e => e.map(e => r.texts.get(e.id) ?? e));
+      }, [o.x, o.y, D, O, k]),
+      endGroupResize: (0, i.useCallback)(() => {
+        W.current = null;
+      }, [])
+    };
+  },
+  Ws = ({
+    setSelectedGuideIds: e,
+    setSelectedArrowIds: t,
+    setSelectedTextIds: n,
+    setSelectedPenStrokeIds: r,
+    setSelectedMeasurements: i,
+    setSelectedMeasurement: a,
+    setSelectedElement: o,
+    clearSelectionRect: s
+  }) => {
+    e([]), t([]), n([]), r([]), i([]), a(null), o(null), s();
+  },
+  Gs = ({
+    textAnnotations: e,
+    selectedTextIds: t,
+    selectedPenStrokeIds: n,
+    scrollOffset: r,
+    textDraftRef: a,
+    textDraftInputRef: o,
+    committedTextEditorsRef: s,
+    suppressTextCreateRef: c,
+    setSelectedGuideIds: l,
+    setSelectedArrowIds: u,
+    setSelectedTextIds: d,
+    setSelectedPenStrokeIds: f,
+    setSelectedMeasurements: p,
+    setSelectedMeasurement: m,
+    setSelectedElement: h,
+    clearSelectionRect: g,
+    setTextDraft: _,
+    setPenStrokes: v,
+    setTextAnnotations: y,
+    setToolMode: b,
+    recordSnapshot: x,
+    moveSelectedAnnotations: S
+  }) => {
+    let C = (0, i.useCallback)((e, t = !1) => {
+        if (t) {
+          f(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e]);
+          return;
+        }
+        n.includes(e) || (Ws({
+          setSelectedGuideIds: l,
+          setSelectedArrowIds: u,
+          setSelectedTextIds: d,
+          setSelectedPenStrokeIds: f,
+          setSelectedMeasurements: p,
+          setSelectedMeasurement: m,
+          setSelectedElement: h,
+          clearSelectionRect: g
+        }), f([e]));
+      }, [g, n, u, h, l, m, p, f, d]),
+      w = (0, i.useCallback)(e => {
+        v(t => t.map(t => t.id === e.id ? e : t));
+      }, [v]),
+      T = (0, i.useCallback)((e = !1, t = !1) => {
+        let n = a.current;
+        if (!n) return;
+        let r = o.current;
+        if (r && s.current.has(r)) return;
+        let i = yr(r);
+        if (a.current = null, r && s.current.add(r), _(null), c.current = !0, queueMicrotask(() => {
+          c.current = !1;
+        }), i.trim()) {
+          x();
+          let t = n.id ?? A();
+          n.id ? y(e => e.map(e => e.id === n.id ? {
+            ...e,
+            text: i
+          } : e)) : y(e => [...e, {
+            id: t,
+            x: n.x,
+            y: n.y,
+            text: i
+          }]), d(e ? [t] : []);
+        }
+        t && b(`selection`);
+      }, [s, x, d, y, _, b, o, a, c]);
+    return {
+      selectPenStroke: C,
+      changePenStroke: w,
+      finishTextDraft: T,
+      activateTextEditor: (0, i.useCallback)(e => {
+        s.current.delete(e);
+      }, [s]),
+      selectTextAnnotation: (0, i.useCallback)((e, n = !1) => {
+        if (a.current && T(), n) {
+          d(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e]);
+          return;
+        }
+        t.includes(e) || (Ws({
+          setSelectedGuideIds: l,
+          setSelectedArrowIds: u,
+          setSelectedTextIds: d,
+          setSelectedPenStrokeIds: f,
+          setSelectedMeasurements: p,
+          setSelectedMeasurement: m,
+          setSelectedElement: h,
+          clearSelectionRect: g
+        }), d([e]));
+      }, [g, T, t, u, h, l, m, p, f, d, a]),
+      moveTextAnnotation: (0, i.useCallback)((t, n, r) => {
+        let i = e.find(e => e.id === t);
+        i && S(n - i.x, r - i.y);
+      }, [S, e]),
+      transformTextAnnotation: (0, i.useCallback)((e, t) => {
+        y(n => n.map(n => n.id === e ? {
+          ...n,
+          ...t
+        } : n));
+      }, [y]),
+      editTextAnnotation: (0, i.useCallback)((t, n, r) => {
+        if (a.current?.id === t) return;
+        a.current && T();
+        let i = e.find(e => e.id === t);
+        if (!i) return;
+        d([]);
+        let o = {
+          id: t,
+          x: i.x,
+          y: i.y,
+          caretX: n,
+          caretY: r
+        };
+        a.current = o, _(o);
+      }, [T, d, _, e, a]),
+      handleTextPointerDown: (0, i.useCallback)(e => {
+        if (e.target !== e.currentTarget) return;
+        e.preventDefault();
+        let t = c.current;
+        if (c.current = !1, a.current) {
+          T(!1, !0);
+          return;
+        }
+        if (t) return;
+        d([]);
+        let n = {
+          key: A(),
+          x: e.clientX + r.x,
+          y: e.clientY + r.y
+        };
+        a.current = n, _(n);
+      }, [T, r.x, r.y, d, _, c, a]),
+      handleTextKeyDown: (0, i.useCallback)(e => {
+        e.key === `Enter` && (e.ctrlKey || e.metaKey) && (e.preventDefault(), e.stopPropagation(), T()), e.key === `Escape` && (e.preventDefault(), e.stopPropagation(), T(a.current ? !a.current.id : !1), b(`selection`));
+      }, [T, b, a])
+    };
+  },
+  Ks = 0;
+function qs({
+  highlightColor: e,
+  guideColor: t,
+  arrowColor: n,
+  guideHighlightEnabled: r,
+  hoverHighlightEnabled: o,
+  layoutDetailsEnabled: s,
+  persistOnReload: c,
+  shortcutsEnabled: l,
+  portalTarget: u,
+  persistKey: d,
+  colorPickerFormats: f,
+  colorPickerClickFormat: p,
+  snapEnabled: m,
+  snapGuidesEnabled: h,
+  snapArrowsEnabled: g,
+  arrowClickToPlace: _,
+  selectNewGuideEnabled: v,
+  multiMeasureEnabled: y,
+  guideStyle: b,
+  rulerSettings: x,
+  textStyle: S,
+  persistence: C,
+  onPersistenceError: w,
+  captureVisibleTab: T
+}) {
+  let E = (0, i.useRef)(null);
+  E.current === null && (E.current = ++Ks);
+  let D = u.ownerDocument ?? document,
+    O = D.defaultView ?? window,
+    k = (0, i.useRef)(null);
+  k.current === null && (k.current = Li(O));
+  let A = d ?? (E.current === 1 ? `mesurer-state:${k.current}` : `mesurer-state:${k.current}:${E.current}`),
+    j = d ? void 0 : Pi,
+    M = (0, i.useRef)(null),
+    N = (0, i.useRef)(w);
+  N.current = w;
+  let P = (0, i.useMemo)(() => C ?? Sa(O, A, Ni, j), [j, O, C, A]);
+  (0, i.useEffect)(() => (P.setErrorHandler?.(e => N.current?.(e)), () => P.setErrorHandler?.(void 0)), [P]);
+  let F = (0, i.useMemo)(() => P.load(), [P]),
+    ee = c || F?.settings.persistOnReload ? F?.workspace ?? null : null,
+    I = Ri(O, F?.settings ?? {}),
+    L = (0, i.useRef)(() => {}),
+    te = (0, i.useRef)(() => {}),
+    R = (0, i.useRef)(() => {}),
+    ne = (0, i.useRef)(() => !1),
+    z = (0, i.useRef)(() => {}),
+    B = (0, i.useRef)(() => !1),
+    V = (0, i.useRef)(null),
+    re = (0, i.useRef)(!1),
+    H = Na({
+      persistedState: ee,
+      initialToolMode: I.lastToolMode ?? `select`,
+      snapEnabledDefault: I.snapEnabled ?? m,
+      snapGuidesEnabledDefault: I.snapGuidesEnabled ?? h,
+      snapArrowsEnabledDefault: I.snapArrowsEnabled ?? g,
+      arrowClickToPlaceDefault: I.arrowClickToPlace ?? _,
+      selectNewGuideEnabledDefault: I.selectNewGuideEnabled ?? v,
+      multiMeasureEnabledDefault: I.multiMeasureEnabled ?? y,
+      initialTextAnnotations: ee?.textAnnotations
+    }),
+    {
+      selectionRectRef: ie,
+      enabledRef: ae,
+      toolModeRef: U,
+      rulersVisibleRef: W,
+      xrayVisibleRef: G,
+      guideOrientationRef: oe,
+      measurementsRef: K,
+      activeMeasurementRef: se,
+      heldDistancesRef: q,
+      guidesRef: le,
+      selectedGuideIdsRef: ue,
+      arrowsRef: de,
+      selectedArrowIdsRef: fe,
+      penStrokesRef: pe,
+      selectedPenStrokeIdsRef: me,
+      penStrokes: he,
+      selectedPenStrokeIds: ge,
+      setSelectedPenStrokeIds: _e,
+      setPenStrokes: ve,
+      penPreview: ye,
+      setPenPreview: be,
+      textAnnotationsRef: xe,
+      selectedTextIdsRef: Se,
+      overlayRef: Ce,
+      selectedElementRef: we,
+      hoverElementRef: Ee,
+      selectionOriginRect: Y,
+      setSelectionOriginRect: Oe,
+      hoverPointer: ke,
+      setHoverPointer: Ae,
+      hoverElement: je,
+      setHoverElement: Me,
+      selectedElement: Ne,
+      setSelectedElement: Pe,
+      clearSelectionRect: Fe,
+      enabled: Ie,
+      setEnabled: Le,
+      holdEnabled: Re,
+      snapEnabled: ze,
+      altPressed: Be,
+      setAltPressed: Ve,
+      toolMode: X,
+      setToolMode: He,
+      rulersVisible: Ue,
+      setRulersVisible: We,
+      guidesEnabled: Ge,
+      multiMeasureEnabled: Ke,
+      snapGuidesEnabled: qe,
+      setSnapGuidesEnabled: Je,
+      snapArrowsEnabled: Ye,
+      setSnapArrowsEnabled: Xe,
+      arrowClickToPlace: Ze,
+      setArrowClickToPlace: Qe,
+      selectNewGuideEnabled: $e,
+      setSelectNewGuideEnabled: et,
+      setSnapEnabled: tt,
+      setMultiMeasureEnabled: nt,
+      start: rt,
+      setStart: it,
+      end: at,
+      setEnd: ot,
+      isDragging: st,
+      setIsDragging: ct,
+      activeMeasurement: lt,
+      setActiveMeasurement: ut,
+      measurements: dt,
+      setMeasurements: ft,
+      selectedMeasurement: pt,
+      setSelectedMeasurement: mt,
+      selectedMeasurements: ht,
+      setSelectedMeasurements: gt,
+      hoverRect: _t,
+      setHoverRect: vt,
+      heldDistances: yt,
+      setHeldDistances: bt,
+      guides: xt,
+      setGuides: St,
+      draggingGuideId: Ct,
+      setDraggingGuideId: wt,
+      selectedGuideIds: Z,
+      setSelectedGuideIds: Tt,
+      arrows: Et,
+      selectedArrowIds: Dt,
+      setArrows: Ot,
+      setSelectedArrowIds: kt,
+      textAnnotations: At,
+      setTextAnnotations: jt,
+      textDraft: Mt,
+      setTextDraft: Nt,
+      selectedTextIds: Pt,
+      setSelectedTextIds: Ft,
+      arrowStart: It,
+      setArrowStart: Lt,
+      arrowMiddle: Rt,
+      setArrowMiddle: zt,
+      arrowPreviewEnd: Bt,
+      setArrowPreviewEnd: Vt,
+      toolbarActive: Ht,
+      setToolbarActive: Ut,
+      minimized: Wt,
+      setMinimized: Gt,
+      settingsOpen: Kt,
+      setSettingsOpen: qt,
+      xrayVisible: Jt,
+      setXrayVisible: Yt,
+      guideOrientation: Xt,
+      setGuideOrientation: Zt
+    } = H,
+    Qt = bs(u, X, Kt, Wt),
+    $t = (0, i.useRef)(null),
+    en = (0, i.useRef)(Mt),
+    tn = (0, i.useRef)(new WeakSet()),
+    nn = (0, i.useRef)(!1);
+  en.current = Mt;
+  let {
+      highlightColor: rn,
+      setHighlightColor: an,
+      guideColor: on,
+      setGuideColor: sn,
+      arrowColor: cn,
+      setArrowColor: ln,
+      guideHighlightEnabled: un,
+      setGuideHighlightEnabled: dn,
+      hoverHighlightEnabled: fn,
+      setHoverHighlightEnabled: pn,
+      layoutDetailsEnabled: mn,
+      setLayoutDetailsEnabled: hn,
+      persistOnReload: gn,
+      setPersistOnReload: _n,
+      shortcutsEnabled: vn,
+      setShortcutsEnabled: yn,
+      lastToolMode: bn,
+      setLastToolMode: xn,
+      colorPickerFormats: Sn,
+      setColorPickerFormats: Cn,
+      colorPickerClickFormat: wn,
+      setColorPickerClickFormat: Tn,
+      guideStyle: En,
+      setGuideStyle: Dn,
+      rulerSettings: On,
+      setRulerSettings: kn,
+      screenshotSettings: An,
+      setScreenshotSettings: jn,
+      textStyle: Mn,
+      setTextStyle: Nn,
+      resetSettings: Pn,
+      persistSettings: Fn,
+      applyPersistedSettings: In
+    } = Ca({
+      activePersistence: P,
+      persistedSettings: I,
+      defaults: {
+        highlightColor: e,
+        guideColor: t,
+        arrowColor: n,
+        guideHighlightEnabled: r,
+        hoverHighlightEnabled: o,
+        layoutDetailsEnabled: s,
+        persistOnReload: c,
+        shortcutsEnabled: l,
+        colorPickerFormats: f,
+        colorPickerClickFormat: p,
+        guideStyle: b,
+        rulerSettings: x,
+        textStyle: S,
+        snapEnabled: m,
+        snapGuidesEnabled: h,
+        snapArrowsEnabled: g,
+        arrowClickToPlace: _,
+        selectNewGuideEnabled: v,
+        multiMeasureEnabled: y
+      },
+      toggles: {
+        snapEnabled: ze,
+        setSnapEnabled: tt,
+        snapGuidesEnabled: qe,
+        setSnapGuidesEnabled: Je,
+        snapArrowsEnabled: Ye,
+        setSnapArrowsEnabled: Xe,
+        arrowClickToPlace: Ze,
+        setArrowClickToPlace: Qe,
+        selectNewGuideEnabled: $e,
+        setSelectNewGuideEnabled: et,
+        multiMeasureEnabled: Ke,
+        setMultiMeasureEnabled: nt
+      }
+    }),
+    {
+      saveWorkspace: Ln,
+      persistState: Rn,
+      applyPersistenceSnapshot: zn,
+      clearWorkspace: Bn,
+      setEnabledPersisted: Vn,
+      setToolModePersisted: Hn,
+      setRulersVisiblePersisted: Un,
+      setGuideOrientationPersisted: Wn,
+      setMeasurementsPersisted: Gn,
+      setActiveMeasurementPersisted: Kn,
+      setHeldDistancesPersisted: qn,
+      setGuidesPersisted: Jn,
+      setSelectedGuideIdsPersisted: Yn,
+      setArrowsPersisted: Xn,
+      setSelectedArrowIdsPersisted: Zn,
+      setTextAnnotationsPersisted: Qn,
+      setPenStrokesPersisted: $n,
+      setSelectedPenStrokeIdsPersisted: er,
+      setSelectedTextIdsPersisted: tr
+    } = zi({
+      ownerWindow: O,
+      activePersistence: P,
+      settings: {
+        persistOnReload: gn,
+        applyPersistedSettings: In,
+        persistSettings: Fn
+      },
+      workspace: H,
+      closeScreenshotRef: L,
+      clearWorkspaceTransientRef: te,
+      setSelectedTextIds: Ft,
+      applyingExternalPersistenceRef: re,
+      workspacePersistTimeoutRef: V,
+      storedState: F
+    });
+  lo({
+    ownerWindow: O,
+    activePersistence: P,
+    persistSettings: Fn,
+    persistState: Rn,
+    settingsPersistOnReload: gn,
+    saveWorkspace: Ln,
+    applyPersistenceSnapshot: zn,
+    storedState: F,
+    applyingExternalPersistenceRef: re,
+    workspacePersistTimeoutRef: V
+  });
+  let {
+      clearGuideDragHold: nr,
+      scheduleGuideDragHold: rr
+    } = Ur(O),
+    [ir, ar] = (0, i.useState)(null),
+    [or, sr] = (0, i.useState)({
+      x: O.scrollX,
+      y: O.scrollY
+    });
+  (0, i.useLayoutEffect)(() => {
+    let e = () => {
+      sr({
+        x: O.scrollX,
+        y: O.scrollY
+      });
+    };
+    return e(), O.addEventListener(`scroll`, e, !0), O.addEventListener(`resize`, e), () => {
+      O.removeEventListener(`scroll`, e, !0), O.removeEventListener(`resize`, e);
+    };
+  }, [O]), ae.current = Ie, G.current = Jt, U.current = X, W.current = Ue, oe.current = Xt, K.current = dt, se.current = lt, q.current = yt, le.current = xt, ue.current = Z, de.current = Et, fe.current = Dt, pe.current = he, me.current = ge, xe.current = At, Se.current = Pt;
+  let {
+      recordSnapshot: cr,
+      createActionCommit: lr,
+      setToolModeWithHistory: ur,
+      setGuideOrientationWithHistory: dr,
+      setEnabledWithHistory: fr,
+      undo: pr,
+      redo: mr
+    } = ta({
+      toggles: {
+        enabled: Ie,
+        setEnabled: Vn,
+        toolMode: X,
+        setToolMode: Hn,
+        guideOrientation: Xt,
+        setGuideOrientation: Wn
+      },
+      measurements: {
+        measurements: dt,
+        setMeasurements: Gn,
+        activeMeasurement: lt,
+        setActiveMeasurement: Kn,
+        selectedMeasurements: ht,
+        setSelectedMeasurements: gt,
+        selectedMeasurement: pt,
+        setSelectedMeasurement: mt,
+        heldDistances: yt,
+        setHeldDistances: qn
+      },
+      guides: {
+        guides: xt,
+        setGuides: Jn,
+        selectedGuideIds: Z,
+        setSelectedGuideIds: Yn,
+        draggingGuideId: Ct,
+        setDraggingGuideId: wt
+      },
+      arrows: {
+        arrows: Et,
+        setArrows: Xn,
+        selectedArrowIds: Dt,
+        setSelectedArrowIds: Zn
+      },
+      text: {
+        textAnnotations: At,
+        setTextAnnotations: Qn
+      },
+      pen: {
+        penStrokes: he,
+        setPenStrokes: $n,
+        selectedPenStrokeIds: ge,
+        setSelectedPenStrokeIds: _e
+      },
+      transient: {
+        setStart: it,
+        setEnd: ot,
+        setIsDragging: ct,
+        setGuidePreview: ar,
+        setHoverRect: vt,
+        setHoverElement: Me,
+        setSelectedElement: Pe,
+        clearSelectionRect: Fe
+      }
+    }),
+    hr = (0, i.useCallback)(() => {
+      X === `text-inspector` && Qt.undo() || pr();
+    }, [Qt, X, pr]),
+    gr = (0, i.useCallback)(() => {
+      X === `text-inspector` && Qt.redo() || mr();
+    }, [mr, Qt, X]),
+    {
+      clearSelection: _r,
+      removeSelected: vr,
+      selectAllAnnotations: yr,
+      groupBounds: br,
+      groupRotateFrame: xr,
+      selectionDragOffset: Sr,
+      moveSelectedAnnotations: Cr,
+      beginMoveSession: wr,
+      moveFromSession: Tr,
+      endMoveSession: Er,
+      cancelMoveSession: Dr,
+      startGroupRotate: Or,
+      updateGroupRotate: kr,
+      endGroupRotate: Ar,
+      startGroupResize: jr,
+      resizeSelectedAnnotations: Mr,
+      endGroupResize: Nr
+    } = Us({
+      enabled: Ie,
+      toolMode: X,
+      ownerDocument: D,
+      overlayRef: Ce,
+      toolbarRef: M,
+      scrollOffset: or,
+      guides: xt,
+      arrows: Et,
+      penStrokes: he,
+      textAnnotations: At,
+      selectedGuideIds: Z,
+      selectedArrowIds: Dt,
+      selectedPenStrokeIds: ge,
+      selectedTextIds: Pt,
+      clearSelectionRect: Fe,
+      setStart: it,
+      setEnd: ot,
+      setIsDragging: ct,
+      setSelectedGuideIds: Yn,
+      setSelectedArrowIds: Zn,
+      setSelectedTextIds: tr,
+      setSelectedPenStrokeIds: er,
+      setSelectedMeasurements: gt,
+      setSelectedMeasurement: mt,
+      setSelectedElement: Pe,
+      setGuides: Jn,
+      setArrows: Xn,
+      setPenStrokes: $n,
+      setTextAnnotations: Qn,
+      recordSnapshot: cr,
+      setToolMode: ur
+    }),
+    Pr = Hr({
+      ownerWindow: O,
+      clickFormat: wn,
+      setEnabled: e => fr(e),
+      setToolModeNone: () => ur(`none`)
+    }),
+    Q = zo({
+      ownerDocument: D,
+      ownerWindow: O,
+      overlayRef: Ce,
+      captureVisibleTab: T,
+      settings: An,
+      setEnabled: e => fr(e),
+      setToolbarActive: e => {
+        e && Gt(!1), Ut(e);
+      },
+      onPrepare: () => {
+        Pr.setActive(!1), qt(!1);
+      }
+    });
+  L.current = Q.closeUi;
+  let Fr = (0, i.useCallback)(() => {
+      Q.closeUi(), Pr.open();
+    }, [Pr.open, Q.closeUi]),
+    [Ir, Lr] = (0, i.useState)(),
+    Rr = (0, i.useCallback)(() => {
+      if (Kt) {
+        Q.closeUi(), qt(!1);
+        return;
+      }
+      Lr(J(X, {
+        colorPicker: Pr.active,
+        screenshot: Q.active,
+        rulersVisible: Ue
+      })), Q.closeUi(), qt(!0);
+    }, [Pr.active, Ue, Q.active, Q.closeUi, Kt, X]),
+    zr = (0, i.useCallback)(e => {
+      let t = typeof e == `function` ? e(cn) : e;
+      ln(t), Xn(e => e.map(e => ({
+        ...e,
+        color: t
+      })));
+    }, [Xn, ln, cn]);
+  uo({
+    document: D,
+    window: O,
+    setMeasurements: Gn,
+    setActiveMeasurement: Kn,
+    setHeldDistances: qn,
+    setSelectedMeasurement: mt,
+    setGuides: Jn,
+    selectedElementRef: we
+  }), Ui({
+    document: D,
+    window: O,
+    enabled: Ie,
+    selectionEnabled: X === `select`,
+    selectedElementRef: we,
+    hoverElementRef: Ee,
+    setSelectedMeasurement: mt,
+    setSelectedMeasurements: gt,
+    setHoverRect: vt,
+    setMeasurements: Gn,
+    setActiveMeasurement: Kn,
+    setHeldDistances: qn
+  }), ws(D, Jt), _i({
+    ownerDocument: D,
+    ownerWindow: O,
+    enabled: Ie,
+    settingsOpen: Kt,
+    toolMode: X,
+    toolbarActive: Ht,
+    minimized: Wt,
+    snapGuidesEnabled: qe,
+    guides: xt,
+    toolbarRef: M,
+    overlayRef: Ce,
+    createActionCommit: lr,
+    setGuides: Jn,
+    setSelectedGuideIds: Yn,
+    setToolbarActive: Ut,
+    selectedGuideIds: Z,
+    selectionCount: Z.length + Dt.length + Pt.length + ge.length,
+    moveSelectedAnnotations: Cr
+  }), Bo({
+    ownerWindow: O,
+    selectionOriginRect: Y,
+    selectedMeasurement: pt,
+    selectedMeasurements: ht,
+    setSelectionOriginRect: Oe,
+    setSelectedMeasurement: mt,
+    setSelectedMeasurements: gt
+  });
+  let Br = Re || Ke && dt.length > 0 ? dt : lt ? [lt] : [],
+    {
+      activeRect: Wr,
+      activeWidth: Gr,
+      activeHeight: Kr,
+      displayedSelectedMeasurements: Jr,
+      hoverGuide: Yr,
+      optionPairOverlay: Xr,
+      optionContainerLines: Zr,
+      guideDistanceOverlay: Qr,
+      outlineColor: $r,
+      fillColor: ei,
+      guideColorActive: ti,
+      guideColorHover: ni,
+      guideColorDefault: ri,
+      guideColorPreview: ii,
+      guidePreviewEmphasized: ai,
+      hoverRectToShow: oi,
+      selectedEdgeVisibility: si,
+      hoverEdgeVisibility: ci,
+      measurementEdgeVisibility: li
+    } = $i({
+      document: D,
+      window: O,
+      start: rt,
+      end: at,
+      selectedMeasurements: ht,
+      selectedMeasurement: pt,
+      selectionOriginRect: Y,
+      guides: xt,
+      selectedGuideIds: Z,
+      hoverPointer: ke,
+      hoverRect: _t,
+      hoverElement: je,
+      selectedElement: Ne,
+      altPressed: Be,
+      guidesEnabled: Ge,
+      guidePreview: ir,
+      displayedMeasurements: Br,
+      hoverHighlightEnabled: fn,
+      guideHighlightEnabled: un,
+      highlightColor: rn,
+      guideColor: on
+    }),
+    {
+      handlePointerDown: ui,
+      handlePointerMove: di,
+      handlePointerUp: fi,
+      handlePointerLeave: pi
+    } = co({
+      document: D,
+      window: O,
+      toolbarRef: M,
+      overlayRef: Ce,
+      selectionRectRef: ie,
+      createActionCommit: lr,
+      clearGuideDragHold: nr,
+      scheduleGuideDragHold: rr,
+      enabled: Ie,
+      settingsOpen: Kt,
+      toolMode: X,
+      guidesEnabled: Ge,
+      snapEnabled: ze,
+      snapGuidesEnabled: qe,
+      selectNewGuideEnabled: $e,
+      altPressed: Be,
+      guideOrientation: Xt,
+      hoverHighlightEnabled: o,
+      start: rt,
+      end: at,
+      isDragging: st,
+      selectedMeasurements: ht,
+      selectedMeasurement: pt,
+      selectedGuideIds: Z,
+      guides: xt,
+      draggingGuideId: Ct,
+      optionPairOverlay: Xr,
+      setAltPressed: Ve,
+      setGuidePreview: ar,
+      setSelectedGuideIds: Yn,
+      setGuides: Jn,
+      setStart: it,
+      setEnd: ot,
+      setIsDragging: ct,
+      setHeldDistances: qn,
+      setDraggingGuideId: wt,
+      setActiveMeasurement: Kn,
+      setMeasurements: Gn,
+      setSelectedMeasurements: gt,
+      setSelectedMeasurement: mt,
+      setSelectionOriginRect: Oe,
+      setSelectedElement: Pe,
+      setHoverRect: vt,
+      setHoverElement: Me,
+      setHoverPointer: Ae,
+      clearSelectionRect: Fe,
+      selectionMode: X === `selection`,
+      scrollOffset: or,
+      textAnnotations: At,
+      arrows: Et,
+      penStrokes: he,
+      setSelectedTextIds: tr,
+      setSelectedArrowIds: Zn,
+      setSelectedPenStrokeIds: er
+    }),
+    mi = As({
+      enabled: Ie,
+      settingsOpen: Kt,
+      snapArrowsEnabled: Ye,
+      arrowClickToPlace: Ze,
+      color: cn,
+      width: Math.max(En.width, 1),
+      overlayRef: Ce,
+      ownerDocument: D,
+      guides: xt,
+      createActionCommit: lr,
+      setToolMode: ur,
+      setArrows: Xn,
+      onBeginMove: e => wr({
+        arrowId: e
+      }),
+      onDragMove: Tr,
+      onMoveEnd: Er,
+      setSelectedArrowIds: Zn,
+      clearOtherSelections: () => {
+        Yn([]), Ft([]), _e([]), gt([]), mt(null), Pe(null), Fe(), D.defaultView?.getSelection()?.removeAllRanges();
+      },
+      arrows: Et,
+      selectedArrowIds: Dt,
+      arrowStart: It,
+      arrowMiddle: Rt,
+      arrowPreviewEnd: Bt,
+      setArrowStart: Lt,
+      setArrowMiddle: zt,
+      setArrowPreviewEnd: Vt,
+      scrollOffset: or
+    });
+  R.current = mi.cancelInteraction, ne.current = mi.hasActiveInteraction;
+  let hi = Ms({
+    enabled: Ie,
+    settingsOpen: Kt,
+    toolMode: X,
+    color: cn,
+    scrollOffset: or,
+    createActionCommit: lr,
+    setPenStrokes: $n,
+    setPenPreview: be
+  });
+  z.current = hi.cancelInteraction, B.current = hi.hasActiveInteraction;
+  let {
+      selectPenStroke: gi,
+      changePenStroke: vi,
+      finishTextDraft: yi,
+      activateTextEditor: bi,
+      selectTextAnnotation: xi,
+      moveTextAnnotation: Si,
+      transformTextAnnotation: Ci,
+      editTextAnnotation: wi,
+      handleTextPointerDown: Ti,
+      handleTextKeyDown: Ei
+    } = Gs({
+      textAnnotations: At,
+      selectedTextIds: Pt,
+      selectedPenStrokeIds: ge,
+      scrollOffset: or,
+      textDraftRef: en,
+      textDraftInputRef: $t,
+      committedTextEditorsRef: tn,
+      suppressTextCreateRef: nn,
+      setSelectedGuideIds: Yn,
+      setSelectedArrowIds: Zn,
+      setSelectedTextIds: tr,
+      setSelectedPenStrokeIds: er,
+      setSelectedMeasurements: gt,
+      setSelectedMeasurement: mt,
+      setSelectedElement: Pe,
+      clearSelectionRect: Fe,
+      setTextDraft: Nt,
+      setPenStrokes: $n,
+      setTextAnnotations: Qn,
+      moveSelectedAnnotations: Cr,
+      setToolMode: Hn,
+      recordSnapshot: cr
+    }),
+    Di = (0, i.useCallback)(() => {
+      Ut(!0);
+    }, [Ut]),
+    Oi = (0, i.useCallback)(() => {
+      Gt(!1), Ut(!0);
+    }, [Gt, Ut]),
+    ki = (0, i.useCallback)(() => {
+      qt(!1), Pr.setActive(!1), Q.closeUi(), Gt(!0);
+    }, [Pr, Q, Gt, qt]),
+    {
+      clearTransientState: ji
+    } = Ai({
+      enabled: Ie,
+      toolMode: X,
+      xrayVisible: Jt,
+      rulersVisible: Ue,
+      toolbarActive: Ht,
+      minimized: Wt,
+      shortcutsEnabled: vn,
+      settingsOpen: Kt,
+      ownerDocument: D,
+      ownerWindow: O,
+      toolbarRef: M,
+      overlayRef: Ce,
+      scrollOffset: or,
+      guides: xt,
+      arrows: Et,
+      penStrokes: he,
+      textAnnotations: At,
+      selectedGuideIds: Z,
+      selectedArrowIds: Dt,
+      selectedPenStrokeIds: ge,
+      selectedTextIds: Pt,
+      selectedMeasurements: ht,
+      selectedMeasurement: pt,
+      selectedElement: Ne,
+      start: rt,
+      arrowStart: It,
+      draggingGuideId: Ct,
+      isDragging: st,
+      textDraft: Mt,
+      textDraftRef: en,
+      setTextDraft: Nt,
+      setStart: it,
+      setEnd: ot,
+      setIsDragging: ct,
+      setHoverRect: vt,
+      setHoverPointer: Ae,
+      setHoverElement: Me,
+      setSelectedElement: Pe,
+      setArrowStart: Lt,
+      setArrowMiddle: zt,
+      setArrowPreviewEnd: Vt,
+      setXrayVisible: Yt,
+      setAltPressed: Ve,
+      setToolMode: He,
+      clearSelectionRect: Fe,
+      clearGuideDragHold: nr,
+      cancelArrowInteraction: mi.cancelInteraction,
+      cancelPenInteraction: hi.cancelInteraction,
+      cancelMoveSession: Dr,
+      hasArrowInteraction: mi.hasActiveInteraction,
+      hasPenInteraction: hi.hasActiveInteraction,
+      clearSelection: _r,
+      recordSnapshot: cr,
+      setSelectedGuideIds: Yn,
+      setSelectedArrowIds: Zn,
+      setSelectedTextIds: tr,
+      setSelectedPenStrokeIds: er,
+      setSelectedMeasurements: gt,
+      setSelectedMeasurement: mt,
+      screenshot: Q,
+      colorPicker: Pr,
+      undo: hr,
+      redo: gr,
+      removeSelected: vr,
+      selectAllAnnotations: yr,
+      setEnabled: Vn,
+      setRulersVisible: We,
+      setGuideOrientation: Zt,
+      onInteract: Di,
+      onMinimize: ki,
+      onToggleSettings: Rr,
+      dismissInspectorPins: () => Qt.clear()
+    });
+  te.current = ji;
+  let Mi = (0, i.useCallback)(e => {
+      cr(), qn(t => t.filter(t => t.id !== e));
+    }, [cr, qn]),
+    {
+      startGuideFromRuler: Fi,
+      moveGuideFromRuler: Ii,
+      finishGuideFromRuler: Vi,
+      cancelGuideFromRuler: Hi,
+      handleGuidePointerDown: Wi,
+      handleGuidePointerUp: Gi,
+      overlayGuides: Ki
+    } = fo({
+      ownerDocument: D,
+      ownerWindow: O,
+      overlayRef: Ce,
+      enabled: Ie,
+      snapGuidesEnabled: qe,
+      selectNewGuideEnabled: $e,
+      settingsOpen: Kt,
+      guides: xt,
+      createActionCommit: lr,
+      setGuides: Jn,
+      setSelectedGuideIds: Yn,
+      setDraggingGuideId: wt,
+      selectedGuideIds: Z,
+      selectionCount: Z.length + Dt.length + Pt.length + ge.length,
+      scheduleGuideDragHold: rr,
+      clearGuideDragHold: nr
+    }),
+    qi = Ie && !Kt && !Wt,
+    Ji = (() => {
+      if (!(Dt.length + Pt.length + ge.length > 1 || (Dt.length > 0 || Pt.length > 0 || ge.length > 0) && Z.length > 0)) return null;
+      let e = xr?.rect ?? br;
+      return e ? Sr.x === 0 && Sr.y === 0 ? e : {
+        ...e,
+        left: e.left + Sr.x,
+        top: e.top + Sr.y
+      } : null;
+    })(),
+    Yi = Bi({
+      toolMode: X,
+      arrows: mi,
+      pen: hi,
+      text: {
+        handlePointerDown: Ti
+      },
+      measure: {
+        handlePointerDown: ui,
+        handlePointerMove: di,
+        handlePointerUp: fi,
+        handlePointerLeave: pi
+      }
+    });
+  return (X === `select` || X === `selection` || X === `guides` || X === `arrows` || X === `pen` || X === `text`) && bn !== X && xn(X), (0, a.jsx)(Vr, {
+    portalTarget: u,
+    rootRef: Ce,
+    toolbarRef: M,
+    screenshotOverlayRef: Q.overlayRef,
+    rulers: {
+      ownerWindow: O,
+      visible: Ie && Ue,
+      settings: On,
+      interactive: !Kt && !Wt,
+      forceVisible: Kt,
+      onStartGuide: Fi,
+      onMoveGuide: Ii,
+      onFinishGuide: Vi,
+      onCancelGuide: Hi,
+      guides: xt,
+      selectedGuideIds: Z
+    },
+    overlay: {
+      enabled: Ie,
+      interactive: qi,
+      toolMode: X,
+      guidesEnabled: Ge,
+      altPressed: Be,
+      isDragging: st,
+      marqueeRect: st && rt && at ? qr(rt, at) : null,
+      groupBounds: Ji,
+      groupFrameRotation: Dt.length + Pt.length + ge.length > 1 || (Dt.length > 0 || Pt.length > 0 || ge.length > 0) && Z.length > 0 ? xr?.rotation ?? 0 : 0,
+      selectionCount: Z.length + Dt.length + Pt.length + ge.length,
+      onResizeSelection: Mr,
+      onMoveSelection: Tr,
+      onMoveSelectionStart: () => {
+        cr(), wr();
+      },
+      onMoveSelectionEnd: Er,
+      onStartGroupResize: jr,
+      onEndGroupResize: Nr,
+      onStartGroupRotate: Or,
+      onUpdateGroupRotate: kr,
+      onEndGroupRotate: Ar,
+      fillColor: ei,
+      outlineColor: $r,
+      layoutDetailsEnabled: mn,
+      pointers: {
+        ...Yi
+      },
+      selection: {
+        measurements: Br,
+        measurementEdges: li,
+        activeRect: Wr,
+        activeWidth: Gr,
+        activeHeight: Kr,
+        hoverRect: oi,
+        hoverEdges: ci,
+        selected: Jr,
+        selectedEdges: si
+      },
+      distances: {
+        held: yt,
+        optionPair: Xr,
+        guideDistance: Qr,
+        containerLines: Zr,
+        onRemoveHeld: Mi
+      },
+      guides: {
+        items: Ki,
+        selectedIds: Z,
+        moveOffset: Sr,
+        hover: Yr,
+        draggingId: Ct,
+        style: En,
+        pointerEvents: qi && (X !== `none` || Ue),
+        colors: {
+          active: ti,
+          hover: ni,
+          default: ri,
+          preview: ii,
+          previewEmphasized: ai
+        },
+        preview: ir,
+        onPointerDown: Wi,
+        onPointerUp: Gi,
+        onPointerCancel: Gi
+      },
+      arrows: {
+        items: Et,
+        selectedIds: Dt,
+        moveOffset: Sr,
+        preview: mi.preview,
+        scrollOffset: or,
+        color: cn,
+        onSelect: e => Zn([e]),
+        onChange: e => Xn(t => t.map(t => t.id === e.id ? e : t)),
+        onChangeStart: cr,
+        editingArrowId: mi.editingArrowId
+      },
+      pen: {
+        strokes: he,
+        preview: ye,
+        scrollOffset: or,
+        selectionMode: X === `selection`,
+        selectedIds: ge,
+        moveOffset: Sr,
+        onSelect: gi,
+        onChange: vi,
+        onChangeStart: cr,
+        onMoveStart: e => wr({
+          penId: e
+        }),
+        onMove: (e, t, n) => Tr(t, n),
+        onMoveEnd: Er
+      },
+      text: {
+        items: At,
+        draft: Mt,
+        draftInputRef: $t,
+        interactive: X === `selection`,
+        editable: X === `text`,
+        selectedIds: Pt,
+        moveOffset: Sr,
+        onSelect: xi,
+        onMoveStart: e => {
+          cr(), wr({
+            textId: e
+          });
+        },
+        onMove: (e, t, n) => Tr(t, n),
+        onMoveEnd: Er,
+        onChangeStart: cr,
+        onTransform: Ci,
+        onEdit: wi,
+        scrollOffset: or,
+        onDraftKeyDown: Ei,
+        onDraftBlur: () => yi(!1, !0),
+        onActivateEditor: bi,
+        fontFamily: ce(Mn),
+        color: Mn.color
+      }
+    },
+    screenshot: {
+      active: Q.active,
+      rect: Q.rect,
+      onPointerDown: Q.handlePointerDown,
+      onPointerMove: Q.handlePointerMove,
+      onPointerUp: Q.handlePointerUp,
+      onPointerCancel: Q.handlePointerCancel
+    },
+    toolbar: {
+      eventTarget: O,
+      minimized: Wt,
+      onInteract: Di,
+      onRestore: Oi,
+      onCancelTransient: ji,
+      tools: {
+        mode: X,
+        setMode: ur,
+        setEnabled: fr,
+        xrayVisible: Jt,
+        setXrayVisible: Yt,
+        rulersVisible: Ue,
+        setRulersVisible: Un,
+        guideOrientation: Xt,
+        setGuideOrientation: dr
+      },
+      colorPicker: {
+        active: Pr.active,
+        setActive: Pr.setActive,
+        onClick: Fr,
+        panel: (0, a.jsx)(De, {
+          active: Pr.active,
+          sample: Pr.sample,
+          unsupported: Pr.unsupported,
+          ownerWindow: O,
+          formats: Sn,
+          favoriteFormat: wn,
+          onClose: () => Pr.setActive(!1)
+        })
+      },
+      screenshot: {
+        active: Q.active,
+        error: Q.error,
+        previewUrl: Q.previewUrl,
+        copy: An.copy,
+        download: An.download,
+        onClick: Q.toggleSelection,
+        onCancel: Q.closeUi,
+        onPreviewExited: Q.dismissPreview
+      },
+      settings: {
+        open: Kt,
+        setOpen: qt,
+        onToggle: Rr,
+        panel: (0, a.jsx)(Te, {
+          ownerWindow: O,
+          focusSection: Ir,
+          select: {
+            highlightColor: rn,
+            setHighlightColor: an,
+            hoverHighlight: fn,
+            setHoverHighlight: pn,
+            layoutDetailsEnabled: mn,
+            setLayoutDetailsEnabled: hn,
+            snapEnabled: ze,
+            setSnapEnabled: tt,
+            multiMeasureEnabled: Ke,
+            setMultiMeasureEnabled: nt
+          },
+          guides: {
+            guideColor: on,
+            setGuideColor: sn,
+            guideStyle: En,
+            setGuideStyle: Dn,
+            snapGuidesEnabled: qe,
+            setSnapGuidesEnabled: Je,
+            guideHighlightEnabled: un,
+            setGuideHighlightEnabled: dn,
+            selectNewGuideEnabled: $e,
+            setSelectNewGuideEnabled: et
+          },
+          color: {
+            colorFormats: Sn,
+            setColorFormats: Cn,
+            colorClickFormat: wn,
+            setColorClickFormat: Tn
+          },
+          camera: {
+            settings: An,
+            setSettings: jn
+          },
+          rulers: {
+            settings: On,
+            setSettings: kn
+          },
+          text: {
+            settings: Mn,
+            setSettings: Nn
+          },
+          arrows: {
+            color: cn,
+            setColor: zr,
+            snapArrowsEnabled: Ye,
+            setSnapArrowsEnabled: Xe,
+            arrowClickToPlace: Ze,
+            setArrowClickToPlace: Qe
+          },
+          general: {
+            persistOnReload: gn,
+            setPersistOnReload: _n,
+            shortcutsEnabled: vn,
+            setShortcutsEnabled: yn,
+            onMinimize: ki,
+            onResetSettings: Pn,
+            onClearWorkspace: Bn
+          }
+        })
+      }
+    }
+  });
+}
+var Js = () => () => {},
+  Ys = () => (0, i.useSyncExternalStore)(Js, () => !0, () => !1);
+function Xs({
+  highlightColor: e = `oklch(0.62 0.18 255)`,
+  guideColor: t = `oklch(0.63 0.26 29.23)`,
+  arrowColor: n = `oklch(0.63 0.26 29.23)`,
+  guideHighlightEnabled: r = !0,
+  hoverHighlightEnabled: i = !0,
+  layoutDetailsEnabled: o = !0,
+  persistOnReload: s = !1,
+  shortcutsEnabled: c = !0,
+  portalTarget: l,
+  persistKey: u,
+  colorPickerFormats: d = [`hex`, `rgb`, `oklch`],
+  colorPickerClickFormat: f = `hex`,
+  snapEnabled: h = !0,
+  snapGuidesEnabled: g = !0,
+  snapArrowsEnabled: _ = !0,
+  arrowClickToPlace: v = !1,
+  selectNewGuideEnabled: y = !0,
+  multiMeasureEnabled: b = !1,
+  guideStyle: x,
+  rulerSettings: S,
+  textStyle: C,
+  persistence: w,
+  onPersistenceError: T,
+  captureVisibleTab: E
+}) {
+  return typeof document < `u` && p(m, l), Ys() ? (0, a.jsx)(qs, {
+    highlightColor: e,
+    guideColor: t,
+    arrowColor: n,
+    guideHighlightEnabled: r,
+    hoverHighlightEnabled: i,
+    layoutDetailsEnabled: o,
+    persistOnReload: s,
+    shortcutsEnabled: c,
+    persistKey: u,
+    colorPickerFormats: d,
+    colorPickerClickFormat: f,
+    snapEnabled: h,
+    snapGuidesEnabled: g,
+    snapArrowsEnabled: _,
+    arrowClickToPlace: v,
+    selectNewGuideEnabled: y,
+    multiMeasureEnabled: b,
+    guideStyle: {
+      ...na,
+      ...x
+    },
+    rulerSettings: {
+      ...ra,
+      ...S
+    },
+    textStyle: {
+      ...oe,
+      ...C
+    },
+    persistence: w,
+    onPersistenceError: T,
+    captureVisibleTab: E,
+    portalTarget: l ?? document.body
+  }) : null;
+}
+export { Xs as Mesurer };

@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "@tabler/icons-react",
+    "embla-carousel-react"
+  ],
+  "registryDependencies": [
+    "@kobra/button"
+  ],
+  "source_url": "https://kobra.systems/r/carousel.json",
+  "type": "registry:ui"
+}

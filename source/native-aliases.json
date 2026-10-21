@@ -1,0 +1,14 @@
+{
+  "@/components/ui/orb": "native-bridges/orb.js",
+  "@/components/ui/streaming-text": "native-bridges/streaming-text.js",
+  "@/components/ui/text-shimmer": "native-bridges/text-shimmer.js",
+  "@/lib/utils": "native-bridges/utils.js",
+  "@/components/ui/button": "native-bridges/button.js",
+  "@/lib/command-filter": "official-source/kobra-command-menu/lib/command-filter.ts",
+  "@/components/ui/alert": "native-bridges/alert.js",
+  "@/components/ui/spinner": "native-bridges/spinner.js",
+  "@/lib/joined-script": "official-source/kobra-toast/lib/joined-script.ts",
+  "@/lib/smoky-dissolve": "official-source/kobra-toast/lib/smoky-dissolve.ts",
+  "@/lib/glass-controls": "official-source/kobra-video/lib/glass-controls.ts",
+  "@/lib/liquidglass": "official-source/kobra-video/lib/liquidglass/index.js"
+}

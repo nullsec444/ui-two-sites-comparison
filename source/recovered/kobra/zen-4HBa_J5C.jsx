@@ -1,0 +1,1155 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e, r as t } from "./rolldown-runtime-B0Z9INg1.js";
+import { n, t as r } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as i } from "./utils-WkhMP9hs.js";
+import { t as a } from "./createReactComponent-DqK5J7gw.js";
+import { t as o } from "./IconChevronRight-C9BymwZE.js";
+import { n as s } from "./DirectionContext-CSiJxUVd.js";
+import { f as c, t as l } from "./react-BGf_lakQ.js";
+import { t as u } from "./use-reduced-motion-BdikIsVN.js";
+var d = a(`outline`, `arrow-left`, `ArrowLeft`, [[`path`, {
+    d: `M5 12l14 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M5 12l6 6`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M5 12l6 -6`,
+    key: `svg-2`
+  }]]),
+  f = t({
+    Command: () => E,
+    CommandBreadcrumbs: () => M,
+    CommandEmpty: () => j,
+    CommandGroup: () => A,
+    CommandInput: () => D,
+    CommandList: () => O,
+    CommandLoading: () => N,
+    CommandOption: () => k,
+    CommandSeparator: () => P,
+    useCommand: () => T
+  }),
+  p = e(n(), 1),
+  m = e(r(), 1),
+  h = Object.create,
+  g = Object.defineProperty,
+  _ = Object.getOwnPropertyDescriptor,
+  v = Object.getOwnPropertyNames,
+  y = Object.getPrototypeOf,
+  b = Object.prototype.hasOwnProperty,
+  x = (e, t) => () => (t || e((t = {
+    exports: {}
+  }).exports, t), t.exports),
+  S = (e, t, n, r) => {
+    if (t && typeof t == `object` || typeof t == `function`) for (let i of v(t)) !b.call(e, i) && i !== n && g(e, i, {
+      get: () => t[i],
+      enumerable: !(r = _(t, i)) || r.enumerable
+    });
+    return e;
+  },
+  C = ((e, t, n) => (n = e == null ? {} : h(y(e)), S(!e || !e.__esModule ? g(n, `default`, {
+    value: e,
+    enumerable: !0
+  }) : n, e)))(x(e => {
+    var t = class {
+      currentState;
+      transitions = new Map();
+      listeners = new Map();
+      constructor(e = `idle`) {
+        this.currentState = e;
+      }
+      defineTransition(e, t) {
+        this.transitions.set(e, t);
+      }
+      transition(e) {
+        let t = this.transitions.get(e);
+        if (!t || !(Array.isArray(t.from) ? t.from : [t.from]).includes(this.currentState) || t.guard && !t.guard()) return !1;
+        let n = this.currentState;
+        return this.currentState = t.to, this.notifyListeners(n), this.notifyListeners(this.currentState), !0;
+      }
+      getState() {
+        return this.currentState;
+      }
+      onStateEnter(e, t) {
+        return this.listeners.has(e) || this.listeners.set(e, new Set()), this.listeners.get(e).add(t), () => {
+          this.listeners.get(e)?.delete(t);
+        };
+      }
+      notifyListeners(e) {
+        this.listeners.get(e)?.forEach(e => e());
+      }
+    };
+    function n(e) {
+      return e.toLowerCase().replace(/[^a-z0-9\s]/g, ``).replace(/\s+/g, `-`).replace(/^-+|-+$/g, ``).substring(0, 50);
+    }
+    var r = class {
+        stateMachine;
+        state;
+        listeners = new Map();
+        filter;
+        keydownHandler;
+        globalKeyHandler;
+        inputElement;
+        listElement;
+        optionElements = new Map();
+        destroyed = !1;
+        lastScrollTime = 0;
+        constructor(e = {}) {
+          this.stateMachine = new t(`idle`), this.state = {
+            open: !1,
+            input: ``,
+            activeId: void 0,
+            activeIndex: -1,
+            filtered: [],
+            options: [],
+            groups: new Map(),
+            menuStack: [],
+            currentLevel: 0,
+            breadcrumbs: [],
+            allOptions: [],
+            currentOptions: []
+          }, this.filter = e.filter || this.defaultFilter, this.setupStateMachine(), this.setupGlobalKeyboardShortcut(), e.onOpen && this.on(`open`, e.onOpen), e.onClose && this.on(`close`, e.onClose), e.onChange && this.on(`change`, t => t.type === `change` && e.onChange(t.input)), e.onSelect && this.on(`select`, t => t.type === `select` && e.onSelect(t.option));
+        }
+        setupStateMachine() {
+          this.stateMachine.defineTransition(`open`, {
+            from: `idle`,
+            to: `open`
+          }), this.stateMachine.defineTransition(`startNavigating`, {
+            from: [`open`, `filtering`],
+            to: `navigating`
+          }), this.stateMachine.defineTransition(`startFiltering`, {
+            from: [`open`, `navigating`],
+            to: `filtering`
+          }), this.stateMachine.defineTransition(`select`, {
+            from: [`navigating`, `filtering`],
+            to: `selected`
+          }), this.stateMachine.defineTransition(`close`, {
+            from: [`open`, `navigating`, `filtering`, `selected`],
+            to: `idle`
+          }), this.stateMachine.onStateEnter(`open`, () => {
+            this.state.open = !0, this.emit({
+              type: `open`
+            }), this.updateFiltered(), this.selectFirstAvailableOption(), requestAnimationFrame(() => this.inputElement?.focus());
+          }), this.stateMachine.onStateEnter(`idle`, () => {
+            this.state.open = !1, this.state.input = ``, this.state.activeId = void 0, this.state.activeIndex = -1, this.emit({
+              type: `close`
+            });
+          }), this.stateMachine.onStateEnter(`selected`, () => {
+            this.stateMachine.transition(`close`);
+          });
+        }
+        setupGlobalKeyboardShortcut() {
+          this.globalKeyHandler = e => {
+            (e.metaKey || e.ctrlKey) && e.key === `k` && (e.preventDefault(), this.toggle());
+          }, typeof window < `u` && window.addEventListener(`keydown`, this.globalKeyHandler);
+        }
+        defaultFilter = (e, t) => {
+          if (!t) return e;
+          let n = t.toLowerCase();
+          return e.filter(e => {
+            if (e.disabled) return !1;
+            let t = e.label.toLowerCase().includes(n),
+              r = e.keywords?.some(e => e.toLowerCase().includes(n));
+            return t || r;
+          });
+        };
+        open() {
+          this.destroyed || this.stateMachine.transition(`open`);
+        }
+        close() {
+          this.destroyed || this.stateMachine.transition(`close`);
+        }
+        toggle() {
+          this.destroyed || (this.state.open ? this.close() : this.open());
+        }
+        setInput(e) {
+          this.destroyed || (this.state.input = e, this.stateMachine.transition(`startFiltering`), this.updateFiltered(), this.emit({
+            type: `change`,
+            input: e
+          }));
+        }
+        registerOptions(e) {
+          if (this.destroyed) return;
+          let t = this.processOptionsWithIds(e);
+          this.state.options = [...t], this.state.groups.clear(), this.state.allOptions = this.flattenOptions(t), this.state.currentOptions = [...t], this.state.menuStack = [], this.state.currentLevel = 0, this.state.breadcrumbs = [], this.rebuildGroups(), this.updateFiltered();
+        }
+        processOptionsWithIds(e) {
+          let t = new Set(),
+            r = e => {
+              let i = e.id;
+              if (!i) {
+                let r = n(e.label);
+                i = this.ensureUniqueId(r, t);
+              }
+              t.add(i);
+              let a = e.children ? e.children.map(e => r(e)) : void 0;
+              return {
+                ...e,
+                id: i,
+                children: a
+              };
+            };
+          return e.map(e => r(e));
+        }
+        ensureUniqueId(e, t) {
+          if (!t.has(e)) return e;
+          let n = 1,
+            r = `${e}-${n}`;
+          for (; t.has(r);) n++, r = `${e}-${n}`;
+          return r;
+        }
+        rebuildGroups() {
+          this.state.groups.clear(), this.state.currentOptions.forEach(e => {
+            e.group && (this.state.groups.has(e.group) || this.state.groups.set(e.group, []), this.state.groups.get(e.group).push(e));
+          });
+        }
+        reorderByGroups(e) {
+          if (this.state.groups.size === 0) return e;
+          let t = [],
+            n = e.filter(e => !e.group);
+          t.push(...n);
+          let r = [];
+          for (let e of this.state.currentOptions) e.group && !r.includes(e.group) && r.push(e.group);
+          for (let n of r) {
+            let r = e.filter(e => e.group === n);
+            t.push(...r);
+          }
+          return t;
+        }
+        flattenOptions(e, t) {
+          let n = [];
+          return e.forEach(e => {
+            if (t && (e.parent = t), n.push(e), e.children && e.children.length > 0) {
+              let t = this.flattenOptions(e.children, e.id);
+              n.push(...t);
+            }
+          }), n;
+        }
+        setActiveByIndex(e, t) {
+          if (this.destroyed) return;
+          let n = this.state.filtered[e];
+          !n || n.disabled || (this.state.activeIndex = e, this.state.activeId = n.id, this.stateMachine.transition(`startNavigating`), this.emit({
+            type: `navigate`,
+            activeId: n.id,
+            activeIndex: e
+          }), this.updateAriaActiveDescendant(), this.scrollActiveIntoView(t));
+        }
+        scrollActiveIntoView(e) {
+          if (!this.state.activeId || !this.listElement) return;
+          let t = this.optionElements.get(this.state.activeId);
+          if (!t) return;
+          let n = this.listElement.getBoundingClientRect(),
+            r = t.getBoundingClientRect(),
+            i = Date.now(),
+            a = i - this.lastScrollTime < 100 ? `auto` : `smooth`;
+          if (this.lastScrollTime = i, e === `up`) {
+            let e = n.top + n.height * .25;
+            if (r.top < e) {
+              let e = r.height,
+                t = this.listElement.scrollTop - e * 2 - 8;
+              this.listElement.scrollTo({
+                top: Math.max(0, t),
+                behavior: a
+              });
+            }
+          } else if (e === `down`) {
+            if (r.bottom > n.bottom) {
+              let e = t.offsetTop,
+                n = t.offsetHeight,
+                r = e - this.listElement.clientHeight + n + 8;
+              this.listElement.scrollTo({
+                top: Math.max(0, r),
+                behavior: a
+              });
+            }
+          } else if (r.top < n.top) {
+            let e = t.offsetTop - 8;
+            this.listElement.scrollTo({
+              top: Math.max(0, e),
+              behavior: a
+            });
+          } else if (r.bottom > n.bottom) {
+            let e = t.offsetTop,
+              n = t.offsetHeight,
+              r = e - this.listElement.clientHeight + n + 8;
+            this.listElement.scrollTo({
+              top: Math.max(0, r),
+              behavior: a
+            });
+          }
+        }
+        setActiveById(e) {
+          if (this.destroyed) return;
+          let t = this.state.filtered.findIndex(t => t.id === e);
+          t >= 0 && this.setActiveByIndex(t);
+        }
+        navigateUp() {
+          if (this.destroyed) return;
+          let e = this.state.activeIndex - 1;
+          for (; e >= 0 && this.state.filtered[e]?.disabled;) e--;
+          e >= 0 && this.setActiveByIndex(e, `up`);
+        }
+        navigateDown() {
+          if (this.destroyed) return;
+          let e = this.state.activeIndex + 1;
+          for (; e < this.state.filtered.length && this.state.filtered[e]?.disabled;) e++;
+          e < this.state.filtered.length && this.setActiveByIndex(e, `down`);
+        }
+        on(e, t) {
+          return this.listeners.has(e) || this.listeners.set(e, new Set()), this.listeners.get(e).add(t), () => {
+            this.listeners.get(e)?.delete(t);
+          };
+        }
+        getState() {
+          return {
+            ...this.state
+          };
+        }
+        emit(e) {
+          this.listeners.get(e.type)?.forEach(t => t(e));
+        }
+        updateFiltered() {
+          let e;
+          e = this.state.input.trim() && this.state.currentLevel === 0 ? this.state.allOptions : this.state.currentOptions;
+          let t = this.filter(e, this.state.input);
+          this.state.filtered = this.reorderByGroups(t), this.state.activeId && !this.state.filtered.some(e => e.id === this.state.activeId) ? (this.state.activeId = void 0, this.state.activeIndex = -1, this.selectFirstAvailableOption()) : this.state.activeId ? this.state.activeIndex = this.state.filtered.findIndex(e => e.id === this.state.activeId) : this.state.open && this.selectFirstAvailableOption();
+        }
+        selectFirstAvailableOption() {
+          let e = this.state.filtered.findIndex(e => !e.disabled);
+          e >= 0 && this.setActiveByIndex(e);
+        }
+        enterSubmenu(e) {
+          this.destroyed || !e.children || e.children.length === 0 || (this.state.menuStack.push(e.id), this.state.currentLevel++, this.state.breadcrumbs.push({
+            id: e.id,
+            label: e.group || e.label
+          }), this.state.currentOptions = [...e.children], this.rebuildGroups(), this.state.input = ``, this.state.activeId = void 0, this.state.activeIndex = -1, this.updateFiltered(), this.selectFirstAvailableOption(), this.emit({
+            type: `submenu`,
+            option: e,
+            level: this.state.currentLevel
+          }), this.emit({
+            type: `change`,
+            input: this.state.input
+          }));
+        }
+        goBack() {
+          if (this.destroyed || this.state.menuStack.length === 0) return !1;
+          if (this.state.menuStack.pop(), this.state.currentLevel--, this.state.breadcrumbs.pop(), this.state.currentLevel === 0) this.state.currentOptions = [...this.state.options];else {
+            let e = this.state.menuStack[this.state.menuStack.length - 1];
+            if (e) {
+              let t = this.findOptionById(e);
+              t && t.children ? this.state.currentOptions = [...t.children] : (this.state.currentOptions = [...this.state.options], this.state.menuStack = [], this.state.currentLevel = 0, this.state.breadcrumbs = []);
+            } else this.state.currentOptions = [...this.state.options], this.state.menuStack = [], this.state.currentLevel = 0, this.state.breadcrumbs = [];
+          }
+          return this.rebuildGroups(), this.state.input = ``, this.state.activeId = void 0, this.state.activeIndex = -1, this.updateFiltered(), this.emit({
+            type: `change`,
+            input: this.state.input
+          }), this.emit({
+            type: `back`,
+            level: this.state.currentLevel
+          }), !0;
+        }
+        findOptionById(e) {
+          return this.state.allOptions.find(t => t.id === e);
+        }
+        updateAriaActiveDescendant() {
+          this.inputElement && this.state.activeId ? this.inputElement.setAttribute(`aria-activedescendant`, `kmenu-option-${this.state.activeId}`) : this.inputElement && this.inputElement.removeAttribute(`aria-activedescendant`);
+        }
+        getComboboxProps() {
+          return {
+            role: `combobox`,
+            "aria-expanded": this.state.open,
+            "aria-haspopup": `listbox`,
+            "aria-controls": `kmenu-listbox`
+          };
+        }
+        getInputProps() {
+          return {
+            ref: e => {
+              e && (this.inputElement = e);
+            },
+            role: `combobox`,
+            "aria-autocomplete": `list`,
+            "aria-expanded": this.state.open,
+            "aria-controls": `kmenu-listbox`,
+            "aria-activedescendant": this.state.activeId ? `kmenu-option-${this.state.activeId}` : void 0,
+            value: this.state.input,
+            onInput: e => {
+              let t = e.target;
+              this.setInput(t.value);
+            },
+            onKeyDown: e => {
+              this.handleKeyDown(e);
+            }
+          };
+        }
+        getListboxProps() {
+          return {
+            ref: e => {
+              e && (this.listElement = e);
+            },
+            id: `kmenu-listbox`,
+            role: `listbox`,
+            "aria-label": `Commands`,
+            tabIndex: -1
+          };
+        }
+        getOptionProps(e) {
+          let t = this.state.allOptions.find(t => t.id === e),
+            n = this.state.activeId === e,
+            r = this.state.filtered.findIndex(t => t.id === e);
+          return {
+            ref: t => {
+              t ? this.optionElements.set(e, t) : this.optionElements.delete(e);
+            },
+            id: `kmenu-option-${e}`,
+            role: `option`,
+            "aria-selected": n,
+            "aria-disabled": t?.disabled,
+            tabIndex: -1,
+            onClick: () => {
+              t && !t.disabled && (this.state.activeId = e, this.state.activeIndex = r, this.selectActive());
+            },
+            onMouseEnter: () => {
+              t && !t.disabled && r >= 0 && this.setActiveByIndex(r);
+            }
+          };
+        }
+        handleKeyDown(e) {
+          switch (e.key) {
+            case `ArrowUp`:
+              e.preventDefault(), this.navigateUp();
+              break;
+            case `ArrowDown`:
+              e.preventDefault(), this.navigateDown();
+              break;
+            case `Tab`:
+              e.preventDefault(), e.shiftKey ? this.navigateUp() : this.navigateDown();
+              break;
+            case `Enter`:
+              e.preventDefault(), this.selectActive();
+              break;
+            case `Escape`:
+              e.preventDefault(), this.close();
+              break;
+            case `Backspace`:
+              this.state.input === `` && this.state.currentLevel > 0 && (e.preventDefault(), this.goBack());
+              break;
+            case `Home`:
+              if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+                let t = this.state.filtered.findIndex(e => !e.disabled);
+                t >= 0 && this.setActiveByIndex(t);
+              }
+              break;
+            case `End`:
+              if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+                for (let e = this.state.filtered.length - 1; e >= 0; e--) if (!this.state.filtered[e]?.disabled) {
+                  this.setActiveByIndex(e);
+                  break;
+                }
+              }
+          }
+        }
+        selectActive() {
+          if (this.destroyed || !this.state.activeId) return;
+          let e = this.state.filtered.find(e => e.id === this.state.activeId);
+          if (!(!e || e.disabled)) {
+            if (e.children && e.children.length > 0) this.enterSubmenu(e);else if (this.emit({
+              type: `select`,
+              option: e
+            }), this.stateMachine.transition(`select`), e.action) {
+              let t = e.action();
+              if (t instanceof Promise) t.catch(console.error);else if (Array.isArray(t)) {
+                e.children = t, this.enterSubmenu(e);
+                return;
+              }
+            }
+          }
+        }
+        destroy() {
+          this.destroyed || (this.destroyed = !0, this.close(), this.globalKeyHandler && typeof window < `u` && window.removeEventListener(`keydown`, this.globalKeyHandler), this.listeners.clear(), this.optionElements.clear(), this.inputElement = void 0, this.listElement = void 0);
+        }
+      },
+      i = (e, t) => {
+        if (!t) return e;
+        let n = t.toLowerCase();
+        return e.filter(e => {
+          if (e.disabled) return !1;
+          let t = e.label.toLowerCase().includes(n),
+            r = e.keywords?.some(e => e.toLowerCase().includes(n));
+          return t || r;
+        });
+      },
+      a = (e, t) => {
+        if (!t) return e;
+        let n = t.toLowerCase();
+        return e.filter(e => {
+          if (e.disabled) return !1;
+          let t = e.label.toLowerCase().startsWith(n),
+            r = e.keywords?.some(e => e.toLowerCase().startsWith(n));
+          return t || r;
+        });
+      },
+      o = (e, t) => {
+        if (!t) return e;
+        let n = t.toLowerCase().split(``);
+        return e.filter(e => !e.disabled).map(e => {
+          let t = `${e.label} ${e.keywords?.join(` `) || ``}`.toLowerCase(),
+            r = 0,
+            i = -1,
+            a = 0;
+          for (let e of n) {
+            let n = t.indexOf(e, i + 1);
+            if (n === -1) return null;
+            n === i + 1 ? (a++, r += 10 * a) : (a = 0, r += 1), (n === 0 || t[n - 1] === ` `) && (r += 5), i = n;
+          }
+          return r -= t.length * .1, {
+            option: e,
+            score: r
+          };
+        }).filter(e => e !== null).sort((e, t) => t.score - e.score).map(e => e.option);
+      };
+    function s(e, t) {
+      return (n, r) => {
+        if (!r) return n;
+        try {
+          let i = new RegExp(e.replace(`{{query}}`, r), t);
+          return n.filter(e => {
+            if (e.disabled) return !1;
+            let t = `${e.label} ${e.keywords?.join(` `) || ``}`;
+            return i.test(t);
+          });
+        } catch {
+          return [];
+        }
+      };
+    }
+    e.CommandCore = r, e.StateMachine = t, e.createRegexFilter = s, e.fuzzyFilter = o, e.simpleFilter = i, e.startsWithFilter = a;
+  })()),
+  w = (0, p.createContext)(null);
+function T() {
+  let e = (0, p.useContext)(w);
+  if (!e) throw Error(`useCommand must be used within a <Command> component`);
+  return e;
+}
+var E = (0, p.forwardRef)(function ({
+    children: e,
+    value: t,
+    onValueChange: n,
+    open: r,
+    onOpenChange: i,
+    options: a = [],
+    filter: o,
+    onSelect: s,
+    shouldFilter: c = !0,
+    ...l
+  }, u) {
+    let d = (0, p.useRef)(null),
+      f = (0, p.useRef)(null),
+      [h, g] = (0, p.useState)(() => ({
+        open: r ?? !1,
+        input: t ?? ``,
+        activeId: void 0,
+        activeIndex: -1,
+        filtered: a,
+        options: a,
+        menuStack: [],
+        currentLevel: 0,
+        breadcrumbs: []
+      }));
+    (0, p.useEffect)(() => {
+      let e = {
+          filter: c ? o : void 0,
+          onOpen: () => {
+            g(e => ({
+              ...e,
+              open: !0
+            })), i?.(!0);
+          },
+          onClose: () => {
+            g(e => ({
+              ...e,
+              open: !1,
+              input: ``,
+              activeId: void 0,
+              activeIndex: -1
+            })), i?.(!1);
+          },
+          onChange: e => {
+            g(t => ({
+              ...t,
+              input: e
+            })), n?.(e);
+          },
+          onSelect: e => {
+            s?.(e);
+          }
+        },
+        t = new C.CommandCore(e);
+      d.current = t;
+      let l = t.on(`navigate`, e => {
+          e.type === `navigate` && g(t => ({
+            ...t,
+            activeId: e.activeId,
+            activeIndex: e.activeIndex
+          }));
+        }),
+        u = t.on(`submenu`, e => {
+          if (e.type === `submenu`) {
+            let e = t.getState();
+            g(t => ({
+              ...t,
+              menuStack: [...e.menuStack],
+              currentLevel: e.currentLevel,
+              breadcrumbs: [...e.breadcrumbs],
+              input: e.input,
+              activeId: e.activeId,
+              activeIndex: e.activeIndex,
+              filtered: [...e.filtered],
+              options: [...e.currentOptions]
+            }));
+          }
+        }),
+        f = t.on(`back`, e => {
+          if (e.type === `back`) {
+            let e = t.getState();
+            g(t => ({
+              ...t,
+              menuStack: [...e.menuStack],
+              currentLevel: e.currentLevel,
+              breadcrumbs: [...e.breadcrumbs],
+              input: e.input,
+              activeId: e.activeId,
+              activeIndex: e.activeIndex,
+              filtered: [...e.filtered],
+              options: [...e.currentOptions]
+            }));
+          }
+        });
+      t.registerOptions(a);
+      let p = t.getState();
+      return g({
+        open: p.open,
+        input: p.input,
+        activeId: p.activeId,
+        activeIndex: p.activeIndex,
+        filtered: p.filtered,
+        options: p.currentOptions,
+        menuStack: p.menuStack,
+        currentLevel: p.currentLevel,
+        breadcrumbs: p.breadcrumbs
+      }), r !== void 0 && r && t.open(), () => {
+        l(), u(), f(), t.destroy(), d.current = null;
+      };
+    }, []), (0, p.useEffect)(() => {
+      d.current && (d.current.registerOptions(a), g(e => ({
+        ...e,
+        options: a,
+        filtered: d.current.getState().filtered
+      })));
+    }, [a]), (0, p.useEffect)(() => {
+      d.current && t !== void 0 && t !== h.input && d.current.setInput(t);
+    }, [t]), (0, p.useEffect)(() => {
+      d.current && r !== void 0 && (r && !h.open ? d.current.open() : !r && h.open && d.current.close());
+    }, [r]), (0, p.useEffect)(() => {
+      if (!d.current) return;
+      let e = () => {
+          let e = d.current.getState();
+          g({
+            open: e.open,
+            input: e.input,
+            activeId: e.activeId,
+            activeIndex: e.activeIndex,
+            filtered: e.filtered,
+            options: e.currentOptions,
+            menuStack: e.menuStack,
+            currentLevel: e.currentLevel,
+            breadcrumbs: e.breadcrumbs
+          });
+        },
+        t = d.current.on(`change`, e),
+        n = d.current.on(`navigate`, e),
+        r = d.current.on(`submenu`, e),
+        i = d.current.on(`back`, e),
+        a = d.current.on(`open`, e);
+      return () => {
+        t(), n(), r(), i(), a();
+      };
+    }, [d.current]), (0, p.useEffect)(() => {
+      if (!h.open || !f.current) return;
+      let e = f.current,
+        t = e.querySelectorAll(`input, button, [tabindex]:not([tabindex="-1"]), [contenteditable]`),
+        n = t[0];
+      t[t.length - 1];
+      let r = e => {
+        e.key;
+      };
+      return n && n.focus(), e.addEventListener(`keydown`, r), () => {
+        e.removeEventListener(`keydown`, r);
+      };
+    }, [h.open]), (0, p.useImperativeHandle)(u, () => ({
+      command: d.current
+    }));
+    let _ = d.current?.getComboboxProps() || {};
+    return (0, m.jsx)(w.Provider, {
+      value: {
+        command: d.current,
+        state: h
+      },
+      children: <div ref={f} {...l} {..._}>{e}</div>
+    });
+  }),
+  D = (0, p.forwardRef)(function ({
+    value: e,
+    onValueChange: t,
+    ...n
+  }, r) {
+    let {
+        command: i,
+        state: a
+      } = T(),
+      o = (0, p.useRef)(null);
+    (0, p.useImperativeHandle)(r, () => o.current);
+    let {
+      ref: s,
+      ...c
+    } = i?.getInputProps() || {};
+    (0, p.useEffect)(() => {
+      o.current && s && s(o.current);
+    }, [s]);
+    let l = (0, p.useCallback)(e => {
+      let n = e.currentTarget.value;
+      i?.setInput(n), t?.(n);
+    }, [i, t]);
+    return <input ref={o} data-kmenu-input={!0} {...c} {...n} value={e ?? a.input} onInput={l} onKeyDown={e => {
+      c.onKeyDown?.(e), n.onKeyDown?.(e);
+    }} />;
+  }),
+  O = (0, p.forwardRef)(function ({
+    children: e,
+    indicatorOffsetY: t = 0,
+    ...n
+  }, r) {
+    let {
+        command: i,
+        state: a
+      } = T(),
+      o = (0, p.useRef)(null),
+      [s, c] = (0, p.useState)({
+        opacity: 0,
+        transform: `translateY(0px)`,
+        width: `0px`,
+        height: `0px`
+      });
+    (0, p.useImperativeHandle)(r, () => o.current);
+    let {
+      ref: l,
+      ...u
+    } = i?.getListboxProps() || {};
+    return (0, p.useEffect)(() => {
+      o.current && l && l(o.current);
+    }, [l]), (0, p.useEffect)(() => {
+      if (!o.current || !a.activeId) {
+        c(e => ({
+          ...e,
+          opacity: 0
+        }));
+        return;
+      }
+      let e = () => {
+          if (!o.current || !a.activeId) {
+            c(e => ({
+              ...e,
+              opacity: 0
+            }));
+            return;
+          }
+          let e = o.current.querySelector(`[data-command-option-id="${a.activeId}"]`);
+          if (e ||= o.current.querySelector(`[data-active="true"]`), !e) {
+            c(e => ({
+              ...e,
+              opacity: 0
+            }));
+            return;
+          }
+          let n = e.offsetTop + t;
+          c({
+            opacity: 1,
+            transform: `translateY(${n}px)`,
+            width: `${e.offsetWidth}px`,
+            height: `${e.offsetHeight}px`
+          });
+        },
+        n,
+        r;
+      return n = requestAnimationFrame(() => {
+        r = requestAnimationFrame(e);
+      }), () => {
+        n && cancelAnimationFrame(n), r && cancelAnimationFrame(r);
+      };
+    }, [a.activeId, a.filtered, e, t]), <div ref={o} {...u} {...n}>{[<div className={`command-active-indicator`} style={s} />, e]}</div>;
+  }),
+  k = (0, p.forwardRef)(function ({
+    value: e,
+    disabled: t,
+    children: n,
+    ...r
+  }, i) {
+    let {
+        command: a,
+        state: o
+      } = T(),
+      s = (0, p.useRef)(null),
+      c = o.activeId === e.id,
+      l = o.filtered.some(t => t.id === e.id),
+      {
+        ref: u,
+        ...d
+      } = a?.getOptionProps(e.id) || {};
+    return (0, p.useImperativeHandle)(i, () => s.current), (0, p.useEffect)(() => {
+      s.current && u && l && u(s.current);
+    }, [u, l]), l ? <div ref={s} {...d} {...r} data-active={c} data-disabled={t || e.disabled} data-command-option-id={e.id}>{n || e.label}</div> : null;
+  }),
+  A = (0, p.forwardRef)(function ({
+    heading: e,
+    children: t,
+    ...n
+  }, r) {
+    return <div ref={r} role={`group`} {...n}>{[e && <div role={`presentation`} aria-hidden={`true`}>{e}</div>, t]}</div>;
+  }),
+  j = (0, p.forwardRef)(function ({
+    children: e,
+    ...t
+  }, n) {
+    let {
+      state: r
+    } = T();
+    return r.filtered.length > 0 ? null : <div ref={n} role={`presentation`} {...t}>{e || `No results found.`}</div>;
+  }),
+  M = (0, p.forwardRef)(function ({
+    children: e,
+    ...t
+  }, n) {
+    let {
+        command: r,
+        state: i
+      } = T(),
+      a = e => {
+        if (!r) return;
+        let t = e + 1,
+          n = r.getState().currentLevel;
+        for (; n > t && r.goBack();) n = r.getState().currentLevel;
+        requestAnimationFrame(() => {
+          document.querySelector(`[data-kmenu-input]`)?.focus();
+        });
+      };
+    return <div ref={n} role={`navigation`} aria-label={`Menu breadcrumbs`} {...t}>{[<span onClick={() => a(-1)} style={{
+        cursor: `pointer`
+      }}>{`Home`}</span>, i.breadcrumbs.map((e, t) => <span key={e.id}>{<span onClick={() => a(t)} style={{
+          cursor: `pointer`
+        }}>{e.label}</span>}</span>)]}</div>;
+  }),
+  N = (0, p.forwardRef)(function ({
+    children: e,
+    ...t
+  }, n) {
+    return <div ref={n} role={`status`} aria-live={`polite`} aria-busy={`true`} {...t}>{e || `Loading...`}</div>;
+  }),
+  P = (0, p.forwardRef)(function (e, t) {
+    return <div ref={t} role={`separator`} aria-orientation={`horizontal`} {...e} />;
+  }),
+  F = t({
+    matches: () => L,
+    rank: () => R,
+    search: () => z
+  });
+function I(e, t) {
+  let n = -1;
+  for (let r of t) if (n = e.indexOf(r, n + 1), n === -1) return !1;
+  return !0;
+}
+function L(e, t) {
+  return e.disabled ? !1 : I(e.label.toLowerCase(), t) ? !0 : e.keywords?.some(e => e.toLowerCase().includes(t)) ?? !1;
+}
+function R(e, t) {
+  let n = e.toLowerCase();
+  return n === t ? 0 : n.startsWith(t) ? 1 : n.includes(t) ? 2 : 3;
+}
+function z(e, t) {
+  let n = t.trim().toLowerCase();
+  return n ? e.filter(e => L(e, n)).toSorted((e, t) => R(e.label, n) - R(t.label, n)) : e;
+}
+var B = t({
+    CommandMenu: () => ee,
+    openCommandMenu: () => J
+  }),
+  V = e => e,
+  H = (e, t) => z(t.trim() ? e : e.filter(e => !V(e).hidden), t);
+function U(e, t) {
+  e && (e.classList.remove(t), e.offsetWidth, e.classList.add(t));
+}
+function W() {
+  let {
+      command: e,
+      state: t
+    } = T(),
+    n = `${String(t.currentLevel)}:${t.breadcrumbs.map(e => e.id).join(`>`)}`,
+    r = (0, p.useRef)(n),
+    i = t.input,
+    a = t.filtered[0]?.id;
+  (0, p.useEffect)(() => {
+    a && e?.setActiveById(a);
+  }, [e, i, a]), (0, p.useEffect)(() => {
+    if (r.current === n) return;
+    r.current = n;
+    let e = document.querySelector(`.command-list`);
+    U(e, `cmd-level-enter`), U(e?.closest(`.command-dialog`), `cmd-level-shift`);
+  }, [n]);
+  let s = t.filtered.map(V),
+    c = [...new Set(s.map(e => e.group))].filter(e => e !== void 0),
+    l = s.filter(e => !e.group),
+    u = e => (0, m.jsxs)(k, {
+      value: e,
+      disabled: e.disabled,
+      className: `command-option`,
+      children: [<span className={`command-option-content`}>{[e.icon ? <span className={`command-option-icon`}>{e.icon}</span> : null, <span className={`command-option-label`}>{e.label}</span>]}</span>, e.badge ? <span className={`command-option-badge`}>{e.badge}</span> : null, e.children ? (0, m.jsx)(o, {
+        className: `command-option-more`
+      }) : e.shortcut ? <span className={`command-option-shortcut`}>{e.shortcut.map(e => <kbd className={`command-shortcut-key`} key={e}>{e}</kbd>)}</span> : e.hint ? <span className={`command-option-hint`}>{e.hint}</span> : null]
+    }, e.id ?? e.label);
+  return t.currentLevel > 0 ? (0, m.jsx)(m.Fragment, {
+    children: s.map(u)
+  }) : (0, m.jsxs)(m.Fragment, {
+    children: [l.map(u), c.map(e => (0, m.jsx)(A, {
+      heading: <div className={`command-group-heading`}>{e}</div>,
+      children: s.filter(t => t.group === e).map(u)
+    }, e))]
+  });
+}
+function G({
+  options: e,
+  scope: t,
+  onLeaveScope: n
+}) {
+  let {
+      command: r,
+      state: i
+    } = T(),
+    a = u(),
+    o = s(),
+    d = new Map(),
+    f = e => {
+      for (let t of e) t.id && d.set(t.id, t.crumb ?? t.label), t.children && f(t.children);
+    };
+  f(e);
+  let p = a ? {
+      opacity: 0
+    } : {
+      opacity: 0,
+      x: o === `rtl` ? 8 : -8,
+      filter: `blur(4px)`
+    },
+    h = e => {
+      for (let t = i.breadcrumbs.length; t > e && r?.goBack(); --t);
+    },
+    g = i.breadcrumbs.length;
+  return <div className={`command-breadcrumbs`}>{[g === 0 && !t ? <span>{`Home`}</span> : <button type={`button`} onClick={() => {
+      h(0), n();
+    }}>{`Home`}</button>, t ? g === 0 ? <span>{t}</span> : <button type={`button`} onClick={() => {
+      h(0);
+    }}>{t}</button> : null, (0, m.jsx)(c, {
+      initial: !1,
+      children: i.breadcrumbs.map(({
+        id: e,
+        label: t
+      }, n) => n === g - 1 ? (0, m.jsx)(l.span, {
+        initial: p,
+        animate: {
+          opacity: 1,
+          x: 0,
+          filter: `blur(0px)`
+        },
+        exit: {
+          ...p,
+          transition: {
+            duration: .13,
+            ease: [.23, 1, .32, 1]
+          }
+        },
+        transition: {
+          duration: .18,
+          ease: [.23, 1, .32, 1]
+        },
+        children: d.get(e) ?? t
+      }, e) : (0, m.jsx)(l.button, {
+        type: `button`,
+        initial: p,
+        animate: {
+          opacity: 1,
+          x: 0,
+          filter: `blur(0px)`
+        },
+        exit: {
+          ...p,
+          transition: {
+            duration: .13,
+            ease: [.23, 1, .32, 1]
+          }
+        },
+        transition: {
+          duration: .18,
+          ease: [.23, 1, .32, 1]
+        },
+        onClick: () => {
+          h(n + 1);
+        },
+        children: d.get(e) ?? t
+      }, e))
+    })]}</div>;
+}
+function K({
+  onLeaveScope: e
+}) {
+  let {
+      state: t
+    } = T(),
+    n = t.breadcrumbs.length;
+  return (0, p.useEffect)(() => {
+    let t = t => {
+      if (t.key !== `Backspace` || n > 0) return;
+      let r = t.target;
+      r instanceof HTMLInputElement && r.value !== `` || (t.preventDefault(), e());
+    };
+    return window.addEventListener(`keydown`, t, !0), () => window.removeEventListener(`keydown`, t, !0);
+  }, [n, e]), null;
+}
+var q = `kobra:open-command-menu`;
+function J(e) {
+  window.dispatchEvent(new CustomEvent(q, {
+    detail: {
+      scope: e
+    }
+  }));
+}
+var Y = `:is([role="dialog"],[role="alertdialog"],[role="menu"],[role="listbox"]):is([data-open],[data-state="open"])`;
+function ee({
+  actions: e,
+  scopes: t,
+  placeholder: n = `Type a command or search…`
+}) {
+  let [r, a] = (0, p.useState)(!1),
+    [o, s] = (0, p.useState)(null),
+    [c, l] = (0, p.useState)(!1),
+    [u, d] = (0, p.useState)(!1),
+    [f, h] = (0, p.useState)(!1),
+    g = (0, p.useRef)(null),
+    _ = (0, p.useRef)(null),
+    v = (0, p.useRef)(null);
+  (0, p.useEffect)(() => {
+    let e = _.current,
+      t = v.current;
+    if (!r || !e || !t) {
+      h(!1);
+      return;
+    }
+    let n = getComputedStyle(e),
+      i = Number.parseFloat(n.borderTopWidth) + Number.parseFloat(n.borderBottomWidth),
+      a = !1,
+      o = new ResizeObserver(([t]) => {
+        let n = t?.borderBoxSize?.[0];
+        n && (e.style.height = `${n.blockSize + i}px`, !a && (a = !0, requestAnimationFrame(() => h(!0))));
+      });
+    return o.observe(t), () => {
+      o.disconnect(), e.style.removeProperty(`height`);
+    };
+  }, [r]), (0, p.useEffect)(() => {
+    if (!r) {
+      d(!1);
+      return;
+    }
+    let e = window.setTimeout(() => d(!0), 180);
+    return () => window.clearTimeout(e);
+  }, [r]);
+  let y = (0, p.useCallback)(() => {
+      s(null);
+    }, []),
+    b = (0, p.useCallback)(() => {
+      c || (l(!0), g.current?.classList.add(`closing`), _.current?.classList.add(`closing`), window.setTimeout(() => {
+        a(!1), l(!1), g.current?.classList.remove(`closing`), _.current?.classList.remove(`closing`);
+      }, 180));
+    }, [c]),
+    x = (0, p.useCallback)((e = null) => {
+      s(e);
+      let t = document.querySelector(Y);
+      if (!t) {
+        a(!0);
+        return;
+      }
+      document.dispatchEvent(new KeyboardEvent(`keydown`, {
+        key: `Escape`,
+        bubbles: !0
+      }));
+      let n = performance.now(),
+        r = () => {
+          !t.isConnected || performance.now() - n > 500 ? a(!0) : requestAnimationFrame(r);
+        };
+      requestAnimationFrame(r);
+    }, []);
+  if ((0, p.useEffect)(() => {
+    let e = e => {
+        (e.metaKey || e.ctrlKey) && e.key.toLowerCase() === `k` ? (e.preventDefault(), r ? a(!1) : x()) : e.key === `Escape` && r && !c && (e.preventDefault(), b());
+      },
+      t = e => x(e.detail?.scope ?? null);
+    return window.addEventListener(`keydown`, e), window.addEventListener(q, t), () => {
+      window.removeEventListener(`keydown`, e), window.removeEventListener(q, t);
+    };
+  }, [b, c, r, x]), !r) return null;
+  let S = o ? t?.[o] : void 0,
+    C = S?.actions ?? e;
+  return <div ref={g} className={`command-overlay`} role={`dialog`} aria-modal={`true`}>{[<button type={`button`} aria-label={`Close command menu`} className={`command-backdrop`} onClick={() => !c && b()} />, <div ref={_} className={i(`command-dialog`, u && `cmd-ready`, f && `cmd-sized`)}>{<div ref={v}>{(0, m.jsxs)(E, {
+          open: r,
+          onOpenChange: () => void 0,
+          options: C,
+          filter: H,
+          onSelect: b,
+          className: `command-root`,
+          children: [(0, m.jsx)(K, {
+            onLeaveScope: y
+          }), <div className={`command-header`}>{[(0, m.jsx)(D, {
+              placeholder: S?.placeholder ?? n,
+              className: `command-input`
+            }), <button type={`button`} onClick={b}>{`Esc`}</button>]}</div>, (0, m.jsx)(G, {
+            options: C,
+            scope: S?.crumb,
+            onLeaveScope: y
+          }), (0, m.jsxs)(O, {
+            className: `command-list`,
+            indicatorOffsetY: -8,
+            children: [(0, m.jsx)(j, {
+              className: `command-empty`,
+              children: `No results found.`
+            }), (0, m.jsx)(W, {})]
+          })]
+        })}</div>}</div>]}</div>;
+}
+var te = t({
+    setZen: () => Q,
+    useZen: () => $
+  }),
+  X = !1,
+  Z = new Set();
+function ne(e) {
+  return Z.add(e), () => {
+    Z.delete(e);
+  };
+}
+function Q(e) {
+  if (X !== e) {
+    X = e;
+    for (let e of Z) e();
+  }
+}
+function $() {
+  return (0, p.useSyncExternalStore)(ne, () => X, () => !1);
+}
+export { F as a, d as c, B as i, $ as n, z as o, te as r, f as s, Q as t };

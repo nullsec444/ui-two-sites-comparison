@@ -1,0 +1,811 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { n as r } from "./useStore-CeyF0_C9.js";
+import { t as i } from "./link-CKv6YT18.js";
+import { n as a } from "./auth-form-B7xuKosH.js";
+import { c as o, r as s } from "./queries-VI_aT-w4.js";
+import { i as c, n as l, r as u, t as d } from "./IconSparkles-8d8gWKdF.js";
+import { _ as f, f as p, n as m, s as h } from "./component-catalog-x55m0xeC.js";
+import { t as g } from "./utils-WkhMP9hs.js";
+import { l as _, o as v } from "./comparisons-Bvgw9jnW.js";
+import { t as y } from "./button-6T-mn2Pp.js";
+import { a as b, c as x, d as ee, l as S, n as C, r as te, s as ne, u as re } from "./plans-C5gnmWKf.js";
+import { A as ie } from "./dialog-D5lt4KMe.js";
+import { t as w } from "./createReactComponent-DqK5J7gw.js";
+import { t as ae } from "./IconArrowRight-DerOrAJ3.js";
+import { t as T } from "./IconArrowUpRight-MjcyEVid.js";
+import { C as oe, E as se, S as E, T as ce, a as le, b as ue, i as de, o as fe, r as pe, t as me, w as he, x as ge, y as _e } from "./streaming-text-Dxk_F3bc.js";
+import { n as ve } from "./IconPlus-CcZsF6UA.js";
+import { t as ye } from "./IconCode-Jxt5x2jf.js";
+import { n as D, t as be } from "./IconPalette-DhaCq_X9.js";
+import { a as xe, i as O, o as k, t as A } from "./pricing-faq-DklJK1Zr.js";
+import { t as j } from "./IconSearch-DLrEp44H.js";
+import { t as M } from "./IconUser-dpBZ37qP.js";
+import { t as N } from "./IconVolume-DHGChT-5.js";
+import { n as Se } from "./sound-BCknqSEK.js";
+import { h as P, y as Ce } from "./index-C2FRa1ig.js";
+import { r as we } from "./agent-guide-BI8j0aKR.js";
+import { t as F } from "./badge-BPpa500U.js";
+import { t as Te } from "./hash-scroll-DjxExjN6.js";
+import { n as Ee, t as De } from "./seat-stepper-DQlAyGo_.js";
+import { n as I, r as Oe, t as ke } from "./site-footer-BfDpTxpY.js";
+import { t as Ae } from "./theme-toggle-Dc0A54_c.js";
+import { t as je } from "./rival-marks-D5KXjrQ7.js";
+var Me = w(`outline`, `accessible`, `Accessible`, [[`path`, {
+    d: `M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M11.5 7.5a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0`,
+    fill: `currentColor`,
+    key: `svg-2`
+  }]]),
+  Ne = w(`outline`, `arrows-left-right`, `ArrowsLeftRight`, [[`path`, {
+    d: `M21 17l-18 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M6 10l-3 -3l3 -3`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M3 7l18 0`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M18 20l3 -3l-3 -3`,
+    key: `svg-3`
+  }]]),
+  Pe = w(`outline`, `binary-tree`, `BinaryTree`, [[`path`, {
+    d: `M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M16 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M11 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0`,
+    key: `svg-3`
+  }], [`path`, {
+    d: `M21 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0`,
+    key: `svg-4`
+  }], [`path`, {
+    d: `M5.058 18.306l2.88 -4.606`,
+    key: `svg-5`
+  }], [`path`, {
+    d: `M10.061 10.303l2.877 -4.604`,
+    key: `svg-6`
+  }], [`path`, {
+    d: `M10.065 13.705l2.876 4.6`,
+    key: `svg-7`
+  }], [`path`, {
+    d: `M15.063 5.7l2.881 4.61`,
+    key: `svg-8`
+  }]]),
+  L = w(`outline`, `brand-figma`, `BrandFigma`, [[`path`, {
+    d: `M12 12a3 3 0 1 0 6 0a3 3 0 1 0 -6 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M6 6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15`,
+    key: `svg-2`
+  }]]),
+  Fe = w(`outline`, `chart-arrows-vertical`, `ChartArrowsVertical`, [[`path`, {
+    d: `M18 21v-14`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M9 15l3 -3l3 3`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M15 10l3 -3l3 3`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M3 21l18 0`,
+    key: `svg-3`
+  }], [`path`, {
+    d: `M12 21l0 -9`,
+    key: `svg-4`
+  }], [`path`, {
+    d: `M3 6l3 -3l3 3`,
+    key: `svg-5`
+  }], [`path`, {
+    d: `M6 21v-18`,
+    key: `svg-6`
+  }]]),
+  Ie = w(`outline`, `circle-minus`, `CircleMinus`, [[`path`, {
+    d: `M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M9 12l6 0`,
+    key: `svg-1`
+  }]]),
+  R = w(`outline`, `contrast`, `Contrast`, [[`path`, {
+    d: `M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M12 17a5 5 0 0 0 0 -10v10`,
+    key: `svg-1`
+  }]]),
+  Le = w(`outline`, `file-invoice`, `FileInvoice`, [[`path`, {
+    d: `M14 3v4a1 1 0 0 0 1 1h4`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M9 7l1 0`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M9 13l6 0`,
+    key: `svg-3`
+  }], [`path`, {
+    d: `M13 17l2 0`,
+    key: `svg-4`
+  }]]),
+  Re = w(`outline`, `rosette-discount`, `RosetteDiscount`, [[`path`, {
+    d: `M9 15l6 -6`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M9 9.5a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0`,
+    fill: `currentColor`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M14 14.5a.5 .5 0 1 0 1 0a.5 .5 0 1 0 -1 0`,
+    fill: `currentColor`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M5 7.2a2.2 2.2 0 0 1 2.2 -2.2h1a2.2 2.2 0 0 0 1.55 -.64l.7 -.7a2.2 2.2 0 0 1 3.12 0l.7 .7a2.2 2.2 0 0 0 1.55 .64h1a2.2 2.2 0 0 1 2.2 2.2v1a2.2 2.2 0 0 0 .64 1.55l.7 .7a2.2 2.2 0 0 1 0 3.12l-.7 .7a2.2 2.2 0 0 0 -.64 1.55v1a2.2 2.2 0 0 1 -2.2 2.2h-1a2.2 2.2 0 0 0 -1.55 .64l-.7 .7a2.2 2.2 0 0 1 -3.12 0l-.7 -.7a2.2 2.2 0 0 0 -1.55 -.64h-1a2.2 2.2 0 0 1 -2.2 -2.2v-1a2.2 2.2 0 0 0 -.64 -1.55l-.7 -.7a2.2 2.2 0 0 1 0 -3.12l.7 -.7a2.2 2.2 0 0 0 .64 -1.55v-1`,
+    key: `svg-3`
+  }]]),
+  z = w(`outline`, `users`, `Users`, [[`path`, {
+    d: `M5 7a4 4 0 1 0 8 0a4 4 0 1 0 -8 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M16 3.13a4 4 0 0 1 0 7.75`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M21 21v-2a4 4 0 0 0 -3 -3.85`,
+    key: `svg-3`
+  }]]),
+  B = e(t(), 1),
+  V = e(n(), 1),
+  ze = 18,
+  Be = 12,
+  Ve = `Too many questions at once. Try again in a minute.`,
+  H = `No answer right now. Email ${ke.href.replace(`mailto:`, ``)} instead.`,
+  U = /\S+/g,
+  He = e => e.match(U)?.length ?? 0;
+function Ue(e, t) {
+  let n = 0,
+    r = 0;
+  for (let i of e.matchAll(U)) {
+    if (r === t) break;
+    n = i.index + i[0].length, r += 1;
+  }
+  return e.slice(0, n);
+}
+var We = (e, t) => t ? e : e.slice(0, Math.max(0, e.search(/\s\S*$/))),
+  W = `(prefers-reduced-motion: reduce)`;
+function Ge(e) {
+  let t = window.matchMedia(W);
+  return t.addEventListener(`change`, e), () => t.removeEventListener(`change`, e);
+}
+var Ke = () => (0, B.useSyncExternalStore)(Ge, () => window.matchMedia(W).matches, () => !1);
+function qe({
+  streaming: e
+}) {
+  let t = `flex transition-[scale,opacity,filter] duration-300 ease-(--ease-out) motion-reduce:transition-opacity`,
+    n = `scale-100 opacity-100 blur-none`,
+    r = `scale-25 opacity-0 blur-xs`;
+  return <span className={`grid place-items-center *:col-start-1 *:row-start-1`}>{[<span aria-hidden={!0} className={g(t, e ? n : r)}>{<span className={`size-2 rounded-xs bg-current`} />}</span>, <span aria-hidden={!0} className={g(t, e ? r : n)}>{(0, V.jsx)(ae, {
+        className: `size-4`
+      })}</span>]}</span>;
+}
+function Je() {
+  let e = Ke(),
+    [t, n] = (0, B.useState)(null),
+    [r, i] = (0, B.useState)(0),
+    [o, s] = (0, B.useState)(!1),
+    [c, l] = (0, B.useState)(``),
+    u = (0, B.useRef)(null),
+    d = c.trim(),
+    f = t ? We(t.text, t.done) : ``,
+    p = He(f),
+    m = t !== null && t.failed === null && (!t.done || r < p),
+    h = m && p === 0,
+    g = m && p > 0 && !o,
+    _ = o && t !== null && t.asked === d;
+  (0, B.useEffect)(() => () => u.current?.abort(), []), (0, B.useEffect)(() => {
+    if (!g || r >= p) return;
+    let t = window.setTimeout(() => {
+      i(t => {
+        let n = p - t;
+        return t + (e ? n : Math.max(1, Math.floor(n / Be)));
+      });
+    }, e ? 0 : ze);
+    return () => window.clearTimeout(t);
+  }, [g, r, p, e]);
+  let v = (e, t) => {
+      n(n => n?.id === e ? t(n) : n);
+    },
+    b = async e => {
+      if (e.preventDefault(), !d || h) return;
+      if (_) {
+        s(!1);
+        return;
+      }
+      u.current?.abort();
+      let r = new AbortController();
+      u.current = r;
+      let a = (t?.id ?? -1) + 1;
+      n({
+        id: a,
+        asked: d,
+        text: ``,
+        done: !1,
+        failed: null
+      }), i(0), s(!1);
+      try {
+        let e = await fetch(`/api/ask`, {
+          method: `POST`,
+          headers: {
+            "content-type": `application/json`
+          },
+          body: JSON.stringify({
+            question: d
+          }),
+          signal: r.signal
+        });
+        if (!e.ok || !e.body) {
+          v(a, t => ({
+            ...t,
+            done: !0,
+            failed: e.status === 429 ? Ve : H
+          }));
+          return;
+        }
+        let t = e.body.pipeThrough(new TextDecoderStream()).getReader();
+        for (;;) {
+          let {
+            value: e,
+            done: n
+          } = await t.read();
+          if (n) break;
+          v(a, t => ({
+            ...t,
+            text: (t.text + e).trimStart()
+          }));
+        }
+        v(a, e => ({
+          ...e,
+          done: !0,
+          failed: e.text.trim() ? null : H
+        }));
+      } catch {
+        if (r.signal.aborted) return;
+        v(a, e => ({
+          ...e,
+          done: !0,
+          failed: e.text.trim() ? null : H
+        }));
+      }
+    },
+    x = Ue(f, r);
+  return <div className={`border-t border-foreground/15`}>{[<form onSubmit={b} className={`flex items-center gap-4 py-5`}>{[<input value={c} onChange={e => l(e.target.value)} maxLength={280} aria-label={`Ask anything else`} placeholder={`Ask anything else`} className={`w-full bg-transparent text-base leading-6 outline-none placeholder:text-foreground/40`} />, (0, V.jsx)(y, {
+        type: `submit`,
+        size: `icon-sm`,
+        rounded: !0,
+        variant: m || d ? `secondary` : `ghost`,
+        disabled: !m && !d,
+        "aria-busy": h || void 0,
+        "aria-label": g ? `Pause the answer` : _ ? `Resume the answer` : `Ask`,
+        onClick: g || h ? e => {
+          e.preventDefault(), g && s(!0);
+        } : void 0,
+        className: `shrink-0`,
+        children: (0, V.jsx)(a, {
+          busy: h,
+          children: (0, V.jsx)(qe, {
+            streaming: g
+          })
+        })
+      })]}</form>, t && (t.failed || x) ? <p aria-live={`polite`} className={`pb-5 text-base leading-7 text-muted-foreground`}>{t.failed ?? (e ? x : (0, V.jsx)(me, {
+        children: x
+      }, t.id))}</p> : null]}</div>;
+}
+var G = h.filter(([e]) => p(f(e))).length,
+  Ye = [{
+    Icon: oe,
+    label: `${String(G)} components, free forever`
+  }, {
+    Icon: M,
+    label: `Personal use only`
+  }, {
+    Icon: L,
+    label: `Figma kit`,
+    href: I.href
+  }, {
+    Icon: _e,
+    label: `One file your agent reads`,
+    href: we.md
+  }, {
+    Icon: R,
+    label: `Light and dark themes`
+  }, {
+    Icon: N,
+    label: `Interface sound design`
+  }, {
+    Icon: l,
+    label: `Community support`
+  }],
+  Xe = [{
+    Icon: D,
+    label: `All ${m} components`
+  }, {
+    Icon: ce,
+    label: `Unlimited commercial projects`
+  }, {
+    Icon: ge,
+    label: `Lifetime updates`
+  }, {
+    Icon: E,
+    label: `MCP server for your agents`
+  }, {
+    Icon: l,
+    label: `Support within 24 hours`
+  }],
+  Ze = [{
+    Icon: z,
+    label: `${String(C.team.minSeats)}–${String(C.team.maxSeats)} seats on one license`
+  }, {
+    Icon: Le,
+    label: `POs and custom invoicing`
+  }, {
+    Icon: se,
+    label: `Priority component requests`
+  }, {
+    Icon: l,
+    label: `Support within 12 hours`
+  }, {
+    Icon: d,
+    label: `2 months of Krafa Pro`,
+    linkText: `Krafa Pro`,
+    href: `https://krafa.ai`
+  }],
+  Qe = {
+    solo: `Everything free, plus:`,
+    team: `All ${C.solo.name} features, plus:`
+  },
+  $e = {
+    solo: Xe,
+    team: Ze
+  },
+  et = {
+    left: `marquee-x`,
+    right: `marquee-x-reverse`,
+    up: `marquee-y`,
+    down: `marquee-y-reverse`
+  };
+function tt({
+  children: e,
+  className: t,
+  duration: n = 20,
+  pauseOnHover: r = !1,
+  direction: i = `left`,
+  fade: a = !0,
+  fadeAmount: o = 10,
+  ...s
+}) {
+  let [c, l] = B.useState(!1),
+    u = B.Children.toArray(e),
+    d = i === `up` || i === `down`,
+    f = {
+      animationName: et[i],
+      animationDuration: `${String(n)}s`,
+      animationTimingFunction: `linear`,
+      animationIterationCount: `infinite`,
+      animationPlayState: c ? `paused` : `running`
+    },
+    p = `linear-gradient(${d ? `to bottom` : `to right`}, transparent 0%, black ${String(o)}%, black ${String(100 - o)}%, transparent 100%)`;
+  return <div data-slot={`marquee`} className={g(`flex w-full overflow-hidden`, d && `flex-col`, t)} style={a ? {
+    maskImage: p,
+    WebkitMaskImage: p
+  } : void 0} onMouseEnter={() => {
+    r && l(!0);
+  }} onMouseLeave={() => {
+    r && l(!1);
+  }} {...s}>{<div data-slot={`marquee-scroller`} className={g(`flex shrink-0`, d && `flex-col`)} style={f}>{[u.map((e, t) => <div className={g(`flex shrink-0`, d && `w-full`)} key={`first-${String(t)}`}>{e}</div>), u.map((e, t) => <div aria-hidden={!0} className={g(`flex shrink-0`, d && `w-full`)} key={`second-${String(t)}`}>{e}</div>)]}</div>}</div>;
+}
+var K = `size-8 rounded-full bg-muted text-muted-foreground hover:bg-[color-mix(in_oklch,var(--muted),var(--foreground)_5%)] hover:text-foreground dark:hover:bg-[color-mix(in_oklch,var(--muted),var(--foreground)_8%)]`,
+  nt = `team`;
+function rt() {
+  let {
+      plan: e,
+      seats: t,
+      checkout: n
+    } = P.useSearch(),
+    {
+      user: a
+    } = P.useRouteContext(),
+    s = r(),
+    [c, l] = (0, B.useState)(null),
+    [u, d] = (0, B.useState)(null),
+    [f, p] = (0, B.useState)(null),
+    m = async (e, t) => {
+      p(null), d(e);
+      try {
+        let n = await o({
+          data: {
+            plan: e,
+            seats: t,
+            via: ee()
+          }
+        });
+        if (`entitled` in n) {
+          d(null), await s.navigate({
+            to: `/dashboard`
+          });
+          return;
+        }
+        window.location.href = n.url;
+      } catch (e) {
+        d(null), p(e instanceof Error ? e.message : `Could not start checkout`);
+      }
+    },
+    h = (e, t) => {
+      if (!a) {
+        l({
+          plan: e,
+          seats: t
+        });
+        return;
+      }
+      m(e, t);
+    },
+    g = (0, B.useRef)(!1);
+  return (0, B.useEffect)(() => {
+    g.current || n !== `resume` || !e || !a || (g.current = !0, m(e, t));
+  }, [n, e, t, a]), <div className={`min-h-screen bg-background text-foreground`}>{[<header className={`mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4 sm:px-6 sm:py-5`}>{[(0, V.jsxs)(i, {
+        to: `/components`,
+        "aria-label": `Kobra`,
+        className: `flex items-center`,
+        children: [<img src={`/brand/logomark-light.png`} alt={``} className={`size-5 dark:hidden`} />, <img src={`/brand/logomark-dark.png`} alt={``} className={`hidden size-5 dark:block`} />]
+      }), <div className={`flex items-center gap-2`}>{[<button type={`button`} onClick={() => _(`components`)} className={`inline-flex h-8 w-8 items-center justify-center gap-2 rounded-full bg-muted text-sm text-muted-foreground transition-colors duration-150 ease-out outline-none hover:bg-[color-mix(in_oklch,var(--muted),var(--foreground)_5%)] hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 motion-reduce:transition-none sm:w-56 sm:justify-start sm:px-3 dark:hover:bg-[color-mix(in_oklch,var(--muted),var(--foreground)_8%)]`}>{[(0, V.jsx)(j, {
+            "aria-hidden": !0,
+            className: `size-4`
+          }), <span className={`sr-only sm:not-sr-only`}>{`Search`}</span>, <span aria-hidden={!0} className={`ml-auto hidden text-[0.8125rem] text-muted-foreground/60 sm:inline`}>{`⌘K`}</span>]}</button>, (0, V.jsx)(Se, {
+          className: K
+        }), (0, V.jsx)(Ae, {
+          className: K
+        }), (0, V.jsx)(y, {
+          className: `rounded-full`,
+          nativeButton: !1,
+          render: a ? (0, V.jsx)(i, {
+            to: `/dashboard`
+          }) : (0, V.jsx)(i, {
+            to: `/pricing`,
+            hash: `plans`,
+            hashScrollIntoView: Te()
+          }),
+          children: a ? `Dashboard` : `Get Pro`
+        })]}</div>]}</header>, <main className={`mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24`}>{[<div className={`flex flex-col items-center gap-3 pt-12 pb-10 text-center sm:pt-20 sm:pb-12`}>{[<h1 className={`max-w-3xl text-[2.5rem] leading-[1.05] font-bold tracking-tight text-balance sm:text-[3.25rem]`}>{[`Don’t let your startup look like a `, <span className={`t-word-flash`}>{`hackathon`}</span>, ` `, `project`]}</h1>, n === `canceled` ? <p className={`text-sm text-muted-foreground`}>{`Checkout canceled — nothing was charged.`}</p> : null, f ? <p className={`text-sm text-destructive`}>{f}</p> : null]}</div>, (0, V.jsx)(pt, {
+        busy: u,
+        onBuy: h
+      }), (0, V.jsx)(st, {}), (0, V.jsx)(ft, {}), (0, V.jsx)(ut, {}), <section className={`mt-28 grid gap-x-16 gap-y-8 sm:mt-40 md:grid-cols-3 md:items-start`}>{[<h2 className={`text-3xl leading-[0.95] font-bold tracking-tight text-balance sm:text-4xl`}>{`Frequently asked questions`}</h2>, <div className={`md:col-span-2`}>{[(0, V.jsx)(pe, {
+            multiple: !0,
+            defaultValue: [`buying`],
+            children: A.map(([e, t, n]) => (0, V.jsxs)(le, {
+              value: e,
+              children: [(0, V.jsx)(fe, {
+                children: t
+              }), (0, V.jsx)(de, {
+                children: n
+              })]
+            }, e))
+          }), (0, V.jsx)(Je, {})]}</div>]}</section>]}</main>, (0, V.jsx)(Oe, {}), (0, V.jsx)(Ce, {
+      open: c !== null,
+      idPrefix: `buy`,
+      redirectTo: c ? `/pricing?plan=${c.plan}&seats=${String(c.seats)}&checkout=resume` : `/pricing`,
+      onClose: () => l(null)
+    })]}</div>;
+}
+var it = 1.1,
+  at = {
+    ByteDance: .85,
+    Figma: .85,
+    Notion: .85,
+    Uber: .85
+  },
+  q = (e, t) => Math.round(t * it * (at[e] ?? 1)),
+  ot = [[`Stripe`, `stripe.svg`, 59, 25], [`Microsoft`, `microsoft.svg`, 98, 21], [`Notion`, `notion.svg`, 118, 30], [`Uber`, `uber.svg`, 57, 20], [`Figma`, `figma.svg`, 90, 25], [`Netflix`, `netflix.svg`, 85, 23], [`Dropbox`, `dropbox.svg`, 130, 26], [`Apple`, `apple.svg`, 23, 28], [`Shopify`, `shopify.svg`, 82, 24], [`OpenAI`, `openai.svg`, 101, 25], [`Airbnb`, `airbnb.svg`, 72, 23], [`DoorDash`, `doordash.svg`, 154, 18], [`Google`, `google.svg`, 68, 23], [`Disney`, `disney.svg`, 76, 31], [`Discord`, `discord.svg`, 129, 25], [`Salesforce`, `salesforce.svg`, 47, 33], [`Spotify`, `spotify.svg`, 83, 25], [`Meta`, `meta.svg`, 80, 16], [`ByteDance`, `bytedance.svg`, 138, 24], [`Coinbase`, `coinbase.svg`, 111, 20], [`Cursor`, `cursor.svg`, 116, 29], [`Ramp`, `ramp.svg`, 96, 26], [`Attio`, `attio.svg`, 99, 24]];
+function st() {
+  return <section className={`mt-20 sm:mt-24`}>{[<h2 className={`text-center text-base font-bold sm:text-lg`}>{`Trusted by developers and designers at`}</h2>, <div className={`mt-6 sm:mt-7`}>{(0, V.jsx)(tt, {
+        duration: 45,
+        pauseOnHover: !0,
+        fadeAmount: 12,
+        className: `py-1`,
+        children: ot.map(([e, t, n, r]) => <span className={`flex items-center justify-center px-7 sm:px-9`} key={e}>{<img src={`/logos/customers/${t}`} alt={e} width={q(e, n)} height={q(e, r)} loading={`lazy`} className={`max-w-none object-contain opacity-70 invert dark:opacity-70 dark:invert-0`} />}</span>)
+      })}</div>]}</section>;
+}
+function ct({
+  className: e
+}) {
+  return (0, V.jsx)(L, {
+    className: e
+  });
+}
+var J = [{
+    feature: `Drop-in shadcn API`,
+    icon: Pe,
+    marks: [`part`, `yes`, `yes`, `no`]
+  }, {
+    feature: `Motion tuned per component`,
+    icon: Fe,
+    marks: [`no`, `part`, `part`, `no`]
+  }, {
+    feature: `Interface sound design`,
+    icon: N,
+    marks: [`no`, `no`, `no`, `no`]
+  }, {
+    feature: `In-browser code playground`,
+    icon: ye,
+    marks: [`no`, `no`, `no`, `no`]
+  }, {
+    feature: `Agent and chat surfaces`,
+    icon: xe,
+    marks: [`part`, `part`, `no`, `no`]
+  }, {
+    feature: `Blocks and page sections`,
+    icon: ue,
+    marks: [`part`, `part`, `yes`, `yes`]
+  }, {
+    feature: `Hand-tuned dark mode`,
+    icon: R,
+    marks: [`part`, `part`, `part`, `part`]
+  }, {
+    feature: `Keyboard, screen reader and contrast`,
+    icon: Me,
+    marks: [`part`, `part`, `part`, `part`]
+  }, {
+    feature: `Right-to-left support`,
+    icon: Ne,
+    marks: [`no`, `part`, `no`, `part`]
+  }, {
+    feature: `Arabic text that stays joined`,
+    icon: u,
+    marks: [`no`, `no`, `no`, `no`]
+  }, {
+    feature: `AI handoff for every component`,
+    icon: d,
+    marks: [`part`, `no`, `no`, `no`]
+  }, {
+    feature: `Figma UI kit`,
+    icon: ct,
+    marks: [`no`, `no`, `part`, `part`]
+  }, {
+    feature: `MCP server for your agents`,
+    icon: E,
+    marks: [`no`, `part`, `no`, `no`]
+  }, {
+    feature: `Design token exports`,
+    icon: be,
+    marks: [`no`, `no`, `no`, `part`]
+  }, {
+    feature: `One price, no renewal`,
+    icon: k,
+    marks: [`yes`, `part`, `yes`, `yes`]
+  }],
+  Y = {
+    "Magic UI": 199,
+    "shadcn.io": 899,
+    "shadcn pro": 399,
+    "Tailwind Plus": 299
+  },
+  X = C.solo.amount / 100,
+  lt = e => e > X ? `text-destructive` : `text-[var(--badge-amber-fg)]`;
+function Z({
+  amount: e,
+  className: t
+}) {
+  return <span className={g(`text-base font-semibold tabular-nums`, t)}>{[`$`, String(e)]}</span>;
+}
+function Q({
+  mark: e
+}) {
+  let t = {
+    yes: `Yes`,
+    part: `Partly`,
+    no: `No`
+  }[e];
+  return <span className={`inline-flex items-center justify-center`}>{[<span className={`sr-only`}>{t}</span>, e === `yes` ? (0, V.jsx)(ve, {
+      "aria-hidden": !0,
+      className: `size-5 text-[var(--badge-blue-fg)]`
+    }) : e === `part` ? (0, V.jsx)(Ie, {
+      "aria-hidden": !0,
+      className: `size-5 text-[var(--badge-amber-fg)]`
+    }) : (0, V.jsx)(ie, {
+      "aria-hidden": !0,
+      className: `size-5 text-muted-foreground/40`
+    })]}</span>;
+}
+function ut() {
+  return <section className={`mt-28 sm:mt-36`}>{[<div className={`flex flex-col items-center text-center`}>{[(0, V.jsx)(F, {
+        variant: `secondary`,
+        children: `Comparison`
+      }), <h2 className={`mt-3 max-w-2xl text-3xl leading-[1.05] font-bold tracking-tight text-balance sm:text-4xl`}>{`How Kobra compares`}</h2>, <p className={`mt-1 max-w-xl text-balance text-muted-foreground`}>{`The same components everyone ships, and then the ten things nobody else does.`}</p>]}</div>, <div className={`relative mt-10 overflow-x-auto max-sm:-mx-4 max-sm:px-4 sm:mt-14`}>{<table className={`w-full min-w-[46rem] table-fixed border-separate border-spacing-0 text-left`}>{[<colgroup>{[<col className={`w-[34%]`} />, <col span={5} />]}</colgroup>, <thead>{<tr>{[<td />, <th scope={`col`} className={`rounded-t-2xl border-x border-t border-[var(--badge-blue-fg)]/40 bg-[var(--badge-blue-bg)]/40 px-2 pt-6 pb-4 align-bottom`}>{<span className={`flex flex-col items-center gap-3`}>{[<img src={`/brand/logomark-light.png`} alt={``} className={`size-7 dark:hidden`} />, <img src={`/brand/logomark-dark.png`} alt={``} className={`hidden size-7 dark:block`} />, <span className={`text-sm font-semibold`}>{`Kobra`}</span>]}</span>}</th>, v.map(({
+              name: e,
+              href: t
+            }) => {
+              let n = je[e];
+              return <th scope={`col`} className={`px-2 pt-6 pb-4 align-bottom`} key={e}>{<a href={t} target={`_blank`} rel={`noreferrer`} className={`group/rival flex flex-col items-center gap-3 outline-none`}>{[<span className={`flex h-7 items-center`}>{(0, V.jsx)(n, {})}</span>, <span className={`relative inline-flex items-center text-sm font-medium text-muted-foreground`}>{[e, <span className={`sr-only`}>{`(opens in a new tab)`}</span>, (0, V.jsx)(T, {
+                      "aria-hidden": !0,
+                      className: `absolute top-1/2 left-full ml-1 size-3.5 -translate-y-1/2 opacity-0 transition-opacity duration-150 ease-out group-hover/rival:opacity-100 group-focus-visible/rival:opacity-100 motion-reduce:transition-none`
+                    })]}</span>]}</a>}</th>;
+            })]}</tr>}</thead>, <tbody>{[<tr>{[<th scope={`row`} className={`border-t border-border py-5 pr-6 text-base font-normal`}>{<span className={`flex items-center gap-3`}>{[(0, V.jsx)(he, {
+                  "aria-hidden": !0,
+                  className: `size-4 shrink-0 text-muted-foreground`
+                }), `Pricing`]}</span>}</th>, <td className={`border-x border-t border-[var(--badge-blue-fg)]/40 bg-[var(--badge-blue-bg)]/40 px-2 py-5 text-center`}>{(0, V.jsx)(Z, {
+                amount: X,
+                className: `text-[var(--badge-blue-fg)]`
+              })}</td>, v.map(({
+              name: e
+            }) => <td className={`border-t border-border px-2 py-5 text-center`} key={e}>{(0, V.jsx)(Z, {
+                amount: Y[e],
+                className: lt(Y[e])
+              })}</td>)]}</tr>, J.map(({
+            feature: e,
+            icon: t,
+            marks: n
+          }, r) => {
+            let i = r === J.length - 1;
+            return <tr key={e}>{[<th scope={`row`} className={`border-t border-border py-5 pr-6 text-base font-normal`}>{<span className={`flex items-center gap-3`}>{[(0, V.jsx)(t, {
+                    "aria-hidden": !0,
+                    className: `size-4 shrink-0 text-muted-foreground`
+                  }), e]}</span>}</th>, <td className={g(`border-x border-t border-[var(--badge-blue-fg)]/40 bg-[var(--badge-blue-bg)]/40 px-2 py-5 text-center`, i && `rounded-b-2xl border-b`)}>{(0, V.jsx)(Q, {
+                  mark: `yes`
+                })}</td>, n.map((e, t) => <td className={`border-t border-border px-2 py-5 text-center`} key={v[t]?.name}>{(0, V.jsx)(Q, {
+                  mark: e
+                })}</td>)]}</tr>;
+          })]}</tbody>]}</table>}</div>]}</section>;
+}
+var dt = [{
+  Icon: O,
+  title: `Synthesized sound`,
+  blurb: `Short, quiet and synthesized, from one layer you install once and mount around the app.`
+}, {
+  Icon: D,
+  title: `Tailwind and Base UI`,
+  blurb: `Utilities you already read, on primitives that already handle the keyboard.`
+}, {
+  Icon: L,
+  title: `A free Figma kit`,
+  blurb: `Every component drawn on the same tokens as the code, free on the Community.`,
+  href: I.href
+}];
+function ft() {
+  return <section className={`mt-28 sm:mt-36`}>{[<h2 className={`text-center text-3xl leading-[1.05] font-bold tracking-tight sm:text-4xl`}>{`What you’ll get`}</h2>, <div className={`mt-10 grid gap-4 sm:gap-6 md:grid-cols-2 md:grid-rows-2`}>{[<div className={`relative min-h-80 overflow-hidden rounded-2xl border border-border bg-card md:row-span-2 dark:bg-[#191919]`}>{[<img src={`/images/features/1-light.webp`} alt={``} width={1620} height={1608} loading={`lazy`} draggable={!1} className={`pointer-events-none absolute inset-0 size-full object-cover dark:hidden`} />, <img src={`/images/features/1-dark.webp`} alt={``} width={1620} height={1608} loading={`lazy`} draggable={!1} className={`pointer-events-none absolute inset-0 hidden size-full object-cover dark:block`} />, <div aria-hidden={!0} className={`pointer-events-none absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-card from-[60%] to-transparent dark:from-[#191919]`} />, <div className={`relative px-6 pt-5`}>{<p className={`max-w-[22rem] text-[1.0625rem] leading-snug text-muted-foreground`}>{[<span className={`font-semibold text-foreground`}>{[`All `, m, ` components`]}</span>, `, screen reader tested, accessible to WCAG 2.1 AA and responsive.`]}</p>}</div>]}</div>, <div className={`relative min-h-64 overflow-hidden rounded-2xl border border-border bg-card dark:bg-[#191919]`}>{[<img src={`/images/features/2.webp`} alt={`Three agent skill cards, fanned out: Kobra Design Eng, UI Sound Design, and Design System Migration.`} width={1080} height={512} loading={`lazy`} draggable={!1} className={`pointer-events-none absolute inset-x-0 bottom-0 h-[88%] w-full object-contain object-bottom`} />, <div className={`relative px-6 pt-5`}>{<p className={`max-w-[17.5rem] text-[1.0625rem] leading-snug text-muted-foreground`}>{[<span className={`font-semibold text-foreground`}>{`AI skills`}</span>, ` for motion, sound and migration, built from the source.`]}</p>}</div>]}</div>, <div className={`relative min-h-64 overflow-hidden rounded-2xl border border-border bg-card dark:bg-[#191919]`}>{[<img src={`/images/features/3.webp`} alt={`A hand reaching out toward a scatter of pixel cursor glyphs, fingertip to fingertip.`} width={1620} height={768} loading={`lazy`} draggable={!1} className={`pointer-events-none absolute inset-x-0 bottom-0 h-auto w-full object-contain object-bottom`} />, <div className={`relative px-6 pt-5`}>{<p className={`max-w-[17.5rem] text-[1.0625rem] leading-snug text-muted-foreground`}>{[<span className={`font-semibold text-foreground`}>{`An MCP server`}</span>, `, so your agent stops guessing at your components.`]}</p>}</div>]}</div>]}</div>, <ul className={`mt-14 grid gap-10 text-center sm:mt-16 sm:grid-cols-3 sm:gap-8`}>{dt.map(({
+        Icon: e,
+        title: t,
+        blurb: n,
+        href: r
+      }) => <li className={`mx-auto max-w-xs`} key={t}>{[(0, V.jsx)(e, {
+          "aria-hidden": !0,
+          className: `mx-auto size-6`,
+          stroke: 1.8
+        }), <h3 className={`mt-6 text-lg font-semibold tracking-tight`}>{r ? <a href={r} target={`_blank`} rel={`noreferrer`} className={`relative inline-flex items-center transition-colors hover:text-muted-foreground motion-reduce:transition-none`}>{[t, (0, V.jsx)(T, {
+              "aria-hidden": !0,
+              className: `absolute top-1/2 left-full ml-1 size-4 -translate-y-1/2`
+            })]}</a> : t}</h3>, <p className={`mt-1 text-sm text-balance text-muted-foreground`}>{n}</p>]}</li>)}</ul>]}</section>;
+}
+function $({
+  name: e,
+  badge: t,
+  figure: n,
+  struck: r,
+  suffix: i,
+  blurb: a,
+  inherits: o,
+  features: s,
+  picker: c,
+  action: l
+}) {
+  return <div className={`flex flex-col p-6 sm:p-8 md:row-span-4 md:grid md:grid-rows-subgrid md:gap-0`}>{[<div>{[<span className={`flex items-center gap-2`}>{[<span className={`text-sm font-semibold`}>{e}</span>, t]}</span>, <span className={`mt-5 flex items-baseline gap-2 text-5xl font-semibold tracking-tight tabular-nums`}>{[r ? <span className={`text-2xl font-normal text-muted-foreground line-through`}>{r}</span> : null, n, <span className={`text-sm font-normal text-muted-foreground`}>{i}</span>]}</span>, <span className={`mt-4 block text-sm text-balance text-muted-foreground`}>{a}</span>, c]}</div>, <div className={`-mx-6 mt-6 border-t border-border sm:-mx-8 md:mt-8`} />, <div className={`mt-6 md:mt-8`}>{[o ? <p className={`mb-3 text-sm leading-5 text-muted-foreground`}>{o}</p> : null, <ul className={`space-y-3 text-sm`}>{s.map(({
+          Icon: e,
+          label: t,
+          href: n,
+          linkText: r
+        }) => {
+          let i = r && t.includes(r) ? t.split(r) : null;
+          return <li className={`flex items-center gap-3`} key={t}>{[(0, V.jsx)(e, {
+              "aria-hidden": !0,
+              className: `size-[18px] shrink-0 text-muted-foreground`
+            }), n ? <span>{[i?.[0], <a href={n} target={`_blank`} rel={`noreferrer`} className={`inline-flex items-center gap-1 underline-offset-4 transition-colors duration-150 ease-out outline-none hover:underline focus-visible:underline motion-reduce:transition-none`}>{[i ? r : t, <span className={`sr-only`}>{`(opens in a new tab)`}</span>, (0, V.jsx)(T, {
+                  "aria-hidden": !0,
+                  className: `size-3.5 text-muted-foreground`
+                })]}</a>, i?.[1]]}</span> : t]}</li>;
+        })}</ul>]}</div>, <div className={`mt-auto pt-8`}>{l}</div>]}</div>;
+}
+function pt({
+  busy: e,
+  onBuy: t
+}) {
+  let [n, r] = (0, B.useState)(C.team.seats),
+    o = c(s()).data?.slugs.length ?? 0,
+    l = te(o);
+  return <div id={`plans`} className={`mx-auto max-w-4xl scroll-mt-6`}>{[l > 0 ? <p className={`mb-3 flex items-center justify-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-300`}>{[(0, V.jsx)(Re, {
+        "aria-hidden": !0,
+        className: `size-[18px] shrink-0`
+      }), o === 1 ? `Includes ${S(l)} credit for the component you own.` : `Includes ${S(l)} credit for the ${String(o)} components you own.`]}</p> : null, <div className={`overflow-hidden rounded-2xl border border-border`}>{<div className={`grid divide-y divide-border md:grid-cols-3 md:grid-rows-[auto_auto_1fr_auto] md:divide-x md:divide-y-0`}>{[(0, V.jsx)($, {
+          name: `Free`,
+          figure: x(0),
+          suffix: `USD`,
+          blurb: `${String(G)} components to take and keep, no account needed.`,
+          features: Ye,
+          action: (0, V.jsx)(y, {
+            variant: `secondary`,
+            size: `lg`,
+            className: `w-full rounded-full`,
+            nativeButton: !1,
+            render: (0, V.jsx)(i, {
+              to: `/components`
+            }),
+            children: `Browse components`
+          })
+        }), b.map(i => {
+          let s = C[i],
+            c = i === nt,
+            u = s.maxSeats > s.minSeats ? n : s.seats;
+          return (0, V.jsx)($, {
+            name: s.name,
+            badge: c ? (0, V.jsx)(F, {
+              variant: `blue`,
+              size: `sm`,
+              children: `Most popular`
+            }) : s.listAmount && l === 0 ? (0, V.jsx)(F, {
+              variant: `green`,
+              size: `sm`,
+              children: `Launch discount`
+            }) : null,
+            figure: (0, V.jsx)(Ee, {
+              amount: ne(s, u, o)
+            }),
+            struck: l > 0 || s.listAmount ? x(l > 0 ? re(s, u) : s.listAmount) : null,
+            suffix: `USD`,
+            blurb: s.blurb,
+            inherits: Qe[i],
+            features: $e[i],
+            picker: s.maxSeats > s.minSeats ? <span className={`mt-5 flex flex-wrap items-center gap-x-3 gap-y-2`}>{[(0, V.jsx)(De, {
+                value: u,
+                min: s.minSeats,
+                max: s.maxSeats,
+                onChange: r
+              }), u >= s.maxSeats ? <a href={`mailto:sales@kobra.systems`} className={`inline-flex items-center gap-1 text-sm text-muted-foreground underline-offset-4 transition-colors duration-150 ease-out outline-none hover:text-foreground hover:underline focus-visible:text-foreground focus-visible:underline motion-reduce:transition-none`}>{[`Contact sales for extra seats`, (0, V.jsx)(T, {
+                  "aria-hidden": !0,
+                  className: `size-3.5`
+                })]}</a> : <span className={`text-sm text-muted-foreground`}>{`seats`}</span>]}</span> : null,
+            action: (0, V.jsx)(y, {
+              variant: c ? `default` : `secondary`,
+              size: `lg`,
+              className: g(`w-full rounded-full`, !c && `t-pro-btn`),
+              disabled: e !== null && e !== i,
+              "aria-busy": e === i,
+              onClick: () => {
+                e === null && t(i, u);
+              },
+              children: (0, V.jsx)(a, {
+                busy: e === i,
+                className: `t-pro-btn-label`,
+                children: `Get lifetime access`
+              })
+            })
+          }, i);
+        })]}</div>}</div>]}</div>;
+}
+export { rt as component };

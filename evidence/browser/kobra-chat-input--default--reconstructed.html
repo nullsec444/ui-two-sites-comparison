@@ -1,0 +1,355 @@
+<form data-slot="chat-input" class="group/composer relative rounded-[24px] border border-border bg-muted dark:border-transparent [--voice:oklch(0.55_0.18_255)] dark:[--voice:oklch(0.58_0.19_255)] w-[min(38rem,100%)]"><style>
+@property --vb-opacity-_r_0_ {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: true;
+}
+
+[data-voice-beam="_r_0_"] {
+  position: relative;
+  border-radius: 23px;
+  overflow: hidden;
+  --vb-h-_r_0_: 0.8;
+  --vb-w-_r_0_: 1;
+  --vb-x0-_r_0_: 0px;
+  --vb-l0-_r_0_: 1;
+  --vb-y0-_r_0_: 0px;
+  --vb-x1-_r_0_: -36px;
+  --vb-l1-_r_0_: 1;
+  --vb-y1-_r_0_: 0px;
+  --vb-x2-_r_0_: 36px;
+  --vb-l2-_r_0_: 1;
+  --vb-y2-_r_0_: 0px;
+  --vb-x3-_r_0_: -72px;
+  --vb-l3-_r_0_: 1;
+  --vb-y3-_r_0_: 0px;
+  --vb-x4-_r_0_: 72px;
+  --vb-l4-_r_0_: 1;
+  --vb-y4-_r_0_: 0px;
+  --vb-x5-_r_0_: -108px;
+  --vb-l5-_r_0_: 1;
+  --vb-y5-_r_0_: 0px;
+  --vb-x6-_r_0_: 108px;
+  --vb-l6-_r_0_: 1;
+  --vb-y6-_r_0_: 0px;
+  --vb-glow-_r_0_: 0.4;
+  --vb-z-_r_0_: 1;
+  --vb-cx-_r_0_: 0px;
+  --vb-cy-_r_0_: 0px;
+  --vb-bh-_r_0_: 0px;
+  --vb-bendA-_r_0_: 0;
+  --vb-mw-_r_0_: 1;
+  --vb-hue-_r_0_: 0deg;
+  --vb-level-_r_0_: 0;
+}
+
+[data-voice-beam="_r_0_"][data-active] {
+  animation: vb-fade-in-_r_0_ 0.6s ease forwards;
+}
+
+[data-voice-beam="_r_0_"][data-fading] {
+  animation: vb-fade-out-_r_0_ 0.5s ease forwards;
+}
+
+/* Stroke — the colours painted into the 1px edge ring, masked to the centred ellipse. */
+[data-voice-beam="_r_0_"][data-active]::after,
+[data-voice-beam="_r_0_"][data-fading]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: calc(22px * var(--vb-z-_r_0_, 1));
+  padding: calc(1px * var(--vb-z-_r_0_, 1));
+  clip-path: inset(0 round calc(23px * var(--vb-z-_r_0_, 1)));
+  background:
+    radial-gradient(ellipse calc(40px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(30px * var(--vb-h-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-cy-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.22) 35%, transparent 70%),
+    radial-gradient(ellipse calc(48px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(58px * var(--vb-h-_r_0_) * var(--vb-l0-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x0-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y0-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(255, 201, 21) 0%, transparent 75%),
+    radial-gradient(ellipse calc(35px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(50px * var(--vb-h-_r_0_) * var(--vb-l1-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x1-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y1-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(126, 196, 255) 0%, transparent 75%),
+    radial-gradient(ellipse calc(35px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(50px * var(--vb-h-_r_0_) * var(--vb-l2-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x2-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y2-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(180, 40, 230) 0%, transparent 75%),
+    radial-gradient(ellipse calc(31px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(40px * var(--vb-h-_r_0_) * var(--vb-l3-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x3-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y3-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(235, 100, 160) 0%, transparent 75%),
+    radial-gradient(ellipse calc(31px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(40px * var(--vb-h-_r_0_) * var(--vb-l4-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x4-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y4-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(255, 176, 122) 0%, transparent 75%),
+    radial-gradient(ellipse calc(27px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(33px * var(--vb-h-_r_0_) * var(--vb-l5-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x5-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y5-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(154, 160, 255) 0%, transparent 75%),
+    radial-gradient(ellipse calc(27px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(33px * var(--vb-h-_r_0_) * var(--vb-l6-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x6-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (2px + var(--vb-y6-_r_0_)) * var(--vb-z-_r_0_, 1)), rgb(127, 217, 238) 0%, transparent 75%);
+  -webkit-mask:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, transparent 100%),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: source-in, xor;
+  mask:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, transparent 100%),
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: intersect, exclude;
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  z-index: 2;
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--vb-glow-_r_0_) * 1.20 * var(--voice-stroke-opacity, 1) * var(--voice-strength, 1));
+  filter: hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00);
+}
+
+/* Inner glow — soft light inside the element, faded off at the corners.
+   With distortion on, this copy is clipped to ABOVE the band line (the
+   polygon the driver writes each frame) and a mirror layer below carries
+   the displacement filter, so only the glow under the line warps. */
+[data-voice-beam="_r_0_"][data-active]::before,
+[data-voice-beam="_r_0_"][data-fading]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: calc(23px * var(--vb-z-_r_0_, 1));
+  background: radial-gradient(ellipse calc(43px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(52px * var(--vb-h-_r_0_) * var(--vb-l0-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x0-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y0-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 201, 21, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(32px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(45px * var(--vb-h-_r_0_) * var(--vb-l1-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x1-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y1-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(126, 196, 255, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(32px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(45px * var(--vb-h-_r_0_) * var(--vb-l2-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x2-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y2-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(180, 40, 230, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(28px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(36px * var(--vb-h-_r_0_) * var(--vb-l3-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x3-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y3-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(235, 100, 160, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(28px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(36px * var(--vb-h-_r_0_) * var(--vb-l4-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x4-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y4-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 176, 122, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(25px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(29px * var(--vb-h-_r_0_) * var(--vb-l5-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x5-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y5-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(154, 160, 255, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(25px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(29px * var(--vb-h-_r_0_) * var(--vb-l6-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x6-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y6-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(127, 217, 238, 0.46) 0%, transparent 75%);
+  box-shadow: inset 0 0 calc(9px * var(--vb-z-_r_0_, 1)) 1px rgba(0, 0, 0, 0.08);
+  -webkit-mask-image:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.3) 85%, transparent 100%),
+    linear-gradient(white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white),
+    linear-gradient(to right, white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white);
+  -webkit-mask-composite: source-in, source-over;
+  mask-image:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.3) 85%, transparent 100%),
+    linear-gradient(white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white),
+    linear-gradient(to right, white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white);
+  mask-composite: intersect, add;
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  z-index: 1;
+  clip-path: var(--vb-clip-above-_r_0_, inset(0 round 23px));
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--vb-glow-_r_0_) * 0.85 * var(--voice-inner-opacity, 1) * var(--voice-strength, 1));
+  filter: hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00);
+}
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-warp="inner"],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-warp="inner"] {
+  display: block;
+  position: absolute;
+  inset: 0;
+  border-radius: calc(23px * var(--vb-z-_r_0_, 1));
+  background: radial-gradient(ellipse calc(43px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(52px * var(--vb-h-_r_0_) * var(--vb-l0-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x0-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y0-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 201, 21, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(32px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(45px * var(--vb-h-_r_0_) * var(--vb-l1-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x1-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y1-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(126, 196, 255, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(32px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(45px * var(--vb-h-_r_0_) * var(--vb-l2-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x2-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y2-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(180, 40, 230, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(28px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(36px * var(--vb-h-_r_0_) * var(--vb-l3-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x3-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y3-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(235, 100, 160, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(28px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(36px * var(--vb-h-_r_0_) * var(--vb-l4-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x4-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y4-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 176, 122, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(25px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(29px * var(--vb-h-_r_0_) * var(--vb-l5-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x5-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y5-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(154, 160, 255, 0.46) 0%, transparent 75%),
+    radial-gradient(ellipse calc(25px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(29px * var(--vb-h-_r_0_) * var(--vb-l6-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x6-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y6-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(127, 217, 238, 0.46) 0%, transparent 75%);
+  box-shadow: inset 0 0 calc(9px * var(--vb-z-_r_0_, 1)) 1px rgba(0, 0, 0, 0.08);
+  -webkit-mask-image:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.3) 85%, transparent 100%),
+    linear-gradient(white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white),
+    linear-gradient(to right, white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white);
+  -webkit-mask-composite: source-in, source-over;
+  mask-image:
+    radial-gradient(ellipse calc(127.5px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((64px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 45%, rgba(255, 255, 255, 0.3) 85%, transparent 100%),
+    linear-gradient(white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white),
+    linear-gradient(to right, white, transparent calc(28px * var(--vb-z-_r_0_, 1)), transparent calc(100% - 28px * var(--vb-z-_r_0_, 1)), white);
+  mask-composite: intersect, add;
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  z-index: 1;
+  clip-path: var(--vb-clip-below-_r_0_, inset(0 round 23px));
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--vb-glow-_r_0_) * 0.85 * var(--voice-inner-opacity, 1) * var(--voice-strength, 1));
+  filter: hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00) url(#vb-distort-_r_0_);
+}
+
+/* Bloom — the blurred halo, tallest of the three, above the content. */
+[data-voice-beam="_r_0_"] [data-voice-beam-bloom],
+[data-voice-beam="_r_0_"] [data-voice-beam-warp] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  border-radius: calc(22px * var(--vb-z-_r_0_, 1));
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  opacity: 0;
+}
+
+[data-voice-beam="_r_0_"] [data-voice-beam-bloom],
+[data-voice-beam="_r_0_"] [data-voice-beam-warp="bloom"] {
+  -webkit-mask: radial-gradient(ellipse calc(150px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((130px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 35%, transparent 100%);
+  mask: radial-gradient(ellipse calc(150px * var(--vb-w-_r_0_) * var(--vb-mw-_r_0_) * var(--vb-z-_r_0_, 1)) calc((130px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, rgba(255, 255, 255, 0.5) 35%, transparent 100%);
+  background: radial-gradient(ellipse calc(55px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(86px * var(--vb-h-_r_0_) * var(--vb-l0-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x0-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y0-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 201, 21, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(40px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(75px * var(--vb-h-_r_0_) * var(--vb-l1-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x1-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y1-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(126, 196, 255, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(40px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(75px * var(--vb-h-_r_0_) * var(--vb-l2-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x2-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y2-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(180, 40, 230, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(36px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(60px * var(--vb-h-_r_0_) * var(--vb-l3-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x3-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y3-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(235, 100, 160, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(36px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(60px * var(--vb-h-_r_0_) * var(--vb-l4-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x4-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y4-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(255, 176, 122, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(31px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(49px * var(--vb-h-_r_0_) * var(--vb-l5-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x5-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y5-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(154, 160, 255, 0.70) 0%, transparent 77%),
+    radial-gradient(ellipse calc(31px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(49px * var(--vb-h-_r_0_) * var(--vb-l6-_r_0_) * var(--vb-z-_r_0_, 1)) at calc(50% + (var(--vb-cx-_r_0_) + var(--vb-x6-_r_0_)) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + (0px + var(--vb-y6-_r_0_)) * var(--vb-z-_r_0_, 1)), rgba(127, 217, 238, 0.70) 0%, transparent 77%);
+  z-index: 3;
+}
+
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-bloom],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-bloom] {
+  display: block;
+  clip-path: var(--vb-clip-above-_r_0_, inset(0 round 23px));
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--vb-glow-_r_0_) * 0.63 * var(--voice-bloom-opacity, 1) * var(--voice-strength, 1));
+  filter: blur(calc(10px * var(--vb-z-_r_0_, 1))) hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00);
+}
+
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-warp="bloom"],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-warp="bloom"] {
+  display: block;
+  clip-path: var(--vb-clip-below-_r_0_, inset(0 round 23px));
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--vb-glow-_r_0_) * 0.63 * var(--voice-bloom-opacity, 1) * var(--voice-strength, 1));
+  filter: blur(calc(10px * var(--vb-z-_r_0_, 1))) hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00) url(#vb-distort-_r_0_);
+}
+
+/* Processing drops the distortion: the driver marks the wrapper once the
+   warp has faded out, the warp layers leave the paint and the base layers
+   give up their split at the band line. */
+[data-voice-beam="_r_0_"][data-voice-warp="off"]::before,
+[data-voice-beam="_r_0_"][data-voice-warp="off"] [data-voice-beam-bloom] {
+  clip-path: inset(0 round 23px);
+}
+
+[data-voice-beam="_r_0_"][data-voice-warp="off"] [data-voice-beam-warp] {
+  display: none;
+}
+
+/* Epicentre — a soft white wash at the source, under the band line (the
+   driver's clip; unclipped when no line is drawn), sitting above every
+   glow layer and the band's halo so the centre reads lighter than the
+   band (same z as the band canvases, painted after them). Sized by the voice like the
+   other layers; off unless `coreLight` is set (the light theme sets it).
+   Up to 1 it is the wash's opacity; past 1 the solid white core widens
+   too, for a centre that stays lighter than a strong band. It follows the
+   glow's presence but not `strength`, which would only dim it. */
+[data-voice-beam="_r_0_"] [data-voice-beam-core] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  border-radius: calc(22px * var(--vb-z-_r_0_, 1));
+  overflow: hidden;
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  /* The blur sits on this wrapper and the band-line clip on the child,
+     so the cut edge is blurred too rather than left hard. */
+  filter: blur(calc(8px * var(--vb-z-_r_0_, 1)));
+  z-index: 4;
+}
+
+[data-voice-beam="_r_0_"] [data-voice-beam-core] > div {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse calc(148.8px * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc((86.8px * var(--vb-h-_r_0_) + var(--vb-bh-_r_0_)) * var(--vb-z-_r_0_, 1)) at calc(50% + var(--vb-cx-_r_0_) * var(--vb-w-_r_0_) * var(--vb-z-_r_0_, 1)) calc(100% + var(--vb-cy-_r_0_) * var(--vb-z-_r_0_, 1)), white 0%, white 36%, rgba(255, 255, 255, 0.83) 60%, transparent 83.2%);
+  clip-path: var(--vb-clip-below-_r_0_, none);
+}
+
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-core],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-core] {
+  display: block;
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * min(1, var(--vb-glow-_r_0_) * 1.00 * 2.72) * var(--voice-core-light-opacity, 1));
+}
+
+/* Band — the canvas the driver draws the bend's contour on: an organic
+   bell with chromatic fringes. Fades with the root, follows the strength
+   and turns with the hue drift like the other layers. */
+[data-voice-beam="_r_0_"] [data-voice-beam-band],
+[data-voice-beam="_r_0_"] [data-voice-beam-band-halo] {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Its own compositing layer: WebKit otherwise re-rasterizes the
+     filtered layer into the parent every frame on the CPU (a phone-sized
+     host runs at a sixth of the frame rate without this). */
+  will-change: transform;
+  z-index: 4;
+}
+
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-band],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-band],
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-band-halo],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-band-halo] {
+  display: block;
+  opacity: calc(var(--vb-opacity-_r_0_, 1) * var(--voice-band-opacity, 1) * var(--voice-strength, 1));
+  /* The blur vars are 0 where the canvas blurs its own strokes; where the
+     2D context has no filter (WebKit) the driver sets them and the layers
+     are blurred here instead — the ridge on the band canvas, its wider
+     halo on the canvas beneath. */
+  filter: blur(var(--vb-band-blur-_r_0_, 0px)) hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00);
+}
+
+[data-voice-beam="_r_0_"][data-active] [data-voice-beam-band-halo],
+[data-voice-beam="_r_0_"][data-fading] [data-voice-beam-band-halo] {
+  filter: blur(var(--vb-band-halo-blur-_r_0_, 0px)) hue-rotate(calc(var(--voice-hue-base, 5deg) + var(--vb-hue-_r_0_))) brightness(0.92) saturate(2.00);
+}
+
+/* Resolution. The soft layers — inner light and its warp mirror, bloom and
+   its mirror, the epicentre — are rastered at half size and scaled back
+   up by the compositor: the box is halved, every length inside rides the
+   layer's factor `--vb-z` at 0.5 (the driver also writes the band-line
+   clips at half scale), and the will-change transform is rastered
+   pre-scale where the engine does that (Chromium, Safari 18). For blurred
+   gradients that is the same picture at a quarter of the raster and
+   filter work, which is what a phone at 3x runs out of. The 1px stroke
+   stays full-res on every screen: at half size it is half a CSS pixel,
+   which a 3x phone rasters into a faint smear instead of the hairline,
+   and the layer is cheap (no blur). The component sets
+   `data-voice-halfres`. */
+[data-voice-beam="_r_0_"][data-voice-halfres]::before,
+[data-voice-beam="_r_0_"][data-voice-halfres] [data-voice-beam-warp],
+[data-voice-beam="_r_0_"][data-voice-halfres] [data-voice-beam-bloom],
+[data-voice-beam="_r_0_"][data-voice-halfres] [data-voice-beam-core] {
+  --vb-z-_r_0_: 0.5;
+  inset: auto;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+  transform: translateZ(0) scale(2);
+  transform-origin: 0 0;
+}
+[data-voice-beam="_r_0_"][data-voice-halfres][data-active]::before,
+[data-voice-beam="_r_0_"][data-voice-halfres][data-fading]::before,
+[data-voice-beam="_r_0_"][data-voice-halfres][data-active] [data-voice-beam-bloom],
+[data-voice-beam="_r_0_"][data-voice-halfres][data-fading] [data-voice-beam-bloom] {
+  clip-path: var(--vb-clip-above-z-_r_0_, inset(0 round calc(23px * var(--vb-z-_r_0_, 1))));
+}
+[data-voice-beam="_r_0_"][data-voice-halfres][data-active] [data-voice-beam-warp],
+[data-voice-beam="_r_0_"][data-voice-halfres][data-fading] [data-voice-beam-warp] {
+  clip-path: var(--vb-clip-below-z-_r_0_, inset(0 round calc(23px * var(--vb-z-_r_0_, 1))));
+}
+/* Processing (warp off): the mirrors are gone, so the base layers paint
+   the whole box again — this must outweigh the split above. */
+[data-voice-beam="_r_0_"][data-voice-halfres][data-voice-warp="off"]::before,
+[data-voice-beam="_r_0_"][data-voice-halfres][data-voice-warp="off"] [data-voice-beam-bloom] {
+  clip-path: inset(0 round calc(23px * var(--vb-z-_r_0_, 1)));
+}
+[data-voice-beam="_r_0_"][data-voice-halfres] [data-voice-beam-core] > div {
+  clip-path: var(--vb-clip-below-z-_r_0_, none);
+}
+@keyframes vb-fade-in-_r_0_ {
+  to { --vb-opacity-_r_0_: 1; }
+}
+
+@keyframes vb-fade-out-_r_0_ {
+  from { --vb-opacity-_r_0_: 1; }
+  to { --vb-opacity-_r_0_: 0; }
+}
+
+[data-voice-beam="_r_0_"][data-paused],
+[data-voice-beam="_r_0_"][data-paused]::after,
+[data-voice-beam="_r_0_"][data-paused]::before,
+[data-voice-beam="_r_0_"][data-paused] [data-voice-beam-bloom] {
+  animation-play-state: paused !important;
+}
+</style><div data-voice-beam="_r_0_" data-voice-type="default" data-voice-halfres="" class="flex flex-col p-1.5" style="--voice-strength: 0.8;"><div class="overflow-hidden transition-[height] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none" style="height: 0px;"><div class="relative flex flex-wrap gap-2"></div></div><div class="-m-1.5 overflow-hidden p-1.5 transition-[height] duration-0 ease-[cubic-bezier(0.22,1,0.36,1)] data-morph:duration-200 motion-reduce:transition-none" style="height: 48px;"><div class="group/deck relative grid grid-cols-[auto_1fr_auto] items-end gap-x-1 data-tall:gap-y-1.5"><span aria-hidden="true" class="invisible absolute text-base leading-6 whitespace-pre"></span><input multiple="" tabindex="-1" class="hidden" type="file"><button type="button" aria-label="Add files" class="inline-flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-[color,background-color,box-shadow,scale] duration-150 ease-out outline-none select-none hover:bg-foreground/[0.06] hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:scale-100 dark:hover:bg-foreground/10 disabled:pointer-events-none disabled:opacity-40 col-start-1 row-start-1 group-data-tall/deck:row-start-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-plus size-[18px]"><path d="M12 5l0 14"></path><path d="M5 12l14 0"></path></svg></button><textarea rows="1" placeholder="Ask anything" aria-label="Message the agent" dir="auto" class="col-start-2 row-start-1 field-sizing-content max-h-40 min-h-9 resize-none bg-transparent py-1.5 ps-1 pe-2 text-base leading-6 text-foreground outline-none group-data-tall/deck:col-span-3 group-data-tall/deck:col-start-1 group-data-tall/deck:px-[9px] placeholder:text-muted-foreground disabled:opacity-50"></textarea><div class="col-start-3 row-start-1 flex shrink-0 items-center gap-0.5 group-data-tall/deck:row-start-2" style="opacity: 1; filter: blur(0px); transform: none;"><button type="button" tabindex="0" aria-haspopup="menu" id="base-ui-_r_7_" data-slot="dropdown-menu-trigger" class="select-none inline-flex h-9 shrink-0 items-center gap-1 rounded-full ps-3 pe-2 text-sm text-muted-foreground transition-[color,background-color,box-shadow] duration-150 ease-out outline-none hover:bg-foreground/[0.06] hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-40 data-popup-open:bg-foreground/[0.06] data-popup-open:text-foreground dark:hover:bg-foreground/10 dark:data-popup-open:bg-foreground/10" aria-expanded="false"><span class="relative inline-flex justify-end overflow-hidden transition-[width] duration-[180ms] ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none" style="width: 55.875px;"><span aria-hidden="true" class="invisible absolute end-0 top-0 whitespace-nowrap">Opus 5.5</span><span class="whitespace-nowrap" style="opacity: 1; filter: blur(0px); transform: none;">Opus 5.5</span></span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-down size-4"><path d="M6 9l6 6l6 -6"></path></svg></button><button id="base-ui-_r_c_" data-base-ui-tooltip-trigger="" data-slot="tooltip-trigger" type="button" aria-label="Dictate" class="inline-flex size-9 shrink-0 items-center justify-center rounded-full text-muted-foreground transition-[color,background-color,box-shadow,scale] duration-150 ease-out outline-none select-none hover:bg-foreground/[0.06] hover:text-foreground focus-visible:ring-3 focus-visible:ring-ring/50 active:scale-[0.96] motion-reduce:transition-none motion-reduce:active:scale-100 dark:hover:bg-foreground/10 disabled:pointer-events-none disabled:opacity-40"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-microphone size-[18px]"><path d="M9 5a3 3 0 0 1 3 -3a3 3 0 0 1 3 3v5a3 3 0 0 1 -3 3a3 3 0 0 1 -3 -3l0 -5"></path><path d="M5 10a7 7 0 0 0 14 0"></path><path d="M8 21l8 0"></path><path d="M12 17l0 4"></path></svg></button><button id="base-ui-_r_d_" data-base-ui-tooltip-trigger="" data-slot="tooltip-trigger" type="button" aria-label="Start voice mode" class="inline-flex size-9 shrink-0 items-center justify-center rounded-full transition-[color,background-color,box-shadow,scale] duration-200 ease-out outline-none select-none focus-visible:ring-3 focus-visible:ring-ring/50 active:scale-[0.96] disabled:pointer-events-none disabled:opacity-40 motion-reduce:transition-none motion-reduce:active:scale-100 bg-(--voice) text-white hover:bg-[color-mix(in_oklch,var(--voice),black_10%)]"><span class="flex items-center justify-center" style="opacity: 1; transform: none;"><svg viewBox="0 0 24 24" fill="currentColor" class="size-[18px]" aria-hidden="true"><path d="M11 21V3C11 2.44772 11.4477 2 12 2C12.5523 2 13 2.44772 13 3V21C13 21.5523 12.5523 22 12 22C11.4477 22 11 21.5523 11 21Z"></path><path d="M7 17V7C7 6.44772 7.44772 6 8 6C8.55228 6 9 6.44772 9 7V17C9 17.5523 8.55228 18 8 18C7.44772 18 7 17.5523 7 17Z"></path><path d="M5 13V11C5 10.4477 4.55228 10 4 10C3.44772 10 3 10.4477 3 11V13C3 13.5523 3.44772 14 4 14C4.55228 14 5 13.5523 5 13Z"></path><path d="M15 17V7C15 6.44772 15.4477 6 16 6C16.5523 6 17 6.44772 17 7V17C17 17.5523 16.5523 18 16 18C15.4477 18 15 17.5523 15 17Z"></path><path d="M19 13V11C19 10.4477 19.4477 10 20 10C20.5523 10 21 10.4477 21 11V13C21 13.5523 20.5523 14 20 14C19.4477 14 19 13.5523 19 13Z"></path></svg></span></button></div></div></div><div data-voice-beam-bloom="true"></div><div data-voice-beam-warp="inner"></div><div data-voice-beam-warp="bloom"></div><canvas data-voice-beam-band="true" aria-hidden="true"></canvas><div data-voice-beam-core="true"><div></div></div><svg aria-hidden="true" width="0" height="0" style="position: absolute; pointer-events: none;"><filter id="vb-distort-_r_0_" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.0276 0.1150" numOctaves="2" seed="7" result="noise"></feTurbulence><feOffset in="noise" dx="0" dy="0" result="moved"></feOffset><feColorMatrix in="moved" type="matrix" values="1 0 0 0 0  0 0 0 0 0.5  0 0 0 0 0  0 0 0 0 1" result="map"></feColorMatrix><feDisplacementMap in="SourceGraphic" in2="map" scale="0" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap></filter></svg></div><div class="pointer-events-none absolute inset-x-0 bottom-full mb-6 flex justify-center px-4"><div aria-hidden="true" class="invisible absolute flex gap-x-1.5 text-lg leading-snug whitespace-nowrap"><span>Damn,</span><span>I</span><span>think</span><span>Kobra</span><span>might</span><span>just</span><span>be</span><span>the</span><span>greatest</span><span>component</span><span>library</span><span>ever</span></div><p aria-hidden="true" dir="auto" class="flex max-w-96 flex-wrap justify-center gap-x-1.5 text-center text-lg leading-snug text-foreground/80" style="max-width: 291px;"></p><span class="sr-only"></span></div></form>

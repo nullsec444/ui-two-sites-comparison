@@ -1,0 +1,159 @@
+{
+  "component": "movements-chart",
+  "adapter": "components/movements-chart.jsx",
+  "direct_imports": [
+    "recovered/movements/modules/82342.jsx"
+  ],
+  "shared_build_closure": "dependencies/shared-movements.json",
+  "dependency_scope": "Shared comparison bundle dependency closure; not a minimal isolated per-component author dependency list",
+  "packages": {
+    "@base-ui/react": "1.9.0",
+    "@tabler/icons-react": "3.49.0",
+    "motion": "14.5.0",
+    "embla-carousel-react": "8.6.0",
+    "class-variance-authority": "0.7.1",
+    "@kmenu/react": "2.0.4",
+    "kmenu": "2.0.3",
+    "@web-kits/audio": "0.2.0",
+    "input-otp": "1.5.0",
+    "loomix": "1.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "public_module_ids": [
+    82342,
+    31908,
+    45032,
+    33966,
+    45780,
+    87522,
+    95074,
+    16542,
+    18687,
+    22673,
+    23422,
+    64973,
+    11235
+  ],
+  "module_sources": [
+    {
+      "id": 82342,
+      "file": "recovered/movements/modules/82342.jsx",
+      "exports": [
+        "ChartExamples",
+        "ChartTeaser"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 31908,
+      "file": "recovered/movements/modules/31908.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 45032,
+      "file": "recovered/movements/modules/45032.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 33966,
+      "file": "recovered/movements/modules/33966.jsx",
+      "exports": [
+        "CHART_COLORS",
+        "CHART_EASINGS",
+        "CHART_EDGE_FADE_MASK",
+        "CHART_SIZES",
+        "CHART_VIEWBOX",
+        "DEFAULT_CHART_DATA",
+        "buildChartGeometry",
+        "formatChartDataJson",
+        "getChartColor",
+        "getChartSize",
+        "parseChartDataJson",
+        "randomChartData"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 45780,
+      "file": "recovered/movements/modules/45780.jsx",
+      "exports": [
+        "easeCubicInOut"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 87522,
+      "file": "recovered/movements/modules/87522.jsx",
+      "exports": [
+        "quadIn",
+        "quadInOut",
+        "quadOut"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 95074,
+      "file": "recovered/movements/modules/95074.jsx",
+      "exports": [
+        "useThemeStore"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 16542,
+      "file": "recovered/movements/modules/16542.jsx",
+      "exports": [
+        "ExampleCard",
+        "ExperimentLayout"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 18687,
+      "file": "recovered/movements/modules/18687.jsx",
+      "exports": [
+        "LIBRARIES",
+        "UTILITIES",
+        "getCatalogItem"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 22673,
+      "file": "recovered/movements/modules/22673.jsx",
+      "exports": [
+        "clamp",
+        "hexToRgb",
+        "hsvToRgb",
+        "hueToCss",
+        "rgbToHex",
+        "rgbToHsv"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 23422,
+      "file": "recovered/movements/modules/23422.jsx",
+      "exports": [
+        "ACCENT",
+        "CatalogIcon"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 64973,
+      "file": "recovered/movements/modules/64973.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 11235,
+      "file": "recovered/movements/modules/11235.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    }
+  ]
+}

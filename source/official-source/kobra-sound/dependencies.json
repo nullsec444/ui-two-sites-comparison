@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "@web-kits/audio"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/sound.json",
+  "type": "registry:ui"
+}

@@ -1,0 +1,17 @@
+{
+  "policy": "Vite modulepreload asset base is resolved against the comparison frame document. At the local server root it resolves to the same resource URLs as the original helper; under GitHub Pages repository prefix it prevents domain-root /assets failures. Demo functions and original public source copies are unchanged.",
+  "results": [
+    {
+      "file": "dist/build/kobra-reconstructed.js",
+      "replacements": 1
+    },
+    {
+      "file": "dist/build/kobra-original.js",
+      "replacements": 1
+    },
+    {
+      "file": "dist/assets/preload-helper-Czpn1I53.js",
+      "replacements": 1
+    }
+  ]
+}

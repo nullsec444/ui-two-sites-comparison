@@ -1,0 +1,458 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { f as r, l as i, o as a, t as o } from "./auth-B4_ie6aM.js";
+import { n as s } from "./useStore-CeyF0_C9.js";
+import { t as c } from "./link-CKv6YT18.js";
+import { n as l, r as u } from "./auth-form-B7xuKosH.js";
+import { h as d, i as f, n as p } from "./queries-VI_aT-w4.js";
+import { t as m } from "./useSuspenseQuery-qokUvqgA.js";
+import { n as h, t as g } from "./account-shell-CSL5M_sN.js";
+import { t as _ } from "./utils-WkhMP9hs.js";
+import { a as v, o as y } from "./schemas-DULXcl3Q.js";
+import { t as b } from "./button-6T-mn2Pp.js";
+import { l as x, n as S } from "./plans-C5gnmWKf.js";
+import { t as ee } from "./input-n4StpLEZ.js";
+import { a as te, c as C, n as w, o as T, r as E, s as D, t as O } from "./dialog-D5lt4KMe.js";
+import { t as k } from "./IconArrowRight-DerOrAJ3.js";
+import { t as A } from "./code-block-8j4abSW0.js";
+import { _ as ne, c as re, d as ie, f as ae, l as j, m as M, p as N, s as P, u as F, v as I } from "./index-C2FRa1ig.js";
+import { t as L } from "./label-kY8Qa3sh.js";
+import { i as R, n as z, r as B, t as V } from "./input-group-BYgV-9P-.js";
+import { a as H, i as U } from "./registry-B0pwistY.js";
+import { r as W, t as G } from "./seats-bChHQn7R.js";
+var K = e(t(), 1),
+  q = e(n(), 1);
+function oe() {
+  let {
+      data: e
+    } = m(p()),
+    {
+      seat: t,
+      owned: n
+    } = e,
+    r = t ? n.find(e => e.id === t.license_id) : void 0,
+    i = e.seatPlan ? S[e.seatPlan] : null,
+    a = t ? i ? `${i.name} plan` : `Pro plan` : `Free plan`,
+    o = r && i && i.maxSeats > i.minSeats ? {
+      license: r,
+      plan: i
+    } : null;
+  return <section aria-label={`Plan`} className={`flex flex-wrap items-center justify-between gap-6 rounded-2xl bg-muted/50 p-6 sm:p-8 dark:bg-muted/30`}>{[<div className={`space-y-2`}>{[<p className={`text-lg font-medium`}>{a}</p>, <p className={`flex items-baseline gap-2`}>{[<span className={`text-4xl font-bold tracking-tight tabular-nums`}>{i ? x(i.amount) : r ? x(r.amount_total) : `$0`}</span>, t ? <span className={`text-muted-foreground`}>{i && i.maxSeats > i.minSeats ? `per seat` : `once`}</span> : null]}</p>]}</div>, o ? (0, q.jsx)(W, {
+      plan: o.plan,
+      heldSeats: o.license.seats,
+      trigger: (0, q.jsx)(b, {
+        size: `lg`,
+        className: `rounded-full`,
+        children: `Adjust plan`
+      })
+    }) : (0, q.jsx)(b, {
+      variant: t ? `secondary` : `default`,
+      size: `lg`,
+      className: `rounded-full`,
+      nativeButton: !1,
+      render: (0, q.jsx)(c, {
+        to: `/pricing`,
+        hash: `plans`
+      }),
+      children: t ? `Adjust plan` : `Get Pro`
+    })]}</section>;
+}
+function se() {
+  let {
+      data: e
+    } = m(p()),
+    {
+      seat: t,
+      invites: n
+    } = e;
+  return (0, q.jsxs)(q.Fragment, {
+    children: [n.map(e => (0, q.jsx)(M, {
+      label: `A seat is waiting for you`,
+      hint: (0, q.jsxs)(q.Fragment, {
+        children: [`Somebody gave you `, <code className={`font-mono`}>{e.code}</code>, `.`]
+      }),
+      children: (0, q.jsx)(ce, {
+        code: e.code
+      })
+    }, e.id)), t ? null : (0, q.jsx)(M, {
+      label: `Redeem a code`,
+      hint: `A seat code you were sent or bought elsewhere.`,
+      children: (0, q.jsx)(le, {})
+    })]
+  });
+}
+function J() {
+  let e = d(),
+    t = s();
+  return h({
+    mutationFn: e => G({
+      data: {
+        code: e
+      }
+    }),
+    onSuccess: async n => {
+      n.ok && (f(e), await t.invalidate());
+    }
+  });
+}
+var Y = {
+  unknown: `No seat has that code. Check it against the one you were sent.`,
+  taken: `That code has already been used.`,
+  already: `You already hold a seat, so this code is still free for somebody else.`
+};
+function ce({
+  code: e
+}) {
+  let t = J(),
+    n = t.data && !t.data.ok ? Y[t.data.reason] : null;
+  return <div className={`flex items-center gap-3`}>{[n ? <p className={`text-sm text-destructive`}>{n}</p> : null, (0, q.jsx)(b, {
+      variant: `secondary`,
+      className: `rounded-full`,
+      "aria-busy": t.isPending,
+      onClick: () => {
+        t.isPending || t.mutate(e);
+      },
+      children: (0, q.jsx)(l, {
+        busy: t.isPending,
+        children: `Claim seat`
+      })
+    })]}</div>;
+}
+function le() {
+  let e = J(),
+    [t, n] = (0, K.useState)(null),
+    [r, i] = (0, K.useState)(!1),
+    a = e => {
+      n(e), i(!0);
+    },
+    o = u({
+      defaultValues: {
+        code: ``
+      },
+      validators: {
+        onSubmit: v({
+          code: y().trim().min(4, `Enter the whole code`)
+        })
+      },
+      onSubmit: async ({
+        value: t
+      }) => {
+        n(null);
+        try {
+          let n = await e.mutateAsync(t.code);
+          n.ok || a(Y[n.reason]);
+        } catch (e) {
+          a(e instanceof Error ? e.message : `Could not redeem that code`);
+        }
+      }
+    });
+  return <form className={`space-y-2`} onSubmit={e => {
+    e.preventDefault(), o.handleSubmit();
+  }}>{[(0, q.jsx)(o.Field, {
+      name: `code`,
+      children: e => <div className={`space-y-2`}>{[(0, q.jsx)(L, {
+          htmlFor: `seat-code`,
+          className: `sr-only`,
+          children: `Seat code`
+        }), (0, q.jsxs)(V, {
+          className: _(`w-64 rounded-full`, r && `is-shaking`),
+          onAnimationEnd: () => i(!1),
+          children: [(0, q.jsx)(R, {
+            id: `seat-code`,
+            placeholder: `KOBRA-XXXX-XXXX`,
+            className: `font-mono`,
+            "aria-invalid": t ? !0 : void 0,
+            value: e.state.value,
+            onBlur: e.handleBlur,
+            onChange: t => {
+              n(null), e.handleChange(t.target.value.toUpperCase());
+            }
+          }), (0, q.jsx)(z, {
+            align: `inline-end`,
+            children: (0, q.jsx)(o.Subscribe, {
+              selector: e => e.isSubmitting,
+              children: t => (0, q.jsx)(B, {
+                type: `submit`,
+                size: `icon-xs`,
+                "aria-label": `Redeem this code`,
+                disabled: t || e.state.value.trim() === ``,
+                children: (0, q.jsx)(k, {})
+              })
+            })
+          })]
+        }), e.state.meta.errors.find(Boolean)?.message ? <p className={`text-sm text-destructive`}>{e.state.meta.errors.find(Boolean)?.message}</p> : null]}</div>
+    }), t ? <p role={`alert`} className={`text-sm text-destructive`}>{t}</p> : null]}</form>;
+}
+var ue = i({
+    method: `POST`
+  }).middleware([o]).handler(r(`62249d152f87f033438da158829f43fdf97c0fa501445ba49374de7759477dc5`)),
+  de = `mailto:support@kobra.systems?subject=Delete%20my%20account`,
+  X = {
+    mismatch: `That is not the email on this account.`,
+    teammates: `This account owns seats other people are using. Email support and we will move the license before closing it.`
+  };
+function Z({
+  email: e
+}) {
+  let t = d(),
+    n = s(),
+    r = (0, K.useId)(),
+    [i, a] = (0, K.useState)(!1),
+    [o, c] = (0, K.useState)(``),
+    [u, p] = (0, K.useState)(null),
+    [m, h] = (0, K.useState)(!1),
+    [g, v] = (0, K.useState)(!1),
+    y = e => {
+      p(e), h(!0);
+    },
+    x = e => {
+      a(e), !e && (c(``), p(null), h(!1));
+    },
+    S = async () => {
+      if (!e || o.trim().toLowerCase() !== e.toLowerCase()) {
+        y(X.mismatch);
+        return;
+      }
+      v(!0);
+      try {
+        let e = await ue({
+          data: {
+            email: o
+          }
+        });
+        if (!e.ok) {
+          y(X[e.reason]);
+          return;
+        }
+        I(t), f(t), j(t), await n.invalidate(), await n.navigate({
+          to: `/`
+        });
+      } catch (e) {
+        y(e instanceof Error ? e.message : `Could not delete the account`);
+      } finally {
+        v(!1);
+      }
+    };
+  return (0, q.jsx)(M, {
+    label: `Delete account`,
+    hint: `Your seat, your purchases and your registry token go with it.`,
+    children: (0, q.jsxs)(E, {
+      open: i,
+      onOpenChange: x,
+      children: [(0, q.jsx)(b, {
+        variant: `destructive`,
+        className: `rounded-full`,
+        onClick: () => a(!0),
+        children: `Delete`
+      }), (0, q.jsx)(w, {
+        size: `sm`,
+        className: `p-5`,
+        children: <form className={`space-y-5`} onSubmit={e => {
+          e.preventDefault(), g || S();
+        }}>{[(0, q.jsxs)(D, {
+            children: [(0, q.jsx)(C, {
+              children: `Delete this account?`
+            }), (0, q.jsxs)(te, {
+              children: [`This cannot be undone. Type `, <span className={`text-foreground`}>{e}</span>, ` to confirm.`]
+            })]
+          }), <div className={`space-y-2`}>{[(0, q.jsx)(L, {
+              htmlFor: r,
+              className: `sr-only`,
+              children: `Your email address`
+            }), (0, q.jsx)(ee, {
+              id: r,
+              type: `email`,
+              autoComplete: `off`,
+              autoFocus: !0,
+              placeholder: e ?? ``,
+              value: o,
+              "aria-invalid": u ? !0 : void 0,
+              "aria-describedby": u ? `${r}-error` : void 0,
+              onChange: e => {
+                c(e.target.value), p(null);
+              },
+              onAnimationEnd: () => h(!1),
+              className: _(m && `is-shaking`)
+            }), u ? <p id={`${r}-error`} role={`alert`} className={`text-sm text-destructive`}>{u}</p> : null, u === X.teammates ? <p className={`text-sm text-muted-foreground`}>{<a href={de} className={`underline underline-offset-4`}>{`support@kobra.systems`}</a>}</p> : null]}</div>, (0, q.jsxs)(T, {
+            children: [(0, q.jsx)(O, {
+              type: `button`,
+              disabled: g,
+              children: `Cancel`
+            }), (0, q.jsx)(b, {
+              type: `submit`,
+              variant: `destructive`,
+              "aria-busy": g,
+              children: (0, q.jsx)(l, {
+                busy: g,
+                children: `Delete account`
+              })
+            })]
+          })]}</form>
+      })]
+    })
+  });
+}
+var Q = {
+    date: {
+      dateStyle: `medium`
+    },
+    time: {
+      timeStyle: `short`
+    },
+    datetime: {
+      dateStyle: `medium`,
+      timeStyle: `short`
+    }
+  },
+  fe = () => () => {},
+  pe = () => !0,
+  me = () => !1;
+function $({
+  value: e,
+  shape: t = `date`
+}) {
+  let n = (0, K.useSyncExternalStore)(fe, pe, me),
+    r = new Date(e);
+  return <time dateTime={e}>{n ? r.toLocaleString(void 0, Q[t]) : r.toLocaleString(`en-GB`, {
+      ...Q[t],
+      timeZone: `UTC`
+    })}</time>;
+}
+function he() {
+  let {
+      data: e
+    } = m(re()),
+    t = d(),
+    n = s(),
+    [r, i] = (0, K.useState)(null),
+    [a, o] = (0, K.useState)(null),
+    c = async () => {
+      o(null), j(t), await n.invalidate();
+    },
+    u = (e, t) => o(e instanceof Error ? e.message : t),
+    f = h({
+      mutationFn: () => F(),
+      onSuccess: async ({
+        token: e
+      }) => {
+        i(e), await c();
+      },
+      onError: e => u(e, `Could not create a token`)
+    }),
+    p = h({
+      mutationFn: () => ie(),
+      onSuccess: async () => {
+        i(null), await c();
+      },
+      onError: e => u(e, `Could not revoke the token`)
+    }),
+    g = f.isPending || p.isPending,
+    _ = r ? (0, q.jsxs)(q.Fragment, {
+      children: [`Put it in your environment as `, <code className={`font-mono`}>{H}</code>, `; the registry entry below reads it from there, and Downloads can show it to you again:`]
+    }) : e ? (0, q.jsxs)(q.Fragment, {
+      children: [`Created `, (0, q.jsx)($, {
+        value: e.createdAt
+      }), `, last used`, ` `, e.lastUsedAt ? (0, q.jsx)($, {
+        value: e.lastUsedAt
+      }) : `never`]
+    }) : `Install paid components from the shadcn CLI.`;
+  return (0, q.jsxs)(q.Fragment, {
+    children: [(0, q.jsxs)(M, {
+      id: `registry`,
+      label: `Registry token`,
+      hint: _,
+      className: `last:border-b`,
+      children: [(0, q.jsx)(b, {
+        variant: `secondary`,
+        className: `rounded-full`,
+        "aria-busy": f.isPending,
+        onClick: () => {
+          g || f.mutate();
+        },
+        children: (0, q.jsx)(l, {
+          busy: f.isPending,
+          children: e ? `Regenerate` : `Generate token`
+        })
+      }), e ? (0, q.jsx)(b, {
+        variant: `destructive`,
+        className: `rounded-full`,
+        "aria-busy": p.isPending,
+        onClick: () => {
+          g || p.mutate();
+        },
+        children: (0, q.jsx)(l, {
+          busy: p.isPending,
+          children: `Revoke`
+        })
+      }) : null]
+    }), r ? <div className={`space-y-3 border-b border-border py-5`}>{[(0, q.jsx)(A, {
+        code: `export ${H}=${r}`,
+        filename: `Terminal`,
+        download: !1,
+        language: `sh`,
+        lineNumbers: !1
+      }), (0, q.jsx)(A, {
+        code: U,
+        filename: `components.json`,
+        language: `ts`,
+        lineNumbers: !1
+      })]}</div> : null, a ? <p role={`alert`} className={`py-3 text-sm text-destructive`}>{a}</p> : null]
+  });
+}
+function ge() {
+  let {
+      user: e
+    } = P.useRouteContext(),
+    {
+      purchase: t
+    } = P.useSearch(),
+    {
+      data: n
+    } = m(ne()),
+    r = s(),
+    i = d(),
+    [o, c] = (0, K.useState)(!1);
+  (0, K.useEffect)(() => {
+    t && r.navigate({
+      to: `/dashboard`,
+      replace: !0
+    });
+  }, [t, r]);
+  async function u() {
+    c(!0), await a({
+      data: {
+        everywhere: !0
+      }
+    }), I(i), f(i), j(i), i.removeQueries({
+      queryKey: N().queryKey
+    }), await r.invalidate(), await r.navigate({
+      to: `/`
+    });
+  }
+  let p = n?.email ?? e.email ?? null;
+  return (0, q.jsxs)(g, {
+    current: `account`,
+    children: [<h1 className={`text-2xl font-semibold tracking-tight sm:text-3xl`}>{`Account`}</h1>, <div className={`mt-8 sm:mt-10`}>{(0, q.jsx)(oe, {})}</div>, <div className={`mt-6`}>{[(0, q.jsx)(se, {}), (0, q.jsx)(ae, {}), (0, q.jsx)(he, {}), (0, q.jsx)(M, {
+        label: `Email`,
+        children: <span className={`text-muted-foreground`}>{p ?? `—`}</span>
+      }), (0, q.jsx)(M, {
+        label: `Log out of all devices`,
+        children: (0, q.jsx)(b, {
+          variant: `secondary`,
+          className: `rounded-full`,
+          "aria-busy": o,
+          onClick: () => {
+            o || u();
+          },
+          children: (0, q.jsx)(l, {
+            busy: o,
+            children: `Log out`
+          })
+        })
+      }), (0, q.jsx)(Z, {
+        email: p
+      })]}</div>]
+  });
+}
+export { ge as component };

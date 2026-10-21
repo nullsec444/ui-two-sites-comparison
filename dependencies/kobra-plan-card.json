@@ -1,0 +1,23 @@
+{
+  "component": "kobra-plan-card",
+  "adapter": "components/kobra-plan-card.jsx",
+  "direct_imports": [
+    "recovered/kobra/demo.jsx"
+  ],
+  "shared_build_closure": "dependencies/shared-kobra.json",
+  "dependency_scope": "Shared comparison bundle dependency closure; not a minimal isolated per-component author dependency list",
+  "packages": {
+    "@base-ui/react": "1.9.0",
+    "@tabler/icons-react": "3.49.0",
+    "motion": "14.5.0",
+    "embla-carousel-react": "8.6.0",
+    "class-variance-authority": "0.7.1",
+    "@kmenu/react": "2.0.4",
+    "kmenu": "2.0.3",
+    "@web-kits/audio": "0.2.0",
+    "input-otp": "1.5.0",
+    "loomix": "1.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  }
+}

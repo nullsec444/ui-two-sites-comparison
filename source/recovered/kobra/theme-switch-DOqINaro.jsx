@@ -1,0 +1,74 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e, r as t } from "./rolldown-runtime-B0Z9INg1.js";
+import { t as n } from "./react-dom-U4kpXZKZ.js";
+import { t as r } from "./createReactComponent-DqK5J7gw.js";
+var i = r(`outline`, `moon`, `Moon`, [[`path`, {
+    d: `M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008`,
+    key: `svg-0`
+  }]]),
+  a = r(`outline`, `sun`, `Sun`, [[`path`, {
+    d: `M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7`,
+    key: `svg-1`
+  }]]),
+  o = t({
+    switchTheme: () => c
+  }),
+  s = e(n(), 1);
+function c(e) {
+  if (typeof document > `u` || !(`startViewTransition` in document)) {
+    e();
+    return;
+  }
+  let t = u();
+  document.startViewTransition(() => {
+    (0, s.flushSync)(e);
+  }).finished.finally(t);
+}
+var l = [`pointerout`, `pointerleave`, `mouseout`, `mouseleave`];
+function u() {
+  let e = document.documentElement,
+    t = [...document.querySelectorAll(`:hover`)].at(-1) ?? null,
+    n = null,
+    r = null,
+    i = e => {
+      n = e.clientX, r = e.clientY;
+    },
+    a = t => {
+      let n = t.relatedTarget;
+      (n === e || n === null) && t.stopPropagation();
+    };
+  document.addEventListener(`pointermove`, i, !0);
+  for (let e of l) document.addEventListener(e, a, !0);
+  return () => {
+    document.removeEventListener(`pointermove`, i, !0);
+    for (let e of l) document.removeEventListener(e, a, !0);
+    if (!t || n === null || r === null) return;
+    let o = document.elementFromPoint(n, r);
+    if (o && t.contains(o)) return;
+    let s = o ?? e,
+      c = {
+        bubbles: !0,
+        clientX: n,
+        clientY: r,
+        relatedTarget: s
+      };
+    t.dispatchEvent(new PointerEvent(`pointerout`, {
+      ...c,
+      pointerType: `mouse`
+    })), t.dispatchEvent(new MouseEvent(`mouseout`, c));
+    let u = s;
+    for (; u && !u.contains(t);) u = u.parentElement;
+    for (let e = t; e && e !== u; e = e.parentElement) e.dispatchEvent(new PointerEvent(`pointerleave`, {
+      ...c,
+      bubbles: !1,
+      pointerType: `mouse`
+    })), e.dispatchEvent(new MouseEvent(`mouseleave`, {
+      ...c,
+      bubbles: !1
+    }));
+  };
+}
+export { i, o as n, a as r, c as t };

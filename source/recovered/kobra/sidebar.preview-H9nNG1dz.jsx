@@ -1,0 +1,326 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as r } from "./utils-WkhMP9hs.js";
+import { S as i, V as a, _t as o, g as s, gr as c, h as l, hr as u, vt as d, yt as f } from "./use-narrow-shell-CsfKh4xy.js";
+import { a as p, i as m, n as h, r as g } from "./component-gallery-DKIbyCvz.js";
+import { i as _, n as v, t as y } from "./input-group-BYgV-9P-.js";
+var b = e(t()),
+  x = e(n()),
+  S = [{
+    value: `icon`,
+    label: `Icon`
+  }, {
+    value: `offcanvas`,
+    label: `Offcanvas`
+  }, {
+    value: `none`,
+    label: `None`
+  }],
+  C = [{
+    value: `sidebar`,
+    label: `Sidebar`
+  }, {
+    value: `floating`,
+    label: `Floating`
+  }, {
+    value: `inset`,
+    label: `Inset`
+  }],
+  w = [{
+    value: `single`,
+    label: `Single`
+  }, {
+    value: `double`,
+    label: `Double`
+  }],
+  T = [{
+    value: `left`,
+    label: `Left`
+  }, {
+    value: `right`,
+    label: `Right`
+  }],
+  E = [{
+    value: `grouped`,
+    label: `Grouped`
+  }, {
+    value: `collapsible`,
+    label: `Collapsible`
+  }, {
+    value: `off`,
+    label: `Off`
+  }],
+  D = [{
+    value: `separators`,
+    label: `Separators`
+  }, {
+    value: `badges`,
+    label: `Badges`
+  }, {
+    value: `filled`,
+    label: `Filled icons`
+  }, {
+    value: `line`,
+    label: `Active line`
+  }, {
+    value: `footer`,
+    label: `Footer`
+  }],
+  O = [{
+    value: `collapse`,
+    label: `Collapse`
+  }, {
+    value: `highlight`,
+    label: `Highlight`
+  }, {
+    value: `line`,
+    label: `Active line`
+  }, {
+    value: `lean`,
+    label: `Lean`
+  }, {
+    value: `press`,
+    label: `Press`
+  }, {
+    value: `tooltips`,
+    label: `Tooltips`
+  }, {
+    value: `folding`,
+    label: `Folding`
+  }, {
+    value: `switch`,
+    label: `Team switch`
+  }],
+  k = 160,
+  A = 480,
+  j = 40;
+function M() {
+  let [e, t] = (0, b.useState)(!0),
+    [n, a] = (0, b.useState)(`icon`),
+    [o, c] = (0, b.useState)(`sidebar`),
+    [u, d] = (0, b.useState)(`single`),
+    [f, _] = (0, b.useState)(`left`),
+    [v, y] = (0, b.useState)(!1),
+    [M, L] = (0, b.useState)(200),
+    [R, z] = (0, b.useState)(360),
+    [B, V] = (0, b.useState)(`grouped`),
+    [H, U] = (0, b.useState)(() => D.map(({
+      value: e
+    }) => e)),
+    [W, G] = (0, b.useState)(() => O.map(({
+      value: e
+    }) => e).filter(e => e !== `lean`)),
+    {
+      inspect: K,
+      setInspect: q,
+      inspector: J
+    } = g(),
+    Y = s();
+  return (0, x.jsxs)(m, {
+    open: e,
+    onOpenChange: t,
+    variant: o,
+    layout: u,
+    collapsible: n,
+    side: f,
+    sections: B,
+    resizable: v,
+    minWidth: M,
+    maxWidth: R,
+    show: H,
+    moves: W,
+    toolbar: (0, x.jsx)(h, {
+      component: `Sidebar`,
+      inspect: K,
+      onInspectChange: q
+    }),
+    children: [<div className={`relative min-h-0 flex-1`}>{<div className={r(`pointer-events-none fixed inset-0 z-30 grid place-items-center p-3 max-sm:items-end sm:absolute sm:p-6`, f === `left` ? `sm:start-(--sidebar-slot-offset)` : `sm:end-(--sidebar-slot-offset)`)}>{<div className={`pointer-events-auto w-full space-y-2 rounded-xl border bg-card px-4 py-3 text-sm text-muted-foreground shadow-xs sm:max-w-96`}>{[(0, x.jsx)(N, {
+            id: `sidebar-collapsed`,
+            label: `Collapsed`,
+            children: (0, x.jsx)(i, {
+              id: `sidebar-collapsed`,
+              checked: !e,
+              disabled: n === `none` || u === `double`,
+              onCheckedChange: e => t(!e)
+            })
+          }), (0, x.jsx)(P, {
+            id: `sidebar-collapsible`,
+            label: `Collapsible`,
+            value: n,
+            options: S,
+            onChange: e => {
+              a(e), e === `none` && t(!0);
+            },
+            disabled: u === `double`
+          }), (0, x.jsx)(P, {
+            id: `sidebar-variant`,
+            label: `Variant`,
+            value: o,
+            options: C,
+            onChange: c
+          }), (0, x.jsx)(P, {
+            id: `sidebar-layout`,
+            label: `Layout`,
+            value: u,
+            options: w,
+            onChange: e => {
+              d(e), e === `double` && t(!0);
+            }
+          }), (0, x.jsx)(P, {
+            id: `sidebar-side`,
+            label: `Side`,
+            value: f,
+            options: T,
+            onChange: _
+          }), <div>{[(0, x.jsx)(N, {
+              id: `sidebar-resizable`,
+              label: `Resizable`,
+              children: (0, x.jsx)(i, {
+                id: `sidebar-resizable`,
+                checked: v,
+                onCheckedChange: y
+              })
+            }), <div className={r(`grid transition-[grid-template-rows] ease-out motion-reduce:transition-none`, v ? `grid-rows-[1fr] duration-200` : `grid-rows-[0fr] duration-150`)}>{<div inert={!v} className={`min-h-0 overflow-hidden`}>{<div className={`space-y-2 pt-2`}>{[(0, x.jsx)(I, {
+                    id: `sidebar-min-width`,
+                    label: `Min width`,
+                    value: M,
+                    range: [k, R - j],
+                    shown: v,
+                    onChange: L
+                  }), (0, x.jsx)(I, {
+                    id: `sidebar-max-width`,
+                    label: `Max width`,
+                    value: R,
+                    range: [M + j, A],
+                    shown: v,
+                    onChange: z,
+                    className: v ? `delay-50` : void 0
+                  })]}</div>}</div>}</div>]}</div>, (0, x.jsx)(P, {
+            id: `sidebar-sections`,
+            label: `Sections`,
+            value: B,
+            options: E,
+            onChange: V,
+            disabled: u === `double`
+          }), (0, x.jsx)(F, {
+            id: `sidebar-show`,
+            label: `Show`,
+            value: H,
+            options: D,
+            onChange: U
+          }), (0, x.jsx)(F, {
+            id: `sidebar-motion`,
+            label: `Animation`,
+            value: W,
+            options: O,
+            onChange: G
+          })]}</div>}</div>}</div>, (0, x.jsx)(p, {
+      component: `Sidebar`,
+      open: Y,
+      onClose: () => l(!1)
+    }), J]
+  });
+}
+function N({
+  id: e,
+  label: t,
+  className: n,
+  children: i
+}) {
+  return <label htmlFor={e} className={r(`flex cursor-pointer flex-wrap items-center justify-between gap-x-6 gap-y-1 has-disabled:cursor-default`, n)}>{[t, i]}</label>;
+}
+function P({
+  id: e,
+  label: t,
+  value: n,
+  options: r,
+  onChange: i,
+  disabled: a = !1
+}) {
+  return (0, x.jsx)(N, {
+    id: e,
+    label: t,
+    children: (0, x.jsx)(u, {
+      id: e,
+      size: `sm`,
+      value: n,
+      disabled: a,
+      className: `w-36`,
+      onChange: e => {
+        i(e.target.value);
+      },
+      children: r.map(e => (0, x.jsx)(c, {
+        value: e.value,
+        children: e.label
+      }, e.value))
+    })
+  });
+}
+function F({
+  id: e,
+  label: t,
+  value: n,
+  options: r,
+  onChange: i
+}) {
+  return <div className={`space-y-1.5 pt-1`}>{[<label htmlFor={e} className={`block`}>{t}</label>, (0, x.jsxs)(a, {
+      id: e,
+      items: r.map(e => e.label),
+      value: r.filter(e => n.includes(e.value)).map(e => e.label),
+      onValueChange: e => {
+        i(r.filter(t => e.includes(t.label)).map(e => e.value));
+      },
+      placeholder: `None`,
+      className: `w-full`,
+      children: [(0, x.jsx)(o, {
+        children: `Nothing matches.`
+      }), (0, x.jsx)(f, {
+        children: e => (0, x.jsx)(d, {
+          value: e,
+          children: e
+        }, e)
+      })]
+    })]}</div>;
+}
+function I({
+  id: e,
+  label: t,
+  value: n,
+  range: [i, a],
+  shown: o,
+  onChange: s,
+  className: c
+}) {
+  let [l, u] = (0, b.useState)(String(n));
+  return (0, x.jsx)(N, {
+    id: e,
+    label: t,
+    className: r(`transition-[opacity,translate] ease-out motion-reduce:transition-none`, o ? `translate-y-0 opacity-100 duration-200` : `-translate-y-1 opacity-0 duration-150`, c),
+    children: (0, x.jsxs)(y, {
+      className: `w-36`,
+      children: [(0, x.jsx)(_, {
+        id: e,
+        type: `number`,
+        inputMode: `numeric`,
+        min: i,
+        max: a,
+        step: 10,
+        value: l,
+        onChange: e => {
+          u(e.target.value);
+          let t = Number(e.target.value);
+          Number.isInteger(t) && t >= i && t <= a && s(t);
+        },
+        onBlur: () => {
+          let e = Math.min(a, Math.max(i, Math.round(Number(l) || n)));
+          u(String(e)), s(e);
+        }
+      }), (0, x.jsx)(v, {
+        align: `inline-end`,
+        children: `px`
+      })]
+    })
+  });
+}
+export { M as component };

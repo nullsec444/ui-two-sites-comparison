@@ -1,0 +1,14 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "@tabler/icons-react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "@kobra/orb",
+    "@kobra/streaming-text",
+    "@kobra/text-shimmer"
+  ],
+  "source_url": "https://kobra.systems/r/ai-editor.json",
+  "type": "registry:ui"
+}

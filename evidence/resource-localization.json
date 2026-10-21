@@ -1,0 +1,476 @@
+{
+  "policy": "Only resource URLs rewritten to relative paths; downloaded donor bytes are unchanged. CSS font URLs localized. Public source copies are unchanged.",
+  "results": [
+    {
+      "url": "https://kobra.systems/media/turks-and-caicos.webm",
+      "file": "dist/media/turks-and-caicos.webm",
+      "status": 200,
+      "bytes": 290012891
+    },
+    {
+      "url": "https://kobra.systems/images/previews/turks-and-caicos-poster.webp",
+      "file": "dist/images/previews/turks-and-caicos-poster.webp",
+      "status": "already_fetched",
+      "bytes": 89296
+    },
+    {
+      "url": "https://kobra.systems/images/previews/reading-01.webp",
+      "file": "dist/images/previews/reading-01.webp",
+      "status": "already_fetched",
+      "bytes": 52406
+    },
+    {
+      "url": "https://kobra.systems/images/previews/reading-02.webp",
+      "file": "dist/images/previews/reading-02.webp",
+      "status": "already_fetched",
+      "bytes": 24264
+    },
+    {
+      "url": "https://kobra.systems/images/carousel/1.webp",
+      "file": "dist/images/carousel/1.webp",
+      "status": "already_fetched",
+      "bytes": 41786
+    },
+    {
+      "url": "https://kobra.systems/images/advertisement/kobra.png",
+      "file": "dist/images/advertisement/kobra.png",
+      "status": "already_fetched",
+      "bytes": 33246
+    },
+    {
+      "url": "https://kobra.systems/images/advertisement/kobra-light.png",
+      "file": "dist/images/advertisement/kobra-light.png",
+      "status": "already_fetched",
+      "bytes": 14499
+    },
+    {
+      "url": "https://kobra.systems/images/advertisement/krafa.webp",
+      "file": "dist/images/advertisement/krafa.webp",
+      "status": "already_fetched",
+      "bytes": 37880
+    },
+    {
+      "url": "https://kobra.systems/images/carousel/2.webp",
+      "file": "dist/images/carousel/2.webp",
+      "status": "already_fetched",
+      "bytes": 99892
+    },
+    {
+      "url": "https://kobra.systems/images/carousel/3.webp",
+      "file": "dist/images/carousel/3.webp",
+      "status": "already_fetched",
+      "bytes": 65686
+    },
+    {
+      "url": "https://kobra.systems/images/carousel/4.webp",
+      "file": "dist/images/carousel/4.webp",
+      "status": "already_fetched",
+      "bytes": 75058
+    },
+    {
+      "url": "https://kobra.systems/images/carousel/5.webp",
+      "file": "dist/images/carousel/5.webp",
+      "status": "already_fetched",
+      "bytes": 130010
+    },
+    {
+      "url": "https://kobra.systems/images/previews/profile.webp",
+      "file": "dist/images/previews/profile.webp",
+      "status": "already_fetched",
+      "bytes": 12762
+    },
+    {
+      "url": "https://kobra.systems/images/previews/click-me.png",
+      "file": "dist/images/previews/click-me.png",
+      "status": "already_fetched",
+      "bytes": 17739
+    },
+    {
+      "url": "https://kobra.systems/images/previews/select-some-text.png",
+      "file": "dist/images/previews/select-some-text.png",
+      "status": "already_fetched",
+      "bytes": 23827
+    },
+    {
+      "url": "https://kobra.systems/images/previews/florianapolis.webp",
+      "file": "dist/images/previews/florianapolis.webp",
+      "status": "already_fetched",
+      "bytes": 147728
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/rocket.webp",
+      "file": "dist/images/halftone/rocket.webp",
+      "status": "already_fetched",
+      "bytes": 44810
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/rocket-backdrop.webp",
+      "file": "dist/images/halftone/rocket-backdrop.webp",
+      "status": "already_fetched",
+      "bytes": 10926
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/servers.webp",
+      "file": "dist/images/halftone/servers.webp",
+      "status": "already_fetched",
+      "bytes": 38494
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/servers-backdrop.webp",
+      "file": "dist/images/halftone/servers-backdrop.webp",
+      "status": "already_fetched",
+      "bytes": 16820
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/bridge.webp",
+      "file": "dist/images/halftone/bridge.webp",
+      "status": "already_fetched",
+      "bytes": 43040
+    },
+    {
+      "url": "https://kobra.systems/images/halftone/bridge-backdrop.webp",
+      "file": "dist/images/halftone/bridge-backdrop.webp",
+      "status": "already_fetched",
+      "bytes": 22320
+    },
+    {
+      "url": "https://kobra.systems/images/previews/filter.png",
+      "file": "dist/images/previews/filter.png",
+      "status": "already_fetched",
+      "bytes": 25182
+    },
+    {
+      "url": "https://kobra.systems/brand/logomark-light.png",
+      "file": "dist/brand/logomark-light.png",
+      "status": "already_fetched",
+      "bytes": 14499
+    },
+    {
+      "url": "https://kobra.systems/brand/logomark-dark.png",
+      "file": "dist/brand/logomark-dark.png",
+      "status": "already_fetched",
+      "bytes": 33246
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/folded-roof-640.webp",
+      "file": "dist/images/lightbox/folded-roof-640.webp",
+      "status": "already_fetched",
+      "bytes": 12796
+    },
+    {
+      "url": "https://kobra.systems/images/features/1-light.webp",
+      "file": "dist/images/features/1-light.webp",
+      "status": "already_fetched",
+      "bytes": 115488
+    },
+    {
+      "url": "https://kobra.systems/images/features/1-dark.webp",
+      "file": "dist/images/features/1-dark.webp",
+      "status": "already_fetched",
+      "bytes": 100206
+    },
+    {
+      "url": "https://kobra.systems/images/features/2.webp",
+      "file": "dist/images/features/2.webp",
+      "status": "already_fetched",
+      "bytes": 63262
+    },
+    {
+      "url": "https://kobra.systems/images/features/3.webp",
+      "file": "dist/images/features/3.webp",
+      "status": "already_fetched",
+      "bytes": 71938
+    },
+    {
+      "url": "https://kobra.systems/fonts/abc-diatype-regular.woff2",
+      "file": "dist/fonts/abc-diatype-regular.woff2",
+      "status": "already_fetched",
+      "bytes": 34324
+    },
+    {
+      "url": "https://kobra.systems/fonts/abc-diatype-bold.woff2",
+      "file": "dist/fonts/abc-diatype-bold.woff2",
+      "status": "already_fetched",
+      "bytes": 36488
+    },
+    {
+      "url": "https://kobra.systems/brand/favicon-light.png",
+      "file": "dist/brand/favicon-light.png",
+      "status": "already_fetched",
+      "bytes": 2992
+    },
+    {
+      "url": "https://kobra.systems/brand/favicon-dark.png",
+      "file": "dist/brand/favicon-dark.png",
+      "status": "already_fetched",
+      "bytes": 3094
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/curved-wall-640.webp",
+      "file": "dist/images/lightbox/curved-wall-640.webp",
+      "status": 200,
+      "bytes": 12168
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/lone-palm-640.webp",
+      "file": "dist/images/lightbox/lone-palm-640.webp",
+      "status": 200,
+      "bytes": 9006
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/quiet-stair-640.webp",
+      "file": "dist/images/lightbox/quiet-stair-640.webp",
+      "status": 200,
+      "bytes": 10956
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/white-block-640.webp",
+      "file": "dist/images/lightbox/white-block-640.webp",
+      "status": 200,
+      "bytes": 21940
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/lamp-and-books-640.webp",
+      "file": "dist/images/lightbox/lamp-and-books-640.webp",
+      "status": 200,
+      "bytes": 31080
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/lone-cloud-640.webp",
+      "file": "dist/images/lightbox/lone-cloud-640.webp",
+      "status": 200,
+      "bytes": 43662
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/round-window-640.webp",
+      "file": "dist/images/lightbox/round-window-640.webp",
+      "status": 200,
+      "bytes": 8526
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/afternoon-shadow-640.webp",
+      "file": "dist/images/lightbox/afternoon-shadow-640.webp",
+      "status": 200,
+      "bytes": 19406
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/golden-hills-640.webp",
+      "file": "dist/images/lightbox/golden-hills-640.webp",
+      "status": 200,
+      "bytes": 29936
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/white-curve-1280.webp",
+      "file": "dist/images/lightbox/white-curve-1280.webp",
+      "status": 200,
+      "bytes": 28292
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/window-seat-1280.webp",
+      "file": "dist/images/lightbox/window-seat-1280.webp",
+      "status": 200,
+      "bytes": 43964
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/lake-at-dusk-1280.webp",
+      "file": "dist/images/lightbox/lake-at-dusk-1280.webp",
+      "status": 200,
+      "bytes": 27652
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/stepped-facade-1280.webp",
+      "file": "dist/images/lightbox/stepped-facade-1280.webp",
+      "status": 200,
+      "bytes": 48940
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/curtain-light-1280.webp",
+      "file": "dist/images/lightbox/curtain-light-1280.webp",
+      "status": 200,
+      "bytes": 155316
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/dune-1280.webp",
+      "file": "dist/images/lightbox/dune-1280.webp",
+      "status": 200,
+      "bytes": 109768
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/folded-roof-1280.webp",
+      "file": "dist/images/lightbox/folded-roof-1280.webp",
+      "status": 200,
+      "bytes": 35814
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/arched-doorway-1280.webp",
+      "file": "dist/images/lightbox/arched-doorway-1280.webp",
+      "status": 200,
+      "bytes": 25690
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/river-delta-1280.webp",
+      "file": "dist/images/lightbox/river-delta-1280.webp",
+      "status": 200,
+      "bytes": 64592
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/garden-wall-1280.webp",
+      "file": "dist/images/lightbox/garden-wall-1280.webp",
+      "status": 200,
+      "bytes": 91914
+    },
+    {
+      "url": "https://kobra.systems/images/lightbox/ladder-and-stool-1280.webp",
+      "file": "dist/images/lightbox/ladder-and-stool-1280.webp",
+      "status": 200,
+      "bytes": 27368
+    },
+    {
+      "url": "https://kobra.systems/images/qr-code/btc.svg",
+      "file": "dist/images/qr-code/btc.svg",
+      "status": 200,
+      "bytes": 953
+    },
+    {
+      "url": "https://kobra.systems/fonts/departure-mono.woff2",
+      "file": "dist/fonts/departure-mono.woff2",
+      "status": "already_fetched",
+      "bytes": 22496
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/e390973e931a41c5-s.0rgnxg2b64rzs.woff2",
+      "file": "dist/_next/static/media/e390973e931a41c5-s.0rgnxg2b64rzs.woff2",
+      "status": 200,
+      "bytes": 4348
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/59b15b4bcd7b1eb5-s.2vemzm0itqzfy.woff2",
+      "file": "dist/_next/static/media/59b15b4bcd7b1eb5-s.2vemzm0itqzfy.woff2",
+      "status": 200,
+      "bytes": 5476
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2",
+      "file": "dist/_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2",
+      "status": 200,
+      "bytes": 4000,
+      "verified_original_url": "https://movements.dev/_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/2fe89d53234c61d4-s.1u30mmyq6lnsd.woff2",
+      "file": "dist/_next/static/media/2fe89d53234c61d4-s.1u30mmyq6lnsd.woff2",
+      "status": 200,
+      "bytes": 8860
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2",
+      "file": "dist/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2",
+      "status": 200,
+      "bytes": 10052,
+      "verified_original_url": "https://movements.dev/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/5e05ae5b48faa55e-s.1yd4_i3e35931.woff2",
+      "file": "dist/_next/static/media/5e05ae5b48faa55e-s.1yd4_i3e35931.woff2",
+      "status": 200,
+      "bytes": 4336
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2",
+      "file": "dist/_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2",
+      "status": 200,
+      "bytes": 5500,
+      "verified_original_url": "https://movements.dev/_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2",
+      "file": "dist/_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2",
+      "status": 200,
+      "bytes": 4036,
+      "verified_original_url": "https://movements.dev/_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/68757d6cddeff913-s.1i-sca43-qwng.woff2",
+      "file": "dist/_next/static/media/68757d6cddeff913-s.1i-sca43-qwng.woff2",
+      "status": 200,
+      "bytes": 8848
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2",
+      "file": "dist/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2",
+      "status": 200,
+      "bytes": 10060,
+      "verified_original_url": "https://movements.dev/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-cyrillic-ext-opsz-normal.03s98dqgqw601.woff2",
+      "file": "dist/_next/static/media/inter-cyrillic-ext-opsz-normal.03s98dqgqw601.woff2",
+      "status": 200,
+      "bytes": 41520
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-cyrillic-opsz-normal.02kuhoxhtnnuj.woff2",
+      "file": "dist/_next/static/media/inter-cyrillic-opsz-normal.02kuhoxhtnnuj.woff2",
+      "status": 200,
+      "bytes": 29636,
+      "verified_original_url": "https://movements.dev/_next/static/media/inter-cyrillic-opsz-normal.02kuhoxhtnnuj.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-greek-ext-opsz-normal.24kd4xnjyu3uy.woff2",
+      "file": "dist/_next/static/media/inter-greek-ext-opsz-normal.24kd4xnjyu3uy.woff2",
+      "status": 200,
+      "bytes": 17376,
+      "verified_original_url": "https://movements.dev/_next/static/media/inter-greek-ext-opsz-normal.24kd4xnjyu3uy.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-greek-opsz-normal.2ey27u6p3jcom.woff2",
+      "file": "dist/_next/static/media/inter-greek-opsz-normal.2ey27u6p3jcom.woff2",
+      "status": 200,
+      "bytes": 30200,
+      "verified_original_url": "https://movements.dev/_next/static/media/inter-greek-opsz-normal.2ey27u6p3jcom.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-vietnamese-opsz-normal.2-wcjb081xswd.woff2",
+      "file": "dist/_next/static/media/inter-vietnamese-opsz-normal.2-wcjb081xswd.woff2",
+      "status": 200,
+      "bytes": 15268
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-latin-ext-opsz-normal.43rxyga-l4eut.woff2",
+      "file": "dist/_next/static/media/inter-latin-ext-opsz-normal.43rxyga-l4eut.woff2",
+      "status": 200,
+      "bytes": 133336
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/inter-latin-opsz-normal.34fk6-9m1aguk.woff2",
+      "file": "dist/_next/static/media/inter-latin-opsz-normal.34fk6-9m1aguk.woff2",
+      "status": 200,
+      "bytes": 72920
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/f037ea83db21dbd3-s.09x_m4nagdesf.woff2",
+      "file": "dist/_next/static/media/f037ea83db21dbd3-s.09x_m4nagdesf.woff2",
+      "status": 200,
+      "bytes": 25776
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/3dc1de47b9d80a0b-s.2wbvw_buzqzvz.woff2",
+      "file": "dist/_next/static/media/3dc1de47b9d80a0b-s.2wbvw_buzqzvz.woff2",
+      "status": 200,
+      "bytes": 45592
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/fe1d9b66fdac40b2-s.0rk4w-o65wlzl.woff2",
+      "file": "dist/_next/static/media/fe1d9b66fdac40b2-s.0rk4w-o65wlzl.woff2",
+      "status": 200,
+      "bytes": 19712,
+      "verified_original_url": "https://movements.dev/_next/static/media/fe1d9b66fdac40b2-s.0rk4w-o65wlzl.woff2?dpl=dpl_AH73jZwsNc83pssUN9YocRmnABNS"
+    },
+    {
+      "url": "https://movements.dev/_next/static/media/a24d9e981578d580-s.p.2dim39isyjvqg.woff2",
+      "file": "dist/_next/static/media/a24d9e981578d580-s.p.2dim39isyjvqg.woff2",
+      "status": 200,
+      "bytes": 51296
+    }
+  ]
+}

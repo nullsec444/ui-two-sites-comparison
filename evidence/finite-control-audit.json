@@ -1,0 +1,82 @@
+{
+  "resolved_objects": {
+    "vp": [
+      "21 / 9",
+      "16 / 9",
+      "3 / 2",
+      "4 / 3",
+      "1 / 1",
+      "9 / 16"
+    ],
+    "yp": [
+      "error",
+      "warning",
+      "success",
+      "info"
+    ],
+    "Sp": [
+      "both",
+      "vertical",
+      "horizontal",
+      "none"
+    ]
+  },
+  "new_unexercised_axes": [
+    {
+      "routes": [
+        "Alert"
+      ],
+      "prop": "alertTone",
+      "type": "finite_unexercised",
+      "conditions": [
+        "e === `Alert`"
+      ],
+      "expression": "{\n  \"aria-label\": `Alert tone`,\n  value: pt,\n  onChange: e => mt(e.target.value),\n  className: X,\n  children: Object.keys(yp).map(e => (0, U.jsx)(`option`, {\n    value: e,\n    children: zg(e)\n  }, e))\n}",
+      "values": [
+        "error",
+        "warning",
+        "success",
+        "info"
+      ],
+      "method": "scope-resolved Object.keys on public object literal"
+    },
+    {
+      "routes": [
+        "Aspect Ratio"
+      ],
+      "prop": "aspectRatio",
+      "type": "finite_unexercised",
+      "conditions": [
+        "e === `Aspect Ratio`"
+      ],
+      "expression": "{\n  \"aria-label\": `Aspect ratio`,\n  value: ut,\n  onChange: e => dt(e.target.value),\n  className: X,\n  children: Object.keys(vp).map(e => (0, U.jsx)(`option`, {\n    value: e,\n    children: e\n  }, e))\n}",
+      "values": [
+        "21 / 9",
+        "16 / 9",
+        "3 / 2",
+        "4 / 3",
+        "1 / 1",
+        "9 / 16"
+      ],
+      "method": "scope-resolved Object.keys on public object literal"
+    },
+    {
+      "routes": [
+        "Textarea"
+      ],
+      "prop": "textareaResize",
+      "type": "finite_unexercised",
+      "conditions": [
+        "e === `Textarea`"
+      ],
+      "expression": "{\n  \"aria-label\": `Textarea resize`,\n  value: Pt,\n  onChange: e => Ft(e.target.value),\n  className: X,\n  children: Object.keys(Sp).map(e => (0, U.jsx)(`option`, {\n    value: e,\n    children: zg(e)\n  }, e))\n}",
+      "values": [
+        "both",
+        "vertical",
+        "horizontal",
+        "none"
+      ],
+      "method": "scope-resolved Object.keys on public object literal"
+    }
+  ]
+}

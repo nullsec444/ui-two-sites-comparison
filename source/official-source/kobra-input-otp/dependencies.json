@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "@tabler/icons-react",
+    "input-otp",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/input-otp.json",
+  "type": "registry:ui"
+}

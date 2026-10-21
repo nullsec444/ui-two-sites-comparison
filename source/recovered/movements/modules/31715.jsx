@@ -1,0 +1,1 @@
+import {officialModule} from '../../../original/movements/vendor-runtime.js';const value=officialModule(31715);export default value.default??value;

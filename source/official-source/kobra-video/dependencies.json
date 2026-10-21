@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "loomix"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/video.json",
+  "type": "registry:ui"
+}

@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "@tabler/icons-react",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/navigation-menu.json",
+  "type": "registry:ui"
+}

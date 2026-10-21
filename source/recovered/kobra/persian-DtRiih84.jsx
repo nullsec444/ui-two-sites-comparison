@@ -1,0 +1,3122 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e, r as t } from "./rolldown-runtime-B0Z9INg1.js";
+import { n, t as r } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as i } from "./utils-WkhMP9hs.js";
+import { n as a, t as o } from "./button-6T-mn2Pp.js";
+import { t as s } from "./createReactComponent-DqK5J7gw.js";
+import { a as c, i as l, t as u } from "./trackpad-swipe-MOPDzk0v.js";
+import { t as d } from "./IconChevronRight-C9BymwZE.js";
+import { a as f, n as p, o as m, r as h, s as g, t as _ } from "./tooltip-C51luKYh.js";
+import { n as v } from "./joined-script-ChN2trS6.js";
+import { n as y } from "./DirectionContext-CSiJxUVd.js";
+import { t as b } from "./use-reduced-motion-BdikIsVN.js";
+import { a as x, c as S, d as C, f as w, i as T, l as E, m as D, n as ee, o as O, p as k, r as A, s as j, t as M, u as N } from "./format-nE6SVSKo.js";
+var P = s(`outline`, `arrow-back-up`, `ArrowBackUp`, [[`path`, {
+  d: `M9 14l-4 -4l4 -4`,
+  key: `svg-0`
+}], [`path`, {
+  d: `M5 10h11a4 4 0 1 1 0 8h-1`,
+  key: `svg-1`
+}]]);
+function F(e, t, n = `long`) {
+  return new Intl.DateTimeFormat(`en-US`, {
+    hour: `numeric`,
+    timeZone: e,
+    timeZoneName: n
+  }).format(t).split(/\s/g).slice(2).join(` `);
+}
+var I = {},
+  L = {};
+function R(e, t) {
+  try {
+    let n = (I[e] ||= new Intl.DateTimeFormat(`en-US`, {
+      timeZone: e,
+      timeZoneName: `longOffset`
+    }).format)(t).split(`GMT`)[1];
+    return n in L ? L[n] : ne(n, n.split(`:`));
+  } catch {
+    if (e in L) return L[e];
+    let t = e?.match(te);
+    return t ? ne(e, t.slice(1)) : NaN;
+  }
+}
+var te = /([+-]\d\d):?(\d\d)?/;
+function ne(e, t) {
+  let n = +(t[0] || 0),
+    r = +(t[1] || 0),
+    i = (t[2] || 0) / 60;
+  return L[e] = n * 60 + r > 0 ? n * 60 + r + i : n * 60 - r - i;
+}
+var re = class e extends Date {
+    constructor(...e) {
+      super(), e.length > 1 && typeof e[e.length - 1] == `string` && (this.timeZone = e.pop()), this.internal = new Date(), isNaN(R(this.timeZone, this)) ? this.setTime(NaN) : e.length ? typeof e[0] == `number` && (e.length === 1 || e.length === 2 && typeof e[1] != `number`) ? this.setTime(e[0]) : typeof e[0] == `string` ? this.setTime(+new Date(e[0])) : e[0] instanceof Date ? this.setTime(+e[0]) : (this.setTime(+new Date(...e)), se(this, e)) : this.setTime(Date.now());
+    }
+    static tz(t, ...n) {
+      return n.length ? new e(...n, t) : new e(Date.now(), t);
+    }
+    withTimeZone(t) {
+      return new e(+this, t);
+    }
+    getTimezoneOffset() {
+      let e = -R(this.timeZone, this);
+      return e > 0 ? Math.floor(e) : Math.ceil(e);
+    }
+    setTime(e) {
+      return Date.prototype.setTime.apply(this, arguments), ae(this), +this;
+    }
+    [Symbol.for(`constructDateFrom`)](t) {
+      return new e(+new Date(t), this.timeZone);
+    }
+  },
+  ie = /^(get|set)(?!UTC)/;
+Object.getOwnPropertyNames(Date.prototype).forEach(e => {
+  if (!ie.test(e)) return;
+  let t = e.replace(ie, `$1UTC`);
+  re.prototype[t] && (e.startsWith(`get`) ? re.prototype[e] = function () {
+    return this.internal[t]();
+  } : (re.prototype[e] = function () {
+    return Date.prototype[t].apply(this.internal, arguments), oe(this), +this;
+  }, re.prototype[t] = function () {
+    return Date.prototype[t].apply(this, arguments), ae(this), +this;
+  }));
+});
+function ae(e) {
+  e.internal.setTime(+e), e.internal.setUTCSeconds(e.internal.getUTCSeconds() - Math.round(-R(e.timeZone, e) * 60));
+}
+function oe(e) {
+  Date.prototype.setFullYear.call(e, e.internal.getUTCFullYear(), e.internal.getUTCMonth(), e.internal.getUTCDate()), Date.prototype.setHours.call(e, e.internal.getUTCHours(), e.internal.getUTCMinutes(), e.internal.getUTCSeconds(), e.internal.getUTCMilliseconds()), se(e);
+}
+function se(e, t) {
+  let n = Array.isArray(t) ? ce(t) : +e.internal,
+    r = R(e.timeZone, e),
+    i = r > 0 ? Math.floor(r) : Math.ceil(r),
+    a = new Date(+e);
+  a.setUTCHours(a.getUTCHours() - 1);
+  let o = -new Date(+e).getTimezoneOffset(),
+    s = -new Date(+a).getTimezoneOffset(),
+    c = o - s,
+    l = o;
+  if (c && o !== i && Date.prototype.getHours.apply(e) !== (Array.isArray(t) ? t[3] || 0 : e.internal.getUTCHours())) {
+    let t = new Date(+e),
+      n = o - i;
+    n && t.setUTCMinutes(t.getUTCMinutes() + n);
+    let r = R(e.timeZone, t);
+    (r > 0 ? Math.floor(r) : Math.ceil(r)) === i && (l = s);
+  }
+  let u = l - i;
+  u && Date.prototype.setUTCMinutes.call(e, Date.prototype.getUTCMinutes.call(e) + u);
+  let d = new Date(+e);
+  d.setUTCSeconds(0);
+  let f = o > 0 ? d.getSeconds() : (d.getSeconds() - 60) % 60,
+    p = Math.round(-(R(e.timeZone, e) * 60)) % 60;
+  (p || f) && Date.prototype.setUTCSeconds.call(e, Date.prototype.getUTCSeconds.call(e) + p + f);
+  let m = R(e.timeZone, e),
+    h = m > 0 ? Math.floor(m) : Math.ceil(m),
+    g = -new Date(+e).getTimezoneOffset() - h,
+    _ = h !== i,
+    v = g - u,
+    y = h - i,
+    b = n - h * 60 * 1e3,
+    x = y > 0 && le(e) - n === y * 60 * 1e3 && le(e, b) !== n;
+  if (_ && v && !x) {
+    Date.prototype.setUTCMinutes.call(e, Date.prototype.getUTCMinutes.call(e) + v);
+    let t = R(e.timeZone, e),
+      n = h - (t > 0 ? Math.floor(t) : Math.ceil(t));
+    n && v < 0 && Date.prototype.setUTCMinutes.call(e, Date.prototype.getUTCMinutes.call(e) + n);
+  }
+  ae(e);
+  let S = (t ? n : n + p * 1e3) - +e.internal;
+  S && Math.abs(S) < 18e5 && (Date.prototype.setTime.call(e, +e + S), ae(e));
+}
+function ce(e) {
+  return Date.UTC(e[0], e.length > 1 ? e[1] : 0, e.length > 2 ? e[2] : 1, ...e.slice(3));
+}
+function le(e, t) {
+  let n = new Date(t ?? +e);
+  return n.setUTCSeconds(n.getUTCSeconds() - Math.round(-R(e.timeZone, n) * 60)), +n;
+}
+var z = class e extends re {
+  static tz(t, ...n) {
+    return n.length ? new e(...n, t) : new e(Date.now(), t);
+  }
+  toISOString() {
+    let [e, t, n] = this.tzComponents(),
+      r = `${e}${t}:${n}`;
+    return this.internal.toISOString().slice(0, -1) + r;
+  }
+  toString() {
+    return `${this.toDateString()} ${this.toTimeString()}`;
+  }
+  toDateString() {
+    let [e, t, n, r] = this.internal.toUTCString().split(` `);
+    return `${e?.slice(0, -1)} ${n} ${t} ${r}`;
+  }
+  toTimeString() {
+    let e = this.internal.toUTCString().split(` `)[4],
+      [t, n, r] = this.tzComponents();
+    return `${e} GMT${t}${n}${r} (${F(this.timeZone, this)})`;
+  }
+  toLocaleString(e, t) {
+    return Date.prototype.toLocaleString.call(this, e, {
+      ...t,
+      timeZone: t?.timeZone || this.timeZone
+    });
+  }
+  toLocaleDateString(e, t) {
+    return Date.prototype.toLocaleDateString.call(this, e, {
+      ...t,
+      timeZone: t?.timeZone || this.timeZone
+    });
+  }
+  toLocaleTimeString(e, t) {
+    return Date.prototype.toLocaleTimeString.call(this, e, {
+      ...t,
+      timeZone: t?.timeZone || this.timeZone
+    });
+  }
+  tzComponents() {
+    let e = this.getTimezoneOffset();
+    return [e > 0 ? `-` : `+`, String(Math.floor(Math.abs(e) / 60)).padStart(2, `0`), String(Math.abs(e) % 60).padStart(2, `0`)];
+  }
+  withTimeZone(t) {
+    return new e(+this, t);
+  }
+  [Symbol.for(`constructDateFrom`)](t) {
+    return new e(+new Date(t), this.timeZone);
+  }
+};
+function ue(e, t, n) {
+  let r = C(e, n?.in);
+  return isNaN(t) ? D(n?.in || e, NaN) : (t && r.setDate(r.getDate() + t), r);
+}
+function de(e, t, n) {
+  let r = C(e, n?.in);
+  if (isNaN(t)) return D(n?.in || e, NaN);
+  if (!t) return r;
+  let i = r.getDate(),
+    a = D(n?.in || e, r.getTime());
+  return a.setMonth(r.getMonth() + t + 1, 0), i >= a.getDate() ? a : (r.setFullYear(a.getFullYear(), a.getMonth(), i), r);
+}
+function fe(e, t, n) {
+  return ue(e, t * 7, n);
+}
+function pe(e, t, n) {
+  return de(e, t * 12, n);
+}
+function me(e, t) {
+  let n,
+    r = t?.in;
+  return e.forEach(e => {
+    !r && typeof e == `object` && (r = D.bind(null, e));
+    let t = C(e, r);
+    (!n || n < t || isNaN(+t)) && (n = t);
+  }), D(r, n || NaN);
+}
+function he(e, t) {
+  let n,
+    r = t?.in;
+  return e.forEach(e => {
+    !r && typeof e == `object` && (r = D.bind(null, e));
+    let t = C(e, r);
+    (!n || n > t || isNaN(+t)) && (n = t);
+  }), D(r, n || NaN);
+}
+function ge(e, t, n) {
+  let [r, i] = k(n?.in, e, t);
+  return +j(r) == +j(i);
+}
+function _e(e, t, n) {
+  let [r, i] = k(n?.in, e, t),
+    a = r.getFullYear() - i.getFullYear(),
+    o = r.getMonth() - i.getMonth();
+  return a * 12 + o;
+}
+function ve(e, t) {
+  let n = C(e, t?.in),
+    r = n.getMonth();
+  return n.setFullYear(n.getFullYear(), r + 1, 0), n.setHours(23, 59, 59, 999), n;
+}
+function ye(e, t) {
+  let [n, r] = k(e, t.start, t.end);
+  return {
+    start: n,
+    end: r
+  };
+}
+function be(e, t) {
+  let {
+      start: n,
+      end: r
+    } = ye(t?.in, e),
+    i = +n > +r,
+    a = i ? +n : +r,
+    o = i ? r : n;
+  o.setHours(0, 0, 0, 0), o.setDate(1);
+  let s = t?.step ?? 1;
+  if (!s) return [];
+  s < 0 && (s = -s, i = !i);
+  let c = [];
+  for (; +o <= a;) c.push(D(n, o)), o.setMonth(o.getMonth() + s);
+  return i ? c.reverse() : c;
+}
+function xe(e, t) {
+  let n = C(e, t?.in);
+  return n.setDate(1), n.setHours(0, 0, 0, 0), n;
+}
+function Se(e, t) {
+  let n = C(e, t?.in),
+    r = n.getFullYear();
+  return n.setFullYear(r + 1, 0, 0), n.setHours(23, 59, 59, 999), n;
+}
+function Ce(e, t) {
+  let {
+      start: n,
+      end: r
+    } = ye(t?.in, e),
+    i = +n > +r,
+    a = i ? +n : +r,
+    o = i ? r : n;
+  o.setHours(0, 0, 0, 0), o.setMonth(0, 1);
+  let s = t?.step ?? 1;
+  if (!s) return [];
+  s < 0 && (s = -s, i = !i);
+  let c = [];
+  for (; +o <= a;) c.push(D(n, o)), o.setFullYear(o.getFullYear() + s);
+  return i ? c.reverse() : c;
+}
+function we(e, t) {
+  let n = w(),
+    r = t?.weekStartsOn ?? t?.locale?.options?.weekStartsOn ?? n.weekStartsOn ?? n.locale?.options?.weekStartsOn ?? 0,
+    i = C(e, t?.in),
+    a = i.getDay(),
+    o = (a < r ? -7 : 0) + 6 - (a - r);
+  return i.setDate(i.getDate() + o), i.setHours(23, 59, 59, 999), i;
+}
+function Te(e, t) {
+  return we(e, {
+    ...t,
+    weekStartsOn: 1
+  });
+}
+function Ee(e, t) {
+  let n = C(e, t?.in),
+    r = n.getFullYear(),
+    i = n.getMonth(),
+    a = D(n, 0);
+  return a.setFullYear(r, i + 1, 0), a.setHours(0, 0, 0, 0), a.getDate();
+}
+function De(e, t) {
+  return C(e, t?.in).getMonth();
+}
+function Oe(e, t) {
+  return C(e, t?.in).getFullYear();
+}
+function ke(e, t) {
+  return +C(e) > +C(t);
+}
+function Ae(e, t) {
+  return +C(e) < +C(t);
+}
+function je(e, t, n) {
+  let [r, i] = k(n?.in, e, t);
+  return r.getFullYear() === i.getFullYear() && r.getMonth() === i.getMonth();
+}
+function Me(e, t, n) {
+  let [r, i] = k(n?.in, e, t);
+  return r.getFullYear() === i.getFullYear();
+}
+function Ne(e, t, n) {
+  let r = C(e, n?.in),
+    i = r.getFullYear(),
+    a = r.getDate(),
+    o = D(n?.in || e, 0);
+  o.setFullYear(i, t, 15), o.setHours(0, 0, 0, 0);
+  let s = Ee(o);
+  return r.setMonth(t, Math.min(a, s)), r;
+}
+function Pe(e, t, n) {
+  let r = C(e, n?.in);
+  return isNaN(+r) ? D(n?.in || e, NaN) : (r.setFullYear(t), r);
+}
+var Fe = 5,
+  Ie = 4;
+function Le(e, t) {
+  let n = t.startOfMonth(e),
+    r = n.getDay() > 0 ? n.getDay() : 7,
+    i = t.addDays(e, -r + 1),
+    a = t.addDays(i, 34);
+  return t.getMonth(e) === t.getMonth(a) ? Fe : Ie;
+}
+function Re(e, t) {
+  let n = t.startOfMonth(e),
+    r = n.getDay();
+  return r === 1 ? n : r === 0 ? t.addDays(n, -6) : t.addDays(n, -1 * (r - 1));
+}
+function ze(e, t) {
+  let n = Re(e, t),
+    r = Le(e, t);
+  return t.addDays(n, r * 7 - 1);
+}
+var Be = {
+    ...E,
+    labels: {
+      labelDayButton: (e, t, n, r) => {
+        let i;
+        i = r && typeof r.format == `function` ? r.format.bind(r) : (e, t) => M(e, t, {
+          locale: E,
+          ...n
+        });
+        let a = i(e, `PPPP`);
+        return t.today && (a = `Today, ${a}`), t.selected && (a = `${a}, selected`), a;
+      },
+      labelMonthDropdown: `Choose the Month`,
+      labelNext: `Go to the Next Month`,
+      labelPrevious: `Go to the Previous Month`,
+      labelWeekNumber: e => `Week ${e}`,
+      labelYearDropdown: `Choose the Year`,
+      labelGrid: (e, t, n) => {
+        let r;
+        return r = n && typeof n.format == `function` ? n.format.bind(n) : (e, n) => M(e, n, {
+          locale: E,
+          ...t
+        }), r(e, `LLLL yyyy`);
+      },
+      labelGridcell: (e, t, n, r) => {
+        let i;
+        i = r && typeof r.format == `function` ? r.format.bind(r) : (e, t) => M(e, t, {
+          locale: E,
+          ...n
+        });
+        let a = i(e, `PPPP`);
+        return t?.today && (a = `Today, ${a}`), a;
+      },
+      labelNav: `Navigation bar`,
+      labelWeekNumberHeader: `Week Number`,
+      labelWeekday: (e, t, n) => {
+        let r;
+        return r = n && typeof n.format == `function` ? n.format.bind(n) : (e, n) => M(e, n, {
+          locale: E,
+          ...t
+        }), r(e, `cccc`);
+      }
+    }
+  },
+  B = class e {
+    constructor(e, t) {
+      this.today = () => this.overrides?.today ? this.overrides.today() : this.options.timeZone ? z.tz(this.options.timeZone) : new (this.options.Date ?? Date)(), this.newDate = (e, t, n) => this.overrides?.newDate ? this.overrides.newDate(e, t, n) : this.options.timeZone ? new z(e, t, n, this.options.timeZone) : new Date(e, t, n), this.addDays = (e, t) => this.overrides?.addDays ? this.overrides.addDays(e, t) : ue(e, t), this.addMonths = (e, t) => this.overrides?.addMonths ? this.overrides.addMonths(e, t) : de(e, t), this.addWeeks = (e, t) => this.overrides?.addWeeks ? this.overrides.addWeeks(e, t) : fe(e, t), this.addYears = (e, t) => this.overrides?.addYears ? this.overrides.addYears(e, t) : pe(e, t), this.differenceInCalendarDays = (e, t) => this.overrides?.differenceInCalendarDays ? this.overrides.differenceInCalendarDays(e, t) : O(e, t), this.differenceInCalendarMonths = (e, t) => this.overrides?.differenceInCalendarMonths ? this.overrides.differenceInCalendarMonths(e, t) : _e(e, t), this.eachMonthOfInterval = e => this.overrides?.eachMonthOfInterval ? this.overrides.eachMonthOfInterval(e) : be(e), this.eachYearOfInterval = e => {
+        let t = this.overrides?.eachYearOfInterval ? this.overrides.eachYearOfInterval(e) : Ce(e),
+          n = new Set(t.map(e => this.getYear(e)));
+        if (n.size === t.length) return t;
+        let r = [];
+        return n.forEach(e => {
+          r.push(new Date(e, 0, 1));
+        }), r;
+      }, this.endOfBroadcastWeek = e => this.overrides?.endOfBroadcastWeek ? this.overrides.endOfBroadcastWeek(e) : ze(e, this), this.endOfISOWeek = e => this.overrides?.endOfISOWeek ? this.overrides.endOfISOWeek(e) : Te(e), this.endOfMonth = e => this.overrides?.endOfMonth ? this.overrides.endOfMonth(e) : ve(e), this.endOfWeek = (e, t) => this.overrides?.endOfWeek ? this.overrides.endOfWeek(e, t) : we(e, this.options), this.endOfYear = e => this.overrides?.endOfYear ? this.overrides.endOfYear(e) : Se(e), this.format = (e, t, n) => {
+        let r = this.overrides?.format ? this.overrides.format(e, t, this.options) : M(e, t, this.options);
+        return this.options.numerals && this.options.numerals !== `latn` ? this.replaceDigits(r) : r;
+      }, this.getISOWeek = e => this.overrides?.getISOWeek ? this.overrides.getISOWeek(e) : A(e), this.getMonth = (e, t) => this.overrides?.getMonth ? this.overrides.getMonth(e, this.options) : De(e, this.options), this.getYear = (e, t) => this.overrides?.getYear ? this.overrides.getYear(e, this.options) : Oe(e, this.options), this.getWeek = (e, t) => this.overrides?.getWeek ? this.overrides.getWeek(e, this.options) : ee(e, this.options), this.isAfter = (e, t) => this.overrides?.isAfter ? this.overrides.isAfter(e, t) : ke(e, t), this.isBefore = (e, t) => this.overrides?.isBefore ? this.overrides.isBefore(e, t) : Ae(e, t), this.isDate = e => this.overrides?.isDate ? this.overrides.isDate(e) : x(e), this.isSameDay = (e, t) => this.overrides?.isSameDay ? this.overrides.isSameDay(e, t) : ge(e, t), this.isSameMonth = (e, t) => this.overrides?.isSameMonth ? this.overrides.isSameMonth(e, t) : je(e, t), this.isSameYear = (e, t) => this.overrides?.isSameYear ? this.overrides.isSameYear(e, t) : Me(e, t), this.max = e => this.overrides?.max ? this.overrides.max(e) : me(e), this.min = e => this.overrides?.min ? this.overrides.min(e) : he(e), this.setMonth = (e, t) => this.overrides?.setMonth ? this.overrides.setMonth(e, t) : Ne(e, t), this.setYear = (e, t) => this.overrides?.setYear ? this.overrides.setYear(e, t) : Pe(e, t), this.startOfBroadcastWeek = (e, t) => this.overrides?.startOfBroadcastWeek ? this.overrides.startOfBroadcastWeek(e, this) : Re(e, this), this.startOfDay = e => this.overrides?.startOfDay ? this.overrides.startOfDay(e) : j(e), this.startOfISOWeek = e => this.overrides?.startOfISOWeek ? this.overrides.startOfISOWeek(e) : S(e), this.startOfMonth = e => this.overrides?.startOfMonth ? this.overrides.startOfMonth(e) : xe(e), this.startOfWeek = (e, t) => this.overrides?.startOfWeek ? this.overrides.startOfWeek(e, this.options) : N(e, this.options), this.startOfYear = e => this.overrides?.startOfYear ? this.overrides.startOfYear(e) : T(e), this.options = {
+        locale: Be,
+        ...e
+      }, this.overrides = t;
+    }
+    getDigitMap() {
+      let {
+          numerals: e = `latn`
+        } = this.options,
+        t = new Intl.NumberFormat(`en-US`, {
+          numberingSystem: e
+        }),
+        n = {};
+      for (let e = 0; e < 10; e++) n[e.toString()] = t.format(e);
+      return n;
+    }
+    replaceDigits(e) {
+      let t = this.getDigitMap();
+      return e.replace(/\d/g, e => t[e] || e);
+    }
+    formatNumber(e) {
+      return this.replaceDigits(e.toString());
+    }
+    getMonthYearOrder() {
+      let t = this.options.locale?.code;
+      return t && e.yearFirstLocales.has(t) ? `year-first` : `month-first`;
+    }
+    formatMonthYear(t) {
+      let {
+          locale: n,
+          timeZone: r,
+          numerals: i
+        } = this.options,
+        a = n?.code;
+      if (a && e.yearFirstLocales.has(a)) try {
+        return new Intl.DateTimeFormat(a, {
+          month: `long`,
+          year: `numeric`,
+          timeZone: r,
+          numberingSystem: i
+        }).format(t);
+      } catch {}
+      let o = this.getMonthYearOrder() === `year-first` ? `y LLLL` : `LLLL y`;
+      return this.format(t, o);
+    }
+  };
+B.yearFirstLocales = new Set([`eu`, `hu`, `ja`, `ja-Hira`, `ja-JP`, `ko`, `ko-KR`, `lt`, `lt-LT`, `lv`, `lv-LV`, `mn`, `mn-MN`, `zh`, `zh-CN`, `zh-HK`, `zh-TW`]);
+var V = new B(),
+  Ve = class {
+    constructor(e, t, n = V) {
+      this.date = e, this.displayMonth = t, this.outside = !!(t && !n.isSameMonth(e, t)), this.dateLib = n, this.isoDate = n.format(e, `yyyy-MM-dd`), this.displayMonthId = n.format(t, `yyyy-MM`), this.dateMonthId = n.format(e, `yyyy-MM`);
+    }
+    isEqualTo(e) {
+      return this.dateLib.isSameDay(e.date, this.date) && this.dateLib.isSameMonth(e.displayMonth, this.displayMonth);
+    }
+  },
+  He = class {
+    constructor(e, t) {
+      this.date = e, this.weeks = t;
+    }
+  },
+  Ue = class {
+    constructor(e, t) {
+      this.days = t, this.weekNumber = e;
+    }
+  },
+  H = e(n(), 1);
+function We(e) {
+  return H.createElement(`span`, {
+    ...e
+  });
+}
+function Ge(e) {
+  let {
+    size: t = 24,
+    orientation: n = `left`,
+    className: r,
+    style: i
+  } = e;
+  return H.createElement(`svg`, {
+    className: r,
+    style: i,
+    width: t,
+    height: t,
+    viewBox: `0 0 24 24`
+  }, n === `up` && H.createElement(`polygon`, {
+    points: `6.77 17 12.5 11.43 18.24 17 20 15.28 12.5 8 5 15.28`
+  }), n === `down` && H.createElement(`polygon`, {
+    points: `6.77 8 12.5 13.57 18.24 8 20 9.72 12.5 17 5 9.72`
+  }), n === `left` && H.createElement(`polygon`, {
+    points: `16 18.112 9.81111111 12 16 5.87733333 14.0888889 4 6 12 14.0888889 20`
+  }), n === `right` && H.createElement(`polygon`, {
+    points: `8 18.112 14.18888889 12 8 5.87733333 9.91111111 4 18 12 9.91111111 20`
+  }));
+}
+function Ke(e) {
+  let {
+    day: t,
+    modifiers: n,
+    ...r
+  } = e;
+  return H.createElement(`td`, {
+    ...r
+  });
+}
+function qe(e) {
+  let {
+      day: t,
+      modifiers: n,
+      ...r
+    } = e,
+    i = H.useRef(null);
+  return H.useEffect(() => {
+    n.focused && i.current?.focus();
+  }, [n.focused]), H.createElement(`button`, {
+    ref: i,
+    ...r
+  });
+}
+var U;
+(function (e) {
+  e.Root = `root`, e.Chevron = `chevron`, e.Day = `day`, e.DayButton = `day_button`, e.CaptionLabel = `caption_label`, e.Dropdowns = `dropdowns`, e.Dropdown = `dropdown`, e.DropdownRoot = `dropdown_root`, e.Footer = `footer`, e.MonthGrid = `month_grid`, e.MonthCaption = `month_caption`, e.MonthsDropdown = `months_dropdown`, e.Month = `month`, e.Months = `months`, e.Nav = `nav`, e.NextMonthButton = `button_next`, e.PreviousMonthButton = `button_previous`, e.Week = `week`, e.Weeks = `weeks`, e.Weekday = `weekday`, e.Weekdays = `weekdays`, e.WeekNumber = `week_number`, e.WeekNumberHeader = `week_number_header`, e.YearsDropdown = `years_dropdown`;
+})(U ||= {});
+var W;
+(function (e) {
+  e.disabled = `disabled`, e.hidden = `hidden`, e.outside = `outside`, e.focused = `focused`, e.today = `today`;
+})(W ||= {});
+var G;
+(function (e) {
+  e.range_end = `range_end`, e.range_middle = `range_middle`, e.range_start = `range_start`, e.selected = `selected`;
+})(G ||= {});
+var K;
+(function (e) {
+  e.weeks_before_enter = `weeks_before_enter`, e.weeks_before_exit = `weeks_before_exit`, e.weeks_after_enter = `weeks_after_enter`, e.weeks_after_exit = `weeks_after_exit`, e.caption_after_enter = `caption_after_enter`, e.caption_after_exit = `caption_after_exit`, e.caption_before_enter = `caption_before_enter`, e.caption_before_exit = `caption_before_exit`;
+})(K ||= {});
+var Je = (0, H.createContext)(void 0);
+function q() {
+  let e = (0, H.useContext)(Je);
+  if (e === void 0) throw Error(`useDayPicker() must be used within a custom component.`);
+  return e;
+}
+function Ye(e) {
+  let {
+      options: t,
+      className: n,
+      ...r
+    } = e,
+    {
+      classNames: i,
+      components: a,
+      styles: o
+    } = q(),
+    s = [i[U.Dropdown], n].join(` `),
+    c = t?.find(({
+      value: e
+    }) => e === r.value);
+  return H.createElement(`span`, {
+    "data-disabled": r.disabled,
+    className: i[U.DropdownRoot],
+    style: o?.[U.DropdownRoot]
+  }, H.createElement(a.Select, {
+    className: s,
+    ...r
+  }, t?.map(({
+    value: e,
+    label: t,
+    disabled: n
+  }) => H.createElement(a.Option, {
+    key: e,
+    value: e,
+    disabled: n
+  }, t))), H.createElement(`span`, {
+    className: i[U.CaptionLabel],
+    style: o?.[U.CaptionLabel],
+    "aria-hidden": !0
+  }, c?.label, H.createElement(a.Chevron, {
+    orientation: `down`,
+    size: 18,
+    className: i[U.Chevron],
+    style: o?.[U.Chevron]
+  })));
+}
+function Xe(e) {
+  return H.createElement(`div`, {
+    ...e
+  });
+}
+function Ze(e) {
+  return H.createElement(`div`, {
+    ...e
+  });
+}
+function Qe(e) {
+  let {
+    calendarMonth: t,
+    displayIndex: n,
+    ...r
+  } = e;
+  return H.createElement(`div`, {
+    ...r
+  }, e.children);
+}
+function $e(e) {
+  let {
+    calendarMonth: t,
+    displayIndex: n,
+    ...r
+  } = e;
+  return H.createElement(`div`, {
+    ...r
+  });
+}
+function et(e) {
+  return H.createElement(`table`, {
+    ...e
+  });
+}
+function tt(e) {
+  return H.createElement(`div`, {
+    ...e
+  });
+}
+function nt(e) {
+  let {
+    components: t
+  } = q();
+  return H.createElement(t.Dropdown, {
+    ...e
+  });
+}
+function rt(e) {
+  let {
+      onPreviousClick: t,
+      onNextClick: n,
+      previousMonth: r,
+      nextMonth: i,
+      ...a
+    } = e,
+    {
+      components: o,
+      classNames: s,
+      styles: c,
+      labels: {
+        labelPrevious: l,
+        labelNext: u
+      }
+    } = q(),
+    d = (0, H.useCallback)(e => {
+      i && n?.(e);
+    }, [i, n]),
+    f = (0, H.useCallback)(e => {
+      r && t?.(e);
+    }, [r, t]);
+  return H.createElement(`nav`, {
+    ...a
+  }, H.createElement(o.PreviousMonthButton, {
+    type: `button`,
+    className: s[U.PreviousMonthButton],
+    style: c?.[U.PreviousMonthButton],
+    tabIndex: r ? void 0 : -1,
+    "aria-disabled": !r || void 0,
+    "aria-label": l(r),
+    onClick: f
+  }, H.createElement(o.Chevron, {
+    disabled: !r || void 0,
+    className: s[U.Chevron],
+    style: c?.[U.Chevron],
+    orientation: `left`
+  })), H.createElement(o.NextMonthButton, {
+    type: `button`,
+    className: s[U.NextMonthButton],
+    style: c?.[U.NextMonthButton],
+    tabIndex: i ? void 0 : -1,
+    "aria-disabled": !i || void 0,
+    "aria-label": u(i),
+    onClick: d
+  }, H.createElement(o.Chevron, {
+    disabled: !i || void 0,
+    orientation: `right`,
+    className: s[U.Chevron],
+    style: c?.[U.Chevron]
+  })));
+}
+function it(e) {
+  return H.createElement(`button`, {
+    ...e
+  });
+}
+function at(e) {
+  return H.createElement(`option`, {
+    ...e
+  });
+}
+function ot(e) {
+  return H.createElement(`button`, {
+    ...e
+  });
+}
+function st(e) {
+  let {
+    rootRef: t,
+    ...n
+  } = e;
+  return H.createElement(`div`, {
+    ...n,
+    ref: t
+  });
+}
+function ct(e) {
+  return H.createElement(`select`, {
+    ...e
+  });
+}
+function lt(e) {
+  let {
+    week: t,
+    ...n
+  } = e;
+  return H.createElement(`tr`, {
+    ...n
+  });
+}
+function ut(e) {
+  return H.createElement(`th`, {
+    ...e
+  });
+}
+function dt(e) {
+  return H.createElement(`thead`, {
+    "aria-hidden": !0
+  }, H.createElement(`tr`, {
+    ...e
+  }));
+}
+function ft(e) {
+  let {
+    week: t,
+    ...n
+  } = e;
+  return H.createElement(`th`, {
+    ...n
+  });
+}
+function pt(e) {
+  return H.createElement(`th`, {
+    ...e
+  });
+}
+function mt(e) {
+  return H.createElement(`tbody`, {
+    ...e
+  });
+}
+function ht(e) {
+  let {
+    components: t
+  } = q();
+  return H.createElement(t.Dropdown, {
+    ...e
+  });
+}
+var gt = t({
+  CaptionLabel: () => We,
+  Chevron: () => Ge,
+  Day: () => Ke,
+  DayButton: () => qe,
+  Dropdown: () => Ye,
+  DropdownNav: () => Xe,
+  Footer: () => Ze,
+  Month: () => Qe,
+  MonthCaption: () => $e,
+  MonthGrid: () => et,
+  Months: () => tt,
+  MonthsDropdown: () => nt,
+  Nav: () => rt,
+  NextMonthButton: () => it,
+  Option: () => at,
+  PreviousMonthButton: () => ot,
+  Root: () => st,
+  Select: () => ct,
+  Week: () => lt,
+  WeekNumber: () => ft,
+  WeekNumberHeader: () => pt,
+  Weekday: () => ut,
+  Weekdays: () => dt,
+  Weeks: () => mt,
+  YearsDropdown: () => ht
+});
+function J(e, t, n = !1, r = V) {
+  let {
+      from: i,
+      to: a
+    } = e,
+    {
+      differenceInCalendarDays: o,
+      isSameDay: s
+    } = r;
+  return i && a ? (o(a, i) < 0 && ([i, a] = [a, i]), o(t, i) >= +!!n && o(a, t) >= +!!n) : !n && a ? s(a, t) : !n && i ? s(i, t) : !1;
+}
+function _t(e) {
+  return !!(e && typeof e == `object` && `before` in e && `after` in e);
+}
+function vt(e) {
+  return !!(e && typeof e == `object` && `from` in e);
+}
+function yt(e) {
+  return !!(e && typeof e == `object` && `after` in e);
+}
+function bt(e) {
+  return !!(e && typeof e == `object` && `before` in e);
+}
+function xt(e) {
+  return !!(e && typeof e == `object` && `dayOfWeek` in e);
+}
+function St(e, t) {
+  return Array.isArray(e) && e.every(t.isDate);
+}
+function Y(e, t, n = V) {
+  let r = Array.isArray(t) ? t : [t],
+    {
+      isSameDay: i,
+      differenceInCalendarDays: a,
+      isAfter: o
+    } = n;
+  return r.some(t => {
+    if (typeof t == `boolean`) return t;
+    if (n.isDate(t)) return i(e, t);
+    if (St(t, n)) return t.some(t => i(e, t));
+    if (vt(t)) return J(t, e, !1, n);
+    if (xt(t)) return Array.isArray(t.dayOfWeek) ? t.dayOfWeek.includes(e.getDay()) : t.dayOfWeek === e.getDay();
+    if (_t(t)) {
+      let n = a(t.before, e),
+        r = a(t.after, e),
+        i = n > 0,
+        s = r < 0;
+      return o(t.before, t.after) ? s && i : i || s;
+    }
+    return yt(t) ? a(e, t.after) > 0 : bt(t) ? a(t.before, e) > 0 : typeof t == `function` && t(e);
+  });
+}
+function Ct(e, t, n, r, i) {
+  let {
+      disabled: a,
+      hidden: o,
+      modifiers: s,
+      showOutsideDays: c,
+      broadcastCalendar: l,
+      today: u = i.today()
+    } = t,
+    {
+      isSameDay: d,
+      isSameMonth: f,
+      startOfMonth: p,
+      isBefore: m,
+      endOfMonth: h,
+      isAfter: g
+    } = i,
+    _ = n && p(n),
+    v = r && h(r),
+    y = {
+      [W.focused]: [],
+      [W.outside]: [],
+      [W.disabled]: [],
+      [W.hidden]: [],
+      [W.today]: []
+    },
+    b = {};
+  for (let t of e) {
+    let {
+        date: e,
+        displayMonth: n
+      } = t,
+      r = !!(n && !f(e, n)),
+      p = !!(_ && m(e, _)),
+      h = !!(v && g(e, v)),
+      x = !!(a && Y(e, a, i)),
+      S = !!(o && Y(e, o, i)) || p || h || !l && !c && r || l && c === !1 && r,
+      C = d(e, u);
+    r && y.outside.push(t), x && y.disabled.push(t), S && y.hidden.push(t), C && y.today.push(t), s && Object.keys(s).forEach(n => {
+      let r = s?.[n];
+      r && Y(e, r, i) && (b[n] ? b[n].push(t) : b[n] = [t]);
+    });
+  }
+  return e => {
+    let t = {
+        [W.focused]: !1,
+        [W.disabled]: !1,
+        [W.hidden]: !1,
+        [W.outside]: !1,
+        [W.today]: !1
+      },
+      n = {};
+    for (let n in y) t[n] = y[n].some(t => t === e);
+    for (let t in b) n[t] = b[t].some(t => t === e);
+    return {
+      ...t,
+      ...n
+    };
+  };
+}
+function wt(e, t, n = {}) {
+  return Object.entries(e).filter(([, e]) => e === !0).reduce((e, [r]) => (n[r] ? e.push(n[r]) : t[W[r]] ? e.push(t[W[r]]) : t[G[r]] && e.push(t[G[r]]), e), [t[U.Day]]);
+}
+function Tt(e) {
+  return {
+    ...gt,
+    ...e
+  };
+}
+function Et(e) {
+  let t = {
+    "data-mode": e.mode ?? void 0,
+    "data-required": `required` in e ? e.required : void 0,
+    "data-multiple-months": e.numberOfMonths && e.numberOfMonths > 1 || void 0,
+    "data-week-numbers": e.showWeekNumber || void 0,
+    "data-broadcast-calendar": e.broadcastCalendar || void 0,
+    "data-nav-layout": e.navLayout || void 0
+  };
+  return Object.entries(e).forEach(([e, n]) => {
+    e.startsWith(`data-`) && (t[e] = n);
+  }), t;
+}
+function Dt() {
+  let e = {};
+  for (let t in U) e[U[t]] = `rdp-${U[t]}`;
+  for (let t in W) e[W[t]] = `rdp-${W[t]}`;
+  for (let t in G) e[G[t]] = `rdp-${G[t]}`;
+  for (let t in K) e[K[t]] = `rdp-${K[t]}`;
+  return e;
+}
+function Ot(e, t, n) {
+  return (n ?? new B(t)).formatMonthYear(e);
+}
+function kt(e, t, n) {
+  return (n ?? new B(t)).format(e, `d`);
+}
+function At(e, t = V) {
+  return t.format(e, `LLLL`);
+}
+function jt(e, t, n) {
+  return (n ?? new B(t)).format(e, `cccccc`);
+}
+function Mt(e, t = V) {
+  return e < 10 ? t.formatNumber(`0${e.toLocaleString()}`) : t.formatNumber(`${e.toLocaleString()}`);
+}
+function Nt() {
+  return ``;
+}
+function Pt(e, t = V) {
+  return t.format(e, `yyyy`);
+}
+var Ft = t({
+  formatCaption: () => Ot,
+  formatDay: () => kt,
+  formatMonthDropdown: () => At,
+  formatWeekNumber: () => Mt,
+  formatWeekNumberHeader: () => Nt,
+  formatWeekdayName: () => jt,
+  formatYearDropdown: () => Pt
+});
+function It(e) {
+  return {
+    ...Ft,
+    ...e
+  };
+}
+function Lt(e, t, n, r) {
+  let i = (r ?? new B(n)).format(e, `PPPP`);
+  return t.today && (i = `Today, ${i}`), t.selected && (i = `${i}, selected`), i;
+}
+function Rt(e, t, n) {
+  return (n ?? new B(t)).formatMonthYear(e);
+}
+function zt(e, t, n, r) {
+  let i = (r ?? new B(n)).format(e, `PPPP`);
+  return t?.today && (i = `Today, ${i}`), i;
+}
+function Bt(e) {
+  return `Choose the Month`;
+}
+function Vt() {
+  return ``;
+}
+var Ht = `Go to the Next Month`;
+function Ut(e, t) {
+  return Ht;
+}
+function Wt(e) {
+  return `Go to the Previous Month`;
+}
+function Gt(e, t, n) {
+  return (n ?? new B(t)).format(e, `cccc`);
+}
+function Kt(e, t) {
+  return `Week ${e}`;
+}
+function qt(e) {
+  return `Week Number`;
+}
+function Jt(e) {
+  return `Choose the Year`;
+}
+var Yt = t({
+    labelDayButton: () => Lt,
+    labelGrid: () => Rt,
+    labelGridcell: () => zt,
+    labelMonthDropdown: () => Bt,
+    labelNav: () => Vt,
+    labelNext: () => Ut,
+    labelPrevious: () => Wt,
+    labelWeekNumber: () => Kt,
+    labelWeekNumberHeader: () => qt,
+    labelWeekday: () => Gt,
+    labelYearDropdown: () => Jt
+  }),
+  X = (e, t, n) => t || (n ? typeof n == `function` ? n : (...e) => n : e);
+function Xt(e, t) {
+  let n = t.locale?.labels ?? {};
+  return {
+    ...Yt,
+    ...(e ?? {}),
+    labelDayButton: X(Lt, e?.labelDayButton, n.labelDayButton),
+    labelMonthDropdown: X(Bt, e?.labelMonthDropdown, n.labelMonthDropdown),
+    labelNext: X(Ut, e?.labelNext, n.labelNext),
+    labelPrevious: X(Wt, e?.labelPrevious, n.labelPrevious),
+    labelWeekNumber: X(Kt, e?.labelWeekNumber, n.labelWeekNumber),
+    labelYearDropdown: X(Jt, e?.labelYearDropdown, n.labelYearDropdown),
+    labelGrid: X(Rt, e?.labelGrid, n.labelGrid),
+    labelGridcell: X(zt, e?.labelGridcell, n.labelGridcell),
+    labelNav: X(Vt, e?.labelNav, n.labelNav),
+    labelWeekNumberHeader: X(qt, e?.labelWeekNumberHeader, n.labelWeekNumberHeader),
+    labelWeekday: X(Gt, e?.labelWeekday, n.labelWeekday)
+  };
+}
+function Zt(e, t, n, r, i) {
+  let {
+    startOfMonth: a,
+    startOfYear: o,
+    endOfYear: s,
+    eachMonthOfInterval: c,
+    getMonth: l
+  } = i;
+  return c({
+    start: o(e),
+    end: s(e)
+  }).map(e => {
+    let o = r.formatMonthDropdown(e, i);
+    return {
+      value: l(e),
+      label: o,
+      disabled: t && e < a(t) || n && e > a(n) || !1
+    };
+  });
+}
+function Qt(e, t = {}, n = {}) {
+  let r = {
+    ...t?.[U.Day]
+  };
+  return Object.entries(e).filter(([, e]) => e === !0).forEach(([e]) => {
+    r = {
+      ...r,
+      ...n?.[e]
+    };
+  }), r;
+}
+function $t(e, t, n, r) {
+  let i = r ?? e.today(),
+    a = n ? e.startOfBroadcastWeek(i, e) : t ? e.startOfISOWeek(i) : e.startOfWeek(i),
+    o = [];
+  for (let t = 0; t < 7; t++) {
+    let n = e.addDays(a, t);
+    o.push(n);
+  }
+  return o;
+}
+function en(e, t, n, r, i = !1) {
+  if (!e || !t) return;
+  let {
+      startOfYear: a,
+      endOfYear: o,
+      eachYearOfInterval: s,
+      getYear: c
+    } = r,
+    l = s({
+      start: a(e),
+      end: o(t)
+    });
+  return i && l.reverse(), l.map(e => {
+    let t = n.formatYearDropdown(e, r);
+    return {
+      value: c(e),
+      label: t,
+      disabled: !1
+    };
+  });
+}
+function tn(e, t = {}) {
+  let {
+      weekStartsOn: n,
+      locale: r
+    } = t,
+    i = n ?? r?.options?.weekStartsOn ?? 0,
+    a = t => {
+      let n = typeof t == `number` || typeof t == `string` ? new Date(t) : t;
+      return new z(n.getFullYear(), n.getMonth(), n.getDate(), 12, 0, 0, e);
+    },
+    o = e => {
+      let t = a(e);
+      return new Date(t.getFullYear(), t.getMonth(), t.getDate(), 0, 0, 0, 0);
+    };
+  return {
+    today: () => a(z.tz(e)),
+    newDate: (t, n, r) => new z(t, n, r, 12, 0, 0, e),
+    startOfDay: e => a(e),
+    startOfWeek: (e, t) => {
+      let n = a(e),
+        r = t?.weekStartsOn ?? i,
+        o = (n.getDay() - r + 7) % 7;
+      return n.setDate(n.getDate() - o), n;
+    },
+    startOfISOWeek: e => {
+      let t = a(e),
+        n = (t.getDay() - 1 + 7) % 7;
+      return t.setDate(t.getDate() - n), t;
+    },
+    startOfMonth: e => {
+      let t = a(e);
+      return t.setDate(1), t;
+    },
+    startOfYear: e => {
+      let t = a(e);
+      return t.setMonth(0, 1), t;
+    },
+    endOfWeek: (e, t) => {
+      let n = a(e),
+        r = (((t?.weekStartsOn ?? i) + 6) % 7 - n.getDay() + 7) % 7;
+      return n.setDate(n.getDate() + r), n;
+    },
+    endOfISOWeek: e => {
+      let t = a(e),
+        n = (7 - t.getDay()) % 7;
+      return t.setDate(t.getDate() + n), t;
+    },
+    endOfMonth: e => {
+      let t = a(e);
+      return t.setMonth(t.getMonth() + 1, 0), t;
+    },
+    endOfYear: e => {
+      let t = a(e);
+      return t.setMonth(11, 31), t;
+    },
+    eachMonthOfInterval: t => {
+      let n = a(t.start),
+        r = a(t.end),
+        i = [],
+        o = new z(n.getFullYear(), n.getMonth(), 1, 12, 0, 0, e),
+        s = r.getFullYear() * 12 + r.getMonth();
+      for (; o.getFullYear() * 12 + o.getMonth() <= s;) i.push(new z(o, e)), o.setMonth(o.getMonth() + 1, 1);
+      return i;
+    },
+    addDays: (e, t) => {
+      let n = a(e);
+      return n.setDate(n.getDate() + t), n;
+    },
+    addWeeks: (e, t) => {
+      let n = a(e);
+      return n.setDate(n.getDate() + t * 7), n;
+    },
+    addMonths: (e, t) => {
+      let n = a(e);
+      return n.setMonth(n.getMonth() + t), n;
+    },
+    addYears: (e, t) => {
+      let n = a(e);
+      return n.setFullYear(n.getFullYear() + t), n;
+    },
+    eachYearOfInterval: t => {
+      let n = a(t.start),
+        r = a(t.end),
+        i = [],
+        o = new z(n.getFullYear(), 0, 1, 12, 0, 0, e);
+      for (; o.getFullYear() <= r.getFullYear();) i.push(new z(o, e)), o.setFullYear(o.getFullYear() + 1, 0, 1);
+      return i;
+    },
+    getWeek: (e, t) => {
+      let n = o(e);
+      return ee(n, {
+        weekStartsOn: t?.weekStartsOn ?? i,
+        firstWeekContainsDate: t?.firstWeekContainsDate ?? r?.options?.firstWeekContainsDate ?? 1
+      });
+    },
+    getISOWeek: e => {
+      let t = o(e);
+      return A(t);
+    },
+    differenceInCalendarDays: (e, t) => {
+      let n = o(e),
+        r = o(t);
+      return O(n, r);
+    },
+    differenceInCalendarMonths: (e, t) => _e(o(e), o(t))
+  };
+}
+var nn = e => e instanceof HTMLElement ? e : null,
+  rn = e => [...(e.querySelectorAll(`[data-animated-month]`) ?? [])],
+  an = e => nn(e.querySelector(`[data-animated-month]`)),
+  on = e => nn(e.querySelector(`[data-animated-caption]`)),
+  sn = e => nn(e.querySelector(`[data-animated-weeks]`)),
+  cn = e => nn(e.querySelector(`[data-animated-nav]`)),
+  ln = e => nn(e.querySelector(`[data-animated-weekdays]`));
+function un(e, t, {
+  classNames: n,
+  months: r,
+  focused: i,
+  dateLib: a
+}) {
+  let o = (0, H.useRef)(null),
+    s = (0, H.useRef)(r),
+    c = (0, H.useRef)(!1);
+  (0, H.useLayoutEffect)(() => {
+    let l = s.current;
+    if (s.current = r, !t || !e.current || !(e.current instanceof HTMLElement) || r.length === 0 || l.length === 0 || r.length !== l.length) return;
+    let u = a.isSameMonth(r[0].date, l[0].date),
+      d = a.isAfter(r[0].date, l[0].date),
+      f = d ? n[K.caption_after_enter] : n[K.caption_before_enter],
+      p = d ? n[K.weeks_after_enter] : n[K.weeks_before_enter],
+      m = o.current,
+      h = e.current.cloneNode(!0);
+    if (h instanceof HTMLElement ? (rn(h).forEach(e => {
+      if (!(e instanceof HTMLElement)) return;
+      let t = an(e);
+      t && e.contains(t) && e.removeChild(t);
+      let n = on(e);
+      n && n.classList.remove(f);
+      let r = sn(e);
+      r && r.classList.remove(p);
+    }), o.current = h) : o.current = null, c.current || u || i) return;
+    let g = m instanceof HTMLElement ? rn(m) : [],
+      _ = rn(e.current);
+    if (_?.every(e => e instanceof HTMLElement) && g?.every(e => e instanceof HTMLElement)) {
+      c.current = !0;
+      let t = [];
+      e.current.style.isolation = `isolate`;
+      let r = cn(e.current);
+      r && (r.style.zIndex = `1`), _.forEach((i, a) => {
+        let o = g[a];
+        if (!o) return;
+        i.style.position = `relative`, i.style.overflow = `hidden`;
+        let s = on(i);
+        s && s.classList.add(f);
+        let l = sn(i);
+        l && l.classList.add(p);
+        let u = () => {
+          c.current = !1, e.current && (e.current.style.isolation = ``), r && (r.style.zIndex = ``), s && s.classList.remove(f), l && l.classList.remove(p), i.style.position = ``, i.style.overflow = ``, i.contains(o) && i.removeChild(o);
+        };
+        t.push(u), o.style.pointerEvents = `none`, o.style.position = `absolute`, o.style.overflow = `hidden`, o.setAttribute(`aria-hidden`, `true`);
+        let m = ln(o);
+        m && (m.style.opacity = `0`);
+        let h = on(o);
+        h && (h.classList.add(d ? n[K.caption_before_exit] : n[K.caption_after_exit]), h.addEventListener(`animationend`, u));
+        let _ = sn(o);
+        _ && _.classList.add(d ? n[K.weeks_before_exit] : n[K.weeks_after_exit]), i.insertBefore(o, i.firstChild);
+      });
+    }
+  });
+}
+function dn(e, t, n, r) {
+  let i = e[0],
+    a = e[e.length - 1],
+    {
+      ISOWeek: o,
+      fixedWeeks: s,
+      broadcastCalendar: c
+    } = n ?? {},
+    {
+      addDays: l,
+      differenceInCalendarDays: u,
+      differenceInCalendarMonths: d,
+      endOfBroadcastWeek: f,
+      endOfISOWeek: p,
+      endOfMonth: m,
+      endOfWeek: h,
+      isAfter: g,
+      startOfBroadcastWeek: _,
+      startOfISOWeek: v,
+      startOfWeek: y
+    } = r,
+    b = c ? _(i, r) : o ? v(i) : y(i),
+    x = c ? f(a) : o ? p(m(a)) : h(m(a)),
+    S = t && (c ? f(t) : o ? p(t) : h(t)),
+    C = u(S && g(x, S) ? S : x, b),
+    w = d(a, i) + 1,
+    T = [];
+  for (let e = 0; e <= C; e++) {
+    let t = l(b, e);
+    T.push(t);
+  }
+  let E = (c ? 35 : 42) * w;
+  if (s && T.length < E) {
+    let e = E - T.length;
+    for (let t = 0; t < e; t++) {
+      let e = l(T[T.length - 1], 1);
+      T.push(e);
+    }
+  }
+  return T;
+}
+function fn(e) {
+  let t = [];
+  return e.reduce((e, n) => {
+    let r = n.weeks.reduce((e, t) => e.concat(t.days.slice()), t.slice());
+    return e.concat(r.slice());
+  }, t.slice());
+}
+function pn(e, t, n, r) {
+  let {
+      numberOfMonths: i = 1
+    } = n,
+    a = [];
+  for (let n = 0; n < i; n++) {
+    let i = r.addMonths(e, n);
+    if (t && i > t) break;
+    a.push(i);
+  }
+  return a;
+}
+function mn(e, t, n, r) {
+  let {
+      month: i,
+      defaultMonth: a,
+      today: o = r.today(),
+      numberOfMonths: s = 1
+    } = e,
+    c = i || a || o,
+    {
+      differenceInCalendarMonths: l,
+      addMonths: u,
+      startOfMonth: d
+    } = r;
+  return n && l(n, c) < s - 1 && (c = u(n, -1 * (s - 1))), t && l(c, t) < 0 && (c = t), d(c);
+}
+function hn(e, t, n, r) {
+  let {
+      addDays: i,
+      endOfBroadcastWeek: a,
+      endOfISOWeek: o,
+      endOfMonth: s,
+      endOfWeek: c,
+      getISOWeek: l,
+      getWeek: u,
+      startOfBroadcastWeek: d,
+      startOfISOWeek: f,
+      startOfWeek: p
+    } = r,
+    m = e.reduce((e, m) => {
+      let h = n.broadcastCalendar ? d(m, r) : n.ISOWeek ? f(m) : p(m),
+        g = n.broadcastCalendar ? a(m) : n.ISOWeek ? o(s(m)) : c(s(m)),
+        _ = t.filter(e => e >= h && e <= g),
+        v = n.broadcastCalendar ? 35 : 42;
+      if (n.fixedWeeks && _.length < v) {
+        let e = t.filter(e => {
+          let t = v - _.length;
+          return e > g && e <= i(g, t);
+        });
+        _.push(...e);
+      }
+      let y = new He(m, _.reduce((e, t) => {
+        let i = n.ISOWeek ? l(t) : u(t),
+          a = e.find(e => e.weekNumber === i),
+          o = new Ve(t, m, r);
+        return a ? a.days.push(o) : e.push(new Ue(i, [o])), e;
+      }, []));
+      return e.push(y), e;
+    }, []);
+  return n.reverseMonths ? m.reverse() : m;
+}
+function gn(e, t) {
+  let {
+      startMonth: n,
+      endMonth: r
+    } = e,
+    {
+      startOfYear: i,
+      startOfDay: a,
+      startOfMonth: o,
+      endOfMonth: s,
+      addYears: c,
+      endOfYear: l,
+      today: u
+    } = t,
+    d = e.captionLayout === `dropdown` || e.captionLayout === `dropdown-years`;
+  return n ? n = o(n) : !n && d && (n = i(c(e.today ?? u(), -100))), r ? r = s(r) : !r && d && (r = l(e.today ?? u())), [n && a(n), r && a(r)];
+}
+function _n(e, t, n, r) {
+  if (n.disableNavigation) return;
+  let {
+      pagedNavigation: i,
+      numberOfMonths: a = 1
+    } = n,
+    {
+      startOfMonth: o,
+      addMonths: s,
+      differenceInCalendarMonths: c
+    } = r,
+    l = i ? a : 1,
+    u = o(e);
+  if (!t || !(c(t, e) < a)) return s(u, l);
+}
+function vn(e, t, n, r) {
+  if (n.disableNavigation) return;
+  let {
+      pagedNavigation: i,
+      numberOfMonths: a
+    } = n,
+    {
+      startOfMonth: o,
+      addMonths: s,
+      differenceInCalendarMonths: c
+    } = r,
+    l = i ? a ?? 1 : 1,
+    u = o(e);
+  if (!t || !(c(u, t) <= 0)) return s(u, -l);
+}
+function yn(e) {
+  return e.reduce((e, t) => e.concat(t.weeks.slice()), [].slice());
+}
+function bn(e, t) {
+  let [n, r] = (0, H.useState)(e);
+  return [t === void 0 ? n : t, r];
+}
+function xn(e, t) {
+  let [n, r] = gn(e, t),
+    {
+      startOfMonth: i,
+      endOfMonth: a
+    } = t,
+    o = mn(e, n, r, t),
+    [s, c] = bn(o, e.month ? o : void 0);
+  (0, H.useEffect)(() => {
+    let i = mn(e, n, r, t);
+    c(i);
+  }, [e.timeZone]);
+  let {
+      months: l,
+      weeks: u,
+      days: d,
+      previousMonth: f,
+      nextMonth: p
+    } = (0, H.useMemo)(() => {
+      let i = pn(s, r, {
+          numberOfMonths: e.numberOfMonths
+        }, t),
+        o = hn(i, dn(i, e.endMonth ? a(e.endMonth) : void 0, {
+          ISOWeek: e.ISOWeek,
+          fixedWeeks: e.fixedWeeks,
+          broadcastCalendar: e.broadcastCalendar
+        }, t), {
+          broadcastCalendar: e.broadcastCalendar,
+          fixedWeeks: e.fixedWeeks,
+          ISOWeek: e.ISOWeek,
+          reverseMonths: e.reverseMonths
+        }, t);
+      return {
+        months: o,
+        weeks: yn(o),
+        days: fn(o),
+        previousMonth: vn(s, n, e, t),
+        nextMonth: _n(s, r, e, t)
+      };
+    }, [t, s.getTime(), r?.getTime(), n?.getTime(), e.disableNavigation, e.broadcastCalendar, e.endMonth?.getTime(), e.fixedWeeks, e.ISOWeek, e.numberOfMonths, e.pagedNavigation, e.reverseMonths]),
+    {
+      disableNavigation: m,
+      onMonthChange: h
+    } = e,
+    g = e => u.some(t => t.days.some(t => t.isEqualTo(e))),
+    _ = e => {
+      if (m) return;
+      let t = i(e);
+      n && t < i(n) && (t = i(n)), r && t > i(r) && (t = i(r)), c(t), h?.(t);
+    };
+  return {
+    months: l,
+    weeks: u,
+    days: d,
+    navStart: n,
+    navEnd: r,
+    previousMonth: f,
+    nextMonth: p,
+    goToMonth: _,
+    goToDay: e => {
+      g(e) || _(e.date);
+    }
+  };
+}
+var Sn;
+(function (e) {
+  e[e.Today = 0] = `Today`, e[e.Selected = 1] = `Selected`, e[e.LastFocused = 2] = `LastFocused`, e[e.FocusedModifier = 3] = `FocusedModifier`;
+})(Sn ||= {});
+function Cn(e) {
+  return !e[W.disabled] && !e[W.hidden] && !e[W.outside];
+}
+function wn(e, t, n, r) {
+  let i,
+    a = -1;
+  for (let o of e) {
+    let e = t(o);
+    Cn(e) && (e[W.focused] && a < Sn.FocusedModifier ? (i = o, a = Sn.FocusedModifier) : r?.isEqualTo(o) && a < Sn.LastFocused ? (i = o, a = Sn.LastFocused) : n(o.date) && a < Sn.Selected ? (i = o, a = Sn.Selected) : e[W.today] && a < Sn.Today && (i = o, a = Sn.Today));
+  }
+  return i ||= e.find(e => Cn(t(e))), i;
+}
+function Tn(e, t, n, r, i, a, o) {
+  let {
+      ISOWeek: s,
+      broadcastCalendar: c
+    } = a,
+    {
+      addDays: l,
+      addMonths: u,
+      addWeeks: d,
+      addYears: f,
+      endOfBroadcastWeek: p,
+      endOfISOWeek: m,
+      endOfWeek: h,
+      max: g,
+      min: _,
+      startOfBroadcastWeek: v,
+      startOfISOWeek: y,
+      startOfWeek: b
+    } = o,
+    x = {
+      day: l,
+      week: d,
+      month: u,
+      year: f,
+      startOfWeek: e => c ? v(e, o) : s ? y(e) : b(e),
+      endOfWeek: e => c ? p(e) : s ? m(e) : h(e)
+    }[e](n, t === `after` ? 1 : -1);
+  return t === `before` && r ? x = g([r, x]) : t === `after` && i && (x = _([i, x])), x;
+}
+function En(e, t, n, r, i, a, o, s = 0) {
+  if (s > 365) return;
+  let c = Tn(e, t, n.date, r, i, a, o),
+    l = !!(a.disabled && Y(c, a.disabled, o)),
+    u = !!(a.hidden && Y(c, a.hidden, o)),
+    d = new Ve(c, c, o);
+  return !l && !u ? d : En(e, t, d, r, i, a, o, s + 1);
+}
+function Dn(e, t, n, r, i) {
+  let {
+      autoFocus: a
+    } = e,
+    [o, s] = (0, H.useState)(),
+    c = wn(t.days, n, r || (() => !1), o),
+    [l, u] = (0, H.useState)(a ? c : void 0);
+  return {
+    isFocusTarget: e => !!c?.isEqualTo(e),
+    setFocused: u,
+    focused: l,
+    blur: () => {
+      s(l), u(void 0);
+    },
+    moveFocus: (n, r) => {
+      if (!l) return;
+      let a = En(n, r, l, t.navStart, t.navEnd, e, i);
+      a && (e.disableNavigation && !t.days.some(e => e.isEqualTo(a)) || (t.goToDay(a), u(a)));
+    }
+  };
+}
+function On(e, t) {
+  let {
+      selected: n,
+      required: r,
+      onSelect: i
+    } = e,
+    [a, o] = bn(n, i ? n : void 0),
+    s = i ? n : a,
+    {
+      isSameDay: c
+    } = t,
+    l = e => s?.some(t => c(t, e)) ?? !1,
+    {
+      min: u,
+      max: d
+    } = e;
+  return {
+    selected: s,
+    select: (e, t, n) => {
+      let a = [...(s ?? [])];
+      if (l(e)) {
+        if (s?.length === u || r && s?.length === 1) return;
+        a = s?.filter(t => !c(t, e));
+      } else a = s?.length === d ? [e] : [...a, e];
+      return i || o(a), i?.(a, e, t, n), a;
+    },
+    isSelected: l
+  };
+}
+function kn(e, t, n = 0, r = 0, i = !1, a = V) {
+  let {
+      from: o,
+      to: s
+    } = t || {},
+    {
+      isSameDay: c,
+      isAfter: l,
+      isBefore: u
+    } = a,
+    d;
+  if (!o && !s) d = {
+    from: e,
+    to: n > 0 ? void 0 : e
+  };else if (o && !s) d = c(o, e) ? n === 0 ? {
+    from: o,
+    to: e
+  } : i ? {
+    from: o,
+    to: void 0
+  } : void 0 : u(e, o) ? {
+    from: e,
+    to: o
+  } : {
+    from: o,
+    to: e
+  };else if (o && s) {
+    if (c(o, e) && c(s, e)) d = i ? {
+      from: o,
+      to: s
+    } : void 0;else if (c(o, e)) d = {
+      from: o,
+      to: n > 0 ? void 0 : e
+    };else if (c(s, e)) d = {
+      from: e,
+      to: n > 0 ? void 0 : e
+    };else if (u(e, o)) d = {
+      from: e,
+      to: s
+    };else if (l(e, o)) d = {
+      from: o,
+      to: e
+    };else if (l(e, s)) d = {
+      from: o,
+      to: e
+    };else throw Error(`Invalid range`);
+  }
+  if (d?.from && d?.to) {
+    let t = a.differenceInCalendarDays(d.to, d.from);
+    (r > 0 && t > r || n > 1 && t < n) && (d = {
+      from: e,
+      to: void 0
+    });
+  }
+  return d;
+}
+function An(e, t, n = V) {
+  let r = Array.isArray(t) ? t : [t],
+    i = e.from,
+    a = n.differenceInCalendarDays(e.to, e.from),
+    o = Math.min(a, 6);
+  for (let e = 0; e <= o; e++) {
+    if (r.includes(i.getDay())) return !0;
+    i = n.addDays(i, 1);
+  }
+  return !1;
+}
+function jn(e, t, n = V) {
+  return J(e, t.from, !1, n) || J(e, t.to, !1, n) || J(t, e.from, !1, n) || J(t, e.to, !1, n);
+}
+function Mn(e, t, n = V) {
+  let r = Array.isArray(t) ? t : [t];
+  if (r.filter(e => typeof e != `function`).some(t => typeof t == `boolean` ? t : n.isDate(t) ? J(e, t, !1, n) : St(t, n) ? t.some(t => J(e, t, !1, n)) : vt(t) ? t.from && t.to ? jn(e, {
+    from: t.from,
+    to: t.to
+  }, n) : !1 : xt(t) ? An(e, t.dayOfWeek, n) : _t(t) ? n.isAfter(t.before, t.after) ? jn(e, {
+    from: n.addDays(t.after, 1),
+    to: n.addDays(t.before, -1)
+  }, n) : Y(e.from, t, n) || Y(e.to, t, n) : yt(t) || bt(t) ? Y(e.from, t, n) || Y(e.to, t, n) : !1)) return !0;
+  let i = r.filter(e => typeof e == `function`);
+  if (i.length) {
+    let t = e.from,
+      r = n.differenceInCalendarDays(e.to, e.from);
+    for (let e = 0; e <= r; e++) {
+      if (i.some(e => e(t))) return !0;
+      t = n.addDays(t, 1);
+    }
+  }
+  return !1;
+}
+function Nn(e, t) {
+  let {
+      disabled: n,
+      excludeDisabled: r,
+      resetOnSelect: i,
+      selected: a,
+      required: o,
+      onSelect: s
+    } = e,
+    [c, l] = bn(a, s ? a : void 0),
+    u = s ? a : c;
+  return {
+    selected: u,
+    select: (a, c, d) => {
+      let {
+          min: f,
+          max: p
+        } = e,
+        m;
+      if (a) {
+        let e = u?.from,
+          n = u?.to,
+          r = !!e && !!n,
+          s = !!e && !!n && t.isSameDay(e, n) && t.isSameDay(a, e);
+        m = i && (r || !u?.from) ? !o && s ? void 0 : {
+          from: a,
+          to: void 0
+        } : kn(a, u, f, p, o, t);
+      }
+      return r && n && m?.from && m.to && Mn({
+        from: m.from,
+        to: m.to
+      }, n, t) && (m.from = a, m.to = void 0), s || l(m), s?.(m, a, c, d), m;
+    },
+    isSelected: e => u && J(u, e, !1, t)
+  };
+}
+function Pn(e, t) {
+  let {
+      selected: n,
+      required: r,
+      onSelect: i
+    } = e,
+    [a, o] = bn(n, i ? n : void 0),
+    s = i ? n : a,
+    {
+      isSameDay: c
+    } = t;
+  return {
+    selected: s,
+    select: (e, t, n) => {
+      let a = e;
+      return !r && s && s && c(e, s) && (a = void 0), i || o(a), i?.(a, e, t, n), a;
+    },
+    isSelected: e => s ? c(s, e) : !1
+  };
+}
+function Fn(e, t) {
+  let n = Pn(e, t),
+    r = On(e, t),
+    i = Nn(e, t);
+  switch (e.mode) {
+    case `single`:
+      return n;
+    case `multiple`:
+      return r;
+    case `range`:
+      return i;
+    default:
+      return;
+  }
+}
+function Z(e, t) {
+  return e instanceof z && e.timeZone === t ? e : new z(e, t);
+}
+function In(e, t, n) {
+  if (!n) return Z(e, t);
+  let r = Z(e, t),
+    i = new z(r.getFullYear(), r.getMonth(), r.getDate(), 12, 0, 0, t);
+  return new Date(i.getTime());
+}
+function Ln(e, t, n) {
+  return typeof e == `boolean` || typeof e == `function` ? e : e instanceof Date ? In(e, t, n) : Array.isArray(e) ? e.map(e => e instanceof Date ? In(e, t, n) : e) : vt(e) ? {
+    ...e,
+    from: e.from ? Z(e.from, t) : e.from,
+    to: e.to ? Z(e.to, t) : e.to
+  } : _t(e) ? {
+    before: In(e.before, t, n),
+    after: In(e.after, t, n)
+  } : yt(e) ? {
+    after: In(e.after, t, n)
+  } : bt(e) ? {
+    before: In(e.before, t, n)
+  } : e;
+}
+function Rn(e, t, n) {
+  return e && (Array.isArray(e) ? e.map(e => Ln(e, t, n)) : Ln(e, t, n));
+}
+function zn(e) {
+  let t = e,
+    n = t.timeZone;
+  if (n && (t = {
+    ...e,
+    timeZone: n
+  }, t.today && (t.today = Z(t.today, n)), t.month && (t.month = Z(t.month, n)), t.defaultMonth && (t.defaultMonth = Z(t.defaultMonth, n)), t.startMonth && (t.startMonth = Z(t.startMonth, n)), t.endMonth && (t.endMonth = Z(t.endMonth, n)), t.mode === `single` && t.selected ? t.selected = Z(t.selected, n) : t.mode === `multiple` && t.selected ? t.selected = t.selected?.map(e => Z(e, n)) : t.mode === `range` && t.selected && (t.selected = {
+    from: t.selected.from ? Z(t.selected.from, n) : t.selected.from,
+    to: t.selected.to ? Z(t.selected.to, n) : t.selected.to
+  }), t.disabled !== void 0 && (t.disabled = Rn(t.disabled, n)), t.hidden !== void 0 && (t.hidden = Rn(t.hidden, n)), t.modifiers)) {
+    let e = {};
+    Object.keys(t.modifiers).forEach(r => {
+      e[r] = Rn(t.modifiers?.[r], n);
+    }), t.modifiers = e;
+  }
+  let {
+    components: r,
+    formatters: i,
+    labels: a,
+    dateLib: o,
+    locale: s,
+    classNames: c
+  } = (0, H.useMemo)(() => {
+    let e = {
+        ...Be,
+        ...t.locale
+      },
+      n = t.broadcastCalendar ? 1 : t.weekStartsOn,
+      r = t.noonSafe && t.timeZone ? tn(t.timeZone, {
+        weekStartsOn: n,
+        locale: e
+      }) : void 0,
+      i = t.dateLib && r ? {
+        ...r,
+        ...t.dateLib
+      } : t.dateLib ?? r,
+      a = new B({
+        locale: e,
+        weekStartsOn: n,
+        firstWeekContainsDate: t.firstWeekContainsDate,
+        useAdditionalWeekYearTokens: t.useAdditionalWeekYearTokens,
+        useAdditionalDayOfYearTokens: t.useAdditionalDayOfYearTokens,
+        timeZone: t.timeZone,
+        numerals: t.numerals
+      }, i);
+    return {
+      dateLib: a,
+      components: Tt(t.components),
+      formatters: It(t.formatters),
+      labels: Xt(t.labels, a.options),
+      locale: e,
+      classNames: {
+        ...Dt(),
+        ...t.classNames
+      }
+    };
+  }, [t.locale, t.broadcastCalendar, t.weekStartsOn, t.firstWeekContainsDate, t.useAdditionalWeekYearTokens, t.useAdditionalDayOfYearTokens, t.timeZone, t.numerals, t.dateLib, t.noonSafe, t.components, t.formatters, t.labels, t.classNames]);
+  t.today || (t = {
+    ...t,
+    today: o.today()
+  });
+  let {
+      captionLayout: l,
+      mode: u,
+      navLayout: d,
+      numberOfMonths: f = 1,
+      onDayBlur: p,
+      onDayClick: m,
+      onDayFocus: h,
+      onDayKeyDown: g,
+      onDayMouseEnter: _,
+      onDayMouseLeave: v,
+      onNextClick: y,
+      onPrevClick: b,
+      showWeekNumber: x,
+      styles: S
+    } = t,
+    {
+      formatCaption: C,
+      formatDay: w,
+      formatMonthDropdown: T,
+      formatWeekNumber: E,
+      formatWeekNumberHeader: D,
+      formatWeekdayName: ee,
+      formatYearDropdown: O
+    } = i,
+    k = xn(t, o),
+    {
+      days: A,
+      months: j,
+      navStart: M,
+      navEnd: N,
+      previousMonth: P,
+      nextMonth: F,
+      goToMonth: I
+    } = k,
+    L = Ct(A, t, M, N, o),
+    {
+      isSelected: R,
+      select: te,
+      selected: ne
+    } = Fn(t, o) ?? {},
+    {
+      blur: re,
+      focused: ie,
+      isFocusTarget: ae,
+      moveFocus: oe,
+      setFocused: se
+    } = Dn(t, k, L, R ?? (() => !1), o),
+    {
+      labelDayButton: ce,
+      labelGridcell: le,
+      labelGrid: z,
+      labelMonthDropdown: ue,
+      labelNav: de,
+      labelPrevious: fe,
+      labelNext: pe,
+      labelWeekday: me,
+      labelWeekNumber: he,
+      labelWeekNumberHeader: ge,
+      labelYearDropdown: _e
+    } = a,
+    ve = (0, H.useMemo)(() => $t(o, t.ISOWeek, t.broadcastCalendar, t.today), [o, t.ISOWeek, t.broadcastCalendar, t.today]),
+    ye = u !== void 0 || m !== void 0,
+    be = (0, H.useCallback)(() => {
+      P && (I(P), b?.(P));
+    }, [P, I, b]),
+    xe = (0, H.useCallback)(() => {
+      F && (I(F), y?.(F));
+    }, [I, F, y]),
+    Se = (0, H.useCallback)((e, t) => n => {
+      n.preventDefault(), n.stopPropagation(), se(e), !t.disabled && (te?.(e.date, t, n), m?.(e.date, t, n));
+    }, [te, m, se]),
+    Ce = (0, H.useCallback)((e, t) => n => {
+      se(e), h?.(e.date, t, n);
+    }, [h, se]),
+    we = (0, H.useCallback)((e, t) => n => {
+      re(), p?.(e.date, t, n);
+    }, [re, p]),
+    Te = (0, H.useCallback)((e, n) => r => {
+      let i = {
+        ArrowLeft: [r.shiftKey ? `month` : `day`, t.dir === `rtl` ? `after` : `before`],
+        ArrowRight: [r.shiftKey ? `month` : `day`, t.dir === `rtl` ? `before` : `after`],
+        ArrowDown: [r.shiftKey ? `year` : `week`, `after`],
+        ArrowUp: [r.shiftKey ? `year` : `week`, `before`],
+        PageUp: [r.shiftKey ? `year` : `month`, `before`],
+        PageDown: [r.shiftKey ? `year` : `month`, `after`],
+        Home: [`startOfWeek`, `before`],
+        End: [`endOfWeek`, `after`]
+      };
+      if (i[r.key]) {
+        r.preventDefault(), r.stopPropagation();
+        let [e, t] = i[r.key];
+        oe(e, t);
+      }
+      g?.(e.date, n, r);
+    }, [oe, g, t.dir]),
+    Ee = (0, H.useCallback)((e, t) => n => {
+      _?.(e.date, t, n);
+    }, [_]),
+    De = (0, H.useCallback)((e, t) => n => {
+      v?.(e.date, t, n);
+    }, [v]),
+    Oe = (0, H.useCallback)((e, t) => n => {
+      let r = Number(n.target.value),
+        i = o.setMonth(o.startOfMonth(e), r);
+      I(o.addMonths(i, -t));
+    }, [o, I]),
+    ke = (0, H.useCallback)((e, t) => n => {
+      let r = Number(n.target.value),
+        i = o.setYear(o.startOfMonth(e), r);
+      I(o.addMonths(i, -t));
+    }, [o, I]),
+    {
+      className: Ae,
+      style: je
+    } = (0, H.useMemo)(() => ({
+      className: [c[U.Root], t.className].filter(Boolean).join(` `),
+      style: {
+        ...S?.[U.Root],
+        ...t.style
+      }
+    }), [c, t.className, t.style, S]),
+    Me = Et(t),
+    Ne = e => {
+      let t = S?.[U.Dropdown],
+        n = S?.[e];
+      if (!(!t && !n)) return {
+        ...t,
+        ...n
+      };
+    },
+    Pe = (0, H.useRef)(null);
+  un(Pe, !!t.animate, {
+    classNames: c,
+    months: j,
+    focused: ie,
+    dateLib: o
+  });
+  let Fe = {
+    dayPickerProps: t,
+    selected: ne,
+    select: te,
+    isSelected: R,
+    months: j,
+    nextMonth: F,
+    previousMonth: P,
+    goToMonth: I,
+    getModifiers: L,
+    components: r,
+    classNames: c,
+    styles: S,
+    labels: a,
+    formatters: i
+  };
+  return H.createElement(Je.Provider, {
+    value: Fe
+  }, H.createElement(r.Root, {
+    rootRef: t.animate ? Pe : void 0,
+    className: Ae,
+    style: je,
+    dir: t.dir,
+    id: t.id,
+    lang: t.lang ?? s.code,
+    nonce: t.nonce,
+    title: t.title,
+    role: t.role,
+    "aria-label": t[`aria-label`],
+    "aria-labelledby": t[`aria-labelledby`],
+    ...Me
+  }, H.createElement(r.Months, {
+    className: c[U.Months],
+    style: S?.[U.Months]
+  }, !t.hideNavigation && !d && H.createElement(r.Nav, {
+    "data-animated-nav": t.animate ? `true` : void 0,
+    className: c[U.Nav],
+    style: S?.[U.Nav],
+    "aria-label": de(),
+    onPreviousClick: be,
+    onNextClick: xe,
+    previousMonth: P,
+    nextMonth: F
+  }), j.map((e, n) => {
+    let a = t.reverseMonths ? j.length - 1 - n : n;
+    return H.createElement(r.Month, {
+      "data-animated-month": t.animate ? `true` : void 0,
+      className: c[U.Month],
+      style: S?.[U.Month],
+      key: n,
+      displayIndex: n,
+      calendarMonth: e
+    }, d === `around` && !t.hideNavigation && n === 0 && H.createElement(r.PreviousMonthButton, {
+      type: `button`,
+      className: c[U.PreviousMonthButton],
+      style: S?.[U.PreviousMonthButton],
+      tabIndex: P ? void 0 : -1,
+      "aria-disabled": !P || void 0,
+      "aria-label": fe(P),
+      onClick: be,
+      "data-animated-button": t.animate ? `true` : void 0
+    }, H.createElement(r.Chevron, {
+      disabled: !P || void 0,
+      className: c[U.Chevron],
+      style: S?.[U.Chevron],
+      orientation: t.dir === `rtl` ? `right` : `left`
+    })), H.createElement(r.MonthCaption, {
+      "data-animated-caption": t.animate ? `true` : void 0,
+      className: c[U.MonthCaption],
+      style: S?.[U.MonthCaption],
+      calendarMonth: e,
+      displayIndex: n
+    }, l?.startsWith(`dropdown`) ? H.createElement(r.DropdownNav, {
+      className: c[U.Dropdowns],
+      style: S?.[U.Dropdowns]
+    }, (() => {
+      let n = l === `dropdown` || l === `dropdown-months` ? H.createElement(r.MonthsDropdown, {
+          key: `month`,
+          className: c[U.MonthsDropdown],
+          "aria-label": ue(),
+          disabled: !!t.disableNavigation,
+          onChange: Oe(e.date, a),
+          options: Zt(e.date, M, N, i, o),
+          style: Ne(U.MonthsDropdown),
+          value: o.getMonth(e.date)
+        }) : H.createElement(`span`, {
+          key: `month`
+        }, T(e.date, o)),
+        s = l === `dropdown` || l === `dropdown-years` ? H.createElement(r.YearsDropdown, {
+          key: `year`,
+          className: c[U.YearsDropdown],
+          "aria-label": _e(o.options),
+          disabled: !!t.disableNavigation,
+          onChange: ke(e.date, a),
+          options: en(M, N, i, o, !!t.reverseYears),
+          style: Ne(U.YearsDropdown),
+          value: o.getYear(e.date)
+        }) : H.createElement(`span`, {
+          key: `year`
+        }, O(e.date, o));
+      return o.getMonthYearOrder() === `year-first` ? [s, n] : [n, s];
+    })(), H.createElement(`span`, {
+      role: `status`,
+      "aria-live": `polite`,
+      style: {
+        border: 0,
+        clip: `rect(0 0 0 0)`,
+        height: `1px`,
+        margin: `-1px`,
+        overflow: `hidden`,
+        padding: 0,
+        position: `absolute`,
+        width: `1px`,
+        whiteSpace: `nowrap`,
+        wordWrap: `normal`
+      }
+    }, C(e.date, o.options, o))) : H.createElement(r.CaptionLabel, {
+      className: c[U.CaptionLabel],
+      style: S?.[U.CaptionLabel],
+      role: `status`,
+      "aria-live": `polite`
+    }, C(e.date, o.options, o))), d === `around` && !t.hideNavigation && n === f - 1 && H.createElement(r.NextMonthButton, {
+      type: `button`,
+      className: c[U.NextMonthButton],
+      style: S?.[U.NextMonthButton],
+      tabIndex: F ? void 0 : -1,
+      "aria-disabled": !F || void 0,
+      "aria-label": pe(F),
+      onClick: xe,
+      "data-animated-button": t.animate ? `true` : void 0
+    }, H.createElement(r.Chevron, {
+      disabled: !F || void 0,
+      className: c[U.Chevron],
+      style: S?.[U.Chevron],
+      orientation: t.dir === `rtl` ? `left` : `right`
+    })), n === f - 1 && d === `after` && !t.hideNavigation && H.createElement(r.Nav, {
+      "data-animated-nav": t.animate ? `true` : void 0,
+      className: c[U.Nav],
+      style: S?.[U.Nav],
+      "aria-label": de(),
+      onPreviousClick: be,
+      onNextClick: xe,
+      previousMonth: P,
+      nextMonth: F
+    }), H.createElement(r.MonthGrid, {
+      role: `grid`,
+      "aria-multiselectable": u === `multiple` || u === `range`,
+      "aria-label": z(e.date, o.options, o) || void 0,
+      className: c[U.MonthGrid],
+      style: S?.[U.MonthGrid]
+    }, !t.hideWeekdays && H.createElement(r.Weekdays, {
+      "data-animated-weekdays": t.animate ? `true` : void 0,
+      className: c[U.Weekdays],
+      style: S?.[U.Weekdays]
+    }, x && H.createElement(r.WeekNumberHeader, {
+      "aria-label": ge(o.options),
+      className: c[U.WeekNumberHeader],
+      style: S?.[U.WeekNumberHeader],
+      scope: `col`
+    }, D()), ve.map(e => H.createElement(r.Weekday, {
+      "aria-label": me(e, o.options, o),
+      className: c[U.Weekday],
+      key: String(e),
+      style: S?.[U.Weekday],
+      scope: `col`
+    }, ee(e, o.options, o)))), H.createElement(r.Weeks, {
+      "data-animated-weeks": t.animate ? `true` : void 0,
+      className: c[U.Weeks],
+      style: S?.[U.Weeks]
+    }, e.weeks.map(e => H.createElement(r.Week, {
+      className: c[U.Week],
+      key: e.weekNumber,
+      style: S?.[U.Week],
+      week: e
+    }, x && H.createElement(r.WeekNumber, {
+      week: e,
+      style: S?.[U.WeekNumber],
+      "aria-label": he(e.weekNumber, {
+        locale: s
+      }),
+      className: c[U.WeekNumber],
+      scope: `row`,
+      role: `rowheader`
+    }, E(e.weekNumber, o)), e.days.map(e => {
+      let {
+          date: n
+        } = e,
+        i = L(e);
+      if (i[W.focused] = !i.hidden && !!ie?.isEqualTo(e), i[G.selected] = R?.(n) || i.selected, vt(ne)) {
+        let {
+          from: e,
+          to: t
+        } = ne;
+        i[G.range_start] = !!(e && t && o.isSameDay(n, e)), i[G.range_end] = !!(e && t && o.isSameDay(n, t)), i[G.range_middle] = J(ne, n, !0, o);
+      }
+      let a = Qt(i, S, t.modifiersStyles),
+        s = wt(i, c, t.modifiersClassNames),
+        l = !ye && !i.hidden ? le(n, i, o.options, o) : void 0;
+      return H.createElement(r.Day, {
+        key: `${e.isoDate}_${e.displayMonthId}`,
+        day: e,
+        modifiers: i,
+        className: s.join(` `),
+        style: a,
+        role: `gridcell`,
+        "aria-selected": i.selected || void 0,
+        "aria-label": l,
+        "data-day": e.isoDate,
+        "data-month": e.outside ? e.dateMonthId : void 0,
+        "data-selected": i.selected || void 0,
+        "data-disabled": i.disabled || void 0,
+        "data-hidden": i.hidden || void 0,
+        "data-outside": e.outside || void 0,
+        "data-focused": i.focused || void 0,
+        "data-today": i.today || void 0
+      }, !i.hidden && ye ? H.createElement(r.DayButton, {
+        className: c[U.DayButton],
+        style: S?.[U.DayButton],
+        type: `button`,
+        day: e,
+        modifiers: i,
+        disabled: !i.focused && i.disabled || void 0,
+        "aria-disabled": i.focused && i.disabled || void 0,
+        tabIndex: ae(e) ? 0 : -1,
+        "aria-label": ce(n, i, o.options, o),
+        onClick: Se(e, i),
+        onBlur: we(e, i),
+        onFocus: Ce(e, i),
+        onKeyDown: Te(e, i),
+        onMouseEnter: Ee(e, i),
+        onMouseLeave: De(e, i)
+      }, w(n, o.options, o)) : !i.hidden && w(e.date, o.options, o));
+    }))))));
+  })), t.footer && H.createElement(r.Footer, {
+    className: c[U.Footer],
+    style: S?.[U.Footer],
+    role: `status`,
+    "aria-live": `polite`
+  }, t.footer)));
+}
+var Bn = t({
+    Calendar: () => Vn,
+    CalendarDayButton: () => ir
+  }),
+  Q = e(r(), 1);
+function Vn({
+  className: e,
+  classNames: t,
+  showOutsideDays: n,
+  captionLayout: r = `label`,
+  buttonVariant: o = `ghost`,
+  layout: s = `default`,
+  periods: u = !1,
+  formatters: f,
+  components: p,
+  onMonthChange: m,
+  ...h
+}) {
+  let _ = Dt(),
+    b = s === `compact`,
+    x = u && (h.numberOfMonths ?? 1) === 1,
+    [S, C] = H.useState(`day`);
+  !x && S !== `day` && C(`day`);
+  let [w] = H.useState(() => g()),
+    T = y(),
+    E = n ?? (h.numberOfMonths ?? 1) === 1,
+    [D, ee] = H.useState(),
+    [O, k] = H.useState(null),
+    A = h.mode === `range` ? `selected` in h ? h.selected : D : void 0,
+    j = A?.from && (!A.to || Hn(A.from, A.to)) ? A.from : null,
+    M = j && O && !Hn(O.date, j) ? Un(j, O.date) : null,
+    N = M ? $(M.to) - $(M.from) + 1 : 0,
+    P = N - 1,
+    F = M !== null && (h.mode !== `range` || (!h.max || P <= h.max) && (!h.min || h.min <= 1 || P >= h.min)) ? M : null,
+    [I, L] = H.useState(null);
+  F && I && L(null);
+  let R = F !== null && j !== null && Hn(F.from, j),
+    te = H.useCallback(() => k(null), []),
+    ne = H.useCallback(() => L(null), []),
+    re = H.useMemo(() => ({
+      span: F && O ? {
+        days: N,
+        x: O.x,
+        y: O.y,
+        instant: O.instant
+      } : null,
+      landed: I,
+      clear: te,
+      settle: ne
+    }), [F, O, N, I, te, ne]),
+    ie = (e, t, n, r) => {
+      if (!(n instanceof HTMLElement) || t.disabled || t.hidden) {
+        k(null);
+        return;
+      }
+      let i = n.offsetWidth / 2,
+        a = 0,
+        o = n;
+      for (; o && o.dataset.slot !== `calendar`;) i += o.offsetLeft, a += o.offsetTop, o = o.offsetParent instanceof HTMLElement ? o.offsetParent : null;
+      o && k({
+        date: e,
+        x: i,
+        y: a,
+        instant: r
+      });
+    },
+    ae = h.mode === `range` ? {
+      onDayMouseEnter: (e, t, n) => {
+        ie(e, t, n.currentTarget, !1), h.onDayMouseEnter?.(e, t, n);
+      },
+      onDayFocus: (e, t, n) => {
+        let r = n.currentTarget;
+        ie(e, t, r, r.matches(`:focus-visible`)), h.onDayFocus?.(e, t, n);
+      },
+      onSelect: (e, ...t) => {
+        let n = Wn(A, e, t[0]);
+        F !== null && O !== null && !O.instant && Hn(O.date, t[0]) && n?.from !== void 0 && n.to !== void 0 && !Hn(n.from, n.to) && L({
+          days: N,
+          x: O.x,
+          y: O.y
+        }), ee(n), h.onSelect?.(n, ...t);
+      },
+      ...(`selected` in h ? null : {
+        selected: D
+      })
+    } : null,
+    oe = (e, t) => {
+      h.mode === `range` && (k(null), L(null), ee(e), h.onSelect?.(e, e.from, {}, t));
+    },
+    se = ae ? {
+      ...h,
+      ...ae
+    } : h,
+    ce = H.useRef(null),
+    [le, z] = H.useState(null),
+    ue = h.numberOfMonths ?? 1,
+    [de, fe] = H.useState(ue);
+  de !== ue && (fe(ue), z(null));
+  let pe = e => {
+      k(null), L(null), ce.current && z(e > ce.current ? `forward` : `back`), ce.current = e, m?.(e);
+    },
+    me = {
+      periodic: x,
+      compact: b,
+      view: S,
+      direction: le,
+      choose: e => {
+        let t = Kn.findIndex(e => e.value === S),
+          n = Kn.findIndex(t => t.value === e);
+        t !== n && (k(null), L(null), z(n > t ? `forward` : `back`), C(e));
+      },
+      pick: oe,
+      tip: w,
+      buttonVariant: o
+    },
+    he = H.useMemo(() => ({
+      Root: Xn,
+      Chevron: ({
+        className: e,
+        orientation: t,
+        ...n
+      }) => t === `left` ? (0, Q.jsx)(l, {
+        className: i(`size-4 in-[.rdp-nav]:[&:dir(rtl)]:-scale-x-100`, e),
+        ...n
+      }) : t === `right` ? (0, Q.jsx)(d, {
+        className: i(`size-4 in-[.rdp-nav]:[&:dir(rtl)]:-scale-x-100`, e),
+        ...n
+      }) : (0, Q.jsx)(c, {
+        className: i(`size-4`, e),
+        ...n
+      }),
+      DayButton: ir,
+      WeekNumber: ({
+        children: e,
+        ...t
+      }) => <td {...t}>{<div className={`flex size-(--cell-size) items-center justify-center text-center`}>{e}</div>}</td>
+    }), []),
+    ge = H.useMemo(() => ({
+      calendarMonth: e,
+      displayIndex: t,
+      className: n,
+      ...r
+    }) => <div ref={() => {
+      ce.current ??= e.date;
+    }} data-direction={x ? void 0 : le} className={i(!x && le && `calendar-month`, n)} {...r} key={e.date.getTime()} />, [x, x ? null : le]),
+    _e = (0, Q.jsx)(Gn.Provider, {
+      value: re,
+      children: (0, Q.jsx)(zn, {
+        onMonthChange: pe,
+        showOutsideDays: E,
+        dir: T === `rtl` ? `rtl` : void 0,
+        className: i(`group/calendar bg-background p-(--calendar-inset) [--cell-radius:var(--radius-md)] in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent`, x && `pb-0`, b ? `[--calendar-inset:--spacing(2)] [--cell-size:--spacing(7)]` : `[--calendar-inset:--spacing(3)] [--cell-size:--spacing(9)]`, e),
+        captionLayout: x ? `label` : r,
+        formatters: {
+          formatMonthDropdown: (e, t = V) => t.format(e, `LLL`),
+          ...(b && x ? {
+            formatCaption: (e, t, n) => (n ?? new B(t)).format(e, `LLL y`)
+          } : h.dateLib ? {
+            formatCaption: (e, t, n) => (n ?? new B(t, h.dateLib)).format(e, `LLLL y`)
+          } : null),
+          formatWeekdayName: (e, t, n) => {
+            let r = n ?? new B(t),
+              i = r.format(e, b ? `cccccc` : `ccc`);
+            return v(i) ? r.format(e, `ccccc`) : i;
+          },
+          ...f
+        },
+        classNames: {
+          root: i(`relative w-fit`, _.root),
+          months: i(`relative flex flex-col gap-4 md:flex-row`, x && `gap-0 md:flex-col`, _.months),
+          month: i(`flex w-full flex-col gap-4`, x && `gap-0`, _.month),
+          nav: i(x ? `absolute end-0 top-0 flex h-(--cell-size) items-center gap-1` : `absolute inset-x-0 top-0 flex w-full items-center justify-between gap-1`, _.nav),
+          button_previous: i(a({
+            variant: o
+          }), `size-(--cell-size) p-0 select-none aria-disabled:opacity-50`, _.button_previous),
+          button_next: i(a({
+            variant: o
+          }), `size-(--cell-size) p-0 select-none aria-disabled:opacity-50`, _.button_next),
+          month_caption: i(`flex h-(--cell-size) w-full items-center`, x ? `justify-start pe-[calc(var(--cell-size)*2+--spacing(1))]` : `justify-center px-(--cell-size)`, _.month_caption),
+          dropdowns: i(`flex h-(--cell-size) w-full items-center gap-1.5 text-sm font-semibold`, x ? `justify-start` : `justify-center`, _.dropdowns),
+          dropdown_root: i(`relative rounded-(--cell-radius) has-focus-visible:ring-[3px] has-focus-visible:ring-ring/50`, x && `hover:bg-foreground/7`, _.dropdown_root),
+          dropdown: i(`absolute inset-0 bg-popover opacity-0`, _.dropdown),
+          caption_label: i(`font-semibold select-none`, r === `label` && !x ? `text-sm` : `flex items-center gap-1 rounded-(--cell-radius) text-sm [&>svg]:size-3.5 [&>svg]:text-muted-foreground`, x && `px-2 py-1`, _.caption_label),
+          month_grid: i(`w-full border-collapse`, _.month_grid),
+          weekdays: i(`flex`, _.weekdays),
+          weekday: i(`flex-1 rounded-(--cell-radius) font-normal text-muted-foreground select-none`, b ? `text-[0.8rem]` : `text-sm`, _.weekday),
+          week: i(`mt-2 flex w-full`, _.week),
+          week_number_header: i(`w-(--cell-size) select-none`, _.week_number_header),
+          week_number: i(`text-[0.8rem] text-muted-foreground select-none`, _.week_number),
+          day: i(`group/day relative aspect-square h-full w-full rounded-(--cell-radius) p-0 text-center select-none [&:last-child[data-selected=true]_button:not([data-selected-single=true])]:rounded-e-(--cell-radius)`, h.showWeekNumber ? `[&:nth-child(2)[data-selected=true]_button:not([data-selected-single=true])]:rounded-s-(--cell-radius)` : `[&:first-child[data-selected=true]_button:not([data-selected-single=true])]:rounded-s-(--cell-radius)`, `[&:has(+[data-hidden=true])[data-selected=true]_button:not([data-selected-single=true])]:rounded-e-(--cell-radius) [[data-hidden=true]+&[data-selected=true]_button:not([data-selected-single=true])]:rounded-s-(--cell-radius)`, _.day),
+          range_start: i(`relative isolate z-0 rounded-s-(--cell-radius) bg-(--calendar-range) after:absolute after:inset-y-0 after:end-0 after:w-4 after:bg-(--calendar-range) has-[+[data-hidden=true]]:rounded-e-(--cell-radius) has-[+[data-hidden=true]]:after:hidden`, _.range_start),
+          range_middle: i(`rounded-none`, _.range_middle),
+          range_end: i(`relative isolate z-0 rounded-e-(--cell-radius) bg-(--calendar-range) after:absolute after:inset-y-0 after:start-0 after:w-4 after:bg-(--calendar-range) [[data-hidden=true]+&]:rounded-s-(--cell-radius) [[data-hidden=true]+&]:after:hidden`, _.range_end),
+          today: i(`rounded-none`, _.today),
+          outside: i(`text-muted-foreground aria-selected:text-muted-foreground`, _.outside),
+          disabled: i(`text-muted-foreground opacity-50`, _.disabled),
+          hidden: i(`invisible`, _.hidden),
+          ...t
+        },
+        components: {
+          ...he,
+          Month: ge,
+          ...(x ? {
+            Nav: tr,
+            Months: $n,
+            MonthGrid: er,
+            CaptionLabel: Qn
+          } : null),
+          ...p
+        },
+        ...se,
+        modifiers: {
+          ...h.modifiers,
+          preview_middle: F ? {
+            after: F.from,
+            before: F.to
+          } : !1,
+          preview_start_before: F && R ? F.from : !1,
+          preview_start_after: F && !R ? F.to : !1,
+          preview_end_after: F && R ? F.to : !1,
+          preview_end_before: F && !R ? F.from : !1
+        },
+        modifiersClassNames: {
+          preview_middle: `rounded-none bg-(--calendar-range) first:rounded-s-(--cell-radius) last:rounded-e-(--cell-radius) has-[+[data-hidden=true]]:rounded-e-(--cell-radius) [[data-hidden=true]+&]:rounded-s-(--cell-radius)`,
+          preview_start_before: `before:absolute before:inset-y-0 before:end-0 before:w-1/2 before:bg-(--calendar-range) last:before:hidden has-[+[data-hidden=true]]:before:hidden`,
+          preview_start_after: `before:absolute before:inset-y-0 before:start-0 before:w-1/2 before:bg-(--calendar-range) first:before:hidden [[data-hidden=true]+&]:before:hidden`,
+          preview_end_after: `bg-(--calendar-range) rounded-s-none first:rounded-s-(--cell-radius) [[data-hidden=true]+&]:rounded-s-(--cell-radius)`,
+          preview_end_before: `bg-(--calendar-range) rounded-e-none last:rounded-e-(--cell-radius) has-[+[data-hidden=true]]:rounded-e-(--cell-radius)`,
+          ...h.modifiersClassNames
+        }
+      })
+    });
+  return (0, Q.jsx)(Yn.Provider, {
+    value: me,
+    children: _e
+  });
+}
+var $ = e => Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) / 864e5,
+  Hn = (e, t) => $(e) === $(t),
+  Un = (e, t) => e < t ? {
+    from: e,
+    to: t
+  } : {
+    from: t,
+    to: e
+  };
+function Wn(e, t, n) {
+  if (!e?.from || !e.to || Hn(e.from, e.to)) return t;
+  let r = $(n);
+  return r < $(e.from) || r > $(e.to) ? {
+    from: n,
+    to: n
+  } : t;
+}
+var Gn = H.createContext({
+    span: null,
+    landed: null,
+    clear: () => {},
+    settle: () => {}
+  }),
+  Kn = [{
+    value: `day`,
+    label: `Day`
+  }, {
+    value: `month`,
+    label: `Month`
+  }, {
+    value: `quarter`,
+    label: `Quarter`
+  }, {
+    value: `year`,
+    label: `Year`
+  }];
+function qn(e, t, n, r) {
+  let i = t === `year` ? 12 : t === `quarter` ? 3 : 1;
+  return {
+    from: e.newDate(n, r * i, 1),
+    to: e.addDays(e.newDate(n, (r + 1) * i, 1), -1)
+  };
+}
+var Jn = (e, t) => $(e) >= $(t.from) && $(e) <= $(t.to),
+  Yn = H.createContext(null);
+function Xn({
+  className: e,
+  rootRef: t,
+  children: n,
+  ...r
+}) {
+  let {
+      span: a,
+      landed: o,
+      clear: s,
+      settle: c
+    } = H.useContext(Gn),
+    l = a ?? o,
+    {
+      nextMonth: d,
+      previousMonth: f,
+      goToMonth: p,
+      dayPickerProps: m
+    } = q(),
+    h = H.useRef(null),
+    g = m.locale?.code ?? Be.code,
+    _ = m.numerals ?? `latn`,
+    v = H.useMemo(() => new Intl.NumberFormat(g, {
+      style: `unit`,
+      unit: `day`,
+      unitDisplay: `long`,
+      numberingSystem: _,
+      useGrouping: !1
+    }), [g, _]),
+    y = H.useContext(Yn),
+    b = y?.periodic ? y.view : `day`,
+    x = H.useEffectEvent(e => {
+      let t = h.current && getComputedStyle(h.current).direction === `rtl` ? e < 0 : e > 0,
+        n = t ? d : f;
+      n && (p(n), (t ? m.onNextClick : m.onPrevClick)?.(n));
+    }),
+    S = H.useEffectEvent(() => b === `day` && !!(d ?? f));
+  H.useEffect(() => {
+    let e = h.current;
+    if (e) return u(e, e => x(e), () => S());
+  }, []);
+  let C = H.useCallback(e => {
+    h.current = e, typeof t == `function` ? t(e) : t && (t.current = e);
+  }, [t]);
+  return <div data-slot={`calendar`} ref={C} data-period-view={b === `day` ? void 0 : b} className={i(e)} onPointerLeave={s} onBlur={e => {
+    e.currentTarget.contains(e.relatedTarget) || s();
+  }} {...r}>{[(0, Q.jsx)(Zn, {
+      children: n
+    }, m.numberOfMonths ?? 1), l ? <span aria-hidden={!0} data-instant={a?.instant || void 0} data-landed={!a || void 0} className={`calendar-span`} style={{
+      "--calendar-span-x": `${String(l.x)}px`,
+      "--calendar-span-y": `${String(l.y)}px`
+    }} onTransitionEnd={e => {
+      !a && e.propertyName === `opacity` && c();
+    }}>{v.format(l.days)}</span> : null]}</div>;
+}
+function Zn({
+  children: e
+}) {
+  let t = H.useRef(null),
+    n = H.useRef(null),
+    [r, i] = H.useState(),
+    [a, o] = H.useState(!1),
+    s = b();
+  return H.useLayoutEffect(() => {
+    let e = t.current;
+    if (!e) return;
+    let r = new ResizeObserver(() => {
+      let t = e.offsetHeight;
+      if (t === 0) {
+        n.current = null, i(void 0);
+        return;
+      }
+      n.current !== t && (n.current !== null && !s && o(!0), n.current = t, i(t));
+    });
+    return r.observe(e), () => r.disconnect();
+  }, [s]), <div data-resizing={a || void 0} className={`calendar-resize`} style={{
+    height: r
+  }} onTransitionEnd={e => {
+    e.target === e.currentTarget && e.propertyName === `height` && o(!1);
+  }}>{<div ref={t}>{e}</div>}</div>;
+}
+function Qn({
+  children: e,
+  ...t
+}) {
+  let n = H.useContext(Yn),
+    {
+      classNames: r
+    } = q();
+  return n ? <span className={r.dropdown_root}>{[<select aria-label={`Period`} value={n.view} onChange={e => n.choose(e.currentTarget.value)} className={r.dropdown}>{Kn.map(({
+        value: e,
+        label: t
+      }) => <option value={e} key={e}>{t}</option>)}</select>, <span {...t}>{[n.view === `day` ? e : Kn.find(({
+        value: e
+      }) => e === n.view)?.label, (0, Q.jsx)(c, {
+        "aria-hidden": !0
+      })]}</span>]}</span> : <span {...t}>{e}</span>;
+}
+function $n({
+  children: e,
+  ...t
+}) {
+  let n = H.useContext(Yn)?.view ?? `day`;
+  return <div {...t}>{[e, n === `day` ? null : (0, Q.jsx)(rr, {
+      unit: n
+    }, n)]}</div>;
+}
+function er(e) {
+  let t = H.useContext(Yn),
+    {
+      months: n
+    } = q(),
+    r = H.useCallback(e => {
+      let t = e?.closest(`[data-slot="calendar"]`);
+      if (!e || !t) return;
+      let n = new ResizeObserver(() => {
+        t.style.setProperty(`--calendar-days-width`, `${String(e.offsetWidth)}px`), t.style.setProperty(`--calendar-days-height`, `${String(e.offsetHeight)}px`);
+      });
+      return n.observe(e), () => n.disconnect();
+    }, []);
+  return t ? t.view === `day` ? <div ref={r} data-direction={t.direction ?? void 0} className={i(`pt-4 pb-(--calendar-inset)`, t.direction && `calendar-month`)} key={n[0]?.date.getTime()}>{<table {...e} />}</div> : (0, Q.jsx)(Q.Fragment, {}) : <table {...e} />;
+}
+function tr({
+  onPreviousClick: e,
+  onNextClick: t,
+  previousMonth: n,
+  nextMonth: r,
+  ...i
+}) {
+  let {
+      classNames: a,
+      labels: o
+    } = q(),
+    s = H.useContext(Yn);
+  if (!s) return <nav {...i} />;
+  if (s.view !== `day`) return (0, Q.jsx)(Q.Fragment, {});
+  let {
+    tip: c
+  } = s;
+  return <nav {...i}>{[(0, Q.jsx)(f, {
+      handle: c,
+      payload: `Previous month`,
+      closeOnClick: !1,
+      type: `button`,
+      "aria-label": o.labelPrevious(n),
+      "aria-disabled": !n || void 0,
+      tabIndex: n ? void 0 : -1,
+      onClick: t => {
+        n && e?.(t);
+      },
+      className: a.button_previous,
+      children: (0, Q.jsx)(l, {
+        className: `size-4 [&:dir(rtl)]:-scale-x-100`
+      })
+    }), (0, Q.jsx)(f, {
+      handle: c,
+      payload: `Next month`,
+      closeOnClick: !1,
+      type: `button`,
+      "aria-label": o.labelNext(r),
+      "aria-disabled": !r || void 0,
+      tabIndex: r ? void 0 : -1,
+      onClick: e => {
+        r && t?.(e);
+      },
+      className: a.button_next,
+      children: (0, Q.jsx)(d, {
+        className: `size-4 [&:dir(rtl)]:-scale-x-100`
+      })
+    }), (0, Q.jsx)(nr, {
+      handle: c
+    })]}</nav>;
+}
+function nr({
+  handle: e
+}) {
+  return (0, Q.jsx)(p, {
+    handle: e,
+    children: ({
+      payload: e
+    }) => (0, Q.jsx)(h, {
+      children: (0, Q.jsx)(m, {
+        children: (0, Q.jsx)(_, {
+          children: e ?? ``
+        })
+      })
+    })
+  });
+}
+function rr({
+  unit: e
+}) {
+  let {
+      months: t,
+      goToMonth: n,
+      dayPickerProps: r,
+      formatters: o,
+      selected: s,
+      classNames: c
+    } = q(),
+    l = H.useContext(Yn),
+    u = H.useId(),
+    d = H.useRef(null),
+    p = H.useRef([]),
+    {
+      mode: m,
+      disabled: h,
+      startMonth: g,
+      endMonth: _,
+      dir: v
+    } = r,
+    y = t[0]?.date ?? new Date(),
+    b = r.today ?? new Date(),
+    x = H.useMemo(() => new B({
+      locale: {
+        ...Be,
+        ...r.locale
+      },
+      numerals: r.numerals
+    }, r.dateLib), [r.locale, r.numerals, r.dateLib]),
+    [S] = H.useState(() => {
+      let e = g ? x.getYear(g) : x.getYear(y) - 10,
+        t = _ ? x.getYear(_) : x.getYear(y) + 10;
+      return Array.from({
+        length: Math.max(1, t - e + 1)
+      }, (t, n) => e + n);
+    }),
+    C = e === `month` ? 12 : e === `quarter` ? 4 : 1,
+    w = e === `quarter` ? 2 : 3,
+    T = H.useMemo(() => Array.from({
+      length: 12
+    }, (e, t) => o.formatMonthDropdown(x.newDate(S[0], t, 1), x)), [o, x, S]),
+    E = S.flatMap(t => Array.from({
+      length: C
+    }, (n, r) => {
+      let i = qn(x, e, t, r);
+      return {
+        year: t,
+        span: i,
+        label: e === `month` ? T[r] ?? `` : e === `quarter` ? `Q${x.formatNumber(r + 1)}` : o.formatYearDropdown(i.from, x)
+      };
+    })),
+    D = e => {
+      if (m === `range`) {
+        let t = s;
+        return !!(t?.from && t.to && Hn(t.from, e.from) && Hn(t.to, e.to));
+      }
+      return (m === `multiple` ? s ?? [] : [s]).some(t => t !== void 0 && Jn(t, e));
+    },
+    ee = e => {
+      if (g && e.to < x.startOfMonth(g) || _ && e.from > x.endOfMonth(_)) return !0;
+      if (!h) return !1;
+      for (let t = new Date(e.from); t <= e.to; t.setDate(t.getDate() + 1)) if (!Y(t, h)) return !1;
+      return !0;
+    },
+    O = Math.max(0, E.findIndex(({
+      span: e
+    }) => Jn(y, e))),
+    k = E.findIndex(({
+      span: e
+    }) => Jn(b, e)),
+    [A, j] = H.useState(O),
+    M = (t, n) => {
+      let r = d.current,
+        i = p.current[t];
+      !r || !i || r.scrollTo({
+        top: e === `year` ? i.offsetTop - (r.clientHeight - i.offsetHeight) / 2 : (i.closest(`[data-year]`)?.offsetTop ?? 0) - Number.parseFloat(getComputedStyle(r).paddingTop),
+        behavior: n
+      });
+    };
+  H.useLayoutEffect(() => {
+    let t = d.current,
+      n = p.current[O];
+    !t || !n || e === `year` && n.offsetTop + n.offsetHeight <= t.clientHeight || M(O, `instant`);
+  }, []);
+  let N = () => {
+      j(k), M(k, matchMedia(`(prefers-reduced-motion: reduce)`).matches ? `instant` : `smooth`);
+    },
+    F = (t, r) => {
+      if (!(!l || ee(t))) {
+        if (n(t.from), m === `range`) {
+          l.pick(t, r);
+          return;
+        }
+        l.choose(e === `year` ? `month` : `day`);
+      }
+    },
+    I = (e, t) => {
+      let n = v === `rtl` ? 1 : -1,
+        r = e.key === `ArrowLeft` ? n : e.key === `ArrowRight` ? -n : e.key === `ArrowUp` ? -w : e.key === `ArrowDown` ? w : e.key === `Home` ? -(t % w) : e.key === `End` ? w - 1 - t % w : null;
+      if (r === null) return;
+      e.preventDefault();
+      let i = Math.min(E.length - 1, Math.max(0, t + r));
+      j(i), p.current[i]?.focus();
+    },
+    L = ({
+      span: t,
+      label: n,
+      year: r
+    }, a) => {
+      let s = D(t),
+        c = ee(t);
+      return <button ref={e => {
+        p.current[a] = e;
+      }} type={`button`} tabIndex={a === A ? 0 : -1} aria-label={e === `month` ? x.format(t.from, `LLLL y`) : e === `quarter` ? `${n} ${o.formatYearDropdown(t.from, x)}` : n} aria-pressed={m === `range` ? s : void 0} aria-current={m !== `range` && s ? `date` : void 0} aria-disabled={c || void 0} data-picked={s || void 0} data-now={Jn(b, t) || void 0} onClick={e => F(t, e)} onKeyDown={e => I(e, a)} onFocus={() => j(a)} className={i(`flex h-(--cell-size) items-center justify-center rounded-full border border-input tabular-nums ring-0 transition-[box-shadow,scale] duration-(--ring-duration) ease-(--ease-out) outline-none select-none ring-inset not-data-picked:hover:bg-foreground/5 focus-visible:ring-[3px] focus-visible:ring-ring/50 active:scale-[0.97] aria-disabled:pointer-events-none aria-disabled:opacity-50 data-now:not-data-picked:text-(--calendar-today) data-picked:border-transparent data-picked:bg-(--calendar-active) data-picked:text-(--calendar-active-foreground) data-picked:hover:brightness-110 motion-reduce:transition-none`, l?.compact ? `text-xs` : `text-sm`)} key={`${String(r)}-${n}`}>{n}</button>;
+    };
+  return (0, Q.jsxs)(Q.Fragment, {
+    children: [l && k >= 0 ? <div className={c.nav}>{[(0, Q.jsx)(f, {
+        handle: l.tip,
+        payload: `Jump to current`,
+        closeOnClick: !1,
+        type: `button`,
+        "aria-label": `Jump to the current ${e}`,
+        onClick: N,
+        className: i(a({
+          variant: l.buttonVariant
+        }), `size-(--cell-size) p-0 select-none`),
+        children: (0, Q.jsx)(P, {
+          className: `size-4 [&:dir(rtl)]:-scale-x-100`
+        })
+      }), (0, Q.jsx)(nr, {
+        handle: l.tip
+      })]}</div> : null, <div aria-hidden={!0} className={`-mx-(--calendar-inset) mt-(--calendar-inset) border-b`} />, <div ref={d} data-direction={l?.direction ?? void 0} className={i(`relative -me-(--calendar-inset) h-[calc(var(--calendar-days-height,calc(var(--cell-size)*7+--spacing(4)+var(--calendar-inset)))-var(--calendar-inset)-1px)] w-[calc(var(--calendar-days-width,calc(var(--cell-size)*7))+var(--calendar-inset))] overflow-y-auto overscroll-contain pt-4 pb-(--calendar-inset)`, l?.direction && `calendar-month`)}>{<div className={`max-w-[var(--calendar-days-width,calc(var(--cell-size)*7))]`}>{e === `year` ? <div className={`grid grid-cols-3 gap-2`} role={`group`} aria-label={`Years`}>{E.map(L)}</div> : S.map((e, t) => <div data-year={e} role={`group`} aria-labelledby={`${u}-${String(e)}`} className={`pb-4 last:pb-0`} key={e}>{[<div id={`${u}-${String(e)}`} className={`px-1 pb-2 text-sm text-muted-foreground tabular-nums`}>{o.formatYearDropdown(x.newDate(e, 0, 1), x)}</div>, <div className={i(`grid gap-2`, w === 2 ? `grid-cols-2` : `grid-cols-3`)}>{E.slice(t * C, (t + 1) * C).map((e, n) => L(e, t * C + n))}</div>]}</div>)}</div>}</div>]
+  });
+}
+function ir({
+  className: e,
+  day: t,
+  modifiers: n,
+  ...r
+}) {
+  let a = Dt(),
+    s = H.useRef(null);
+  return H.useEffect(() => {
+    n.focused && s.current?.focus();
+  }, [n.focused]), (0, Q.jsx)(o, {
+    ref: s,
+    variant: `ghost`,
+    size: `icon`,
+    "data-day": t.date.toLocaleDateString(`en-US`),
+    "data-selected-single": n.selected && !n.range_start && !n.range_end && !n.range_middle,
+    "data-selected": n.selected || void 0,
+    "data-range-start": n.range_start,
+    "data-range-end": n.range_end,
+    "data-range-middle": n.range_middle,
+    className: i(`relative isolate z-10 flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 border-0 leading-none font-normal ring-0 transition-[box-shadow] duration-(--ring-duration) ease-(--ease-out) ring-inset before:transition-[scale] focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:outline-none data-[range-end=true]:rounded-(--cell-radius) data-[range-end=true]:bg-(--calendar-selected) data-[range-end=true]:text-(--calendar-selected-foreground) data-[range-middle=true]:rounded-none data-[range-middle=true]:bg-(--calendar-range) data-[range-middle=true]:text-foreground data-[range-start=true]:rounded-(--cell-radius) data-[range-start=true]:bg-(--calendar-selected) data-[range-start=true]:text-(--calendar-selected-foreground) data-[selected-single=true]:rounded-(--cell-radius) data-[selected-single=true]:bg-(--calendar-selected) data-[selected-single=true]:text-(--calendar-selected-foreground) data-[selected=true]:hover:before:bg-foreground/5 motion-reduce:transition-none dark:not-data-[selected=true]:hover:text-foreground dark:data-[selected=true]:hover:before:bg-foreground/5 [&>span]:text-xs [&>span]:opacity-70`, `group-data-[today=true]/day:rounded-(--cell-radius) group-data-[today=true]/day:bg-(--calendar-today) group-data-[today=true]/day:text-(--calendar-today-foreground) group-data-[today=true]/day:hover:brightness-110`, n.outside && !n.today && `text-muted-foreground`, a.day, e),
+    ...r
+  });
+}
+var ar = t({
+    eraYears: () => gr,
+    ownMonths: () => hr
+  }),
+  or = 864e5,
+  sr = e => Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) / or,
+  cr = e => sr(e) * or + or / 2,
+  lr = e => {
+    let t = new Date(e * or);
+    return new Date(t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate());
+  },
+  ur = new Map();
+function dr(e, t, n) {
+  let r = `${e}|${t}|${JSON.stringify(n)}`,
+    i = ur.get(r);
+  if (!i) {
+    if (i = new Intl.DateTimeFormat(t, {
+      ...n,
+      calendar: e,
+      numberingSystem: `latn`,
+      timeZone: `UTC`
+    }), i.resolvedOptions().calendar !== e) throw RangeError(`This browser has no ${e} calendar to draw the months from`);
+    ur.set(r, i);
+  }
+  return i;
+}
+var fr = e => e?.locale?.code ?? `en-US`,
+  pr = e => String(e).padStart(2, `0`),
+  mr = (e, t, n, r) => {
+    let i = {
+      P: `short`,
+      PP: `medium`,
+      PPP: `long`,
+      PPPP: `full`
+    }[r];
+    return i ? dr(e, n, {
+      dateStyle: i
+    }).format(cr(t)) : null;
+  };
+function hr(e) {
+  let t = e === `persian` ? 30.436875 : 29.530588853,
+    n = new Map(),
+    r = t => {
+      let r = n.get(t);
+      if (!r) {
+        let i = dr(e, `en`, {
+            year: `numeric`,
+            month: `numeric`,
+            day: `numeric`
+          }).formatToParts(t * or + or / 2),
+          a = e => Number(i.find(t => t.type === e)?.value);
+        r = {
+          year: a(`year`),
+          month: a(`month`) - 1,
+          day: a(`day`)
+        }, n.set(t, r);
+      }
+      return r;
+    },
+    i = e => r(sr(e)),
+    a = (n, i) => {
+      let a = n + Math.floor(i / 12),
+        o = (i % 12 + 12) % 12,
+        s = r(0),
+        c = Math.round(((a - s.year) * 12 + o - s.month) * t) - s.day + 1;
+      for (let e = 0; e < 32; e++) {
+        let e = r(c),
+          t = (a - e.year) * 12 + o - e.month;
+        if (t === 0 && e.day === 1) return c;
+        c += t === 0 ? 1 - e.day : t * 29;
+      }
+      throw RangeError(`No ${e} date for month ${String(o + 1)} of ${String(a)}`);
+    },
+    o = (e, t, n) => {
+      let r = a(e, t),
+        i = a(e, t + 1) - r;
+      return lr(r + Math.min(Math.max(n, 1), i) - 1);
+    },
+    s = (t, n, r) => dr(e, n, {
+      month: r
+    }).format(cr(t));
+  return {
+    newDate: (e, t, n) => o(e, t, n),
+    startOfMonth: e => {
+      let {
+        year: t,
+        month: n
+      } = i(e);
+      return o(t, n, 1);
+    },
+    endOfMonth: e => {
+      let {
+        year: t,
+        month: n
+      } = i(e);
+      return lr(a(t, n + 1) - 1);
+    },
+    startOfYear: e => o(i(e).year, 0, 1),
+    endOfYear: e => lr(a(i(e).year + 1, 0) - 1),
+    addMonths: (e, t) => {
+      let {
+        year: n,
+        month: r,
+        day: a
+      } = i(e);
+      return o(n, r + t, a);
+    },
+    addYears: (e, t) => {
+      let {
+        year: n,
+        month: r,
+        day: a
+      } = i(e);
+      return o(n + t, r, a);
+    },
+    setMonth: (e, t) => {
+      let {
+        year: n,
+        day: r
+      } = i(e);
+      return o(n, t, r);
+    },
+    setYear: (e, t) => {
+      let {
+        month: n,
+        day: r
+      } = i(e);
+      return o(t, n, r);
+    },
+    getMonth: e => i(e).month,
+    getYear: e => i(e).year,
+    isSameMonth: (e, t) => {
+      let n = i(e),
+        r = i(t);
+      return n.year === r.year && n.month === r.month;
+    },
+    isSameYear: (e, t) => i(e).year === i(t).year,
+    differenceInCalendarMonths: (e, t) => {
+      let n = i(e),
+        r = i(t);
+      return (n.year - r.year) * 12 + n.month - r.month;
+    },
+    eachMonthOfInterval: ({
+      start: e,
+      end: t
+    }) => {
+      let n = i(new Date(e)),
+        r = i(new Date(t)),
+        a = [];
+      for (let e = n.year * 12 + n.month; e <= r.year * 12 + r.month; e++) a.push(o(Math.floor(e / 12), e % 12, 1));
+      return a;
+    },
+    eachYearOfInterval: ({
+      start: e,
+      end: t
+    }) => {
+      let n = [];
+      for (let r = i(new Date(e)).year; r <= i(new Date(t)).year; r++) n.push(o(r, 0, 1));
+      return n;
+    },
+    format: (t, n, r) => {
+      let a = fr(r),
+        {
+          year: o,
+          month: c,
+          day: l
+        } = i(t);
+      switch (n) {
+        case `LLLL y`:
+        case `LLLL yyyy`:
+          return `${s(t, a, `long`)} ${String(o)}`;
+        case `y LLLL`:
+          return `${String(o)} ${s(t, a, `long`)}`;
+        case `LLL y`:
+          return `${s(t, a, `short`)} ${String(o)}`;
+        case `LLLL`:
+        case `MMMM`:
+          return s(t, a, `long`);
+        case `LLL`:
+        case `MMM`:
+          return s(t, a, `short`);
+        case `y`:
+        case `yyyy`:
+          return String(o);
+        case `M`:
+          return String(c + 1);
+        case `MM`:
+          return pr(c + 1);
+        case `d`:
+          return String(l);
+        case `dd`:
+          return pr(l);
+        default:
+          return /^[cEeiHhmsa: ]+$/.test(n) ? M(t, n, r) : mr(e, t, a, n) ?? mr(e, t, a, `PP`);
+      }
+    }
+  };
+}
+function gr(e) {
+  return {
+    format: (t, n, r) => {
+      let i = fr(r);
+      switch (n) {
+        case `LLLL y`:
+        case `LLLL yyyy`:
+        case `y LLLL`:
+          return dr(e, i, {
+            year: `numeric`,
+            month: `long`
+          }).format(cr(t));
+        case `LLL y`:
+          return dr(e, i, {
+            year: `numeric`,
+            month: `short`
+          }).format(cr(t));
+        case `y`:
+        case `yyyy`:
+          return dr(e, i, {
+            year: `numeric`
+          }).format(cr(t));
+        default:
+          return mr(e, t, i, n) ?? M(t, n, r);
+      }
+    }
+  };
+}
+var _r = t({
+    buddhist: () => vr
+  }),
+  vr = gr(`buddhist`),
+  yr = t({
+    hijri: () => br
+  }),
+  br = hr(`islamic-umalqura`),
+  xr = t({
+    hijriCivil: () => Sr
+  }),
+  Sr = hr(`islamic-civil`),
+  Cr = t({
+    japanese: () => wr
+  }),
+  wr = gr(`japanese`),
+  Tr = t({
+    minguo: () => Er
+  }),
+  Er = gr(`roc`),
+  Dr = t({
+    persian: () => Or
+  }),
+  Or = hr(`persian`);
+export { lt as $, Lt as A, z as At, yt as B, Gt as C, We as Ct, Bt as D, B as Dt, Vt as E, Ve as Et, At as F, xt as G, _t as H, kt as I, mt as J, J as K, Ot as L, Nt as M, Mt as N, zt as O, V as Ot, jt as P, ut as Q, Dt as R, Kt as S, Ge as St, Ut as T, He as Tt, vt as U, bt as V, St as W, ft as X, pt as Y, dt as Z, jn as _, W as _t, wr as a, rt as at, Jt as b, qe as bt, xr as c, et as ct, vr as d, Ze as dt, ct as et, _r as f, Xe as ft, Mn as g, K as gt, zn as h, q as ht, Tr as i, it, Pt as j, P as jt, Rt as k, Be as kt, br as l, $e as lt, Bn as m, Je as mt, Dr as n, ot as nt, Cr as o, nt as ot, ar as p, Ye as pt, ht as q, Er as r, at as rt, Sr as s, tt as st, Or as t, st as tt, yr as u, Qe as ut, An as v, G as vt, Wt as w, Ue as wt, qt as x, Ke as xt, kn as y, U as yt, Y as z };

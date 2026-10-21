@@ -1,0 +1,1175 @@
+{
+  "component": "movements-glass",
+  "adapter": "components/movements-glass.jsx",
+  "direct_imports": [
+    "recovered/movements/modules/67484.jsx"
+  ],
+  "shared_build_closure": "dependencies/shared-movements.json",
+  "dependency_scope": "Shared comparison bundle dependency closure; not a minimal isolated per-component author dependency list",
+  "packages": {
+    "@base-ui/react": "1.9.0",
+    "@tabler/icons-react": "3.49.0",
+    "motion": "14.5.0",
+    "embla-carousel-react": "8.6.0",
+    "class-variance-authority": "0.7.1",
+    "@kmenu/react": "2.0.4",
+    "kmenu": "2.0.3",
+    "@web-kits/audio": "0.2.0",
+    "input-otp": "1.5.0",
+    "loomix": "1.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "public_module_ids": [
+    67484,
+    31908,
+    45032,
+    16542,
+    18687,
+    22673,
+    95074,
+    23422,
+    64973,
+    11235,
+    94765,
+    54612,
+    29301,
+    90610,
+    99137,
+    92511,
+    96563,
+    40048,
+    26325,
+    74468,
+    62523,
+    32240,
+    24762,
+    8011,
+    91292,
+    9612,
+    47694,
+    15943,
+    92548,
+    49048,
+    68975,
+    65722,
+    39592,
+    99571,
+    50010,
+    84857,
+    39167,
+    23609,
+    13783,
+    34533,
+    20615,
+    28409,
+    91291,
+    10598,
+    35199,
+    47029,
+    46106,
+    94780,
+    6740,
+    33739,
+    9128,
+    72150,
+    97107,
+    43000,
+    4028,
+    84872,
+    69699,
+    48681,
+    30548,
+    65797,
+    1077,
+    11764,
+    24411,
+    9861,
+    66564,
+    33993,
+    36839,
+    19144,
+    18949,
+    98582,
+    96923,
+    99195,
+    97373,
+    86179,
+    27420,
+    47239,
+    29534,
+    1924,
+    79714,
+    44182,
+    83636,
+    6449,
+    6697,
+    39343,
+    47466,
+    50547,
+    66919,
+    35658,
+    33092,
+    98655,
+    72149,
+    68427,
+    17696,
+    65865,
+    94511,
+    67027,
+    88200,
+    10922,
+    38293,
+    13518,
+    90520,
+    96765,
+    5443,
+    80548,
+    73877,
+    98293,
+    41007,
+    50945,
+    6904,
+    83936,
+    70470,
+    85510,
+    2057,
+    63118,
+    71795,
+    48096,
+    52661,
+    23223,
+    77433,
+    64936,
+    44597,
+    95236,
+    49776
+  ],
+  "module_sources": [
+    {
+      "id": 67484,
+      "file": "recovered/movements/modules/67484.jsx",
+      "exports": [
+        "GlassExamples",
+        "GlassTeaser"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 31908,
+      "file": "recovered/movements/modules/31908.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 45032,
+      "file": "recovered/movements/modules/45032.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 16542,
+      "file": "recovered/movements/modules/16542.jsx",
+      "exports": [
+        "ExampleCard",
+        "ExperimentLayout"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 18687,
+      "file": "recovered/movements/modules/18687.jsx",
+      "exports": [
+        "LIBRARIES",
+        "UTILITIES",
+        "getCatalogItem"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 22673,
+      "file": "recovered/movements/modules/22673.jsx",
+      "exports": [
+        "clamp",
+        "hexToRgb",
+        "hsvToRgb",
+        "hueToCss",
+        "rgbToHex",
+        "rgbToHsv"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 95074,
+      "file": "recovered/movements/modules/95074.jsx",
+      "exports": [
+        "useThemeStore"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 23422,
+      "file": "recovered/movements/modules/23422.jsx",
+      "exports": [
+        "ACCENT",
+        "CatalogIcon"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 64973,
+      "file": "recovered/movements/modules/64973.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 11235,
+      "file": "recovered/movements/modules/11235.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 94765,
+      "file": "recovered/movements/modules/94765.jsx",
+      "exports": [
+        "AnimatePresence"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 54612,
+      "file": "recovered/movements/modules/54612.jsx",
+      "exports": [
+        "LayoutGroupContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 29301,
+      "file": "recovered/movements/modules/29301.jsx",
+      "exports": [
+        "useConstant"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 90610,
+      "file": "recovered/movements/modules/90610.jsx",
+      "exports": [
+        "useIsomorphicLayoutEffect"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 99137,
+      "file": "recovered/movements/modules/99137.jsx",
+      "exports": [
+        "PresenceContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 92511,
+      "file": "recovered/movements/modules/92511.jsx",
+      "exports": [
+        "isHTMLElement"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 96563,
+      "file": "recovered/movements/modules/96563.jsx",
+      "exports": [
+        "isObject"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 40048,
+      "file": "recovered/movements/modules/40048.jsx",
+      "exports": [
+        "MotionConfigContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 26325,
+      "file": "recovered/movements/modules/26325.jsx",
+      "exports": [
+        "usePresence"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 74468,
+      "file": "recovered/movements/modules/74468.jsx",
+      "exports": [
+        "motion"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 62523,
+      "file": "recovered/movements/modules/62523.jsx",
+      "exports": [
+        "createDomVisualElement"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 32240,
+      "file": "recovered/movements/modules/32240.jsx",
+      "exports": [
+        "createMotionProxy"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 24762,
+      "file": "recovered/movements/modules/24762.jsx",
+      "exports": [
+        "LazyContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 8011,
+      "file": "recovered/movements/modules/8011.jsx",
+      "exports": [
+        "MotionContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 91292,
+      "file": "recovered/movements/modules/91292.jsx",
+      "exports": [
+        "useCreateMotionContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 9612,
+      "file": "recovered/movements/modules/9612.jsx",
+      "exports": [
+        "isControllingVariants",
+        "isVariantNode"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 47694,
+      "file": "recovered/movements/modules/47694.jsx",
+      "exports": [
+        "isVariantLabel"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 15943,
+      "file": "recovered/movements/modules/15943.jsx",
+      "exports": [
+        "useRender"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 92548,
+      "file": "recovered/movements/modules/92548.jsx",
+      "exports": [
+        "isMotionValue"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 49048,
+      "file": "recovered/movements/modules/49048.jsx",
+      "exports": [
+        "isForcedMotionValue"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 68975,
+      "file": "recovered/movements/modules/68975.jsx",
+      "exports": [
+        "buildHTMLStyles"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 65722,
+      "file": "recovered/movements/modules/65722.jsx",
+      "exports": [
+        "buildSVGAttrs",
+        "cssStyleProperties"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 39592,
+      "file": "recovered/movements/modules/39592.jsx",
+      "exports": [
+        "isSVGTag"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 99571,
+      "file": "recovered/movements/modules/99571.jsx",
+      "exports": [
+        "isSVGComponent"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 50010,
+      "file": "recovered/movements/modules/50010.jsx",
+      "exports": [
+        "useHTMLVisualState"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 84857,
+      "file": "recovered/movements/modules/84857.jsx",
+      "exports": [
+        "scrapeHTMLMotionValuesFromProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 39167,
+      "file": "recovered/movements/modules/39167.jsx",
+      "exports": [
+        "scrapeMotionValuesFromProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 23609,
+      "file": "recovered/movements/modules/23609.jsx",
+      "exports": [
+        "resolveMotionValue"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 13783,
+      "file": "recovered/movements/modules/13783.jsx",
+      "exports": [
+        "isAnimationControls"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 34533,
+      "file": "recovered/movements/modules/34533.jsx",
+      "exports": [
+        "resolveVariantFromProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 20615,
+      "file": "recovered/movements/modules/20615.jsx",
+      "exports": [
+        "createHtmlRenderState"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 28409,
+      "file": "recovered/movements/modules/28409.jsx",
+      "exports": [
+        "useSVGVisualState"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 91291,
+      "file": "recovered/movements/modules/91291.jsx",
+      "exports": [
+        "scrapeMotionValuesFromProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 10598,
+      "file": "recovered/movements/modules/10598.jsx",
+      "exports": [
+        "createSvgRenderState"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 35199,
+      "file": "recovered/movements/modules/35199.jsx",
+      "exports": [
+        "getInitializedFeatureDefinitions"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 47029,
+      "file": "recovered/movements/modules/47029.jsx",
+      "exports": [
+        "VisualElement",
+        "getFeatureDefinitions",
+        "setFeatureDefinitions"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 46106,
+      "file": "recovered/movements/modules/46106.jsx",
+      "exports": [
+        "loadFeatures"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 94780,
+      "file": "recovered/movements/modules/94780.jsx",
+      "exports": [
+        "motionComponentSymbol"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 6740,
+      "file": "recovered/movements/modules/6740.jsx",
+      "exports": [
+        "useMotionRef"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 33739,
+      "file": "recovered/movements/modules/33739.jsx",
+      "exports": [
+        "optimizedAppearDataAttribute"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 9128,
+      "file": "recovered/movements/modules/9128.jsx",
+      "exports": [
+        "camelToDash"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 72150,
+      "file": "recovered/movements/modules/72150.jsx",
+      "exports": [
+        "SwitchLayoutGroupContext"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 97107,
+      "file": "recovered/movements/modules/97107.jsx",
+      "exports": [
+        "isRefObject"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 43000,
+      "file": "recovered/movements/modules/43000.jsx",
+      "exports": [
+        "animations"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 4028,
+      "file": "recovered/movements/modules/4028.jsx",
+      "exports": [
+        "positionalKeys"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 84872,
+      "file": "recovered/movements/modules/84872.jsx",
+      "exports": [
+        "collectMotionValues",
+        "motionValue"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 69699,
+      "file": "recovered/movements/modules/69699.jsx",
+      "exports": [
+        "MotionGlobalConfig"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 48681,
+      "file": "recovered/movements/modules/48681.jsx",
+      "exports": [
+        "millisecondsToSeconds",
+        "secondsToMilliseconds"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 30548,
+      "file": "recovered/movements/modules/30548.jsx",
+      "exports": [
+        "noop"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 65797,
+      "file": "recovered/movements/modules/65797.jsx",
+      "exports": [
+        "time"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 1077,
+      "file": "recovered/movements/modules/1077.jsx",
+      "exports": [
+        "clamp"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 11764,
+      "file": "recovered/movements/modules/11764.jsx",
+      "exports": [
+        "invariant",
+        "warning"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 24411,
+      "file": "recovered/movements/modules/24411.jsx",
+      "exports": [
+        "containsCSSVariable",
+        "isCSSVariableName",
+        "isCSSVariableToken"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 9861,
+      "file": "recovered/movements/modules/9861.jsx",
+      "exports": [
+        "color"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 66564,
+      "file": "recovered/movements/modules/66564.jsx",
+      "exports": [
+        "analyseComplexValue",
+        "complex"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 33993,
+      "file": "recovered/movements/modules/33993.jsx",
+      "exports": [
+        "hex"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 36839,
+      "file": "recovered/movements/modules/36839.jsx",
+      "exports": [
+        "hsla"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 19144,
+      "file": "recovered/movements/modules/19144.jsx",
+      "exports": [
+        "rgba"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 18949,
+      "file": "recovered/movements/modules/18949.jsx",
+      "exports": [
+        "mixNumber"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 98582,
+      "file": "recovered/movements/modules/98582.jsx",
+      "exports": [
+        "cancelFrame",
+        "frame",
+        "frameData",
+        "frameSteps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 96923,
+      "file": "recovered/movements/modules/96923.jsx",
+      "exports": [
+        "generateLinearEasing"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 99195,
+      "file": "recovered/movements/modules/99195.jsx",
+      "exports": [
+        "velocityPerSecond"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 97373,
+      "file": "recovered/movements/modules/97373.jsx",
+      "exports": [
+        "isBezierDefinition"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 86179,
+      "file": "recovered/movements/modules/86179.jsx",
+      "exports": [
+        "getFinalKeyframe"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 27420,
+      "file": "recovered/movements/modules/27420.jsx",
+      "exports": [
+        "WithPromise"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 47239,
+      "file": "recovered/movements/modules/47239.jsx",
+      "exports": [
+        "KeyframeResolver",
+        "flushKeyframeResolvers"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 29534,
+      "file": "recovered/movements/modules/29534.jsx",
+      "exports": [
+        "setStyle"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 1924,
+      "file": "recovered/movements/modules/1924.jsx",
+      "exports": [
+        "NativeAnimation"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 79714,
+      "file": "recovered/movements/modules/79714.jsx",
+      "exports": [
+        "isGenerator"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 44182,
+      "file": "recovered/movements/modules/44182.jsx",
+      "exports": [
+        "memo"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 83636,
+      "file": "recovered/movements/modules/83636.jsx",
+      "exports": [
+        "acceleratedValues"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 6449,
+      "file": "recovered/movements/modules/6449.jsx",
+      "exports": [
+        "transformPropOrder",
+        "transformProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 6697,
+      "file": "recovered/movements/modules/6697.jsx",
+      "exports": [
+        "variantPriorityOrder",
+        "variantProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 39343,
+      "file": "recovered/movements/modules/39343.jsx",
+      "exports": [
+        "drag"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 47466,
+      "file": "recovered/movements/modules/47466.jsx",
+      "exports": [
+        "DragGesture"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 50547,
+      "file": "recovered/movements/modules/50547.jsx",
+      "exports": [
+        "Feature"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 66919,
+      "file": "recovered/movements/modules/66919.jsx",
+      "exports": [
+        "createBox",
+        "createDelta"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 35658,
+      "file": "recovered/movements/modules/35658.jsx",
+      "exports": [
+        "eachAxis"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 33092,
+      "file": "recovered/movements/modules/33092.jsx",
+      "exports": [
+        "measurePageBox",
+        "measureViewportBox"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 98655,
+      "file": "recovered/movements/modules/98655.jsx",
+      "exports": [
+        "convertBoundingBoxToBox",
+        "convertBoxToBoundingBox",
+        "transformBoxPoints"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 72149,
+      "file": "recovered/movements/modules/72149.jsx",
+      "exports": [
+        "addValueToWillChange"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 68427,
+      "file": "recovered/movements/modules/68427.jsx",
+      "exports": [
+        "animateMotionValue"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 17696,
+      "file": "recovered/movements/modules/17696.jsx",
+      "exports": [
+        "addDomEvent"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 65865,
+      "file": "recovered/movements/modules/65865.jsx",
+      "exports": [
+        "setDragLock"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 94511,
+      "file": "recovered/movements/modules/94511.jsx",
+      "exports": [
+        "degrees",
+        "percent",
+        "progressPercentage",
+        "px",
+        "vh",
+        "vw"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 67027,
+      "file": "recovered/movements/modules/67027.jsx",
+      "exports": [
+        "calcBoxDelta",
+        "calcLength",
+        "calcRelativeBox",
+        "calcRelativePosition",
+        "isNear"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 88200,
+      "file": "recovered/movements/modules/88200.jsx",
+      "exports": [
+        "pipe"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 10922,
+      "file": "recovered/movements/modules/10922.jsx",
+      "exports": [
+        "progress"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 38293,
+      "file": "recovered/movements/modules/38293.jsx",
+      "exports": [
+        "PanGesture"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 13518,
+      "file": "recovered/movements/modules/13518.jsx",
+      "exports": [
+        "globalProjectionState"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 90520,
+      "file": "recovered/movements/modules/90520.jsx",
+      "exports": [
+        "microtask"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 96765,
+      "file": "recovered/movements/modules/96765.jsx",
+      "exports": [
+        "SubscriptionManager"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 5443,
+      "file": "recovered/movements/modules/5443.jsx",
+      "exports": [
+        "getOptimisedAppearId"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 80548,
+      "file": "recovered/movements/modules/80548.jsx",
+      "exports": [
+        "getValueTransition"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 73877,
+      "file": "recovered/movements/modules/73877.jsx",
+      "exports": [
+        "scaleCorrectors"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 98293,
+      "file": "recovered/movements/modules/98293.jsx",
+      "exports": [
+        "isSVGElement"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 41007,
+      "file": "recovered/movements/modules/41007.jsx",
+      "exports": [
+        "circIn",
+        "circInOut",
+        "circOut"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 50945,
+      "file": "recovered/movements/modules/50945.jsx",
+      "exports": [
+        "cornerRadiusProps"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 6904,
+      "file": "recovered/movements/modules/6904.jsx",
+      "exports": [
+        "applyBoxDelta",
+        "applyTreeDeltas",
+        "scalePoint",
+        "transformBox",
+        "translateAxis"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 83936,
+      "file": "recovered/movements/modules/83936.jsx",
+      "exports": [
+        "addUniqueItem",
+        "removeItem"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 70470,
+      "file": "recovered/movements/modules/70470.jsx",
+      "exports": [
+        "has2DTranslate",
+        "hasScale",
+        "hasTransform"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 85510,
+      "file": "recovered/movements/modules/85510.jsx",
+      "exports": [
+        "HoverGesture"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 2057,
+      "file": "recovered/movements/modules/2057.jsx",
+      "exports": [
+        "isDragActive",
+        "isDragging"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 63118,
+      "file": "recovered/movements/modules/63118.jsx",
+      "exports": [
+        "resolveElements"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 71795,
+      "file": "recovered/movements/modules/71795.jsx",
+      "exports": [
+        "addPointerInfo",
+        "extractEventInfo"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 48096,
+      "file": "recovered/movements/modules/48096.jsx",
+      "exports": [
+        "FocusGesture"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 52661,
+      "file": "recovered/movements/modules/52661.jsx",
+      "exports": [
+        "isPrimaryPointer"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 23223,
+      "file": "recovered/movements/modules/23223.jsx",
+      "exports": [
+        "setupGesture"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 77433,
+      "file": "recovered/movements/modules/77433.jsx",
+      "exports": [
+        "isElementKeyboardAccessible",
+        "isElementTextInput"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 64936,
+      "file": "recovered/movements/modules/64936.jsx",
+      "exports": [
+        "HTMLProjectionNode"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 44597,
+      "file": "recovered/movements/modules/44597.jsx",
+      "exports": [
+        "MeasureLayout"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 95236,
+      "file": "recovered/movements/modules/95236.jsx",
+      "exports": [
+        "GlassSurface"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 49776,
+      "file": "recovered/movements/modules/49776.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    }
+  ]
+}

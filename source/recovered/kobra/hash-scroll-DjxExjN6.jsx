@@ -1,0 +1,11 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { r as e } from "./rolldown-runtime-B0Z9INg1.js";
+var t = e({
+  hashScrollOptions: () => n
+});
+function n() {
+  return {
+    behavior: typeof window < `u` && window.matchMedia(`(prefers-reduced-motion: reduce)`).matches ? `auto` : `smooth`
+  };
+}
+export { t as n, n as t };

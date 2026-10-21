@@ -1,0 +1,119 @@
+{
+  "component": "movements-radius",
+  "adapter": "components/movements-radius.jsx",
+  "direct_imports": [
+    "recovered/movements/modules/59975.jsx"
+  ],
+  "shared_build_closure": "dependencies/shared-movements.json",
+  "dependency_scope": "Shared comparison bundle dependency closure; not a minimal isolated per-component author dependency list",
+  "packages": {
+    "@base-ui/react": "1.9.0",
+    "@tabler/icons-react": "3.49.0",
+    "motion": "14.5.0",
+    "embla-carousel-react": "8.6.0",
+    "class-variance-authority": "0.7.1",
+    "@kmenu/react": "2.0.4",
+    "kmenu": "2.0.3",
+    "@web-kits/audio": "0.2.0",
+    "input-otp": "1.5.0",
+    "loomix": "1.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "public_module_ids": [
+    59975,
+    31908,
+    16542,
+    18687,
+    45032,
+    22673,
+    95074,
+    23422,
+    64973,
+    11235
+  ],
+  "module_sources": [
+    {
+      "id": 59975,
+      "file": "recovered/movements/modules/59975.jsx",
+      "exports": [
+        "RadiusExamples",
+        "RadiusTeaser"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 31908,
+      "file": "recovered/movements/modules/31908.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 16542,
+      "file": "recovered/movements/modules/16542.jsx",
+      "exports": [
+        "ExampleCard",
+        "ExperimentLayout"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 18687,
+      "file": "recovered/movements/modules/18687.jsx",
+      "exports": [
+        "LIBRARIES",
+        "UTILITIES",
+        "getCatalogItem"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 45032,
+      "file": "recovered/movements/modules/45032.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 22673,
+      "file": "recovered/movements/modules/22673.jsx",
+      "exports": [
+        "clamp",
+        "hexToRgb",
+        "hsvToRgb",
+        "hueToCss",
+        "rgbToHex",
+        "rgbToHsv"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 95074,
+      "file": "recovered/movements/modules/95074.jsx",
+      "exports": [
+        "useThemeStore"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 23422,
+      "file": "recovered/movements/modules/23422.jsx",
+      "exports": [
+        "ACCENT",
+        "CatalogIcon"
+      ],
+      "kind": "lifted public module"
+    },
+    {
+      "id": 64973,
+      "file": "recovered/movements/modules/64973.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    },
+    {
+      "id": 11235,
+      "file": "recovered/movements/modules/11235.jsx",
+      "exports": [],
+      "kind": "official public vendor dependency bridge"
+    }
+  ]
+}

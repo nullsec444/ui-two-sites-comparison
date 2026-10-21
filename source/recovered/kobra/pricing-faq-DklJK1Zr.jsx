@@ -1,0 +1,58 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { r as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { r as t } from "./component-catalog-x55m0xeC.js";
+import { l as n, t as r } from "./plans-C5gnmWKf.js";
+import { t as i } from "./createReactComponent-DqK5J7gw.js";
+var a = i(`outline`, `credit-card`, `CreditCard`, [[`path`, {
+    d: `M3 8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3l0 -8`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M3 10l18 0`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M7 15l.01 0`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M11 15l2 0`,
+    key: `svg-3`
+  }]]),
+  o = i(`outline`, `robot`, `Robot`, [[`path`, {
+    d: `M6 6a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2l0 -4`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M12 2v2`,
+    key: `svg-1`
+  }], [`path`, {
+    d: `M9 12v9`,
+    key: `svg-2`
+  }], [`path`, {
+    d: `M15 12v9`,
+    key: `svg-3`
+  }], [`path`, {
+    d: `M5 16l4 -2`,
+    key: `svg-4`
+  }], [`path`, {
+    d: `M15 14l4 2`,
+    key: `svg-5`
+  }], [`path`, {
+    d: `M9 18h6`,
+    key: `svg-6`
+  }], [`path`, {
+    d: `M10 8v.01`,
+    key: `svg-7`
+  }], [`path`, {
+    d: `M14 8v.01`,
+    key: `svg-8`
+  }]]),
+  s = i(`outline`, `wave-sine`, `WaveSine`, [[`path`, {
+    d: `M21 12h-2c-.894 0 -1.662 -.857 -1.761 -2c-.296 -3.45 -.749 -6 -2.749 -6s-2.5 3.582 -2.5 8s-.5 8 -2.5 8s-2.452 -2.547 -2.749 -6c-.1 -1.147 -.867 -2 -1.763 -2h-2`,
+    key: `svg-0`
+  }]]),
+  c = e({
+    QUESTION_CHARS: () => 280
+  }),
+  l = e({
+    faqs: () => u
+  }),
+  u = [[`buying`, `What am I actually buying?`, `The source. Every component as the file it is built from, comments included, with the CSS it needs and a prompt for taking it elsewhere. Around that: a free Figma kit drawn on the same tokens, AI skills for motion, sound and migration, the interface sound layer, and an MCP server your agents can read. Lifetime updates, and the gallery stays free to read.`], [`try-first`, `Can I try it before I buy?`, `Yes. The library comes with ${String(t.size)} free components, source and all, that you can copy and paste or install from the shadcn CLI. Every preview in the gallery is editable in the browser too.`], [`one-component`, `Can I buy a single component?`, `Yes, ${n(r.amount)} for one, and that amount is credited toward a paid plan if you upgrade later. Buy 10 and the last one hands you the whole library instead.`], [`shadcn`, `I already use shadcn/ui. How much has to change?`, `Very little. Same Tailwind, same CLI, same file-in-your-repo model, so these install next to what you have. Move one screen at a time rather than committing to a rewrite.`], [`stack`, `What do I need to have installed?`, `React 19 and Tailwind v4. The components sit on Base UI, and each one ships with a prompt listing the packages that file imports, so you install what you take and nothing else.`], [`accessibility`, `Is any of this accessible?`, `Every interactive component sits on Base UI, which handles focus, keyboard and screen reader semantics rather than leaving them to each component. What is built on top is tested against WCAG 2.1 AA, in both themes.`], [`rtl`, `Do they work right to left, in Arabic, Hebrew or Persian?`, `Yes. Every component is laid out by reading direction rather than by left and right, so under dir="rtl" the spacing, arrows, carousels and arrow keys all turn around. Animations keep Arabic and Persian words whole so their letters stay joined, while code, one-time codes and charts stay left to right. Add ?dir=rtl to any component’s page to see it mirrored.`], [`restyle`, `Can I make them look like our product?`, `That is the intended use. Colors, radius and type are plain CSS variables, so restyling is editing your own tokens rather than fighting a theme API. The Figma kit is drawn on the same ones.`], [`seats`, `How do team seats work?`, `The team plan puts one code per seat on your dashboard, one of them already yours. Everyone redeems their own, so access is theirs rather than a shared login, and a code nobody has used can go to somebody else.`], [`lock-in`, `What happens to my app if you go away?`, `Nothing. The components are plain files in your repo with no runtime dependency on us, no package to keep updated and no service to call. Whatever you have downloaded keeps working.`]];
+export { o as a, s as i, l as n, a as o, c as r, u as t };

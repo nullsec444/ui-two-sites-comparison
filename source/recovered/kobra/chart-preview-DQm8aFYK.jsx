@@ -1,0 +1,2923 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as r } from "./utils-WkhMP9hs.js";
+import { a as i, c as a, l as o, o as s, t as c } from "./react-BGf_lakQ.js";
+import { t as l } from "./use-reduced-motion-BdikIsVN.js";
+import { E as u, Qt as d, Vt as f, Zn as p, _ as m, a as h, er as g, h as _, ht as v, m as y, n as b, o as x, or as S, p as C, rn as w, t as T, ur as E, v as D, w as O, xr as k } from "./AreaChart-BaKAH6gj.js";
+var A = e(t(), 1),
+  j = e(n(), 1),
+  M = {
+    light: ``,
+    dark: `.dark`
+  },
+  N = Object.keys(M);
+function P(e) {
+  for (let [t, n] of Object.entries(e)) if (n.colors && !N.some(e => n.colors?.[e] !== void 0)) throw Error(`[EvilCharts] Invalid chart config for "${t}": colors object must have at least one theme key (${N.join(`, `)}). Received empty object or invalid keys.`);
+}
+var F = A.createContext(null);
+function I() {
+  let e = A.useContext(F);
+  if (!e) throw Error(`useChart must be used within a <ChartContainer />`);
+  return e;
+}
+function L({
+  id: e,
+  config: t,
+  initialDimension: n = {
+    width: 320,
+    height: 200
+  },
+  className: i,
+  children: a,
+  footer: o,
+  ...s
+}) {
+  let c = A.useId(),
+    l = `chart-${e ?? c.replace(/:/g, ``)}`;
+  return P(t), (0, j.jsx)(F.Provider, {
+    value: {
+      config: t
+    },
+    children: <div data-slot={`chart`} data-chart={l} className={r(`min-h-0 w-full flex-1`, `relative flex flex-col justify-center text-xs [&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector]:outline-hidden [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-surface]:outline-hidden`, !o && `aspect-video`, i)} {...s}>{[(0, j.jsx)(ee, {
+        id: l,
+        config: t
+      }), (0, j.jsx)(k, {
+        className: `min-h-0 w-full flex-1`,
+        initialDimension: n,
+        children: a
+      }), o]}</div>
+  });
+}
+function R({
+  isLoading: e
+}) {
+  return e ? <div className={`pointer-events-none absolute inset-0 z-20 flex items-center justify-center`}>{<div className={`flex items-center justify-center gap-2 rounded-md border bg-background px-2 py-0.5 text-sm text-primary`}>{[<div className={`h-3 w-3 animate-spin rounded-full border border-border border-t-primary`} />, <span>{`Loading`}</span>]}</div>}</div> : null;
+}
+function z(e, t) {
+  let n = e.length;
+  if (n >= t) return e.slice(0, t);
+  let r = [],
+    i = Math.floor(t / n),
+    a = t % n;
+  for (let t = 0; t < n; t++) {
+    let o = i + +(t >= n - a);
+    for (let n = 0; n < o; n++) r.push(e[t]);
+  }
+  return r;
+}
+var ee = ({
+  id: e,
+  config: t
+}) => {
+  let n = Object.entries(t).filter(([, e]) => e.colors);
+  if (!n.length) return null;
+  let r = e => n.flatMap(([t, n]) => {
+      let r = n.colors?.[e];
+      return !r || !Array.isArray(r) || r.length === 0 ? [] : z(r, H(n)).map((e, n) => `  --color-${t}-${n}: ${e};`);
+    }).filter(Boolean).join(`
+`),
+    i = Object.entries(M).map(([t, n]) => `${n} [data-chart=${e}] {\n${r(t)}\n}`).join(`
+`);
+  return <style dangerouslySetInnerHTML={{
+    __html: i
+  }} />;
+};
+function B(e, t, n) {
+  if (typeof t != `object` || !t) return;
+  let r = `payload` in t && typeof t.payload == `object` && t.payload !== null ? t.payload : void 0,
+    i = n;
+  return n in t && typeof t[n] == `string` ? i = t[n] : r && n in r && typeof r[n] == `string` && (i = r[n]), i in e ? e[i] : e[n];
+}
+function V(e) {
+  return `${Math.round(e * 100).toFixed(0)}%`;
+}
+function H(e) {
+  if (!e.colors) return 1;
+  let t = N.map(t => e.colors?.[t]?.length ?? 0);
+  return Math.max(...t, 1);
+}
+var U = (e = 10, t = 0, n = 70) => {
+    let r = n - t;
+    return Array.from({
+      length: e
+    }, () => ({
+      loading: Math.floor(Math.random() * r) + t
+    }));
+  },
+  te = {
+    sm: `rounded-sm`,
+    md: `rounded-md`,
+    lg: `rounded-lg`,
+    xl: `rounded-xl`
+  },
+  W = {
+    default: `bg-popover/80 backdrop-blur-md`,
+    "frosted-glass": `bg-popover/60 backdrop-blur-lg`
+  };
+function G({
+  active: e,
+  payload: t,
+  className: n,
+  indicator: i = `dot`,
+  hideLabel: a = !1,
+  hideIndicator: o = !1,
+  label: s,
+  labelFormatter: c,
+  labelClassName: l,
+  formatter: u,
+  nameKey: d,
+  labelKey: f,
+  selected: p,
+  roundness: m = `lg`,
+  variant: h = `default`
+}) {
+  let {
+      config: g
+    } = I(),
+    [_, v] = A.useState(null);
+  e && t?.length && t !== _?.payload && v({
+    payload: t,
+    label: s
+  });
+  let y = _?.payload,
+    b = _?.label,
+    x = A.useMemo(() => {
+      if (a || !y?.length) return null;
+      let [e] = y,
+        t = `${f ?? e?.dataKey ?? e?.name ?? `value`}`,
+        n = B(g, e, t),
+        i = !f && typeof b == `string` ? g[b]?.label ?? b : n?.label;
+      return c ? <div className={r(`font-medium`, l)}>{c(i, y)}</div> : i ? <div className={r(`font-medium`, l)}>{i}</div> : null;
+    }, [b, c, y, a, l, g, f]);
+  if (!y?.length) return <span className={`p-4`} />;
+  let S = y.length === 1 && i !== `dot`;
+  return <div data-slot={`chart-tooltip-content`} className={r(`grid min-w-32 items-start gap-1.5 border border-border/50 px-2.5 py-1.5 text-xs shadow-xl`, te[m], W[h], n)}>{[S ? null : x, <div className={`grid gap-1.5`}>{y.filter(e => e.type !== `none`).map((e, t) => {
+        let n = `${(d && e.payload ? e.payload[d] : void 0) ?? e.name ?? e.dataKey ?? `value`}`,
+          a = B(g, e, n),
+          s = a ? H(a) : 1;
+        return <div className={r(`flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5 [&>svg]:text-muted-foreground`, i === `dot` && `items-center`, p != null && p !== e.dataKey && `opacity-30`)} key={t}>{u && e?.value !== void 0 && e.name ? u(e.value, e.name, e, t, e.payload) : (0, j.jsxs)(j.Fragment, {
+            children: [a?.icon ? (0, j.jsx)(a.icon, {}) : !o && <div className={r(`shrink-0 rounded-[2px]`, {
+              "h-2.5 w-2.5": i === `dot`,
+              "w-1": i === `line`,
+              "w-0 border-[1.5px] border-dashed bg-transparent!": i === `dashed`,
+              "my-0.5": S && i === `dashed`
+            })} style={ne(n, s)} />, <div className={r(`flex flex-1 justify-between gap-4 leading-none`, S ? `items-end` : `items-center`)}>{[<div className={`grid gap-1.5`}>{[S ? x : null, <span className={`text-muted-foreground`}>{a?.label ?? e.name}</span>]}</div>, e.value != null && <span className={`font-mono font-medium text-foreground tabular-nums`}>{typeof e.value == `number` ? e.value.toLocaleString() : String(e.value)}</span>]}</div>]
+          })}</div>;
+      })}</div>]}</div>;
+}
+function ne(e, t) {
+  return t <= 1 ? {
+    background: `var(--color-${e}-0)`
+  } : {
+    background: `linear-gradient(to right, ${Array.from({
+      length: t
+    }, (n, r) => `var(--color-${e}-${r}) ${r / (t - 1) * 100}%`).join(`, `)})`
+  };
+}
+var re = ({
+    animationDuration: e = 200,
+    ...t
+  }) => (0, j.jsx)(d, {
+    animationDuration: e,
+    ...t
+  }),
+  K = () => null,
+  ie = {
+    stiffness: 300,
+    damping: 35,
+    mass: .8
+  };
+function ae({
+  range: e,
+  totalPoints: t,
+  containerRef: n,
+  commit: r
+}) {
+  let i = A.useRef(null),
+    [a, o] = A.useState(!1),
+    s = (0, A.useCallback)(e => !n.current || t <= 1 ? 0 : Math.round(e / n.current.getBoundingClientRect().width * (t - 1)), [t, n]),
+    c = (0, A.useCallback)((t, n) => {
+      t.preventDefault(), t.target.setPointerCapture(t.pointerId), i.current = {
+        type: n,
+        originX: t.clientX,
+        originRange: {
+          ...e
+        }
+      }, o(!0);
+    }, [e]),
+    l = (0, A.useCallback)(e => {
+      let n = i.current;
+      if (!n) return;
+      let a = s(e.clientX - n.originX),
+        {
+          type: o,
+          originRange: c
+        } = n;
+      if (o === `left`) r({
+        startIndex: c.startIndex + a,
+        endIndex: c.endIndex
+      }, `left`);else if (o === `right`) r({
+        startIndex: c.startIndex,
+        endIndex: c.endIndex + a
+      }, `right`);else {
+        let e = c.endIndex - c.startIndex,
+          n = c.startIndex + a,
+          i = n + e;
+        n < 0 && (n = 0, i = e), i > t - 1 && (i = t - 1, n = Math.max(0, i - e)), r({
+          startIndex: n,
+          endIndex: i
+        }, `middle`);
+      }
+    }, [s, t, r]),
+    u = (0, A.useCallback)(e => {
+      e.target.releasePointerCapture(e.pointerId), i.current = null, o(!1);
+    }, []);
+  return {
+    isDragging: a,
+    bind: (0, A.useCallback)(e => ({
+      onPointerDown: t => c(t, e),
+      onPointerMove: l,
+      onPointerUp: u
+    }), [c, l, u])
+  };
+}
+function oe({
+  data: e,
+  chartConfig: t,
+  dataKeys: n,
+  xDataKey: l,
+  variant: u = `area`,
+  height: d = 56,
+  className: f,
+  stacked: p = !1,
+  strokeVariant: m = `solid`,
+  connectNulls: h = !1,
+  barRadius: g,
+  startIndex: _,
+  endIndex: v,
+  defaultStartIndex: y = 0,
+  defaultEndIndex: b,
+  onChange: x,
+  formatLabel: S,
+  curveType: C = `monotone`,
+  minSpan: w = 2,
+  showLabels: T = !0,
+  skipStyle: E = !1
+}) {
+  let D = A.useRef(null),
+    O = A.useMemo(() => n ?? Object.keys(t), [n, t]),
+    k = e.length,
+    M = A.useId().replace(/:/g, ``),
+    N = _ !== void 0 && v !== void 0,
+    [P, F] = A.useState(() => ({
+      startIndex: Math.max(0, Math.min(y, k - 1)),
+      endIndex: Math.max(0, Math.min(b ?? k - 1, k - 1))
+    })),
+    I = A.useRef(P);
+  (0, A.useEffect)(() => {
+    N || F(e => {
+      let t = {
+        startIndex: Math.min(e.startIndex, Math.max(0, k - 1)),
+        endIndex: Math.min(e.endIndex, Math.max(0, k - 1))
+      };
+      return I.current = t, t;
+    });
+  }, [k, N]);
+  let L = (0, A.useCallback)((e, t) => {
+      let {
+          startIndex: n,
+          endIndex: r
+        } = e,
+        i = Math.max(0, k - 1);
+      if (n = Math.max(0, Math.min(n, i)), r = Math.max(0, Math.min(r, i)), t === `left`) {
+        let e = Math.max(0, r - w);
+        return n = Math.min(n, e), {
+          startIndex: n,
+          endIndex: r
+        };
+      }
+      if (t === `right`) {
+        let e = Math.min(i, n + w);
+        return r = Math.max(r, e), {
+          startIndex: n,
+          endIndex: r
+        };
+      }
+      return r - n < w && (r = Math.min(n + w, i), r - n < w && (n = Math.max(0, r - w))), {
+        startIndex: n,
+        endIndex: r
+      };
+    }, [k, w]),
+    {
+      isDragging: R,
+      bind: z
+    } = ae({
+      range: P,
+      totalPoints: k,
+      containerRef: D,
+      commit: (0, A.useCallback)((e, t) => {
+        let n = L(e, t),
+          r = I.current;
+        (r.startIndex !== n.startIndex || r.endIndex !== n.endIndex) && (I.current = n, F(n), A.startTransition(() => {
+          x?.(n);
+        }));
+      }, [L, x])
+    }),
+    B = P;
+  (0, A.useEffect)(() => {
+    if (N && !R) {
+      let e = {
+        startIndex: _,
+        endIndex: v
+      };
+      F(e), I.current = e;
+    }
+  }, [N, _, v, R]);
+  let V = k > 1 ? B.startIndex / (k - 1) * 100 : 0,
+    H = k > 1 ? B.endIndex / (k - 1) * 100 : 100,
+    U = a(V),
+    te = a(H);
+  U.get() !== V && U.set(V), te.get() !== H && te.set(H);
+  let W = i(U, ie),
+    G = i(te, ie),
+    ne = s(W, e => `${e}%`),
+    re = s(G, e => `${e}%`),
+    K = s(W, e => `${e}%`),
+    oe = s(G, e => `${Math.max(0, 100 - e)}%`),
+    q = a(`${Math.max(0, H - V)}%`),
+    J = (0, A.useCallback)(() => {
+      q.set(`${Math.max(0, G.get() - W.get())}%`);
+    }, [W, G, q]);
+  o(W, `change`, J), o(G, `change`, J);
+  let le = (0, A.useCallback)(t => {
+    if (!l) return String(t);
+    let n = e[t]?.[l];
+    return S ? S(n, t) : String(n ?? t);
+  }, [e, l, S]);
+  return k === 0 ? null : <div ref={D} data-chart={E ? void 0 : M} className={r(`group relative select-none`, f)} style={{
+    height: d
+  }}>{[!E && (0, j.jsx)(ee, {
+      id: M,
+      config: t
+    }), <div className={`absolute inset-0 overflow-hidden rounded-md`}>{(0, j.jsx)(ce, {
+        data: e,
+        keys: O,
+        chartConfig: t,
+        variant: u,
+        curveType: C,
+        chartId: M,
+        stacked: p,
+        strokeVariant: m === `animated-dashed` ? `dashed` : m,
+        connectNulls: h,
+        barRadius: g
+      })}</div>, (0, j.jsx)(c.div, {
+      className: `pointer-events-none absolute inset-y-0 left-0 rounded-l-md bg-background/70 backdrop-blur-[2px]`,
+      style: {
+        width: K
+      }
+    }), (0, j.jsx)(c.div, {
+      className: `pointer-events-none absolute inset-y-0 right-0 rounded-r-md bg-background/70 backdrop-blur-[2px]`,
+      style: {
+        width: oe
+      }
+    }), (0, j.jsx)(c.div, {
+      className: `absolute inset-y-0 cursor-grab touch-none rounded-sm border active:cursor-grabbing`,
+      style: {
+        left: ne,
+        width: q
+      },
+      ...z(`middle`)
+    }), (0, j.jsx)(se, {
+      side: `left`,
+      position: ne,
+      label: T ? le(B.startIndex) : void 0,
+      bind: z(`left`)
+    }), (0, j.jsx)(se, {
+      side: `right`,
+      position: re,
+      label: T ? le(B.endIndex) : void 0,
+      bind: z(`right`)
+    })]}</div>;
+}
+function se({
+  side: e,
+  position: t,
+  label: n,
+  bind: i
+}) {
+  let a = e === `left`;
+  return (0, j.jsxs)(c.div, {
+    className: `absolute inset-y-0 z-10`,
+    style: {
+      left: t
+    },
+    children: [<div className={r(`group absolute inset-y-0 flex w-3 cursor-ew-resize touch-none items-center justify-center after:absolute after:inset-y-0 after:-left-4 after:w-11 after:content-['']`, a ? `` : `-translate-x-full`)} {...i}>{<div className={r(`relative flex h-4 w-1.5 items-center justify-center rounded-md bg-muted-foreground transition-colors group-hover:bg-foreground`, a ? `-left-[5.5px]` : `-right-[5.5px]`)}>{<div className={`flex flex-col gap-[2px]`}>{[<div className={`h-[2px] w-[2px] rounded-full bg-background/70`} />, <div className={`h-[2px] w-[2px] rounded-full bg-background/70`} />, <div className={`h-[2px] w-[2px] rounded-full bg-background/70`} />]}</div>}</div>}</div>, n && <div className={r(`pointer-events-none absolute -bottom-3 -translate-y-1/2 rounded-[3px] bg-foreground px-1 py-px text-[8px] leading-tight font-medium whitespace-nowrap text-background opacity-0 group-hover:opacity-100`, a ? `left-1.5` : `right-1.5`)}>{n}</div>]
+  });
+}
+function ce({
+  data: e,
+  keys: t,
+  chartConfig: n,
+  variant: r,
+  curveType: i,
+  chartId: a,
+  stacked: o,
+  strokeVariant: s = `solid`,
+  connectNulls: c = !1,
+  barRadius: l
+}) {
+  let u = A.useMemo(() => Object.entries(n).filter(([e]) => t.includes(e)).map(([e, t]) => ({
+      dataKey: e,
+      colorsCount: H(t)
+    })), [n, t]),
+    d = s === `dashed` || s === `animated-dashed` ? `4 4` : void 0,
+    f = (0, j.jsxs)(j.Fragment, {
+      children: [r === `area` && <linearGradient id={`${a}-zm-vertical-fade`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`0%`} stopColor={`white`} stopOpacity={.15} />, <stop offset={`100%`} stopColor={`white`} stopOpacity={0} />]}</linearGradient>, u.map(({
+        dataKey: e,
+        colorsCount: t
+      }) => {
+        let n = t === 1 ? (0, j.jsxs)(j.Fragment, {
+          children: [<stop offset={`0%`} stopColor={`var(--color-${e}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${e}-0)`} />]
+        }) : Array.from({
+          length: t
+        }, (n, r) => <stop offset={`${r / (t - 1) * 100}%`} stopColor={`var(--color-${e}-${r}, var(--color-${e}-0))`} key={r} />);
+        return (0, j.jsxs)(A.Fragment, {
+          children: [<linearGradient id={`${a}-zm-${e}`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{n}</linearGradient>, r === `area` && (0, j.jsxs)(j.Fragment, {
+            children: [<mask id={`${a}-zm-fill-mask-${e}`}>{<rect width={`100%`} height={`100%`} fill={`url(#${a}-zm-vertical-fade)`} />}</mask>, <pattern id={`${a}-zm-fill-${e}`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${a}-zm-${e})`} mask={`url(#${a}-zm-fill-mask-${e})`} />}</pattern>]
+          })]
+        }, e);
+      })]
+    });
+  if (r === `line`) return (0, j.jsx)(k, {
+    width: `100%`,
+    height: `100%`,
+    children: (0, j.jsxs)(x, {
+      data: e,
+      margin: {
+        top: 4,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
+      children: [<defs>{f}</defs>, t.map(e => (0, j.jsx)(D, {
+        type: i,
+        dataKey: e,
+        stroke: `url(#${a}-zm-${e})`,
+        strokeWidth: 1,
+        strokeOpacity: .5,
+        strokeDasharray: d,
+        connectNulls: c,
+        dot: !1,
+        activeDot: !1,
+        isAnimationActive: !1
+      }, e))]
+    })
+  });
+  if (r === `bar`) {
+    let n = l ?? 3;
+    return (0, j.jsx)(k, {
+      width: `100%`,
+      height: `100%`,
+      children: (0, j.jsxs)(h, {
+        data: e,
+        margin: {
+          top: 2,
+          right: 0,
+          bottom: 0,
+          left: 0
+        },
+        barGap: 2,
+        barSize: 14,
+        children: [<defs>{f}</defs>, t.map(e => (0, j.jsx)(_, {
+          dataKey: e,
+          fill: `url(#${a}-zm-${e})`,
+          fillOpacity: .35,
+          stackId: o ? `zm-stack` : void 0,
+          isAnimationActive: !1,
+          radius: [n, n, n, n]
+        }, e))]
+      })
+    });
+  }
+  return (0, j.jsx)(k, {
+    width: `100%`,
+    height: `100%`,
+    children: (0, j.jsxs)(T, {
+      data: e,
+      margin: {
+        top: 4,
+        right: 0,
+        bottom: 0,
+        left: 0
+      },
+      children: [<defs>{f}</defs>, t.map(e => (0, j.jsx)(m, {
+        type: i,
+        dataKey: e,
+        stroke: `url(#${a}-zm-${e})`,
+        fill: `url(#${a}-zm-fill-${e})`,
+        strokeWidth: 1,
+        strokeOpacity: .5,
+        strokeDasharray: d,
+        connectNulls: c,
+        fillOpacity: 1,
+        stackId: o ? `zm-stack` : void 0,
+        dot: !1,
+        activeDot: !1,
+        isAnimationActive: !1
+      }, e))]
+    })
+  });
+}
+function q({
+  data: e,
+  defaultStartIndex: t = 0,
+  defaultEndIndex: n
+}) {
+  let [r, i] = A.useState({
+      startIndex: t,
+      endIndex: n ?? Math.max(0, e.length - 1)
+    }),
+    a = A.useDeferredValue(r);
+  return (0, A.useEffect)(() => {
+    i({
+      startIndex: 0,
+      endIndex: Math.max(0, e.length - 1)
+    });
+  }, [e.length]), {
+    range: r,
+    visibleData: A.useMemo(() => e.slice(a.startIndex, a.endIndex + 1), [e, a.startIndex, a.endIndex]),
+    brushProps: {
+      startIndex: r.startIndex,
+      endIndex: r.endIndex,
+      onChange: i
+    }
+  };
+}
+function J({
+  className: e,
+  hideIcon: t = !1,
+  nameKey: n,
+  payload: i,
+  verticalAlign: a,
+  align: o = `right`,
+  selected: s,
+  onSelectChange: c,
+  isClickable: l,
+  variant: u = `rounded-square`
+}) {
+  let {
+    config: d
+  } = I();
+  return i?.length ? <div className={r(`flex items-center gap-4 select-none`, o === `left` && `justify-start`, o === `center` && `justify-center`, o === `right` && `justify-end`, a === `top` ? `pb-4` : `pt-4`, e)}>{i.filter(e => e.type !== `none`).map(e => {
+      let i = `${(n && e.payload ? e.payload[n] : void 0) ?? e.value ?? e.dataKey ?? `value`}`,
+        a = B(d, e, i),
+        o = s === null || s === i,
+        f = a ? H(a) : 1;
+      return <div className={r(`flex items-center gap-1.5 transition-opacity [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-muted-foreground`, !o && `opacity-30`, l && `cursor-pointer`)} onClick={() => {
+        l && c?.(s === i ? null : i);
+      }} key={i}>{[a?.icon && !t ? (0, j.jsx)(a.icon, {}) : (0, j.jsx)(le, {
+          variant: u,
+          dataKey: i,
+          colorsCount: f
+        }), a?.label]}</div>;
+    })}</div> : null;
+}
+function le({
+  variant: e,
+  dataKey: t,
+  colorsCount: n
+}) {
+  let r = ue(t, n),
+    i = de(t, n);
+  switch (e) {
+    case `square`:
+      return <div className={`h-2 w-2 shrink-0`} style={r} />;
+    case `circle`:
+      return <div className={`h-2 w-2 shrink-0 rounded-full`} style={r} />;
+    case `circle-outline`:
+      return <div className={`h-2.5 w-2.5 shrink-0 rounded-full p-[1.5px]`} style={i} />;
+    case `vertical-bar`:
+      return <div className={`h-3 w-1 shrink-0 rounded-[2px]`} style={r} />;
+    case `horizontal-bar`:
+      return <div className={`h-1 w-3 shrink-0 rounded-[2px]`} style={r} />;
+    case `rounded-square-outline`:
+      return <div className={`h-2.5 w-2.5 shrink-0 rounded-[3px] p-[1.5px]`} style={i} />;
+    default:
+      return <div className={`h-2 w-2 shrink-0 rounded-[2px]`} style={r} />;
+  }
+}
+function ue(e, t) {
+  return t <= 1 ? {
+    backgroundColor: `var(--color-${e}-0)`
+  } : {
+    background: `linear-gradient(to right, ${Array.from({
+      length: t
+    }, (n, r) => `var(--color-${e}-${r}) ${r / (t - 1) * 100}%`).join(`, `)})`
+  };
+}
+function de(e, t) {
+  let n = {
+    WebkitMask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,
+    WebkitMaskComposite: `xor`,
+    mask: `linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)`,
+    maskComposite: `exclude`
+  };
+  return t <= 1 ? {
+    backgroundColor: `var(--color-${e}-0)`,
+    ...n
+  } : {
+    background: `linear-gradient(to right, ${Array.from({
+      length: t
+    }, (n, r) => `var(--color-${e}-${r}) ${r / (t - 1) * 100}%`).join(`, `)})`,
+    ...n
+  };
+}
+var fe = E,
+  pe = A.memo(function ({
+    cx: e,
+    cy: t,
+    dataKey: n,
+    chartId: r,
+    className: i,
+    fillOpacity: a = 1,
+    type: o = `default`,
+    maskId: s
+  }) {
+    let c = A.useId().replace(/:/g, ``),
+      l = `url(#${r}-colors-${String(n)})`;
+    if (e === void 0 || t === void 0) return null;
+    switch (o) {
+      case `border`:
+        return (0, j.jsx)(he, {
+          cx: e,
+          cy: t,
+          dotId: c,
+          fillOpacity: a,
+          gradientUrl: l,
+          className: i,
+          maskId: s
+        });
+      case `colored-border`:
+        return (0, j.jsx)(ge, {
+          cx: e,
+          cy: t,
+          dotId: c,
+          fillOpacity: a,
+          gradientUrl: l,
+          className: i,
+          maskId: s
+        });
+      default:
+        return (0, j.jsx)(me, {
+          cx: e,
+          cy: t,
+          dotId: c,
+          fillOpacity: a,
+          gradientUrl: l,
+          className: i,
+          maskId: s
+        });
+    }
+  }),
+  me = A.memo(({
+    cx: e,
+    cy: t,
+    dotId: n,
+    fillOpacity: r,
+    gradientUrl: i,
+    className: a,
+    maskId: o
+  }) => <g className={a} mask={o ? `url(#${o})` : void 0}>{[<defs>{<clipPath id={`dot-clip-${n}`}>{<circle cx={e} cy={t} r={3} />}</clipPath>}</defs>, <rect x={`0`} y={t - 3} width={`100%`} height={6} fill={i} fillOpacity={r} clipPath={`url(#dot-clip-${n})`} />]}</g>);
+me.displayName = `DefaultDot`;
+var he = A.memo(({
+  cx: e,
+  cy: t,
+  dotId: n,
+  fillOpacity: i,
+  gradientUrl: a,
+  className: o,
+  maskId: s
+}) => <g className={r(o, `text-background`)} mask={s ? `url(#${s})` : void 0}>{[<defs>{<clipPath id={`dot-clip-${n}`}>{<circle cx={e} cy={t} r={6} />}</clipPath>}</defs>, <circle cx={e} cy={t} r={6} fill={`currentColor`} />, <rect x={`0`} y={t - (6 - 5 / 2)} width={`100%`} height={7} fill={a} fillOpacity={i} clipPath={`url(#dot-clip-inner-${n})`} />, <defs>{<clipPath id={`dot-clip-inner-${n}`}>{<circle cx={e} cy={t} r={6 - 5 / 2} />}</clipPath>}</defs>]}</g>);
+he.displayName = `PrimaryBorderDot`;
+var ge = A.memo(({
+  cx: e,
+  cy: t,
+  dotId: n,
+  fillOpacity: i,
+  gradientUrl: a,
+  className: o,
+  maskId: s
+}) => <g className={r(o, `text-background`)} mask={s ? `url(#${s})` : void 0}>{[<defs>{<clipPath id={`dot-clip-${n}`}>{<circle cx={e} cy={t} r={3.5} />}</clipPath>}</defs>, <rect x={`0`} y={t - 3 - 1 / 2} width={`100%`} height={7} fill={a} fillOpacity={i} clipPath={`url(#dot-clip-${n})`} />, <circle cx={e} cy={t} r={3 - 1 / 2} fill={`currentColor`} />]}</g>);
+ge.displayName = `ColoredBorderDot`;
+var _e = .8,
+  ve = `loading`,
+  ye = 2e3,
+  be = `evil-stacked`,
+  xe = 1,
+  Se = [0, .7, .5, 1],
+  Ce = (0, A.createContext)(null);
+function we() {
+  let e = (0, A.use)(Ce);
+  if (!e) throw Error(`Area chart parts (<Area />, <XAxis />, …) must be used within <EvilAreaChart />`);
+  return e;
+}
+function Y({
+  config: e,
+  data: t,
+  children: n,
+  className: r,
+  chartProps: i,
+  curveType: a = `linear`,
+  animationType: o = `left-to-right`,
+  stackType: s = `default`,
+  defaultSelectedDataKey: c = null,
+  onSelectionChange: l,
+  isLoading: u = !1,
+  loadingPoints: d,
+  xDataKey: f
+}) {
+  let p = (0, A.useId)().replace(/:/g, ``),
+    [m, h] = (0, A.useState)(c),
+    {
+      loadingData: g,
+      onShimmerExit: _
+    } = Je(u, d),
+    {
+      visibleData: v,
+      brushProps: y
+    } = q({
+      data: t
+    }),
+    b = (0, A.useMemo)(() => {
+      let e = A.Children.toArray(n),
+        t = e.find(e => (0, A.isValidElement)(e) && e.type === K),
+        r = (0, A.isValidElement)(t) ? t.props : {};
+      return {
+        slot: {
+          present: (0, A.isValidElement)(t),
+          height: r.height,
+          formatLabel: r.formatLabel,
+          onChange: r.onChange
+        },
+        chartChildren: e.filter(e => !((0, A.isValidElement)(e) && e.type === K))
+      };
+    }, [n]),
+    x = b.slot.present,
+    S = s === `expanded`,
+    C = s === `stacked` || S,
+    w = x && !u ? v : t,
+    E = (0, A.useCallback)(e => {
+      h(e), l?.(e);
+    }, [l]),
+    D = (0, A.useMemo)(() => ({
+      config: e,
+      curveType: a,
+      animationType: o,
+      isStacked: C,
+      isExpanded: S,
+      isLoading: u,
+      selectedDataKey: m,
+      selectDataKey: E
+    }), [e, a, o, C, S, u, m, E]);
+  return (0, j.jsx)(Ce, {
+    value: D,
+    children: (0, j.jsxs)(L, {
+      className: r,
+      config: e,
+      footer: x && !u && (0, j.jsx)(oe, {
+        data: t,
+        chartConfig: e,
+        xDataKey: f,
+        variant: `area`,
+        curveType: a,
+        height: b.slot.height,
+        formatLabel: b.slot.formatLabel,
+        stacked: C,
+        skipStyle: !0,
+        className: `mt-1`,
+        ...y,
+        onChange: e => {
+          y.onChange(e), b.slot.onChange?.(e);
+        }
+      }),
+      children: [(0, j.jsx)(R, {
+        isLoading: u
+      }), (0, j.jsxs)(T, {
+        id: p,
+        accessibilityLayer: !0,
+        stackOffset: S ? `expand` : void 0,
+        data: u ? g : w,
+        ...i,
+        children: [b.chartChildren, u && (0, j.jsx)(Ye, {
+          chartId: p,
+          curveType: a,
+          onShimmerExit: _
+        })]
+      })]
+    })
+  });
+}
+function Te({
+  dataKey: e,
+  variant: t = `gradient`,
+  strokeVariant: n = `dashed`,
+  strokeWidth: r = _e,
+  curveType: i,
+  animationType: a,
+  connectNulls: o = !1,
+  isClickable: s = !1,
+  children: c,
+  areaProps: u
+}) {
+  let {
+      config: d,
+      curveType: f,
+      animationType: p,
+      isStacked: h,
+      isExpanded: g,
+      isLoading: _,
+      selectedDataKey: v,
+      selectDataKey: y
+    } = we(),
+    b = (0, A.useId)().replace(/:/g, ``),
+    x = l();
+  if (_) return null;
+  let S = i ?? f,
+    C = x ? `none` : a ?? p,
+    w = C === `none` ? void 0 : `${b}-reveal-mask`,
+    T = v === e,
+    E = v !== null,
+    D = Ne(v, e),
+    O = E && !T,
+    {
+      dot: k,
+      activeDot: M
+    } = Fe(c, b, e, D.dot, w),
+    N = n === `animated-dashed`,
+    P = n === `dashed` || N;
+  return (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(m, {
+      type: S,
+      dataKey: e,
+      connectNulls: o,
+      fillOpacity: D.fill,
+      strokeOpacity: D.stroke,
+      fill: Pe(t, O, b),
+      stroke: `url(#${b}-colors-${e})`,
+      stackId: h ? be : void 0,
+      dot: k,
+      activeDot: M,
+      strokeWidth: r,
+      strokeDasharray: P ? `3 3` : void 0,
+      isAnimationActive: !1,
+      style: {
+        ...(w ? {
+          mask: `url(#${w})`
+        } : {}),
+        ...(s ? {
+          cursor: `pointer`
+        } : {})
+      },
+      onClick: () => {
+        s && y(T ? null : e);
+      },
+      ...u,
+      children: N && !E && (0, j.jsx)(Ie, {})
+    }), <defs>{[C !== `none` && (0, j.jsx)(Re, {
+        id: b,
+        type: C
+      }), (0, j.jsx)(ze, {
+        id: b,
+        dataKey: e,
+        config: d,
+        isExpanded: g
+      }), t === `gradient` && (0, j.jsx)(Be, {
+        id: b,
+        dataKey: e
+      }), t === `gradient-reverse` && (0, j.jsx)(Ve, {
+        id: b,
+        dataKey: e
+      }), t === `solid` && (0, j.jsx)(He, {
+        id: b,
+        dataKey: e
+      }), t === `dotted` && (0, j.jsx)(We, {
+        id: b,
+        dataKey: e
+      }), t === `lines` && (0, j.jsx)(Ue, {
+        id: b,
+        dataKey: e
+      }), t === `hatched` && (0, j.jsx)(Ge, {
+        id: b,
+        dataKey: e
+      }), O && (0, j.jsx)(Ke, {
+        id: b,
+        dataKey: e
+      })]}</defs>]
+  });
+}
+var Ee = () => null,
+  De = () => null;
+function Oe({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  ...i
+}) {
+  let {
+    isLoading: a
+  } = we();
+  return a ? null : (0, j.jsx)(y, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    ...i
+  });
+}
+function ke({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  width: i = `auto`,
+  tickFormatter: a,
+  ...o
+}) {
+  let {
+    isLoading: s,
+    isExpanded: c
+  } = we();
+  return s ? null : (0, j.jsx)(C, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    width: i,
+    tickFormatter: c ? V : a,
+    ...o
+  });
+}
+function Ae({
+  vertical: e = !1,
+  strokeDasharray: t = `3 3`,
+  ...n
+}) {
+  return (0, j.jsx)(O, {
+    vertical: e,
+    strokeDasharray: t,
+    ...n
+  });
+}
+function je({
+  variant: e,
+  roundness: t,
+  defaultIndex: n,
+  cursor: r = !0
+}) {
+  let {
+    isLoading: i,
+    selectedDataKey: a
+  } = we();
+  return i ? null : (0, j.jsx)(re, {
+    defaultIndex: n,
+    cursor: r ? {
+      strokeDasharray: `3 3`,
+      strokeWidth: _e
+    } : !1,
+    content: (0, j.jsx)(G, {
+      selected: a,
+      roundness: t,
+      variant: e
+    })
+  });
+}
+function Me({
+  variant: e,
+  align: t = `right`,
+  verticalAlign: n = `top`,
+  isClickable: r = !1
+}) {
+  let {
+    selectedDataKey: i,
+    selectDataKey: a
+  } = we();
+  return (0, j.jsx)(fe, {
+    verticalAlign: n,
+    align: t,
+    content: (0, j.jsx)(J, {
+      selected: i,
+      onSelectChange: a,
+      isClickable: r,
+      variant: e
+    })
+  });
+}
+var Ne = (e, t) => e === null || e === t ? {
+    fill: .8,
+    stroke: 1,
+    dot: 1
+  } : {
+    fill: .1,
+    stroke: .3,
+    dot: .3
+  },
+  Pe = (e, t, n) => t ? `url(#${n}-unselected)` : `url(#${n}-${e})`,
+  Fe = (e, t, n, r, i) => {
+    let a = !1,
+      o = !1;
+    return A.Children.forEach(e, e => {
+      if ((0, A.isValidElement)(e)) {
+        if (e.type === Ee) {
+          let {
+            variant: o
+          } = e.props;
+          a = (0, j.jsx)(pe, {
+            type: o,
+            dataKey: n,
+            chartId: t,
+            fillOpacity: r,
+            maskId: i
+          });
+        }
+        if (e.type === De) {
+          let {
+            variant: i
+          } = e.props;
+          o = (0, j.jsx)(pe, {
+            type: i,
+            dataKey: n,
+            chartId: t,
+            fillOpacity: r
+          });
+        }
+      }
+    }), {
+      dot: a,
+      activeDot: o
+    };
+  },
+  Ie = () => (0, j.jsxs)(j.Fragment, {
+    children: [<animate attributeName={`stroke-dasharray`} values={`3 3; 0 3; 3 3`} dur={`1s`} repeatCount={`indefinite`} keyTimes={`0;0.5;1`} />, <animate attributeName={`stroke-dashoffset`} values={`0; -6`} dur={`1s`} repeatCount={`indefinite`} keyTimes={`0;1`} />]
+  }),
+  Le = {
+    "left-to-right": 0,
+    "right-to-left": 1,
+    "center-out": .5
+  },
+  Re = ({
+    id: e,
+    type: t
+  }) => {
+    let n = {
+      initial: {
+        scaleX: 0
+      },
+      animate: {
+        scaleX: 1
+      },
+      transition: {
+        duration: xe,
+        ease: Se
+      }
+    };
+    return <mask id={`${e}-reveal-mask`} maskUnits={`userSpaceOnUse`} maskContentUnits={`userSpaceOnUse`} x={`0`} y={`0`} width={`100%`} height={`100%`}>{t === `edges-in` ? (0, j.jsxs)(j.Fragment, {
+        children: [(0, j.jsx)(c.rect, {
+          ...n,
+          x: `0`,
+          y: `0`,
+          width: `50%`,
+          height: `100%`,
+          fill: `white`,
+          style: {
+            originX: 0
+          }
+        }), (0, j.jsx)(c.rect, {
+          ...n,
+          x: `50%`,
+          y: `0`,
+          width: `50%`,
+          height: `100%`,
+          fill: `white`,
+          style: {
+            originX: 1
+          }
+        })]
+      }) : (0, j.jsx)(c.rect, {
+        ...n,
+        x: `0`,
+        y: `0`,
+        width: `100%`,
+        height: `100%`,
+        fill: `white`,
+        style: {
+          originX: Le[t]
+        }
+      })}</mask>;
+  },
+  ze = ({
+    id: e,
+    dataKey: t,
+    config: n,
+    isExpanded: r
+  }) => {
+    let i = H(n[t] ?? {});
+    return <linearGradient id={`${e}-colors-${t}`} x1={`0`} y1={`0`} x2={`1`} y2={`0`} gradientUnits={r ? `userSpaceOnUse` : `objectBoundingBox`}>{i === 1 ? (0, j.jsxs)(j.Fragment, {
+        children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+      }) : Array.from({
+        length: i
+      }, (e, n) => {
+        let r = `${n / (i - 1) * 100}%`;
+        return <stop offset={r} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={r} />;
+      })}</linearGradient>;
+  },
+  Be = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-vertical-fade`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`0%`} stopColor={`white`} stopOpacity={.1} />, <stop offset={`100%`} stopColor={`white`} stopOpacity={0} />]}</linearGradient>, <mask id={`${e}-gradient-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-vertical-fade)`} />}</mask>, <pattern id={`${e}-gradient`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-gradient-mask)`} />}</pattern>]
+  }),
+  Ve = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-vertical-fade-reverse`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`0%`} stopColor={`white`} stopOpacity={0} />, <stop offset={`100%`} stopColor={`white`} stopOpacity={.1} />]}</linearGradient>, <mask id={`${e}-gradient-reverse-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-vertical-fade-reverse)`} />}</mask>, <pattern id={`${e}-gradient-reverse`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-gradient-reverse-mask)`} />}</pattern>]
+  }),
+  He = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-solid-fade`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`0%`} stopColor={`white`} stopOpacity={.1} />, <stop offset={`100%`} stopColor={`white`} stopOpacity={.1} />]}</linearGradient>, <mask id={`${e}-solid-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-solid-fade)`} />}</mask>, <pattern id={`${e}-solid`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-solid-mask)`} />}</pattern>]
+  }),
+  Ue = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<pattern id={`${e}-lines-texture`} patternUnits={`userSpaceOnUse`} width={`5`} height={`5`} patternTransform={`rotate(45)`}>{<line x1={`0`} y1={`0`} x2={`0`} y2={`5`} stroke={`white`} strokeWidth={`1`} />}</pattern>, <mask id={`${e}-lines-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-lines-texture)`} fillOpacity={`0.3`} />}</mask>, <pattern id={`${e}-lines`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-lines-mask)`} />}</pattern>]
+  }),
+  We = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<pattern id={`${e}-dotted-texture`} x={`0`} y={`0`} width={`6`} height={`6`} patternUnits={`userSpaceOnUse`}>{<circle cx={`4`} cy={`4`} r={`0.5`} fill={`white`} />}</pattern>, <mask id={`${e}-dotted-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-dotted-texture)`} fillOpacity={`0.5`} />}</mask>, <pattern id={`${e}-dotted`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-dotted-mask)`} />}</pattern>]
+  }),
+  Ge = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-hatched-stripe`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{[<stop offset={`50%`} stopColor={`white`} stopOpacity={.2} />, <stop offset={`50%`} stopColor={`white`} stopOpacity={1} />]}</linearGradient>, <pattern id={`${e}-hatched-texture`} x={`0`} y={`0`} width={`20`} height={`10`} patternUnits={`userSpaceOnUse`} overflow={`visible`} patternTransform={`rotate(20)`}>{<rect width={`20`} height={`10`} fill={`url(#${e}-hatched-stripe)`} />}</pattern>, <mask id={`${e}-hatched-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-hatched-texture)`} fillOpacity={`0.2`} />}</mask>, <pattern id={`${e}-hatched`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-hatched-mask)`} />}</pattern>]
+  }),
+  Ke = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<pattern id={`${e}-unselected-texture`} patternUnits={`userSpaceOnUse`} width={`5`} height={`5`} patternTransform={`rotate(45)`}>{<line x1={`0`} y1={`0`} x2={`0`} y2={`5`} stroke={`white`} strokeWidth={`1`} />}</pattern>, <mask id={`${e}-unselected-mask`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-unselected-texture)`} fillOpacity={`0.3`} />}</mask>, <pattern id={`${e}-unselected`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-unselected-mask)`} />}</pattern>]
+  }),
+  qe = (e = 17, t = .05, n = .9) => Array.from({
+    length: e
+  }, (r, i) => {
+    let a = i / (e - 1),
+      o = t + Math.sin(a * Math.PI) ** 2 * (n - t);
+    return {
+      offset: `${(a * 100).toFixed(0)}%`,
+      opacity: Number(o.toFixed(3))
+    };
+  });
+function Je(e, t = 14) {
+  let [n, r] = (0, A.useState)(!1),
+    i = (0, A.useCallback)(() => {
+      e && r(e => !e);
+    }, [e]);
+  return {
+    loadingData: (0, A.useMemo)(() => U(t), [t, n]),
+    onShimmerExit: i
+  };
+}
+var Ye = ({
+    chartId: e,
+    curveType: t,
+    onShimmerExit: n
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(m, {
+      type: t,
+      dataKey: ve,
+      fillOpacity: .05,
+      fill: `currentColor`,
+      stroke: `currentColor`,
+      strokeOpacity: .5,
+      isAnimationActive: !1,
+      legendType: `none`,
+      tooltipType: `none`,
+      activeDot: !1,
+      dot: !1,
+      style: {
+        mask: `url(#${e}-loading-mask)`
+      }
+    }), <defs>{(0, j.jsx)(Xe, {
+        chartId: e,
+        onShimmerExit: n
+      })}</defs>]
+  }),
+  Xe = ({
+    chartId: e,
+    onShimmerExit: t
+  }) => {
+    let n = qe(),
+      r = (0, A.useRef)(-1);
+    return (0, j.jsxs)(j.Fragment, {
+      children: [<linearGradient id={`${e}-loading-gradient`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{n.map(({
+          offset: e,
+          opacity: t
+        }) => <stop offset={e} stopColor={`white`} stopOpacity={t} key={e} />)}</linearGradient>, <pattern id={`${e}-loading-pattern`} patternUnits={`objectBoundingBox`} patternContentUnits={`objectBoundingBox`} patternTransform={`rotate(25)`} width={3} height={`1`} x={`0`} y={`0`}>{(0, j.jsx)(c.rect, {
+          y: `0`,
+          width: `1`,
+          height: `1`,
+          fill: `url(#${e}-loading-gradient)`,
+          initial: {
+            x: -1
+          },
+          animate: {
+            x: 2
+          },
+          transition: {
+            duration: ye / 1e3,
+            ease: `linear`,
+            repeat: 1 / 0,
+            repeatType: `loop`
+          },
+          onUpdate: e => {
+            let n = typeof e.x == `number` ? e.x : -1,
+              i = r.current;
+            n >= 1 && i < 1 && t(), r.current = n;
+          }
+        })}</pattern>, <mask id={`${e}-loading-mask`} maskUnits={`userSpaceOnUse`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-loading-pattern)`} />}</mask>]
+    });
+  };
+Y.Area = Te, Y.Dot = Ee, Y.ActiveDot = De, Y.XAxis = Oe, Y.YAxis = ke, Y.Grid = Ae, Y.Tooltip = je, Y.Legend = Me, Y.Brush = K;
+var Ze = {
+  dots: ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`20`} height={`20`} patternUnits={`userSpaceOnUse`}>{<circle className={`text-border dark:text-border`} cx={`2`} cy={`2`} r={`1`} fill={`currentColor`} />}</pattern>,
+  grid: ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`20`} height={`20`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border dark:text-border`} d={`M 20 0 L 0 0 0 20`} fill={`none`} stroke={`currentColor`} strokeWidth={`0.5`} />}</pattern>,
+  plus: ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`16`} height={`16`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border dark:text-border`} d={`M 8 4 L 8 12 M 4 8 L 12 8`} fill={`none`} stroke={`currentColor`} strokeWidth={`0.5`} strokeLinecap={`round`} />}</pattern>,
+  bubbles: ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`100`} height={`100`} patternUnits={`userSpaceOnUse`} patternTransform={`scale(0.6667)`}>{<path className={`text-border dark:text-border`} d={`M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z`} fill={`currentColor`} fillOpacity={`0.4`} fillRule={`evenodd`} />}</pattern>,
+  "cross-hatch": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`20`} height={`20`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border/60 dark:text-border/50`} d={`M 0 0 L 20 20 M 20 0 L 0 20`} fill={`none`} stroke={`currentColor`} strokeWidth={`0.5`} />}</pattern>,
+  "diagonal-lines": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`6`} height={`6`} patternUnits={`userSpaceOnUse`} patternTransform={`rotate(45)`}>{<line className={`text-border dark:text-border`} x1={`0`} y1={`0`} x2={`0`} y2={`6`} stroke={`currentColor`} strokeWidth={`0.5`} />}</pattern>,
+  "falling-triangles": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`18`} height={`36`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border dark:text-border`} d={`M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z`} transform={`scale(0.5)`} fill={`currentColor`} fillOpacity={`0.4`} />}</pattern>,
+  "4-pointed-star": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`16`} height={`16`} patternUnits={`userSpaceOnUse`}>{<polygon className={`text-border dark:text-border`} fillRule={`evenodd`} points={`5 3 8 4 5 5 4 8 3 5 0 4 3 3 4 0 5 3`} fill={`currentColor`} fillOpacity={`0.4`} />}</pattern>,
+  "tiny-checkers": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`8`} height={`8`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border dark:text-border`} fillRule={`evenodd`} d={`M0 0h4v4H0V0zm4 4h4v4H4V4z`} fill={`currentColor`} fillOpacity={`0.2`} />}</pattern>,
+  "overlapping-circles": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`40`} height={`40`} patternUnits={`userSpaceOnUse`}>{<path className={`text-border dark:text-border`} fillRule={`evenodd`} d={`M25 25c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5c0 2.762-2.238 5-5 5s-5-2.238-5-5 2.238-5 5-5zM5 5c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5c0 2.762-2.238 5-5 5S0 12.762 0 10s2.238-5 5-5zm5 4c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4zm20 20c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4z`} fill={`currentColor`} fillOpacity={`0.4`} />}</pattern>,
+  "wiggle-lines": ({
+    id: e
+  }) => <pattern id={e} x={`0`} y={`0`} width={`52`} height={`26`} patternUnits={`userSpaceOnUse`} patternTransform={`scale(0.6)`}>{<path className={`text-border dark:text-border`} d={`M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z`} fill={`currentColor`} fillOpacity={`0.4`} />}</pattern>
+};
+function Qe({
+  variant: e
+}) {
+  let t = (0, A.useId)().replace(/:/g, ``),
+    n = `${t}-bg-${e}`,
+    r = `${t}-bg-edge-fade`,
+    i = `${t}-bg-blur`,
+    a = Ze[e];
+  return (0, j.jsxs)(w, {
+    zIndex: -1,
+    children: [<defs>{[(0, j.jsx)(a, {
+        id: n
+      }), <filter id={i}>{<feGaussianBlur stdDeviation={`25`} />}</filter>, <mask id={r} maskUnits={`userSpaceOnUse`}>{<rect x={`8%`} y={`20%`} width={`85%`} height={`60%`} fill={`white`} filter={`url(#${i})`} />}</mask>]}</defs>, <rect width={`100%`} height={`100%`} fill={`url(#${n})`} mask={`url(#${r})`} />]
+  });
+}
+var $e = 2,
+  et = `loading`,
+  tt = 2e3,
+  nt = `evil-stacked`,
+  rt = .5,
+  it = .05,
+  at = [0, .7, .5, 1],
+  ot = (0, A.createContext)(null);
+function X() {
+  let e = (0, A.use)(ot);
+  if (!e) throw Error(`Bar chart parts (<Bar />, <XAxis />, …) must be used within <EvilBarChart />`);
+  return e;
+}
+function Z({
+  config: e,
+  data: t,
+  children: n,
+  className: r,
+  chartProps: i,
+  stackType: a = `default`,
+  layout: o = `vertical`,
+  barRadius: s = $e,
+  animationType: c = `left-to-right`,
+  barGap: l,
+  barCategoryGap: d,
+  backgroundVariant: f,
+  defaultSelectedDataKey: p = null,
+  onSelectionChange: m,
+  isLoading: g = !1,
+  loadingBars: _,
+  xDataKey: v
+}) {
+  let y = (0, A.useId)().replace(/:/g, ``),
+    [b] = (0, A.useState)(() => Date.now()),
+    [x, S] = (0, A.useState)(p),
+    [C, w] = (0, A.useState)(!1),
+    {
+      loadingData: T,
+      onShimmerExit: E
+    } = Et(g, _),
+    {
+      visibleData: D,
+      brushProps: O
+    } = q({
+      data: t
+    }),
+    k = (0, A.useMemo)(() => {
+      let e = A.Children.toArray(n),
+        t = e.find(e => (0, A.isValidElement)(e) && e.type === K),
+        r = (0, A.isValidElement)(t) ? t.props : {};
+      return {
+        slot: {
+          present: (0, A.isValidElement)(t),
+          height: r.height,
+          formatLabel: r.formatLabel,
+          onChange: r.onChange
+        },
+        chartChildren: e.filter(e => !((0, A.isValidElement)(e) && e.type === K))
+      };
+    }, [n]),
+    M = k.slot.present,
+    N = a === `stacked` || a === `percent`,
+    P = o === `horizontal`,
+    F = M && !g ? D : t,
+    I = (0, A.useCallback)(e => {
+      S(e), m?.(e);
+    }, [m]),
+    z = (0, A.useMemo)(() => ({
+      config: e,
+      isStacked: N,
+      isHorizontal: P,
+      isLoading: g,
+      barRadius: s,
+      animationType: c,
+      introStartedAt: b,
+      dataLength: F.length,
+      selectedDataKey: x,
+      selectDataKey: I,
+      isMouseInChart: C
+    }), [e, N, P, g, s, c, b, F.length, x, I, C]);
+  return (0, j.jsx)(ot, {
+    value: z,
+    children: (0, j.jsxs)(L, {
+      className: r,
+      config: e,
+      footer: M && !g && (0, j.jsx)(oe, {
+        data: t,
+        chartConfig: e,
+        xDataKey: v,
+        variant: `bar`,
+        barRadius: s,
+        height: k.slot.height,
+        formatLabel: k.slot.formatLabel,
+        stacked: N,
+        skipStyle: !0,
+        className: `mt-1`,
+        ...O,
+        onChange: e => {
+          O.onChange(e), k.slot.onChange?.(e);
+        }
+      }),
+      children: [(0, j.jsx)(R, {
+        isLoading: g
+      }), (0, j.jsxs)(h, {
+        id: y,
+        accessibilityLayer: !0,
+        layout: P ? `vertical` : `horizontal`,
+        data: g ? T : F,
+        barGap: l,
+        barCategoryGap: d,
+        stackOffset: a === `percent` ? `expand` : void 0,
+        onMouseEnter: () => w(!0),
+        onMouseLeave: () => w(!1),
+        ...i,
+        children: [f && (0, j.jsx)(Qe, {
+          variant: f
+        }), (0, j.jsx)(u, {
+          color: `white`
+        }), k.chartChildren, g && (0, j.jsx)(Dt, {
+          chartId: y,
+          onShimmerExit: E
+        })]
+      })]
+    })
+  });
+}
+function st({
+  dataKey: e,
+  variant: t = `default`,
+  radius: n,
+  animationType: r,
+  isClickable: i = !1,
+  enableHoverHighlight: a = !1,
+  glowing: o = !1,
+  bufferBar: s = !1,
+  barProps: c
+}) {
+  let {
+      config: u,
+      isStacked: d,
+      isHorizontal: f,
+      isLoading: p,
+      barRadius: m,
+      animationType: h,
+      introStartedAt: g,
+      dataLength: v,
+      selectedDataKey: y,
+      selectDataKey: b,
+      isMouseInChart: x
+    } = X(),
+    S = (0, A.useId)().replace(/:/g, ``),
+    C = l();
+  if (p) return null;
+  let w = n ?? m,
+    T = y === e,
+    E = C ? `none` : r ?? h,
+    D = {
+      id: S,
+      dataKey: e,
+      variant: t,
+      barRadius: w,
+      glowing: o,
+      bufferBar: s,
+      isClickable: i,
+      enableHoverHighlight: a,
+      isMouseInChart: x,
+      isHorizontal: f,
+      introStartedAt: g,
+      selectedDataKey: y,
+      dataLength: v,
+      onClick: () => {
+        i && b(T ? null : e);
+      }
+    };
+  return (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(_, {
+      dataKey: e,
+      stackId: d ? nt : void 0,
+      fill: `url(#${S}-colors-${e})`,
+      radius: w,
+      isAnimationActive: !1,
+      style: i || a ? {
+        cursor: `pointer`
+      } : void 0,
+      shape: e => (0, j.jsx)(pt, {
+        ...e,
+        ...D,
+        animationType: E
+      }),
+      activeBar: e => (0, j.jsx)(pt, {
+        ...e,
+        ...D,
+        animationType: `none`
+      }),
+      ...c
+    }), <defs>{[(0, j.jsx)(_t, {
+        id: S,
+        dataKey: e,
+        config: u
+      }), t === `hatched` && (0, j.jsx)(vt, {
+        id: S,
+        dataKey: e
+      }), t === `duotone` && (0, j.jsx)(bt, {
+        id: S,
+        dataKey: e,
+        config: u
+      }), t === `duotone-reverse` && (0, j.jsx)(xt, {
+        id: S,
+        dataKey: e,
+        config: u
+      }), t === `gradient` && (0, j.jsx)(St, {
+        id: S,
+        dataKey: e
+      }), t === `stripped` && (0, j.jsx)(Ct, {
+        id: S,
+        dataKey: e
+      }), s && (0, j.jsx)(yt, {
+        id: S,
+        dataKey: e
+      }), o && (0, j.jsx)(wt, {
+        id: S,
+        dataKey: e
+      })]}</defs>]
+  });
+}
+function ct({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  type: i,
+  ...a
+}) {
+  let {
+    isLoading: o,
+    isHorizontal: s
+  } = X();
+  return o ? null : (0, j.jsx)(y, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    type: i ?? (s ? `number` : `category`),
+    ...a
+  });
+}
+function lt({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  width: i = `auto`,
+  type: a,
+  ...o
+}) {
+  let {
+    isLoading: s,
+    isHorizontal: c
+  } = X();
+  return s ? null : (0, j.jsx)(C, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    width: i,
+    type: a ?? (c ? `category` : `number`),
+    ...o
+  });
+}
+function ut({
+  strokeDasharray: e = `3 3`,
+  vertical: t,
+  horizontal: n,
+  ...r
+}) {
+  let {
+    isHorizontal: i
+  } = X();
+  return (0, j.jsx)(O, {
+    strokeDasharray: e,
+    vertical: t ?? i,
+    horizontal: n ?? !i,
+    ...r
+  });
+}
+function dt({
+  variant: e,
+  roundness: t,
+  defaultIndex: n
+}) {
+  let {
+    isLoading: r,
+    selectedDataKey: i
+  } = X();
+  return r ? null : (0, j.jsx)(re, {
+    cursor: !1,
+    defaultIndex: n,
+    content: (0, j.jsx)(G, {
+      selected: i,
+      roundness: t,
+      variant: e
+    })
+  });
+}
+function ft({
+  variant: e,
+  align: t = `right`,
+  verticalAlign: n = `top`,
+  isClickable: r = !1
+}) {
+  let {
+    selectedDataKey: i,
+    selectDataKey: a
+  } = X();
+  return (0, j.jsx)(fe, {
+    verticalAlign: n,
+    align: t,
+    content: (0, j.jsx)(J, {
+      selected: i,
+      onSelectChange: a,
+      isClickable: r,
+      variant: e
+    })
+  });
+}
+var pt = e => {
+    let {
+        x: t = 0,
+        y: n = 0,
+        width: r = 0,
+        height: i = 0,
+        id: a,
+        dataKey: o,
+        variant: s,
+        barRadius: l,
+        glowing: u,
+        bufferBar: d,
+        isClickable: f,
+        enableHoverHighlight: p,
+        isMouseInChart: m,
+        isHorizontal: h = !1,
+        animationType: _ = `none`,
+        introStartedAt: v = 0,
+        selectedDataKey: y,
+        isActive: b,
+        dataLength: x = 0,
+        onClick: S
+      } = e,
+      C = typeof e.index == `number` ? e.index : -1,
+      w = d && x > 0 && C === x - 1,
+      T = s === `stripped`,
+      E = mt(_, C, x, h, v),
+      D = w ? `url(#${a}-buffer-hatched-${o})` : ht(s, a, o),
+      O = u ? `url(#${a}-bar-glow-${o})` : void 0,
+      k = gt({
+        isClickable: f,
+        selectedDataKey: y,
+        dataKey: o,
+        enableHoverHighlight: p,
+        isMouseInChart: m,
+        isActive: b
+      }),
+      A = f || p ? {
+        cursor: `pointer`
+      } : void 0,
+      M = T ? [l, l, 0, 0] : l,
+      N = (0, j.jsxs)(j.Fragment, {
+        children: [(0, j.jsx)(g, {
+          x: t,
+          y: n,
+          width: r,
+          opacity: k,
+          height: Math.max(0, i - 3),
+          radius: M,
+          fill: D,
+          filter: O,
+          stroke: w ? `url(#${a}-colors-${o})` : void 0,
+          strokeWidth: w ? 1 : void 0
+        }), T && (0, j.jsx)(g, {
+          x: t,
+          y: n - 4,
+          width: r,
+          height: 2,
+          radius: 1,
+          fill: `url(#${a}-colors-${o})`
+        })]
+      });
+    return <g style={A} onClick={S}>{[(0, j.jsx)(g, {
+        ...e,
+        fill: `transparent`
+      }), E ? (0, j.jsx)(c.g, {
+        initial: E.initial,
+        animate: E.animate,
+        transition: E.transition,
+        style: E.style,
+        children: N
+      }) : N]}</g>;
+  },
+  mt = (e, t, n, r, i) => {
+    if (e === `none` || t < 0 || n <= 0) return null;
+    let a = n - 1,
+      o = a / 2,
+      s;
+    switch (e) {
+      case `right-to-left`:
+        s = a - t;
+        break;
+      case `center-out`:
+        s = Math.abs(t - o);
+        break;
+      case `edges-in`:
+        s = o - Math.abs(t - o);
+        break;
+      default:
+        s = t;
+    }
+    let c = s * it * 1e3,
+      l = rt * 1e3,
+      u = c + l,
+      d = Date.now() - i;
+    if (d >= u) return null;
+    let f = d <= c ? 0 : (d - c) / l,
+      p = {
+        duration: (u - Math.max(d, c)) / 1e3,
+        ease: at,
+        delay: Math.max(0, c - d) / 1e3
+      };
+    return r ? {
+      initial: {
+        scaleX: f
+      },
+      animate: {
+        scaleX: 1
+      },
+      transition: p,
+      style: {
+        originX: 0
+      }
+    } : {
+      initial: {
+        scaleY: f
+      },
+      animate: {
+        scaleY: 1
+      },
+      transition: p,
+      style: {
+        originY: 1
+      }
+    };
+  },
+  ht = (e, t, n) => {
+    switch (e) {
+      case `hatched`:
+        return `url(#${t}-hatched-${n})`;
+      case `duotone`:
+        return `url(#${t}-duotone-${n})`;
+      case `duotone-reverse`:
+        return `url(#${t}-duotone-reverse-${n})`;
+      case `gradient`:
+        return `url(#${t}-gradient-${n})`;
+      case `stripped`:
+        return `url(#${t}-stripped-${n})`;
+      default:
+        return `url(#${t}-colors-${n})`;
+    }
+  },
+  gt = ({
+    isClickable: e,
+    selectedDataKey: t,
+    dataKey: n,
+    enableHoverHighlight: r,
+    isMouseInChart: i,
+    isActive: a
+  }) => {
+    let o = e && t !== null ? t === null || t === n ? 1 : .15 : 1;
+    return r && i ? a ? o : o * .3 : o;
+  },
+  _t = ({
+    id: e,
+    dataKey: t,
+    config: n
+  }) => {
+    let r = H(n[t] ?? {});
+    return <linearGradient id={`${e}-colors-${t}`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{r === 1 ? (0, j.jsxs)(j.Fragment, {
+        children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+      }) : Array.from({
+        length: r
+      }, (e, n) => {
+        let i = `${n / (r - 1) * 100}%`;
+        return <stop offset={i} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={i} />;
+      })}</linearGradient>;
+  },
+  vt = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<pattern id={`${e}-hatched-mask-pattern`} x={`0`} y={`0`} width={`5`} height={`5`} patternUnits={`userSpaceOnUse`} patternTransform={`rotate(-45)`}>{[<rect width={`5`} height={`5`} fill={`white`} fillOpacity={.3} />, <rect width={`1.5`} height={`5`} fill={`white`} fillOpacity={1} />]}</pattern>, <mask id={`${e}-hatched-mask-${t}`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-hatched-mask-pattern)`} />}</mask>, <pattern id={`${e}-hatched-${t}`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-hatched-mask-${t})`} />}</pattern>]
+  }),
+  yt = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<pattern id={`${e}-buffer-hatched-mask-pattern`} x={`0`} y={`0`} width={`5`} height={`5`} patternUnits={`userSpaceOnUse`} patternTransform={`rotate(-45)`}>{[<rect width={`5`} height={`5`} fill={`black`} fillOpacity={0} />, <rect width={`1`} height={`5`} fill={`white`} fillOpacity={1} />]}</pattern>, <mask id={`${e}-buffer-hatched-mask-${t}`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-buffer-hatched-mask-pattern)`} />}</mask>, <pattern id={`${e}-buffer-hatched-${t}`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-buffer-hatched-mask-${t})`} />}</pattern>]
+  }),
+  bt = ({
+    id: e,
+    dataKey: t,
+    config: n
+  }) => {
+    let r = H(n[t] ?? {});
+    return (0, j.jsxs)(j.Fragment, {
+      children: [<linearGradient id={`${e}-duotone-mask-gradient-${t}`} gradientUnits={`objectBoundingBox`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{[<stop offset={`50%`} stopColor={`white`} stopOpacity={.4} />, <stop offset={`50%`} stopColor={`white`} stopOpacity={1} />]}</linearGradient>, <linearGradient id={`${e}-duotone-colors-${t}`} gradientUnits={`objectBoundingBox`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{r === 1 ? (0, j.jsxs)(j.Fragment, {
+          children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+        }) : Array.from({
+          length: r
+        }, (e, n) => {
+          let i = `${n / (r - 1) * 100}%`;
+          return <stop offset={i} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={i} />;
+        })}</linearGradient>, <mask id={`${e}-duotone-mask-${t}`} maskContentUnits={`objectBoundingBox`}>{<rect x={`0`} y={`0`} width={`1`} height={`1`} fill={`url(#${e}-duotone-mask-gradient-${t})`} />}</mask>, <pattern id={`${e}-duotone-${t}`} patternUnits={`objectBoundingBox`} patternContentUnits={`objectBoundingBox`} width={`1`} height={`1`}>{<rect x={`0`} y={`0`} width={`1`} height={`1`} fill={`url(#${e}-duotone-colors-${t})`} mask={`url(#${e}-duotone-mask-${t})`} />}</pattern>]
+    });
+  },
+  xt = ({
+    id: e,
+    dataKey: t,
+    config: n
+  }) => {
+    let r = H(n[t] ?? {});
+    return (0, j.jsxs)(j.Fragment, {
+      children: [<linearGradient id={`${e}-duotone-reverse-mask-gradient-${t}`} gradientUnits={`objectBoundingBox`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{[<stop offset={`50%`} stopColor={`white`} stopOpacity={1} />, <stop offset={`50%`} stopColor={`white`} stopOpacity={.4} />]}</linearGradient>, <linearGradient id={`${e}-duotone-reverse-colors-${t}`} gradientUnits={`objectBoundingBox`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{r === 1 ? (0, j.jsxs)(j.Fragment, {
+          children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+        }) : Array.from({
+          length: r
+        }, (e, n) => {
+          let i = `${n / (r - 1) * 100}%`;
+          return <stop offset={i} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={i} />;
+        })}</linearGradient>, <mask id={`${e}-duotone-reverse-mask-${t}`} maskContentUnits={`objectBoundingBox`}>{<rect x={`0`} y={`0`} width={`1`} height={`1`} fill={`url(#${e}-duotone-reverse-mask-gradient-${t})`} />}</mask>, <pattern id={`${e}-duotone-reverse-${t}`} patternUnits={`objectBoundingBox`} patternContentUnits={`objectBoundingBox`} width={`1`} height={`1`}>{<rect x={`0`} y={`0`} width={`1`} height={`1`} fill={`url(#${e}-duotone-reverse-colors-${t})`} mask={`url(#${e}-duotone-reverse-mask-${t})`} />}</pattern>]
+    });
+  },
+  St = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-gradient-mask-gradient`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`20%`} stopColor={`white`} stopOpacity={1} />, <stop offset={`90%`} stopColor={`white`} stopOpacity={0} />]}</linearGradient>, <mask id={`${e}-gradient-mask-${t}`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-gradient-mask-gradient)`} />}</mask>, <pattern id={`${e}-gradient-${t}`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-gradient-mask-${t})`} />}</pattern>]
+  }),
+  Ct = ({
+    id: e,
+    dataKey: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [<linearGradient id={`${e}-stripped-mask-gradient`} x1={`0`} y1={`0`} x2={`0`} y2={`1`}>{[<stop offset={`0%`} stopColor={`white`} stopOpacity={.2} />, <stop offset={`100%`} stopColor={`white`} stopOpacity={.2} />]}</linearGradient>, <mask id={`${e}-stripped-mask-${t}`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-stripped-mask-gradient)`} />}</mask>, <pattern id={`${e}-stripped-${t}`} patternUnits={`userSpaceOnUse`} width={`100%`} height={`100%`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-colors-${t})`} mask={`url(#${e}-stripped-mask-${t})`} />}</pattern>]
+  }),
+  wt = ({
+    id: e,
+    dataKey: t
+  }) => <filter id={`${e}-bar-glow-${t}`} x={`-100%`} y={`-100%`} width={`300%`} height={`300%`}>{[<feGaussianBlur in={`SourceGraphic`} stdDeviation={`8`} result={`blur`} />, <feColorMatrix in={`blur`} type={`matrix`} values={`1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.5 0`} result={`glow`} />, <feMerge>{[<feMergeNode in={`glow`} />, <feMergeNode in={`SourceGraphic`} />]}</feMerge>]}</filter>,
+  Tt = (e = 17, t = .05, n = .9) => Array.from({
+    length: e
+  }, (r, i) => {
+    let a = i / (e - 1),
+      o = t + Math.sin(a * Math.PI) ** 2 * (n - t);
+    return {
+      offset: `${(a * 100).toFixed(0)}%`,
+      opacity: Number(o.toFixed(3))
+    };
+  });
+function Et(e, t = 12) {
+  let [n, r] = (0, A.useState)(!1),
+    i = (0, A.useCallback)(() => {
+      e && r(e => !e);
+    }, [e]);
+  return {
+    loadingData: (0, A.useMemo)(() => U(t, 20, 80), [t, n]),
+    onShimmerExit: i
+  };
+}
+var Dt = ({
+    chartId: e,
+    onShimmerExit: t
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(_, {
+      dataKey: et,
+      fill: `currentColor`,
+      fillOpacity: .15,
+      radius: $e,
+      isAnimationActive: !1,
+      legendType: `none`,
+      style: {
+        mask: `url(#${e}-loading-mask)`
+      }
+    }), <defs>{(0, j.jsx)(Ot, {
+        chartId: e,
+        onShimmerExit: t
+      })}</defs>]
+  }),
+  Ot = ({
+    chartId: e,
+    onShimmerExit: t
+  }) => {
+    let n = Tt(),
+      r = (0, A.useRef)(-1);
+    return (0, j.jsxs)(j.Fragment, {
+      children: [<linearGradient id={`${e}-loading-mask-gradient`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{n.map(({
+          offset: e,
+          opacity: t
+        }) => <stop offset={e} stopColor={`white`} stopOpacity={t} key={e} />)}</linearGradient>, <pattern id={`${e}-loading-mask-pattern`} patternUnits={`objectBoundingBox`} patternContentUnits={`objectBoundingBox`} patternTransform={`rotate(25)`} width={3} height={`1`} x={`0`} y={`0`}>{(0, j.jsx)(c.rect, {
+          y: `0`,
+          width: `1`,
+          height: `1`,
+          fill: `url(#${e}-loading-mask-gradient)`,
+          initial: {
+            x: -1
+          },
+          animate: {
+            x: 2
+          },
+          transition: {
+            duration: tt / 1e3,
+            ease: `linear`,
+            repeat: 1 / 0,
+            repeatType: `loop`
+          },
+          onUpdate: e => {
+            let n = typeof e.x == `number` ? e.x : -1,
+              i = r.current;
+            n >= 1 && i < 1 && t(), r.current = n;
+          }
+        })}</pattern>, <mask id={`${e}-loading-mask`} maskUnits={`userSpaceOnUse`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-loading-mask-pattern)`} />}</mask>]
+    });
+  };
+Z.Bar = st, Z.XAxis = ct, Z.YAxis = lt, Z.Grid = ut, Z.Tooltip = dt, Z.Legend = ft, Z.Brush = K;
+var kt = .8,
+  At = `loading`,
+  jt = 2e3,
+  Mt = 1,
+  Nt = [0, .7, .5, 1],
+  Pt = (0, A.createContext)(null);
+function Ft() {
+  let e = (0, A.use)(Pt);
+  if (!e) throw Error(`Line chart parts (<Line />, <XAxis />, …) must be used within <EvilLineChart />`);
+  return e;
+}
+function Q({
+  config: e,
+  data: t,
+  children: n,
+  className: r,
+  chartProps: i,
+  curveType: a = `linear`,
+  animationType: o = `left-to-right`,
+  defaultSelectedDataKey: s = null,
+  onSelectionChange: c,
+  isLoading: l = !1,
+  loadingPoints: u,
+  xDataKey: d
+}) {
+  let f = (0, A.useId)().replace(/:/g, ``),
+    [p, m] = (0, A.useState)(s),
+    {
+      loadingData: h,
+      onShimmerExit: g
+    } = an(l, u),
+    {
+      visibleData: _,
+      brushProps: v
+    } = q({
+      data: t
+    }),
+    y = (0, A.useMemo)(() => {
+      let e = A.Children.toArray(n),
+        t = e.find(e => (0, A.isValidElement)(e) && e.type === K),
+        r = (0, A.isValidElement)(t) ? t.props : {};
+      return {
+        slot: {
+          present: (0, A.isValidElement)(t),
+          height: r.height,
+          formatLabel: r.formatLabel,
+          onChange: r.onChange
+        },
+        chartChildren: e.filter(e => !((0, A.isValidElement)(e) && e.type === K))
+      };
+    }, [n]),
+    b = y.slot.present,
+    S = b && !l ? _ : t,
+    C = (0, A.useCallback)(e => {
+      m(e), c?.(e);
+    }, [c]),
+    w = (0, A.useMemo)(() => ({
+      config: e,
+      curveType: a,
+      animationType: o,
+      isLoading: l,
+      selectedDataKey: p,
+      selectDataKey: C
+    }), [e, a, o, l, p, C]);
+  return (0, j.jsx)(Pt, {
+    value: w,
+    children: (0, j.jsxs)(L, {
+      className: r,
+      config: e,
+      footer: b && !l && (0, j.jsx)(oe, {
+        data: t,
+        chartConfig: e,
+        xDataKey: d,
+        variant: `line`,
+        curveType: a,
+        height: y.slot.height,
+        formatLabel: y.slot.formatLabel,
+        skipStyle: !0,
+        className: `mt-1`,
+        ...v,
+        onChange: e => {
+          v.onChange(e), y.slot.onChange?.(e);
+        }
+      }),
+      children: [(0, j.jsx)(R, {
+        isLoading: l
+      }), (0, j.jsxs)(x, {
+        id: f,
+        accessibilityLayer: !0,
+        data: l ? h : S,
+        ...i,
+        children: [y.chartChildren, l && (0, j.jsx)(on, {
+          chartId: f,
+          curveType: a,
+          onShimmerExit: g
+        })]
+      })]
+    })
+  });
+}
+function It({
+  dataKey: e,
+  strokeVariant: t = `solid`,
+  strokeWidth: n = kt,
+  curveType: r,
+  animationType: i,
+  connectNulls: a = !1,
+  isClickable: o = !1,
+  glowing: s = !1,
+  enableBufferLine: c = !1,
+  children: u,
+  lineProps: d
+}) {
+  let {
+      config: f,
+      curveType: p,
+      animationType: m,
+      isLoading: h,
+      selectedDataKey: g,
+      selectDataKey: _
+    } = Ft(),
+    v = (0, A.useId)().replace(/:/g, ``),
+    y = l();
+  if (h) return null;
+  let b = r ?? p,
+    x = y ? `none` : i ?? m,
+    S = x === `none` ? void 0 : `${v}-reveal-mask`,
+    C = g === e,
+    w = g !== null,
+    T = Wt(g, e),
+    {
+      dot: E,
+      activeDot: O
+    } = Kt(u, v, e, T.dot, S),
+    k = t === `animated-dashed`,
+    M = t === `dashed` || k;
+  return (0, j.jsxs)(j.Fragment, {
+    children: [<g key={e}>{[o && (0, j.jsx)(D, {
+        type: b,
+        dataKey: e,
+        connectNulls: a,
+        stroke: `transparent`,
+        strokeWidth: 15,
+        dot: !1,
+        activeDot: !1,
+        isAnimationActive: !1,
+        legendType: `none`,
+        tooltipType: `none`,
+        style: {
+          cursor: `pointer`
+        },
+        onClick: () => _(C ? null : e)
+      }), (0, j.jsx)(D, {
+        type: b,
+        dataKey: e,
+        connectNulls: a,
+        strokeOpacity: T.stroke,
+        stroke: `url(#${v}-colors-${e})`,
+        filter: s ? `url(#${v}-glow-${e})` : void 0,
+        dot: E,
+        activeDot: O,
+        strokeWidth: n,
+        strokeDasharray: Gt(c, M),
+        shape: c ? Zt : void 0,
+        isAnimationActive: !1,
+        style: {
+          ...(S ? {
+            mask: `url(#${S})`
+          } : {}),
+          ...(o ? {
+            cursor: `pointer`
+          } : {})
+        },
+        onClick: () => {
+          o && _(C ? null : e);
+        },
+        ...d,
+        children: k && !w && (0, j.jsx)(Qt, {})
+      })]}</g>, <defs>{[x !== `none` && (0, j.jsx)(en, {
+        id: v,
+        type: x
+      }), (0, j.jsx)(tn, {
+        id: v,
+        dataKey: e,
+        config: f
+      }), s && (0, j.jsx)(nn, {
+        id: v,
+        dataKey: e
+      })]}</defs>]
+  });
+}
+var Lt = () => null,
+  Rt = () => null;
+function zt({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  ...i
+}) {
+  let {
+    isLoading: a
+  } = Ft();
+  return a ? null : (0, j.jsx)(y, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    ...i
+  });
+}
+function Bt({
+  tickLine: e = !1,
+  axisLine: t = !1,
+  tickMargin: n = 8,
+  minTickGap: r = 8,
+  width: i = `auto`,
+  ...a
+}) {
+  let {
+    isLoading: o
+  } = Ft();
+  return o ? null : (0, j.jsx)(C, {
+    tickLine: e,
+    axisLine: t,
+    tickMargin: n,
+    minTickGap: r,
+    width: i,
+    ...a
+  });
+}
+function Vt({
+  vertical: e = !1,
+  strokeDasharray: t = `3 3`,
+  ...n
+}) {
+  return (0, j.jsx)(O, {
+    vertical: e,
+    strokeDasharray: t,
+    ...n
+  });
+}
+function Ht({
+  variant: e,
+  roundness: t,
+  defaultIndex: n,
+  cursor: r = !0
+}) {
+  let {
+    isLoading: i,
+    selectedDataKey: a
+  } = Ft();
+  return i ? null : (0, j.jsx)(re, {
+    defaultIndex: n,
+    cursor: r ? {
+      strokeDasharray: `3 3`,
+      strokeWidth: kt
+    } : !1,
+    content: (0, j.jsx)(G, {
+      selected: a,
+      roundness: t,
+      variant: e
+    })
+  });
+}
+function Ut({
+  variant: e,
+  align: t = `right`,
+  verticalAlign: n = `top`,
+  isClickable: r = !1
+}) {
+  let {
+    selectedDataKey: i,
+    selectDataKey: a
+  } = Ft();
+  return (0, j.jsx)(fe, {
+    verticalAlign: n,
+    align: t,
+    content: (0, j.jsx)(J, {
+      selected: i,
+      onSelectChange: a,
+      isClickable: r,
+      variant: e
+    })
+  });
+}
+var Wt = (e, t) => e === null || e === t ? {
+    stroke: 1,
+    dot: 1
+  } : {
+    stroke: .3,
+    dot: .3
+  },
+  Gt = (e, t) => {
+    if (!e) return t ? `5 5` : void 0;
+  },
+  Kt = (e, t, n, r, i) => {
+    let a = !1,
+      o = !1;
+    return A.Children.forEach(e, e => {
+      if ((0, A.isValidElement)(e)) {
+        if (e.type === Lt) {
+          let {
+            variant: o
+          } = e.props;
+          a = (0, j.jsx)(pe, {
+            type: o,
+            dataKey: n,
+            chartId: t,
+            fillOpacity: r,
+            maskId: i
+          });
+        }
+        if (e.type === Rt) {
+          let {
+            variant: i
+          } = e.props;
+          o = (0, j.jsx)(pe, {
+            type: i,
+            dataKey: n,
+            chartId: t,
+            fillOpacity: r
+          });
+        }
+      }
+    }), {
+      dot: a,
+      activeDot: o
+    };
+  },
+  qt = e => typeof e.x == `number` && typeof e.y == `number`,
+  Jt = 4,
+  Yt = 3,
+  Xt = (e, t, n) => {
+    let r = 0,
+      i = t;
+    for (; i - r > .5;) {
+      let t = (r + i) / 2;
+      e.getPointAtLength(t).x < n ? r = t : i = t;
+    }
+    return (r + i) / 2;
+  },
+  Zt = e => {
+    let {
+      points: t,
+      ...n
+    } = e;
+    if (!t || t.length < 2) return (0, j.jsx)(S, {
+      ...e
+    });
+    let r = t.filter(qt);
+    if (r.length < 2) return (0, j.jsx)(S, {
+      ...e
+    });
+    let i = r[r.length - 2].x;
+    return <g ref={e => {
+      if (!e) return;
+      let t = e.querySelector(`path`);
+      if (!t) return;
+      let n = t.getTotalLength(),
+        r = Xt(t, n, i),
+        a = n - r,
+        o = Math.ceil(a / 7) + 1,
+        s = Array.from({
+          length: o
+        }, () => `${Jt} ${Yt}`).join(` `);
+      t.setAttribute(`stroke-dasharray`, `${r} 0 ${s}`);
+    }}>{(0, j.jsx)(S, {
+        ...n,
+        points: r
+      })}</g>;
+  },
+  Qt = () => (0, j.jsxs)(j.Fragment, {
+    children: [<animate attributeName={`stroke-dasharray`} values={`5 5; 0 5; 5 5`} dur={`1s`} repeatCount={`indefinite`} keyTimes={`0;0.5;1`} />, <animate attributeName={`stroke-dashoffset`} values={`0; -10`} dur={`1s`} repeatCount={`indefinite`} keyTimes={`0;1`} />]
+  }),
+  $t = {
+    "left-to-right": 0,
+    "right-to-left": 1,
+    "center-out": .5
+  },
+  en = ({
+    id: e,
+    type: t
+  }) => {
+    let n = {
+      initial: {
+        scaleX: 0
+      },
+      animate: {
+        scaleX: 1
+      },
+      transition: {
+        duration: Mt,
+        ease: Nt
+      }
+    };
+    return <mask id={`${e}-reveal-mask`} maskUnits={`userSpaceOnUse`} maskContentUnits={`userSpaceOnUse`} x={`0`} y={`0`} width={`100%`} height={`100%`}>{t === `edges-in` ? (0, j.jsxs)(j.Fragment, {
+        children: [(0, j.jsx)(c.rect, {
+          ...n,
+          x: `0`,
+          y: `0`,
+          width: `50%`,
+          height: `100%`,
+          fill: `white`,
+          style: {
+            originX: 0
+          }
+        }), (0, j.jsx)(c.rect, {
+          ...n,
+          x: `50%`,
+          y: `0`,
+          width: `50%`,
+          height: `100%`,
+          fill: `white`,
+          style: {
+            originX: 1
+          }
+        })]
+      }) : (0, j.jsx)(c.rect, {
+        ...n,
+        x: `0`,
+        y: `0`,
+        width: `100%`,
+        height: `100%`,
+        fill: `white`,
+        style: {
+          originX: $t[t]
+        }
+      })}</mask>;
+  },
+  tn = ({
+    id: e,
+    dataKey: t,
+    config: n
+  }) => {
+    let r = H(n[t] ?? {});
+    return <linearGradient id={`${e}-colors-${t}`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{r === 1 ? (0, j.jsxs)(j.Fragment, {
+        children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+      }) : Array.from({
+        length: r
+      }, (e, n) => {
+        let i = `${n / (r - 1) * 100}%`;
+        return <stop offset={i} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={i} />;
+      })}</linearGradient>;
+  },
+  nn = ({
+    id: e,
+    dataKey: t
+  }) => <filter id={`${e}-glow-${t}`} x={`-50%`} y={`-50%`} width={`200%`} height={`200%`}>{[<feGaussianBlur in={`SourceGraphic`} stdDeviation={`10`} result={`blur`} />, <feColorMatrix in={`blur`} type={`matrix`} values={`1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 2 0`} result={`glow`} />, <feMerge>{[<feMergeNode in={`glow`} />, <feMergeNode in={`SourceGraphic`} />]}</feMerge>]}</filter>,
+  rn = (e = 17, t = .05, n = .9) => Array.from({
+    length: e
+  }, (r, i) => {
+    let a = i / (e - 1),
+      o = t + Math.sin(a * Math.PI) ** 2 * (n - t);
+    return {
+      offset: `${(a * 100).toFixed(0)}%`,
+      opacity: Number(o.toFixed(3))
+    };
+  });
+function an(e, t = 14) {
+  let [n, r] = (0, A.useState)(!1),
+    i = (0, A.useCallback)(() => {
+      e && r(e => !e);
+    }, [e]);
+  return {
+    loadingData: (0, A.useMemo)(() => U(t), [t, n]),
+    onShimmerExit: i
+  };
+}
+var on = ({
+    chartId: e,
+    curveType: t,
+    onShimmerExit: n
+  }) => (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(D, {
+      type: t,
+      dataKey: At,
+      min: 0,
+      max: 100,
+      stroke: `currentColor`,
+      strokeOpacity: .5,
+      isAnimationActive: !1,
+      legendType: `none`,
+      tooltipType: `none`,
+      activeDot: !1,
+      dot: !1,
+      strokeWidth: kt,
+      style: {
+        mask: `url(#${e}-loading-mask)`
+      }
+    }), <defs>{(0, j.jsx)(sn, {
+        chartId: e,
+        onShimmerExit: n
+      })}</defs>]
+  }),
+  sn = ({
+    chartId: e,
+    onShimmerExit: t
+  }) => {
+    let n = rn(),
+      r = (0, A.useRef)(-1);
+    return (0, j.jsxs)(j.Fragment, {
+      children: [<linearGradient id={`${e}-loading-gradient`} x1={`0`} y1={`0`} x2={`1`} y2={`0`}>{n.map(({
+          offset: e,
+          opacity: t
+        }) => <stop offset={e} stopColor={`white`} stopOpacity={t} key={e} />)}</linearGradient>, <pattern id={`${e}-loading-pattern`} patternUnits={`objectBoundingBox`} patternContentUnits={`objectBoundingBox`} patternTransform={`rotate(25)`} width={3} height={`1`} x={`0`} y={`0`}>{(0, j.jsx)(c.rect, {
+          y: `0`,
+          width: `1`,
+          height: `1`,
+          fill: `url(#${e}-loading-gradient)`,
+          initial: {
+            x: -1
+          },
+          animate: {
+            x: 2
+          },
+          transition: {
+            duration: jt / 1e3,
+            ease: `linear`,
+            repeat: 1 / 0,
+            repeatType: `loop`
+          },
+          onUpdate: e => {
+            let n = typeof e.x == `number` ? e.x : -1,
+              i = r.current;
+            n >= 1 && i < 1 && t(), r.current = n;
+          }
+        })}</pattern>, <mask id={`${e}-loading-mask`} maskUnits={`userSpaceOnUse`}>{<rect width={`100%`} height={`100%`} fill={`url(#${e}-loading-pattern)`} />}</mask>]
+    });
+  };
+Q.Line = It, Q.Dot = Lt, Q.ActiveDot = Rt, Q.XAxis = zt, Q.YAxis = Bt, Q.Grid = Vt, Q.Tooltip = Ht, Q.Legend = Ut, Q.Brush = K;
+var cn = 5,
+  ln = 2e3,
+  un = 0,
+  dn = `80%`,
+  fn = 0,
+  pn = 0,
+  mn = 0,
+  hn = 360,
+  gn = [],
+  _n = (0, A.createContext)(null);
+function vn() {
+  let e = (0, A.use)(_n);
+  if (!e) throw Error(`Pie chart parts (<Pie />, <Tooltip />, …) must be used within <EvilPieChart />`);
+  return e;
+}
+function $({
+  config: e,
+  data: t,
+  dataKey: n,
+  nameKey: r,
+  children: i,
+  className: a,
+  chartProps: o,
+  defaultSelectedSector: s = null,
+  onSelectionChange: c,
+  isLoading: l = !1
+}) {
+  let [u, d] = (0, A.useState)(s),
+    f = (0, A.useCallback)(e => {
+      if (d(e), e === null) {
+        c?.(null);
+        return;
+      }
+      let i = t.find(t => t[r] === e);
+      i && c?.({
+        dataKey: e,
+        value: i[n]
+      });
+    }, [t, n, r, c]),
+    p = (0, A.useMemo)(() => ({
+      config: e,
+      data: t,
+      dataKey: n,
+      nameKey: r,
+      isLoading: l,
+      selectedSector: u,
+      selectSector: f
+    }), [e, t, n, r, l, u, f]);
+  return (0, j.jsx)(_n, {
+    value: p,
+    children: (0, j.jsxs)(L, {
+      className: a,
+      config: e,
+      children: [(0, j.jsx)(R, {
+        isLoading: l
+      }), (0, j.jsx)(b, {
+        id: `evil-charts-pie-chart`,
+        accessibilityLayer: !0,
+        ...o,
+        children: i
+      })]
+    })
+  });
+}
+function yn({
+  variant: e = `gradient`,
+  innerRadius: t = un,
+  outerRadius: n = dn,
+  cornerRadius: r = fn,
+  paddingAngle: i = pn,
+  startAngle: a = mn,
+  endAngle: o = hn,
+  isClickable: s = !1,
+  glowingSectors: c = gn,
+  children: l,
+  pieProps: u
+}) {
+  let {
+      config: d,
+      data: f,
+      dataKey: m,
+      nameKey: h,
+      isLoading: g,
+      selectedSector: _,
+      selectSector: y
+    } = vn(),
+    b = (0, A.useId)().replace(/:/g, ``);
+  if (g) return (0, j.jsx)(v, {
+    data: Dn,
+    dataKey: `value`,
+    nameKey: `name`,
+    innerRadius: t,
+    outerRadius: n,
+    cornerRadius: r,
+    paddingAngle: i,
+    startAngle: a,
+    endAngle: o,
+    strokeWidth: 0,
+    isAnimationActive: !1,
+    shape: e => (0, j.jsx)(On, {
+      ...e
+    })
+  });
+  let x = wn(l, m),
+    S = f.map(e => ({
+      ...e,
+      fill: `url(#${b}-colors-${e[h]})`
+    }));
+  return (0, j.jsxs)(j.Fragment, {
+    children: [(0, j.jsx)(v, {
+      data: S,
+      dataKey: m,
+      nameKey: h,
+      innerRadius: t,
+      outerRadius: n,
+      cornerRadius: r,
+      paddingAngle: i,
+      startAngle: a,
+      endAngle: o,
+      strokeWidth: 0,
+      isAnimationActive: !0,
+      style: s ? {
+        cursor: `pointer`
+      } : void 0,
+      onClick: (e, t) => {
+        if (!s) return;
+        let n = f[t]?.[h];
+        y(_ === n ? null : n);
+      },
+      shape: e => {
+        let t = f[e.index ?? 0]?.[h],
+          n = c.includes(t),
+          r = s && _ !== null && _ !== t;
+        return (0, j.jsx)(p, {
+          ...e,
+          fill: `url(#${b}-colors-${t})`,
+          filter: n ? `url(#${b}-glow-${t})` : void 0,
+          stroke: i < 0 ? `var(--background)` : `none`,
+          strokeWidth: i < 0 ? 5 : 0,
+          opacity: r ? .15 : 1,
+          className: `transition-opacity duration-200`
+        });
+      },
+      ...u,
+      children: x
+    }), <defs>{[(0, j.jsx)(Tn, {
+        id: b,
+        config: d,
+        variant: e
+      }), c.length > 0 && (0, j.jsx)(En, {
+        id: b,
+        glowingSectors: c
+      })]}</defs>]
+  });
+}
+var bn = () => null;
+function xn({
+  variant: e,
+  roundness: t,
+  defaultIndex: n
+}) {
+  let {
+    isLoading: r,
+    nameKey: i
+  } = vn();
+  return r ? null : (0, j.jsx)(re, {
+    defaultIndex: n,
+    content: (0, j.jsx)(G, {
+      nameKey: i,
+      hideLabel: !0,
+      roundness: t,
+      variant: e
+    })
+  });
+}
+function Sn({
+  variant: e,
+  align: t = `center`,
+  verticalAlign: n = `bottom`,
+  isClickable: r = !1
+}) {
+  let {
+    nameKey: i,
+    selectedSector: a,
+    selectSector: o
+  } = vn();
+  return (0, j.jsx)(fe, {
+    verticalAlign: n,
+    align: t,
+    content: (0, j.jsx)(J, {
+      selected: a,
+      onSelectChange: o,
+      isClickable: r,
+      nameKey: i,
+      variant: e
+    })
+  });
+}
+function Cn({
+  variant: e = `dots`
+}) {
+  return (0, j.jsx)(Qe, {
+    variant: e
+  });
+}
+var wn = (e, t) => {
+    let n = null;
+    return A.Children.forEach(e, e => {
+      if (!(0, A.isValidElement)(e) || e.type !== bn) return;
+      let {
+        dataKey: r,
+        labelListProps: i
+      } = e.props;
+      n = (0, j.jsx)(f, {
+        dataKey: r ?? t,
+        stroke: `none`,
+        fontSize: 12,
+        fontWeight: 500,
+        fill: `currentColor`,
+        className: `fill-background`,
+        ...i
+      });
+    }), n;
+  },
+  Tn = ({
+    id: e,
+    config: t
+  }) => (0, j.jsx)(j.Fragment, {
+    children: Object.entries(t).map(([t, n]) => {
+      let r = H(n);
+      return <linearGradient id={`${e}-colors-${t}`} x1={`0`} y1={`0`} x2={`1`} y2={`1`} key={`${e}-colors-${t}`}>{r === 1 ? (0, j.jsxs)(j.Fragment, {
+          children: [<stop offset={`0%`} stopColor={`var(--color-${t}-0)`} />, <stop offset={`100%`} stopColor={`var(--color-${t}-0)`} />]
+        }) : Array.from({
+          length: r
+        }, (e, n) => {
+          let i = `${n / (r - 1) * 100}%`;
+          return <stop offset={i} stopColor={`var(--color-${t}-${n}, var(--color-${t}-0))`} key={i} />;
+        })}</linearGradient>;
+    })
+  }),
+  En = ({
+    id: e,
+    glowingSectors: t
+  }) => (0, j.jsx)(j.Fragment, {
+    children: t.map(t => <filter id={`${e}-glow-${t}`} x={`-100%`} y={`-100%`} width={`300%`} height={`300%`} key={`${e}-glow-${t}`}>{[<feGaussianBlur in={`SourceGraphic`} stdDeviation={`8`} result={`blur`} />, <feColorMatrix in={`blur`} type={`matrix`} values={`1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.5 0`} result={`glow`} />, <feMerge>{[<feMergeNode in={`glow`} />, <feMergeNode in={`SourceGraphic`} />]}</feMerge>]}</filter>)
+  }),
+  Dn = Array.from({
+    length: cn
+  }, (e, t) => ({
+    name: `loading${t}`,
+    value: 100 / cn
+  })),
+  On = e => {
+    let {
+        index: t = 0,
+        ...n
+      } = e,
+      r = t / cn * (ln / 1e3);
+    return (0, j.jsx)(c.g, {
+      initial: {
+        opacity: .15
+      },
+      animate: {
+        opacity: [.15, .5, .15]
+      },
+      transition: {
+        duration: ln / 1e3,
+        delay: r,
+        repeat: 1 / 0,
+        ease: `easeInOut`
+      },
+      children: (0, j.jsx)(p, {
+        ...n,
+        fill: `currentColor`
+      })
+    });
+  };
+$.Pie = yn, $.Label = bn, $.Tooltip = xn, $.Legend = Sn, $.Background = Cn;
+var kn = [{
+    month: `Jan`,
+    desktop: 186,
+    mobile: 80
+  }, {
+    month: `Feb`,
+    desktop: 305,
+    mobile: 200
+  }, {
+    month: `Mar`,
+    desktop: 237,
+    mobile: 120
+  }, {
+    month: `Apr`,
+    desktop: 273,
+    mobile: 190
+  }, {
+    month: `May`,
+    desktop: 209,
+    mobile: 130
+  }, {
+    month: `Jun`,
+    desktop: 314,
+    mobile: 240
+  }],
+  An = {
+    desktop: {
+      label: `Desktop`,
+      colors: {
+        light: [`var(--chart-2)`, `var(--chart-4)`]
+      }
+    },
+    mobile: {
+      label: `Mobile`,
+      colors: {
+        light: [`var(--chart-4)`]
+      }
+    }
+  },
+  jn = [{
+    channel: `desktop`,
+    visitors: 420
+  }, {
+    channel: `mobile`,
+    visitors: 310
+  }, {
+    channel: `tablet`,
+    visitors: 180
+  }, {
+    channel: `other`,
+    visitors: 90
+  }],
+  Mn = {
+    desktop: {
+      label: `Desktop`,
+      colors: {
+        light: [`var(--chart-1)`]
+      }
+    },
+    mobile: {
+      label: `Mobile`,
+      colors: {
+        light: [`var(--chart-2)`]
+      }
+    },
+    tablet: {
+      label: `Tablet`,
+      colors: {
+        light: [`var(--chart-3)`]
+      }
+    },
+    other: {
+      label: `Other`,
+      colors: {
+        light: [`var(--chart-4)`]
+      }
+    }
+  };
+function Nn({
+  kind: e
+}) {
+  let t = `h-64 w-full`;
+  switch (e) {
+    case `line`:
+      return (0, j.jsxs)(Q, {
+        data: kn,
+        config: An,
+        className: t,
+        curveType: `monotone`,
+        children: [(0, j.jsx)(Q.Grid, {}), (0, j.jsx)(Q.XAxis, {
+          dataKey: `month`
+        }), (0, j.jsx)(Q.YAxis, {}), (0, j.jsx)(Q.Legend, {
+          isClickable: !0
+        }), (0, j.jsx)(Q.Tooltip, {}), (0, j.jsx)(Q.Line, {
+          dataKey: `desktop`,
+          strokeVariant: `solid`,
+          isClickable: !0,
+          children: (0, j.jsx)(Q.ActiveDot, {
+            variant: `colored-border`
+          })
+        }), (0, j.jsx)(Q.Line, {
+          dataKey: `mobile`,
+          strokeVariant: `dashed`,
+          isClickable: !0,
+          children: (0, j.jsx)(Q.ActiveDot, {})
+        })]
+      });
+    case `area`:
+      return (0, j.jsxs)(Y, {
+        data: kn,
+        config: An,
+        className: t,
+        curveType: `monotone`,
+        children: [(0, j.jsx)(Y.Grid, {}), (0, j.jsx)(Y.XAxis, {
+          dataKey: `month`
+        }), (0, j.jsx)(Y.YAxis, {}), (0, j.jsx)(Y.Legend, {
+          isClickable: !0
+        }), (0, j.jsx)(Y.Tooltip, {}), (0, j.jsx)(Y.Area, {
+          dataKey: `desktop`,
+          variant: `gradient`,
+          isClickable: !0,
+          children: (0, j.jsx)(Y.ActiveDot, {
+            variant: `colored-border`
+          })
+        }), (0, j.jsx)(Y.Area, {
+          dataKey: `mobile`,
+          variant: `solid`,
+          isClickable: !0,
+          children: (0, j.jsx)(Y.ActiveDot, {})
+        })]
+      });
+    case `bar`:
+      return (0, j.jsxs)(Z, {
+        data: kn,
+        config: An,
+        className: t,
+        barRadius: 4,
+        children: [(0, j.jsx)(Z.Grid, {}), (0, j.jsx)(Z.XAxis, {
+          dataKey: `month`
+        }), (0, j.jsx)(Z.YAxis, {}), (0, j.jsx)(Z.Legend, {
+          isClickable: !0
+        }), (0, j.jsx)(Z.Tooltip, {}), (0, j.jsx)(Z.Bar, {
+          dataKey: `desktop`,
+          variant: `gradient`,
+          isClickable: !0
+        }), (0, j.jsx)(Z.Bar, {
+          dataKey: `mobile`,
+          isClickable: !0
+        })]
+      });
+    case `pie`:
+      return (0, j.jsxs)($, {
+        data: jn,
+        dataKey: `visitors`,
+        nameKey: `channel`,
+        config: Mn,
+        className: t,
+        children: [(0, j.jsx)($.Legend, {
+          isClickable: !0
+        }), (0, j.jsx)($.Tooltip, {}), (0, j.jsx)($.Pie, {
+          isClickable: !0,
+          innerRadius: 48,
+          paddingAngle: 3,
+          cornerRadius: 6
+        })]
+      });
+    default:
+      return e;
+  }
+}
+export { Nn as default };

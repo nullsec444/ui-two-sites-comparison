@@ -1,0 +1,33 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e } from "./rolldown-runtime-B0Z9INg1.js";
+import { n as t, t as n } from "./jsx-runtime-Ciaf_P-h.js";
+import { n as r } from "./useStore-CeyF0_C9.js";
+import { t as i } from "./component-gallery-DKIbyCvz.js";
+import { t as a } from "./index-C2FRa1ig.js";
+var o = e(t()),
+  s = e(n());
+function c() {
+  let {
+      component: e,
+      calendarLocale: t
+    } = a.useLoaderData(),
+    {
+      purchase: n,
+      dir: c
+    } = a.useSearch(),
+    l = r();
+  return (0, o.useEffect)(() => {
+    n && l.navigate({
+      to: `.`,
+      search: e => ({
+        dir: e.dir
+      }),
+      replace: !0
+    });
+  }, [n, l]), (0, s.jsx)(i, {
+    component: e,
+    dir: c,
+    calendarLocale: t
+  });
+}
+export { c as component };

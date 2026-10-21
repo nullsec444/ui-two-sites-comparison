@@ -1,0 +1,46 @@
+{
+  "name": "@movements/react-tiny-chart",
+  "version": "0.1.0",
+  "description": "A tiny SVG sparkline for React \u2014 easing, gradient, edge fade, and size as props.",
+  "keywords": [
+    "react",
+    "chart",
+    "sparkline",
+    "svg",
+    "line-chart"
+  ],
+  "homepage": "https://movements.dev/chart",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iduuck/movements.dev.git",
+    "directory": "packages/react-tiny-chart"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

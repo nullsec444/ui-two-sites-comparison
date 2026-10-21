@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/conversation.json",
+  "type": "registry:ui"
+}

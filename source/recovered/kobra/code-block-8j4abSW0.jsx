@@ -1,0 +1,181 @@
+// Reconstructed from publicly delivered compiled JavaScript; not author TSX.
+import { a as e, r as t } from "./rolldown-runtime-B0Z9INg1.js";
+import { n, t as r } from "./jsx-runtime-Ciaf_P-h.js";
+import { t as i } from "./utils-WkhMP9hs.js";
+import { t as a } from "./createReactComponent-DqK5J7gw.js";
+import { t as o } from "./IconCode-Jxt5x2jf.js";
+import { t as s } from "./IconDownload-D9S_20lD.js";
+import { a as c, n as l, o as u, r as d, s as f, t as p } from "./tooltip-C51luKYh.js";
+import { i as m, n as h } from "./copy-check-C8jXc5g7.js";
+import { a as g, o as _, r as v, t as y } from "./dist-Dgli2vvz.js";
+var b = a(`outline`, `terminal`, `Terminal`, [[`path`, {
+    d: `M5 7l5 5l-5 5`,
+    key: `svg-0`
+  }], [`path`, {
+    d: `M12 19l7 0`,
+    key: `svg-1`
+  }]]),
+  x = e(n(), 1),
+  S = t({
+    highlightCode: () => T
+  }),
+  C = {
+    ts: y.configure({
+      dialect: `ts`
+    }),
+    tsx: y.configure({
+      dialect: `ts jsx`
+    }),
+    js: y,
+    jsx: y.configure({
+      dialect: `jsx`
+    }),
+    sh: null
+  },
+  w = g([{
+    tag: [_.comment, _.lineComment, _.blockComment],
+    class: `comment`
+  }, {
+    tag: [_.keyword, _.modifier, _.controlKeyword, _.operatorKeyword, _.self],
+    class: `keyword`
+  }, {
+    tag: [_.string, _.special(_.string), _.regexp],
+    class: `string`
+  }, {
+    tag: [_.number, _.bool, _.null, _.escape],
+    class: `number`
+  }]);
+function T(e, t) {
+  let n = C[t];
+  if (!n) return E([{
+    text: e
+  }]);
+  let r = n.parse(e),
+    i = [],
+    a = 0;
+  return v(r, w, (t, n, r) => {
+    t > a && i.push({
+      text: e.slice(a, t)
+    }), i.push({
+      text: e.slice(t, n),
+      token: r
+    }), a = n;
+  }), a < e.length && i.push({
+    text: e.slice(a)
+  }), E(i);
+}
+function E(e) {
+  let t = [[]];
+  for (let n of e) {
+    let e = n.text.split(`
+`);
+    for (let [r, i] of e.entries()) r > 0 && t.push([]), i !== `` && t.at(-1).push({
+      text: i,
+      token: n.token
+    });
+  }
+  return t;
+}
+var D = t({
+    CodeBlock: () => P,
+    INK: () => k
+  }),
+  O = e(r(), 1),
+  k = {
+    comment: `text-muted-foreground`,
+    keyword: `text-info`,
+    string: `text-success`,
+    number: `text-warning`
+  },
+  A = e => e === `sh` ? b : o,
+  j = {
+    ts: `ts`,
+    tsx: `tsx`,
+    js: `js`,
+    jsx: `jsx`,
+    sh: `sh`
+  };
+function M(e, t) {
+  let n = e?.split(`/`).at(-1)?.trim();
+  return n && /\.[^.\s]+$/.test(n) ? n : `${n || `code`}.${j[t]}`;
+}
+var N = `flex size-7 shrink-0 cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-ring outline-none hover:bg-foreground/5 hover:text-foreground focus-visible:ring-[3px] focus-visible:ring-ring/50`;
+function P({
+  code: e,
+  filename: t,
+  language: n = `ts`,
+  lineNumbers: r = !0,
+  className: a,
+  actions: o,
+  copyText: g,
+  download: _ = !0
+}) {
+  let v = (0, x.useMemo)(() => T(e.replace(/\n$/, ``), n), [e, n]),
+    [y, b] = m(),
+    [S] = (0, x.useState)(() => f()),
+    C = async () => {
+      try {
+        await navigator.clipboard.writeText(g ?? e);
+      } catch {
+        return;
+      }
+      b();
+    },
+    [w, E] = m(),
+    D = () => {
+      let r = g ?? e,
+        i = new Blob([r.endsWith(`
+`) ? r : `${r}\n`], {
+          type: `text/plain;charset=utf-8`
+        }),
+        a = URL.createObjectURL(i),
+        o = document.createElement(`a`);
+      o.href = a, o.download = typeof _ == `string` ? _ : M(t, n), o.click(), window.setTimeout(() => URL.revokeObjectURL(a)), E();
+    },
+    j = A(n);
+  return <figure data-slot={`code-block`} className={i(`overflow-hidden rounded-xl border bg-card text-card-foreground`, a)}>{[<figcaption className={`flex items-center gap-2 border-b px-3 py-1.5`}>{[(0, O.jsx)(j, {
+        size: 15,
+        stroke: 1.8,
+        "aria-hidden": !0,
+        className: `shrink-0 text-muted-foreground`
+      }), <span dir={`auto`} className={`truncate font-mono text-xs text-foreground`}>{t}</span>, <div className={`ms-auto flex shrink-0 items-center gap-0.5`}>{[o?.(S), _ === !1 ? null : (0, O.jsx)(c, {
+          handle: S,
+          payload: w ? `Downloaded` : `Download`,
+          type: `button`,
+          "aria-label": t ? `Download ${t}` : `Download this code`,
+          onClick: D,
+          closeOnClick: !1,
+          className: N,
+          children: (0, O.jsx)(s, {
+            size: 16,
+            stroke: 1.8,
+            "aria-hidden": !0
+          })
+        }), (0, O.jsx)(c, {
+          handle: S,
+          payload: y ? `Copied` : `Copy`,
+          type: `button`,
+          "aria-label": t ? `Copy ${t}` : `Copy this code`,
+          "data-sound": `copy`,
+          onClick: C,
+          closeOnClick: !1,
+          className: N,
+          children: (0, O.jsx)(h, {
+            copied: y,
+            size: 16
+          })
+        })]}</div>, (0, O.jsx)(l, {
+        handle: S,
+        children: ({
+          payload: e
+        }) => (0, O.jsx)(d, {
+          children: (0, O.jsx)(u, {
+            children: (0, O.jsx)(p, {
+              children: e ?? ``
+            })
+          })
+        })
+      })]}</figcaption>, <div dir={`ltr`} className={`flex`}>{[r ? <div aria-hidden={!0} className={`box-content min-w-[2ch] shrink-0 border-r py-2.5 pr-2 pl-2.5 text-right font-code text-[13px] leading-6 text-muted-foreground/70 select-none`}>{v.map((e, t) => <div key={t}>{t + 1}</div>)}</div> : null, <pre className={`min-w-0 flex-1 overflow-x-auto py-2.5 pr-4 pl-2.5 font-code text-[13px] leading-6`}>{<code className={`block w-max font-code`}>{v.map((e, t) => <div key={t}>{[e.map((e, t) => <span className={e.token ? k[e.token] : void 0} key={t}>{e.text}</span>), `
+`]}</div>)}</code>}</pre>]}</div>]}</figure>;
+}
+export { S as a, T as i, k as n, b as o, D as r, P as t };

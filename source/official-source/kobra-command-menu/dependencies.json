@@ -1,0 +1,12 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "@kmenu/react",
+    "@tabler/icons-react",
+    "kmenu",
+    "motion"
+  ],
+  "registryDependencies": [],
+  "source_url": "https://kobra.systems/r/command-menu.json",
+  "type": "registry:ui"
+}

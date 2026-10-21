@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "@base-ui/react",
+    "motion"
+  ],
+  "registryDependencies": [
+    "@kobra/alert",
+    "@kobra/button",
+    "@kobra/spinner"
+  ],
+  "source_url": "https://kobra.systems/r/toast.json",
+  "type": "registry:ui"
+}
