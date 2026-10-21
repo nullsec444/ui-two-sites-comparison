@@ -1,6 +1,6 @@
 # Kobra + Movements recovery: PARTIAL / UNVERIFIED
 
-Generated: 2026-10-21T14:36:08.906744+00:00
+Generated: 2026-10-21T14:45:20.045181+00:00
 
 Live comparison: https://nullsec444.github.io/ui-two-sites-comparison/
 New repository: https://github.com/nullsec444/ui-two-sites-comparison
@@ -39,7 +39,7 @@ Registry author source blocked by HTTP 401 for 71 Kobra routes. No login/paywall
 
 Movements official npm JS/d.ts distributions are preserved under official-packages/. Their source maps do not contain sourcesContent; the private/unavailable GitHub source was not fabricated as TSX.
 
-Parsed source files (adapters, recovered modules and exact registry files; not a component count): 526. Syntax failures: 0. Original/reconstructed builds succeeded for both sites. A standalone portable pack installed its own pinned npm dependencies and executed its full rebuild and syntax check successfully. Its four executable bundles and two CSS outputs were byte-identical to the local build before the common final asset-base rewrite: True.
+Parsed source files (adapters, recovered modules and exact registry files; not a component count): 526. Syntax failures: 0. Original/reconstructed builds succeeded for both sites. A standalone portable pack installed its own pinned npm dependencies and executed its full rebuild and syntax check successfully. Its four executable bundles and two CSS outputs are byte-identical to the final local build, including repository-safe asset-base handling: True. The independently executed strict validator returns 1 with the same coverage totals; acceptance remains false.
 
 Per-component generated route adapters are in components/. Per-component dependency descriptors are in dependencies/. Kobra descriptors explicitly reference a shared demo bundle closure, NOT a minimal isolated per-component author dependency set. Native package versions are pinned and can differ from production vendor versions; no behavior equivalence is assumed.
 
@@ -97,7 +97,9 @@ Every uncovered control is retained under finite_axes, uncovered_finite_axes or 
 
 ## Live deployment verification
 
-Deployment verification has not yet been recorded. Do not treat this draft as verified live.
+Exact deployment commit checked: 5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0. Canonical route pages covered by static reference checks: 87. References checked: 377; passed: 377. Status: pass. Executable bundles, CSS, HTML and manifests were fetched and compared byte-for-byte to the local snapshot; source and resource endpoints were checked independently.
+
+Live Chrome configurations checked: 14; both views rendered: 14. Representative original/reconstruction toggles were exercised on the exact live URL, including lazy component routes. This is not live browser coverage of every component or full interaction equivalence. The quick video snapshot originally captured one mode before metadata finished loading; a separate delayed live test confirmed metadata, advancing playback time and pause for both modes (evidence/live-video-media.json). Cancelled iframe/media/font requests during navigation remain in raw evidence and are not presented as completed downloads.
 
 ## Artifacts and reproduction
 

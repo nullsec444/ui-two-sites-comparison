@@ -1,0 +1,3581 @@
+{
+  "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
+  "commit": "5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+  "routes": 87,
+  "references": 377,
+  "passed": 377,
+  "status": "pass",
+  "results": [
+    {
+      "path": "_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/2fe89d53234c61d4-s.1u30mmyq6lnsd.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/2fe89d53234c61d4-s.1u30mmyq6lnsd.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/3dc1de47b9d80a0b-s.2wbvw_buzqzvz.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/3dc1de47b9d80a0b-s.2wbvw_buzqzvz.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/59b15b4bcd7b1eb5-s.2vemzm0itqzfy.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/59b15b4bcd7b1eb5-s.2vemzm0itqzfy.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/5e05ae5b48faa55e-s.1yd4_i3e35931.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/5e05ae5b48faa55e-s.1yd4_i3e35931.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/68757d6cddeff913-s.1i-sca43-qwng.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/68757d6cddeff913-s.1i-sca43-qwng.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/a24d9e981578d580-s.p.2dim39isyjvqg.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/a24d9e981578d580-s.p.2dim39isyjvqg.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/e390973e931a41c5-s.0rgnxg2b64rzs.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/e390973e931a41c5-s.0rgnxg2b64rzs.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/f037ea83db21dbd3-s.09x_m4nagdesf.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/f037ea83db21dbd3-s.09x_m4nagdesf.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/fe1d9b66fdac40b2-s.0rk4w-o65wlzl.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/fe1d9b66fdac40b2-s.0rk4w-o65wlzl.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-cyrillic-ext-opsz-normal.03s98dqgqw601.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-cyrillic-ext-opsz-normal.03s98dqgqw601.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-cyrillic-opsz-normal.02kuhoxhtnnuj.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-cyrillic-opsz-normal.02kuhoxhtnnuj.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-greek-ext-opsz-normal.24kd4xnjyu3uy.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-greek-ext-opsz-normal.24kd4xnjyu3uy.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-greek-opsz-normal.2ey27u6p3jcom.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-greek-opsz-normal.2ey27u6p3jcom.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-latin-ext-opsz-normal.43rxyga-l4eut.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-latin-ext-opsz-normal.43rxyga-l4eut.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-latin-opsz-normal.34fk6-9m1aguk.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-latin-opsz-normal.34fk6-9m1aguk.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "_next/static/media/inter-vietnamese-opsz-normal.2-wcjb081xswd.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/inter-vietnamese-opsz-normal.2-wcjb081xswd.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "acceptance-report.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/acceptance-report.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 1179588,
+      "sha256": "117da8eefd3deb7437ebea9c90b4e614edc8b28648e3f1ca7ada7426adeddd50",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "brand/favicon-dark.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/brand/favicon-dark.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "brand/favicon-light.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/brand/favicon-light.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "brand/logomark-dark.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/brand/logomark-dark.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "brand/logomark-light.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/brand/logomark-light.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "build/kobra-original.js",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/kobra-original.js?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4457561,
+      "sha256": "1b7f0b32f21eef7270807b4bf4b38535b3519935f39f4685e309ae59676a07a4",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "build/kobra-reconstructed.js",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/kobra-reconstructed.js?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 5571691,
+      "sha256": "7a5e1f4c1be10cbd263c24c236632d2b1d4d34405f962b0d96a7cdbe668249c5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "build/movements-original.js",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/movements-original.js?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 2741044,
+      "sha256": "ee509614da8988481a31efb1704de2499873d9f7be3e2eb6334d59ca3d451fc9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "build/movements-reconstructed.js",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/movements-reconstructed.js?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 3357868,
+      "sha256": "c75366871a034c9f255eabe866fdb78a930eb4a185ae9cbe2a4362ac14d71aeb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-accordion.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-accordion.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "fc9b84b4353f001822b1f1fe483d83024746da26c7afbfd0496e90f84a2403d0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-advertisement.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-advertisement.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "4cc92bdd2001848169bb8387719b48d64a94a410e9080e4367139ee69ef92ed2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-ai-editor.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-ai-editor.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 865,
+      "sha256": "f30108e473728a497f5418bbc06ba16f6db11a0f4737f948551c576893fedaf2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-alert.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-alert.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "35f7a10d858a1eda47dbab5c0ed523654d47d26fc571ffba301ac18bc2feb0ed",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-aspect-ratio.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-aspect-ratio.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "179e8370ebfc3704165e1a7b1e76b9dccf669c4594cf9192d7a9091bc98170dc",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-attachment.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-attachment.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "c61060902901d3423e6c7d21f7a097b85010483246a3a8d5ba34973356af60f8",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-avatar.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-avatar.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "a7b1e2545072dae7e3fc67c5ee883aeaba3c08a59b1db0d56b93b373faf7b681",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-badge.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-badge.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "b7645e0272dcb8f36dbbd439aa534e04e752563e548397dc12bde867d7759688",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-breadcrumb.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-breadcrumb.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "17c1cf66f5c4de93e9017eb84bd6c5ccbbcc99ddf77198ad6c19928a02eb2b6d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-button.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-button.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "17807352b9ccf4d8eab84607993c41b35be4f3a7c21bfee34247da86d1756299",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-calendar.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-calendar.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "5598b346444428220e0e58fe8045e67fb7239fd4cfe452e7be96aa370afa0b23",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-card.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-card.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 693,
+      "sha256": "012fbaa46447d66c2e686fe3e62c8a8678f2fa76a74b9ff90dc9c89cf24316fe",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-carousel.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-carousel.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 861,
+      "sha256": "95ba58357658d54df0c815be3f379f5908e107fdf68484535a06895dbf9465df",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-chart.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-chart.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "50dc5598210d9ed6b8520c3c5041a101849d608f6be4c3d2894a29234e5dc7b9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-chat-history.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-chat-history.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "c61f53c9e2f13b44fb2d994b919e6254b178af7061ebae7bc35a6137954ec4ae",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-chat-input.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-chat-input.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "b2a4acfaee5ae6b0e31a78f995585dc3984d7bb879e12aa41fad220791a4f7e5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-checkbox.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-checkbox.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "15d7b26bbba61f667f4b0b04a03e1ac76447fd65d1c52ff05817d8e21988115a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-code-block.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-code-block.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "bd77d8c9a2477be3ca281952e8362e7994108f0b002fb8b24042aade006e6c1e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-collapsible.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-collapsible.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 707,
+      "sha256": "859f6ef9ff4aa2bc7eefcce21d49253624eb265449562575924d1a12dc68715c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-color-palette.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-color-palette.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "f9c2256ab2b36a9103212ece0db2c9abdf42ccbc2600c5b7c2144e77142f9152",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-color-picker.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-color-picker.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "a83796cdfdb65db51f2dcdd62d153667d8bd7067d3ad9c7c909b055ec04fc04f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-combobox.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-combobox.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "63a980f83b8740c27ed87d58a7de1c3b360aa3467047a29e68612acae0f8f1e9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-command-menu.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-command-menu.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 941,
+      "sha256": "a9f5ae72f92a94946feb7f344881688fa6bcefffd32e61ea7aa45c3130dc4bb2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-context-menu.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-context-menu.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "024c307f4474e50c2b0f9d31c1a0c9977b97c585f84fb1960a0f1f34ea59d4bb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-conversation.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-conversation.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 877,
+      "sha256": "38dfa7ff0835affc1cc38859f157c13218b15efb8478e20b69cecf4202de6212",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-crm-table.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-crm-table.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "20be2a7d5e08e2fa620e7bbf6821ce36bcd2ca93e69d9806f0780d85675a0e92",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-dialog.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-dialog.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "6498e97871b41f85d5f53358830f363b8a76545395af519ea92eb1bcd42d414d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-direction.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-direction.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "3f7c69b7a3ee3969aa0778f2dd3f2823ed69777af9cdd42dc9f85e044f436336",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-drawer.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-drawer.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "24f1f68067e1443a4503fc06b56a1fbaf979e7ba582fe0c4fae0ea8dc1b8e2d1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-dropdown-menu.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-dropdown-menu.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "319a9cb020eedb1ce071380cb3204ec45e311d124f4e45fdd9cff399e5f4b817",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-empty.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-empty.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "e0e6b682aee522306d2b6d577bbc9e01e5bdf6e0c9390c01914fc9adaeddd94f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-file-diff.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-file-diff.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "913df9baf4011fa872fff4f8ac2c9e3272dba59cc6cece20e19c692a9b8e0a58",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-filter-chips.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-filter-chips.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "9b7335fe440e53ff9517681295293635a1957e930af67b2bec0b85565246435b",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-form.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-form.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 693,
+      "sha256": "c1d8d0d88927d70f7beda2200ef07ca0a9fbda821669b046c472b7cc94f653ce",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-grouped-table.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-grouped-table.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "7e50add5dbce916bbc4efbb400298145ed334a08b66364784e5ad67ae894e06a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-halftone-dots.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-halftone-dots.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 881,
+      "sha256": "a7f85beeae27bdaf3979754ff9fba8f0d02a61c5af01184413d785e8f776664c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-hover-card.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-hover-card.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "74b05bdabad631e0731211b4af79f1fc557302f170b505816533ade5234aa6e2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-image-generation.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-image-generation.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 717,
+      "sha256": "fb9c20c587689def9f3a3d39bd771e531d03ad75e5c3cf07c6cbea8c21c20c51",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-inline-citations.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-inline-citations.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 717,
+      "sha256": "bb6cf0be74f30cbc34a49ed090d41cca603c371208a1b46882242639f1a418db",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-input-dissolve.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-input-dissolve.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 713,
+      "sha256": "18d3305e81abb9f61c14b13e7d7706a79057ab59b1a346db19f64441cbccef91",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-input-otp.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-input-otp.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 865,
+      "sha256": "e6d857c1f325e0b66da6813194fe6a83be89395497f3e1cde201f995f649038c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-input.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-input.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "1b1585998fe7ec55d36d8f55597b20b369067084fb2f3d5edc4c9263630e535f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-item.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-item.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 693,
+      "sha256": "1b6083842ad7d3dfb3b58c3ce47d32f6414f28744765f929f2548b031ffa257c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-kbd.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-kbd.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 691,
+      "sha256": "285fb5d234ba80cb4feed22c051fab05c80251c503c2b5faeae7346383f4e8d4",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-lightbox.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-lightbox.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "ef401cc5a55992b75428043ccd759e377075ed4b9522d6702df017b46a107458",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-logo-carousel.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-logo-carousel.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "3e8c6fffde9529878955bf258b729dfea7e321d54f655fa699ee3643020ef874",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-magnetic-dropzone.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-magnetic-dropzone.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 719,
+      "sha256": "80d4d101f04de0315817474473ac87886ab3fc6cc54c41dc8a0d8d7129ffa505",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-marker.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-marker.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "f7bf1133cacdd08d67685c19ded45f837709ea628f57b5c80bc463390816acc7",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-menubar.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-menubar.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "85fecac4af968ff573dc535b007e3599ef585731328c494839c3ae49e192c060",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-message-scroller.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-message-scroller.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 717,
+      "sha256": "5d1f4d1093766755f7ff2215e5911ed81426253a75f68d29eb75d2aae92bb208",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-message.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-message.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "387864287ad46ba1d86b1174bde74c74326bf57b41166060803435544e4b65cc",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-multi-select.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-multi-select.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "fbf1ba0274623efd883f0f718dc7e19c452192e6cf38ec63a7c4cc15f3c2a222",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-navigation-menu.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-navigation-menu.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 889,
+      "sha256": "c58f53b1d770d21df3aada52ea0811c0dd824fc5cf667d8e7068ce6a215cb3a5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-pagination.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-pagination.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 705,
+      "sha256": "3f9537a93125227508e34c98326b1ab4210be497797f5d0196f82671260d1c7e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-plan-card.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-plan-card.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "4042758601cb41ef2b11c83652e8d3f5a92e2f92062e913c1514e719f518756c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-popover.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-popover.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "93730ea20db399eb547634049f4cd6e685548335bfbbb0deef47fbac60708474",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-progress.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-progress.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "5729cc1e048542e574798cfdc78356bdfa140cafd50b81146453e576d707c1fb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-qr-code.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-qr-code.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "ff6a0a912376cc8bc9a1a22e2d06fa3df50c73806b8ead25827827432f2b7ae7",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-question-card.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-question-card.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 711,
+      "sha256": "027ef4e7d21e872109e4d32d2a8c60be7ef9bc960b898eb1e9797dbe568d0696",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-radio-group.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-radio-group.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 707,
+      "sha256": "dacd7de2d6ef50b643487d8191e26b48edb11153a0b68edff49a157eb08be362",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-reasoning-steps.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-reasoning-steps.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 715,
+      "sha256": "9c77aa8ac3582393fc3a82434f60417bcbc28f687c4248be9ba62437e8db98e2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-resizable.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-resizable.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "183f19176a263498a6b119589be9840c586f98859f7ebf2f751922932faa9cec",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-scroll-area.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-scroll-area.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 707,
+      "sha256": "f9fafc01418f30c081ea2d3beffd639760e2be8595c6c972815f1113dbc300ba",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-select.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-select.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "257da05ad5deedbfd7180513d0cb2060aac39804f24ceecc6d4ca2882eb5224d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-separator.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-separator.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "b3703b40b3f01f0069472c46a3e9eb07fb6ab65e44d0bd85d2d9748070a7f621",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-sheet.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-sheet.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "a662321e026effcc8a94287123100121080c2010ff289a298c91fe30afe08b2d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-sidebar.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-sidebar.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "d922d2b604b81f2f5175be1821395536177a94ec95c0384e6123998d6a0c6616",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-skeleton.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-skeleton.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "de1541e72d3e1c9e3d39e793ded7c5a79a64ce6c5f5199cfc4934cb84512107f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-slider.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-slider.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "aafd7dd7060b58ad5e2c623a919d191898a567823ba33aa54a494b80c9f3eced",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-sound.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-sound.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 849,
+      "sha256": "10742884fb3ea2b4244b3612ae022a1dadffec7b4de3b3203b67cd2b02d9f04b",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-spinner.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-spinner.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "c85d0bf37f8b0709d2b7601abe28849cfacf99eb0b9d3daa5114afde7fe852d9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-streaming-text.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-streaming-text.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 713,
+      "sha256": "f97e7cdde7d122fb033fd69a1b3ca860db15298c1f3a0f08ec89c031625a1ede",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-switch.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-switch.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 697,
+      "sha256": "940656668d99a7c7eafe2bf91c6b54b86327687addba747e45ce57542e9922b0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-table.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-table.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 695,
+      "sha256": "b1f3dbc10ad4ecb08a80596003eadbab510d049a05ec7be2fd1c9a1a69c16654",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-tabs.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-tabs.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 693,
+      "sha256": "2655fa81a41df0cbcb3e0246c1d64104b4891d9f36062626040578314ce0fa0b",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-task-list.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-task-list.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 703,
+      "sha256": "a57bd27fab7ed855555b40425858310139d28b56f3366b0e6b2cb0b7c0dee131",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-textarea.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-textarea.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 701,
+      "sha256": "47eeb4c8b49e7d0558132c44e63ce86a137db898a5716f5a6171e9d3f80af080",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-toast.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-toast.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 962,
+      "sha256": "afbde598f2850ee9971a4fd160f1b40724d62c9aee2e9a5b6c0b2e58e9edcce9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-toggle-group.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-toggle-group.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 709,
+      "sha256": "c1afdb889d78fbf25ad4381501a8dba64a5bc738b547b8d627790d2f7e49bcb0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-tooltip.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-tooltip.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 699,
+      "sha256": "97dbde22df93c5a755a85bac55224617c984b55f2a2b44087222babf2e80feeb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/kobra-video.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/kobra-video.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 1363,
+      "sha256": "e589b4b49f1d9aab1f8c2ffbea677a05ebb09c625621ca18508e1c758e98c0af",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-chart.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-chart.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 3697,
+      "sha256": "78675b1c94539b057c5311dc80104055761a878847522cdc1d94ac007deccbe9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-glass.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-glass.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 25059,
+      "sha256": "99290c28c8daa2f08d9e7e031ef1b1a84b47b455775e7cd4f18650becbd6dadc",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-loader.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-loader.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 3550,
+      "sha256": "aa1bea92412354e26ede5ef4772e6ccb4eb2804360f1aaef98d437bc2523d2ab",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-radius.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-radius.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 2805,
+      "sha256": "d133ac117b3df2a6cdf14e7e0f8f809c7cfa498a4ced3c16bda7c01c31a649b1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-shadows.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-shadows.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 3731,
+      "sha256": "426fc868b1f9b8ee104c3c9aca2b785d9c08a95fa5eb8ef885940a50726bb8c8",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "dependencies/movements-shimmer.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/dependencies/movements-shimmer.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 2809,
+      "sha256": "55d2f31748e61aa4f6ed2836ab503e3966b77b420f5e89354fe9947a4572e8f8",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "fonts/abc-diatype-bold.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/fonts/abc-diatype-bold.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "fonts/abc-diatype-regular.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/fonts/abc-diatype-regular.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "fonts/departure-mono.woff2",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/fonts/departure-mono.woff2?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "frame-kobra-original.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 1020,
+      "sha256": "d804d3ee5c60aae644011f53a62e43527abcf5f64d5a80a4f6af214e4710a708",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "frame-movements-original.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 2242,
+      "sha256": "bc55f21131d3a0b0107c14d8e4fe8b854eff10ccc5157a275fde868a9cbc4cb3",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "images/advertisement/kobra-light.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/advertisement/kobra-light.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/advertisement/kobra.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/advertisement/kobra.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/advertisement/krafa.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/advertisement/krafa.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/carousel/1.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/carousel/2.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/carousel/3.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/carousel/4.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/carousel/5.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/features/1-dark.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/features/1-dark.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/features/1-light.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/features/1-light.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/features/2.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/features/2.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/features/3.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/features/3.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/bridge-backdrop.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/bridge-backdrop.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/bridge.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/bridge.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/rocket-backdrop.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/rocket-backdrop.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/rocket.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/rocket.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/servers-backdrop.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/servers-backdrop.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/halftone/servers.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/halftone/servers.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/afternoon-shadow-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/afternoon-shadow-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/arched-doorway-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/arched-doorway-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/curtain-light-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/curtain-light-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/curved-wall-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/curved-wall-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/dune-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/dune-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/folded-roof-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/folded-roof-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/folded-roof-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/folded-roof-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/garden-wall-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/garden-wall-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/golden-hills-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/golden-hills-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/ladder-and-stool-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/ladder-and-stool-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/lake-at-dusk-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/lake-at-dusk-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/lamp-and-books-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/lamp-and-books-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/lone-cloud-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/lone-cloud-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/lone-palm-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/lone-palm-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/quiet-stair-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/quiet-stair-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/river-delta-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/river-delta-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/round-window-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/round-window-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/stepped-facade-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/stepped-facade-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/white-block-640.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/white-block-640.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/white-curve-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/white-curve-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/lightbox/window-seat-1280.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/lightbox/window-seat-1280.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/click-me.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/click-me.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/filter.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/filter.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/florianapolis.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/florianapolis.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/profile.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/profile.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/reading-01.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/reading-01.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/reading-02.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/reading-02.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/select-some-text.png",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/select-some-text.png?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/previews/turks-and-caicos-poster.webp",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/previews/turks-and-caicos-poster.webp?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "images/qr-code/btc.svg",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/qr-code/btc.svg?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 17990,
+      "sha256": "5c6fb2aed36c4cd9e1488e7168c72d49b9a9c7fc807186a330fee45c5e5b247e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-accordion/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-accordion/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4429,
+      "sha256": "56347cfa57b32f1748fcec86f49948bb8e1311a6e098291232b03538a3a47466",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-advertisement/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-advertisement/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4305,
+      "sha256": "5a6af47c9e01337ce6b72d3201285465a32b66dab86053b61e618ae897d1a9f1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-ai-editor/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-ai-editor/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4065,
+      "sha256": "019bea15e978e3e9138923b95cc2007ccc191ca2c0e49409033d55495bb95d2e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-alert/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-alert/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4233,
+      "sha256": "665faef0bb314962bcc31af7186ef8c8d393ba44f4006ede83188b78a8e4ade7",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-aspect-ratio/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-aspect-ratio/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4296,
+      "sha256": "c4c366bcd3e6b95b1cb89d82548e0582d66bd885d1500d93a1941c90ce3f583a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-attachment/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-attachment/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4278,
+      "sha256": "d42e6873c684db58d4c19123e2f5a1fb37bd233e42818983e85847c42e680604",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-avatar/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-avatar/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4242,
+      "sha256": "3c13ec8720a5eef4244fc45445c9848ec52526594225140ff34e31f4f1ea9112",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-badge/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-badge/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4233,
+      "sha256": "d424face39c53b8d372ce814e2622ebffab47dc7ec16750a8bdff51a22dd3b71",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-breadcrumb/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-breadcrumb/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4442,
+      "sha256": "e61819354e47decef2340104684c43dfc40a9ff2115a81f3899298baf7e18f23",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-button/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-button/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 5332,
+      "sha256": "bfabc1b31e611fe8541980069ff3b403a6db2506721d23827e1170e8804eebad",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-calendar/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-calendar/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4398,
+      "sha256": "380acbdab11c62c4e55efff32f6517d18c94eef6761607d0d7c6dd8baf1f7bb0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-card/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-card/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4224,
+      "sha256": "65ee02ec9f11d0f7d49430b90c008ceeef102849192fa117c070b9a674442fa1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-carousel/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-carousel/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4217,
+      "sha256": "12aca52f5c2e6cae7140f0497dc66c3504cebb8ff3cbe93070c84e8f9cc1c4d4",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-chart/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-chart/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4461,
+      "sha256": "7902997e45df5ad87961cfdac0a7b7a8b1bf2b3a0b1242d2abb593683c083a6d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-chat-history/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-chat-history/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4296,
+      "sha256": "77b4611ae813410e655b3b15ee84199e53cd63df74469351c6a8c5af66c06b7d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-chat-input/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-chat-input/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4278,
+      "sha256": "d7ab1b42a2cff84ddde6921b7024393d34a88a7cdfb07ad948dcc4b37c12c5c9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-checkbox/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-checkbox/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4398,
+      "sha256": "33619228fc3c75510d572a99c8e4db0fafee5629fa3dc2a505651733156bcbda",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-code-block/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-code-block/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4278,
+      "sha256": "6295512859e153fcf7abfe63d9bb9bf36a2775e094b8a94cd0bd1ffd80d5813d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-collapsible/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-collapsible/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4287,
+      "sha256": "a56e969f8c09cbb48ce436e273d711fb34bf7510ec4c1bc3afdb652dd5e96e7d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-color-palette/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-color-palette/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4305,
+      "sha256": "b5f8d7818c74bbe908fa2f82c28fcbd50afccc3575d84c0d053705dafe33817a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-color-picker/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-color-picker/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4458,
+      "sha256": "912b6330129fd5d2687c9c2e21f4816871e8903d25a558d737fce1caef6f3497",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-combobox/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-combobox/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4260,
+      "sha256": "27ad45e2de87284d5f78647e9983c1042256ab221204fba0a2a1a3ed0cf89c98",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-command-menu/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-command-menu/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4368,
+      "sha256": "1119a308e6435d61db4e1d4ceda0770d667a601969971ff5c14866cd9bc1cc57",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-context-menu/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-context-menu/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4296,
+      "sha256": "519eda4ce4995b98ea1f60b2fc2c4cfac5d338f04d36af575104882540fbced3",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-conversation/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-conversation/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4104,
+      "sha256": "7a713f4b68333b419df32f2d77551b0efb1864fabcc0b167c4d2a14df3050f43",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-crm-table/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-crm-table/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4383,
+      "sha256": "d22350912efa40a2479cc191f930f990a306f27396b6c24b9cf15b6d12302334",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-dialog/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-dialog/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4502,
+      "sha256": "caa4eb30564b18609f98e278fe859f2ac229ec34e5eef9fd3004ae5727aa94fc",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-direction/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-direction/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "9e171229adb892ef11843d47166bbc208b044931e851f60c192f4dc03e032a80",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-drawer/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-drawer/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4242,
+      "sha256": "c645fc1ac171107640a040b9fa38b67b34e725132a18f78ba953907c820f7b94",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-dropdown-menu/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-dropdown-menu/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4565,
+      "sha256": "0b09c4d5e44cd97abb5d43f260fe4d187888888f2e81645630628ea2cf3f1e32",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-empty/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-empty/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4233,
+      "sha256": "67aa74dee6d0f1a77ab25b340575d2b2e4eacbbfa3ea3db5cbff86f9536800e4",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-file-diff/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-file-diff/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "7dedee4038f1b7641e292c83141def1e394d9d66eeeeacd9f9255533c92b8e27",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-filter-chips/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-filter-chips/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4296,
+      "sha256": "2b4ae5238824b5a57d9c7518779078eafdbbb552d3d22e254d93b2c6544966c1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-form/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-form/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4224,
+      "sha256": "45d43382101c893e47f429a645ac0bf76e7ac392332d2a4ee758afbb5a418349",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-grouped-table/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-grouped-table/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4463,
+      "sha256": "1b0264adc42f2abe6d428c8fc9e209dda9220cd82954765e1d45c196dafee526",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-halftone-dots/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-halftone-dots/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4259,
+      "sha256": "2cdc6d1d2c2f9bafd3dbbfe014b14064feb3a853fd8eeefa48cffc40755134a5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-hover-card/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-hover-card/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4278,
+      "sha256": "4712bbb177a1e4327b6c1c8f477c2b612d233cd884ee0b86ee25007f06a95c2c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-image-generation/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-image-generation/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4332,
+      "sha256": "f94e3c317702757e171eb1970d75fedfd03bf4273eadf3c9be4dbf2b3ce7d14f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-inline-citations/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-inline-citations/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4332,
+      "sha256": "f628f5087da6ca592e43a2c1896460c21b5bc356b3099135eaff95947c18588f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-input-dissolve/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-input-dissolve/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4314,
+      "sha256": "77843f7acd4de45ad71f1f470878497697ea3d38a3ba6bb0e65e6aefb4c0a3f7",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-input-otp/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-input-otp/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4065,
+      "sha256": "6b460e78abb0009d17a6d5a77cbbe0ce5353741e6b14511db395c40828d72230",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-input/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-input/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4753,
+      "sha256": "564f080e4d103615b837c73fa3a904cc023f29a1fdddc4ed0d5399545404aa54",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-item/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-item/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4224,
+      "sha256": "bcb151d88b8f95deb01dc0f77a6a3907ec41cefb39315b39c14d2e22cc193842",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-kbd/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-kbd/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4215,
+      "sha256": "706cbcab016ea43c9d8193316ef66453b9e7500a7a622b36bf9a382c039b2a80",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-lightbox/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-lightbox/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4260,
+      "sha256": "fe184e04060afdee04032398900c2d628011e7a80a96be069ab121c3c61b8ec5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-logo-carousel/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-logo-carousel/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4305,
+      "sha256": "c456029c6c7be5db7dabd7d34154c6b57750f15c69c302d3098bdeaa179fa9e2",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-magnetic-dropzone/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-magnetic-dropzone/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4483,
+      "sha256": "1efcbe84d2a7d9331cc743d7c031438389efd51df3aebe22a7d83bd98d7a0354",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-marker/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-marker/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4242,
+      "sha256": "147d2286f86f2e233b6048ec808bdf7f0ec279c28cdfd3cffbf944b1deb0e6c1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-menubar/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-menubar/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "9122760605419afeac87918776b024f458bed9e5d72899744181a057c38db183",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-message-scroller/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-message-scroller/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4332,
+      "sha256": "cd602d3d82b705c24f397da66a7143eaec2e148ca4ad2f7438e98b66c4c1a7a1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-message/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-message/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "0e811a9d6ba5dde1f8559fb2b69812ff43f780d44d8fd67bdb54b86cb718ffd6",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-multi-select/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-multi-select/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4296,
+      "sha256": "fa3afbb4458cff4cbc827f176613fc0ebf8c59af51d7b7a8ae76e766c57c0523",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-navigation-menu/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-navigation-menu/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4143,
+      "sha256": "7e1e14c48ba7bc960c8b85f02dd6fc8b2152130da391e73282834e56368c3bc0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-pagination/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-pagination/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4278,
+      "sha256": "3dc63dddb7a6149aae35f13bb08c87545947c764eb463c00fb4fa56d487da6a0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-plan-card/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-plan-card/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "bd492de7125d2a56947ea636e077b19a216dd0c5961caea0db6f466de6d66e40",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-popover/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-popover/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "0d117be185ce44875167f10685854c1907c033813c2736b9ac365afd61058907",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-progress/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-progress/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4260,
+      "sha256": "36d6cba33cdaf6b8deb7d4e3df142b6b3e25ee36079b4725738241cec5b052f9",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-qr-code/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-qr-code/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "cb1dc3ae3445cd821d5eed730a506f84b32bf8d75a256c38da400cc4ee4e38d0",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-question-card/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-question-card/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4305,
+      "sha256": "bc93829790474511831ffb26bd1589147d4f813ce012127a69eda771a8276b14",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-radio-group/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-radio-group/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4417,
+      "sha256": "f50b692075b4a7343d8d95a4f56adb36bdc33ad5b7f34960d9cdf45570c40349",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-reasoning-steps/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-reasoning-steps/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4323,
+      "sha256": "4ba4b016702ab8a921f47dc0ef8df16853139fe53a7b41a2209d373371e304bd",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-resizable/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-resizable/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "f10a895001280ed57b87052dfed492eedc6c4de778025f22d004378b441a5e76",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-scroll-area/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-scroll-area/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4287,
+      "sha256": "e94a6f3f2597ac4657ccf0588a7d40e95188ee3243cb78d7a85a52f76c572314",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-select/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-select/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4370,
+      "sha256": "9b93d1794f21b450ed9a2e2e45c33048ad1a98bbb7f5f5deeb149b2094f64635",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-separator/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-separator/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "216bc560a09be8e2001170b37d74072a4d0dc03db5e6f5d4f231cae0daf167ef",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-sheet/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-sheet/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4233,
+      "sha256": "a955cb4abd7ae34ba105c6ee2fde902f250fd155aeb8407fdced51db42bb833c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-sidebar/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-sidebar/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "7cff1635d30e25c0d9d7dd193d8d2190bae10ddf5e5db780c79760368c9701a1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-skeleton/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-skeleton/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4260,
+      "sha256": "5fe711c821b93c772b784a1f24dbfa4157a69a4bf839cd1f74faf63886bdb567",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-slider/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-slider/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4636,
+      "sha256": "b66b4549dc1f3738f3c8509b524b609da5965a46552aa22893195dc619ad35fe",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-sound/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-sound/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4050,
+      "sha256": "38697cf7711e814f61d8c762e00c8f22583e923af625b9f066be45c989c84cb5",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-spinner/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-spinner/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4603,
+      "sha256": "35e0ae6d9996967dc040b8824fd580c7a5e577a8c59d1a90972e7e1840e98e2c",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-streaming-text/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-streaming-text/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4538,
+      "sha256": "c53e670b5e77b17dc20d8fd0f332c37d1290ab881ad261009d857a3106e07265",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-switch/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-switch/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4242,
+      "sha256": "9b7817d61e2703e6cab34c9504aeb9e23ff09f20ac13943443c5135c39883db1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-table/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-table/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4233,
+      "sha256": "a7d40561978bca0601f729bf927c132a96e61e25157c869bf9557cac2f31906a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-tabs/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-tabs/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4476,
+      "sha256": "1801d1361a54afc15ae89c67355fc875ebb2c88fd09b7b88bae9806c6523074e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-task-list/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-task-list/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4269,
+      "sha256": "2c2d4514dfe5eb24f2f7d54aa7083ddd04cc8c6eb80da21c50b916ad540f33cb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-textarea/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-textarea/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4260,
+      "sha256": "46f195c37c0ff6bda81ee7314ba2223370602cba89b7820e48a41375d51ff438",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-toast/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-toast/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4474,
+      "sha256": "5bcad722a5e0e33860ab9c291bf71fed6ddb0fe27a74803be6afc27594d6250b",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-toggle-group/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-toggle-group/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4422,
+      "sha256": "ebc970c5fa1fad9f45ae03731f4697798b81a01f20e2d26819a8151b075737c3",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-tooltip/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-tooltip/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4251,
+      "sha256": "4a3012602852a2e584f09ea54bcf2f3e9a4a29ea1df9f99b78d3443362095e6e",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "kobra-video/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/kobra-video/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 5870,
+      "sha256": "963e932f3e6a00dfcc65edbd2ca60c5121c93e6db939c1345d1e1fa78ae98e15",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "manifest.json",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/manifest.json?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 651475,
+      "sha256": "b9487f2c910434cb0fec9c2b934e9d3335bee52a48f731a2fa35a0c173f0e97a",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "media/turks-and-caicos.webm",
+      "url": "https://kobra.systems/media/turks-and-caicos.webm",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-chart/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-chart/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4109,
+      "sha256": "404c55276e400407653c835478db964922751cf173aef1ec32cd257f4a6e19a1",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-glass/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-glass/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4044,
+      "sha256": "dd7531b411b3d5a3bb2b77f8b92bda99dc9de0507b9e20843400e606a910d69d",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-loader/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-loader/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4100,
+      "sha256": "57780f3aa0263cf1f39a5297b6a674de16dcd3a75b92c1c945dbcc4793bdd78f",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-radius/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-radius/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4120,
+      "sha256": "fa407e9fb5f1261a2ff308659723e210d7594aa3d331edf28df5e984f5924341",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-shadows/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-shadows/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4081,
+      "sha256": "ba6e7e33527a540222128b80b77207bf59b5b385f61f1af38d9bc844e16d5932",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "movements-shimmer/index.html",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/movements-shimmer/index.html?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 4117,
+      "sha256": "ecf908495f89ec29b1c7d61681c8ca7e39823bb18ec650a9377e416ab281bebb",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-accordion.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-accordion.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-advertisement.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-advertisement.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-ai-editor.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-ai-editor.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-alert.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-alert.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-aspect-ratio.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-aspect-ratio.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-attachment.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-attachment.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-avatar.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-avatar.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-badge.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-badge.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-breadcrumb.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-breadcrumb.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-button.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-button.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-calendar.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-calendar.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-card.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-card.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-carousel.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-carousel.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-chart.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-chart.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-chat-history.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-chat-history.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-chat-input.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-chat-input.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-checkbox.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-checkbox.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-code-block.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-code-block.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-collapsible.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-collapsible.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-color-palette.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-color-palette.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-color-picker.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-color-picker.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-combobox.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-combobox.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-command-menu.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-command-menu.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-context-menu.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-context-menu.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-conversation.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-conversation.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-crm-table.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-crm-table.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-dialog.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-dialog.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-direction.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-direction.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-drawer.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-drawer.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-dropdown-menu.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-dropdown-menu.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-empty.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-empty.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-file-diff.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-file-diff.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-filter-chips.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-filter-chips.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-form.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-form.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-grouped-table.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-grouped-table.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-halftone-dots.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-halftone-dots.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-hover-card.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-hover-card.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-image-generation.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-image-generation.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-inline-citations.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-inline-citations.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-input-dissolve.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-input-dissolve.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-input-otp.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-input-otp.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-input.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-input.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-item.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-item.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-kbd.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-kbd.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-lightbox.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-lightbox.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-logo-carousel.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-logo-carousel.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-magnetic-dropzone.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-magnetic-dropzone.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-marker.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-marker.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-menubar.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-menubar.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-message-scroller.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-message-scroller.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-message.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-message.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-multi-select.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-multi-select.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-navigation-menu.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-navigation-menu.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-pagination.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-pagination.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-plan-card.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-plan-card.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-popover.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-popover.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-progress.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-progress.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-qr-code.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-qr-code.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-question-card.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-question-card.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-radio-group.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-radio-group.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-reasoning-steps.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-reasoning-steps.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-resizable.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-resizable.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-scroll-area.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-scroll-area.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-select.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-select.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-separator.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-separator.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-sheet.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-sheet.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-sidebar.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-sidebar.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-skeleton.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-skeleton.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-slider.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-slider.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-sound.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-sound.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-spinner.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-spinner.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-streaming-text.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-streaming-text.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-switch.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-switch.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-table.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-table.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-tabs.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-tabs.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-task-list.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-task-list.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-textarea.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-textarea.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-toast.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-toast.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-toggle-group.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-toggle-group.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-tooltip.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-tooltip.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/kobra-video.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/kobra-video.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-chart.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-chart.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-glass.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-glass.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-loader.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-loader.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-radius.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-radius.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-shadows.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-shadows.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/components/movements-shimmer.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/components/movements-shimmer.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-ai-editor/components/ui/ai-editor.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-ai-editor/components/ui/ai-editor.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-carousel/components/ui/carousel.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-carousel/components/ui/carousel.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-command-menu/components/ui/command-menu.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-command-menu/components/ui/command-menu.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-command-menu/lib/command-filter.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-command-menu/lib/command-filter.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-conversation/components/ui/conversation.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-conversation/components/ui/conversation.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-halftone-dots/components/ui/halftone-dots.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-halftone-dots/components/ui/halftone-dots.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-input-otp/components/ui/input-otp.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-input-otp/components/ui/input-otp.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-navigation-menu/components/ui/navigation-menu.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-navigation-menu/components/ui/navigation-menu.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-sound/components/ui/sound.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-sound/components/ui/sound.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-toast/components/ui/toast.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-toast/components/ui/toast.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-toast/lib/joined-script.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-toast/lib/joined-script.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-toast/lib/smoky-dissolve.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-toast/lib/smoky-dissolve.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/components/ui/video.tsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/components/ui/video.tsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/glass-controls.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/glass-controls.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/GlassRenderer.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/GlassRenderer.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/HtmlCapture.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/HtmlCapture.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/LiquidGlass.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/LiquidGlass.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/defaults.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/defaults.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/index.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/index.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/index.js",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/index.js?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/official-source/kobra-video/lib/liquidglass/shaders.d.ts",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/official-source/kobra-video/lib/liquidglass/shaders.d.ts?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/kobra/demo.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/kobra/demo.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/17364.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/17364.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/24027.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/24027.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/59975.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/59975.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/62958.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/62958.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/67484.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/67484.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "source/recovered/movements/modules/82342.jsx",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/source/recovered/movements/modules/82342.jsx?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "HEAD",
+      "external_donor_resource": false,
+      "status": "pass"
+    },
+    {
+      "path": "styles/kobra.css",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/styles/kobra.css?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 461772,
+      "sha256": "10e36a1991b48c499e50f5551b3f1872cf334cb3e22eaa8367560f3ba73d0289",
+      "exact_local_match": true,
+      "status": "pass"
+    },
+    {
+      "path": "styles/movements.css",
+      "url": "https://nullsec444.github.io/ui-two-sites-comparison/styles/movements.css?verified_commit=5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0",
+      "http_status": 200,
+      "method": "GET",
+      "external_donor_resource": false,
+      "bytes": 118611,
+      "sha256": "188f7ebd6da9ba2b3638e033749ef7bb5e115c96856a44a00f6e608b31d9ed8d",
+      "exact_local_match": true,
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
+  "scope": "Delayed metadata load plus muted play/pause smoke only, not a full video control/animation equivalence oracle.",
+  "results": [
+    {
+      "mode": "original",
+      "metadata": {
+        "mode": "original",
+        "src": "https://kobra.systems/media/turks-and-caicos.webm",
+        "readyState": 1,
+        "duration": 165.031,
+        "error": null,
+        "errors": []
+      },
+      "playback": {
+        "before": 0,
+        "after": 1.333558,
+        "advanced": true,
+        "paused": true
+      },
+      "status": "passed"
+    },
+    {
+      "mode": "reconstructed",
+      "metadata": {
+        "mode": "reconstructed",
+        "src": "https://kobra.systems/media/turks-and-caicos.webm",
+        "readyState": 1,
+        "duration": 165.031,
+        "error": null,
+        "errors": []
+      },
+      "playback": {
+        "before": 0,
+        "after": 1.341211,
+        "advanced": true,
+        "paused": true
+      },
+      "status": "passed"
+    }
+  ],
+  "pass": true
+}

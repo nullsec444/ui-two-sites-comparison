@@ -1,0 +1,5340 @@
+[
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/AreaChart-BaKAH6gj.js",
+    "compiled_file": "original/kobra/AreaChart-BaKAH6gj.js",
+    "recovered_file": "recovered/kobra/AreaChart-BaKAH6gj.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/CSPContext-BMPia1xs.js",
+    "compiled_file": "original/kobra/CSPContext-BMPia1xs.js",
+    "recovered_file": "recovered/kobra/CSPContext-BMPia1xs.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/ClientOnly-Dyrs2hCB.js",
+    "compiled_file": "original/kobra/ClientOnly-Dyrs2hCB.js",
+    "recovered_file": "recovered/kobra/ClientOnly-Dyrs2hCB.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/CompositeItem-vllB9ukv.js",
+    "compiled_file": "original/kobra/CompositeItem-vllB9ukv.js",
+    "recovered_file": "recovered/kobra/CompositeItem-vllB9ukv.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/DirectionContext-CSiJxUVd.js",
+    "compiled_file": "original/kobra/DirectionContext-CSiJxUVd.js",
+    "recovered_file": "recovered/kobra/DirectionContext-CSiJxUVd.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconArrowRight-DerOrAJ3.js",
+    "compiled_file": "original/kobra/IconArrowRight-DerOrAJ3.js",
+    "recovered_file": "recovered/kobra/IconArrowRight-DerOrAJ3.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconArrowUpRight-MjcyEVid.js",
+    "compiled_file": "original/kobra/IconArrowUpRight-MjcyEVid.js",
+    "recovered_file": "recovered/kobra/IconArrowUpRight-MjcyEVid.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconCheck-BGXEIM6U.js",
+    "compiled_file": "original/kobra/IconCheck-BGXEIM6U.js",
+    "recovered_file": "recovered/kobra/IconCheck-BGXEIM6U.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconChevronRight-C9BymwZE.js",
+    "compiled_file": "original/kobra/IconChevronRight-C9BymwZE.js",
+    "recovered_file": "recovered/kobra/IconChevronRight-C9BymwZE.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconCode-Jxt5x2jf.js",
+    "compiled_file": "original/kobra/IconCode-Jxt5x2jf.js",
+    "recovered_file": "recovered/kobra/IconCode-Jxt5x2jf.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconDownload-D9S_20lD.js",
+    "compiled_file": "original/kobra/IconDownload-D9S_20lD.js",
+    "recovered_file": "recovered/kobra/IconDownload-D9S_20lD.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconMinus-C8feF3nd.js",
+    "compiled_file": "original/kobra/IconMinus-C8feF3nd.js",
+    "recovered_file": "recovered/kobra/IconMinus-C8feF3nd.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconPalette-DhaCq_X9.js",
+    "compiled_file": "original/kobra/IconPalette-DhaCq_X9.js",
+    "recovered_file": "recovered/kobra/IconPalette-DhaCq_X9.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconPlus-CcZsF6UA.js",
+    "compiled_file": "original/kobra/IconPlus-CcZsF6UA.js",
+    "recovered_file": "recovered/kobra/IconPlus-CcZsF6UA.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconRotate-cfH2nnph.js",
+    "compiled_file": "original/kobra/IconRotate-cfH2nnph.js",
+    "recovered_file": "recovered/kobra/IconRotate-cfH2nnph.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconSearch-DLrEp44H.js",
+    "compiled_file": "original/kobra/IconSearch-DLrEp44H.js",
+    "recovered_file": "recovered/kobra/IconSearch-DLrEp44H.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconSparkles-8d8gWKdF.js",
+    "compiled_file": "original/kobra/IconSparkles-8d8gWKdF.js",
+    "recovered_file": "recovered/kobra/IconSparkles-8d8gWKdF.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconUser-dpBZ37qP.js",
+    "compiled_file": "original/kobra/IconUser-dpBZ37qP.js",
+    "recovered_file": "recovered/kobra/IconUser-dpBZ37qP.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconVolume-DHGChT-5.js",
+    "compiled_file": "original/kobra/IconVolume-DHGChT-5.js",
+    "recovered_file": "recovered/kobra/IconVolume-DHGChT-5.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/IconVolumeOff-xZ0sbK4Y.js",
+    "compiled_file": "original/kobra/IconVolumeOff-xZ0sbK4Y.js",
+    "recovered_file": "recovered/kobra/IconVolumeOff-xZ0sbK4Y.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/NullStore-DKa5hxry.js",
+    "compiled_file": "original/kobra/NullStore-DKa5hxry.js",
+    "recovered_file": "recovered/kobra/NullStore-DKa5hxry.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/Separator-Cc9V-VRg.js",
+    "compiled_file": "original/kobra/Separator-Cc9V-VRg.js",
+    "recovered_file": "recovered/kobra/Separator-Cc9V-VRg.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/_authed-BdjSftcN.js",
+    "compiled_file": "original/kobra/_authed-BdjSftcN.js",
+    "recovered_file": "recovered/kobra/_authed-BdjSftcN.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "l"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/_name-D147RKIQ.js",
+    "compiled_file": "original/kobra/_name-D147RKIQ.js",
+    "recovered_file": "recovered/kobra/_name-D147RKIQ.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "s"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/account-shell-CSL5M_sN.js",
+    "compiled_file": "original/kobra/account-shell-CSL5M_sN.js",
+    "recovered_file": "recovered/kobra/account-shell-CSL5M_sN.jsx",
+    "jsx_elements": 8,
+    "runtime_aliases": [
+      "S"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/adaptiveOriginMiddleware-Ds70W8x-.js",
+    "compiled_file": "original/kobra/adaptiveOriginMiddleware-Ds70W8x-.js",
+    "recovered_file": "recovered/kobra/adaptiveOriginMiddleware-Ds70W8x-.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/agent-guide-BI8j0aKR.js",
+    "compiled_file": "original/kobra/agent-guide-BI8j0aKR.js",
+    "recovered_file": "recovered/kobra/agent-guide-BI8j0aKR.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/app-command-menu-xul_24_6.js",
+    "compiled_file": "original/kobra/app-command-menu-xul_24_6.js",
+    "recovered_file": "recovered/kobra/app-command-menu-xul_24_6.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "j"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/auth-B4_ie6aM.js",
+    "compiled_file": "original/kobra/auth-B4_ie6aM.js",
+    "recovered_file": "recovered/kobra/auth-B4_ie6aM.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/auth-form-B7xuKosH.js",
+    "compiled_file": "original/kobra/auth-form-B7xuKosH.js",
+    "recovered_file": "recovered/kobra/auth-form-B7xuKosH.jsx",
+    "jsx_elements": 30,
+    "runtime_aliases": [
+      "Q"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/badge-BPpa500U.js",
+    "compiled_file": "original/kobra/badge-BPpa500U.js",
+    "recovered_file": "recovered/kobra/badge-BPpa500U.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/button-6T-mn2Pp.js",
+    "compiled_file": "original/kobra/button-6T-mn2Pp.js",
+    "recovered_file": "recovered/kobra/button-6T-mn2Pp.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "u"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/calendar-DAz9Duse.js",
+    "compiled_file": "original/kobra/calendar-DAz9Duse.js",
+    "recovered_file": "recovered/kobra/calendar-DAz9Duse.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "Y"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/chart-preview-DQm8aFYK.js",
+    "compiled_file": "original/kobra/chart-preview-DQm8aFYK.js",
+    "recovered_file": "recovered/kobra/chart-preview-DQm8aFYK.jsx",
+    "jsx_elements": 260,
+    "runtime_aliases": [
+      "j"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/code-block-8j4abSW0.js",
+    "compiled_file": "original/kobra/code-block-8j4abSW0.js",
+    "recovered_file": "recovered/kobra/code-block-8j4abSW0.jsx",
+    "jsx_elements": 11,
+    "runtime_aliases": [
+      "O"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/code-block-DCbN5bqs.js",
+    "compiled_file": "original/kobra/code-block-DCbN5bqs.js",
+    "recovered_file": "recovered/kobra/code-block-DCbN5bqs.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/compare._slug-DwuGefjp.js",
+    "compiled_file": "original/kobra/compare._slug-DwuGefjp.js",
+    "recovered_file": "recovered/kobra/compare._slug-DwuGefjp.jsx",
+    "jsx_elements": 42,
+    "runtime_aliases": [
+      "A"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/comparisons-Bvgw9jnW.js",
+    "compiled_file": "original/kobra/comparisons-Bvgw9jnW.js",
+    "recovered_file": "recovered/kobra/comparisons-Bvgw9jnW.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/component-catalog-x55m0xeC.js",
+    "compiled_file": "original/kobra/component-catalog-x55m0xeC.js",
+    "recovered_file": "recovered/kobra/component-catalog-x55m0xeC.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/component-gallery-DKIbyCvz.js",
+    "compiled_file": "original/kobra/component-gallery-DKIbyCvz.js",
+    "recovered_file": "recovered/kobra/component-gallery-DKIbyCvz.jsx",
+    "jsx_elements": 592,
+    "runtime_aliases": [
+      "U"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/composite-BDauBs8w.js",
+    "compiled_file": "original/kobra/composite-BDauBs8w.js",
+    "recovered_file": "recovered/kobra/composite-BDauBs8w.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/cookie-consent-V7NW5MtZ.js",
+    "compiled_file": "original/kobra/cookie-consent-V7NW5MtZ.js",
+    "recovered_file": "recovered/kobra/cookie-consent-V7NW5MtZ.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/copy-check-C8jXc5g7.js",
+    "compiled_file": "original/kobra/copy-check-C8jXc5g7.js",
+    "recovered_file": "recovered/kobra/copy-check-C8jXc5g7.jsx",
+    "jsx_elements": 3,
+    "runtime_aliases": [
+      "g"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/createBaseUIEventDetails-s-LN--f1.js",
+    "compiled_file": "original/kobra/createBaseUIEventDetails-s-LN--f1.js",
+    "recovered_file": "recovered/kobra/createBaseUIEventDetails-s-LN--f1.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/createReactComponent-DqK5J7gw.js",
+    "compiled_file": "original/kobra/createReactComponent-DqK5J7gw.js",
+    "recovered_file": "recovered/kobra/createReactComponent-DqK5J7gw.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dashboard-Fi99gga5.js",
+    "compiled_file": "original/kobra/dashboard-Fi99gga5.js",
+    "recovered_file": "recovered/kobra/dashboard-Fi99gga5.jsx",
+    "jsx_elements": 27,
+    "runtime_aliases": [
+      "q"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dates-CXgAlU_g.js",
+    "compiled_file": "original/kobra/dates-CXgAlU_g.js",
+    "recovered_file": "recovered/kobra/dates-CXgAlU_g.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dialog-D5lt4KMe.js",
+    "compiled_file": "original/kobra/dialog-D5lt4KMe.js",
+    "recovered_file": "recovered/kobra/dialog-D5lt4KMe.jsx",
+    "jsx_elements": 28,
+    "runtime_aliases": [
+      "X"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dialog-steps-B3UkBr0D.js",
+    "compiled_file": "original/kobra/dialog-steps-B3UkBr0D.js",
+    "recovered_file": "recovered/kobra/dialog-steps-B3UkBr0D.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dist-BXz-sUdB.js",
+    "compiled_file": "original/kobra/dist-BXz-sUdB.js",
+    "recovered_file": "recovered/kobra/dist-BXz-sUdB.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dist-CFNp_irW.js",
+    "compiled_file": "original/kobra/dist-CFNp_irW.js",
+    "recovered_file": "recovered/kobra/dist-CFNp_irW.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dist-Dgli2vvz.js",
+    "compiled_file": "original/kobra/dist-Dgli2vvz.js",
+    "recovered_file": "recovered/kobra/dist-Dgli2vvz.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dist-XKQ6uix2.js",
+    "compiled_file": "original/kobra/dist-XKQ6uix2.js",
+    "recovered_file": "recovered/kobra/dist-XKQ6uix2.jsx",
+    "jsx_elements": 287,
+    "runtime_aliases": [
+      "a"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dock-editor-uRqgAH2H.js",
+    "compiled_file": "original/kobra/dock-editor-uRqgAH2H.js",
+    "recovered_file": "recovered/kobra/dock-editor-uRqgAH2H.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "Al"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/download-zip-C0to-1sI.js",
+    "compiled_file": "original/kobra/download-zip-C0to-1sI.js",
+    "recovered_file": "recovered/kobra/download-zip-C0to-1sI.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/downloads-CcW5S-X6.js",
+    "compiled_file": "original/kobra/downloads-CcW5S-X6.js",
+    "recovered_file": "recovered/kobra/downloads-CcW5S-X6.jsx",
+    "jsx_elements": 42,
+    "runtime_aliases": [
+      "K"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/drawer-BhrHYSlC.js",
+    "compiled_file": "original/kobra/drawer-BhrHYSlC.js",
+    "recovered_file": "recovered/kobra/drawer-BhrHYSlC.jsx",
+    "jsx_elements": 3,
+    "runtime_aliases": [
+      "b"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/drawer-zRR80khJ.js",
+    "compiled_file": "original/kobra/drawer-zRR80khJ.js",
+    "recovered_file": "recovered/kobra/drawer-zRR80khJ.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "s"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/dropdown-menu-BXn32Y_k.js",
+    "compiled_file": "original/kobra/dropdown-menu-BXn32Y_k.js",
+    "recovered_file": "recovered/kobra/dropdown-menu-BXn32Y_k.jsx",
+    "jsx_elements": 6,
+    "runtime_aliases": [
+      "$"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/email-receipt-CTE3W4Vg.js",
+    "compiled_file": "original/kobra/email-receipt-CTE3W4Vg.js",
+    "recovered_file": "recovered/kobra/email-receipt-CTE3W4Vg.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/esm-DqI1dutk.js",
+    "compiled_file": "original/kobra/esm-DqI1dutk.js",
+    "recovered_file": "recovered/kobra/esm-DqI1dutk.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/file-diff-C90Cj5iq.js",
+    "compiled_file": "original/kobra/file-diff-C90Cj5iq.js",
+    "recovered_file": "recovered/kobra/file-diff-C90Cj5iq.jsx",
+    "jsx_elements": 21,
+    "runtime_aliases": [
+      "p"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/file-diff-D0kHhE26.js",
+    "compiled_file": "original/kobra/file-diff-D0kHhE26.js",
+    "recovered_file": "recovered/kobra/file-diff-D0kHhE26.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/form-ASkYgZLL.js",
+    "compiled_file": "original/kobra/form-ASkYgZLL.js",
+    "recovered_file": "recovered/kobra/form-ASkYgZLL.jsx",
+    "jsx_elements": 3,
+    "runtime_aliases": [
+      "$"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/form-CPKlO2Tl.js",
+    "compiled_file": "original/kobra/form-CPKlO2Tl.js",
+    "recovered_file": "recovered/kobra/form-CPKlO2Tl.jsx",
+    "jsx_elements": 2,
+    "runtime_aliases": [
+      "E"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/format-nE6SVSKo.js",
+    "compiled_file": "original/kobra/format-nE6SVSKo.js",
+    "recovered_file": "recovered/kobra/format-nE6SVSKo.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/hash-scroll-DjxExjN6.js",
+    "compiled_file": "original/kobra/hash-scroll-DjxExjN6.js",
+    "recovered_file": "recovered/kobra/hash-scroll-DjxExjN6.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/headings-DvAJehmF.js",
+    "compiled_file": "original/kobra/headings-DvAJehmF.js",
+    "recovered_file": "recovered/kobra/headings-DvAJehmF.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/index-C2FRa1ig.js",
+    "compiled_file": "original/kobra/index-C2FRa1ig.js",
+    "recovered_file": "recovered/kobra/index-C2FRa1ig.jsx",
+    "jsx_elements": 65,
+    "runtime_aliases": [
+      "M"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/inertValue-BJdpJaPH.js",
+    "compiled_file": "original/kobra/inertValue-BJdpJaPH.js",
+    "recovered_file": "recovered/kobra/inertValue-BJdpJaPH.jsx",
+    "jsx_elements": 2,
+    "runtime_aliases": [
+      "W"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/input-group-BYgV-9P-.js",
+    "compiled_file": "original/kobra/input-group-BYgV-9P-.js",
+    "recovered_file": "recovered/kobra/input-group-BYgV-9P-.jsx",
+    "jsx_elements": 4,
+    "runtime_aliases": [
+      "l"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/input-n4StpLEZ.js",
+    "compiled_file": "original/kobra/input-n4StpLEZ.js",
+    "recovered_file": "recovered/kobra/input-n4StpLEZ.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "x"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/joined-script-ChN2trS6.js",
+    "compiled_file": "original/kobra/joined-script-ChN2trS6.js",
+    "recovered_file": "recovered/kobra/joined-script-ChN2trS6.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/jsx-runtime-Ciaf_P-h.js",
+    "compiled_file": "original/kobra/jsx-runtime-Ciaf_P-h.js",
+    "recovered_file": "recovered/kobra/jsx-runtime-Ciaf_P-h.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/label-kY8Qa3sh.js",
+    "compiled_file": "original/kobra/label-kY8Qa3sh.js",
+    "recovered_file": "recovered/kobra/label-kY8Qa3sh.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "o"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/lazyRouteComponent-C8QcKJDS.js",
+    "compiled_file": "original/kobra/lazyRouteComponent-C8QcKJDS.js",
+    "recovered_file": "recovered/kobra/lazyRouteComponent-C8QcKJDS.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "S"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/legal-page-CUjvlAFI.js",
+    "compiled_file": "original/kobra/legal-page-CUjvlAFI.js",
+    "recovered_file": "recovered/kobra/legal-page-CUjvlAFI.jsx",
+    "jsx_elements": 9,
+    "runtime_aliases": [
+      "o"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/link-CKv6YT18.js",
+    "compiled_file": "original/kobra/link-CKv6YT18.js",
+    "recovered_file": "recovered/kobra/link-CKv6YT18.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/liquidglass-Dw2iSKe-.js",
+    "compiled_file": "original/kobra/liquidglass-Dw2iSKe-.js",
+    "recovered_file": "recovered/kobra/liquidglass-Dw2iSKe-.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/liquidglass-L6NV62W4-BFipGF63.js",
+    "compiled_file": "original/kobra/liquidglass-L6NV62W4-BFipGF63.js",
+    "recovered_file": "recovered/kobra/liquidglass-L6NV62W4-BFipGF63.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/login-CQv4xzjD.js",
+    "compiled_file": "original/kobra/login-CQv4xzjD.js",
+    "recovered_file": "recovered/kobra/login-CQv4xzjD.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "a"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/module-C6QnPPYk.js",
+    "compiled_file": "original/kobra/module-C6QnPPYk.js",
+    "recovered_file": "recovered/kobra/module-C6QnPPYk.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/navigation-BDFCeXAx.js",
+    "compiled_file": "original/kobra/navigation-BDFCeXAx.js",
+    "recovered_file": "recovered/kobra/navigation-BDFCeXAx.jsx",
+    "jsx_elements": 22,
+    "runtime_aliases": [
+      "_"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/navigation-example-SI1YQTgl.js",
+    "compiled_file": "original/kobra/navigation-example-SI1YQTgl.js",
+    "recovered_file": "recovered/kobra/navigation-example-SI1YQTgl.jsx",
+    "jsx_elements": 4,
+    "runtime_aliases": [
+      "J"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/password-input-rfTSAwzh.js",
+    "compiled_file": "original/kobra/password-input-rfTSAwzh.js",
+    "recovered_file": "recovered/kobra/password-input-rfTSAwzh.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "p"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/persian-DtRiih84.js",
+    "compiled_file": "original/kobra/persian-DtRiih84.js",
+    "recovered_file": "recovered/kobra/persian-DtRiih84.jsx",
+    "jsx_elements": 27,
+    "runtime_aliases": [
+      "Q"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/plans-C5gnmWKf.js",
+    "compiled_file": "original/kobra/plans-C5gnmWKf.js",
+    "recovered_file": "recovered/kobra/plans-C5gnmWKf.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/playground-BFoI71NC.js",
+    "compiled_file": "original/kobra/playground-BFoI71NC.js",
+    "recovered_file": "recovered/kobra/playground-BFoI71NC.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/playground-scope-DN31P4l7.js",
+    "compiled_file": "original/kobra/playground-scope-DN31P4l7.js",
+    "recovered_file": "recovered/kobra/playground-scope-DN31P4l7.jsx",
+    "jsx_elements": 34,
+    "runtime_aliases": [
+      "q"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/preload-helper-Czpn1I53.js",
+    "compiled_file": "original/kobra/preload-helper-Czpn1I53.js",
+    "recovered_file": "recovered/kobra/preload-helper-Czpn1I53.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/pricing-D-mnvsJx.js",
+    "compiled_file": "original/kobra/pricing-D-mnvsJx.js",
+    "recovered_file": "recovered/kobra/pricing-D-mnvsJx.jsx",
+    "jsx_elements": 119,
+    "runtime_aliases": [
+      "V"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/pricing-faq-DklJK1Zr.js",
+    "compiled_file": "original/kobra/pricing-faq-DklJK1Zr.js",
+    "recovered_file": "recovered/kobra/pricing-faq-DklJK1Zr.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/privacy-DLh_J_nj.js",
+    "compiled_file": "original/kobra/privacy-DLh_J_nj.js",
+    "recovered_file": "recovered/kobra/privacy-DLh_J_nj.jsx",
+    "jsx_elements": 31,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/queries-VI_aT-w4.js",
+    "compiled_file": "original/kobra/queries-VI_aT-w4.js",
+    "recovered_file": "recovered/kobra/queries-VI_aT-w4.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "he"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/react-BGf_lakQ.js",
+    "compiled_file": "original/kobra/react-BGf_lakQ.js",
+    "recovered_file": "recovered/kobra/react-BGf_lakQ.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "c"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/react-dom-U4kpXZKZ.js",
+    "compiled_file": "original/kobra/react-dom-U4kpXZKZ.js",
+    "recovered_file": "recovered/kobra/react-dom-U4kpXZKZ.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/registry-B0pwistY.js",
+    "compiled_file": "original/kobra/registry-B0pwistY.js",
+    "recovered_file": "recovered/kobra/registry-B0pwistY.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/registry-setup-BHCmbDEX.js",
+    "compiled_file": "original/kobra/registry-setup-BHCmbDEX.js",
+    "recovered_file": "recovered/kobra/registry-setup-BHCmbDEX.jsx",
+    "jsx_elements": 9,
+    "runtime_aliases": [
+      "A"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/resizable-CBd1JYo9.js",
+    "compiled_file": "original/kobra/resizable-CBd1JYo9.js",
+    "recovered_file": "recovered/kobra/resizable-CBd1JYo9.jsx",
+    "jsx_elements": 22,
+    "runtime_aliases": [
+      "l"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/resolution-C19ZFU1I.js",
+    "compiled_file": "original/kobra/resolution-C19ZFU1I.js",
+    "recovered_file": "recovered/kobra/resolution-C19ZFU1I.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "a"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/rival-marks-D5KXjrQ7.js",
+    "compiled_file": "original/kobra/rival-marks-D5KXjrQ7.js",
+    "recovered_file": "recovered/kobra/rival-marks-D5KXjrQ7.jsx",
+    "jsx_elements": 25,
+    "runtime_aliases": [
+      "n"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/rolldown-runtime-B0Z9INg1.js",
+    "compiled_file": "original/kobra/rolldown-runtime-B0Z9INg1.js",
+    "recovered_file": "recovered/kobra/rolldown-runtime-B0Z9INg1.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/root-DLTE-HSj.js",
+    "compiled_file": "original/kobra/root-DLTE-HSj.js",
+    "recovered_file": "recovered/kobra/root-DLTE-HSj.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/schemas-DULXcl3Q.js",
+    "compiled_file": "original/kobra/schemas-DULXcl3Q.js",
+    "recovered_file": "recovered/kobra/schemas-DULXcl3Q.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/seat-stepper-DQlAyGo_.js",
+    "compiled_file": "original/kobra/seat-stepper-DQlAyGo_.js",
+    "recovered_file": "recovered/kobra/seat-stepper-DQlAyGo_.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "s"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/seats-bChHQn7R.js",
+    "compiled_file": "original/kobra/seats-bChHQn7R.js",
+    "recovered_file": "recovered/kobra/seats-bChHQn7R.jsx",
+    "jsx_elements": 6,
+    "runtime_aliases": [
+      "S"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/seo-CEr-E37r.js",
+    "compiled_file": "original/kobra/seo-CEr-E37r.js",
+    "recovered_file": "recovered/kobra/seo-CEr-E37r.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/shim-DHzQdBGf.js",
+    "compiled_file": "original/kobra/shim-DHzQdBGf.js",
+    "recovered_file": "recovered/kobra/shim-DHzQdBGf.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/sidebar.preview-H9nNG1dz.js",
+    "compiled_file": "original/kobra/sidebar.preview-H9nNG1dz.js",
+    "recovered_file": "recovered/kobra/sidebar.preview-H9nNG1dz.jsx",
+    "jsx_elements": 10,
+    "runtime_aliases": [
+      "x"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/site-footer-BfDpTxpY.js",
+    "compiled_file": "original/kobra/site-footer-BfDpTxpY.js",
+    "recovered_file": "recovered/kobra/site-footer-BfDpTxpY.jsx",
+    "jsx_elements": 29,
+    "runtime_aliases": [
+      "d"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/site-header-D9kcq_4U.js",
+    "compiled_file": "original/kobra/site-header-D9kcq_4U.js",
+    "recovered_file": "recovered/kobra/site-header-D9kcq_4U.jsx",
+    "jsx_elements": 8,
+    "runtime_aliases": [
+      "c"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/slider-C3jlw4B9.js",
+    "compiled_file": "original/kobra/slider-C3jlw4B9.js",
+    "recovered_file": "recovered/kobra/slider-C3jlw4B9.jsx",
+    "jsx_elements": 40,
+    "runtime_aliases": [
+      "B"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/slider-CLiqyYx3.js",
+    "compiled_file": "original/kobra/slider-CLiqyYx3.js",
+    "recovered_file": "recovered/kobra/slider-CLiqyYx3.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/slug-redirects-5jXsv26S.js",
+    "compiled_file": "original/kobra/slug-redirects-5jXsv26S.js",
+    "recovered_file": "recovered/kobra/slug-redirects-5jXsv26S.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/snap-stops-D5HwDIF7.js",
+    "compiled_file": "original/kobra/snap-stops-D5HwDIF7.js",
+    "recovered_file": "recovered/kobra/snap-stops-D5HwDIF7.jsx",
+    "jsx_elements": 5,
+    "runtime_aliases": [
+      "o"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/sound-BCknqSEK.js",
+    "compiled_file": "original/kobra/sound-BCknqSEK.js",
+    "recovered_file": "recovered/kobra/sound-BCknqSEK.jsx",
+    "jsx_elements": 10,
+    "runtime_aliases": [
+      "o"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/streaming-text-Dxk_F3bc.js",
+    "compiled_file": "original/kobra/streaming-text-Dxk_F3bc.js",
+    "recovered_file": "recovered/kobra/streaming-text-Dxk_F3bc.jsx",
+    "jsx_elements": 6,
+    "runtime_aliases": [
+      "V"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/table-B2gZYvbu.js",
+    "compiled_file": "original/kobra/table-B2gZYvbu.js",
+    "recovered_file": "recovered/kobra/table-B2gZYvbu.jsx",
+    "jsx_elements": 9,
+    "runtime_aliases": [
+      "s"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/team-phbSrE0Z.js",
+    "compiled_file": "original/kobra/team-phbSrE0Z.js",
+    "recovered_file": "recovered/kobra/team-phbSrE0Z.jsx",
+    "jsx_elements": 21,
+    "runtime_aliases": [
+      "U"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/terms-NPdgg1s2.js",
+    "compiled_file": "original/kobra/terms-NPdgg1s2.js",
+    "recovered_file": "recovered/kobra/terms-NPdgg1s2.jsx",
+    "jsx_elements": 25,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/text-link-BeCRHyfK.js",
+    "compiled_file": "original/kobra/text-link-BeCRHyfK.js",
+    "recovered_file": "recovered/kobra/text-link-BeCRHyfK.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "n"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/theme-switch-DOqINaro.js",
+    "compiled_file": "original/kobra/theme-switch-DOqINaro.js",
+    "recovered_file": "recovered/kobra/theme-switch-DOqINaro.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/theme-toggle-Dc0A54_c.js",
+    "compiled_file": "original/kobra/theme-toggle-Dc0A54_c.js",
+    "recovered_file": "recovered/kobra/theme-toggle-Dc0A54_c.jsx",
+    "jsx_elements": 2,
+    "runtime_aliases": [
+      "s"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/toast-DvN-c943.js",
+    "compiled_file": "original/kobra/toast-DvN-c943.js",
+    "recovered_file": "recovered/kobra/toast-DvN-c943.jsx",
+    "jsx_elements": 15,
+    "runtime_aliases": [
+      "E"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/tooltip-C51luKYh.js",
+    "compiled_file": "original/kobra/tooltip-C51luKYh.js",
+    "recovered_file": "recovered/kobra/tooltip-C51luKYh.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "G"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/trackpad-swipe-MOPDzk0v.js",
+    "compiled_file": "original/kobra/trackpad-swipe-MOPDzk0v.js",
+    "recovered_file": "recovered/kobra/trackpad-swipe-MOPDzk0v.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/use-narrow-shell-CsfKh4xy.js",
+    "compiled_file": "original/kobra/use-narrow-shell-CsfKh4xy.js",
+    "recovered_file": "recovered/kobra/use-narrow-shell-CsfKh4xy.jsx",
+    "jsx_elements": 634,
+    "runtime_aliases": [
+      "Z"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/use-reduced-motion-BdikIsVN.js",
+    "compiled_file": "original/kobra/use-reduced-motion-BdikIsVN.js",
+    "recovered_file": "recovered/kobra/use-reduced-motion-BdikIsVN.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useClick-DnDtMIzB.js",
+    "compiled_file": "original/kobra/useClick-DnDtMIzB.js",
+    "recovered_file": "recovered/kobra/useClick-DnDtMIzB.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useCompositeListItem-4pOaQAyk.js",
+    "compiled_file": "original/kobra/useCompositeListItem-4pOaQAyk.js",
+    "recovered_file": "recovered/kobra/useCompositeListItem-4pOaQAyk.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "l"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useControlled-Cp_s8ypY.js",
+    "compiled_file": "original/kobra/useControlled-Cp_s8ypY.js",
+    "recovered_file": "recovered/kobra/useControlled-Cp_s8ypY.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useNavigate-0DeSS6Ji.js",
+    "compiled_file": "original/kobra/useNavigate-0DeSS6Ji.js",
+    "recovered_file": "recovered/kobra/useNavigate-0DeSS6Ji.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/usePositioner-DP5NUI1y.js",
+    "compiled_file": "original/kobra/usePositioner-DP5NUI1y.js",
+    "recovered_file": "recovered/kobra/usePositioner-DP5NUI1y.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useRegisterFieldControl-AYSnYd0j.js",
+    "compiled_file": "original/kobra/useRegisterFieldControl-AYSnYd0j.js",
+    "recovered_file": "recovered/kobra/useRegisterFieldControl-AYSnYd0j.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useRender-B7P-tYsb.js",
+    "compiled_file": "original/kobra/useRender-B7P-tYsb.js",
+    "recovered_file": "recovered/kobra/useRender-B7P-tYsb.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useRenderElement-BLCXgiyH.js",
+    "compiled_file": "original/kobra/useRenderElement-BLCXgiyH.js",
+    "recovered_file": "recovered/kobra/useRenderElement-BLCXgiyH.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useRouteContext-BB1W4XMH.js",
+    "compiled_file": "original/kobra/useRouteContext-BB1W4XMH.js",
+    "recovered_file": "recovered/kobra/useRouteContext-BB1W4XMH.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useStore-CeyF0_C9.js",
+    "compiled_file": "original/kobra/useStore-CeyF0_C9.js",
+    "recovered_file": "recovered/kobra/useStore-CeyF0_C9.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useSuspenseQuery-qokUvqgA.js",
+    "compiled_file": "original/kobra/useSuspenseQuery-qokUvqgA.js",
+    "recovered_file": "recovered/kobra/useSuspenseQuery-qokUvqgA.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/useValueChanged-DFGH-h8Z.js",
+    "compiled_file": "original/kobra/useValueChanged-DFGH-h8Z.js",
+    "recovered_file": "recovered/kobra/useValueChanged-DFGH-h8Z.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/utils-BILtoX7V.js",
+    "compiled_file": "original/kobra/utils-BILtoX7V.js",
+    "recovered_file": "recovered/kobra/utils-BILtoX7V.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/utils-WkhMP9hs.js",
+    "compiled_file": "original/kobra/utils-WkhMP9hs.js",
+    "recovered_file": "recovered/kobra/utils-WkhMP9hs.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/video-BOsS13Ra.js",
+    "compiled_file": "original/kobra/video-BOsS13Ra.js",
+    "recovered_file": "recovered/kobra/video-BOsS13Ra.jsx",
+    "jsx_elements": 61,
+    "runtime_aliases": [
+      "x"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/video-K3_Q4fy0.js",
+    "compiled_file": "original/kobra/video-K3_Q4fy0.js",
+    "recovered_file": "recovered/kobra/video-K3_Q4fy0.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "i"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/visuallyHidden-Cn7Rn7MY.js",
+    "compiled_file": "original/kobra/visuallyHidden-Cn7Rn7MY.js",
+    "recovered_file": "recovered/kobra/visuallyHidden-Cn7Rn7MY.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/with-selector-B-6hKQqB.js",
+    "compiled_file": "original/kobra/with-selector-B-6hKQqB.js",
+    "recovered_file": "recovered/kobra/with-selector-B-6hKQqB.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "kobra",
+    "original_url": "https://kobra.systems/assets/zen-4HBa_J5C.js",
+    "compiled_file": "original/kobra/zen-4HBa_J5C.js",
+    "recovered_file": "recovered/kobra/zen-4HBa_J5C.jsx",
+    "jsx_elements": 33,
+    "runtime_aliases": [
+      "m"
+    ],
+    "kind": "compiled-JS-to-JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 18137,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/18137.js",
+    "recovered_file": "recovered/movements/modules/18137.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "DEFAULT_GLASS",
+      "GLASS_LIMITS",
+      "GLASS_SATURATE",
+      "clampAber",
+      "clampBend",
+      "clampBlur",
+      "clampHeight",
+      "clampRadius",
+      "clampThick",
+      "clampTint",
+      "clampWidth",
+      "displacementOffset",
+      "glassBoxShadow",
+      "glassLens"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 95236,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/95236.js",
+    "recovered_file": "recovered/movements/modules/95236.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "GlassSurface"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 26220,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/26220.js",
+    "recovered_file": "recovered/movements/modules/26220.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "ExperimentIcon"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 16542,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/16542.js",
+    "recovered_file": "recovered/movements/modules/16542.jsx",
+    "jsx_elements": 36,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "ExampleCard",
+      "ExperimentLayout"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 45780,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/45780.js",
+    "recovered_file": "recovered/movements/modules/45780.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "easeCubicInOut"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 87522,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/87522.js",
+    "recovered_file": "recovered/movements/modules/87522.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "quadIn",
+      "quadInOut",
+      "quadOut"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 36832,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/36832.js",
+    "recovered_file": "recovered/movements/modules/36832.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "DEFAULT_ACTIVE_COLOR",
+      "DEFAULT_FRAME_DURATION",
+      "DEFAULT_INACTIVE_COLOR",
+      "DEFAULT_LOADER_SIZE",
+      "DEFAULT_TRANSITION_DURATION",
+      "LOADER_COLOR_PRESETS",
+      "LOADER_GRID_SIZES",
+      "LOADER_PRESETS",
+      "LOADER_TRANSITIONS",
+      "buildDotLoaderConfig",
+      "createFrameId",
+      "createFrameIds",
+      "createPulseFrames",
+      "createSpinnerFrames",
+      "createSweepFrames",
+      "emptyFrame",
+      "framesForPreset",
+      "indicesFromFrame",
+      "normalizeHex",
+      "resizeFrame"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33966,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/33966.js",
+    "recovered_file": "recovered/movements/modules/33966.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CHART_COLORS",
+      "CHART_EASINGS",
+      "CHART_EDGE_FADE_MASK",
+      "CHART_SIZES",
+      "CHART_VIEWBOX",
+      "DEFAULT_CHART_DATA",
+      "buildChartGeometry",
+      "formatChartDataJson",
+      "getChartColor",
+      "getChartSize",
+      "parseChartDataJson",
+      "randomChartData"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 13963,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/13963.js",
+    "recovered_file": "recovered/movements/modules/13963.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CHART_PACKAGE",
+      "GLASS_PACKAGE",
+      "LOADER_PACKAGE",
+      "chartPackageSnippet",
+      "glassPackageSnippet",
+      "loaderPackageSnippet"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 85761,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/85761.js",
+    "recovered_file": "recovered/movements/modules/85761.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "c"
+    ],
+    "exports": [
+      "PackageUsage"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 93340,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/93340.js",
+    "recovered_file": "recovered/movements/modules/93340.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "default"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 16684,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/16684.js",
+    "recovered_file": "recovered/movements/modules/16684.jsx",
+    "jsx_elements": 4,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "DotLoader"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 17364,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/17364.js",
+    "recovered_file": "recovered/movements/modules/17364.jsx",
+    "jsx_elements": 12,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "LoaderExamples",
+      "LoaderTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 14525,
+    "original_url": "https://movements.dev/_next/static/chunks/02w7rrxaquen0.js",
+    "compiled_file": "original/movements/modules/14525.js",
+    "recovered_file": "recovered/movements/modules/14525.jsx",
+    "jsx_elements": 34,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "LoaderStudio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 22673,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/22673.js",
+    "recovered_file": "recovered/movements/modules/22673.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "clamp",
+      "hexToRgb",
+      "hsvToRgb",
+      "hueToCss",
+      "rgbToHex",
+      "rgbToHsv"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 54612,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/54612.js",
+    "recovered_file": "recovered/movements/modules/54612.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "LayoutGroupContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 29301,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/29301.js",
+    "recovered_file": "recovered/movements/modules/29301.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useConstant"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 90610,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/90610.js",
+    "recovered_file": "recovered/movements/modules/90610.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useIsomorphicLayoutEffect"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 99137,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/99137.js",
+    "recovered_file": "recovered/movements/modules/99137.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "PresenceContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 96563,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/96563.js",
+    "recovered_file": "recovered/movements/modules/96563.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isObject"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 92511,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/92511.js",
+    "recovered_file": "recovered/movements/modules/92511.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isHTMLElement"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 40048,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/40048.js",
+    "recovered_file": "recovered/movements/modules/40048.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "MotionConfigContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 26325,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/26325.js",
+    "recovered_file": "recovered/movements/modules/26325.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "usePresence"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 94765,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/94765.js",
+    "recovered_file": "recovered/movements/modules/94765.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "AnimatePresence"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 6449,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/6449.js",
+    "recovered_file": "recovered/movements/modules/6449.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "transformPropOrder",
+      "transformProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 1077,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/1077.js",
+    "recovered_file": "recovered/movements/modules/1077.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "clamp"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 19144,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/19144.js",
+    "recovered_file": "recovered/movements/modules/19144.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "rgba"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33993,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/33993.js",
+    "recovered_file": "recovered/movements/modules/33993.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "hex"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 94511,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/94511.js",
+    "recovered_file": "recovered/movements/modules/94511.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "degrees",
+      "percent",
+      "progressPercentage",
+      "px",
+      "vh",
+      "vw"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 36839,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/36839.js",
+    "recovered_file": "recovered/movements/modules/36839.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "hsla"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 9861,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/9861.js",
+    "recovered_file": "recovered/movements/modules/9861.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "color"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 66564,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/66564.js",
+    "recovered_file": "recovered/movements/modules/66564.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "analyseComplexValue",
+      "complex"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 66919,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/66919.js",
+    "recovered_file": "recovered/movements/modules/66919.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createBox",
+      "createDelta"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 92548,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/92548.js",
+    "recovered_file": "recovered/movements/modules/92548.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isMotionValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 4028,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/4028.js",
+    "recovered_file": "recovered/movements/modules/4028.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "positionalKeys"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11764,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/11764.js",
+    "recovered_file": "recovered/movements/modules/11764.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "invariant",
+      "warning"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 24411,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/24411.js",
+    "recovered_file": "recovered/movements/modules/24411.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "containsCSSVariable",
+      "isCSSVariableName",
+      "isCSSVariableToken"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 30548,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/30548.js",
+    "recovered_file": "recovered/movements/modules/30548.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "noop"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 69699,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/69699.js",
+    "recovered_file": "recovered/movements/modules/69699.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "MotionGlobalConfig"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 98582,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/98582.js",
+    "recovered_file": "recovered/movements/modules/98582.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "cancelFrame",
+      "frame",
+      "frameData",
+      "frameSteps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 47239,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/47239.js",
+    "recovered_file": "recovered/movements/modules/47239.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "KeyframeResolver",
+      "flushKeyframeResolvers"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 48681,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/48681.js",
+    "recovered_file": "recovered/movements/modules/48681.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "millisecondsToSeconds",
+      "secondsToMilliseconds"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 83936,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/83936.js",
+    "recovered_file": "recovered/movements/modules/83936.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "addUniqueItem",
+      "removeItem"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 96765,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/96765.js",
+    "recovered_file": "recovered/movements/modules/96765.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "SubscriptionManager"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 29534,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/29534.js",
+    "recovered_file": "recovered/movements/modules/29534.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "setStyle"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 44182,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/44182.js",
+    "recovered_file": "recovered/movements/modules/44182.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "memo"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 86179,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/86179.js",
+    "recovered_file": "recovered/movements/modules/86179.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getFinalKeyframe"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 27420,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/27420.js",
+    "recovered_file": "recovered/movements/modules/27420.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "WithPromise"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 97373,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/97373.js",
+    "recovered_file": "recovered/movements/modules/97373.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isBezierDefinition"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 96923,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/96923.js",
+    "recovered_file": "recovered/movements/modules/96923.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "generateLinearEasing"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 79714,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/79714.js",
+    "recovered_file": "recovered/movements/modules/79714.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isGenerator"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 1924,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/1924.js",
+    "recovered_file": "recovered/movements/modules/1924.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "NativeAnimation"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 83636,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/83636.js",
+    "recovered_file": "recovered/movements/modules/83636.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "acceleratedValues"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 90520,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/90520.js",
+    "recovered_file": "recovered/movements/modules/90520.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "microtask"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65797,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/65797.js",
+    "recovered_file": "recovered/movements/modules/65797.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "time"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 99195,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/99195.js",
+    "recovered_file": "recovered/movements/modules/99195.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "velocityPerSecond"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 84872,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/84872.js",
+    "recovered_file": "recovered/movements/modules/84872.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "collectMotionValues",
+      "motionValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 13783,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/13783.js",
+    "recovered_file": "recovered/movements/modules/13783.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isAnimationControls"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 47694,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/47694.js",
+    "recovered_file": "recovered/movements/modules/47694.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isVariantLabel"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 6697,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/6697.js",
+    "recovered_file": "recovered/movements/modules/6697.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "variantPriorityOrder",
+      "variantProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 9612,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/9612.js",
+    "recovered_file": "recovered/movements/modules/9612.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isControllingVariants",
+      "isVariantNode"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 34533,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/34533.js",
+    "recovered_file": "recovered/movements/modules/34533.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveVariantFromProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 47029,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/47029.js",
+    "recovered_file": "recovered/movements/modules/47029.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "VisualElement",
+      "getFeatureDefinitions",
+      "setFeatureDefinitions"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 9128,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/9128.js",
+    "recovered_file": "recovered/movements/modules/9128.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "camelToDash"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 68975,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/68975.js",
+    "recovered_file": "recovered/movements/modules/68975.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "buildHTMLStyles"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65722,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/65722.js",
+    "recovered_file": "recovered/movements/modules/65722.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "buildSVGAttrs",
+      "cssStyleProperties"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 39592,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/39592.js",
+    "recovered_file": "recovered/movements/modules/39592.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isSVGTag"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50945,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/50945.js",
+    "recovered_file": "recovered/movements/modules/50945.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "cornerRadiusProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 18949,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/18949.js",
+    "recovered_file": "recovered/movements/modules/18949.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "mixNumber"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 73877,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/73877.js",
+    "recovered_file": "recovered/movements/modules/73877.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "scaleCorrectors"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 49048,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/49048.js",
+    "recovered_file": "recovered/movements/modules/49048.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isForcedMotionValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 39167,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/39167.js",
+    "recovered_file": "recovered/movements/modules/39167.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "scrapeMotionValuesFromProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 91291,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/91291.js",
+    "recovered_file": "recovered/movements/modules/91291.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "scrapeMotionValuesFromProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 98655,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/98655.js",
+    "recovered_file": "recovered/movements/modules/98655.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "convertBoundingBoxToBox",
+      "convertBoxToBoundingBox",
+      "transformBoxPoints"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 70470,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/70470.js",
+    "recovered_file": "recovered/movements/modules/70470.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "has2DTranslate",
+      "hasScale",
+      "hasTransform"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 6904,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/6904.js",
+    "recovered_file": "recovered/movements/modules/6904.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "applyBoxDelta",
+      "applyTreeDeltas",
+      "scalePoint",
+      "transformBox",
+      "translateAxis"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33092,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/33092.js",
+    "recovered_file": "recovered/movements/modules/33092.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "measurePageBox",
+      "measureViewportBox"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 99571,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/99571.js",
+    "recovered_file": "recovered/movements/modules/99571.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isSVGComponent"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 62523,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/62523.js",
+    "recovered_file": "recovered/movements/modules/62523.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createDomVisualElement"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 24762,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/24762.js",
+    "recovered_file": "recovered/movements/modules/24762.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "LazyContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 8011,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/8011.js",
+    "recovered_file": "recovered/movements/modules/8011.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "MotionContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 91292,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/91292.js",
+    "recovered_file": "recovered/movements/modules/91292.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useCreateMotionContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 20615,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/20615.js",
+    "recovered_file": "recovered/movements/modules/20615.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createHtmlRenderState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 10598,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/10598.js",
+    "recovered_file": "recovered/movements/modules/10598.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createSvgRenderState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 15943,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/15943.js",
+    "recovered_file": "recovered/movements/modules/15943.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useRender"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 84857,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/84857.js",
+    "recovered_file": "recovered/movements/modules/84857.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "scrapeHTMLMotionValuesFromProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 23609,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/23609.js",
+    "recovered_file": "recovered/movements/modules/23609.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveMotionValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50010,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/50010.js",
+    "recovered_file": "recovered/movements/modules/50010.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useHTMLVisualState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 28409,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/28409.js",
+    "recovered_file": "recovered/movements/modules/28409.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useSVGVisualState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 35199,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/35199.js",
+    "recovered_file": "recovered/movements/modules/35199.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getInitializedFeatureDefinitions"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 46106,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/46106.js",
+    "recovered_file": "recovered/movements/modules/46106.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "loadFeatures"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 94780,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/94780.js",
+    "recovered_file": "recovered/movements/modules/94780.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "motionComponentSymbol"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 6740,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/6740.js",
+    "recovered_file": "recovered/movements/modules/6740.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useMotionRef"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33739,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/33739.js",
+    "recovered_file": "recovered/movements/modules/33739.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "optimizedAppearDataAttribute"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 72150,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/72150.js",
+    "recovered_file": "recovered/movements/modules/72150.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "SwitchLayoutGroupContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 97107,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/97107.js",
+    "recovered_file": "recovered/movements/modules/97107.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isRefObject"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 32240,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/32240.js",
+    "recovered_file": "recovered/movements/modules/32240.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "createMotionProxy"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50547,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/50547.js",
+    "recovered_file": "recovered/movements/modules/50547.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "Feature"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 80548,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/80548.js",
+    "recovered_file": "recovered/movements/modules/80548.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getValueTransition"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 72149,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/72149.js",
+    "recovered_file": "recovered/movements/modules/72149.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "addValueToWillChange"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 5443,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/5443.js",
+    "recovered_file": "recovered/movements/modules/5443.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getOptimisedAppearId"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 88200,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/88200.js",
+    "recovered_file": "recovered/movements/modules/88200.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "pipe"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 41007,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/41007.js",
+    "recovered_file": "recovered/movements/modules/41007.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "circIn",
+      "circInOut",
+      "circOut"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 10922,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/10922.js",
+    "recovered_file": "recovered/movements/modules/10922.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "progress"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 96015,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/96015.js",
+    "recovered_file": "recovered/movements/modules/96015.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "interpolate"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11470,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/11470.js",
+    "recovered_file": "recovered/movements/modules/11470.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "JSAnimation"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 68427,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/68427.js",
+    "recovered_file": "recovered/movements/modules/68427.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "animateMotionValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 43000,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/43000.js",
+    "recovered_file": "recovered/movements/modules/43000.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "animations"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 35658,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/35658.js",
+    "recovered_file": "recovered/movements/modules/35658.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "eachAxis"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 17696,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/17696.js",
+    "recovered_file": "recovered/movements/modules/17696.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "addDomEvent"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 2057,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/2057.js",
+    "recovered_file": "recovered/movements/modules/2057.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isDragActive",
+      "isDragging"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65865,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/65865.js",
+    "recovered_file": "recovered/movements/modules/65865.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "setDragLock"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 67027,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/67027.js",
+    "recovered_file": "recovered/movements/modules/67027.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "calcBoxDelta",
+      "calcLength",
+      "calcRelativeBox",
+      "calcRelativePosition",
+      "isNear"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 98293,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/98293.js",
+    "recovered_file": "recovered/movements/modules/98293.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isSVGElement"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 63118,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/63118.js",
+    "recovered_file": "recovered/movements/modules/63118.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveElements"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 77433,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/77433.js",
+    "recovered_file": "recovered/movements/modules/77433.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isElementKeyboardAccessible",
+      "isElementTextInput"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 52661,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/52661.js",
+    "recovered_file": "recovered/movements/modules/52661.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isPrimaryPointer"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 71795,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/71795.js",
+    "recovered_file": "recovered/movements/modules/71795.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "addPointerInfo",
+      "extractEventInfo"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 47466,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/47466.js",
+    "recovered_file": "recovered/movements/modules/47466.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "DragGesture"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 38293,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/38293.js",
+    "recovered_file": "recovered/movements/modules/38293.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "PanGesture"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 13518,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/13518.js",
+    "recovered_file": "recovered/movements/modules/13518.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "globalProjectionState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 44597,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/44597.js",
+    "recovered_file": "recovered/movements/modules/44597.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "n"
+    ],
+    "exports": [
+      "MeasureLayout"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 64936,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/64936.js",
+    "recovered_file": "recovered/movements/modules/64936.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "HTMLProjectionNode"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 39343,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/39343.js",
+    "recovered_file": "recovered/movements/modules/39343.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "n"
+    ],
+    "exports": [
+      "drag"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 23223,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/23223.js",
+    "recovered_file": "recovered/movements/modules/23223.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "setupGesture"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 85510,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/85510.js",
+    "recovered_file": "recovered/movements/modules/85510.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "HoverGesture"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 48096,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/48096.js",
+    "recovered_file": "recovered/movements/modules/48096.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "FocusGesture"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 74468,
+    "original_url": "https://movements.dev/_next/static/chunks/0624lpmtpv8i2.js",
+    "compiled_file": "original/movements/modules/74468.js",
+    "recovered_file": "recovered/movements/modules/74468.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "motion"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 34642,
+    "original_url": "https://movements.dev/_next/static/chunks/0hm25nebi62mm.js",
+    "compiled_file": "original/movements/modules/34642.js",
+    "recovered_file": "recovered/movements/modules/34642.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 99291,
+    "original_url": "https://movements.dev/_next/static/chunks/0hm25nebi62mm.js",
+    "compiled_file": "original/movements/modules/99291.js",
+    "recovered_file": "recovered/movements/modules/99291.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "Decrement",
+      "Group",
+      "Increment",
+      "Input",
+      "Root",
+      "ScrubArea",
+      "ScrubAreaCursor"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 45713,
+    "original_url": "https://movements.dev/_next/static/chunks/0hm25nebi62mm.js",
+    "compiled_file": "original/movements/modules/45713.js",
+    "recovered_file": "recovered/movements/modules/45713.jsx",
+    "jsx_elements": 15,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "ColorField",
+      "ControlField",
+      "ScrubberField",
+      "SegmentedControl"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 99536,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/99536.js",
+    "recovered_file": "recovered/movements/modules/99536.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "TransitionStatusDataAttributes",
+      "transitionStatusMapping"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50115,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/50115.js",
+    "recovered_file": "recovered/movements/modules/50115.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CommonPopupDataAttributes",
+      "popupStateMapping",
+      "popupTransitionStateMapping",
+      "pressableTriggerOpenStateMapping",
+      "triggerOpenStateMapping"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 3737,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/3737.js",
+    "recovered_file": "recovered/movements/modules/3737.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "AnimationFrame",
+      "useAnimationFrame"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 91956,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/91956.js",
+    "recovered_file": "recovered/movements/modules/91956.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "o"
+    ],
+    "exports": [
+      "FocusGuard"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 80678,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/80678.js",
+    "recovered_file": "recovered/movements/modules/80678.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "FOCUSABLE_ATTRIBUTE",
+      "TYPEABLE_SELECTOR"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 78351,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/78351.js",
+    "recovered_file": "recovered/movements/modules/78351.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getFloatingFocusElement",
+      "isEventTargetWithin",
+      "isInteractiveElement",
+      "isRootElement",
+      "isTargetInsideEnabledTrigger",
+      "isTypeableCombobox",
+      "isTypeableElement",
+      "matchesFocusVisible"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50151,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/50151.js",
+    "recovered_file": "recovered/movements/modules/50151.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isClickLikeEvent",
+      "isMouseLikePointerType",
+      "isReactEvent",
+      "isVirtualClick",
+      "isVirtualPointerEvent",
+      "stopEvent"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 74740,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/74740.js",
+    "recovered_file": "recovered/movements/modules/74740.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "disableFocusInside",
+      "enableFocusInside",
+      "focusable",
+      "getNextTabbable",
+      "getPreviousTabbable",
+      "getTabbableAfterElement",
+      "isOutsideEvent",
+      "isTabbable",
+      "tabbable"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 82599,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/82599.js",
+    "recovered_file": "recovered/movements/modules/82599.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getNodeAncestors",
+      "getNodeChildren"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 17128,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/17128.js",
+    "recovered_file": "recovered/movements/modules/17128.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createAttribute"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 54382,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/54382.js",
+    "recovered_file": "recovered/movements/modules/54382.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "BASE_UI_SWIPE_IGNORE_SELECTOR",
+      "CLICK_TRIGGER_IDENTIFIER",
+      "DISABLED_TRANSITIONS_STYLE",
+      "DROPDOWN_COLLISION_AVOIDANCE",
+      "LEGACY_SWIPE_IGNORE_SELECTOR",
+      "PATIENT_CLICK_THRESHOLD",
+      "POPUP_COLLISION_AVOIDANCE",
+      "ownerVisuallyHidden"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 40192,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/40192.js",
+    "recovered_file": "recovered/movements/modules/40192.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "v"
+    ],
+    "exports": [
+      "FloatingPortal",
+      "useFloatingPortalNode",
+      "usePortalContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 49973,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/49973.js",
+    "recovered_file": "recovered/movements/modules/49973.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createEventEmitter"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 94195,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/94195.js",
+    "recovered_file": "recovered/movements/modules/94195.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "s"
+    ],
+    "exports": [
+      "FloatingNode",
+      "FloatingTree",
+      "useFloatingNodeId",
+      "useFloatingParentNodeId",
+      "useFloatingTree"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 84700,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/84700.js",
+    "recovered_file": "recovered/movements/modules/84700.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveRef"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 73920,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/73920.js",
+    "recovered_file": "recovered/movements/modules/73920.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useAnimationsFinished"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 88550,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/88550.js",
+    "recovered_file": "recovered/movements/modules/88550.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useOpenChangeComplete"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 34412,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/34412.js",
+    "recovered_file": "recovered/movements/modules/34412.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "fastComponent",
+      "fastComponentRef",
+      "getInstance",
+      "register"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 76154,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/76154.js",
+    "recovered_file": "recovered/movements/modules/76154.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "ReactStore"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 38233,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/38233.js",
+    "recovered_file": "recovered/movements/modules/38233.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "FloatingRootStore"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 44439,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/44439.js",
+    "recovered_file": "recovered/movements/modules/44439.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useTransitionStatus"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 55230,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/55230.js",
+    "recovered_file": "recovered/movements/modules/55230.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "FOCUSABLE_POPUP_PROPS",
+      "PopupHandleAttachment",
+      "applyPopupOpenChange",
+      "setPopupOpenState",
+      "useImplicitActiveTrigger",
+      "useOpenStateTransitions",
+      "usePopupInteractionProps",
+      "usePopupRootStore",
+      "usePopupRootSync",
+      "useTriggerDataForwarding",
+      "useTriggerRegistration"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 70512,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/70512.js",
+    "recovered_file": "recovered/movements/modules/70512.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "inertValue"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 92915,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/92915.js",
+    "recovered_file": "recovered/movements/modules/92915.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useDismiss"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 34529,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/34529.js",
+    "recovered_file": "recovered/movements/modules/34529.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "PopupTriggerMap"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 26553,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/26553.js",
+    "recovered_file": "recovered/movements/modules/26553.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "findScrollableTouchTarget",
+      "hasScrollableAncestor"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 70592,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/70592.js",
+    "recovered_file": "recovered/movements/modules/70592.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getElementAtPoint"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 13489,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/13489.js",
+    "recovered_file": "recovered/movements/modules/13489.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getDisplacement",
+      "getElementTransform",
+      "useSwipeDismiss"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 40189,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/40189.js",
+    "recovered_file": "recovered/movements/modules/40189.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "NullStore"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 30960,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/30960.js",
+    "recovered_file": "recovered/movements/modules/30960.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getEmptyRootContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 22606,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/22606.js",
+    "recovered_file": "recovered/movements/modules/22606.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createInitialPopupStoreState",
+      "createPopupFloatingRootContext",
+      "popupStoreSelectors"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 64924,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/64924.js",
+    "recovered_file": "recovered/movements/modules/64924.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "usePopupHandleStore"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 43620,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/43620.js",
+    "recovered_file": "recovered/movements/modules/43620.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "BasePopupHandle"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 13262,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/13262.js",
+    "recovered_file": "recovered/movements/modules/13262.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "applySafePolygonPointerEventsMutation",
+      "clearSafePolygonPointerEventsMutation",
+      "useHoverInteractionSharedState"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 45091,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/45091.js",
+    "recovered_file": "recovered/movements/modules/45091.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getDelay",
+      "getRestMs",
+      "isClickLikeOpenEvent",
+      "isHoverOpenEvent"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 26950,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/26950.js",
+    "recovered_file": "recovered/movements/modules/26950.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isInsideEnabledTrigger"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 22309,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/22309.js",
+    "recovered_file": "recovered/movements/modules/22309.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useHoverFloatingInteraction"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 49414,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/49414.js",
+    "recovered_file": "recovered/movements/modules/49414.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "safePolygon"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11974,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/11974.js",
+    "recovered_file": "recovered/movements/modules/11974.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useFloatingRootContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 60637,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/60637.js",
+    "recovered_file": "recovered/movements/modules/60637.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useHoverReferenceInteraction"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 10242,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/10242.js",
+    "recovered_file": "recovered/movements/modules/10242.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "clamp",
+      "createCoords",
+      "evaluate",
+      "floor",
+      "getAlignment",
+      "getAlignmentAxis",
+      "getAlignmentSides",
+      "getAxisLength",
+      "getExpandedPlacements",
+      "getOppositeAlignmentPlacement",
+      "getOppositeAxis",
+      "getOppositeAxisPlacements",
+      "getOppositePlacement",
+      "getPaddingObject",
+      "getSide",
+      "getSideAxis",
+      "max",
+      "min",
+      "placements",
+      "rectToClientRect",
+      "round",
+      "sides"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 25339,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/25339.js",
+    "recovered_file": "recovered/movements/modules/25339.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "arrow",
+      "autoPlacement",
+      "autoUpdate",
+      "computePosition",
+      "flip",
+      "hide",
+      "inline",
+      "limitShift",
+      "offset",
+      "shift",
+      "size"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 58542,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/58542.js",
+    "recovered_file": "recovered/movements/modules/58542.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "flip",
+      "limitShift",
+      "offset",
+      "shift",
+      "size",
+      "useFloating"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 98330,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/98330.js",
+    "recovered_file": "recovered/movements/modules/98330.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getCssDimensions"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 79870,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/79870.js",
+    "recovered_file": "recovered/movements/modules/79870.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "adaptiveOrigin"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 69310,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/69310.js",
+    "recovered_file": "recovered/movements/modules/69310.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useBaseUIFloating",
+      "useFloating"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 41791,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/41791.js",
+    "recovered_file": "recovered/movements/modules/41791.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "DEFAULT_SIDES"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 80015,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/80015.js",
+    "recovered_file": "recovered/movements/modules/80015.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useAnchorPositioning",
+      "useAnchorPositioningWithHook"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 36875,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/36875.js",
+    "recovered_file": "recovered/movements/modules/36875.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getDisabledMountTransitionStyles"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 64113,
+    "original_url": "https://movements.dev/_next/static/chunks/0jejlq53570r2.js",
+    "compiled_file": "original/movements/modules/64113.js",
+    "recovered_file": "recovered/movements/modules/64113.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "usePositioner"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65523,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/65523.js",
+    "recovered_file": "recovered/movements/modules/65523.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "MorphButton"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 35999,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/35999.js",
+    "recovered_file": "recovered/movements/modules/35999.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "boolean",
+      "booleanish",
+      "commaOrSpaceSeparated",
+      "commaSeparated",
+      "number",
+      "overloadedBoolean",
+      "spaceSeparated"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 59015,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/59015.js",
+    "recovered_file": "recovered/movements/modules/59015.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createOnigurumaEngine",
+      "getDefaultWasmLoader",
+      "loadWasm",
+      "setDefaultWasmLoader"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 61898,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/61898.js",
+    "recovered_file": "recovered/movements/modules/61898.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "_"
+    ],
+    "exports": [
+      "File"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 76814,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/76814.js",
+    "recovered_file": "recovered/movements/modules/76814.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "copyText"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 85735,
+    "original_url": "https://movements.dev/_next/static/chunks/0kw-d-t698eg2.js",
+    "compiled_file": "original/movements/modules/85735.js",
+    "recovered_file": "recovered/movements/modules/85735.jsx",
+    "jsx_elements": 5,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "CodeSnippet"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 83539,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/83539.js",
+    "recovered_file": "recovered/movements/modules/83539.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "default"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 23286,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/23286.js",
+    "recovered_file": "recovered/movements/modules/23286.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useRefWithInit"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 48394,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/48394.js",
+    "recovered_file": "recovered/movements/modules/48394.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useMergedRefs",
+      "useMergedRefsN"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 57851,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/57851.js",
+    "recovered_file": "recovered/movements/modules/57851.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isReactVersionAtLeast"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11169,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/11169.js",
+    "recovered_file": "recovered/movements/modules/11169.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getReactElementRef"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 39958,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/39958.js",
+    "recovered_file": "recovered/movements/modules/39958.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "mergeObjects"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 72521,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/72521.js",
+    "recovered_file": "recovered/movements/modules/72521.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "warn"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 7642,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/7642.js",
+    "recovered_file": "recovered/movements/modules/7642.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "EMPTY_ARRAY",
+      "EMPTY_OBJECT",
+      "NOOP"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 41771,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/41771.js",
+    "recovered_file": "recovered/movements/modules/41771.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getStateAttributesProps"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65405,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/65405.js",
+    "recovered_file": "recovered/movements/modules/65405.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveClassName"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 71318,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/71318.js",
+    "recovered_file": "recovered/movements/modules/71318.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "resolveStyle"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 29005,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/29005.js",
+    "recovered_file": "recovered/movements/modules/29005.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "makeEventPreventable",
+      "mergeClassNames",
+      "mergeProps",
+      "mergePropsN"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 31903,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/31903.js",
+    "recovered_file": "recovered/movements/modules/31903.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useRenderElement"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 80269,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/80269.js",
+    "recovered_file": "recovered/movements/modules/80269.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "getComputedStyle",
+      "getContainingBlock",
+      "getDocumentElement",
+      "getFrameElement",
+      "getNodeName",
+      "getNodeScroll",
+      "getOverflowAncestors",
+      "getParentNode",
+      "getWindow",
+      "isContainingBlock",
+      "isElement",
+      "isHTMLElement",
+      "isLastTraversableNode",
+      "isNode",
+      "isOverflowElement",
+      "isShadowRoot",
+      "isTableElement",
+      "isTopLayer",
+      "isWebKit"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 75623,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/75623.js",
+    "recovered_file": "recovered/movements/modules/75623.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "SafeReact"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 38783,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/38783.js",
+    "recovered_file": "recovered/movements/modules/38783.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useStableCallback"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 71955,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/71955.js",
+    "recovered_file": "recovered/movements/modules/71955.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useIsoLayoutEffect"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 79995,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/79995.js",
+    "recovered_file": "recovered/movements/modules/79995.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "ownerWindow"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33045,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/33045.js",
+    "recovered_file": "recovered/movements/modules/33045.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CompositeRootContext",
+      "useCompositeRootContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 69471,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/69471.js",
+    "recovered_file": "recovered/movements/modules/69471.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useButton"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 88327,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/88327.js",
+    "recovered_file": "recovered/movements/modules/88327.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "createChangeEventDetails",
+      "createGenericEventDetails"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 86532,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/86532.js",
+    "recovered_file": "recovered/movements/modules/86532.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "cancelOpen",
+      "chipRemovePress",
+      "clearPress",
+      "closePress",
+      "closeWatcher",
+      "decrementPress",
+      "disabled",
+      "drag",
+      "escapeKey",
+      "focusOut",
+      "imperativeAction",
+      "incrementPress",
+      "initial",
+      "inputBlur",
+      "inputChange",
+      "inputClear",
+      "inputPaste",
+      "inputPress",
+      "itemPress",
+      "keyboard",
+      "linkPress",
+      "listNavigation",
+      "missing",
+      "none",
+      "outsidePress",
+      "pointer",
+      "scrub",
+      "siblingOpen",
+      "swipe",
+      "trackPress",
+      "triggerFocus",
+      "triggerHover",
+      "triggerPress",
+      "wheel",
+      "windowResize"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 87491,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/87491.js",
+    "recovered_file": "recovered/movements/modules/87491.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "REASONS"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 38633,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/38633.js",
+    "recovered_file": "recovered/movements/modules/38633.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useId"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 10592,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/10592.js",
+    "recovered_file": "recovered/movements/modules/10592.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useBaseUiId"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 77794,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/77794.js",
+    "recovered_file": "recovered/movements/modules/77794.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "addEventListener"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 58943,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/58943.js",
+    "recovered_file": "recovered/movements/modules/58943.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "mergeCleanups"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 94805,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/94805.js",
+    "recovered_file": "recovered/movements/modules/94805.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useValueAsRef"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 65386,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/65386.js",
+    "recovered_file": "recovered/movements/modules/65386.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useOnMount"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 9591,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/9591.js",
+    "recovered_file": "recovered/movements/modules/9591.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "Timeout",
+      "useTimeout"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 61375,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/61375.js",
+    "recovered_file": "recovered/movements/modules/61375.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 81035,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/81035.js",
+    "recovered_file": "recovered/movements/modules/81035.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "android",
+      "apple",
+      "ios",
+      "linux",
+      "mac",
+      "windows"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 32556,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/32556.js",
+    "recovered_file": "recovered/movements/modules/32556.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "blink",
+      "gecko",
+      "webkit"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 37015,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/37015.js",
+    "recovered_file": "recovered/movements/modules/37015.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "voiceOver"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 71509,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/71509.js",
+    "recovered_file": "recovered/movements/modules/71509.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "jsdom"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 62199,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/62199.js",
+    "recovered_file": "recovered/movements/modules/62199.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "engine",
+      "env",
+      "os",
+      "screenReader"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 34561,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/34561.js",
+    "recovered_file": "recovered/movements/modules/34561.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "platform"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 26997,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/26997.js",
+    "recovered_file": "recovered/movements/modules/26997.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "ownerDocument"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 74306,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/74306.js",
+    "recovered_file": "recovered/movements/modules/74306.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "visuallyHidden",
+      "visuallyHiddenInput"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 86631,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/86631.js",
+    "recovered_file": "recovered/movements/modules/86631.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "activeElement",
+      "contains",
+      "getTarget"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11706,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/11706.js",
+    "recovered_file": "recovered/movements/modules/11706.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "findNonDisabledListIndex",
+      "getMaxListIndex",
+      "getMinListIndex",
+      "isElementVisible",
+      "isIndexOutOfListBounds",
+      "isListIndexDisabled"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 38501,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/38501.js",
+    "recovered_file": "recovered/movements/modules/38501.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "clamp"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 84094,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/84094.js",
+    "recovered_file": "recovered/movements/modules/84094.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useDirection"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 18687,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/18687.js",
+    "recovered_file": "recovered/movements/modules/18687.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "LIBRARIES",
+      "UTILITIES",
+      "getCatalogItem"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 23422,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/23422.js",
+    "recovered_file": "recovered/movements/modules/23422.jsx",
+    "jsx_elements": 25,
+    "runtime_aliases": [
+      "i"
+    ],
+    "exports": [
+      "ACCENT",
+      "CatalogIcon"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 95358,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/95358.js",
+    "recovered_file": "recovered/movements/modules/95358.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "ARROW_DOWN",
+      "ARROW_LEFT",
+      "ARROW_RIGHT",
+      "ARROW_UP",
+      "COMPOSITE_KEYS",
+      "END",
+      "HOME",
+      "MODIFIER_KEYS",
+      "isNativeInput",
+      "scrollIntoViewIfNeeded"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 41009,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/41009.js",
+    "recovered_file": "recovered/movements/modules/41009.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useControlled"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 67459,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/67459.js",
+    "recovered_file": "recovered/movements/modules/67459.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CompositeListContext",
+      "useCompositeListContext"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 69528,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/69528.js",
+    "recovered_file": "recovered/movements/modules/69528.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "s"
+    ],
+    "exports": [
+      "CompositeList"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 77787,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/77787.js",
+    "recovered_file": "recovered/movements/modules/77787.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "isElementDisabled"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 31961,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/31961.js",
+    "recovered_file": "recovered/movements/modules/31961.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [
+      "h"
+    ],
+    "exports": [
+      "CompositeRoot"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 37889,
+    "original_url": "https://movements.dev/_next/static/chunks/0w_3xtp0-9fbi.js",
+    "compiled_file": "original/movements/modules/37889.js",
+    "recovered_file": "recovered/movements/modules/37889.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "CompositeItem"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 61240,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/61240.js",
+    "recovered_file": "recovered/movements/modules/61240.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "composeShadowLayers",
+      "layerToTokenCss",
+      "layersToBoxShadow"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 31895,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/31895.js",
+    "recovered_file": "recovered/movements/modules/31895.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "EXPORT_FORMATS",
+      "TW_SHADOW_STACK",
+      "buildExportCode",
+      "ringClassName"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 92923,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/92923.js",
+    "recovered_file": "recovered/movements/modules/92923.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "DEFAULT_SHIMMER",
+      "SHIMMER_GRAIN_IMAGE",
+      "SHIMMER_PRESETS",
+      "clampAngle",
+      "clampBand",
+      "clampDuration",
+      "clampGrain",
+      "clampIntensity",
+      "clampSoftness",
+      "composeShimmerLayers",
+      "matchShimmerPreset",
+      "nextColor",
+      "normalizeHex",
+      "pairedShimmerConfigs",
+      "paletteForScheme"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 23385,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/23385.js",
+    "recovered_file": "recovered/movements/modules/23385.jsx",
+    "jsx_elements": 7,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "ShimmerSurface"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 62958,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/62958.js",
+    "recovered_file": "recovered/movements/modules/62958.jsx",
+    "jsx_elements": 10,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "ShimmerExamples",
+      "ShimmerTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 11565,
+    "original_url": "https://movements.dev/_next/static/chunks/159ph9g0pdqtv.js",
+    "compiled_file": "original/movements/modules/11565.js",
+    "recovered_file": "recovered/movements/modules/11565.jsx",
+    "jsx_elements": 17,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "ShimmerStudio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 67484,
+    "original_url": "https://movements.dev/_next/static/chunks/162ayyy2stcir.js",
+    "compiled_file": "original/movements/modules/67484.js",
+    "recovered_file": "recovered/movements/modules/67484.jsx",
+    "jsx_elements": 17,
+    "runtime_aliases": [
+      "e"
+    ],
+    "exports": [
+      "GlassExamples",
+      "GlassTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 40862,
+    "original_url": "https://movements.dev/_next/static/chunks/162ayyy2stcir.js",
+    "compiled_file": "original/movements/modules/40862.js",
+    "recovered_file": "recovered/movements/modules/40862.jsx",
+    "jsx_elements": 4,
+    "runtime_aliases": [
+      "s"
+    ],
+    "exports": [
+      "GlassStudio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 57143,
+    "original_url": "https://movements.dev/_next/static/chunks/1a0iev6mxn6mq.js",
+    "compiled_file": "original/movements/modules/57143.js",
+    "recovered_file": "recovered/movements/modules/57143.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "create"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 95074,
+    "original_url": "https://movements.dev/_next/static/chunks/1a0iev6mxn6mq.js",
+    "compiled_file": "original/movements/modules/95074.js",
+    "recovered_file": "recovered/movements/modules/95074.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "useThemeStore"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 52488,
+    "original_url": "https://movements.dev/_next/static/chunks/1a0iev6mxn6mq.js",
+    "compiled_file": "original/movements/modules/52488.js",
+    "recovered_file": "recovered/movements/modules/52488.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "ThemeSync"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 22620,
+    "original_url": "https://movements.dev/_next/static/chunks/1a0iev6mxn6mq.js",
+    "compiled_file": "original/movements/modules/22620.js",
+    "recovered_file": "recovered/movements/modules/22620.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "Analytics"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 79963,
+    "original_url": "https://movements.dev/_next/static/chunks/1e_49eqzx8qh_.js",
+    "compiled_file": "original/movements/modules/79963.js",
+    "recovered_file": "recovered/movements/modules/79963.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 63390,
+    "original_url": "https://movements.dev/_next/static/chunks/1e_49eqzx8qh_.js",
+    "compiled_file": "original/movements/modules/63390.js",
+    "recovered_file": "recovered/movements/modules/63390.jsx",
+    "jsx_elements": 1,
+    "runtime_aliases": [
+      "c"
+    ],
+    "exports": [
+      "Backdrop",
+      "Close",
+      "Content",
+      "Description",
+      "Handle",
+      "Indent",
+      "IndentBackground",
+      "Popup",
+      "Portal",
+      "Provider",
+      "Root",
+      "SwipeArea",
+      "Title",
+      "Trigger",
+      "Viewport",
+      "VirtualKeyboardProvider",
+      "createHandle"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 55674,
+    "original_url": "https://movements.dev/_next/static/chunks/1e_49eqzx8qh_.js",
+    "compiled_file": "original/movements/modules/55674.js",
+    "recovered_file": "recovered/movements/modules/55674.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 71175,
+    "original_url": "https://movements.dev/_next/static/chunks/1e_49eqzx8qh_.js",
+    "compiled_file": "original/movements/modules/71175.js",
+    "recovered_file": "recovered/movements/modules/71175.jsx",
+    "jsx_elements": 2,
+    "runtime_aliases": [
+      "c"
+    ],
+    "exports": [
+      "Arrow",
+      "Backdrop",
+      "Content",
+      "Icon",
+      "Item",
+      "Link",
+      "List",
+      "Popup",
+      "Portal",
+      "Positioner",
+      "Root",
+      "Trigger",
+      "Viewport"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 50600,
+    "original_url": "https://movements.dev/_next/static/chunks/1e_49eqzx8qh_.js",
+    "compiled_file": "original/movements/modules/50600.js",
+    "recovered_file": "recovered/movements/modules/50600.jsx",
+    "jsx_elements": 41,
+    "runtime_aliases": [
+      "c"
+    ],
+    "exports": [
+      "SiteNav"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 24027,
+    "original_url": "https://movements.dev/_next/static/chunks/1mif7arm_iooj.js",
+    "compiled_file": "original/movements/modules/24027.js",
+    "recovered_file": "recovered/movements/modules/24027.jsx",
+    "jsx_elements": 8,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "ShadowExamples",
+      "ShadowTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 89063,
+    "original_url": "https://movements.dev/_next/static/chunks/1mif7arm_iooj.js",
+    "compiled_file": "original/movements/modules/89063.js",
+    "recovered_file": "recovered/movements/modules/89063.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "buildFigmaClipboardHtml",
+      "buildRadiusFigmaClipboardHtml",
+      "copyFigmaClipboardHtml"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 78834,
+    "original_url": "https://movements.dev/_next/static/chunks/1mif7arm_iooj.js",
+    "compiled_file": "original/movements/modules/78834.js",
+    "recovered_file": "recovered/movements/modules/78834.jsx",
+    "jsx_elements": 15,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "Studio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 82342,
+    "original_url": "https://movements.dev/_next/static/chunks/1v12usalqaqux.js",
+    "compiled_file": "original/movements/modules/82342.js",
+    "recovered_file": "recovered/movements/modules/82342.jsx",
+    "jsx_elements": 19,
+    "runtime_aliases": [
+      "s"
+    ],
+    "exports": [
+      "ChartExamples",
+      "ChartTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 35470,
+    "original_url": "https://movements.dev/_next/static/chunks/1v12usalqaqux.js",
+    "compiled_file": "original/movements/modules/35470.js",
+    "recovered_file": "recovered/movements/modules/35470.jsx",
+    "jsx_elements": 23,
+    "runtime_aliases": [
+      "s"
+    ],
+    "exports": [
+      "ChartStudio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 6684,
+    "original_url": "https://movements.dev/_next/static/chunks/1zjkzumj8phly.js",
+    "compiled_file": "original/movements/modules/6684.js",
+    "recovered_file": "recovered/movements/modules/6684.jsx",
+    "jsx_elements": 0,
+    "runtime_aliases": [],
+    "exports": [
+      "childRadius",
+      "clampGap",
+      "clampParent"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 59975,
+    "original_url": "https://movements.dev/_next/static/chunks/1zjkzumj8phly.js",
+    "compiled_file": "original/movements/modules/59975.js",
+    "recovered_file": "recovered/movements/modules/59975.jsx",
+    "jsx_elements": 15,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "RadiusExamples",
+      "RadiusTeaser"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 33621,
+    "original_url": "https://movements.dev/_next/static/chunks/1zjkzumj8phly.js",
+    "compiled_file": "original/movements/modules/33621.js",
+    "recovered_file": "recovered/movements/modules/33621.jsx",
+    "jsx_elements": 12,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "CatalogSection"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  },
+  {
+    "site": "movements",
+    "module_id": 55450,
+    "original_url": "https://movements.dev/_next/static/chunks/2-ju1l02p04mj.js",
+    "compiled_file": "original/movements/modules/55450.js",
+    "recovered_file": "recovered/movements/modules/55450.jsx",
+    "jsx_elements": 20,
+    "runtime_aliases": [
+      "t"
+    ],
+    "exports": [
+      "RadiusStudio"
+    ],
+    "kind": "lifted compiled module to ESM/JSX; not author TSX"
+  }
+]

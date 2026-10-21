@@ -1,0 +1,28 @@
+{
+  "policy": "GitHub rejects individual files over 100 MiB. The live deployment uses the exact original public donor URL for this video only; the unchanged downloaded video bytes remain in the local source pack. No video compression, replacement or synthetic media. Local browser evidence applies to the cached-file build; representative live CDP covers deployment URL adaptation.",
+  "external_resources": {
+    "media/turks-and-caicos.webm": "https://kobra.systems/media/turks-and-caicos.webm"
+  },
+  "local_video": {
+    "file": "dist/media/turks-and-caicos.webm",
+    "bytes": 290012891,
+    "sha256": "ac522f19a4a0d011a35918b217dc39876bdb872187b5ece645ecd4d2887b319a"
+  },
+  "rewrites": [
+    {
+      "file": "build/kobra-reconstructed.js",
+      "replacements": 1,
+      "sha256": "7a5e1f4c1be10cbd263c24c236632d2b1d4d34405f962b0d96a7cdbe668249c5"
+    },
+    {
+      "file": "build/kobra-original.js",
+      "replacements": 1,
+      "sha256": "1b7f0b32f21eef7270807b4bf4b38535b3519935f39f4685e309ae59676a07a4"
+    },
+    {
+      "file": "assets/video-K3_Q4fy0.js",
+      "replacements": 1,
+      "sha256": "c225ec452d8b55b7060cc2bf0b95f1063b5f6d1268a0862f4fdd13db671c565c"
+    }
+  ]
+}

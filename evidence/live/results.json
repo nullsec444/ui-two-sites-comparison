@@ -1,0 +1,1526 @@
+{
+  "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
+  "defaults_only": true,
+  "entries_tested": 14,
+  "configurations": 14,
+  "results": [
+    {
+      "id": "kobra-button",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/button",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-button",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 1906,
+        "text": "Label",
+        "descendants": 5,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "adc147dc06869c23f1df838d8b691bec5cfef5cd31bf7f4cfd8d8a8693034d29",
+        "dom_file": "evidence/live/kobra-button--default--original.html",
+        "screenshot": "evidence/live/kobra-button--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Label",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-button",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 1906,
+        "text": "Label",
+        "descendants": 5,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "adc147dc06869c23f1df838d8b691bec5cfef5cd31bf7f4cfd8d8a8693034d29",
+        "dom_file": "evidence/live/kobra-button--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-button--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Label",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-button&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "6393C07DC4EE1AC22D18817F4662221C",
+          "timestamp": 263239.366022,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-button&variant=default"
+        },
+        {
+          "requestId": "90A0592B9927D4FCADD39047F21441B0",
+          "timestamp": 263239.373626,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-button&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-calendar",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/calendar",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-calendar",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 322613,
+        "text": "October 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nNovember 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30",
+        "descendants": 289,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "16803dcaef81a20c850dd51998d2b8704281d508c373c8582bdc612557c6a3b0",
+        "dom_file": "evidence/live/kobra-calendar--default--original.html",
+        "screenshot": "evidence/live/kobra-calendar--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Go to the Previous Month",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-calendar",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 322613,
+        "text": "October 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nNovember 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30",
+        "descendants": 289,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "16803dcaef81a20c850dd51998d2b8704281d508c373c8582bdc612557c6a3b0",
+        "dom_file": "evidence/live/kobra-calendar--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-calendar--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Go to the Previous Month",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-calendar&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "37A1AC0D5BA482D54212E3E0D135B1FF",
+          "timestamp": 263244.797466,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-calendar&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-carousel",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/carousel",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-carousel",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 13492,
+        "text": "Nankumba Peninsula\n\nLake Malawi, Malawi\n\nExplore",
+        "descendants": 58,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          }
+        ],
+        "animations": 0,
+        "dom_sha256": "1bd76f9f93da6e6151d0cc5f9c08ba7f34ee36bfb0825b80786d767413d823ad",
+        "dom_file": "evidence/live/kobra-carousel--default--original.html",
+        "screenshot": "evidence/live/kobra-carousel--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Nankumba Peninsula, Lake Malawi, Malawi",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-carousel",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 13492,
+        "text": "Nankumba Peninsula\n\nLake Malawi, Malawi\n\nExplore",
+        "descendants": 58,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/2.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/1.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/3.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/4.webp",
+            "loaded": true
+          },
+          {
+            "tag": "IMG",
+            "url": "https://nullsec444.github.io/ui-two-sites-comparison/images/carousel/5.webp",
+            "loaded": true
+          }
+        ],
+        "animations": 0,
+        "dom_sha256": "1bd76f9f93da6e6151d0cc5f9c08ba7f34ee36bfb0825b80786d767413d823ad",
+        "dom_file": "evidence/live/kobra-carousel--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-carousel--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Nankumba Peninsula, Lake Malawi, Malawi",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-carousel&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "6BCAD3455551B2C4A36F38D0D4511395",
+          "timestamp": 263249.91532,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-carousel&variant=default"
+        },
+        {
+          "requestId": "7632EB41C61994F8CBFE50FC01A63EB0",
+          "timestamp": 263249.940802,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-carousel&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-chart",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/chart",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-chart",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 22413,
+        "text": "Desktop\nMobile\nJan\nFeb\nMar\nApr\nMay\nJun\n0\n80\n160\n240\n320",
+        "descendants": 184,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "c0aa16f354b3724b7af7349bd7dd10490f63c7ddfc5c092e64bf9f43622c3071",
+        "dom_file": "evidence/live/kobra-chart--default--original.html",
+        "screenshot": "evidence/live/kobra-chart--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-chart",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 22413,
+        "text": "Desktop\nMobile\nJan\nFeb\nMar\nApr\nMay\nJun\n0\n80\n160\n240\n320",
+        "descendants": 184,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "c0aa16f354b3724b7af7349bd7dd10490f63c7ddfc5c092e64bf9f43622c3071",
+        "dom_file": "evidence/live/kobra-chart--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-chart--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-chart&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "13C7750967EB02B06463373063C3F6FE",
+          "timestamp": 263253.867419,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-chart&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-halftone-dots",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/halftone-dots",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-halftone-dots",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 5062,
+        "text": "Rocket\nRocket\nServers\nServers\nBridge\nBridge",
+        "descendants": 27,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "2d179bddd7b3f0ffd9387ad03b6d9b75d60054a08831715ea1f6ace420c099ea",
+        "dom_file": "evidence/live/kobra-halftone-dots--default--original.html",
+        "screenshot": "evidence/live/kobra-halftone-dots--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Rocket\nRocket",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-halftone-dots",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 5062,
+        "text": "Rocket\nRocket\nServers\nServers\nBridge\nBridge",
+        "descendants": 27,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "2d179bddd7b3f0ffd9387ad03b6d9b75d60054a08831715ea1f6ace420c099ea",
+        "dom_file": "evidence/live/kobra-halftone-dots--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-halftone-dots--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Rocket\nRocket",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-halftone-dots&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "E7FA42625D38F4F88320C8EC3B69D785",
+          "timestamp": 263257.001538,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-halftone-dots&variant=default"
+        },
+        {
+          "requestId": "899784CA53D808DFB6EFD1D586FBEEF4",
+          "timestamp": 263257.032247,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-halftone-dots&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-input-otp",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/input-otp",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-input-otp",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 7551,
+        "text": "0\n0\n0\n0\n0\n0\n\nInvalid code. Please try again.",
+        "descendants": 37,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "e0fce2657ecfeebb3517ac8538cadd6a07ef1fb4a9c83d5fae434a75f00aa7d2",
+        "dom_file": "evidence/live/kobra-input-otp--default--original.html",
+        "screenshot": "evidence/live/kobra-input-otp--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "fill-first-input",
+        "changed": false,
+        "value": "",
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-input-otp",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 7550,
+        "text": "0\n0\n0\n0\n0\n0\n\nInvalid code. Please try again.",
+        "descendants": 37,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "0ec25dc5d4759f2517a41472eaba7d3ebf6da9358c3d519a78181e3fe1ef2b12",
+        "dom_file": "evidence/live/kobra-input-otp--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-input-otp--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "fill-first-input",
+        "changed": false,
+        "value": "",
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-input-otp&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": false,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "C6771CB9B9CE7AAEE046CA33298F4874",
+          "timestamp": 263260.233377,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-input-otp&variant=default"
+        },
+        {
+          "requestId": "6C87155E27DA1E958730CB389373D611",
+          "timestamp": 263260.239354,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-input-otp&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-sound",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/sound",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-sound",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 18776,
+        "text": "Presses\n\nA thing being hit.\n\ntap\nAny button. By volume, the sound of the whole app.\nselect\nA menu row, a tab, an option. Pitched by its place.\ndestructive\nA destructive button. Lower and heavier, so it lands.\nToggles\n\nDirection carries the state.\n\ntoggleOn\nA switch, checkbox or toggle going on. It rises.\ntoggleOff\nThe same control going off. It falls.\nSurfaces\n\nSlower than a press, because the room changed.\n\nopen\nA dialog, popover, accordion or menu arriving.\nclose\nThe surface leaving, or the button that shuts it.\nswoosh\nThe press that ends and shuts the surface. Also unmute.\nValues\n\nNearly subliminal, because they repeat.\n\ntick\nTaking hold of a slider, or stepping a value.\nsliderTick\nEvery value a drag passes through. The quietest here.\nkey\nEach digit of a one-time code, pitched by its position.\nOutcomes\n\nThe only cues allowed to be a phrase.\n\nsuccess\nTwo notes, upward. It resolves.\nerror\nTwo notes, downward. It does not.\nwarning\nThe same note twice. It insists.\nNamed\n\nAsked for by a control through data-sound.\n\ncopy\nTaken to the clipboard. Two clicks, like a shutter.\nnotification\nThe interface changing under you: the theme swapping.\nchirp\nClearing a field or chip, or one step into the palette.\ncommand\nRunning a palette command. The other half of chirp.\nblocked\nA press that will not be answered. Dead on purpose.",
+        "descendants": 107,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "3c27ab55b0691ed8a307c5d25bddce3910294ef002f98ffc004a1dbcf23ad88f",
+        "dom_file": "evidence/live/kobra-sound--default--original.html",
+        "screenshot": "evidence/live/kobra-sound--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "tap\nAny button. By volume, the sound of the whole app.",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-sound",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 18776,
+        "text": "Presses\n\nA thing being hit.\n\ntap\nAny button. By volume, the sound of the whole app.\nselect\nA menu row, a tab, an option. Pitched by its place.\ndestructive\nA destructive button. Lower and heavier, so it lands.\nToggles\n\nDirection carries the state.\n\ntoggleOn\nA switch, checkbox or toggle going on. It rises.\ntoggleOff\nThe same control going off. It falls.\nSurfaces\n\nSlower than a press, because the room changed.\n\nopen\nA dialog, popover, accordion or menu arriving.\nclose\nThe surface leaving, or the button that shuts it.\nswoosh\nThe press that ends and shuts the surface. Also unmute.\nValues\n\nNearly subliminal, because they repeat.\n\ntick\nTaking hold of a slider, or stepping a value.\nsliderTick\nEvery value a drag passes through. The quietest here.\nkey\nEach digit of a one-time code, pitched by its position.\nOutcomes\n\nThe only cues allowed to be a phrase.\n\nsuccess\nTwo notes, upward. It resolves.\nerror\nTwo notes, downward. It does not.\nwarning\nThe same note twice. It insists.\nNamed\n\nAsked for by a control through data-sound.\n\ncopy\nTaken to the clipboard. Two clicks, like a shutter.\nnotification\nThe interface changing under you: the theme swapping.\nchirp\nClearing a field or chip, or one step into the palette.\ncommand\nRunning a palette command. The other half of chirp.\nblocked\nA press that will not be answered. Dead on purpose.",
+        "descendants": 107,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "3c27ab55b0691ed8a307c5d25bddce3910294ef002f98ffc004a1dbcf23ad88f",
+        "dom_file": "evidence/live/kobra-sound--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-sound--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "tap\nAny button. By volume, the sound of the whole app.",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-sound&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "0CD092074E5D076A74B3C1DEFC062121",
+          "timestamp": 263262.952851,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-sound&variant=default"
+        },
+        {
+          "requestId": "40193B1B6B00AEA3E5649477697F6318",
+          "timestamp": 263262.970742,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-sound&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "kobra-video",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/video",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-video",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 10747,
+        "text": "Turks and Caicos\nWatch on YouTube\n0:00\n/\n0:00\n1×",
+        "descendants": 64,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [
+          {
+            "tag": "VIDEO",
+            "url": "https://kobra.systems/media/turks-and-caicos.webm",
+            "loaded": false
+          }
+        ],
+        "animations": 2,
+        "dom_sha256": "89419e3582ac6c005c7becdd00b7e5a41dd861a29f208052af963a06860cd09a",
+        "dom_file": "evidence/live/kobra-video--default--original.html",
+        "screenshot": "evidence/live/kobra-video--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Back 15 seconds",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-video",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 13526,
+        "text": "Turks and Caicos\nWatch on YouTube\n0:00\n/\n2:45\n1×",
+        "descendants": 82,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [
+          {
+            "tag": "VIDEO",
+            "url": "https://kobra.systems/media/turks-and-caicos.webm",
+            "loaded": true
+          }
+        ],
+        "animations": 0,
+        "dom_sha256": "562d5476b41e7c944d21cce8570b9d00daa7edc9be12f46212ecb891ec9bd54b",
+        "dom_file": "evidence/live/kobra-video--default--reconstructed.html",
+        "screenshot": "evidence/live/kobra-video--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Back 15 seconds",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-video&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": false,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "0B3D524E234E124980B61A0ADEB2BF2D",
+          "timestamp": 263266.091178,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-video&variant=default"
+        },
+        {
+          "requestId": "4AEADE6B69D96A39036618B60172396A",
+          "timestamp": 263266.100898,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-video&variant=default"
+        },
+        {
+          "requestId": "3560510.293",
+          "timestamp": 263268.107436,
+          "type": "Media",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://kobra.systems/media/turks-and-caicos.webm"
+        },
+        {
+          "requestId": "3560510.294",
+          "timestamp": 263268.11853,
+          "type": "Media",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://kobra.systems/media/turks-and-caicos.webm"
+        },
+        {
+          "requestId": "3560510.316",
+          "timestamp": 263268.489046,
+          "type": "Media",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://kobra.systems/media/turks-and-caicos.webm"
+        }
+      ]
+    },
+    {
+      "id": "movements-chart",
+      "variant": "default",
+      "original_url": "https://movements.dev/chart",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-chart",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 16604,
+        "text": "Revenue\n\n$48,210\n\nStat tile\nVisitors\n12.4k\nSignups\n318\nChurn\n1.2%\nList row\nResponse time\n142ms\nInline with a label",
+        "descendants": 44,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "612aad9eb230dc531ab537a24246e72999b989fc310dd4d5c80bbdf962ab5654",
+        "dom_file": "evidence/live/movements-chart--default--original.html",
+        "screenshot": "evidence/live/movements-chart--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-chart",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 16604,
+        "text": "Revenue\n\n$48,210\n\nStat tile\nVisitors\n12.4k\nSignups\n318\nChurn\n1.2%\nList row\nResponse time\n142ms\nInline with a label",
+        "descendants": 44,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "612aad9eb230dc531ab537a24246e72999b989fc310dd4d5c80bbdf962ab5654",
+        "dom_file": "evidence/live/movements-chart--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-chart--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-chart&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "3560510.318",
+          "timestamp": 263272.052261,
+          "type": "Media",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://kobra.systems/media/turks-and-caicos.webm"
+        },
+        {
+          "requestId": "09AD743B40BC3E91848B7A95451332E6",
+          "timestamp": 263272.56631,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-chart&variant=default"
+        },
+        {
+          "requestId": "034B49475D2F69E26BF7F2BC938AE8F7",
+          "timestamp": 263272.573587,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-chart&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "movements-glass",
+      "variant": "default",
+      "original_url": "https://movements.dev/glass",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-glass",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 3383,
+        "text": "No, this is not a screenshot\n\nTab bar and search, iOS Health",
+        "descendants": 22,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "1d2d1bec95c41c0c8447bf6fb6ec29a4e5910d4e278b781c5bdddbbd2b1285b7",
+        "dom_file": "evidence/live/movements-glass--default--original.html",
+        "screenshot": "evidence/live/movements-glass--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Summary — press and hold",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-glass",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 3383,
+        "text": "No, this is not a screenshot\n\nTab bar and search, iOS Health",
+        "descendants": 22,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "1d2d1bec95c41c0c8447bf6fb6ec29a4e5910d4e278b781c5bdddbbd2b1285b7",
+        "dom_file": "evidence/live/movements-glass--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-glass--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Summary — press and hold",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-glass&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "0A2ABBBFC285C76C73C08C02009DC4F1",
+          "timestamp": 263275.996237,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-glass&variant=default"
+        },
+        {
+          "requestId": "3560510.375",
+          "timestamp": 263276.240092,
+          "type": "Font",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/_next/static/media/a24d9e981578d580-s.p.2dim39isyjvqg.woff2"
+        }
+      ]
+    },
+    {
+      "id": "movements-loader",
+      "variant": "default",
+      "original_url": "https://movements.dev/loader",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-loader",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 10639,
+        "text": "Saving\nButton\nIndexing files\n1,204 of 3,380\nStatus row\n\nLoading projects\n\nEmpty state",
+        "descendants": 86,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 23,
+        "dom_sha256": "8fcb543dbf33e756feea13b4926f82babe48806d6d0eaa5734b48d6fb8557c83",
+        "dom_file": "evidence/live/movements-loader--default--original.html",
+        "screenshot": "evidence/live/movements-loader--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Saving",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-loader",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 10639,
+        "text": "Saving\nButton\nIndexing files\n1,204 of 3,380\nStatus row\n\nLoading projects\n\nEmpty state",
+        "descendants": 86,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 23,
+        "dom_sha256": "8fcb543dbf33e756feea13b4926f82babe48806d6d0eaa5734b48d6fb8557c83",
+        "dom_file": "evidence/live/movements-loader--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-loader--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Saving",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-loader&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "35A0384C986655C007F34F4D42B016B9",
+          "timestamp": 263279.056344,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-loader&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "movements-radius",
+      "variant": "default",
+      "original_url": "https://movements.dev/radius",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-radius",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 2665,
+        "text": "Sunset palette\n\n12 colors\n\nCard with media\nSearch files…\nGo\nInput with button\nSaved\nAll changes synced\nToast",
+        "descendants": 24,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "7b75bcb566469a395a61c5c56854deb090baad89f1ea0c27e6442edf59056454",
+        "dom_file": "evidence/live/movements-radius--default--original.html",
+        "screenshot": "evidence/live/movements-radius--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-radius",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 2665,
+        "text": "Sunset palette\n\n12 colors\n\nCard with media\nSearch files…\nGo\nInput with button\nSaved\nAll changes synced\nToast",
+        "descendants": 24,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "7b75bcb566469a395a61c5c56854deb090baad89f1ea0c27e6442edf59056454",
+        "dom_file": "evidence/live/movements-radius--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-radius--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-radius&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "1F0F8C1FFDE5C6026806C1DECC4D1EE7",
+          "timestamp": 263281.159157,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-radius&variant=default"
+        },
+        {
+          "requestId": "613BC8ADD446D22D338F4738BEAF564A",
+          "timestamp": 263281.170777,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-radius&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "movements-shadows",
+      "variant": "default",
+      "original_url": "https://movements.dev/shadows",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-shadows",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 3044,
+        "text": "Weekly report\n\nUpdated 2h ago\n\nCard\nDownload\nButton\nRename\nDuplicate\nMove to…\nMenu",
+        "descendants": 19,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "6e0246df3c4949e96293c8424ee5ef148da2a9388634272e9fdbd92bfa2cf44e",
+        "dom_file": "evidence/live/movements-shadows--default--original.html",
+        "screenshot": "evidence/live/movements-shadows--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-shadows",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 3044,
+        "text": "Weekly report\n\nUpdated 2h ago\n\nCard\nDownload\nButton\nRename\nDuplicate\nMove to…\nMenu",
+        "descendants": 19,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "6e0246df3c4949e96293c8424ee5ef148da2a9388634272e9fdbd92bfa2cf44e",
+        "dom_file": "evidence/live/movements-shadows--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-shadows--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-shadows&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "7E8A48874A6E6EC18E4D577354C1115A",
+          "timestamp": 263282.814276,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-shadows&variant=default"
+        }
+      ]
+    },
+    {
+      "id": "movements-shimmer",
+      "variant": "default",
+      "original_url": "https://movements.dev/shimmer",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-shimmer",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 10251,
+        "text": "Profile row\nMedia card\nText block",
+        "descendants": 33,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 12,
+        "dom_sha256": "a029ccc50337c4916c88df54d1952fea1f56d2ec65a20b4cc46423af306aade0",
+        "dom_file": "evidence/live/movements-shimmer--default--original.html",
+        "screenshot": "evidence/live/movements-shimmer--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-shimmer",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 10251,
+        "text": "Profile row\nMedia card\nText block",
+        "descendants": 33,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 12,
+        "dom_sha256": "a029ccc50337c4916c88df54d1952fea1f56d2ec65a20b4cc46423af306aade0",
+        "dom_file": "evidence/live/movements-shimmer--default--reconstructed.html",
+        "screenshot": "evidence/live/movements-shimmer--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "none",
+        "status": "no generic safe interaction target; component-specific sequence required"
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-shimmer&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "C7FCAD312A952016E563C04C36FEFD6B",
+          "timestamp": 263284.435387,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-shimmer&variant=default"
+        }
+      ]
+    }
+  ]
+}

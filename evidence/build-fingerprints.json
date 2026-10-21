@@ -1,8 +1,8 @@
 {
   "dist/build/movements-reconstructed.js": "c75366871a034c9f255eabe866fdb78a930eb4a185ae9cbe2a4362ac14d71aeb",
   "dist/build/movements-original.js": "ee509614da8988481a31efb1704de2499873d9f7be3e2eb6334d59ca3d451fc9",
-  "dist/build/kobra-reconstructed.js": "cddde4c883481a5c2ad1f45a599f4804bc1e969345c02f014154c58dd7622b99",
-  "dist/build/kobra-original.js": "06a342e7fa1140b64e8e747217713be9962745a69dbeca970301420575f6ca65",
+  "dist/build/kobra-reconstructed.js": "66b6a499096298944039442629352507786dacf952d037ff0cb4e0950554e82c",
+  "dist/build/kobra-original.js": "e31cadf946e4c7580715b90fd336f29fd4972073b7af74b87ab12bbe7722f9f1",
   "dist/styles/kobra.css": "10e36a1991b48c499e50f5551b3f1872cf334cb3e22eaa8367560f3ba73d0289",
   "dist/styles/movements.css": "188f7ebd6da9ba2b3638e033749ef7bb5e115c96856a44a00f6e608b31d9ed8d"
 }
