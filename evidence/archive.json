@@ -1,0 +1,27 @@
+{
+  "archive": "ui-two-sites-source.zip",
+  "bytes": 332397727,
+  "files": 3549,
+  "sha256": "4892dc06971ab155588c6270ce22c8e8ad554354fdb07551b9952a243a01c521",
+  "crc_check": "passed",
+  "excluded_directories": [
+    ".git",
+    "node_modules",
+    "__pycache__"
+  ],
+  "required_entries_checked": [
+    "REPORT.md",
+    "manifest.json",
+    "source-map-manifest.json",
+    "acceptance-report.json",
+    "validate.py",
+    "package.json",
+    "package-lock.json",
+    "evidence/live-static.json",
+    "evidence/live/results.json",
+    "evidence/live-video-media.json",
+    "dist/index.html",
+    "dist/media/turks-and-caicos.webm"
+  ],
+  "private_path_scan": "passed"
+}
