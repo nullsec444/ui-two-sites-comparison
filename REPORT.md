@@ -1,6 +1,6 @@
 # Kobra + Movements recovery: PARTIAL / UNVERIFIED
 
-Generated: 2026-10-21T14:45:20.045181+00:00
+Generated: 2026-10-21T14:48:05.512778+00:00
 
 Live comparison: https://nullsec444.github.io/ui-two-sites-comparison/
 New repository: https://github.com/nullsec444/ui-two-sites-comparison
@@ -97,9 +97,11 @@ Every uncovered control is retained under finite_axes, uncovered_finite_axes or 
 
 ## Live deployment verification
 
-Exact deployment commit checked: 5f31057aaea1d5a3a29d41a14c94b3f2b96b20b0. Canonical route pages covered by static reference checks: 87. References checked: 377; passed: 377. Status: pass. Executable bundles, CSS, HTML and manifests were fetched and compared byte-for-byte to the local snapshot; source and resource endpoints were checked independently.
+Exact deployment commit checked: d59328c8dcc1ae11881ca87216e7498fdff06ad0. Canonical route pages covered by static reference checks: 87. References checked: 377; passed: 377. Status: pass. Executable bundles, CSS, HTML and manifests were fetched and compared byte-for-byte to the local snapshot; source and resource endpoints were checked independently.
 
 Live Chrome configurations checked: 14; both views rendered: 14. Representative original/reconstruction toggles were exercised on the exact live URL, including lazy component routes. This is not live browser coverage of every component or full interaction equivalence. The quick video snapshot originally captured one mode before metadata finished loading; a separate delayed live test confirmed metadata, advancing playback time and pause for both modes (evidence/live-video-media.json). Cancelled iframe/media/font requests during navigation remain in raw evidence and are not presented as completed downloads.
+
+After the final evidence commit, the live Pages build was confirmed for commit d59328c8dcc1ae11881ca87216e7498fdff06ad0 with status built. A second live CDP pass covered 3 configurations (3 with both views rendering). All 377 of 377 checked deployment references passed; one transient connection reset was retried and recorded rather than silently dropped. REPORT.md, source-map-manifest.json and deployment-resources.json were re-fetched and byte-compared. Complete behavior equivalence remains false.
 
 ## Artifacts and reproduction
 

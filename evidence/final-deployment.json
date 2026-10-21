@@ -1,0 +1,31 @@
+{
+  "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
+  "commit": "d59328c8dcc1ae11881ca87216e7498fdff06ad0",
+  "pages_status": "built",
+  "canonical_route_static_coverage": 87,
+  "references": 377,
+  "passed": 377,
+  "exact_metadata_readbacks": [
+    {
+      "path": "REPORT.md",
+      "sha256": "972245da07203f8b4592582b5e233f2c00d3cf85d2fbea9365eefb7fb5e460a8",
+      "exact_deployment_snapshot_match": true
+    },
+    {
+      "path": "source-map-manifest.json",
+      "sha256": "9b03a3aa78fc41d4d2c8ff4991c8439d370bc841ed1d2eae647311b55f97c4ed",
+      "exact_deployment_snapshot_match": true
+    },
+    {
+      "path": "deployment-resources.json",
+      "sha256": "ce5f3f52653831bc0c4d7c536c02fc36c99ffbba56943b58714dda3523bbe339",
+      "exact_deployment_snapshot_match": true
+    }
+  ],
+  "final_live_browser_configurations": 3,
+  "final_live_browser_both_views_passed": 3,
+  "first_live_browser_unique_configurations": 14,
+  "video_metadata_play_pause_smoke_passed": true,
+  "complete_behavior_equivalence": false,
+  "status": "deployment_verified_partial_recovery"
+}

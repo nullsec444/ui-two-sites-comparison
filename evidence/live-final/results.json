@@ -1,0 +1,294 @@
+{
+  "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
+  "defaults_only": true,
+  "entries_tested": 3,
+  "configurations": 3,
+  "results": [
+    {
+      "id": "kobra-calendar",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/calendar",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-calendar",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 322613,
+        "text": "October 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nNovember 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30",
+        "descendants": 289,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "16803dcaef81a20c850dd51998d2b8704281d508c373c8582bdc612557c6a3b0",
+        "dom_file": "evidence/live-final/kobra-calendar--default--original.html",
+        "screenshot": "evidence/live-final/kobra-calendar--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Go to the Previous Month",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-calendar",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 322613,
+        "text": "October 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nNovember 2026\nSun\nMon\nTue\nWed\nThu\nFri\nSat\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30",
+        "descendants": 289,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "16803dcaef81a20c850dd51998d2b8704281d508c373c8582bdc612557c6a3b0",
+        "dom_file": "evidence/live-final/kobra-calendar--default--reconstructed.html",
+        "screenshot": "evidence/live-final/kobra-calendar--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Go to the Previous Month",
+        "changed": true,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-calendar&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "6EC6983C5AB7060A1FBD03B5AA8E30C5",
+          "timestamp": 263669.699637,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-calendar&variant=default"
+        },
+        {
+          "requestId": "3560510.878",
+          "timestamp": 263669.793794,
+          "type": "Script",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/kobra-original.js"
+        }
+      ]
+    },
+    {
+      "id": "kobra-input-otp",
+      "variant": "default",
+      "original_url": "https://kobra.systems/components/input-otp",
+      "scope": "Default plus each finite control value individually, NOT exhaustive Cartesian combinations or continuous inputs.",
+      "original": {
+        "case": {
+          "id": "kobra-input-otp",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 7551,
+        "text": "0\n0\n0\n0\n0\n0\n\nInvalid code. Please try again.",
+        "descendants": 37,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "e0fce2657ecfeebb3517ac8538cadd6a07ef1fb4a9c83d5fae434a75f00aa7d2",
+        "dom_file": "evidence/live-final/kobra-input-otp--default--original.html",
+        "screenshot": "evidence/live-final/kobra-input-otp--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "fill-first-input",
+        "changed": false,
+        "value": "",
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "kobra-input-otp",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 7550,
+        "text": "0\n0\n0\n0\n0\n0\n\nInvalid code. Please try again.",
+        "descendants": 37,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "0ec25dc5d4759f2517a41472eaba7d3ebf6da9358c3d519a78181e3fe1ef2b12",
+        "dom_file": "evidence/live-final/kobra-input-otp--default--reconstructed.html",
+        "screenshot": "evidence/live-final/kobra-input-otp--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "fill-first-input",
+        "changed": false,
+        "value": "",
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-kobra-reconstructed.html?case=kobra-input-otp&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": false,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "863AFEA877C2B7A42817B1AEDA3467F3",
+          "timestamp": 263674.886478,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-kobra-original.html?case=kobra-input-otp&variant=default"
+        },
+        {
+          "requestId": "3560510.958",
+          "timestamp": 263674.954228,
+          "type": "Script",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/kobra-original.js"
+        }
+      ]
+    },
+    {
+      "id": "movements-glass",
+      "variant": "default",
+      "original_url": "https://movements.dev/glass",
+      "scope": "Every publicly labeled example extracted from the canonical example module; individual example selection scopes the real rendered figures by their public figcaption. Playground/custom controls and continuous states are not exhaustively covered.",
+      "original": {
+        "case": {
+          "id": "movements-glass",
+          "variant": "default",
+          "mode": "original"
+        },
+        "selected_example": null,
+        "html_length": 3383,
+        "text": "No, this is not a screenshot\n\nTab bar and search, iOS Health",
+        "descendants": 22,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "1d2d1bec95c41c0c8447bf6fb6ec29a4e5910d4e278b781c5bdddbbd2b1285b7",
+        "dom_file": "evidence/live-final/movements-glass--default--original.html",
+        "screenshot": "evidence/live-final/movements-glass--default--original.png",
+        "status": "rendered"
+      },
+      "original_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Summary — press and hold",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "reconstructed": {
+        "case": {
+          "id": "movements-glass",
+          "variant": "default",
+          "mode": "reconstructed"
+        },
+        "selected_example": null,
+        "html_length": 3383,
+        "text": "No, this is not a screenshot\n\nTab bar and search, iOS Health",
+        "descendants": 22,
+        "loading": false,
+        "render_error": false,
+        "errors": [],
+        "viewport": {
+          "width": 1166,
+          "height": 522
+        },
+        "media": [],
+        "animations": 0,
+        "dom_sha256": "1d2d1bec95c41c0c8447bf6fb6ec29a4e5910d4e278b781c5bdddbbd2b1285b7",
+        "dom_file": "evidence/live-final/movements-glass--default--reconstructed.html",
+        "screenshot": "evidence/live-final/movements-glass--default--reconstructed.png",
+        "status": "rendered"
+      },
+      "reconstructed_interaction": {
+        "action": "click-first-safe-button",
+        "label": "Summary — press and hold",
+        "changed": false,
+        "dialogs": 0,
+        "errors": []
+      },
+      "toggles": {
+        "original": "false",
+        "reconstructed": "true",
+        "src": "../frame-movements-reconstructed.html?case=movements-glass&variant=default"
+      },
+      "same_viewport": true,
+      "dom_equal": true,
+      "nonempty_both": true,
+      "interaction_equivalence": "unverified; generic smoke action is not a complete behavior oracle",
+      "equivalence": "unverified",
+      "network_failures": [
+        {
+          "requestId": "60E4F1C680C1BFA0C54A469022C50942",
+          "timestamp": 263677.102702,
+          "type": "Document",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/frame-movements-original.html?case=movements-glass&variant=default"
+        },
+        {
+          "requestId": "3560510.983",
+          "timestamp": 263677.174513,
+          "type": "Script",
+          "errorText": "net::ERR_ABORTED",
+          "canceled": true,
+          "url": "https://nullsec444.github.io/ui-two-sites-comparison/build/movements-original.js"
+        }
+      ]
+    }
+  ]
+}
