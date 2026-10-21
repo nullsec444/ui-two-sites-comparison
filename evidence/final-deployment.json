@@ -1,6 +1,6 @@
 {
   "base": "https://nullsec444.github.io/ui-two-sites-comparison/",
-  "commit": "d59328c8dcc1ae11881ca87216e7498fdff06ad0",
+  "commit": "252de98b8347e56546b01915be09130ffac6fb4b",
   "pages_status": "built",
   "canonical_route_static_coverage": 87,
   "references": 377,
@@ -8,7 +8,7 @@
   "exact_metadata_readbacks": [
     {
       "path": "REPORT.md",
-      "sha256": "972245da07203f8b4592582b5e233f2c00d3cf85d2fbea9365eefb7fb5e460a8",
+      "sha256": "2be639831aad38ff1d1dbd3aa0f3853a7d353192dd91f505402e93dc24782ad1",
       "exact_deployment_snapshot_match": true
     },
     {
